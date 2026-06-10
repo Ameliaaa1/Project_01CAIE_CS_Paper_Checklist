@@ -10,6 +10,7 @@
   --gold: #f0bd4e;
   --blue: #356dbe;
   --shadow: 0 24px 80px rgba(22, 32, 29, 0.13);
+  --anchor-offset: 76px;
 }
 
 * {
@@ -18,6 +19,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--anchor-offset);
 }
 
 body {
@@ -222,9 +224,13 @@ nav {
   box-shadow: 0 0 0 2px rgba(255, 224, 106, 0.36);
 }
 
+.page-content [id],
+.catalog-chip[id] {
+  scroll-margin-top: var(--anchor-offset);
+}
+
 .search-target {
   animation: searchPulse 1800ms ease;
-  scroll-margin-top: 76px;
 }
 
 @keyframes searchPulse {
@@ -257,6 +263,40 @@ nav {
   line-height: 1.35;
   overflow-wrap: anywhere;
   transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.nav-branch {
+  display: block;
+}
+
+.nav-branch:not(.is-open) > .level-4 {
+  display: none;
+}
+
+.nav-toggle {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  padding-right: 22px;
+}
+
+.nav-toggle::after {
+  content: "+";
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  color: var(--blue);
+  font-weight: 900;
+  transform: translateY(-50%);
+}
+
+.nav-branch.is-open > .nav-toggle::after {
+  content: "-";
 }
 
 .nav-link:hover,
@@ -507,6 +547,15 @@ details p {
   gap: 10px;
 }
 
+.full-past-paper-board {
+  margin-top: 4px;
+}
+
+.combined-past-paper-catalog {
+  display: grid;
+  gap: 12px;
+}
+
 .checklist-board {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -614,6 +663,23 @@ details p {
 .syllabus-section h4 .exam-probability {
   min-height: 24px;
   font-size: 11px;
+}
+
+.key-checklist {
+  display: grid;
+  gap: 7px;
+  margin: 0 0 12px;
+  border: 1px solid rgba(23, 76, 63, 0.14);
+  border-radius: 8px;
+  padding: 12px 14px 12px 30px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #30403a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.key-checklist li::marker {
+  color: var(--forest);
 }
 
 .section-exam-bank {
@@ -1001,6 +1067,13 @@ mark {
   border-color: var(--forest);
   background: #dcefe8;
   box-shadow: 0 0 0 3px rgba(20, 91, 74, 0.16);
+}
+
+.catalog-chip.is-missing {
+  cursor: not-allowed;
+  border-style: dashed;
+  background: #f4f1ea;
+  color: #8a7c6d;
 }
 
 .source-grid {

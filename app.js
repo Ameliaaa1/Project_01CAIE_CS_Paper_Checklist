@@ -16,8 +16,8 @@ const topicBank = [
   },
   {
     name: "Databases",
-    keywords: ["database", "table", "record", "field", "primary key", "foreign key", "sql", "query", "normalisation"],
-    focus: "Model data clearly, use keys correctly, and read or write simple SQL."
+    keywords: ["database", "table", "record", "field", "field name", "primary key", "sql", "query", "sort", "validation", "form", "report"],
+    focus: "Model data clearly, choose suitable fields and validation, use keys correctly, and read or write simple queries."
   },
   {
     name: "Boolean logic",
@@ -91,8 +91,8 @@ const topicBank = [
   },
   {
     name: "AI and expert systems",
-    keywords: ["artificial intelligence", "machine learning", "expert system", "inference engine", "knowledge base", "rules"],
-    focus: "Explain rule-based decisions, knowledge bases, and AI use cases."
+    keywords: ["artificial intelligence", "machine learning", "training data", "prediction", "expert system", "inference engine", "knowledge base", "rules"],
+    focus: "Explain rule-based decisions, training data, knowledge bases, and AI use cases."
   }
 ];
 
@@ -137,6 +137,18 @@ const sourceLibrary = [
     paper: "paper1",
     era: "revised",
     text: "data representation binary denary hexadecimal conversion number systems binary addition overflow logical shift two's complement ascii unicode character set sound sampling sample rate sample resolution sample depth channels image pixel resolution colour depth file size bit nibble byte kib mib gib image file size sound file size compression lossy lossless run length encoding rle mark scheme common mistakes scenario practice"
+  },
+  {
+    name: "IGCSE 0478 Chapter 9 Databases guide",
+    paper: "paper2",
+    era: "revised",
+    text: "database table record field field name data type primary key unique identifier meaningful field names validation range check type check length check presence check format check lookup check search query sort ascending descending select from where order by asc desc form data entry report formatted output common mistakes record field validation true primary key unique"
+  },
+  {
+    name: "IGCSE 0478 cross-chapter checklist expansion",
+    paper: "both",
+    era: "revised",
+    text: "embedded system opcode operand accumulator adc dac monitoring control system actuator utility software buffer assembler firmware interrupt service routine internet world wide web ssl tls pharming social engineering proxy server botnet ddos biometric authentication malware virus worm trojan spyware adware ransomware brute force data interception bubble sort machine learning training data pattern prediction input output assignment linear search count controlled pre condition post condition loop local global variables arithmetic comparison boolean operators string handling substring upper lower constants maintainability comments sum count truth table logic expression circuit scenario"
   }
 ];
 
@@ -153,6 +165,7 @@ const syllabusChecklist = {
             "Binary representation: computers process and store all data as 0s and 1s because logic circuits and registers use two stable states.",
             "Number systems: denary is base 10, binary is base 2, and hexadecimal is base 16 using digits 0-9 and A-F.",
             "Conversions: binary, denary and hexadecimal questions usually require clear place-value working; one hexadecimal digit represents four binary bits.",
+            "Conversion limits: syllabus conversion questions can use positive binary values up to 16 bits, while binary addition, shifts and two's complement use 8-bit values.",
             "Hexadecimal uses: it is a shorter human-readable form of binary, commonly used for colour codes, MAC addresses, IPv6 addresses and error codes.",
             "Binary addition and overflow: an overflow occurs when the result is too large for the available number of bits, such as above 255 in unsigned 8-bit.",
             "Logical shifts: left shifts multiply positive binary integers by powers of two; right shifts divide and discard bits shifted out.",
@@ -195,7 +208,11 @@ const syllabusChecklist = {
             "Packets: transmitted data is split into packets containing a header, payload and trailer.",
             "Packet header: usually stores destination address, packet number and originator address so packets can be routed and reordered.",
             "Packet switching: packets may take different routes through routers and are reassembled when all packets arrive.",
+            "Packet switching benefits: it can share network paths efficiently and resend only missing or corrupted packets.",
+            "Packet switching drawbacks: packets may be delayed, lost, arrive out of order or need reassembly at the destination.",
             "Transmission methods: serial sends one bit at a time, parallel sends multiple bits at once, and simplex/half-duplex/full-duplex describe direction of communication.",
+            "Transmission suitability: serial is reliable over longer distances with fewer timing issues, while parallel can be faster over short distances but is more prone to skew/interference.",
+            "Direction suitability: simplex is one-way only, half-duplex is both directions but not at the same time, and full-duplex allows simultaneous two-way communication.",
             "USB: a common interface for connecting devices and transmitting data, with benefits such as standardisation and drawbacks such as cable length or speed limits."
           ]
         },
@@ -205,6 +222,7 @@ const syllabusChecklist = {
           items: [
             "Transmission errors: interference can cause data loss, data gain or data change during transmission.",
             "Parity checks: odd/even parity adds a parity bit; parity blocks can create a parity byte for larger checks.",
+            "Parity limitation: parity can detect many single-bit errors but may fail when an even number of bits changes.",
             "Checksum: a calculated value is sent with data and recalculated by the receiver to detect differences.",
             "Echo check: data is sent back to the sender so the sender can compare it with the original.",
             "Check digit: an extra digit is calculated from the original data to detect entry errors in ISBNs and barcodes.",
@@ -216,6 +234,7 @@ const syllabusChecklist = {
           title: "Encryption",
           items: [
             "Encryption purpose: data is scrambled so intercepted data cannot be understood without a decryption key.",
+            "Encryption terms: plaintext is readable data, ciphertext is encrypted data, and a key is used to encrypt or decrypt.",
             "Symmetric encryption: the same key is used to encrypt and decrypt, so key sharing must be secure.",
             "Asymmetric encryption: public and private keys are paired; one key encrypts and the other decrypts."
           ]
@@ -236,6 +255,8 @@ const syllabusChecklist = {
             "FDE cycle: instructions are fetched from RAM, decoded by the control unit and executed using CPU components.",
             "CPU performance: more cores, larger cache and higher clock speed can improve performance, depending on the task.",
             "Instruction set: the list of machine-code commands a CPU can process.",
+            "Machine-code instructions: an opcode identifies the operation and an operand identifies the data or address used by that operation.",
+            "Registers in the FDE cycle: the PC, MAR, MDR, CIR and accumulator have different roles when instructions are fetched, decoded and executed.",
             "Embedded systems: dedicated systems built into devices such as appliances, cars, security systems and vending machines."
           ]
         },
@@ -245,7 +266,14 @@ const syllabusChecklist = {
           items: [
             "Input devices: devices such as keyboards, cameras, scanners, microphones and touch screens capture data for processing.",
             "Output devices: screens, printers, projectors, speakers, actuators and 3D printers present or act on processed data.",
+            "Touch screens: resistive touch screens use pressure on two layers, while capacitive touch screens use the electrical properties of a finger and can support multi-touch.",
+            "Printer technologies: inkjet printers spray droplets of ink through a print head, while laser printers use a charged drum, toner and heat/fusing to produce output.",
+            "Specialised scanners: OCR reads printed text, OMR detects shaded marks, MICR reads magnetic-ink characters, and barcode/QR scanners read encoded patterns.",
             "Sensors: sensors measure physical data such as temperature, light, pressure, humidity, proximity, motion or pH.",
+            "Named sensors: syllabus examples include acoustic, accelerometer, flow, gas, humidity, infra-red, level, light, magnetic field, moisture, pH, pressure, proximity and temperature sensors.",
+            "Analogue and digital data: analogue sensor readings may need an ADC before processing, while a DAC may be used when digital output controls an analogue device.",
+            "Monitoring vs control: monitoring systems measure and report data, while control systems also use actuators to change the environment.",
+            "Control-system loop: sensor data is read, compared with stored values, a decision is made, and an actuator such as a motor, heater, light or valve is switched on or off.",
             "Scenario choice: answers should match the device to the data captured or output required, then justify using accuracy, speed, safety, cost or environment."
           ]
         },
@@ -258,6 +286,8 @@ const syllabusChecklist = {
             "Magnetic storage: HDDs use platters, tracks, sectors and electromagnets to read/write data.",
             "Optical storage: CDs, DVDs and Blu-ray use lasers to read pits and lands.",
             "Solid-state storage: SSDs, SD cards and USB drives use NAND/NOR flash memory with no moving parts.",
+            "Flash memory operation: solid-state storage uses control gates and floating gates in NAND/NOR technology to store data electronically.",
+            "HDD vs SSD choices: SSDs are faster, more durable and silent; HDDs are often cheaper per GB and suitable for large low-cost storage.",
             "Virtual memory: pages of data are moved between RAM and secondary storage when RAM is insufficient.",
             "Cloud storage: data is stored on remote servers and compared with local storage using access, cost, security, control and internet dependency."
           ]
@@ -285,9 +315,12 @@ const syllabusChecklist = {
           items: [
             "System software: provides services required by the computer, including operating systems and utility software.",
             "Application software: provides services required by the user, such as editing, browsing or design tasks.",
+            "Utility software: performs maintenance or security tasks such as compression, backup, defragmentation, encryption and anti-malware scanning.",
             "Operating system functions: manages files, interrupts, interface, peripherals, drivers, memory, multitasking, security and user accounts.",
             "Firmware and OS: firmware starts and controls hardware at a low level, while the OS provides the platform for applications.",
-            "Interrupts: signals that stop the current process so the CPU can deal with a higher-priority event before returning."
+            "Interrupts: signals that stop the current process so the CPU can deal with a higher-priority event before returning.",
+            "Interrupt handling: the OS checks priority, stores the current process state, runs the interrupt service routine, then restores the previous process.",
+            "Buffers: temporary storage areas used when data moves between devices or processes that work at different speeds."
           ]
         },
         {
@@ -296,8 +329,11 @@ const syllabusChecklist = {
           items: [
             "High-level languages: easier for humans to read and write, usually portable across systems.",
             "Low-level languages: closer to hardware; assembly uses mnemonics and machine code is binary instructions.",
+            "Assembler: translates assembly language into machine code for a specific processor.",
             "Compiler: translates the whole program before execution and creates executable code.",
             "Interpreter: translates and runs code line by line, often useful for debugging.",
+            "Compiler vs interpreter errors: a compiler reports errors for the whole program after compilation, while an interpreter stops when it reaches an error.",
+            "Translator suitability: interpreters are useful during development and debugging, while compilers are often used for final executable programs.",
             "IDE features: code editor, error diagnostics, run-time environment, translator, auto-completion and debugging tools support program writing."
           ]
         }
@@ -313,10 +349,14 @@ const syllabusChecklist = {
           items: [
             "Internet vs WWW: the internet is the global network infrastructure; the World Wide Web is a service using websites and web pages.",
             "URL: a uniform resource locator identifies the address of a web resource.",
-            "HTTP and HTTPS: protocols used for web page transfer; HTTPS encrypts communication for security.",
+            "HTTP and HTTPS: protocols used for web page transfer; HTTPS uses SSL/TLS-style encryption to protect communication.",
             "HTML and browsers: HTML structures web pages and browsers request, interpret and display them.",
+            "Web authoring and CSS: HTML is used to create the structure/content of web pages, while CSS controls presentation such as colour, layout, fonts and reusable styling.",
+            "Web page retrieval: the browser uses the URL, DNS resolves the domain to an IP address, a request is sent to the web server, and returned files are rendered.",
+            "Browser functions: browsers provide navigation tools, an address bar, tabs, bookmarks/favourites, history, cookie storage and page rendering.",
             "Web servers: store and serve web pages when requested by clients.",
-            "Cookies: small files stored by a browser to remember state, preferences, sessions or tracking information."
+            "Cookies: small files stored by a browser to remember state, preferences, sessions or tracking information.",
+            "Session vs persistent cookies: session cookies are temporary, while persistent cookies remain after the browser is closed until they expire or are deleted."
           ]
         },
         {
@@ -324,6 +364,7 @@ const syllabusChecklist = {
           title: "Digital currency",
           items: [
             "Digital currency: money represented electronically rather than as physical cash.",
+            "Cryptocurrency: a type of digital currency that commonly uses cryptographic methods and a blockchain rather than a central bank.",
             "Blockchain: a distributed ledger of linked blocks that records transactions and helps prevent tampering.",
             "Transaction validation: new transactions are checked and added to the chain so all participants share the same record."
           ]
@@ -333,9 +374,17 @@ const syllabusChecklist = {
           title: "Cyber security",
           items: [
             "Threats: malware, phishing, pharming, brute-force attacks, denial of service and social engineering target systems or users.",
+            "Malware types: syllabus examples include viruses, worms, Trojan horses, spyware, adware and ransomware.",
+            "Brute-force, hacking and data interception: attackers may try many password combinations, gain unauthorised access, or capture data as it is transmitted.",
+            "DDoS and botnets: many infected devices can send requests at once so a server becomes overloaded and legitimate users cannot access it.",
+            "Phishing vs pharming: phishing tricks users into giving data, while pharming redirects users to a fake site even if they enter a legitimate address.",
+            "Social engineering: attackers manipulate people, for example by impersonation, urgency or trust, rather than only attacking software.",
             "Malware protection: anti-malware, updates and safe downloading reduce infection risk.",
-            "Access control: strong passwords, two-factor authentication and permissions reduce unauthorised access.",
-            "Network protection: firewalls, encryption and secure protocols reduce interception and unauthorised traffic.",
+            "Anti-virus and anti-spyware: anti-virus detects, quarantines or removes viruses/malware; anti-spyware detects software that secretly monitors or collects user data.",
+            "Access control: strong passwords, two-factor authentication, biometric checks and permissions reduce unauthorised access.",
+            "Network protection: firewalls, encryption, secure protocols and proxy servers reduce interception and unauthorised traffic.",
+            "Other safety controls: access levels, privacy settings and automated software updates help reduce exposure to security threats.",
+            "Email and URL checks: suspicious senders, spelling changes, unexpected attachments, shortened links and mismatched domains can signal a scam.",
             "Scenario answers: match the threat to a specific control and explain why that control reduces the risk."
           ]
         }
@@ -370,7 +419,9 @@ const syllabusChecklist = {
             "AI: systems that perform tasks normally associated with human intelligence, such as learning, reasoning or decision-making.",
             "AI characteristics: can use data, rules or models to make predictions, classify inputs or adapt decisions.",
             "Expert systems: use a knowledge base, rule base, inference engine and user interface to give advice or conclusions.",
-            "Expert-system process: user answers questions, the inference engine applies rules to the knowledge base, and the system outputs a recommendation."
+            "Expert-system process: user answers questions, the inference engine applies rules to the knowledge base, and the system outputs a recommendation.",
+            "Machine learning: a system is trained using data so it can identify patterns, improve predictions or classify new inputs without being explicitly programmed for every case.",
+            "Expert systems vs machine learning: expert systems rely on human-written rules, while machine-learning systems infer patterns from data."
           ]
         }
       ]
@@ -387,8 +438,12 @@ const syllabusChecklist = {
           items: [
             "Program development life cycle: analysis, design, coding, testing and maintenance/evaluation guide the creation of a solution.",
             "Decomposition: a large problem is broken into smaller sub-problems or sub-systems so each part can be designed and tested.",
+            "Structure diagrams: show the hierarchy of a system or solution and the relationships between its components.",
+            "Legacy pre-release tasks: older Paper 2 exams used pre-release material for practical programming preparation; candidates still needed to understand the scenario, data requirements, validation, processing and output before writing or explaining a solution.",
             "Algorithm purpose: an algorithm is a finite, ordered set of steps that solves a problem or completes a task.",
-            "Abstraction: unnecessary detail is removed so the key data and processes are easier to model."
+            "Abstraction: unnecessary detail is removed so the key data and processes are easier to model.",
+            "Input, process and output: strong algorithm answers identify the data entered, the processing performed and the values displayed or stored.",
+            "Assignment: values are stored in variables using assignment, and the value on the right is evaluated before it is placed in the variable."
           ]
         },
         {
@@ -396,6 +451,9 @@ const syllabusChecklist = {
           title: "Standard methods, validation and testing",
           items: [
             "Standard methods: common algorithm patterns include total, count, maximum, minimum, average and linear search.",
+            "Linear search: each item is checked in sequence until a match is found or the end of the list is reached.",
+            "Bubble sort: adjacent values are compared and swapped repeatedly until the list is in the required order.",
+            "Counting matches: initialise a counter to zero, test each item against a condition, then increment the counter for each match.",
             "Validation: checks whether input is reasonable or allowed, such as range, length, type, presence, format and check digit.",
             "Verification: checks whether data has been copied accurately, such as double entry or visual checking.",
             "Test data: normal data should be accepted, abnormal data should be rejected, boundary/extreme data tests limits."
@@ -407,6 +465,7 @@ const syllabusChecklist = {
           items: [
             "Trace tables: record variable values step by step during a dry run to find outputs or logic errors.",
             "Errors: syntax errors break language rules, logic errors run but produce wrong results, and runtime errors occur during execution.",
+            "Loop types: count-controlled loops repeat a fixed number of times, pre-condition loops test before running, and post-condition loops run before testing.",
             "Algorithm writing: pseudocode and flowcharts should use clear sequence, selection, iteration, input/output and assignments.",
             "Amending algorithms: corrections should match the scenario and preserve variable names, conditions and loop boundaries."
           ]
@@ -423,10 +482,15 @@ const syllabusChecklist = {
           items: [
             "Variables and constants: variables store values that can change; constants store named values that should not change.",
             "Data types: common types include integer, real, Boolean, character and string; choose types that match the data.",
+            "Operators: arithmetic operators calculate values, comparison operators test relationships, and Boolean operators combine or invert conditions.",
+            "String handling: exam algorithms may use string length, substring/character access, concatenation and comparison.",
+            "String routines: syllabus string operations include length, substring, upper and lower; the first character position may be 0 or 1 depending on the question.",
             "Input and output: INPUT gets data from the user or system, while OUTPUT displays or returns results.",
             "Sequence, selection and iteration: programs run ordered statements, choose branches with IF/CASE and repeat with FOR/WHILE/REPEAT loops.",
             "Nested statements: selection and iteration can be placed inside each other, but exam algorithms are limited in nesting depth.",
             "Procedures and functions: procedures perform actions, functions return values, and parameters pass data into subroutines.",
+            "Parameters: values can be passed into procedures or functions so the same subroutine can work with different data.",
+            "Local and global variables: local variables belong to one subroutine, while global variables can be accessed more widely in the program.",
             "Library routines: MOD gives a remainder, DIV gives integer division, ROUND rounds a value and RANDOM generates random values.",
             "Maintainability: meaningful identifiers, sensible subroutines and relevant comments make code easier to read, test and change."
           ]
@@ -448,7 +512,8 @@ const syllabusChecklist = {
             "Purpose of files: files store data persistently so it can be used after a program stops.",
             "File operations: a file is opened before use, read from or written to, and closed after use.",
             "Reading data: programs may read a single item or a line of text from a file.",
-            "Writing data: programs may write a single item or a full line of text to a file."
+            "Writing data: programs may write a single item or a full line of text to a file.",
+            "Append vs write: append adds new data to the end of a file, while write may create or replace file contents depending on the mode."
           ]
         }
       ]
@@ -461,12 +526,17 @@ const syllabusChecklist = {
           code: "9",
           title: "Single-table databases and SQL",
           items: [
-            "Database structure: a single-table database stores records in rows and fields in columns.",
-            "Field data types: suitable types include text/alphanumeric, character, Boolean, integer, real and date/time.",
-            "Primary key: a field that uniquely identifies each record and must not be duplicated.",
-            "SQL basics: SELECT chooses fields, FROM chooses the table and WHERE filters records.",
-            "Sorting and aggregation: ORDER BY ASCENDING/DESCENDING sorts output, while SUM and COUNT calculate totals or record counts.",
-            "Logical conditions: AND and OR combine conditions in WHERE clauses."
+            "Database structure: a database stores organised data in tables; each record is a row and each field is a column or attribute.",
+            "Field names: good field names are meaningful, unique within the table, short and clear, such as StudentID or OrderDate rather than vague names like thing or date.",
+            "Field data types: suitable types include text/string, character, Boolean, integer, real/decimal and date/time; the type should match the data and processing needed.",
+            "Primary key: a field that uniquely identifies each record and must not be duplicated; it is not chosen because it is the most important-looking data.",
+            "Validation checks: common database checks include range, type, length, presence, format and lookup checks; validation checks reasonableness, not whether data is definitely true.",
+            "Searching and queries: a query finds records that match criteria such as Mark >= 50, House = \"Blue\" or combined conditions using AND/OR.",
+            "Sorting: ascending means A-Z, smallest to largest or oldest to newest; descending means Z-A, largest to smallest or newest to oldest.",
+            "SQL basics: SELECT chooses fields to display, FROM chooses the table, WHERE filters records and ORDER BY sorts the result.",
+            "SQL calculations: SUM totals values and COUNT counts matching records in a single-table query.",
+            "Forms and reports: forms make data entry and editing easier, often reducing errors with controls such as drop-down lists; reports present selected data in a clear layout for viewing or printing.",
+            "Common mistakes: do not confuse records with fields, choose a non-unique primary key, sort in the wrong direction, write operators incorrectly such as = > instead of >=, or select every field when only specific fields are requested."
           ]
         }
       ]
@@ -480,11 +550,16 @@ const syllabusChecklist = {
           title: "Logic gates, circuits, expressions and truth tables",
           items: [
             "Logic gates: NOT has one input; AND, OR, NAND, NOR and XOR/EOR have two inputs in this syllabus.",
+            "Logic gate symbols: recognise and draw the standard symbols for NOT, AND, OR, NAND, NOR and XOR/EOR.",
             "Gate functions: AND is true only when both inputs are true; OR is true when at least one input is true; NOT inverts the input.",
             "Derived gates: NAND is NOT AND, NOR is NOT OR, and XOR/EOR is true when inputs are different.",
             "Truth tables: list every possible binary input combination and the resulting output.",
             "Logic circuits: circuits can be created from problem statements, logic expressions or truth tables.",
-            "Logic expressions: expressions can be written from circuits, statements or truth tables using gate names."
+            "Logic expressions: expressions can be written from circuits, statements or truth tables using gate names.",
+            "Building expressions from scenarios: identify each condition, choose the correct operator such as AND, OR or NOT, then add brackets for the intended order.",
+            "Boolean notation: some textbook questions use algebra-style notation such as AND as a dot/product and OR as a plus sign; match the notation used in the question.",
+            "Drawing circuits from expressions: work from brackets outward, draw each gate stage, and connect intermediate outputs to the final gate.",
+            "Circuit limits: syllabus circuits are drawn without simplification and are limited to a maximum of three inputs and one output."
           ]
         }
       ]
@@ -748,9 +823,9 @@ $("exportCsv")?.addEventListener("click", () => download("paperlens-checklist.cs
 $("exportJson")?.addEventListener("click", () => download("paperlens-checklist.json", JSON.stringify(state.checklist, null, 2), "application/json"));
 $("expandChapter")?.addEventListener("click", () => setChapterDetails(true));
 $("collapseChapter")?.addEventListener("click", () => setChapterDetails(false));
-$("knowledgeSearch")?.addEventListener("submit", (event) => {
+$("knowledgeSearch")?.addEventListener("submit", async (event) => {
   event.preventDefault();
-  const bestMatch = renderKnowledgeSearchResults($("knowledgeSearchInput").value)[0];
+  const bestMatch = (await renderKnowledgeSearchResults($("knowledgeSearchInput").value))[0];
   if (bestMatch) locateKnowledgePoint(bestMatch, $("knowledgeSearchInput").value);
 });
 $("knowledgeSearchInput")?.addEventListener("input", (event) => {
@@ -758,6 +833,41 @@ $("knowledgeSearchInput")?.addEventListener("input", (event) => {
 });
 
 async function analyzeMaterials() {
+  const apiResult = await analyzeMaterialsFromApi();
+  if (apiResult) {
+    state.docs = apiResult.docs;
+    state.results = apiResult.results;
+    state.checklist = apiResult.checklist;
+    renderSummary(apiResult.summary.wordCount);
+    renderTopics();
+    renderChecklist();
+    renderPractice(apiResult.practicePrompts);
+    return;
+  }
+
+  analyzeMaterialsLocally();
+}
+
+async function analyzeMaterialsFromApi() {
+  if (!window.location.protocol.startsWith("http") || !$("paperFocus") || !$("targetScore")) return null;
+  try {
+    const response = await fetch("/api/analyze", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        paperFocus: $("paperFocus").value,
+        manual: $("manualText")?.value.trim() || "",
+        threshold: $("targetScore").value
+      })
+    });
+    if (!response.ok) return null;
+    return await response.json();
+  } catch {
+    return null;
+  }
+}
+
+function analyzeMaterialsLocally() {
   const paperFocus = $("paperFocus").value;
   const manual = $("manualText").value.trim();
   state.docs = sourceLibrary
@@ -784,8 +894,7 @@ async function analyzeMaterials() {
 }
 
 function renderPastPaperCatalogs() {
-  renderPastPaperCatalog("paper1PastPapers", "1");
-  renderPastPaperCatalog("paper2PastPapers", "2");
+  renderPastPaperArchive("pastPaperArchive");
 }
 
 function renderSyllabusChecklists() {
@@ -816,6 +925,7 @@ function renderSyllabusChecklist(containerId, chapters) {
                   <span>${section.code} ${section.title}</span>
                   ${probabilityBadge(sectionStats)}
                 </h4>
+                ${sectionChecklist(section)}
                 ${sectionVisual(section)}
                 ${sectionExamQuestions(section)}
               </section>
@@ -844,9 +954,18 @@ function sectionId(code) {
   return `section-${slugPart(code)}`;
 }
 
+function sectionChecklist(section) {
+  if (!section.items?.length) return "";
+
+  return `
+    <ul class="key-checklist">
+      ${section.items.map((item) => `<li>${highlightKeywords(item)}</li>`).join("")}
+    </ul>
+  `;
+}
+
 function paperDownloadTargetForSection(section) {
-  const chapter = Number.parseInt(section.code, 10);
-  return chapter >= 7 ? "paper-2-past-paper" : "paper-1-past-paper";
+  return "past-paper-archive";
 }
 
 function sectionExamQuestions(section) {
@@ -971,7 +1090,34 @@ function paperChipIdFromPaper(paper, type) {
 }
 
 function paperPdfUrl(session, type, component) {
-  return `https://pastpapers.papacambridge.com/directories/CAIE/CAIE-pastpapers/upload/0478_${session.code}${String(session.year).slice(-2)}_${type}_${component}.pdf`;
+  return `textbook_syllabus/pastpaper/${encodeURIComponent(localPastPaperFolder(session))}/${localPaperFilename(session, type, component)}`;
+}
+
+function localPastPaperFolder(session) {
+  const seasonFolder = session.season.replace("/", "-");
+  const folder = `${session.year}-${seasonFolder}`;
+  return session.year === 2020 && session.season === "May/June" ? `${folder} ` : folder;
+}
+
+function localPaperFilename(session, type, component) {
+  return `0478_${session.code}${String(session.year).slice(-2)}_${type}_${component}.pdf`;
+}
+
+const missingLocalPastPaperFiles = new Set([
+  "0478_s19_ms_11.pdf",
+  "0478_s19_ms_12.pdf",
+  "0478_s19_ms_13.pdf",
+  "0478_w19_qp_13.pdf",
+  "0478_w19_qp_21.pdf",
+  "0478_w19_qp_22.pdf"
+]);
+
+function hasLocalPaperFile(session, type, component) {
+  if (type === "pm") {
+    return session.year === 2019 && ["s", "w"].includes(session.code) && component.startsWith("2");
+  }
+
+  return !missingLocalPastPaperFiles.has(localPaperFilename(session, type, component));
 }
 
 const pastPaperQuestionBank = [
@@ -1066,6 +1212,33 @@ const pastPaperQuestionBank = [
       "MS: infrared/proximity sensor; microprocessor receives sensor data, calculates distance, compares with stored 1 m value, and sends signal to display a welcome message. Embedded features include dedicated function/hardware, firmware, not easily reprogrammed, and microprocessor. Accessible devices include microphone or braille keyboard/pad and speaker."
   },
   {
+    section: "3.2",
+    paper: "0478/12/O/N/19",
+    ref: "Q6",
+    question: "Classify resistive and capacitive touch-screen statements and describe how touch is registered.",
+    knowledge: "Touch screen technologies",
+    answer:
+      "Special past-paper focus: resistive screens use pressure to push two conductive layers together, can work with gloves/stylus and are usually cheaper; capacitive screens use changes in electrical charge from a finger and can support multi-touch."
+  },
+  {
+    section: "3.2",
+    paper: "0478/11/O/N/19",
+    ref: "Q1(a)-1(b)",
+    question: "Match inkjet and laser printer features, including toner, charged drum, print head and colour output.",
+    knowledge: "Printer technologies",
+    answer:
+      "Special past-paper focus: laser printers use a charged drum and powdered toner; inkjet printers spray ink droplets through a print head and can produce colour output."
+  },
+  {
+    section: "3.2",
+    paper: "0478/12/F/M/19",
+    ref: "Q4",
+    question: "Identify OCR, OMR, MICR and barcode/QR style input methods from practical data-capture scenarios.",
+    knowledge: "Specialised input devices",
+    answer:
+      "Special past-paper focus: OCR reads printed characters, OMR detects shaded marks, MICR reads magnetic-ink characters, and barcode/QR scanners read encoded patterns quickly and accurately."
+  },
+  {
     section: "3.3",
     paper: "0478/13/M/J/25",
     ref: "Q2(a)-2(c)",
@@ -1111,6 +1284,15 @@ const pastPaperQuestionBank = [
       "MS: browser sends URL/domain to DNS; DNS searches for matching IP or forwards to another DNS; IP address returns to computer; request goes to web server; HTML/web page data returns. SSL establishes encrypted connection using asymmetric encryption; server sends digital certificate; browser validates it before transaction begins."
   },
   {
+    section: "5.1",
+    paper: "0478/12/O/N/20",
+    ref: "Q1",
+    question: "Define HTML as a web-authoring language and identify CSS/presentation features for web pages.",
+    knowledge: "Web authoring and CSS",
+    answer:
+      "Special past-paper focus: HTML creates the structure/content of web pages; CSS controls presentation such as formatting, colour, layout and reusable stylesheets across multiple pages."
+  },
+  {
     section: "5.2",
     paper: "0478/12/F/M/24",
     ref: "Q5",
@@ -1127,6 +1309,24 @@ const pastPaperQuestionBank = [
     knowledge: "Cyber security, cookies and proxy servers",
     answer:
       "MS: two-step verification improves login security. DDoS: malware turns computers into bots, creating a botnet; attacker initiates requests; web server cannot handle them and crashes. Proxy server tasks: hide public IP address and caching. Persistent cookies keep cart items; cookies can store login/payment details/preferences and support targeted advertising."
+  },
+  {
+    section: "5.3",
+    paper: "0478/12/F/M/20",
+    ref: "Q2(d)",
+    question: "Suggest methods to keep data safe, including backups, anti-virus, firewalls, passwords, biometrics, two-factor authentication and access rights.",
+    knowledge: "Security software and access controls",
+    answer:
+      "Special past-paper focus: backups allow recovery after data loss; anti-virus/anti-malware detects and removes malicious software; firewalls restrict unauthorised network traffic; access rights and authentication limit who can view or change data."
+  },
+  {
+    section: "5.3",
+    paper: "0478/11/O/N/21",
+    ref: "Q5(a)",
+    question: "Identify security methods such as encryption, biometric devices, firewalls, anti-spyware and two-step verification.",
+    knowledge: "Anti-spyware and security methods",
+    answer:
+      "Special past-paper focus: anti-spyware detects or removes software that secretly monitors activity or collects personal data; it complements firewalls, encryption and authentication methods."
   },
   {
     section: "6.1",
@@ -1163,6 +1363,24 @@ const pastPaperQuestionBank = [
     knowledge: "Program development life cycle",
     answer:
       "MS: analysis identifies problem and requirements; design uses structure diagrams, flowcharts and pseudocode to plan; coding uses a programming language to create the solution; testing makes sure program code works as expected."
+  },
+  {
+    section: "7.1",
+    paper: "0478/21/M/J/20",
+    ref: "Q2",
+    question: "Identify true statements about structure diagrams and how they show a system hierarchy.",
+    knowledge: "Structure diagrams",
+    answer:
+      "Special past-paper focus: structure diagrams are design tools that show a hierarchy and relationships between components/sub-systems; they are not program code or arrays."
+  },
+  {
+    section: "7.1",
+    paper: "0478/21/M/J/19",
+    ref: "Pre-release material",
+    question: "Use pre-release scenario material to prepare practical programming tasks before the Paper 2 examination.",
+    knowledge: "Legacy pre-release tasks",
+    answer:
+      "Special legacy focus: older Paper 2 papers expected candidates to understand the pre-release scenario, identify inputs, storage, validation, processing and outputs, then apply that preparation to the exam questions."
   },
   {
     section: "7.2",
@@ -1225,6 +1443,15 @@ const pastPaperQuestionBank = [
     knowledge: "Logic gates and truth tables",
     answer:
       "MS: circuit requires correct NAND, NOT, NAND, NOT and XOR stages with correct inputs. Truth table Z values for rows 000 to 111: 1, 0, 1, 1, 1, 0, 0, 0."
+  },
+  {
+    section: "10",
+    paper: "0478/22/M/J/23",
+    ref: "Q2",
+    question: "Match logic gate names to standard symbols.",
+    knowledge: "Logic gate symbols",
+    answer:
+      "Special past-paper focus: recognise and draw the standard symbols for AND, OR, NOT, NAND, NOR and XOR/EOR before building circuits or completing truth tables."
   }
 ];
 
@@ -1232,7 +1459,117 @@ renderPastPaperCatalogs();
 renderSyllabusChecklists();
 renderChapterOne();
 renderKnowledgeSearchResults("");
+renderSidebarNav();
+document.querySelectorAll(".nav-toggle[data-href]").forEach((toggle) => {
+  toggle.addEventListener("click", handleNavToggleClick);
+});
 document.addEventListener("click", handlePaperSourceClick);
+document.addEventListener("click", handleAnchorClick);
+window.addEventListener("load", () => {
+  if (window.location.hash) scrollToAnchorTarget(window.location.hash, { behavior: "auto", updateHistory: false });
+});
+
+function handleAnchorClick(event) {
+  const link = event.target.closest('a[href^="#"]');
+  if (!link || link.classList.contains("paper-source-tag")) return;
+
+  const target = targetFromHash(link.hash);
+  if (!target) return;
+
+  event.preventDefault();
+  scrollToAnchorTarget(link.hash);
+}
+
+function handleNavToggleClick(event) {
+  const toggle = event.currentTarget;
+  event.preventDefault();
+  const branch = toggle.closest(".nav-branch");
+  const shouldOpen = branch ? !branch.classList.contains("is-open") : true;
+  if (branch) branch.classList.toggle("is-open", shouldOpen);
+  window.requestAnimationFrame(() => {
+    scrollToAnchorTarget(toggle.dataset.href, { expandSidebar: shouldOpen });
+  });
+}
+
+function targetFromHash(hash) {
+  if (!hash || hash === "#") return null;
+
+  try {
+    return document.getElementById(decodeURIComponent(hash.slice(1)));
+  } catch {
+    return document.getElementById(hash.slice(1));
+  }
+}
+
+function scrollToAnchorTarget(hash, options = {}) {
+  const target = targetFromHash(hash);
+  if (!target) return;
+
+  target.closest("details")?.setAttribute("open", "");
+  if (options.expandSidebar !== false) openSidebarBranch(hash);
+  const offset = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--anchor-offset")) || 0;
+  const targetTop = target.getBoundingClientRect().top + window.scrollY - offset;
+  window.scrollTo({ top: Math.max(targetTop, 0), behavior: options.behavior || "smooth" });
+
+  if (options.updateHistory !== false && window.history.pushState) {
+    window.history.pushState(null, "", hash);
+  }
+}
+
+function openSidebarBranch(hash) {
+  const branch = [...document.querySelectorAll(".nav-branch")].find(
+    (group) => group.querySelector(`[href="${hash}"]`) || group.querySelector(`.nav-toggle[data-href="${hash}"]`)
+  );
+  if (branch) branch.classList.add("is-open");
+}
+
+function renderSidebarNav() {
+  const nav = $("sidebarNav");
+  if (!nav) return;
+
+  const paperGroups = [
+    {
+      title: "Paper 1: Theory",
+      paperId: "paper-1",
+      checklistId: "paper-1-checklist",
+      chapters: syllabusChecklist.paper1
+    },
+    {
+      title: "Paper 2: Algorithms and programming",
+      paperId: "paper-2",
+      checklistId: "paper-2-checklist",
+      chapters: syllabusChecklist.paper2
+    }
+  ];
+
+  nav.innerHTML = `
+    <a class="nav-link level-0" href="#home">Home</a>
+    <a class="nav-link level-0" href="#igcse-0478">IGCSE 0478</a>
+    ${paperGroups.map(sidebarPaperGroup).join("")}
+    <a class="nav-link level-1" href="#past-paper-archive">Past paper archive</a>
+  `;
+}
+
+function sidebarPaperGroup(group) {
+  return `
+    <a class="nav-link level-1" href="#${group.paperId}">${group.title}</a>
+    <a class="nav-link level-2" href="#${group.checklistId}">Checklist</a>
+    ${group.chapters.map(sidebarChapterBranch).join("")}
+  `;
+}
+
+function sidebarChapterBranch(chapter) {
+  return `
+    <div class="nav-branch">
+      <button class="nav-link level-3 nav-toggle" type="button" data-href="#${chapterId(chapter.chapter)}">
+        ${chapter.chapter}. ${chapter.title}
+      </button>
+      ${chapter.sections
+        .map((section) => `<a class="nav-link level-4" href="#${sectionId(section.code)}">${section.code} ${section.title}</a>`)
+        .join("")}
+    </div>
+  `;
+}
 
 function sectionKnowledgeItems(section) {
   return section.items;
@@ -1286,7 +1623,7 @@ function knowledgeSearchIndex() {
   }));
 }
 
-function renderKnowledgeSearchResults(query) {
+async function renderKnowledgeSearchResults(query) {
   const resultsContainer = $("knowledgeSearchResults");
   const status = $("knowledgeSearchStatus");
   if (!resultsContainer || !status) return [];
@@ -1298,7 +1635,7 @@ function renderKnowledgeSearchResults(query) {
     return [];
   }
 
-  const matches = findKnowledgeMatches(trimmed);
+  const matches = (await findKnowledgeMatchesFromApi(trimmed)) || findKnowledgeMatches(trimmed);
   const exactCount = matches.filter((match) => match.isExact).length;
   status.textContent = exactCount
     ? `${exactCount} exact match${exactCount === 1 ? "" : "es"} found.`
@@ -1326,6 +1663,18 @@ function renderKnowledgeSearchResults(query) {
   });
 
   return matches;
+}
+
+async function findKnowledgeMatchesFromApi(query) {
+  if (!window.location.protocol.startsWith("http")) return null;
+  try {
+    const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+    if (!response.ok) return null;
+    const payload = await response.json();
+    return payload.matches;
+  } catch {
+    return null;
+  }
 }
 
 function findKnowledgeMatches(query) {
@@ -1546,10 +1895,15 @@ function highlightKeywords(text) {
     "microprocessor",
     "actuators",
     "expert systems",
+    "machine learning",
+    "training data",
     "knowledge base",
     "inference engine",
     "decomposition",
     "abstraction",
+    "linear search",
+    "bubble sort",
+    "assignment",
     "validation",
     "verification",
     "normal",
@@ -1558,7 +1912,49 @@ function highlightKeywords(text) {
     "trace tables",
     "pseudocode",
     "arrays",
+    "constants",
+    "operators",
+    "string handling",
+    "local variables",
+    "global variables",
+    "parameters",
+    "maintainability",
     "primary key",
+    "field names",
+    "range check",
+    "type check",
+    "length check",
+    "presence check",
+    "format check",
+    "lookup check",
+    "ascending",
+    "descending",
+    "forms",
+    "reports",
+    "embedded systems",
+    "opcode",
+    "operand",
+    "ADC",
+    "DAC",
+    "monitoring",
+    "control systems",
+    "utility software",
+    "assembler",
+    "buffer",
+    "SSL",
+    "TLS",
+    "pharming",
+    "social engineering",
+    "proxy servers",
+    "botnets",
+    "DDoS",
+    "malware",
+    "ransomware",
+    "brute-force",
+    "data interception",
+    "bubble sort",
+    "SUM",
+    "COUNT",
     "SELECT",
     "FROM",
     "WHERE",
@@ -1729,6 +2125,41 @@ NEXT Index</pre>
       ["CLOSEFILE", "Close the file after use."]
     ]),
     "9": `
+      ${tableBlock(["Area", "What to remember", "Exam trap"], [
+        ["Structure", "database, table, record, field, field name and data type", "record = row; field = column"],
+        ["Field design", "names should be meaningful, unique, short and clear, e.g. StudentID or OrderDate", "avoid vague names such as thing or date"],
+        ["Primary key", "a unique field such as StudentID, BookID or Code", "not just the most important-looking data"],
+        ["Validation", "range, type, length, presence, format or lookup check", "validation does not prove data is true"]
+      ])}
+      ${tableBlock(["Field example", "Suitable data type", "Possible validation"], [
+        ["StudentID", "string or integer", "length / presence check"],
+        ["Mark", "integer", "range check such as 0 to 100"],
+        ["DateOfBirth", "date", "format check"],
+        ["Email", "string", "format / presence check"],
+        ["Member", "Boolean", "true or false"]
+      ])}
+      ${tableBlock(["Database tool", "Purpose"], [
+        ["Search/query", "find records that match criteria"],
+        ["Sort ascending", "A-Z, smallest to largest or oldest to newest"],
+        ["Sort descending", "Z-A, largest to smallest or newest to oldest"],
+        ["Form", "make data entry or editing easier, often using controls such as drop-down lists"],
+        ["Report", "present selected data clearly for viewing or printing"]
+      ])}
+      ${tableBlock(["SQL keyword", "Meaning"], [
+        ["SELECT", "choose fields to display"],
+        ["FROM", "choose the table"],
+        ["WHERE", "filter records using criteria"],
+        ["ORDER BY", "sort the results"],
+        ["ASC / DESC", "ascending / descending order"],
+        ["SUM / COUNT", "total values / count matching records"]
+      ])}
+      ${tableBlock(["Common mistake", "Better exam habit"], [
+        ["Confusing record and field", "state row/record and column/field explicitly"],
+        ["Choosing a non-unique primary key", "justify uniqueness"],
+        ["Using = > instead of >=", "write comparison operators carefully"],
+        ["Selecting every field", "only select fields requested by the question"],
+        ["Assuming validation proves truth", "say it checks whether data is reasonable or allowed"]
+      ])}
       <div class="worked-example">
         <h5>SQL pattern</h5>
         <pre>SELECT Name, Score
@@ -1861,17 +2292,31 @@ function countTermHits(text, term) {
   return matches ? matches.length : 0;
 }
 
+function renderPastPaperArchive(containerId) {
+  const container = $(containerId);
+  if (!container) return;
+
+  container.innerHTML = pastPaperCatalogMarkup();
+}
+
 function renderPastPaperCatalog(containerId, paperPrefix) {
   const container = $(containerId);
   if (!container) return;
 
+  container.innerHTML = pastPaperCatalogMarkup(paperPrefix);
+}
+
+function pastPaperCatalogMarkup(paperPrefix = "") {
+
   const latestYear = Math.max(...paperSessions.map((session) => session.year));
   const recentCutoff = latestYear - 1;
-  const sessions = paperSessions.filter((session) => session.components.some((component) => component.startsWith(paperPrefix)));
+  const sessions = paperPrefix
+    ? paperSessions.filter((session) => session.components.some((component) => component.startsWith(paperPrefix)))
+    : paperSessions;
   const recentSessions = sessions.filter((session) => session.year >= recentCutoff);
   const olderSessions = sessions.filter((session) => session.year < recentCutoff);
 
-  container.innerHTML = `
+  return `
     <div class="catalog-recent">
       ${recentSessions.map((session) => catalogSessionMarkup(session, paperPrefix)).join("")}
     </div>
@@ -1884,16 +2329,19 @@ function renderPastPaperCatalog(containerId, paperPrefix) {
   `;
 }
 
-function catalogSessionMarkup(session, paperPrefix) {
-  const components = session.components.filter((component) => component.startsWith(paperPrefix));
+function catalogSessionMarkup(session, paperPrefix = "") {
+  const components = paperPrefix
+    ? session.components.filter((component) => component.startsWith(paperPrefix))
+    : session.components;
   const questionPapers = components.map((component) => catalogChipMarkup(session, "qp", component, `QP ${component}`));
   const markSchemes = components.map((component) => catalogChipMarkup(session, "ms", component, `MS ${component}`));
-  const preRelease = paperPrefix === "2" && session.legacy
-    ? components.map((component) => catalogChipMarkup(session, "pm", component, `PM ${component}`))
+  const preReleaseComponents = components.filter((component) => component.startsWith("2"));
+  const preRelease = session.legacy
+    ? preReleaseComponents.map((component) => catalogChipMarkup(session, "pm", component, `PM ${component}`))
     : [];
 
   return `
-    <details class="catalog-session" id="paper-session-${session.code}${String(session.year).slice(-2)}-${paperPrefix}">
+    <details class="catalog-session" id="paper-session-${session.code}${String(session.year).slice(-2)}${paperPrefix ? `-${paperPrefix}` : ""}">
       <summary>${session.year} ${session.season}</summary>
       <div class="catalog-group">
         <span class="catalog-title">Question paper</span>
@@ -1917,7 +2365,12 @@ function catalogSessionMarkup(session, paperPrefix) {
 
 function catalogChipMarkup(session, type, component, label) {
   const paper = `0478/${component}/${session.code === "m" ? "F/M" : session.code === "s" ? "M/J" : "O/N"}/${String(session.year).slice(-2)}`;
-  return `<a id="${paperChipIdFromPaper(paper, type)}" class="catalog-chip" href="${paperPdfUrl(session, type, component)}" target="_blank" rel="noopener">${label}</a>`;
+  const filename = localPaperFilename(session, type, component);
+  if (!hasLocalPaperFile(session, type, component)) {
+    return `<span id="${paperChipIdFromPaper(paper, type)}" class="catalog-chip is-missing" title="PDF file is not in textbook_syllabus/pastpaper">${label}</span>`;
+  }
+
+  return `<a id="${paperChipIdFromPaper(paper, type)}" class="catalog-chip" href="${paperPdfUrl(session, type, component)}" download="${filename}">${label}</a>`;
 }
 
 function handlePaperSourceClick(event) {
@@ -2061,8 +2514,8 @@ function renderChecklist() {
     .join("");
 }
 
-function renderPractice() {
-  const prompts = state.checklist.slice(0, 6).map((item) => practicePrompt(item));
+function renderPractice(serverPrompts = null) {
+  const prompts = serverPrompts || state.checklist.slice(0, 6).map((item) => practicePrompt(item));
   $("practicePrompts").innerHTML = prompts.length
     ? prompts.map((prompt) => `<div class="practice-item"><p>${prompt}</p></div>`).join("")
     : `<p>Run an analysis first, then generate practice prompts.</p>`;
