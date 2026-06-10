@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CAIE Computer Science Past Paper Checklist Generator</title>
+    <meta
+      name="description"
+      content="Generate CAIE Computer Science revision checklists from a maintained 2019-2025 past-paper and mark-scheme analysis corpus."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand" aria-label="CAIE CS Checklist home">
+        <span class="brand-mark">CS</span>
+        <span>PaperLens</span>
+      </div>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Course outline">
+        <div class="sidebar-title">Computer Science Checklist</div>
+        <form class="knowledge-search" id="knowledgeSearch" role="search">
+          <label for="knowledgeSearchInput">Search knowledge point</label>
+          <div class="search-input-row">
+            <input
+              id="knowledgeSearchInput"
+              type="search"
+              autocomplete="off"
+              placeholder="binary, SQL, sample rate..."
+            />
+            <button type="submit" aria-label="Search">⌕</button>
+          </div>
+          <div class="search-status" id="knowledgeSearchStatus" aria-live="polite"></div>
+          <div class="search-results" id="knowledgeSearchResults"></div>
+        </form>
+        <nav class="sidebar-nav">
+          <a class="nav-link level-0" href="#home">Home</a>
+          <a class="nav-link level-0" href="#igcse-0478">IGCSE 0478</a>
+          <a class="nav-link level-1" href="#paper-1">Paper 1: Theory</a>
+          <a class="nav-link level-2" href="#paper-1-checklist">Checklist</a>
+          <a class="nav-link level-3" href="#chapter-1">1. Data representation</a>
+          <a class="nav-link level-4" href="#section-1-1">1.1 Number systems</a>
+          <a class="nav-link level-4" href="#section-1-2">1.2 Text, sound and images</a>
+          <a class="nav-link level-4" href="#section-1-3">1.3 Data storage and compression</a>
+          <a class="nav-link level-3" href="#chapter-2">2. Data transmission</a>
+          <a class="nav-link level-4" href="#section-2-1">2.1 Types and methods</a>
+          <a class="nav-link level-4" href="#section-2-2">2.2 Error detection</a>
+          <a class="nav-link level-4" href="#section-2-3">2.3 Encryption</a>
+          <a class="nav-link level-3" href="#chapter-3">3. Hardware</a>
+          <a class="nav-link level-4" href="#section-3-1">3.1 Computer architecture</a>
+          <a class="nav-link level-4" href="#section-3-2">3.2 Input/output devices</a>
+          <a class="nav-link level-4" href="#section-3-3">3.3 Data storage</a>
+          <a class="nav-link level-4" href="#section-3-4">3.4 Network hardware</a>
+          <a class="nav-link level-3" href="#chapter-4">4. Software</a>
+          <a class="nav-link level-3" href="#chapter-5">5. Internet and uses</a>
+          <a class="nav-link level-3" href="#chapter-6">6. Emerging tech</a>
+          <a class="nav-link level-2" href="#paper-1-past-paper">Past paper</a>
+          <a class="nav-link level-1" href="#paper-2">Paper 2: Algorithms and programming</a>
+          <a class="nav-link level-2" href="#paper-2-checklist">Checklist</a>
+          <a class="nav-link level-3" href="#chapter-7">7. Algorithm design</a>
+          <a class="nav-link level-4" href="#section-7-1">7.1 Development</a>
+          <a class="nav-link level-4" href="#section-7-2">7.2 Testing</a>
+          <a class="nav-link level-4" href="#section-7-3">7.3 Trace tables</a>
+          <a class="nav-link level-3" href="#chapter-8">8. Programming</a>
+          <a class="nav-link level-4" href="#section-8-1">8.1 Concepts</a>
+          <a class="nav-link level-4" href="#section-8-2">8.2 Arrays</a>
+          <a class="nav-link level-4" href="#section-8-3">8.3 File handling</a>
+          <a class="nav-link level-3" href="#chapter-9">9. Databases</a>
+          <a class="nav-link level-3" href="#chapter-10">10. Boolean logic</a>
+          <a class="nav-link level-2" href="#paper-2-past-paper">Past paper</a>
+        </nav>
+      </aside>
+
+      <main id="app" class="page-content">
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">CAIE Computer Science revision analyzer</p>
+          <h1>Computer Science Web Checklist</h1>
+          <p class="hero-text">
+            PaperLens uses a maintained analysis of CAIE IGCSE Computer Science 0478 past papers and mark schemes from
+            2019 to 2025. Pick a paper focus, generate topic priorities, then export a revision checklist.
+          </p>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/study-workspace.png" alt="Computer science revision workspace with papers and laptop" />
+        </figure>
+      </section>
+
+      <section class="notice" aria-label="Copyright notice">
+        <strong>Built from maintained paper analysis.</strong>
+        Students do not upload past papers. The app stores source links and aggregated topic signals, then generates
+        original practice prompts and revision checklists without redistributing official CAIE paper text.
+      </section>
+
+      <section class="igcse-hub" id="igcse-0478">
+        <div class="section-head">
+          <p class="eyebrow">IGCSE 0478</p>
+          <h2>Paper framework.</h2>
+          <p>
+            This is the first syllabus area. Each paper is divided into Checklist and Past paper boards. Past papers are
+            grouped by session and component.
+          </p>
+        </div>
+
+        <div class="syllabus-shell">
+          <article class="paper-group" id="paper-1">
+            <div class="paper-heading">
+              <span class="zone-icon">P1</span>
+              <div>
+                <p class="eyebrow">Paper 1</p>
+                <h3>Theory</h3>
+              </div>
+            </div>
+            <div class="paper-sections">
+              <section class="empty-board checklist-board" id="paper-1-checklist">
+                <span class="board-label">Checklist</span>
+                <div class="syllabus-checklist" id="paper1Checklist"></div>
+              </section>
+              <section class="empty-board past-paper-board" id="paper-1-past-paper">
+                <span class="board-label">Past paper</span>
+                <div class="past-paper-catalog" id="paper1PastPapers"></div>
+              </section>
+            </div>
+          </article>
+
+          <article class="paper-group" id="paper-2">
+            <div class="paper-heading">
+              <span class="zone-icon">P2</span>
+              <div>
+                <p class="eyebrow">Paper 2</p>
+                <h3>Algorithms and programming</h3>
+              </div>
+            </div>
+            <div class="paper-sections">
+              <section class="empty-board checklist-board" id="paper-2-checklist">
+                <span class="board-label">Checklist</span>
+                <div class="syllabus-checklist" id="paper2Checklist"></div>
+              </section>
+              <section class="empty-board past-paper-board" id="paper-2-past-paper">
+                <span class="board-label">Past paper</span>
+                <div class="past-paper-catalog" id="paper2PastPapers"></div>
+              </section>
+            </div>
+          </article>
+        </div>
+      </section>
+      </main>
+    </div>
+
+    <footer>
+      <span>PaperLens for CAIE Computer Science revision</span>
+      <span>Local-first study tool. Not affiliated with Cambridge or CAIE.</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
