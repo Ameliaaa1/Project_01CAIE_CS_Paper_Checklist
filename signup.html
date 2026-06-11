@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign up - PaperLens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <aside class="auth-aside">
+        <div class="auth-topline">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">CS</span>
+            <span>PaperLens</span>
+          </a>
+          <a class="home-link" href="index.html">Home</a>
+        </div>
+        <div class="auth-copy">
+          <h1>Create your study account.</h1>
+          <p>Start with your email, then add your name and a secure password to save access to PaperLens.</p>
+        </div>
+      </aside>
+
+      <section class="auth-main" aria-label="Sign up">
+        <div class="auth-card">
+          <h2>Sign up</h2>
+
+          <form id="signupForm">
+            <div class="auth-step" id="emailStep">
+              <label>
+                Email
+                <input id="signupEmail" name="email" type="email" autocomplete="email" required />
+              </label>
+              <button class="auth-button" type="button" id="checkEmailButton">Continue</button>
+            </div>
+
+            <div class="auth-step" id="nameStep" hidden>
+              <div class="name-grid">
+                <label>
+                  First name
+                  <input id="firstNameInput" name="firstName" type="text" autocomplete="given-name" required />
+                </label>
+                <label>
+                  Last name
+                  <input id="lastNameInput" name="lastName" type="text" autocomplete="family-name" required />
+                </label>
+              </div>
+              <div class="auth-actions">
+                <button class="auth-button secondary" type="button" data-back-to="emailStep">Back</button>
+                <button class="auth-button" type="button" id="nameContinueButton">Continue</button>
+              </div>
+            </div>
+
+            <div class="auth-step" id="passwordStep" hidden>
+              <label>
+                Password
+                <input id="signupPassword" name="password" type="password" autocomplete="new-password" minlength="8" required />
+              </label>
+              <div class="password-rules" id="passwordRules" aria-live="polite">
+                <span class="password-rule" data-rule="length">8 characters</span>
+                <span class="password-rule" data-rule="letter">one letter</span>
+                <span class="password-rule" data-rule="number">one number</span>
+              </div>
+              <div class="auth-actions">
+                <button class="auth-button secondary" type="button" data-back-to="nameStep">Back</button>
+                <button class="auth-button" type="submit">Create account</button>
+              </div>
+            </div>
+          </form>
+
+          <p class="auth-message" id="authMessage" aria-live="polite"></p>
+          <p class="auth-switch">Already registered? <a href="login.html">Log in</a></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="auth.js"></script>
+  </body>
+</html>

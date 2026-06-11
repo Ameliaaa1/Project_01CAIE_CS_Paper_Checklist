@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "example-user-id",
+      "email": "student@example.com",
+      "firstName": "Example",
+      "lastName": "Student",
+      "passwordHash": "pbkdf2-sha256-password-hash",
+      "passwordSalt": "random-password-salt",
+      "purchased": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "purchasedAt": null,
+      "checkoutSessionId": null
+    }
+  ]
+}

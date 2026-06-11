@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout - PaperLens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <aside class="auth-aside">
+        <div class="auth-topline">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">CS</span>
+            <span>PaperLens</span>
+          </a>
+          <a class="home-link" href="index.html">Home</a>
+        </div>
+        <div class="auth-copy">
+          <h1>Lifetime access.</h1>
+          <p>This local checkout page stands in for a Stripe payment link while the product flow is being designed.</p>
+        </div>
+      </aside>
+
+      <section class="auth-main" aria-label="Checkout">
+        <div class="auth-card">
+          <h2>Pay CNY 20</h2>
+          <p>Complete this checkout to unlock PaperLens for your account.</p>
+          <div class="checkout-summary">
+            <span>Checklist library</span>
+            <span>Past papers</span>
+            <span>Topic question sets</span>
+            <span>Lifetime updates</span>
+          </div>
+          <button class="auth-button" id="completeCheckoutButton" type="button">I have paid</button>
+          <p class="auth-message" id="authMessage" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>

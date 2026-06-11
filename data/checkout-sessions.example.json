@@ -1,0 +1,15 @@
+{
+  "sessions": [
+    {
+      "id": "example-checkout-session-id",
+      "userId": "example-user-id",
+      "email": "student@example.com",
+      "amount": 20,
+      "currency": "CNY",
+      "status": "pending",
+      "checkoutUrl": "http://127.0.0.1:3000/checkout.html?session=example-checkout-session-id",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "paidAt": null
+    }
+  ]
+}

@@ -802,10 +802,14 @@ const paperSessions = [
   { year: 2019, season: "Oct/Nov", code: "w", folder: "2019-oct-nov", components: ["11", "12", "13", "21", "22", "23"], legacy: true }
 ];
 
+const accessStorageKey = "paperlensAccess";
+const previewRecentPaperSessions = 1;
+
 const state = {
   docs: [],
   results: [],
-  checklist: []
+  checklist: [],
+  auth: loadAccessState()
 };
 
 const $ = (id) => document.getElementById(id);
@@ -823,6 +827,11 @@ $("exportCsv")?.addEventListener("click", () => download("paperlens-checklist.cs
 $("exportJson")?.addEventListener("click", () => download("paperlens-checklist.json", JSON.stringify(state.checklist, null, 2), "application/json"));
 $("expandChapter")?.addEventListener("click", () => setChapterDetails(true));
 $("collapseChapter")?.addEventListener("click", () => setChapterDetails(false));
+$("loginForm")?.addEventListener("submit", handleLoginSubmit);
+$("purchaseButton")?.addEventListener("click", buyLifetimeAccess);
+$("topbarBuyButton")?.addEventListener("click", buyLifetimeAccess);
+$("purchaseCloseButton")?.addEventListener("click", closePurchaseModal);
+$("createCheckoutButton")?.addEventListener("click", createCheckoutLink);
 $("knowledgeSearch")?.addEventListener("submit", async (event) => {
   event.preventDefault();
   const bestMatch = (await renderKnowledgeSearchResults($("knowledgeSearchInput").value))[0];
@@ -895,11 +904,13 @@ function analyzeMaterialsLocally() {
 
 function renderPastPaperCatalogs() {
   renderPastPaperArchive("pastPaperArchive");
+  applyAccessState();
 }
 
 function renderSyllabusChecklists() {
   renderSyllabusChecklist("paper1Checklist", syllabusChecklist.paper1);
   renderSyllabusChecklist("paper2Checklist", syllabusChecklist.paper2);
+  applyAccessState();
 }
 
 function renderSyllabusChecklist(containerId, chapters) {
@@ -909,34 +920,290 @@ function renderSyllabusChecklist(containerId, chapters) {
   container.innerHTML = chapters
     .map((chapter) => {
       const chapterStats = probabilityForChapter(chapter);
+      const locked = isLockedChapter(chapter);
       return `
-      <article class="syllabus-chapter" id="${chapterId(chapter.chapter)}">
+      <article class="syllabus-chapter ${locked ? "is-locked" : ""}" id="${chapterId(chapter.chapter)}" data-access-locked="${locked}">
         <h3>
           <span>${chapter.chapter}. ${chapter.title}</span>
           ${probabilityBadge(chapterStats)}
         </h3>
-        <div class="syllabus-section-list">
-          ${chapter.sections
-            .map((section) => {
-              const sectionStats = probabilityForSection(section);
-              return `
-              <section class="syllabus-section" id="${sectionId(section.code)}">
-                <h4>
-                  <span>${section.code} ${section.title}</span>
-                  ${probabilityBadge(sectionStats)}
-                </h4>
-                ${sectionChecklist(section)}
-                ${sectionVisual(section)}
-                ${sectionExamQuestions(section)}
-              </section>
-            `;
-            })
-            .join("")}
-        </div>
+        ${chapterSectionList(chapter)}
       </article>
     `;
     })
     .join("");
+}
+
+function chapterSectionList(chapter) {
+  return `
+    <div class="syllabus-section-list">
+      ${chapter.sections
+        .map((section) => {
+          const sectionStats = probabilityForSection(section);
+          return `
+          <section class="syllabus-section" id="${sectionId(section.code)}">
+            <h4>
+              <span>${section.code} ${section.title}</span>
+              ${probabilityBadge(sectionStats)}
+            </h4>
+            ${sectionChecklist(section)}
+            ${sectionVisual(section)}
+            ${sectionExamQuestions(section)}
+          </section>
+        `;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
+function loadAccessState() {
+  try {
+    const stored = JSON.parse(localStorage.getItem(accessStorageKey) || "{}");
+    return {
+      loggedIn: false,
+      purchased: false,
+      user: null,
+      ...stored,
+      purchased: false
+    };
+  } catch {
+    return { loggedIn: false, purchased: false, user: null };
+  }
+}
+
+function saveAccessState() {
+  localStorage.setItem(accessStorageKey, JSON.stringify(state.auth));
+}
+
+function hasFullAccess() {
+  return Boolean(state.auth.loggedIn && state.auth.purchased);
+}
+
+function isLockedChapter(chapter) {
+  return !hasFullAccess() && String(chapter.chapter) !== "1";
+}
+
+function lockedOverlay(message) {
+  return `
+    <div class="locked-overlay" aria-hidden="true">
+      <span class="lock-icon">Lock</span>
+      <strong>Premium content</strong>
+      <p>${message}</p>
+    </div>
+  `;
+}
+
+function handleLoginSubmit(event) {
+  event.preventDefault();
+  const username = $("usernameInput")?.value.trim() || "";
+  const email = $("emailInput")?.value.trim() || "";
+  const password = $("passwordInput")?.value || "";
+
+  if (!username || !email || password.length < 6) {
+    updateLoginMessage("Please enter a username, valid email and at least 6 password characters.");
+    return;
+  }
+
+  state.auth = {
+    ...state.auth,
+    loggedIn: true,
+    user: { username, email }
+  };
+  saveAccessState();
+  updateLoginMessage("Logged in. Buy lifetime access to unlock every checklist and paper.");
+  applyAccessState();
+}
+
+function buyLifetimeAccess() {
+  if (!state.auth.loggedIn) {
+    window.location.href = "login.html?return=buy";
+    return;
+  }
+
+  if (hasFullAccess()) return;
+  openPurchaseModal();
+}
+
+function logoutAccess() {
+  state.auth = { loggedIn: false, purchased: false, user: null };
+  saveAccessState();
+  $("loginForm")?.reset();
+  updateLoginMessage("You are signed out. Preview mode is active.");
+  refreshAccessControlledContent();
+}
+
+function updateLoginMessage(message) {
+  const messageNode = $("loginMessage");
+  if (messageNode) messageNode.textContent = message;
+}
+
+function openPurchaseModal() {
+  const modal = $("purchaseModal");
+  if (!modal) return;
+  $("paymentLinkBox")?.setAttribute("hidden", "");
+  updatePurchaseMessage("");
+  modal.hidden = false;
+}
+
+function closePurchaseModal() {
+  const modal = $("purchaseModal");
+  if (modal) modal.hidden = true;
+}
+
+async function createCheckoutLink() {
+  if (!state.auth.loggedIn || !state.auth.user?.id) {
+    window.location.href = "login.html?return=buy";
+    return;
+  }
+
+  updatePurchaseMessage("Creating your payment link...");
+  try {
+    const response = await fetch("/api/billing/create-checkout", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        userId: state.auth.user.id,
+        email: state.auth.user.email
+      })
+    });
+    const data = await response.json();
+    if (!response.ok) {
+      if (response.status === 401 || response.status === 404) {
+        state.auth = { loggedIn: false, purchased: false, user: null };
+        saveAccessState();
+        window.location.href = "login.html?return=buy";
+        return;
+      }
+      updatePurchaseMessage(data.error || "Could not create payment link.");
+      return;
+    }
+    if (data.alreadyPurchased && data.user) {
+      state.auth = { ...state.auth, purchased: true, user: data.user };
+      saveAccessState();
+      refreshAccessControlledContent();
+      closePurchaseModal();
+      return;
+    }
+
+    const paymentLink = $("paymentLink");
+    const paymentLinkBox = $("paymentLinkBox");
+    if (paymentLink && paymentLinkBox) {
+      paymentLink.href = data.checkoutUrl;
+      paymentLink.textContent = data.checkoutUrl;
+      paymentLinkBox.hidden = false;
+    }
+    updatePurchaseMessage("Open the checkout link to finish payment.");
+  } catch {
+    updatePurchaseMessage("Could not reach the checkout server.");
+  }
+}
+
+function updatePurchaseMessage(message) {
+  const messageNode = $("purchaseMessage");
+  if (messageNode) messageNode.textContent = message;
+}
+
+function applyAccessState() {
+  document.body.classList.toggle("has-full-access", hasFullAccess());
+  document.body.classList.toggle("is-logged-in", state.auth.loggedIn);
+  updateAccountUi();
+  updateLockedContent();
+}
+
+function refreshAccessControlledContent() {
+  renderPastPaperArchive("pastPaperArchive");
+  renderSyllabusChecklist("paper1Checklist", syllabusChecklist.paper1);
+  renderSyllabusChecklist("paper2Checklist", syllabusChecklist.paper2);
+  applyAccessState();
+}
+
+async function syncAuthStateFromServer() {
+  if (!state.auth.loggedIn || !state.auth.user?.id || !state.auth.user?.email) return;
+
+  try {
+    const response = await fetch("/api/auth/session", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        userId: state.auth.user.id,
+        email: state.auth.user.email
+      })
+    });
+    if (!response.ok) {
+      state.auth = { loggedIn: false, purchased: false, user: null };
+      saveAccessState();
+      refreshAccessControlledContent();
+      return;
+    }
+    const data = await response.json();
+    state.auth = {
+      ...state.auth,
+      loggedIn: true,
+      purchased: Boolean(data.user.purchased),
+      user: data.user
+    };
+    saveAccessState();
+    refreshAccessControlledContent();
+  } catch {
+    updateAccountUi();
+  }
+}
+
+function updateAccountUi() {
+  const status = $("accountStatus");
+  const buyButton = $("topbarBuyButton");
+  const purchaseButton = $("purchaseButton");
+  const accessMeter = $("accessMeter");
+  document.querySelectorAll(".auth-guest-action").forEach((action) => {
+    const hideGuestAction = Boolean(state.auth.loggedIn);
+    action.hidden = hideGuestAction;
+    action.style.display = hideGuestAction ? "none" : "";
+  });
+
+  if (status) {
+    if (hasFullAccess()) status.textContent = `Logged in: ${state.auth.user?.username || "User"} - Lifetime access`;
+    else if (state.auth.loggedIn) status.textContent = `Logged in: ${state.auth.user?.username || "User"} - Buy access to unlock`;
+    else status.textContent = "Guest preview";
+  }
+
+  if (buyButton) {
+    const hideBuyButton = hasFullAccess();
+    buyButton.hidden = hideBuyButton;
+    buyButton.style.display = hideBuyButton ? "none" : "";
+    buyButton.textContent = "Buy access";
+  }
+  if (purchaseButton) {
+    purchaseButton.textContent = hasFullAccess() ? "Purchased" : "Buy lifetime access";
+    purchaseButton.disabled = hasFullAccess();
+  }
+  if (accessMeter) {
+    accessMeter.innerHTML = hasFullAccess()
+      ? "<span>Lifetime access</span><strong>Everything unlocked</strong>"
+      : state.auth.loggedIn
+        ? "<span>Logged in preview</span><strong>Purchase required for full access</strong>"
+        : "<span>Preview mode</span><strong>Partial content visible</strong>";
+  }
+}
+
+function updateLockedContent() {
+  document.querySelectorAll("[data-access-locked]").forEach((node) => {
+    const locked = node.dataset.accessLocked === "true" && !hasFullAccess();
+    node.classList.toggle("is-locked", locked);
+    node.setAttribute("aria-disabled", String(locked));
+  });
+}
+
+function openPurchaseModalFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("buy") !== "1") return;
+  if (!state.auth.loggedIn) {
+    window.location.href = "login.html?return=buy";
+    return;
+  }
+  if (!hasFullAccess()) {
+    window.requestAnimationFrame(openPurchaseModal);
+  }
 }
 
 function slugPart(value) {
@@ -1000,7 +1267,7 @@ function sectionExamQuestions(section) {
                       </span>
                       <span class="pattern-question">${pattern.question}</span>
                     </summary>
-                    <p class="pattern-answer">${highlightKeywords(pattern.answer)}</p>
+                    ${patternAnswerMarkup(pattern.answer)}
                   </details>
                 `
                 )
@@ -1010,6 +1277,29 @@ function sectionExamQuestions(section) {
         `
         )
         .join("")}
+    </div>
+  `;
+}
+
+function patternAnswerMarkup(answer) {
+  if (!answer.includes(";")) {
+    return `<p class="pattern-answer">${highlightKeywords(answer)}</p>`;
+  }
+
+  const labelMatch = answer.match(/^\s*(MS(?:\s+terms)?):\s*/i);
+  const label = labelMatch ? labelMatch[1] : "MS";
+  const answerBody = labelMatch ? answer.slice(labelMatch[0].length) : answer;
+  const points = answerBody
+    .split(";")
+    .map((point) => point.trim())
+    .filter(Boolean);
+
+  return `
+    <div class="pattern-answer pattern-answer-points">
+      <span class="answer-label">${label} points</span>
+      <ul>
+        ${points.map((point) => `<li>${highlightKeywords(point)}</li>`).join("")}
+      </ul>
     </div>
   `;
 }
@@ -1460,6 +1750,7 @@ renderSyllabusChecklists();
 renderChapterOne();
 renderKnowledgeSearchResults("");
 renderSidebarNav();
+syncAuthStateFromServer();
 document.querySelectorAll(".nav-toggle[data-href]").forEach((toggle) => {
   toggle.addEventListener("click", handleNavToggleClick);
 });
@@ -1467,6 +1758,7 @@ document.addEventListener("click", handlePaperSourceClick);
 document.addEventListener("click", handleAnchorClick);
 window.addEventListener("load", () => {
   if (window.location.hash) scrollToAnchorTarget(window.location.hash, { behavior: "auto", updateHistory: false });
+  openPurchaseModalFromUrl();
 });
 
 function handleAnchorClick(event) {
@@ -1520,7 +1812,10 @@ function openSidebarBranch(hash) {
   const branch = [...document.querySelectorAll(".nav-branch")].find(
     (group) => group.querySelector(`[href="${hash}"]`) || group.querySelector(`.nav-toggle[data-href="${hash}"]`)
   );
-  if (branch) branch.classList.add("is-open");
+  if (branch) {
+    branch.classList.add("is-open");
+    branch.closest(".checklist-nav-branch")?.classList.add("is-open");
+  }
 }
 
 function renderSidebarNav() {
@@ -1553,8 +1848,12 @@ function renderSidebarNav() {
 function sidebarPaperGroup(group) {
   return `
     <a class="nav-link level-1" href="#${group.paperId}">${group.title}</a>
-    <a class="nav-link level-2" href="#${group.checklistId}">Checklist</a>
-    ${group.chapters.map(sidebarChapterBranch).join("")}
+    <div class="nav-branch checklist-nav-branch">
+      <button class="nav-link level-2 nav-toggle" type="button" data-href="#${group.checklistId}">Checklist</button>
+      <div class="checklist-nav-children">
+        ${group.chapters.map(sidebarChapterBranch).join("")}
+      </div>
+    </div>
   `;
 }
 
@@ -2318,18 +2617,19 @@ function pastPaperCatalogMarkup(paperPrefix = "") {
 
   return `
     <div class="catalog-recent">
-      ${recentSessions.map((session) => catalogSessionMarkup(session, paperPrefix)).join("")}
+      ${recentSessions.map((session, index) => catalogSessionMarkup(session, paperPrefix, !hasFullAccess() && index >= previewRecentPaperSessions)).join("")}
     </div>
-    <details class="older-catalog">
+    <details class="older-catalog ${hasFullAccess() ? "" : "is-locked"}" data-access-locked="${!hasFullAccess()}">
       <summary>Show older papers (${olderSessions.length} sessions)</summary>
       <div class="older-catalog-list">
-        ${olderSessions.map((session) => catalogSessionMarkup(session, paperPrefix)).join("")}
+        ${olderSessions.map((session) => catalogSessionMarkup(session, paperPrefix, !hasFullAccess())).join("")}
       </div>
+      ${hasFullAccess() ? "" : lockedOverlay("Buy lifetime access to download the full historical paper archive.")}
     </details>
   `;
 }
 
-function catalogSessionMarkup(session, paperPrefix = "") {
+function catalogSessionMarkup(session, paperPrefix = "", locked = false) {
   const components = paperPrefix
     ? session.components.filter((component) => component.startsWith(paperPrefix))
     : session.components;
@@ -2341,7 +2641,7 @@ function catalogSessionMarkup(session, paperPrefix = "") {
     : [];
 
   return `
-    <details class="catalog-session" id="paper-session-${session.code}${String(session.year).slice(-2)}${paperPrefix ? `-${paperPrefix}` : ""}">
+    <details class="catalog-session ${locked ? "is-locked" : ""}" id="paper-session-${session.code}${String(session.year).slice(-2)}${paperPrefix ? `-${paperPrefix}` : ""}" data-access-locked="${locked}">
       <summary>${session.year} ${session.season}</summary>
       <div class="catalog-group">
         <span class="catalog-title">Question paper</span>
@@ -2359,6 +2659,7 @@ function catalogSessionMarkup(session, paperPrefix = "") {
             </div>`
           : ""
       }
+      ${locked ? lockedOverlay("This session is included in the lifetime-access archive.") : ""}
     </details>
   `;
 }

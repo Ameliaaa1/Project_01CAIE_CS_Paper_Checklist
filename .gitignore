@@ -1,5 +1,7 @@
 .DS_Store
 .tmp_papers/
+data/*.json
+!data/*.example.json
 textbook_syllabus/*
 !textbook_syllabus/pastpaper/
 !textbook_syllabus/pastpaper/**/

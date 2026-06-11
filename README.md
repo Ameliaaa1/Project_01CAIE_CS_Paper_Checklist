@@ -28,6 +28,23 @@ Then open http://localhost:3000.
 
 The front end still keeps a browser-side fallback for the checklist/search logic, so the original local-first behavior is preserved when possible.
 
+## User Database
+
+The server stores runtime user and checkout data in `data/users.json` and `data/checkout-sessions.json`.
+Those files are intentionally ignored because they can contain emails, password hashes, salts, and purchase records.
+
+On startup, `server.js` creates both runtime database files automatically when they are missing:
+
+- `data/users.json` with `{ "users": [] }`
+- `data/checkout-sessions.json` with `{ "sessions": [] }`
+
+Safe schema examples are committed as:
+
+- `data/users.example.json`
+- `data/checkout-sessions.example.json`
+
+For testing or deployment, set `DATA_DIR=/path/to/private/data` to keep production user data outside the repository checkout.
+
 ## Project Structure
 
 - `index.html` - app markup
@@ -36,3 +53,4 @@ The front end still keeps a browser-side fallback for the checklist/search logic
 - `server.js` - Node HTTP server, static hosting, analysis/search/export API
 - `package.json` - app scripts
 - `assets/study-workspace.png` - generated hero visual
+- `data/*.example.json` - safe user database schema examples

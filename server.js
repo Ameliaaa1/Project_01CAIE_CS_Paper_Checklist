@@ -1,9 +1,14 @@
 const fs = require("node:fs");
 const http = require("node:http");
+const crypto = require("node:crypto");
 const path = require("node:path");
 const vm = require("node:vm");
 
 const rootDir = __dirname;
+const dataDir = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(rootDir, "data");
+const usersDbPath = path.join(dataDir, "users.json");
+const checkoutDbPath = path.join(dataDir, "checkout-sessions.json");
+const lifetimeAccessPriceCny = 20;
 const port = Number(process.env.PORT || 3000);
 const host = process.env.HOST || "127.0.0.1";
 
@@ -20,6 +25,7 @@ const mimeTypes = {
 };
 
 const data = loadAppData();
+ensureUserDatabase();
 
 const server = http.createServer(async (req, res) => {
   try {
@@ -46,6 +52,47 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
+    if (url.pathname === "/api/auth/check-email" && req.method === "POST") {
+      const body = await readJsonBody(req);
+      const email = normaliseEmail(body.email);
+      if (!isValidEmail(email)) {
+        sendJson(res, { error: "Enter a valid email address." }, 400);
+        return;
+      }
+      sendJson(res, { registered: Boolean(findUserByEmail(email)) });
+      return;
+    }
+
+    if (url.pathname === "/api/auth/signup" && req.method === "POST") {
+      const body = await readJsonBody(req);
+      sendJson(res, createUser(body), 201);
+      return;
+    }
+
+    if (url.pathname === "/api/auth/login" && req.method === "POST") {
+      const body = await readJsonBody(req);
+      sendJson(res, loginUser(body));
+      return;
+    }
+
+    if (url.pathname === "/api/auth/session" && req.method === "POST") {
+      const body = await readJsonBody(req);
+      sendJson(res, getUserSession(body));
+      return;
+    }
+
+    if (url.pathname === "/api/billing/create-checkout" && req.method === "POST") {
+      const body = await readJsonBody(req);
+      sendJson(res, createCheckoutSession(body, req));
+      return;
+    }
+
+    if (url.pathname === "/api/billing/complete" && req.method === "POST") {
+      const body = await readJsonBody(req);
+      sendJson(res, completeCheckoutSession(body));
+      return;
+    }
+
     if (url.pathname === "/api/analyze" && req.method === "POST") {
       const body = await readJsonBody(req);
       sendJson(res, analyzeMaterials(body));
@@ -67,7 +114,7 @@ const server = http.createServer(async (req, res) => {
 
     serveStatic(url.pathname, res);
   } catch (error) {
-    sendJson(res, { error: "Server error", detail: error.message }, 500);
+    sendJson(res, { error: error.status ? error.message : "Server error", detail: error.message }, error.status || 500);
   }
 });
 
@@ -290,6 +337,195 @@ function serveStatic(requestPath, res) {
     res.writeHead(200, { "Content-Type": mimeTypes[path.extname(filePath)] || "application/octet-stream" });
     res.end(content);
   });
+}
+
+function ensureUserDatabase() {
+  if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
+  if (!fs.existsSync(usersDbPath)) {
+    fs.writeFileSync(usersDbPath, JSON.stringify({ users: [] }, null, 2));
+  }
+  if (!fs.existsSync(checkoutDbPath)) {
+    fs.writeFileSync(checkoutDbPath, JSON.stringify({ sessions: [] }, null, 2));
+  }
+}
+
+function readUsersDb() {
+  ensureUserDatabase();
+  try {
+    const db = JSON.parse(fs.readFileSync(usersDbPath, "utf8"));
+    return { users: Array.isArray(db.users) ? db.users : [] };
+  } catch {
+    return { users: [] };
+  }
+}
+
+function writeUsersDb(db) {
+  fs.writeFileSync(usersDbPath, JSON.stringify(db, null, 2));
+}
+
+function readCheckoutDb() {
+  ensureUserDatabase();
+  try {
+    const db = JSON.parse(fs.readFileSync(checkoutDbPath, "utf8"));
+    return { sessions: Array.isArray(db.sessions) ? db.sessions : [] };
+  } catch {
+    return { sessions: [] };
+  }
+}
+
+function writeCheckoutDb(db) {
+  fs.writeFileSync(checkoutDbPath, JSON.stringify(db, null, 2));
+}
+
+function normaliseEmail(email) {
+  return String(email || "").trim().toLowerCase();
+}
+
+function isValidEmail(email) {
+  return /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+$/.test(email);
+}
+
+function isStrongPassword(password) {
+  return typeof password === "string" && password.length >= 8 && /[a-z]/i.test(password) && /\d/.test(password);
+}
+
+function findUserByEmail(email) {
+  const db = readUsersDb();
+  return db.users.find((user) => user.email === email) || null;
+}
+
+function publicUser(user) {
+  return {
+    id: user.id,
+    email: user.email,
+    firstName: user.firstName,
+    lastName: user.lastName,
+    username: `${user.firstName} ${user.lastName}`.trim(),
+    purchased: Boolean(user.purchased)
+  };
+}
+
+function hashPassword(password, salt = crypto.randomBytes(16).toString("hex")) {
+  const hash = crypto.pbkdf2Sync(password, salt, 120000, 32, "sha256").toString("hex");
+  return { salt, hash };
+}
+
+function createUser(body) {
+  const email = normaliseEmail(body.email);
+  const firstName = String(body.firstName || "").trim();
+  const lastName = String(body.lastName || "").trim();
+  const password = String(body.password || "");
+
+  if (!isValidEmail(email)) throwHttpError("Enter a valid email address.", 400);
+  if (!firstName || !lastName) throwHttpError("Enter both first name and last name.", 400);
+  if (!isStrongPassword(password)) throwHttpError("Password must be at least 8 characters and include letters and numbers.", 400);
+
+  const db = readUsersDb();
+  if (db.users.some((user) => user.email === email)) {
+    throwHttpError("This email is already registered.", 409);
+  }
+
+  const passwordData = hashPassword(password);
+  const user = {
+    id: crypto.randomUUID(),
+    email,
+    firstName,
+    lastName,
+    passwordHash: passwordData.hash,
+    passwordSalt: passwordData.salt,
+    purchased: false,
+    createdAt: new Date().toISOString()
+  };
+
+  db.users.push(user);
+  writeUsersDb(db);
+  return { ok: true, user: publicUser(user) };
+}
+
+function loginUser(body) {
+  const email = normaliseEmail(body.email);
+  const password = String(body.password || "");
+  const user = findUserByEmail(email);
+
+  if (!user) throwHttpError("No account exists for this email.", 404);
+  const passwordData = hashPassword(password, user.passwordSalt);
+  if (passwordData.hash !== user.passwordHash) {
+    throwHttpError("Incorrect password.", 401);
+  }
+
+  return { ok: true, user: publicUser(user) };
+}
+
+function getUserSession(body) {
+  const email = normaliseEmail(body.email);
+  const userId = String(body.userId || "").trim();
+  const db = readUsersDb();
+  const user = db.users.find((candidate) => candidate.id === userId && candidate.email === email);
+  if (!user) throwHttpError("Session user not found.", 404);
+  return { ok: true, user: publicUser(user) };
+}
+
+function createCheckoutSession(body, req) {
+  const email = normaliseEmail(body.email);
+  const userId = String(body.userId || "").trim();
+  const db = readUsersDb();
+  const user = db.users.find((candidate) => candidate.id === userId && candidate.email === email);
+
+  if (!user) throwHttpError("Log in before buying access.", 401);
+  if (user.purchased) {
+    return { ok: true, alreadyPurchased: true, user: publicUser(user) };
+  }
+
+  const sessionId = crypto.randomUUID();
+  const origin = `http://${req.headers.host}`;
+  const checkoutUrl = `${origin}/checkout.html?session=${encodeURIComponent(sessionId)}`;
+  const checkoutDb = readCheckoutDb();
+  checkoutDb.sessions.push({
+    id: sessionId,
+    userId: user.id,
+    email: user.email,
+    amount: lifetimeAccessPriceCny,
+    currency: "CNY",
+    status: "pending",
+    checkoutUrl,
+    createdAt: new Date().toISOString()
+  });
+  writeCheckoutDb(checkoutDb);
+
+  return {
+    ok: true,
+    checkoutUrl,
+    sessionId,
+    amount: lifetimeAccessPriceCny,
+    currency: "CNY"
+  };
+}
+
+function completeCheckoutSession(body) {
+  const sessionId = String(body.sessionId || "").trim();
+  const checkoutDb = readCheckoutDb();
+  const session = checkoutDb.sessions.find((candidate) => candidate.id === sessionId);
+
+  if (!session) throwHttpError("Checkout session not found.", 404);
+  session.status = "paid";
+  session.paidAt = new Date().toISOString();
+  writeCheckoutDb(checkoutDb);
+
+  const usersDb = readUsersDb();
+  const user = usersDb.users.find((candidate) => candidate.id === session.userId);
+  if (!user) throwHttpError("User for checkout session not found.", 404);
+  user.purchased = true;
+  user.purchasedAt = session.paidAt;
+  user.checkoutSessionId = session.id;
+  writeUsersDb(usersDb);
+
+  return { ok: true, user: publicUser(user) };
+}
+
+function throwHttpError(message, status) {
+  const error = new Error(message);
+  error.status = status;
+  throw error;
 }
 
 function readJsonBody(req) {
