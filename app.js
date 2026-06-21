@@ -809,6 +809,9 @@ const state = {
   docs: [],
   results: [],
   checklist: [],
+  questionMatches: [],
+  selectedQuestionIds: new Set(),
+  questionAccess: null,
   auth: loadAccessState()
 };
 
@@ -839,6 +842,41 @@ $("knowledgeSearch")?.addEventListener("submit", async (event) => {
 });
 $("knowledgeSearchInput")?.addEventListener("input", (event) => {
   renderKnowledgeSearchResults(event.target.value);
+});
+$("questionFinderSearch")?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  await renderQuestionFinderResults($("questionFinderInput")?.value || "");
+});
+$("questionFinderInput")?.addEventListener("input", (event) => {
+  if (!event.target.value.trim()) renderQuestionFinderResults("");
+});
+document.querySelectorAll(".question-syllabus-input").forEach((input) => {
+  input.addEventListener("change", () => {
+    clearQuestionSelection();
+    state.questionMatches = [];
+    const results = $("questionFinderResults");
+    if (results) results.innerHTML = `<p class="question-empty-state">Enter a knowledge point to search the selected syllabus.</p>`;
+  });
+});
+$("clearQuestionSelection")?.addEventListener("click", clearQuestionSelection);
+$("downloadQuestionPdf")?.addEventListener("click", downloadSelectedQuestionPdf);
+$("questionFinderBuyButton")?.addEventListener("click", buyLifetimeAccess);
+$("questionImageCloseButton")?.addEventListener("click", closeQuestionImageModal);
+$("questionImageModal")?.addEventListener("click", (event) => {
+  if (event.target === event.currentTarget) closeQuestionImageModal();
+});
+document.addEventListener("click", handleQuestionPreviewClick);
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeQuestionImageModal();
+});
+document.querySelectorAll("[data-question-suggestion]").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const input = $("questionFinderInput");
+    if (!input) return;
+    input.value = button.dataset.questionSuggestion;
+    input.focus();
+    await renderQuestionFinderResults(input.value);
+  });
 });
 
 async function analyzeMaterials() {
@@ -1116,6 +1154,7 @@ function refreshAccessControlledContent() {
   renderSyllabusChecklist("paper1Checklist", syllabusChecklist.paper1);
   renderSyllabusChecklist("paper2Checklist", syllabusChecklist.paper2);
   applyAccessState();
+  loadQuestionFinderAccess();
 }
 
 async function syncAuthStateFromServer() {
@@ -1145,6 +1184,7 @@ async function syncAuthStateFromServer() {
     };
     saveAccessState();
     refreshAccessControlledContent();
+    loadQuestionFinderAccess();
   } catch {
     updateAccountUi();
   }
@@ -1749,8 +1789,10 @@ renderPastPaperCatalogs();
 renderSyllabusChecklists();
 renderChapterOne();
 renderKnowledgeSearchResults("");
+renderQuestionFinderResults("");
 renderSidebarNav();
 syncAuthStateFromServer();
+loadQuestionFinderAccess();
 document.querySelectorAll(".nav-toggle[data-href]").forEach((toggle) => {
   toggle.addEventListener("click", handleNavToggleClick);
 });
@@ -1759,6 +1801,9 @@ document.addEventListener("click", handleAnchorClick);
 window.addEventListener("load", () => {
   if (window.location.hash) scrollToAnchorTarget(window.location.hash, { behavior: "auto", updateHistory: false });
   openPurchaseModalFromUrl();
+});
+window.addEventListener("hashchange", () => {
+  if (window.location.hash) scrollToAnchorTarget(window.location.hash, { behavior: "auto", updateHistory: false });
 });
 
 function handleAnchorClick(event) {
@@ -1800,8 +1845,15 @@ function scrollToAnchorTarget(hash, options = {}) {
   target.closest("details")?.setAttribute("open", "");
   if (options.expandSidebar !== false) openSidebarBranch(hash);
   const offset = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--anchor-offset")) || 0;
-  const targetTop = target.getBoundingClientRect().top + window.scrollY - offset;
-  window.scrollTo({ top: Math.max(targetTop, 0), behavior: options.behavior || "smooth" });
+  const scrollContainer = target.closest(".page-content");
+  if (scrollContainer) {
+    const containerTop = scrollContainer.getBoundingClientRect().top;
+    const targetTop = target.getBoundingClientRect().top - containerTop + scrollContainer.scrollTop - offset;
+    scrollContainer.scrollTo({ top: Math.max(targetTop, 0), behavior: options.behavior || "smooth" });
+  } else {
+    const targetTop = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: Math.max(targetTop, 0), behavior: options.behavior || "smooth" });
+  }
 
   if (options.updateHistory !== false && window.history.pushState) {
     window.history.pushState(null, "", hash);
@@ -1839,9 +1891,10 @@ function renderSidebarNav() {
 
   nav.innerHTML = `
     <a class="nav-link level-0" href="#home">Home</a>
+    <a class="nav-link level-0" href="#question-finder">Question finder</a>
     <a class="nav-link level-0" href="#igcse-0478">IGCSE 0478</a>
-    ${paperGroups.map(sidebarPaperGroup).join("")}
     <a class="nav-link level-1" href="#past-paper-archive">Past paper archive</a>
+    ${paperGroups.map(sidebarPaperGroup).join("")}
   `;
 }
 
@@ -1996,6 +2049,398 @@ function findKnowledgeMatches(query) {
     })
     .filter((entry) => entry.score >= 6)
     .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title));
+}
+
+function questionSearchIndex() {
+  return pastPaperQuestionBank.map((hit, index) => {
+    const section = syllabusSectionByCode(hit.section);
+    const sectionTitle = section ? `${section.code} ${section.title}` : hit.section;
+    const chapter = syllabusChapterForSection(hit.section);
+    const chapterTitle = chapter ? `${chapter.chapter}. ${chapter.title}` : "";
+    const topic = topicForQuestion(hit, section, chapter);
+    const source = hit.ref ? `${hit.paper} ${hit.ref}` : hit.paper;
+    const searchBody = [
+      hit.knowledge,
+      hit.question,
+      hit.answer,
+      sectionTitle,
+      chapterTitle,
+      topic.keywords.join(" ")
+    ].join(" ");
+
+    return {
+      ...hit,
+      syllabusId: hit.syllabusId || "caie-igcse-0478",
+      id: questionId(hit, index),
+      index,
+      source,
+      sectionTitle,
+      chapterTitle,
+      paperLabel: hit.paper,
+      qpTarget: paperChipIdFromPaper(hit.paper, "qp"),
+      msTarget: paperChipIdFromPaper(hit.paper, "ms"),
+      topicSummary: topic.summary,
+      tags: topic.keywords,
+      searchText: normaliseSearchText(searchBody),
+      tokens: searchTokens(searchBody)
+    };
+  });
+}
+
+async function renderQuestionFinderResults(query) {
+  const resultsContainer = $("questionFinderResults");
+  const status = $("questionFinderStatus");
+  if (!resultsContainer || !status) return [];
+
+  const trimmed = query.trim();
+  if (!trimmed) {
+    state.questionMatches = [];
+    status.textContent = "Choose a syllabus and enter a knowledge point.";
+    resultsContainer.innerHTML = `<p class="question-empty-state">Try a precise topic such as lossless compression, or a broader chapter phrase such as data storage.</p>`;
+    updateQuestionSelectionUi();
+    return [];
+  }
+
+  const syllabusIds = selectedQuestionSyllabusIds();
+  if (!syllabusIds.length) {
+    status.textContent = "Select at least one syllabus.";
+    return [];
+  }
+
+  let payload;
+  try {
+    payload = await findQuestionMatchesFromApi(trimmed, syllabusIds);
+  } catch (error) {
+    status.textContent = error.message || "Could not search the question bank.";
+    await loadQuestionFinderAccess();
+    return [];
+  }
+
+  const matches = payload.matches || [];
+  if (payload.access) renderQuestionFinderAccess(payload.access);
+  state.questionMatches = matches;
+  const exactCount = matches.filter((match) => match.isExact).length;
+  status.textContent = matches.length
+    ? `${matches.length} matching question${matches.length === 1 ? "" : "s"} found${exactCount ? `, ${exactCount} exact` : ""}.`
+    : "No related exam questions found.";
+
+  resultsContainer.innerHTML = matches.length
+    ? matches.map(questionResultMarkup).join("")
+    : `<p class="question-empty-state">No question in the indexed bank matches this term yet. Try a broader phrase, or add tags to the question bank for this knowledge point.</p>`;
+
+  resultsContainer.querySelectorAll("[data-question-select]").forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      const id = checkbox.dataset.questionSelect;
+      if (checkbox.checked) state.selectedQuestionIds.add(id);
+      else state.selectedQuestionIds.delete(id);
+      updateQuestionSelectionUi();
+    });
+  });
+
+  updateQuestionSelectionUi();
+  return matches;
+}
+
+async function findQuestionMatchesFromApi(query, syllabusIds) {
+  if (!window.location.protocol.startsWith("http")) throw new Error("Question Finder requires the PaperLens server.");
+  const response = await fetch("/api/question-search", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      query,
+      syllabusIds,
+      ...questionFinderIdentity()
+    })
+  });
+  const payload = await response.json();
+  if (!response.ok) {
+    const error = new Error(payload.error || "Question search failed.");
+    error.status = response.status;
+    throw error;
+  }
+  return payload;
+}
+
+function selectedQuestionSyllabusIds() {
+  return [...document.querySelectorAll(".question-syllabus-input:checked")].map((input) => input.value);
+}
+
+function questionFinderIdentity() {
+  return {
+    userId: state.auth.user?.id || "",
+    email: state.auth.user?.email || ""
+  };
+}
+
+async function loadQuestionFinderAccess() {
+  if (!window.location.protocol.startsWith("http")) return;
+  try {
+    const response = await fetch("/api/question-finder/access", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(questionFinderIdentity())
+    });
+    if (!response.ok) return;
+    renderQuestionFinderAccess(await response.json());
+  } catch {}
+}
+
+function renderQuestionFinderAccess(access) {
+  state.questionAccess = access;
+  const bar = $("questionFinderAccessBar");
+  const title = $("questionFinderAccessTitle");
+  const detail = $("questionFinderAccessDetail");
+  const loginLink = $("questionFinderLoginLink");
+  const buyButton = $("questionFinderBuyButton");
+  const section = $("question-finder");
+  const searchButton = $("questionFinderSubmit");
+  const searchLocked = !access.canSearch;
+
+  bar?.classList.toggle("has-full-access", Boolean(access.purchased));
+  bar?.classList.toggle("is-exhausted", Boolean(access.loggedIn && !access.purchased && access.remaining === 0));
+  section?.classList.toggle("is-search-locked", searchLocked);
+
+  if (!access.loggedIn) {
+    if (title) title.textContent = "Sign in to start";
+    if (detail) detail.textContent = "Two successful searches are included before purchase.";
+  } else if (access.purchased) {
+    if (title) title.textContent = "Full Question Finder access";
+    if (detail) detail.textContent = "Unlimited syllabus searches and original-format PDFs.";
+  } else if (access.remaining > 0) {
+    if (title) title.textContent = `${access.remaining} free search${access.remaining === 1 ? "" : "es"} remaining`;
+    if (detail) detail.textContent = "A search is counted only when at least one question is shown.";
+  } else {
+    if (title) title.textContent = "Free searches complete";
+    if (detail) detail.textContent = "Buy access to continue searching and building question sets.";
+  }
+
+  if (loginLink) loginLink.hidden = Boolean(access.loggedIn);
+  if (buyButton) buyButton.hidden = Boolean(access.purchased);
+  if (searchButton) searchButton.disabled = searchLocked;
+  document.querySelectorAll("[data-question-suggestion]").forEach((button) => {
+    button.disabled = searchLocked;
+  });
+}
+
+function findQuestionMatches(query) {
+  const normalisedQuery = normaliseSearchText(query);
+  const queryTokens = searchTokens(query);
+  if (!normalisedQuery || !queryTokens.length) return [];
+
+  return questionSearchIndex()
+    .map((entry) => {
+      const exactPhrase = entry.searchText.includes(normalisedQuery);
+      const tokenScore = queryTokens.reduce((total, token) => {
+        if (entry.tokens.includes(token)) return total + 22;
+        if (entry.tokens.some((entryToken) => entryToken.includes(token) || token.includes(entryToken))) return total + 13;
+        const closest = Math.max(...entry.tokens.map((entryToken) => similarityScore(token, entryToken)), 0);
+        return total + closest * 11;
+      }, 0);
+      const titleText = normaliseSearchText(`${entry.knowledge} ${entry.sectionTitle} ${entry.chapterTitle}`);
+      const titleBoost = titleText.includes(normalisedQuery) ? 34 : 0;
+      const score = (exactPhrase ? 84 : 0) + titleBoost + tokenScore / queryTokens.length;
+      return { ...entry, score: Math.round(score), isExact: exactPhrase || titleBoost > 0 };
+    })
+    .filter((entry) => entry.score >= 20)
+    .sort((a, b) => b.score - a.score || b.paper.localeCompare(a.paper))
+    .slice(0, 30);
+}
+
+function questionResultMarkup(match) {
+  const checked = state.selectedQuestionIds.has(match.id) ? "checked" : "";
+  const selectedClass = checked ? " is-selected" : "";
+  const questionUrl = questionPreviewUrl(match.id, "qp");
+  const answerUrl = questionPreviewUrl(match.id, "ms");
+  const questionAlt = `Original past-paper question ${match.source}`;
+  const answerAlt = `Original mark scheme answer ${match.source}`;
+  return `
+    <article class="question-result-card${selectedClass}" data-question-card="${match.id}">
+      <div class="question-card-head">
+        <input type="checkbox" aria-label="Select ${escapeHtml(match.source)}" data-question-select="${match.id}" ${checked} />
+        <div class="question-card-title">
+          <strong>${highlightSearchTerm(escapeHtml(match.knowledge), $("questionFinderInput")?.value || "")}</strong>
+          <div class="question-meta-row">
+            <span>${escapeHtml(match.source)}</span>
+            <span>Syllabus: ${escapeHtml(match.sectionTitle)}</span>
+          </div>
+        </div>
+      </div>
+      <button
+        class="question-preview-button"
+        type="button"
+        aria-label="Open ${escapeHtml(questionAlt)}"
+        data-question-preview-url="${escapeHtml(questionUrl)}"
+        data-question-preview-alt="${escapeHtml(questionAlt)}"
+      >
+        <img
+          class="original-question-preview"
+          src="${escapeHtml(questionUrl)}"
+          alt="${escapeHtml(questionAlt)}"
+          loading="lazy"
+        />
+      </button>
+      <details class="question-answer-preview">
+        <summary>View mark scheme answer</summary>
+        <button
+          class="question-preview-button question-answer-image-button"
+          type="button"
+          aria-label="Open ${escapeHtml(answerAlt)}"
+          data-question-preview-url="${escapeHtml(answerUrl)}"
+          data-question-preview-alt="${escapeHtml(answerAlt)}"
+        >
+          <img
+            class="original-question-preview"
+            src="${escapeHtml(answerUrl)}"
+            alt="${escapeHtml(answerAlt)}"
+            loading="lazy"
+          />
+        </button>
+      </details>
+    </article>
+  `;
+}
+
+function questionPreviewUrl(questionId, type = "qp") {
+  const params = new URLSearchParams({
+    id: questionId,
+    type,
+    userId: state.auth.user?.id || "",
+    email: state.auth.user?.email || ""
+  });
+  return `/api/question-preview?${params.toString()}`;
+}
+
+function handleQuestionPreviewClick(event) {
+  const button = event.target.closest("[data-question-preview-url]");
+  if (!button) return;
+  const modal = $("questionImageModal");
+  const image = $("questionImageModalImage");
+  if (!modal || !image) return;
+  image.src = button.dataset.questionPreviewUrl;
+  image.alt = button.dataset.questionPreviewAlt || "Original paper preview";
+  modal.hidden = false;
+  document.body.classList.add("question-image-modal-open");
+  $("questionImageCloseButton")?.focus();
+}
+
+function closeQuestionImageModal() {
+  const modal = $("questionImageModal");
+  const image = $("questionImageModalImage");
+  if (!modal || modal.hidden) return;
+  modal.hidden = true;
+  if (image) image.removeAttribute("src");
+  document.body.classList.remove("question-image-modal-open");
+}
+
+function updateQuestionSelectionUi() {
+  const count = state.selectedQuestionIds.size;
+  const countNode = $("questionSelectionCount");
+  const downloadButton = $("downloadQuestionPdf");
+  if (countNode) countNode.textContent = `${count} selected`;
+  if (downloadButton) {
+    downloadButton.disabled = count === 0;
+    downloadButton.textContent = count ? `Generate original PDF (${count})` : "Generate original PDF";
+    downloadButton.title = count ? "Download the selected questions as original past-paper PDF pages." : "Select at least one question first.";
+  }
+  document.querySelectorAll("[data-question-card]").forEach((card) => {
+    card.classList.toggle("is-selected", state.selectedQuestionIds.has(card.dataset.questionCard));
+  });
+}
+
+function clearQuestionSelection() {
+  state.selectedQuestionIds.clear();
+  document.querySelectorAll("[data-question-select]").forEach((checkbox) => {
+    checkbox.checked = false;
+  });
+  updateQuestionSelectionUi();
+}
+
+async function downloadSelectedQuestionPdf() {
+  const selectedIds = [...state.selectedQuestionIds];
+  if (!selectedIds.length) return;
+
+  const button = $("downloadQuestionPdf");
+  const originalText = button?.textContent || "Generate PDF";
+  if (button) {
+    button.disabled = true;
+    button.textContent = "Generating...";
+  }
+
+  try {
+    const response = await fetch("/api/question-pdf", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        questionIds: selectedIds,
+        query: $("questionFinderInput")?.value || "custom practice",
+        includeMarkScheme: Boolean($("includeMarkScheme")?.checked),
+        syllabusIds: selectedQuestionSyllabusIds(),
+        ...questionFinderIdentity()
+      })
+    });
+    if (!response.ok) {
+      let message = "PDF generation failed";
+      try {
+        const payload = await response.json();
+        message = payload.error || payload.detail || message;
+      } catch {}
+      throw new Error(message);
+    }
+    const blob = await response.blob();
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = filenameForQuestionPdf($("questionFinderInput")?.value || "paperlens-questions");
+    document.body.append(anchor);
+    anchor.click();
+    anchor.remove();
+    URL.revokeObjectURL(url);
+  } catch (error) {
+    const status = $("questionFinderStatus");
+    if (status) status.textContent = error.message || "Could not generate the PDF from the original papers. Please check the selected question sources.";
+  } finally {
+    if (button) {
+      button.disabled = state.selectedQuestionIds.size === 0;
+      button.textContent = originalText.startsWith("Generating") ? `Generate PDF (${state.selectedQuestionIds.size})` : originalText;
+      updateQuestionSelectionUi();
+    }
+  }
+}
+
+function filenameForQuestionPdf(query) {
+  const slug = slugPart(query || "custom-practice") || "custom-practice";
+  return `paperlens-${slug}-questions.pdf`;
+}
+
+function questionId(hit, index) {
+  return `${hit.paper}-${hit.ref || index}-${hit.section}`.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function syllabusSectionByCode(code) {
+  for (const chapters of Object.values(syllabusChecklist)) {
+    for (const chapter of chapters) {
+      const section = chapter.sections.find((candidate) => candidate.code === code);
+      if (section) return section;
+    }
+  }
+  return null;
+}
+
+function syllabusChapterForSection(code) {
+  for (const chapters of Object.values(syllabusChecklist)) {
+    for (const chapter of chapters) {
+      if (chapter.sections.some((section) => section.code === code)) return chapter;
+    }
+  }
+  return null;
+}
+
+function topicForQuestion(hit, section, chapter) {
+  const text = `${hit.knowledge} ${hit.question} ${hit.answer} ${section?.title || ""} ${chapter?.title || ""}`;
+  return {
+    summary: section ? `${section.code} ${section.title}` : hit.section,
+    keywords: extractSearchTerms(text)
+  };
 }
 
 function locateKnowledgePoint(match, query = "") {

@@ -6,9 +6,15 @@
   "type": "commonjs",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build:question-index": "node scripts/build-question-index.js"
   },
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.0",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^2.4.5"
   }
 }
