@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Manrope:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=buy-card-dark-1" />
+    <link rel="stylesheet" href="styles.css?v=exact-question-crop-1" />
   </head>
   <body>
     <header class="topbar">
@@ -49,7 +49,9 @@
         </form>
         <nav class="sidebar-nav" id="sidebarNav">
           <a class="nav-link level-0" href="#home">Home</a>
+          <a class="nav-link level-0" href="#question-finder">Question finder</a>
           <a class="nav-link level-0" href="#igcse-0478">IGCSE 0478</a>
+          <a class="nav-link level-1" href="#past-paper-archive">Past paper archive</a>
           <a class="nav-link level-1" href="#paper-1">Paper 1: Theory</a>
           <a class="nav-link level-2" href="#paper-1-checklist">Checklist</a>
           <div class="nav-branch">
@@ -90,7 +92,6 @@
           </div>
           <a class="nav-link level-3" href="#chapter-9">9. Databases</a>
           <a class="nav-link level-3" href="#chapter-10">10. Boolean logic</a>
-          <a class="nav-link level-1" href="#past-paper-archive">Past paper archive</a>
         </nav>
       </aside>
 
@@ -109,6 +110,76 @@
         </figure>
       </section>
 
+      <section class="question-finder-section" id="question-finder">
+        <div class="question-finder-topline">
+          <div class="section-head question-finder-head">
+            <p class="eyebrow">Question finder</p>
+            <h2>Build a focused past-paper set.</h2>
+            <p>Choose one or more syllabuses, search a knowledge point, then select questions for an original-format PDF.</p>
+          </div>
+          <div class="question-access-bar" id="questionFinderAccessBar">
+            <span class="question-access-indicator" aria-hidden="true"></span>
+            <div>
+              <strong id="questionFinderAccessTitle">Sign in to start</strong>
+              <span id="questionFinderAccessDetail">Two successful searches are included before purchase.</span>
+            </div>
+            <a class="question-access-action" id="questionFinderLoginLink" href="login.html">Log in</a>
+            <button class="question-access-action primary" id="questionFinderBuyButton" type="button">Buy access</button>
+          </div>
+        </div>
+
+        <div class="question-finder-shell">
+          <form class="question-finder-search" id="questionFinderSearch" role="search">
+            <fieldset class="syllabus-picker">
+              <legend>Search scope</legend>
+              <label class="syllabus-choice">
+                <input class="question-syllabus-input" type="checkbox" value="caie-igcse-0478" checked />
+                <span>
+                  <strong>Cambridge IGCSE Computer Science</strong>
+                  <small>0478 · Paper 1 and Paper 2</small>
+                </span>
+              </label>
+            </fieldset>
+            <label for="questionFinderInput">Knowledge point</label>
+            <div class="question-search-row">
+              <input
+                id="questionFinderInput"
+                type="search"
+                autocomplete="off"
+                placeholder="lossless, data storage, SQL, trace table..."
+              />
+              <button id="questionFinderSubmit" type="submit">Search</button>
+            </div>
+            <div class="topic-suggestion-row" aria-label="Suggested searches">
+              <button type="button" data-question-suggestion="lossless compression">lossless</button>
+              <button type="button" data-question-suggestion="data storage">data storage</button>
+              <button type="button" data-question-suggestion="two's complement">two's complement</button>
+              <button type="button" data-question-suggestion="SQL query">SQL</button>
+              <button type="button" data-question-suggestion="trace table">trace table</button>
+              <button type="button" data-question-suggestion="logic gates">logic gates</button>
+            </div>
+          </form>
+
+          <div class="question-builder-panel" aria-live="polite">
+            <div class="question-builder-summary">
+              <div>
+                <span id="questionFinderStatus">Choose a syllabus and enter a knowledge point.</span>
+                <strong id="questionSelectionCount">0 selected</strong>
+              </div>
+              <div class="question-builder-controls">
+                <label class="question-option">
+                  <input id="includeMarkScheme" type="checkbox" checked />
+                  <span>Include original mark scheme pages</span>
+                </label>
+                <button class="secondary-action" id="clearQuestionSelection" type="button">Clear</button>
+                <button class="primary-action" id="downloadQuestionPdf" type="button" disabled>Generate original PDF</button>
+              </div>
+            </div>
+            <div class="question-results" id="questionFinderResults"></div>
+          </div>
+        </div>
+      </section>
+
       <section class="igcse-hub" id="igcse-0478">
         <div class="section-head">
           <p class="eyebrow">IGCSE 0478</p>
@@ -120,6 +191,11 @@
         </div>
 
         <div class="syllabus-shell">
+          <section class="empty-board past-paper-board full-past-paper-board archive-after-finder" id="past-paper-archive">
+            <span class="board-label">Past paper archive</span>
+            <div class="past-paper-catalog combined-past-paper-catalog" id="pastPaperArchive"></div>
+          </section>
+
           <article class="paper-group" id="paper-1">
             <div class="paper-heading">
               <span class="zone-icon">P1</span>
@@ -152,10 +228,6 @@
             </div>
           </article>
 
-          <section class="empty-board past-paper-board full-past-paper-board" id="past-paper-archive">
-            <span class="board-label">Past paper</span>
-            <div class="past-paper-catalog combined-past-paper-catalog" id="pastPaperArchive"></div>
-          </section>
         </div>
       </section>
       </main>
@@ -192,6 +264,13 @@
       </div>
     </div>
 
-    <script src="app.js?v=buy-card-dark-1"></script>
+    <div class="question-image-modal" id="questionImageModal" hidden>
+      <div class="question-image-dialog" role="dialog" aria-modal="true" aria-label="Original paper preview">
+        <button class="question-image-close" id="questionImageCloseButton" type="button" aria-label="Close preview">×</button>
+        <img id="questionImageModalImage" alt="" />
+      </div>
+    </div>
+
+    <script src="app.js?v=question-answer-preview-1"></script>
   </body>
 </html>
