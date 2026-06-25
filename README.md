@@ -30,7 +30,7 @@ The front end still keeps a browser-side fallback for the checklist/search logic
 
 ## User Database
 
-The server stores runtime user and checkout data in `data/users.json` and `data/checkout-sessions.json`.
+Locally, the server stores runtime user and checkout data in `data/users.json` and `data/checkout-sessions.json`.
 Those files are intentionally ignored because they can contain emails, password hashes, salts, and purchase records.
 
 On startup, `server.js` creates both runtime database files automatically when they are missing:
@@ -44,6 +44,30 @@ Safe schema examples are committed as:
 - `data/checkout-sessions.example.json`
 
 For testing or deployment, set `DATA_DIR=/path/to/private/data` to keep production user data outside the repository checkout.
+
+On Vercel, configure a persistent Redis/KV store and add these environment variables:
+
+- `KV_REST_API_URL`
+- `KV_REST_API_TOKEN`
+
+The app also accepts the equivalent Upstash names:
+
+- `UPSTASH_REDIS_REST_URL`
+- `UPSTASH_REDIS_REST_TOKEN`
+
+Without those production variables, Vercel can serve pages and static past papers, but account registration, login state, purchases, and Question Finder trial usage will not be stored persistently.
+
+## Vercel Deployment
+
+This repository includes `vercel.json` and `api/index.js` so Vercel serves the static site files directly and routes `/api/*` requests to the Node serverless function.
+
+Deploy with:
+
+```bash
+npx vercel --prod
+```
+
+Add `paperlens.eu.cc` as the production domain in Vercel, then point the domain's DNS to Vercel from Cloudflare.
 
 ## Project Structure
 

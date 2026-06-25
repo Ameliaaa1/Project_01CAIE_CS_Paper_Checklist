@@ -11,6 +11,11 @@ const rootDir = __dirname;
 const dataDir = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(rootDir, "data");
 const usersDbPath = path.join(dataDir, "users.json");
 const checkoutDbPath = path.join(dataDir, "checkout-sessions.json");
+const redisRestUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || "";
+const redisRestToken = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || "";
+const useRemoteStore = Boolean(redisRestUrl && redisRestToken);
+const usersStoreKey = process.env.PAPERLENS_USERS_KEY || "paperlens:users";
+const checkoutStoreKey = process.env.PAPERLENS_CHECKOUT_KEY || "paperlens:checkout-sessions";
 const lifetimeAccessPriceCny = 20;
 const questionFinderTrialLimit = 2;
 const port = Number(process.env.PORT || 3000);
@@ -29,11 +34,10 @@ const mimeTypes = {
 };
 
 const data = loadAppData();
-ensureUserDatabase();
 const parsedPdfGeometryCache = new Map();
 const questionPreviewCache = new Map();
 
-const server = http.createServer(async (req, res) => {
+async function handleRequest(req, res) {
   try {
     const url = new URL(req.url, `http://${req.headers.host}`);
 
@@ -60,13 +64,13 @@ const server = http.createServer(async (req, res) => {
 
     if (url.pathname === "/api/question-finder/access" && req.method === "POST") {
       const body = await readJsonBody(req);
-      sendJson(res, questionFinderAccess(body));
+      sendJson(res, await questionFinderAccess(body));
       return;
     }
 
     if (url.pathname === "/api/question-search" && req.method === "POST") {
       const body = await readJsonBody(req);
-      sendJson(res, searchQuestionFinder(body));
+      sendJson(res, await searchQuestionFinder(body));
       return;
     }
 
@@ -74,7 +78,7 @@ const server = http.createServer(async (req, res) => {
       const question = questionById(url.searchParams.get("id") || "");
       if (!question) throwHttpError("Question not found.", 404);
       const type = url.searchParams.get("type") === "ms" ? "ms" : "qp";
-      assertQuestionPreviewAccess(question.id, {
+      await assertQuestionPreviewAccess(question.id, {
         userId: url.searchParams.get("userId") || "",
         email: url.searchParams.get("email") || ""
       });
@@ -94,37 +98,37 @@ const server = http.createServer(async (req, res) => {
         sendJson(res, { error: "Enter a valid email address." }, 400);
         return;
       }
-      sendJson(res, { registered: Boolean(findUserByEmail(email)) });
+      sendJson(res, { registered: Boolean(await findUserByEmail(email)) });
       return;
     }
 
     if (url.pathname === "/api/auth/signup" && req.method === "POST") {
       const body = await readJsonBody(req);
-      sendJson(res, createUser(body), 201);
+      sendJson(res, await createUser(body), 201);
       return;
     }
 
     if (url.pathname === "/api/auth/login" && req.method === "POST") {
       const body = await readJsonBody(req);
-      sendJson(res, loginUser(body));
+      sendJson(res, await loginUser(body));
       return;
     }
 
     if (url.pathname === "/api/auth/session" && req.method === "POST") {
       const body = await readJsonBody(req);
-      sendJson(res, getUserSession(body));
+      sendJson(res, await getUserSession(body));
       return;
     }
 
     if (url.pathname === "/api/billing/create-checkout" && req.method === "POST") {
       const body = await readJsonBody(req);
-      sendJson(res, createCheckoutSession(body, req));
+      sendJson(res, await createCheckoutSession(body, req));
       return;
     }
 
     if (url.pathname === "/api/billing/complete" && req.method === "POST") {
       const body = await readJsonBody(req);
-      sendJson(res, completeCheckoutSession(body));
+      sendJson(res, await completeCheckoutSession(body));
       return;
     }
 
@@ -149,7 +153,7 @@ const server = http.createServer(async (req, res) => {
 
     if (url.pathname === "/api/question-pdf" && req.method === "POST") {
       const body = await readJsonBody(req);
-      assertQuestionPdfAccess(body);
+      await assertQuestionPdfAccess(body);
       const pdf = await buildQuestionPdf(body);
       res.writeHead(200, {
         "Content-Type": "application/pdf",
@@ -163,11 +167,16 @@ const server = http.createServer(async (req, res) => {
   } catch (error) {
     sendJson(res, { error: error.status ? error.message : "Server error", detail: error.message }, error.status || 500);
   }
-});
+}
 
-server.listen(port, host, () => {
-  console.log(`PaperLens full-stack server running at http://${host}:${port}`);
-});
+if (require.main === module) {
+  const server = http.createServer(handleRequest);
+  server.listen(port, host, () => {
+    console.log(`PaperLens full-stack server running at http://${host}:${port}`);
+  });
+}
+
+module.exports = handleRequest;
 
 function loadAppData() {
   const appSource = fs.readFileSync(path.join(rootDir, "app.js"), "utf8");
@@ -394,8 +403,8 @@ function exportChecklist(checklist, format) {
   };
 }
 
-function questionFinderAccess(identity = {}) {
-  const user = findQuestionFinderUser(identity);
+async function questionFinderAccess(identity = {}) {
+  const user = await findQuestionFinderUser(identity);
   if (!user) {
     return {
       loggedIn: false,
@@ -419,9 +428,9 @@ function questionFinderAccess(identity = {}) {
   };
 }
 
-function searchQuestionFinder(body = {}) {
-  const db = readUsersDb();
-  const user = findQuestionFinderUser(body, db);
+async function searchQuestionFinder(body = {}) {
+  const db = await readUsersDb();
+  const user = await findQuestionFinderUser(body, db);
   if (!user) throwHttpError("Log in to use your two free Question Finder searches.", 401);
 
   const query = String(body.query || "").trim();
@@ -459,7 +468,7 @@ function searchQuestionFinder(body = {}) {
     };
     searches.push(search);
     user.questionFinderSearches = searches;
-    writeUsersDb(db);
+    await writeUsersDb(db);
   }
 
   return {
@@ -470,8 +479,8 @@ function searchQuestionFinder(body = {}) {
   };
 }
 
-function assertQuestionPdfAccess(body = {}) {
-  const user = findQuestionFinderUser(body);
+async function assertQuestionPdfAccess(body = {}) {
+  const user = await findQuestionFinderUser(body);
   if (!user) throwHttpError("Log in before generating a Question Finder PDF.", 401);
   if (user.purchased) return;
 
@@ -482,8 +491,8 @@ function assertQuestionPdfAccess(body = {}) {
   }
 }
 
-function assertQuestionPreviewAccess(questionId, identity = {}) {
-  const user = findQuestionFinderUser(identity);
+async function assertQuestionPreviewAccess(questionId, identity = {}) {
+  const user = await findQuestionFinderUser(identity);
   if (!user) throwHttpError("Log in to view original question previews.", 401);
   if (user.purchased) return;
   const allowedIds = new Set(questionFinderSearches(user).flatMap((search) => search.questionIds || []));
@@ -494,11 +503,12 @@ function questionById(id) {
   return questionSearchIndex().find((question) => question.id === id) || null;
 }
 
-function findQuestionFinderUser(identity = {}, db = readUsersDb()) {
+async function findQuestionFinderUser(identity = {}, db = null) {
   const userId = String(identity.userId || "").trim();
   const email = normaliseEmail(identity.email);
   if (!userId || !email) return null;
-  return db.users.find((candidate) => candidate.id === userId && candidate.email === email) || null;
+  const usersDb = db || await readUsersDb();
+  return usersDb.users.find((candidate) => candidate.id === userId && candidate.email === email) || null;
 }
 
 function questionFinderSearches(user) {
@@ -994,32 +1004,90 @@ function ensureUserDatabase() {
   }
 }
 
-function readUsersDb() {
+async function readUsersDb() {
+  if (useRemoteStore) return readRemoteJson(usersStoreKey, { users: [] }, normaliseUsersDb);
+
   ensureUserDatabase();
   try {
     const db = JSON.parse(fs.readFileSync(usersDbPath, "utf8"));
-    return { users: Array.isArray(db.users) ? db.users : [] };
+    return normaliseUsersDb(db);
   } catch {
     return { users: [] };
   }
 }
 
-function writeUsersDb(db) {
-  fs.writeFileSync(usersDbPath, JSON.stringify(db, null, 2));
+async function writeUsersDb(db) {
+  const safeDb = normaliseUsersDb(db);
+  if (useRemoteStore) {
+    await writeRemoteJson(usersStoreKey, safeDb);
+    return;
+  }
+
+  ensureUserDatabase();
+  fs.writeFileSync(usersDbPath, JSON.stringify(safeDb, null, 2));
 }
 
-function readCheckoutDb() {
+async function readCheckoutDb() {
+  if (useRemoteStore) return readRemoteJson(checkoutStoreKey, { sessions: [] }, normaliseCheckoutDb);
+
   ensureUserDatabase();
   try {
     const db = JSON.parse(fs.readFileSync(checkoutDbPath, "utf8"));
-    return { sessions: Array.isArray(db.sessions) ? db.sessions : [] };
+    return normaliseCheckoutDb(db);
   } catch {
     return { sessions: [] };
   }
 }
 
-function writeCheckoutDb(db) {
-  fs.writeFileSync(checkoutDbPath, JSON.stringify(db, null, 2));
+async function writeCheckoutDb(db) {
+  const safeDb = normaliseCheckoutDb(db);
+  if (useRemoteStore) {
+    await writeRemoteJson(checkoutStoreKey, safeDb);
+    return;
+  }
+
+  ensureUserDatabase();
+  fs.writeFileSync(checkoutDbPath, JSON.stringify(safeDb, null, 2));
+}
+
+function normaliseUsersDb(db) {
+  return { users: Array.isArray(db?.users) ? db.users : [] };
+}
+
+function normaliseCheckoutDb(db) {
+  return { sessions: Array.isArray(db?.sessions) ? db.sessions : [] };
+}
+
+async function readRemoteJson(key, fallback, normalise) {
+  const value = await redisCommand(["GET", key]);
+  if (!value) return fallback;
+
+  try {
+    const parsed = typeof value === "string" ? JSON.parse(value) : value;
+    return normalise(parsed);
+  } catch {
+    return fallback;
+  }
+}
+
+async function writeRemoteJson(key, value) {
+  await redisCommand(["SET", key, JSON.stringify(value)]);
+}
+
+async function redisCommand(command) {
+  const response = await fetch(redisRestUrl, {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${redisRestToken}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(command)
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok || payload.error) {
+    throwHttpError(payload.error || "Remote database request failed.", 502);
+  }
+  return payload.result;
 }
 
 function normaliseEmail(email) {
@@ -1034,8 +1102,8 @@ function isStrongPassword(password) {
   return typeof password === "string" && password.length >= 8 && /[a-z]/i.test(password) && /\d/.test(password);
 }
 
-function findUserByEmail(email) {
-  const db = readUsersDb();
+async function findUserByEmail(email) {
+  const db = await readUsersDb();
   return db.users.find((user) => user.email === email) || null;
 }
 
@@ -1055,7 +1123,7 @@ function hashPassword(password, salt = crypto.randomBytes(16).toString("hex")) {
   return { salt, hash };
 }
 
-function createUser(body) {
+async function createUser(body) {
   const email = normaliseEmail(body.email);
   const firstName = String(body.firstName || "").trim();
   const lastName = String(body.lastName || "").trim();
@@ -1065,7 +1133,7 @@ function createUser(body) {
   if (!firstName || !lastName) throwHttpError("Enter both first name and last name.", 400);
   if (!isStrongPassword(password)) throwHttpError("Password must be at least 8 characters and include letters and numbers.", 400);
 
-  const db = readUsersDb();
+  const db = await readUsersDb();
   if (db.users.some((user) => user.email === email)) {
     throwHttpError("This email is already registered.", 409);
   }
@@ -1084,14 +1152,14 @@ function createUser(body) {
   };
 
   db.users.push(user);
-  writeUsersDb(db);
+  await writeUsersDb(db);
   return { ok: true, user: publicUser(user) };
 }
 
-function loginUser(body) {
+async function loginUser(body) {
   const email = normaliseEmail(body.email);
   const password = String(body.password || "");
-  const user = findUserByEmail(email);
+  const user = await findUserByEmail(email);
 
   if (!user) throwHttpError("No account exists for this email.", 404);
   const passwordData = hashPassword(password, user.passwordSalt);
@@ -1102,19 +1170,19 @@ function loginUser(body) {
   return { ok: true, user: publicUser(user) };
 }
 
-function getUserSession(body) {
+async function getUserSession(body) {
   const email = normaliseEmail(body.email);
   const userId = String(body.userId || "").trim();
-  const db = readUsersDb();
+  const db = await readUsersDb();
   const user = db.users.find((candidate) => candidate.id === userId && candidate.email === email);
   if (!user) throwHttpError("Session user not found.", 404);
   return { ok: true, user: publicUser(user) };
 }
 
-function createCheckoutSession(body, req) {
+async function createCheckoutSession(body, req) {
   const email = normaliseEmail(body.email);
   const userId = String(body.userId || "").trim();
-  const db = readUsersDb();
+  const db = await readUsersDb();
   const user = db.users.find((candidate) => candidate.id === userId && candidate.email === email);
 
   if (!user) throwHttpError("Log in before buying access.", 401);
@@ -1123,9 +1191,10 @@ function createCheckoutSession(body, req) {
   }
 
   const sessionId = crypto.randomUUID();
-  const origin = `http://${req.headers.host}`;
+  const protocol = req.headers["x-forwarded-proto"] || (req.headers.host?.includes("localhost") ? "http" : "https");
+  const origin = `${protocol}://${req.headers.host}`;
   const checkoutUrl = `${origin}/checkout.html?session=${encodeURIComponent(sessionId)}`;
-  const checkoutDb = readCheckoutDb();
+  const checkoutDb = await readCheckoutDb();
   checkoutDb.sessions.push({
     id: sessionId,
     userId: user.id,
@@ -1136,7 +1205,7 @@ function createCheckoutSession(body, req) {
     checkoutUrl,
     createdAt: new Date().toISOString()
   });
-  writeCheckoutDb(checkoutDb);
+  await writeCheckoutDb(checkoutDb);
 
   return {
     ok: true,
@@ -1147,23 +1216,23 @@ function createCheckoutSession(body, req) {
   };
 }
 
-function completeCheckoutSession(body) {
+async function completeCheckoutSession(body) {
   const sessionId = String(body.sessionId || "").trim();
-  const checkoutDb = readCheckoutDb();
+  const checkoutDb = await readCheckoutDb();
   const session = checkoutDb.sessions.find((candidate) => candidate.id === sessionId);
 
   if (!session) throwHttpError("Checkout session not found.", 404);
   session.status = "paid";
   session.paidAt = new Date().toISOString();
-  writeCheckoutDb(checkoutDb);
+  await writeCheckoutDb(checkoutDb);
 
-  const usersDb = readUsersDb();
+  const usersDb = await readUsersDb();
   const user = usersDb.users.find((candidate) => candidate.id === session.userId);
   if (!user) throwHttpError("User for checkout session not found.", 404);
   user.purchased = true;
   user.purchasedAt = session.paidAt;
   user.checkoutSessionId = session.id;
-  writeUsersDb(usersDb);
+  await writeUsersDb(usersDb);
 
   return { ok: true, user: publicUser(user) };
 }
