@@ -5,7 +5,13 @@ const path = require("node:path");
 const vm = require("node:vm");
 const { PDFDocument } = require("pdf-lib");
 const { PDFParse } = require("pdf-parse");
-const { createCanvas, loadImage } = require("@napi-rs/canvas");
+
+let canvasTools = null;
+try {
+  canvasTools = require("@napi-rs/canvas");
+} catch {
+  canvasTools = null;
+}
 
 const rootDir = __dirname;
 const dataDir = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(rootDir, "data");
@@ -825,6 +831,10 @@ function compareDocumentPosition(a, b) {
 }
 
 async function buildQuestionPreview(question, type = "qp") {
+  if (!canvasTools) {
+    throwHttpError("Question image previews are unavailable in this deployment.", 503);
+  }
+
   const cacheKey = `${type}:${question.id}`;
   if (questionPreviewCache.has(cacheKey)) return questionPreviewCache.get(cacheKey);
   const sourcePath = localPaperPathForQuestion(question, type);
@@ -846,7 +856,7 @@ async function buildQuestionPreview(question, type = "qp") {
       const sy = Math.max(0, Math.round((page.height - segment.crop.y - segment.crop.height) * scale));
       const sw = Math.min(screenshot.width - sx, Math.round(segment.crop.width * scale));
       const sh = Math.min(screenshot.height - sy, Math.round(segment.crop.height * scale));
-      const image = await loadImage(Buffer.from(screenshot.data));
+      const image = await canvasTools.loadImage(Buffer.from(screenshot.data));
       crops.push({ image, sx, sy, sw, sh });
     }
     if (!crops.length) throwHttpError(`Could not render the original question for ${question.source}.`, 422);
@@ -854,7 +864,7 @@ async function buildQuestionPreview(question, type = "qp") {
     const gap = 18;
     const width = Math.max(...crops.map((crop) => crop.sw));
     const height = crops.reduce((total, crop) => total + crop.sh, 0) + gap * (crops.length - 1);
-    const canvas = createCanvas(width, height);
+    const canvas = canvasTools.createCanvas(width, height);
     const context = canvas.getContext("2d");
     context.fillStyle = "#ffffff";
     context.fillRect(0, 0, width, height);

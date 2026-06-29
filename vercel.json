@@ -5,8 +5,7 @@
       "maxDuration": 60,
       "includeFiles": [
         "app.js",
-        "generated/**",
-        "textbook_syllabus/**"
+        "generated/**"
       ]
     }
   },
