@@ -4,7 +4,13 @@ const crypto = require("node:crypto");
 const path = require("node:path");
 const vm = require("node:vm");
 const { PDFDocument } = require("pdf-lib");
-const { PDFParse } = require("pdf-parse");
+
+let PDFParse = null;
+try {
+  ({ PDFParse } = require("pdf-parse"));
+} catch {
+  PDFParse = null;
+}
 
 let canvasTools = null;
 try {
@@ -665,6 +671,10 @@ async function sourceSegmentsForQuestion(question, type, sourcePath, pageCount) 
 }
 
 async function parsedPdfGeometry(sourcePath) {
+  if (!PDFParse) {
+    throwHttpError("Exact original-paper extraction is unavailable in this deployment.", 503);
+  }
+
   if (parsedPdfGeometryCache.has(sourcePath)) return parsedPdfGeometryCache.get(sourcePath);
   const parser = new PDFParse({ data: fs.readFileSync(sourcePath) });
   try {

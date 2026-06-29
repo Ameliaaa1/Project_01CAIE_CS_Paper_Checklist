@@ -1,0 +1,7 @@
+.git
+.DS_Store
+.tmp_papers
+node_modules
+npm-debug.log*
+data/users.json
+data/checkout-sessions.json
