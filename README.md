@@ -55,6 +55,14 @@ The app also accepts the equivalent Upstash names:
 - `UPSTASH_REDIS_REST_URL`
 - `UPSTASH_REDIS_REST_TOKEN`
 
+Production also requires:
+
+- `SESSION_SECRET` - at least 32 characters; used to sign server-side session cookies
+- `STRIPE_SECRET_KEY` - Stripe secret API key used to create Checkout Sessions
+- `STRIPE_PRICE_ID` - Stripe Price ID for PaperLens lifetime access
+- `STRIPE_WEBHOOK_SECRET` - Stripe webhook endpoint signing secret
+- `PUBLIC_BASE_URL` or `APP_BASE_URL` - public origin used for Stripe success and cancel URLs
+
 Without those production variables, Vercel can serve pages and static past papers, but account registration, login state, purchases, and Question Finder trial usage will not be stored persistently.
 
 ## Vercel Deployment

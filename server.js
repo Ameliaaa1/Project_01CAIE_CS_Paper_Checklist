@@ -30,6 +30,16 @@ const usersStoreKey = process.env.PAPERLENS_USERS_KEY || "paperlens:users";
 const checkoutStoreKey = process.env.PAPERLENS_CHECKOUT_KEY || "paperlens:checkout-sessions";
 const lifetimeAccessPriceCny = 20;
 const questionFinderTrialLimit = 2;
+const sessionCookieName = "paperlens_session";
+const sessionMaxAgeSeconds = 60 * 60 * 24 * 7;
+const isProduction = process.env.NODE_ENV === "production";
+const sessionSecret = process.env.SESSION_SECRET || (isProduction ? "" : crypto.randomBytes(32).toString("hex"));
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY || "";
+const stripePriceId = process.env.STRIPE_PRICE_ID || "";
+const stripeWebhookSecret = process.env.STRIPE_WEBHOOK_SECRET || "";
+const stripeWebhookToleranceSeconds = 300;
+const useMockStripeCheckout = process.env.STRIPE_CHECKOUT_MOCK === "1" && !isProduction;
+const publicBaseUrl = (process.env.PUBLIC_BASE_URL || process.env.APP_BASE_URL || "").replace(/\/+$/, "");
 const port = Number(process.env.PORT || 3000);
 const host = process.env.HOST || "127.0.0.1";
 
@@ -45,13 +55,30 @@ const mimeTypes = {
   ".txt": "text/plain; charset=utf-8"
 };
 
+const publicStaticFiles = new Set([
+  "index.html",
+  "login.html",
+  "signup.html",
+  "checkout.html",
+  "app.js",
+  "auth.js",
+  "checkout.js",
+  "styles.css",
+  "auth.css",
+  "assets/study-workspace.png"
+]);
+
+assertProductionConfiguration();
+
 const data = loadAppData();
 const parsedPdfGeometryCache = new Map();
 const questionPreviewCache = new Map();
+const rateLimitBuckets = new Map();
 
 async function handleRequest(req, res) {
   try {
     const url = new URL(req.url, `http://${req.headers.host}`);
+    await enforceRateLimit(req, url);
 
     if (url.pathname === "/api/health") {
       sendJson(res, { ok: true, app: "PaperLens", mode: "full-stack" });
@@ -75,14 +102,17 @@ async function handleRequest(req, res) {
     }
 
     if (url.pathname === "/api/question-finder/access" && req.method === "POST") {
-      const body = await readJsonBody(req);
-      sendJson(res, await questionFinderAccess(body));
+      const user = await optionalAuthenticatedUser(req);
+      if (user) assertTrustedOrigin(req);
+      sendJson(res, await questionFinderAccess(user));
       return;
     }
 
     if (url.pathname === "/api/question-search" && req.method === "POST") {
       const body = await readJsonBody(req);
-      sendJson(res, await searchQuestionFinder(body));
+      const user = await requireAuthenticatedUser(req);
+      assertTrustedOrigin(req);
+      sendJson(res, await searchQuestionFinder(body, user));
       return;
     }
 
@@ -90,10 +120,7 @@ async function handleRequest(req, res) {
       const question = questionById(url.searchParams.get("id") || "");
       if (!question) throwHttpError("Question not found.", 404);
       const type = url.searchParams.get("type") === "ms" ? "ms" : "qp";
-      await assertQuestionPreviewAccess(question.id, {
-        userId: url.searchParams.get("userId") || "",
-        email: url.searchParams.get("email") || ""
-      });
+      await assertQuestionPreviewAccess(question.id, await requireAuthenticatedUser(req));
       const preview = await buildQuestionPreview(question, type);
       res.writeHead(200, {
         "Content-Type": "image/png",
@@ -116,31 +143,55 @@ async function handleRequest(req, res) {
 
     if (url.pathname === "/api/auth/signup" && req.method === "POST") {
       const body = await readJsonBody(req);
-      sendJson(res, await createUser(body), 201);
+      const result = await createUser(body);
+      setSessionCookie(res, result.user.id, req);
+      sendJson(res, result, 201);
       return;
     }
 
     if (url.pathname === "/api/auth/login" && req.method === "POST") {
       const body = await readJsonBody(req);
-      sendJson(res, await loginUser(body));
+      const result = await loginUser(body);
+      setSessionCookie(res, result.user.id, req);
+      sendJson(res, result);
       return;
     }
 
     if (url.pathname === "/api/auth/session" && req.method === "POST") {
-      const body = await readJsonBody(req);
-      sendJson(res, await getUserSession(body));
+      const user = await requireAuthenticatedUser(req);
+      assertTrustedOrigin(req);
+      sendJson(res, { ok: true, user: publicUser(user) });
+      return;
+    }
+
+    if (url.pathname === "/api/auth/logout" && req.method === "POST") {
+      await requireAuthenticatedUser(req);
+      assertTrustedOrigin(req);
+      clearSessionCookie(res, req);
+      sendJson(res, { ok: true });
       return;
     }
 
     if (url.pathname === "/api/billing/create-checkout" && req.method === "POST") {
-      const body = await readJsonBody(req);
-      sendJson(res, await createCheckoutSession(body, req));
+      const user = await requireAuthenticatedUser(req);
+      assertTrustedOrigin(req);
+      sendJson(res, await createCheckoutSession(user, req));
+      return;
+    }
+
+    if (url.pathname === "/api/billing/status" && req.method === "GET") {
+      sendJson(res, await checkoutSessionStatus(url.searchParams.get("session") || "", await requireAuthenticatedUser(req)));
       return;
     }
 
     if (url.pathname === "/api/billing/complete" && req.method === "POST") {
-      const body = await readJsonBody(req);
-      sendJson(res, await completeCheckoutSession(body));
+      throwHttpError("Checkout completion must be confirmed by the payment provider.", 410);
+    }
+
+    if (url.pathname === "/api/billing/stripe-webhook" && req.method === "POST") {
+      const rawBody = await readRawBody(req);
+      const event = verifyStripeWebhookEvent(rawBody, req.headers["stripe-signature"] || "");
+      sendJson(res, await handleStripeWebhookEvent(event));
       return;
     }
 
@@ -165,7 +216,9 @@ async function handleRequest(req, res) {
 
     if (url.pathname === "/api/question-pdf" && req.method === "POST") {
       const body = await readJsonBody(req);
-      await assertQuestionPdfAccess(body);
+      const user = await requireAuthenticatedUser(req);
+      assertTrustedOrigin(req);
+      await assertQuestionPdfAccess(body, user);
       const pdf = await buildQuestionPdf(body);
       res.writeHead(200, {
         "Content-Type": "application/pdf",
@@ -177,6 +230,7 @@ async function handleRequest(req, res) {
 
     serveStatic(url.pathname, res);
   } catch (error) {
+    if (error.retryAfter) res.setHeader("Retry-After", String(error.retryAfter));
     sendJson(res, { error: error.status ? error.message : "Server error", detail: error.message }, error.status || 500);
   }
 }
@@ -236,6 +290,29 @@ function loadGeneratedQuestionEntries() {
 
 function questionBankKey(entry) {
   return `${String(entry.paper || "").trim()}|${String(entry.ref || "").trim().toUpperCase()}`;
+}
+
+function assertProductionConfiguration() {
+  if (!isProduction) return;
+
+  const missing = [];
+  if (!process.env.SESSION_SECRET) missing.push("SESSION_SECRET");
+  if (!stripeSecretKey) missing.push("STRIPE_SECRET_KEY");
+  if (!stripePriceId) missing.push("STRIPE_PRICE_ID");
+  if (!stripeWebhookSecret) missing.push("STRIPE_WEBHOOK_SECRET");
+  if (!publicBaseUrl) missing.push("PUBLIC_BASE_URL or APP_BASE_URL");
+  if (!useRemoteStore) missing.push("KV_REST_API_URL/KV_REST_API_TOKEN or UPSTASH_REDIS_REST_URL/UPSTASH_REDIS_REST_TOKEN");
+  if (process.env.STRIPE_CHECKOUT_MOCK === "1") missing.push("STRIPE_CHECKOUT_MOCK must be disabled");
+  if (!PDFParse) missing.push("pdf-parse dependency");
+  if (!canvasTools) missing.push("@napi-rs/canvas dependency");
+
+  if (process.env.SESSION_SECRET && process.env.SESSION_SECRET.length < 32) {
+    missing.push("SESSION_SECRET with at least 32 characters");
+  }
+
+  if (missing.length) {
+    throw new Error(`Production configuration is incomplete: ${missing.join(", ")}`);
+  }
 }
 
 function analyzeMaterials(options = {}) {
@@ -415,8 +492,7 @@ function exportChecklist(checklist, format) {
   };
 }
 
-async function questionFinderAccess(identity = {}) {
-  const user = await findQuestionFinderUser(identity);
+async function questionFinderAccess(user = null) {
   if (!user) {
     return {
       loggedIn: false,
@@ -440,10 +516,10 @@ async function questionFinderAccess(identity = {}) {
   };
 }
 
-async function searchQuestionFinder(body = {}) {
+async function searchQuestionFinder(body = {}, user) {
   const db = await readUsersDb();
-  const user = await findQuestionFinderUser(body, db);
-  if (!user) throwHttpError("Log in to use your two free Question Finder searches.", 401);
+  const dbUser = db.users.find((candidate) => candidate.id === user.id);
+  if (!dbUser) throwHttpError("Log in to use your two free Question Finder searches.", 401);
 
   const query = String(body.query || "").trim();
   const syllabusIds = normaliseSyllabusIds(body.syllabusIds);
@@ -452,7 +528,7 @@ async function searchQuestionFinder(body = {}) {
 
   const matches = findQuestionMatches(query, syllabusIds).slice(0, 30);
   const key = questionFinderSearchKey(query, syllabusIds);
-  const searches = questionFinderSearches(user);
+  const searches = questionFinderSearches(dbUser);
   const existing = searches.find((search) => search.key === key);
 
   if (!matches.length) {
@@ -460,16 +536,16 @@ async function searchQuestionFinder(body = {}) {
       matches: [],
       trialConsumed: false,
       searchId: null,
-      access: questionFinderAccessForUser(user)
+      access: questionFinderAccessForUser(dbUser)
     };
   }
 
-  if (!user.purchased && !existing && searches.length >= questionFinderTrialLimit) {
+  if (!dbUser.purchased && !existing && searches.length >= questionFinderTrialLimit) {
     throwHttpError("Your two free Question Finder searches are complete. Buy access for unlimited searches.", 402);
   }
 
   let search = existing;
-  if (!user.purchased && !search) {
+  if (!dbUser.purchased && !search) {
     search = {
       id: crypto.randomUUID(),
       key,
@@ -479,21 +555,19 @@ async function searchQuestionFinder(body = {}) {
       createdAt: new Date().toISOString()
     };
     searches.push(search);
-    user.questionFinderSearches = searches;
+    dbUser.questionFinderSearches = searches;
     await writeUsersDb(db);
   }
 
   return {
     matches,
-    trialConsumed: Boolean(!user.purchased && !existing),
+    trialConsumed: Boolean(!dbUser.purchased && !existing),
     searchId: search?.id || null,
-    access: questionFinderAccessForUser(user)
+    access: questionFinderAccessForUser(dbUser)
   };
 }
 
-async function assertQuestionPdfAccess(body = {}) {
-  const user = await findQuestionFinderUser(body);
-  if (!user) throwHttpError("Log in before generating a Question Finder PDF.", 401);
+async function assertQuestionPdfAccess(body = {}, user) {
   if (user.purchased) return;
 
   const requestedIds = Array.isArray(body.questionIds) ? body.questionIds.map(String) : [];
@@ -503,9 +577,7 @@ async function assertQuestionPdfAccess(body = {}) {
   }
 }
 
-async function assertQuestionPreviewAccess(questionId, identity = {}) {
-  const user = await findQuestionFinderUser(identity);
-  if (!user) throwHttpError("Log in to view original question previews.", 401);
+async function assertQuestionPreviewAccess(questionId, user) {
   if (user.purchased) return;
   const allowedIds = new Set(questionFinderSearches(user).flatMap((search) => search.questionIds || []));
   if (!allowedIds.has(questionId)) throwHttpError("This question is not part of one of your free searches.", 403);
@@ -513,14 +585,6 @@ async function assertQuestionPreviewAccess(questionId, identity = {}) {
 
 function questionById(id) {
   return questionSearchIndex().find((question) => question.id === id) || null;
-}
-
-async function findQuestionFinderUser(identity = {}, db = null) {
-  const userId = String(identity.userId || "").trim();
-  const email = normaliseEmail(identity.email);
-  if (!userId || !email) return null;
-  const usersDb = db || await readUsersDb();
-  return usersDb.users.find((candidate) => candidate.id === userId && candidate.email === email) || null;
 }
 
 function questionFinderSearches(user) {
@@ -995,10 +1059,15 @@ function extractSearchTerms(text) {
 }
 
 function serveStatic(requestPath, res) {
-  const cleanPath = decodeURIComponent(requestPath.split("?")[0]);
-  const filePath = path.normalize(path.join(rootDir, cleanPath === "/" ? "index.html" : cleanPath));
+  const publicPath = publicStaticPath(requestPath);
+  if (!publicPath) {
+    sendJson(res, { error: "Forbidden" }, 403);
+    return;
+  }
 
-  if (!filePath.startsWith(rootDir)) {
+  const filePath = path.normalize(path.join(rootDir, publicPath));
+  const rootWithSeparator = rootDir.endsWith(path.sep) ? rootDir : `${rootDir}${path.sep}`;
+  if (filePath !== rootDir && !filePath.startsWith(rootWithSeparator)) {
     sendJson(res, { error: "Forbidden" }, 403);
     return;
   }
@@ -1012,6 +1081,22 @@ function serveStatic(requestPath, res) {
     res.writeHead(200, { "Content-Type": mimeTypes[path.extname(filePath)] || "application/octet-stream" });
     res.end(content);
   });
+}
+
+function publicStaticPath(requestPath) {
+  let cleanPath = "";
+  try {
+    cleanPath = decodeURIComponent(String(requestPath).split("?")[0]);
+  } catch {
+    return "";
+  }
+
+  if (cleanPath.includes("\0")) return "";
+  const relativePath = path.posix.normalize(cleanPath === "/" ? "index.html" : cleanPath.replace(/^\/+/, ""));
+  if (!relativePath || relativePath.startsWith("../") || relativePath === ".." || path.posix.isAbsolute(relativePath)) return "";
+  if (publicStaticFiles.has(relativePath)) return relativePath;
+  if (/^textbook_syllabus\/pastpaper\/.+\.pdf$/i.test(relativePath)) return relativePath;
+  return "";
 }
 
 function ensureUserDatabase() {
@@ -1143,6 +1228,165 @@ function hashPassword(password, salt = crypto.randomBytes(16).toString("hex")) {
   return { salt, hash };
 }
 
+async function enforceRateLimit(req, url) {
+  const config = rateLimitConfig(url.pathname);
+  if (!config) return;
+
+  if (useRemoteStore) {
+    await enforceRemoteRateLimit(req, config);
+    return;
+  }
+
+  const now = Date.now();
+  const key = `${config.name}:${clientAddress(req)}`;
+  const bucket = rateLimitBuckets.get(key);
+  if (!bucket || bucket.resetAt <= now) {
+    rateLimitBuckets.set(key, { count: 1, resetAt: now + config.windowMs });
+    return;
+  }
+
+  bucket.count += 1;
+  if (bucket.count > config.limit) {
+    const retryAfter = Math.max(1, Math.ceil((bucket.resetAt - now) / 1000));
+    const error = new Error("Too many requests. Try again later.");
+    error.status = 429;
+    error.retryAfter = retryAfter;
+    throw error;
+  }
+}
+
+async function enforceRemoteRateLimit(req, config) {
+  const windowSeconds = Math.ceil(config.windowMs / 1000);
+  const windowId = Math.floor(Date.now() / config.windowMs);
+  const key = `paperlens:rate:${config.name}:${clientAddress(req)}:${windowId}`;
+  const count = Number(await redisCommand(["INCR", key]));
+  if (count === 1) await redisCommand(["EXPIRE", key, windowSeconds]);
+  if (count > config.limit) {
+    const error = new Error("Too many requests. Try again later.");
+    error.status = 429;
+    error.retryAfter = windowSeconds;
+    throw error;
+  }
+}
+
+function rateLimitConfig(pathname) {
+  if (pathname.startsWith("/api/auth/")) return { name: "auth", limit: 30, windowMs: 60_000 };
+  if (pathname.startsWith("/api/billing/")) return { name: "billing", limit: 60, windowMs: 60_000 };
+  if (pathname === "/api/question-search") return { name: "question-search", limit: 30, windowMs: 60_000 };
+  return null;
+}
+
+function clientAddress(req) {
+  return String(req.headers["x-forwarded-for"] || req.socket?.remoteAddress || "unknown").split(",")[0].trim();
+}
+
+function assertTrustedOrigin(req) {
+  const origin = req.headers.origin;
+  if (!origin) throwHttpError("Missing Origin header.", 403);
+
+  let originUrl;
+  try {
+    originUrl = new URL(origin);
+  } catch {
+    throwHttpError("Invalid Origin header.", 403);
+  }
+
+  if (originUrl.origin !== requestOrigin(req)) {
+    throwHttpError("Request origin is not allowed.", 403);
+  }
+}
+
+function requestOrigin(req) {
+  const protocol = String(req.headers["x-forwarded-proto"] || "").split(",")[0].trim() || (req.socket?.encrypted ? "https" : "http");
+  const hostHeader = String(req.headers["x-forwarded-host"] || req.headers.host || "").split(",")[0].trim();
+  return `${protocol}://${hostHeader}`;
+}
+
+function createSessionToken(userId) {
+  const payload = {
+    userId,
+    exp: Math.floor(Date.now() / 1000) + sessionMaxAgeSeconds
+  };
+  const encodedPayload = Buffer.from(JSON.stringify(payload)).toString("base64url");
+  const signature = crypto.createHmac("sha256", sessionSecret).update(encodedPayload).digest("base64url");
+  return `${encodedPayload}.${signature}`;
+}
+
+function verifySessionToken(token) {
+  const [encodedPayload, signature] = String(token || "").split(".");
+  if (!encodedPayload || !signature) return null;
+
+  const expected = crypto.createHmac("sha256", sessionSecret).update(encodedPayload).digest("base64url");
+  const signatureBuffer = Buffer.from(signature);
+  const expectedBuffer = Buffer.from(expected);
+  if (signatureBuffer.length !== expectedBuffer.length || !crypto.timingSafeEqual(signatureBuffer, expectedBuffer)) return null;
+
+  try {
+    const payload = JSON.parse(Buffer.from(encodedPayload, "base64url").toString("utf8"));
+    if (!payload.userId || Number(payload.exp) <= Math.floor(Date.now() / 1000)) return null;
+    return payload;
+  } catch {
+    return null;
+  }
+}
+
+function cookieHeaderValue(name, value, req, options = {}) {
+  const parts = [
+    `${name}=${value}`,
+    "HttpOnly",
+    "Path=/",
+    "SameSite=Lax"
+  ];
+  if (options.maxAge !== undefined) parts.push(`Max-Age=${options.maxAge}`);
+  if (isSecureRequest(req)) parts.push("Secure");
+  return parts.join("; ");
+}
+
+function setSessionCookie(res, userId, req) {
+  res.setHeader(
+    "Set-Cookie",
+    cookieHeaderValue(sessionCookieName, createSessionToken(userId), req, { maxAge: sessionMaxAgeSeconds })
+  );
+}
+
+function clearSessionCookie(res, req) {
+  res.setHeader("Set-Cookie", cookieHeaderValue(sessionCookieName, "", req, { maxAge: 0 }));
+}
+
+function isSecureRequest(req) {
+  const forwardedProto = String(req.headers["x-forwarded-proto"] || "").split(",")[0].trim().toLowerCase();
+  return forwardedProto === "https" || Boolean(req.socket?.encrypted);
+}
+
+function parseCookies(req) {
+  return Object.fromEntries(
+    String(req.headers.cookie || "")
+      .split(";")
+      .map((cookie) => cookie.trim())
+      .filter(Boolean)
+      .map((cookie) => {
+        const separator = cookie.indexOf("=");
+        if (separator === -1) return [cookie, ""];
+        return [cookie.slice(0, separator), cookie.slice(separator + 1)];
+      })
+  );
+}
+
+async function optionalAuthenticatedUser(req) {
+  const token = parseCookies(req)[sessionCookieName];
+  const session = verifySessionToken(token);
+  if (!session) return null;
+
+  const db = await readUsersDb();
+  return db.users.find((user) => user.id === session.userId) || null;
+}
+
+async function requireAuthenticatedUser(req) {
+  const user = await optionalAuthenticatedUser(req);
+  if (!user) throwHttpError("Log in to continue.", 401);
+  return user;
+}
+
 async function createUser(body) {
   const email = normaliseEmail(body.email);
   const firstName = String(body.firstName || "").trim();
@@ -1190,30 +1434,13 @@ async function loginUser(body) {
   return { ok: true, user: publicUser(user) };
 }
 
-async function getUserSession(body) {
-  const email = normaliseEmail(body.email);
-  const userId = String(body.userId || "").trim();
-  const db = await readUsersDb();
-  const user = db.users.find((candidate) => candidate.id === userId && candidate.email === email);
-  if (!user) throwHttpError("Session user not found.", 404);
-  return { ok: true, user: publicUser(user) };
-}
-
-async function createCheckoutSession(body, req) {
-  const email = normaliseEmail(body.email);
-  const userId = String(body.userId || "").trim();
-  const db = await readUsersDb();
-  const user = db.users.find((candidate) => candidate.id === userId && candidate.email === email);
-
-  if (!user) throwHttpError("Log in before buying access.", 401);
+async function createCheckoutSession(user, req) {
   if (user.purchased) {
     return { ok: true, alreadyPurchased: true, user: publicUser(user) };
   }
 
   const sessionId = crypto.randomUUID();
-  const protocol = req.headers["x-forwarded-proto"] || (req.headers.host?.includes("localhost") ? "http" : "https");
-  const origin = `${protocol}://${req.headers.host}`;
-  const checkoutUrl = `${origin}/checkout.html?session=${encodeURIComponent(sessionId)}`;
+  const checkout = await createStripeCheckoutSession(sessionId, user, req);
   const checkoutDb = await readCheckoutDb();
   checkoutDb.sessions.push({
     id: sessionId,
@@ -1222,28 +1449,103 @@ async function createCheckoutSession(body, req) {
     amount: lifetimeAccessPriceCny,
     currency: "CNY",
     status: "pending",
-    checkoutUrl,
+    checkoutUrl: checkout.url,
+    provider: "stripe",
+    providerSessionId: checkout.providerSessionId,
     createdAt: new Date().toISOString()
   });
   await writeCheckoutDb(checkoutDb);
 
   return {
     ok: true,
-    checkoutUrl,
+    checkoutUrl: checkout.url,
     sessionId,
     amount: lifetimeAccessPriceCny,
-    currency: "CNY"
+    currency: "CNY",
+    providerSessionId: checkout.providerSessionId,
+    status: "pending"
   };
 }
 
-async function completeCheckoutSession(body) {
-  const sessionId = String(body.sessionId || "").trim();
+async function createStripeCheckoutSession(sessionId, user, req) {
+  if (useMockStripeCheckout) {
+    return {
+      url: `${checkoutBaseUrl(req)}/checkout.html?session=${encodeURIComponent(sessionId)}`,
+      providerSessionId: `cs_test_${sessionId.replace(/-/g, "")}`
+    };
+  }
+
+  if (!stripeSecretKey || !stripePriceId) {
+    throwHttpError("Stripe Checkout is not configured.", 503);
+  }
+
+  const baseUrl = checkoutBaseUrl(req);
+  const form = new URLSearchParams();
+  form.set("mode", "payment");
+  form.set("client_reference_id", sessionId);
+  form.set("success_url", `${baseUrl}/checkout.html?session=${encodeURIComponent(sessionId)}&stripe_session_id={CHECKOUT_SESSION_ID}`);
+  form.set("cancel_url", `${baseUrl}/index.html?buy=1#igcse-0478`);
+  form.set("customer_email", user.email);
+  form.set("line_items[0][price]", stripePriceId);
+  form.set("line_items[0][quantity]", "1");
+  form.set("metadata[paperlensCheckoutSessionId]", sessionId);
+  form.set("payment_intent_data[metadata][paperlensCheckoutSessionId]", sessionId);
+
+  const response = await fetch("https://api.stripe.com/v1/checkout/sessions", {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${stripeSecretKey}`,
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: form.toString()
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok || !payload.url || !payload.id) {
+    throwHttpError(payload.error?.message || "Stripe Checkout session creation failed.", 502);
+  }
+
+  return {
+    url: payload.url,
+    providerSessionId: payload.id
+  };
+}
+
+function checkoutBaseUrl(req) {
+  return publicBaseUrl || requestOrigin(req);
+}
+
+async function checkoutSessionStatus(sessionId, authenticatedUser) {
   const checkoutDb = await readCheckoutDb();
-  const session = checkoutDb.sessions.find((candidate) => candidate.id === sessionId);
+  const session = checkoutDb.sessions.find((candidate) => candidate.id === String(sessionId || "").trim());
+  if (!session) throwHttpError("Checkout session not found.", 404);
+  if (session.userId !== authenticatedUser.id) throwHttpError("Checkout session does not belong to this account.", 403);
+  const usersDb = await readUsersDb();
+  const user = usersDb.users.find((candidate) => candidate.id === authenticatedUser.id);
+  if (!user) throwHttpError("Session user not found.", 404);
+  return {
+    ok: true,
+    status: session.status,
+    paid: session.status === "paid",
+    amount: session.amount,
+    currency: session.currency,
+    user: publicUser(user)
+  };
+}
+
+async function markCheckoutSessionPaid(sessionId, providerEvent) {
+  const checkoutDb = await readCheckoutDb();
+  const session = checkoutDb.sessions.find((candidate) => candidate.id === String(sessionId || "").trim());
 
   if (!session) throwHttpError("Checkout session not found.", 404);
+  if (session.status === "paid") {
+    return { ok: true, alreadyPaid: true };
+  }
+
   session.status = "paid";
   session.paidAt = new Date().toISOString();
+  session.provider = providerEvent.provider;
+  session.providerEventId = providerEvent.eventId;
+  session.providerSessionId = providerEvent.providerSessionId || null;
   await writeCheckoutDb(checkoutDb);
 
   const usersDb = await readUsersDb();
@@ -1252,9 +1554,70 @@ async function completeCheckoutSession(body) {
   user.purchased = true;
   user.purchasedAt = session.paidAt;
   user.checkoutSessionId = session.id;
+  user.providerEventId = providerEvent.eventId;
   await writeUsersDb(usersDb);
 
   return { ok: true, user: publicUser(user) };
+}
+
+async function handleStripeWebhookEvent(event) {
+  if (!["checkout.session.completed", "checkout.session.async_payment_succeeded", "payment_intent.succeeded"].includes(event.type)) {
+    return { ok: true, ignored: true };
+  }
+
+  const object = event.data?.object || {};
+  if (event.type.startsWith("checkout.session") && object.payment_status && object.payment_status !== "paid") {
+    return { ok: true, ignored: true };
+  }
+
+  const sessionId = object.metadata?.paperlensCheckoutSessionId || object.metadata?.checkoutSessionId || object.client_reference_id || "";
+  if (!sessionId) throwHttpError("Stripe event is missing PaperLens checkout session metadata.", 400);
+
+  return markCheckoutSessionPaid(sessionId, {
+    provider: "stripe",
+    eventId: event.id,
+    providerSessionId: object.id || null
+  });
+}
+
+function verifyStripeWebhookEvent(rawBody, signatureHeader) {
+  if (!stripeWebhookSecret) throwHttpError("Stripe webhook secret is not configured.", 503);
+  const signatures = parseStripeSignatureHeader(signatureHeader);
+  const timestamp = Number(signatures.t?.[0]);
+  const expectedSignatures = signatures.v1 || [];
+  if (!Number.isFinite(timestamp) || !expectedSignatures.length) throwHttpError("Invalid Stripe webhook signature.", 400);
+  if (Math.abs(Math.floor(Date.now() / 1000) - timestamp) > stripeWebhookToleranceSeconds) {
+    throwHttpError("Stripe webhook signature timestamp is outside tolerance.", 400);
+  }
+
+  const signedPayload = `${timestamp}.${rawBody}`;
+  const expected = crypto.createHmac("sha256", stripeWebhookSecret).update(signedPayload).digest("hex");
+  const verified = expectedSignatures.some((signature) => timingSafeStringEqual(signature, expected));
+  if (!verified) throwHttpError("Invalid Stripe webhook signature.", 400);
+
+  try {
+    return JSON.parse(rawBody);
+  } catch {
+    throwHttpError("Invalid Stripe webhook payload.", 400);
+  }
+}
+
+function parseStripeSignatureHeader(header) {
+  return String(header || "")
+    .split(",")
+    .map((part) => part.split("="))
+    .reduce((result, [key, value]) => {
+      if (!key || !value) return result;
+      result[key] = result[key] || [];
+      result[key].push(value);
+      return result;
+    }, {});
+}
+
+function timingSafeStringEqual(a, b) {
+  const aBuffer = Buffer.from(String(a));
+  const bBuffer = Buffer.from(String(b));
+  return aBuffer.length === bBuffer.length && crypto.timingSafeEqual(aBuffer, bBuffer);
 }
 
 function throwHttpError(message, status) {
@@ -1284,6 +1647,22 @@ function readJsonBody(req) {
         reject(new Error("Invalid JSON body"));
       }
     });
+  });
+}
+
+function readRawBody(req) {
+  return new Promise((resolve, reject) => {
+    let body = "";
+    req.setEncoding("utf8");
+    req.on("data", (chunk) => {
+      body += chunk;
+      if (body.length > 1_000_000) {
+        reject(new Error("Request body is too large"));
+        req.destroy();
+      }
+    });
+    req.on("end", () => resolve(body));
+    req.on("error", reject);
   });
 }
 

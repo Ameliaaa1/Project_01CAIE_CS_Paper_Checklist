@@ -7,12 +7,19 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "build:question-index": "node scripts/build-question-index.js"
+    "build:question-index": "node scripts/build-question-index.js",
+    "test:static-access": "node tests/static-access.test.js",
+    "test:auth-session": "node tests/auth-session.test.js",
+    "test:billing-webhook": "node tests/billing-webhook.test.js",
+    "test:rate-csrf": "node tests/rate-csrf.test.js",
+    "test:production-config": "node tests/production-config.test.js"
   },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
-    "pdf-lib": "^1.17.1"
+    "@napi-rs/canvas": "^1.0.1",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^2.4.5"
   }
 }

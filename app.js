@@ -833,6 +833,7 @@ $("collapseChapter")?.addEventListener("click", () => setChapterDetails(false));
 $("loginForm")?.addEventListener("submit", handleLoginSubmit);
 $("purchaseButton")?.addEventListener("click", buyLifetimeAccess);
 $("topbarBuyButton")?.addEventListener("click", buyLifetimeAccess);
+$("logoutButton")?.addEventListener("click", logoutAccess);
 $("purchaseCloseButton")?.addEventListener("click", closePurchaseModal);
 $("createCheckoutButton")?.addEventListener("click", createCheckoutLink);
 $("knowledgeSearch")?.addEventListener("submit", async (event) => {
@@ -1063,7 +1064,15 @@ function buyLifetimeAccess() {
   openPurchaseModal();
 }
 
-function logoutAccess() {
+async function logoutAccess() {
+  try {
+    await fetch("/api/auth/logout", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({})
+    });
+  } catch {}
+
   state.auth = { loggedIn: false, purchased: false, user: null };
   saveAccessState();
   $("loginForm")?.reset();
@@ -1090,7 +1099,7 @@ function closePurchaseModal() {
 }
 
 async function createCheckoutLink() {
-  if (!state.auth.loggedIn || !state.auth.user?.id) {
+  if (!state.auth.loggedIn) {
     window.location.href = "login.html?return=buy";
     return;
   }
@@ -1100,10 +1109,7 @@ async function createCheckoutLink() {
     const response = await fetch("/api/billing/create-checkout", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        userId: state.auth.user.id,
-        email: state.auth.user.email
-      })
+      body: JSON.stringify({})
     });
     const data = await response.json();
     if (!response.ok) {
@@ -1158,16 +1164,11 @@ function refreshAccessControlledContent() {
 }
 
 async function syncAuthStateFromServer() {
-  if (!state.auth.loggedIn || !state.auth.user?.id || !state.auth.user?.email) return;
-
   try {
     const response = await fetch("/api/auth/session", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        userId: state.auth.user.id,
-        email: state.auth.user.email
-      })
+      body: JSON.stringify({})
     });
     if (!response.ok) {
       state.auth = { loggedIn: false, purchased: false, user: null };
@@ -1193,6 +1194,7 @@ async function syncAuthStateFromServer() {
 function updateAccountUi() {
   const status = $("accountStatus");
   const buyButton = $("topbarBuyButton");
+  const logoutButton = $("logoutButton");
   const purchaseButton = $("purchaseButton");
   const accessMeter = $("accessMeter");
   document.querySelectorAll(".auth-guest-action").forEach((action) => {
@@ -1212,6 +1214,10 @@ function updateAccountUi() {
     buyButton.hidden = hideBuyButton;
     buyButton.style.display = hideBuyButton ? "none" : "";
     buyButton.textContent = "Buy access";
+  }
+  if (logoutButton) {
+    logoutButton.hidden = !state.auth.loggedIn;
+    logoutButton.style.display = state.auth.loggedIn ? "" : "none";
   }
   if (purchaseButton) {
     purchaseButton.textContent = hasFullAccess() ? "Purchased" : "Buy lifetime access";
@@ -2148,8 +2154,7 @@ async function findQuestionMatchesFromApi(query, syllabusIds) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       query,
-      syllabusIds,
-      ...questionFinderIdentity()
+      syllabusIds
     })
   });
   const payload = await response.json();
@@ -2165,20 +2170,13 @@ function selectedQuestionSyllabusIds() {
   return [...document.querySelectorAll(".question-syllabus-input:checked")].map((input) => input.value);
 }
 
-function questionFinderIdentity() {
-  return {
-    userId: state.auth.user?.id || "",
-    email: state.auth.user?.email || ""
-  };
-}
-
 async function loadQuestionFinderAccess() {
   if (!window.location.protocol.startsWith("http")) return;
   try {
     const response = await fetch("/api/question-finder/access", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(questionFinderIdentity())
+      body: JSON.stringify({})
     });
     if (!response.ok) return;
     renderQuestionFinderAccess(await response.json());
@@ -2303,9 +2301,7 @@ function questionResultMarkup(match) {
 function questionPreviewUrl(questionId, type = "qp") {
   const params = new URLSearchParams({
     id: questionId,
-    type,
-    userId: state.auth.user?.id || "",
-    email: state.auth.user?.email || ""
+    type
   });
   return `/api/question-preview?${params.toString()}`;
 }
@@ -2374,8 +2370,7 @@ async function downloadSelectedQuestionPdf() {
         questionIds: selectedIds,
         query: $("questionFinderInput")?.value || "custom practice",
         includeMarkScheme: Boolean($("includeMarkScheme")?.checked),
-        syllabusIds: selectedQuestionSyllabusIds(),
-        ...questionFinderIdentity()
+        syllabusIds: selectedQuestionSyllabusIds()
       })
     });
     if (!response.ok) {

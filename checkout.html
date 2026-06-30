@@ -24,21 +24,21 @@
         </div>
         <div class="auth-copy">
           <h1>Lifetime access.</h1>
-          <p>This local checkout page stands in for a Stripe payment link while the product flow is being designed.</p>
+          <p>This page shows payment status after the provider confirms the checkout result.</p>
         </div>
       </aside>
 
       <section class="auth-main" aria-label="Checkout">
         <div class="auth-card">
-          <h2>Pay CNY 20</h2>
-          <p>Complete this checkout to unlock PaperLens for your account.</p>
+          <h2>Checkout status</h2>
+          <p>Your access activates only after the payment provider confirms successful payment.</p>
           <div class="checkout-summary">
             <span>Checklist library</span>
             <span>Past papers</span>
             <span>Topic question sets</span>
             <span>Lifetime updates</span>
           </div>
-          <button class="auth-button" id="completeCheckoutButton" type="button">I have paid</button>
+          <button class="auth-button" id="refreshCheckoutStatusButton" type="button">Refresh status</button>
           <p class="auth-message" id="authMessage" aria-live="polite"></p>
         </div>
       </section>

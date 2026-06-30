@@ -1,36 +1,39 @@
 const accessStorageKey = "paperlensAccess";
 const authMessage = document.getElementById("authMessage");
-const completeButton = document.getElementById("completeCheckoutButton");
+const refreshButton = document.getElementById("refreshCheckoutStatusButton");
 
-completeButton?.addEventListener("click", completeCheckout);
+refreshButton?.addEventListener("click", refreshCheckoutStatus);
+refreshCheckoutStatus();
 
-async function completeCheckout() {
+async function refreshCheckoutStatus() {
   const sessionId = new URLSearchParams(window.location.search).get("session");
   if (!sessionId) {
     setMessage("Payment link is missing a checkout session.", true);
     return;
   }
 
-  const result = await postJson("/api/billing/complete", { sessionId });
+  setMessage("Checking payment status...");
+  const result = await getJson(`/api/billing/status?session=${encodeURIComponent(sessionId)}`);
   if (!result.ok) {
     setMessage(result.error, true);
     return;
   }
 
-  saveSession(result.data.user);
-  setMessage("Payment confirmed. Your lifetime access is active.");
-  window.setTimeout(() => {
-    window.location.href = "index.html#igcse-0478";
-  }, 900);
+  if (result.data.user) saveSession(result.data.user);
+  if (result.data.paid) {
+    setMessage("Payment confirmed by provider. Your lifetime access is active.");
+    window.setTimeout(() => {
+      window.location.href = "index.html#igcse-0478";
+    }, 900);
+    return;
+  }
+
+  setMessage("Payment is still pending. Refresh after completing payment with the provider.");
 }
 
-async function postJson(url, body) {
+async function getJson(url) {
   try {
-    const response = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body)
-    });
+    const response = await fetch(url);
     const data = await response.json();
     return response.ok ? { ok: true, data } : { ok: false, error: data.error || "Something went wrong." };
   } catch {
