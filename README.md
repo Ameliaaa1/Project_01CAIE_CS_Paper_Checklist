@@ -55,6 +55,11 @@ The app also accepts the equivalent Upstash names:
 - `UPSTASH_REDIS_REST_URL`
 - `UPSTASH_REDIS_REST_TOKEN`
 
+Optional Redis/KV key names:
+
+- `PAPERLENS_USERS_KEY` - overrides the Redis key used for user records
+- `PAPERLENS_CHECKOUT_KEY` - overrides the Redis key used for checkout session records
+
 Production also requires:
 
 - `SESSION_SECRET` - at least 32 characters; used to sign server-side session cookies
@@ -69,13 +74,32 @@ Without those production variables, Vercel can serve pages and static past paper
 
 This repository includes `vercel.json` and `api/index.js` so Vercel serves the static site files directly and routes `/api/*` requests to the Node serverless function.
 
-Deploy with:
+For GitHub-based Preview deployments, push a branch to GitHub and let the Vercel GitHub integration create the Preview deployment. Do not run `vercel --prod` for Preview checks.
 
-```bash
-npx vercel --prod
-```
+### GitHub Push Checklist
+
+- Run `git status --short` and review every changed file before pushing.
+- Confirm `.env`, `.env.*`, `.vercel/`, `node_modules/`, `.tmp_papers/`, `data/users.json`, and `data/checkout-sessions.json` are untracked and ignored.
+- Run `npm test`.
+- Run `npm run build:question-index`.
+- Commit the generated `generated/question-index.json` update when paper content has changed.
+- Push a feature branch, not the production branch, when you want a Vercel Preview.
+- Open a GitHub pull request and wait for the Vercel deployment check.
+
+### Vercel GitHub Integration Checklist
+
+- Import this GitHub repository in Vercel.
+- Use the project root as the Vercel root directory.
+- Use the Node.js runtime with `api/index.js` as configured in `vercel.json`.
+- Keep the build command as `npm run build` or leave Vercel's detected npm build command enabled.
+- Set required environment variables in Vercel for Preview and Production as appropriate.
+- Add Redis/KV environment variables for persistent user, checkout, and trial state.
+- Add Stripe environment variables before testing paid checkout.
+- Keep production domains attached only to Production deployments.
 
 Add `paperlens.eu.cc` as the production domain in Vercel, then point the domain's DNS to Vercel from Cloudflare.
+
+After pushing a branch, get the Preview URL from the GitHub pull request's Vercel check, from Vercel's automatic PR comment if enabled, or from the deployment list in the Vercel dashboard.
 
 ## Project Structure
 

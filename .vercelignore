@@ -1,7 +1,11 @@
 .git
 .DS_Store
+.env
+.env.*
+.vercel
 .tmp_papers
 node_modules
 npm-debug.log*
 data/users.json
 data/checkout-sessions.json
+textbook_syllabus/*.pdf

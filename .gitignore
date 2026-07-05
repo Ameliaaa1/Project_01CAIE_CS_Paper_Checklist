@@ -1,5 +1,9 @@
 .DS_Store
 node_modules/
+npm-debug.log*
+.env
+.env.*
+.vercel/
 .tmp_papers/
 data/*.json
 !data/*.example.json
