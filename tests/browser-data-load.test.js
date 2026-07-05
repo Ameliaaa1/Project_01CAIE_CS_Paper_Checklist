@@ -88,14 +88,14 @@ context.addEventListener = () => {};
 context.removeEventListener = () => {};
 
 vm.createContext(context);
-vm.runInContext(fs.readFileSync(path.join(rootDir, "assets", "paperlens-data.js"), "utf8"), context, {
+vm.runInContext(fs.readFileSync(path.join(rootDir, "public", "assets", "paperlens-data.js"), "utf8"), context, {
   filename: "paperlens-data.js"
 });
 
 assert.ok(context.PaperLensData, "paperlens-data.js should define globalThis.PaperLensData");
 assert.ok(Array.isArray(context.PaperLensData.topicBank), "PaperLensData should include topicBank");
 
-vm.runInContext(fs.readFileSync(path.join(rootDir, "app.js"), "utf8"), context, {
+vm.runInContext(fs.readFileSync(path.join(rootDir, "public", "app.js"), "utf8"), context, {
   filename: "app.js"
 });
 

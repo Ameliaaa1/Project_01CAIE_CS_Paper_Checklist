@@ -3,7 +3,7 @@
   "functions": {
     "api/index.js": {
       "maxDuration": 60,
-      "includeFiles": "{assets/paperlens-data.js,generated/**,textbook_syllabus/pastpaper/**/*.pdf}"
+      "includeFiles": "{public/assets/paperlens-data.js,generated/**,public/textbook_syllabus/pastpaper/**/*.pdf}"
     }
   },
   "rewrites": [

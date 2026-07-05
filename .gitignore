@@ -8,6 +8,7 @@ npm-debug.log*
 data/*.json
 !data/*.example.json
 textbook_syllabus/*
-!textbook_syllabus/pastpaper/
-!textbook_syllabus/pastpaper/**/
-!textbook_syllabus/pastpaper/**/*.pdf
+public/textbook_syllabus/*
+!public/textbook_syllabus/pastpaper/
+!public/textbook_syllabus/pastpaper/**/
+!public/textbook_syllabus/pastpaper/**/*.pdf

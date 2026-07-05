@@ -1,10 +1,10 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { PDFParse } = require("pdf-parse");
-const { syllabusChecklist } = require("../assets/paperlens-data");
+const { syllabusChecklist } = require("../public/assets/paperlens-data");
 
 const rootDir = path.resolve(__dirname, "..");
-const paperRoot = path.join(rootDir, "textbook_syllabus", "pastpaper");
+const paperRoot = path.join(rootDir, "public", "textbook_syllabus", "pastpaper");
 const outputPath = path.join(rootDir, "generated", "question-index.json");
 const stopWords = new Set([
   "about", "after", "again", "also", "answer", "before", "being", "below", "computer", "correct", "data", "describe",

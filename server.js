@@ -3,7 +3,7 @@ const http = require("node:http");
 const crypto = require("node:crypto");
 const path = require("node:path");
 const { PDFDocument } = require("pdf-lib");
-const sharedData = require("./assets/paperlens-data");
+const sharedData = require("./public/assets/paperlens-data");
 
 let PDFParse = null;
 try {
@@ -20,6 +20,7 @@ try {
 }
 
 const rootDir = __dirname;
+const publicDir = path.join(rootDir, "public");
 const dataDir = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(rootDir, "data");
 const usersDbPath = path.join(dataDir, "users.json");
 const checkoutDbPath = path.join(dataDir, "checkout-sessions.json");
@@ -1003,7 +1004,7 @@ function localPaperPathForQuestion(question, type) {
     (candidate) => candidate.code === parts.seasonCode && String(candidate.year).slice(-2) === parts.year && candidate.components.includes(parts.component)
   );
   if (!session) return "";
-  return path.join(rootDir, "textbook_syllabus", "pastpaper", localPastPaperFolder(session), localPaperFilename(session, type, parts.component));
+  return path.join(publicDir, "textbook_syllabus", "pastpaper", localPastPaperFolder(session), localPaperFilename(session, type, parts.component));
 }
 
 function paperParts(paper) {
@@ -1052,9 +1053,10 @@ function serveStatic(requestPath, res) {
     return;
   }
 
-  const filePath = path.normalize(path.join(rootDir, publicPath));
-  const rootWithSeparator = rootDir.endsWith(path.sep) ? rootDir : `${rootDir}${path.sep}`;
-  if (filePath !== rootDir && !filePath.startsWith(rootWithSeparator)) {
+  const baseDir = publicDir;
+  const filePath = path.normalize(path.join(baseDir, publicPath));
+  const baseWithSeparator = baseDir.endsWith(path.sep) ? baseDir : `${baseDir}${path.sep}`;
+  if (filePath !== baseDir && !filePath.startsWith(baseWithSeparator)) {
     sendJson(res, { error: "Forbidden" }, 403);
     return;
   }
