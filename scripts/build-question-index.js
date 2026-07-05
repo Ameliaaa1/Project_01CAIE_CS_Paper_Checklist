@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
-const vm = require("node:vm");
 const { PDFParse } = require("pdf-parse");
+const { syllabusChecklist } = require("../data/paperlens-data");
 
 const rootDir = path.resolve(__dirname, "..");
 const paperRoot = path.join(rootDir, "textbook_syllabus", "pastpaper");
@@ -50,12 +50,7 @@ async function main() {
 }
 
 function loadSyllabusSections() {
-  const appSource = fs.readFileSync(path.join(rootDir, "app.js"), "utf8");
-  const dataSource = appSource.slice(0, appSource.indexOf("const state ="));
-  const context = {};
-  vm.createContext(context);
-  vm.runInContext(`${dataSource}\nglobalThis.__syllabus = syllabusChecklist;`, context, { filename: "paperlens-syllabus.js" });
-  return Object.values(context.__syllabus).flatMap((chapters) =>
+  return Object.values(syllabusChecklist).flatMap((chapters) =>
     chapters.flatMap((chapter) => chapter.sections.map((section) => ({
       code: section.code,
       title: section.title,

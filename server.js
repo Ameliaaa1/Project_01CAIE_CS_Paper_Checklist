@@ -2,8 +2,8 @@ const fs = require("node:fs");
 const http = require("node:http");
 const crypto = require("node:crypto");
 const path = require("node:path");
-const vm = require("node:vm");
 const { PDFDocument } = require("pdf-lib");
+const sharedData = require("./data/paperlens-data");
 
 let PDFParse = null;
 try {
@@ -60,6 +60,7 @@ const publicStaticFiles = new Set([
   "login.html",
   "signup.html",
   "checkout.html",
+  "data/paperlens-data.js",
   "app.js",
   "auth.js",
   "checkout.js",
@@ -245,28 +246,14 @@ if (require.main === module) {
 module.exports = handleRequest;
 
 function loadAppData() {
-  const appSource = fs.readFileSync(path.join(rootDir, "app.js"), "utf8");
-  const dataSource = appSource.slice(0, appSource.indexOf("const state ="));
-  const questionBankStart = appSource.indexOf("const pastPaperQuestionBank =");
-  const questionBankEnd = appSource.indexOf("renderPastPaperCatalogs();");
-  const questionBankSource = questionBankStart >= 0 && questionBankEnd > questionBankStart ? appSource.slice(questionBankStart, questionBankEnd) : "const pastPaperQuestionBank = [];";
-  const context = {};
-  vm.createContext(context);
-  vm.runInContext(
-    `${dataSource}
-    ${questionBankSource}
-    globalThis.__paperlensData = {
-      topicBank,
-      sourceLibrary,
-      syllabusChecklist,
-      chapterOneSections,
-      paperSessions,
-      pastPaperQuestionBank
-    };`,
-    context,
-    { filename: "paperlens-data.js" }
-  );
-  const appData = context.__paperlensData;
+  const appData = {
+    topicBank: sharedData.topicBank,
+    sourceLibrary: sharedData.sourceLibrary,
+    syllabusChecklist: sharedData.syllabusChecklist,
+    chapterOneSections: sharedData.chapterOneSections,
+    paperSessions: sharedData.paperSessions,
+    pastPaperQuestionBank: [...sharedData.pastPaperQuestionBank]
+  };
   const generatedEntries = loadGeneratedQuestionEntries();
   const manualKeys = new Set(appData.pastPaperQuestionBank.map(questionBankKey));
   appData.pastPaperQuestionBank = [
