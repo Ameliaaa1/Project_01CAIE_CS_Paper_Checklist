@@ -3,7 +3,7 @@ const http = require("node:http");
 const crypto = require("node:crypto");
 const path = require("node:path");
 const { PDFDocument } = require("pdf-lib");
-const sharedData = require("./data/paperlens-data");
+const sharedData = require("./assets/paperlens-data");
 
 let PDFParse = null;
 try {
@@ -60,7 +60,7 @@ const publicStaticFiles = new Set([
   "login.html",
   "signup.html",
   "checkout.html",
-  "data/paperlens-data.js",
+  "assets/paperlens-data.js",
   "app.js",
   "auth.js",
   "checkout.js",

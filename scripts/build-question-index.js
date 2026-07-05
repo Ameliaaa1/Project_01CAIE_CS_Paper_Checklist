@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { PDFParse } = require("pdf-parse");
-const { syllabusChecklist } = require("../data/paperlens-data");
+const { syllabusChecklist } = require("../assets/paperlens-data");
 
 const rootDir = path.resolve(__dirname, "..");
 const paperRoot = path.join(rootDir, "textbook_syllabus", "pastpaper");

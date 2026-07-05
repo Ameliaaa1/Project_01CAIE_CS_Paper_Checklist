@@ -1,6 +1,6 @@
 const paperLensData = globalThis.PaperLensData;
 if (!paperLensData) {
-  throw new Error("PaperLens shared data did not load. Ensure /data/paperlens-data.js is served before /app.js.");
+  throw new Error("PaperLens shared data did not load. Ensure /assets/paperlens-data.js is served before /app.js.");
 }
 
 const {

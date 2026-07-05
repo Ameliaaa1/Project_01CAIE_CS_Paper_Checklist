@@ -36,7 +36,7 @@ server.listen(0, "127.0.0.1", async () => {
     const publicResponse = await fetch(`${baseUrl}/index.html`);
     assert.equal(publicResponse.status, 200, "index.html should remain publicly served");
 
-    const dataResponse = await fetch(`${baseUrl}/data/paperlens-data.js`);
+    const dataResponse = await fetch(`${baseUrl}/assets/paperlens-data.js`);
     assert.equal(dataResponse.status, 200, "shared browser data should be publicly served");
     assert.match(await dataResponse.text(), /PaperLensData/, "shared browser data should assign PaperLensData");
   } finally {

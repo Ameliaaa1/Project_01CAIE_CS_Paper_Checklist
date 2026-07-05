@@ -88,7 +88,7 @@ context.addEventListener = () => {};
 context.removeEventListener = () => {};
 
 vm.createContext(context);
-vm.runInContext(fs.readFileSync(path.join(rootDir, "data", "paperlens-data.js"), "utf8"), context, {
+vm.runInContext(fs.readFileSync(path.join(rootDir, "assets", "paperlens-data.js"), "utf8"), context, {
   filename: "paperlens-data.js"
 });
 
