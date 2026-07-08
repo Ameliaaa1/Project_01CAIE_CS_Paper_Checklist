@@ -50,7 +50,15 @@ const server = http.createServer(handleRequest);
     };
 
     const unauthenticated = await postJson(baseUrl, "/api/question-search", forgedBody);
-    assert.equal(unauthenticated.response.status, 401, "unauthenticated protected request should fail");
+    assert.equal(unauthenticated.response.status, 200, "guest question search should be allowed");
+    assert.equal(unauthenticated.data.access.loggedIn, false, "guest search must not accept forged identity");
+
+    const guestSql = await postJson(baseUrl, "/api/question-search", {
+      query: "sql",
+      syllabusIds: ["caie-igcse-0478"]
+    });
+    assert.equal(guestSql.response.status, 200, "guest SQL search should use the server index");
+    assert(guestSql.data.matches.length > 10, "SQL search should return the indexed SQL past-paper set, not only manual fallback matches");
 
     const signup = await postJson(baseUrl, "/api/auth/signup", {
       email: "student@example.com",
@@ -68,7 +76,8 @@ const server = http.createServer(handleRequest);
       userId: signup.data.user.id,
       email: signup.data.user.email
     });
-    assert.equal(forgedRealIdentity.response.status, 401, "forged userId/email without session should fail");
+    assert.equal(forgedRealIdentity.response.status, 200, "forged userId/email without session should stay a guest search");
+    assert.equal(forgedRealIdentity.data.access.loggedIn, false, "forged userId/email must not create a logged-in search");
 
     const signupSetCookie = signup.response.headers.get("set-cookie") || "";
     assert.match(signupSetCookie, /HttpOnly/, "session cookie should be HttpOnly");

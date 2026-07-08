@@ -40,6 +40,8 @@ const stripePriceId = process.env.STRIPE_PRICE_ID || "";
 const stripeWebhookSecret = process.env.STRIPE_WEBHOOK_SECRET || "";
 const stripeWebhookToleranceSeconds = 300;
 const useMockStripeCheckout = process.env.STRIPE_CHECKOUT_MOCK === "1" && !isProduction;
+const openaiApiKey = process.env.OPENAI_API_KEY || "";
+const openaiGradingModel = process.env.OPENAI_GRADING_MODEL || "gpt-4.1-mini";
 const publicBaseUrl = (process.env.PUBLIC_BASE_URL || process.env.APP_BASE_URL || "").replace(/\/+$/, "");
 const port = Number(process.env.PORT || 3000);
 const host = process.env.HOST || "127.0.0.1";
@@ -112,8 +114,8 @@ async function handleRequest(req, res) {
 
     if (url.pathname === "/api/question-search" && req.method === "POST") {
       const body = await readJsonBody(req);
-      const user = await requireAuthenticatedUser(req);
-      assertTrustedOrigin(req);
+      const user = await optionalAuthenticatedUser(req);
+      if (user) assertTrustedOrigin(req);
       sendJson(res, await searchQuestionFinder(body, user));
       return;
     }
@@ -129,6 +131,14 @@ async function handleRequest(req, res) {
         "Cache-Control": "private, max-age=300"
       });
       res.end(preview);
+      return;
+    }
+
+    if (url.pathname === "/api/grade-answer" && req.method === "POST") {
+      const body = await readJsonBody(req);
+      const user = await requireAuthenticatedUser(req);
+      assertTrustedOrigin(req);
+      sendJson(res, await gradeQuestionAnswer(body, user));
       return;
     }
 
@@ -270,10 +280,37 @@ function loadGeneratedQuestionEntries() {
 
   try {
     const index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
-    return Array.isArray(index.entries) ? index.entries : [];
+    return Array.isArray(index.entries)
+      ? index.entries
+          .map((entry) => ({
+            ...entry,
+            question: cleanExtractedQuestionText(entry.question)
+          }))
+          .filter((entry) => entry.question && !hasCorruptPdfText(entry.question))
+      : [];
   } catch {
     return [];
   }
+}
+
+function cleanExtractedQuestionText(value) {
+  return String(value || "")
+    .replace(/[\u0000-\u001f]+/g, " ")
+    .replace(/Ĭ[^A-Za-z0-9()[\].,;:!?'" \/-]{2,}[^A-Za-z0-9()[\].,;:!?'" \/-]*/g, " ")
+    .replace(/© UCLES \d{4} 0478\/\d{2}\/[A-Z]\/[A-Z]\/\d{2}/g, " ")
+    .replace(/\[Turn over\s+\d+[^A-Za-z]*(?=(?:\([a-z]\)|\d+\s|$))/gi, " ")
+    .replace(/\bDO NOT WRITE IN THIS MARGIN\b/gi, " ")
+    .replace(/\bBLANK PAGE\b[\s\S]*?Cambridge Assessment[^.]*\./gi, " ")
+    .replace(/Permission to reproduce[\s\S]*?department of the University of Cambridge\./gi, " ")
+    .replace(/\.{8,}/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function hasCorruptPdfText(value) {
+  const text = String(value || "");
+  const suspicious = text.match(/[ĬĀĂĄĈĊČĎĐĒĔĖĘĚĜĞĠĢĤĦĨĪĬÎÏÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîï]/g) || [];
+  return suspicious.length > 8;
 }
 
 function questionBankKey(entry) {
@@ -496,17 +533,27 @@ async function questionFinderAccess(user = null) {
   };
 }
 
-async function searchQuestionFinder(body = {}, user) {
-  const db = await readUsersDb();
-  const dbUser = db.users.find((candidate) => candidate.id === user.id);
-  if (!dbUser) throwHttpError("Log in to use your two free Question Finder searches.", 401);
-
+async function searchQuestionFinder(body = {}, user = null) {
   const query = String(body.query || "").trim();
   const syllabusIds = normaliseSyllabusIds(body.syllabusIds);
   if (!query) throwHttpError("Enter a knowledge point.", 400);
   if (!syllabusIds.length) throwHttpError("Select at least one syllabus.", 400);
 
-  const matches = findQuestionMatches(query, syllabusIds).slice(0, 30);
+  const matches = findQuestionMatches(query, syllabusIds).slice(0, 120);
+
+  if (!user) {
+    return {
+      matches,
+      trialConsumed: false,
+      searchId: null,
+      access: await questionFinderAccess(null)
+    };
+  }
+
+  const db = await readUsersDb();
+  const dbUser = db.users.find((candidate) => candidate.id === user.id);
+  if (!dbUser) throwHttpError("Log in to use your two free Question Finder searches.", 401);
+
   const key = questionFinderSearchKey(query, syllabusIds);
   const searches = questionFinderSearches(dbUser);
   const existing = searches.find((search) => search.key === key);
@@ -567,6 +614,184 @@ function questionById(id) {
   return questionSearchIndex().find((question) => question.id === id) || null;
 }
 
+async function gradeQuestionAnswer(body = {}, user) {
+  if (!openaiApiKey) throwHttpError("AI grading is not configured. Set OPENAI_API_KEY on the server.", 503);
+
+  const question = questionById(String(body.questionId || ""));
+  const userAnswer = String(body.userAnswer || "").trim();
+  if (!question) throwHttpError("Question not found.", 404);
+  if (!userAnswer) throwHttpError("Enter your answer before checking it.", 400);
+  if (userAnswer.length > 5000) throwHttpError("Answer is too long. Keep it under 5000 characters.", 400);
+
+  await assertQuestionPreviewAccess(question.id, user);
+
+  const part = normalisePracticePart(body.part);
+  const maxScore = estimateQuestionMaxScore(question);
+  const grading = await gradeWithOpenAI(question, userAnswer, maxScore, part);
+  return {
+    ok: true,
+    questionId: question.id,
+    source: question.source,
+    knowledge: question.knowledge,
+    sectionTitle: question.sectionTitle,
+    grading
+  };
+}
+
+function normalisePracticePart(part) {
+  if (!part || typeof part !== "object") return null;
+  return {
+    label: String(part.label || "").slice(0, 40),
+    prompt: cleanExtractedQuestionText(part.prompt || "").slice(0, 1200),
+    markScheme: String(part.markScheme || "").slice(0, 2000)
+  };
+}
+
+function estimateQuestionMaxScore(question) {
+  const answer = String(question.answer || "").replace(/^MS:\s*/i, "");
+  const points = answer
+    .split(/;|\n|(?:\.\s+)/)
+    .map((point) => point.trim())
+    .filter((point) => point.length >= 8);
+  return Math.min(8, Math.max(1, points.length || 1));
+}
+
+async function gradeWithOpenAI(question, userAnswer, maxScore, part = null) {
+  const response = await fetch("https://api.openai.com/v1/responses", {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${openaiApiKey}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      model: openaiGradingModel,
+      input: [
+        {
+          role: "system",
+          content:
+            "You are a strict but helpful CAIE IGCSE Computer Science examiner. Mark only against the supplied mark scheme. Award credit for equivalent wording, identify vague or incorrect statements, and keep feedback concise."
+        },
+        {
+          role: "user",
+          content: JSON.stringify({
+            task: "Grade the student's answer against the mark scheme.",
+            source: question.source,
+            syllabusSection: question.sectionTitle,
+            topic: question.knowledge,
+            question: part?.prompt || question.question,
+            subQuestion: part?.label || "",
+            markScheme: part?.markScheme || question.answer,
+            estimatedMaxScore: maxScore,
+            studentAnswer: userAnswer
+          })
+        }
+      ],
+      text: {
+        format: {
+          type: "json_schema",
+          name: "paperlens_answer_grading",
+          strict: true,
+          schema: gradingSchema()
+        }
+      }
+    })
+  });
+
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    throwHttpError(payload.error?.message || "AI grading request failed.", 502);
+  }
+
+  const text = responseOutputText(payload);
+  if (!text) throwHttpError("AI grading returned an empty response.", 502);
+
+  try {
+    return normaliseGrading(JSON.parse(text), maxScore);
+  } catch {
+    throwHttpError("AI grading returned an invalid response.", 502);
+  }
+}
+
+function gradingSchema() {
+  return {
+    type: "object",
+    additionalProperties: false,
+    required: ["score", "maxScore", "awardedPoints", "missedPoints", "issues", "feedback", "improvedAnswer"],
+    properties: {
+      score: { type: "number", minimum: 0 },
+      maxScore: { type: "number", minimum: 1 },
+      awardedPoints: {
+        type: "array",
+        items: { type: "string" }
+      },
+      missedPoints: {
+        type: "array",
+        items: { type: "string" }
+      },
+      issues: {
+        type: "array",
+        items: {
+          type: "object",
+          additionalProperties: false,
+          required: ["type", "comment"],
+          properties: {
+            type: {
+              type: "string",
+              enum: ["too vague", "missing keyword", "wrong concept", "not enough detail", "repeated point", "off task"]
+            },
+            comment: { type: "string" }
+          }
+        }
+      },
+      feedback: { type: "string" },
+      improvedAnswer: { type: "string" }
+    }
+  };
+}
+
+function responseOutputText(payload) {
+  if (typeof payload.output_text === "string") return payload.output_text;
+  for (const item of payload.output || []) {
+    for (const content of item.content || []) {
+      if (content.type === "output_text" && typeof content.text === "string") return content.text;
+    }
+  }
+  return "";
+}
+
+function normaliseGrading(grading, fallbackMaxScore) {
+  const maxScore = clampNumber(grading.maxScore, 1, 20, fallbackMaxScore);
+  return {
+    score: clampNumber(grading.score, 0, maxScore, 0),
+    maxScore,
+    awardedPoints: normaliseStringList(grading.awardedPoints),
+    missedPoints: normaliseStringList(grading.missedPoints),
+    issues: Array.isArray(grading.issues)
+      ? grading.issues
+          .map((issue) => ({
+            type: String(issue?.type || "not enough detail"),
+            comment: String(issue?.comment || "").trim()
+          }))
+          .filter((issue) => issue.comment)
+          .slice(0, 6)
+      : [],
+    feedback: String(grading.feedback || "").trim(),
+    improvedAnswer: String(grading.improvedAnswer || "").trim()
+  };
+}
+
+function normaliseStringList(value) {
+  return Array.isArray(value)
+    ? value.map((item) => String(item || "").trim()).filter(Boolean).slice(0, 8)
+    : [];
+}
+
+function clampNumber(value, min, max, fallback) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return fallback;
+  return Math.min(max, Math.max(min, number));
+}
+
 function questionFinderSearches(user) {
   return Array.isArray(user.questionFinderSearches) ? user.questionFinderSearches : [];
 }
@@ -620,16 +845,18 @@ function findQuestionMatches(query, syllabusIds = ["caie-igcse-0478"]) {
 
 function questionSearchIndex() {
   return data.pastPaperQuestionBank.map((hit, index) => {
+    const questionText = cleanExtractedQuestionText(hit.question);
     const section = syllabusSectionByCode(hit.section);
     const chapter = syllabusChapterForSection(hit.section);
     const sectionTitle = section ? `${section.code} ${section.title}` : hit.section;
     const chapterTitle = chapter ? `${chapter.chapter}. ${chapter.title}` : "";
-    const tags = extractSearchTerms(`${hit.knowledge} ${hit.question} ${hit.answer} ${sectionTitle} ${chapterTitle}`);
+    const tags = extractSearchTerms(`${hit.knowledge} ${questionText} ${hit.answer} ${sectionTitle} ${chapterTitle}`);
     const source = hit.ref ? `${hit.paper} ${hit.ref}` : hit.paper;
-    const searchBody = [hit.knowledge, hit.question, hit.answer, sectionTitle, chapterTitle, tags.join(" ")].join(" ");
+    const searchBody = [hit.knowledge, questionText, hit.answer, sectionTitle, chapterTitle, tags.join(" ")].join(" ");
 
     return {
       ...hit,
+      question: questionText,
       syllabusId: hit.syllabusId || "caie-igcse-0478",
       id: questionId(hit, index),
       index,
@@ -1263,6 +1490,7 @@ function rateLimitConfig(pathname) {
   if (pathname.startsWith("/api/auth/")) return { name: "auth", limit: 30, windowMs: 60_000 };
   if (pathname.startsWith("/api/billing/")) return { name: "billing", limit: 60, windowMs: 60_000 };
   if (pathname === "/api/question-search") return { name: "question-search", limit: 30, windowMs: 60_000 };
+  if (pathname === "/api/grade-answer") return { name: "grade-answer", limit: 12, windowMs: 60_000 };
   return null;
 }
 

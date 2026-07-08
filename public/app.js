@@ -20,8 +20,12 @@ const state = {
   results: [],
   checklist: [],
   questionMatches: [],
-  selectedQuestionIds: new Set(),
   questionAccess: null,
+  activePracticeQuestion: null,
+  activePracticeParts: [],
+  activePracticePartIndex: 0,
+  activePracticeMode: "free",
+  activeTemplateKeywords: [],
   auth: loadAccessState()
 };
 
@@ -63,22 +67,39 @@ $("questionFinderInput")?.addEventListener("input", (event) => {
 });
 document.querySelectorAll(".question-syllabus-input").forEach((input) => {
   input.addEventListener("change", () => {
-    clearQuestionSelection();
     state.questionMatches = [];
     const results = $("questionFinderResults");
     if (results) results.innerHTML = `<p class="question-empty-state">Enter a knowledge point to search the selected syllabus.</p>`;
   });
 });
-$("clearQuestionSelection")?.addEventListener("click", clearQuestionSelection);
-$("downloadQuestionPdf")?.addEventListener("click", downloadSelectedQuestionPdf);
 $("questionFinderBuyButton")?.addEventListener("click", buyLifetimeAccess);
 $("questionImageCloseButton")?.addEventListener("click", closeQuestionImageModal);
+$("paperCloseButton")?.addEventListener("click", closePaperModal);
+$("practiceCloseButton")?.addEventListener("click", closePracticeModal);
+$("practiceForm")?.addEventListener("submit", submitPracticeAnswer);
+$("practicePreviewButton")?.addEventListener("click", openActivePracticePreview);
+$("practicePartList")?.addEventListener("click", handlePracticePartClick);
+document.querySelectorAll("[data-practice-mode]").forEach((button) => {
+  button.addEventListener("click", () => setPracticeMode(button.dataset.practiceMode || "free"));
+});
 $("questionImageModal")?.addEventListener("click", (event) => {
   if (event.target === event.currentTarget) closeQuestionImageModal();
 });
+$("paperModal")?.addEventListener("click", (event) => {
+  if (event.target === event.currentTarget) closePaperModal();
+});
+$("practiceModal")?.addEventListener("click", (event) => {
+  if (event.target === event.currentTarget) closePracticeModal();
+});
 document.addEventListener("click", handleQuestionPreviewClick);
+document.addEventListener("click", handleQuestionPracticeClick);
+document.addEventListener("error", handleQuestionPreviewImageError, true);
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") closeQuestionImageModal();
+  if (event.key === "Escape") {
+    closeQuestionImageModal();
+    closePaperModal();
+    closePracticeModal();
+  }
 });
 document.querySelectorAll("[data-question-suggestion]").forEach((button) => {
   button.addEventListener("click", async () => {
@@ -635,8 +656,23 @@ function paperChipIdFromPaper(paper, type) {
   return `paper-chip-0478-${parts.seasonCode}${parts.year}-${type}-${parts.component}`;
 }
 
+function paperSessionFromPaper(paper) {
+  const parts = paperParts(paper);
+  if (!parts) return null;
+  const year = 2000 + Number(parts.year);
+  const season = { m: "March", s: "May/June", w: "Oct/Nov" }[parts.seasonCode];
+  return season ? { year, season, code: parts.seasonCode } : null;
+}
+
 function paperPdfUrl(session, type, component) {
   return `textbook_syllabus/pastpaper/${encodeURIComponent(localPastPaperFolder(session))}/${localPaperFilename(session, type, component)}`;
+}
+
+function paperPdfUrlForQuestion(question, type = "qp") {
+  const parts = paperParts(question?.paper || question?.paperLabel || "");
+  const session = paperSessionFromPaper(question?.paper || question?.paperLabel || "");
+  if (!parts || !session || !hasLocalPaperFile(session, type, parts.component)) return "";
+  return paperPdfUrl(session, type, parts.component);
 }
 
 function localPastPaperFolder(session) {
@@ -725,7 +761,7 @@ function scrollToAnchorTarget(hash, options = {}) {
 
   target.closest("details")?.setAttribute("open", "");
   if (options.expandSidebar !== false) openSidebarBranch(hash);
-  const offset = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--anchor-offset")) || 0;
+  const offset = anchorScrollOffset(target);
   const scrollContainer = target.closest(".page-content");
   if (scrollContainer) {
     const containerTop = scrollContainer.getBoundingClientRect().top;
@@ -739,6 +775,11 @@ function scrollToAnchorTarget(hash, options = {}) {
   if (options.updateHistory !== false && window.history.pushState) {
     window.history.pushState(null, "", hash);
   }
+}
+
+function anchorScrollOffset(target) {
+  if (target.id === "question-finder") return 0;
+  return Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--anchor-offset")) || 0;
 }
 
 function openSidebarBranch(hash) {
@@ -978,7 +1019,6 @@ async function renderQuestionFinderResults(query) {
     state.questionMatches = [];
     status.textContent = "Choose a syllabus and enter a knowledge point.";
     resultsContainer.innerHTML = `<p class="question-empty-state">Try a precise topic such as lossless compression, or a broader chapter phrase such as data storage.</p>`;
-    updateQuestionSelectionUi();
     return [];
   }
 
@@ -992,9 +1032,16 @@ async function renderQuestionFinderResults(query) {
   try {
     payload = await findQuestionMatchesFromApi(trimmed, syllabusIds);
   } catch (error) {
+    if (!error.status) {
+      payload = {
+        matches: findQuestionMatches(trimmed),
+        access: state.questionAccess || { loggedIn: false, purchased: false, canSearch: true }
+      };
+    } else {
     status.textContent = error.message || "Could not search the question bank.";
     await loadQuestionFinderAccess();
     return [];
+    }
   }
 
   const matches = payload.matches || [];
@@ -1009,16 +1056,6 @@ async function renderQuestionFinderResults(query) {
     ? matches.map(questionResultMarkup).join("")
     : `<p class="question-empty-state">No question in the indexed bank matches this term yet. Try a broader phrase, or add tags to the question bank for this knowledge point.</p>`;
 
-  resultsContainer.querySelectorAll("[data-question-select]").forEach((checkbox) => {
-    checkbox.addEventListener("change", () => {
-      const id = checkbox.dataset.questionSelect;
-      if (checkbox.checked) state.selectedQuestionIds.add(id);
-      else state.selectedQuestionIds.delete(id);
-      updateQuestionSelectionUi();
-    });
-  });
-
-  updateQuestionSelectionUi();
   return matches;
 }
 
@@ -1067,7 +1104,7 @@ function renderQuestionFinderAccess(access) {
   const buyButton = $("questionFinderBuyButton");
   const section = $("question-finder");
   const searchButton = $("questionFinderSubmit");
-  const searchLocked = !access.canSearch;
+  const searchLocked = Boolean(access.loggedIn && !access.canSearch);
 
   bar?.classList.toggle("has-full-access", Boolean(access.purchased));
   bar?.classList.toggle("is-exhausted", Boolean(access.loggedIn && !access.purchased && access.remaining === 0));
@@ -1078,13 +1115,13 @@ function renderQuestionFinderAccess(access) {
     if (detail) detail.textContent = "Two successful searches are included before purchase.";
   } else if (access.purchased) {
     if (title) title.textContent = "Full Question Finder access";
-    if (detail) detail.textContent = "Unlimited syllabus searches and original-format PDFs.";
+    if (detail) detail.textContent = "Unlimited syllabus searches, previews, and answer practice.";
   } else if (access.remaining > 0) {
     if (title) title.textContent = `${access.remaining} free search${access.remaining === 1 ? "" : "es"} remaining`;
     if (detail) detail.textContent = "A search is counted only when at least one question is shown.";
   } else {
     if (title) title.textContent = "Free searches complete";
-    if (detail) detail.textContent = "Buy access to continue searching and building question sets.";
+    if (detail) detail.textContent = "Buy access to continue searching and practising with mark-scheme feedback.";
   }
 
   if (loginLink) loginLink.hidden = Boolean(access.loggedIn);
@@ -1120,16 +1157,13 @@ function findQuestionMatches(query) {
 }
 
 function questionResultMarkup(match) {
-  const checked = state.selectedQuestionIds.has(match.id) ? "checked" : "";
-  const selectedClass = checked ? " is-selected" : "";
   const questionUrl = questionPreviewUrl(match.id, "qp");
   const answerUrl = questionPreviewUrl(match.id, "ms");
   const questionAlt = `Original past-paper question ${match.source}`;
   const answerAlt = `Original mark scheme answer ${match.source}`;
   return `
-    <article class="question-result-card${selectedClass}" data-question-card="${match.id}">
+    <article class="question-result-card" data-question-card="${match.id}">
       <div class="question-card-head">
-        <input type="checkbox" aria-label="Select ${escapeHtml(match.source)}" data-question-select="${match.id}" ${checked} />
         <div class="question-card-title">
           <strong>${highlightSearchTerm(escapeHtml(match.knowledge), $("questionFinderInput")?.value || "")}</strong>
           <div class="question-meta-row">
@@ -1137,6 +1171,7 @@ function questionResultMarkup(match) {
             <span>Syllabus: ${escapeHtml(match.sectionTitle)}</span>
           </div>
         </div>
+        <button class="question-practice-button" type="button" data-question-practice-id="${escapeHtml(match.id)}">Answer</button>
       </div>
       <button
         class="question-preview-button"
@@ -1173,6 +1208,14 @@ function questionResultMarkup(match) {
   `;
 }
 
+function handleQuestionPracticeClick(event) {
+  const button = event.target.closest("[data-question-practice-id]");
+  if (!button) return;
+  const question = state.questionMatches.find((match) => match.id === button.dataset.questionPracticeId) || questionSearchIndex().find((match) => match.id === button.dataset.questionPracticeId);
+  if (!question) return;
+  openPracticeModal(question);
+}
+
 function questionPreviewUrl(questionId, type = "qp") {
   const params = new URLSearchParams({
     id: questionId,
@@ -1181,7 +1224,418 @@ function questionPreviewUrl(questionId, type = "qp") {
   return `/api/question-preview?${params.toString()}`;
 }
 
+function openPracticeModal(question) {
+  state.activePracticeQuestion = question;
+  state.activePracticeParts = practicePartsForQuestion(question);
+  state.activePracticePartIndex = 0;
+  state.activePracticeMode = "free";
+  const modal = $("practiceModal");
+  if (!modal) return;
+
+  $("practiceSource").textContent = question.source || "Question practice";
+  $("practiceTitle").textContent = question.knowledge || "Answer this question";
+  $("practiceMeta").innerHTML = `
+    <span>${escapeHtml(question.sectionTitle || question.section || "Syllabus")}</span>
+    <span>${escapeHtml(question.paperLabel || question.paper || "Past paper")}</span>
+  `;
+  renderPracticePartTabs();
+  renderActivePracticePart();
+  setPracticeMode("free");
+  const feedback = $("practiceFeedback");
+  if (feedback) {
+    feedback.hidden = true;
+    feedback.innerHTML = "";
+  }
+  setPracticeStatus("");
+  modal.hidden = false;
+  document.body.classList.add("practice-modal-open");
+  answer?.focus();
+}
+
+function closePracticeModal() {
+  const modal = $("practiceModal");
+  if (!modal || modal.hidden) return;
+  modal.hidden = true;
+  state.activePracticeQuestion = null;
+  state.activePracticeParts = [];
+  state.activePracticePartIndex = 0;
+  document.body.classList.remove("practice-modal-open");
+}
+
+function practicePartsForQuestion(question) {
+  if (Array.isArray(question.parts) && question.parts.length) {
+    return question.parts
+      .map((part, index) => ({
+        label: part.label || `Question ${index + 1}`,
+        originalLabel: part.originalLabel || "",
+        prompt: cleanQuestionText(part.prompt || ""),
+        markScheme: part.markScheme || ""
+      }))
+      .filter((part) => part.prompt.length > 4)
+      .slice(0, 12);
+  }
+
+  const cleaned = cleanQuestionText(question.question || "");
+  const markers = [...cleaned.matchAll(/\([a-z]\)(?:\s*\([ivx]+\))?|\([ivx]+\)/gi)]
+    .map((match) => ({
+      label: match[0].trim(),
+      index: match.index || 0,
+      end: (match.index || 0) + match[0].length
+    }))
+    .filter((marker, index, list) => index === 0 || marker.index - list[index - 1].index > 8);
+
+  const partMatches = markers
+    .map((marker, index) => ({
+      label: `Question ${index + 1}`,
+      originalLabel: marker.label,
+      prompt: cleanQuestionText(cleaned.slice(marker.end, markers[index + 1]?.index || cleaned.length))
+    }))
+    .filter((part) => part.prompt.length > 12);
+
+  if (partMatches.length > 1) return partMatches.slice(0, 12);
+
+  return [{ label: "Question 1", originalLabel: "", prompt: cleaned || question.knowledge || "Answer this question." }];
+}
+
+function cleanQuestionText(value) {
+  return String(value || "")
+    .replace(/[\u0000-\u001f]+/g, " ")
+    .replace(/Ĭ[^A-Za-z0-9()[\].,;:!?'" \/-]{2,}[^A-Za-z0-9()[\].,;:!?'" \/-]*/g, " ")
+    .replace(/© UCLES \d{4} 0478\/\d{2}\/[A-Z]\/[A-Z]\/\d{2}/g, " ")
+    .replace(/\[Turn over\s+\d+[^A-Za-z]*(?=(?:\([a-z]\)|\d+\s|$))/gi, " ")
+    .replace(/\bDO NOT WRITE IN THIS MARGIN\b/gi, " ")
+    .replace(/Permission to reproduce[\s\S]*?department of the University of Cambridge\./gi, " ")
+    .replace(/\.{8,}/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function renderPracticePartTabs() {
+  const list = $("practicePartList");
+  if (!list) return;
+  list.innerHTML = state.activePracticeParts
+    .map((part, index) => `
+      <button class="${index === state.activePracticePartIndex ? "is-active" : ""}" type="button" data-practice-part="${index}">
+        ${escapeHtml(part.label)}
+      </button>
+    `)
+    .join("");
+}
+
+function handlePracticePartClick(event) {
+  const button = event.target.closest("[data-practice-part]");
+  if (!button) return;
+  state.activePracticePartIndex = Number(button.dataset.practicePart) || 0;
+  renderPracticePartTabs();
+  renderActivePracticePart();
+  setPracticeMode(state.activePracticeMode);
+}
+
+function activePracticePart() {
+  return state.activePracticeParts[state.activePracticePartIndex] || state.activePracticeParts[0] || null;
+}
+
+function renderActivePracticePart() {
+  const part = activePracticePart();
+  const text = part?.prompt || state.activePracticeQuestion?.question || "";
+  $("practiceQuestionLabel").textContent = part?.label || "Question 1";
+  $("practiceQuestionText").textContent = text;
+  const answer = $("practiceAnswer");
+  if (answer) answer.value = "";
+  const feedback = $("practiceFeedback");
+  if (feedback) {
+    feedback.hidden = true;
+    feedback.innerHTML = "";
+  }
+  setPracticeStatus("");
+}
+
+function setPracticeMode(mode) {
+  state.activePracticeMode = ["free", "template", "outline"].includes(mode) ? mode : "free";
+  document.querySelectorAll("[data-practice-mode]").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.practiceMode === state.activePracticeMode);
+  });
+
+  const label = document.querySelector('label[for="practiceAnswer"]');
+  const answer = $("practiceAnswer");
+  const template = $("practiceTemplate");
+  const keywordGrid = $("keywordInputGrid");
+  if (!answer || !template || !keywordGrid) return;
+
+  answer.value = "";
+  template.hidden = true;
+  template.innerHTML = "";
+  keywordGrid.hidden = true;
+  keywordGrid.innerHTML = "";
+  answer.hidden = false;
+
+  if (state.activePracticeMode === "template") {
+    const built = buildKeywordTemplate(state.activePracticeQuestion, activePracticePart());
+    state.activeTemplateKeywords = built.keywords;
+    if (label) label.textContent = "Fill keywords 1 to 5";
+    template.hidden = false;
+    template.innerHTML = built.html;
+    keywordGrid.hidden = false;
+    keywordGrid.innerHTML = built.keywords
+      .map((_, index) => `
+        <label>
+          <span>${index + 1}</span>
+          <input type="text" data-keyword-input="${index}" autocomplete="off" />
+        </label>
+      `)
+      .join("");
+    answer.hidden = true;
+    keywordGrid.querySelector("input")?.focus();
+  } else if (state.activePracticeMode === "outline") {
+    state.activeTemplateKeywords = [];
+    if (label) label.textContent = "Use this answer frame";
+    template.hidden = false;
+    template.innerHTML = answerFrameMarkup(state.activePracticeQuestion);
+    answer.placeholder = "Write a complete answer for the current question using the frame above.";
+  } else {
+    state.activeTemplateKeywords = [];
+    if (label) label.textContent = "Your answer";
+    answer.placeholder = "Write your exam-style answer for the current question here...";
+  }
+  if (!answer.hidden) answer.focus();
+}
+
+function buildKeywordTemplate(question, part = null) {
+  const points = markSchemePoints(part?.markScheme || question?.answer || "");
+  const sentence = points.slice(0, 3).join(". ") || "Use the correct technical terms from the mark scheme.";
+  const keywords = extractTemplateKeywords(sentence).slice(0, 5);
+  let html = escapeHtml(sentence);
+  keywords.forEach((keyword, index) => {
+    html = html.replace(new RegExp(`\\b${escapeRegExp(escapeHtml(keyword))}\\b`, "i"), `<span class="keyword-blank">${index + 1}</span>`);
+  });
+  return {
+    keywords,
+    html: `<p>${html}</p><small>${keywords.length} keyword${keywords.length === 1 ? "" : "s"} hidden. Enter them in order.</small>`
+  };
+}
+
+function markSchemePoints(answer) {
+  return String(answer || "")
+    .replace(/^MS:\s*/i, "")
+    .split(/;|\n|(?:\.\s+)/)
+    .map((point) => point.trim())
+    .filter((point) => point.length > 6);
+}
+
+function extractTemplateKeywords(text) {
+  const stop = new Set(["features", "include", "used", "data", "storage", "answer", "computer", "until", "deleted"]);
+  return [...new Set(String(text).toLowerCase().match(/\b[a-z][a-z-]{4,}\b/g) || [])]
+    .filter((word) => !stop.has(word));
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function answerFrameMarkup(question) {
+  const points = markSchemePoints(activePracticePart()?.markScheme || question?.answer || "").slice(0, 4);
+  return `
+    <div class="answer-frame">
+      <p>Start with the command word, then make one clear point per mark.</p>
+      <ol>
+        ${
+          points.length
+            ? points.map((point, index) => `<li>Point ${index + 1}: explain ${escapeHtml(extractTemplateKeywords(point)[0] || "the key idea")} in your own words.</li>`).join("")
+            : "<li>Define the key term.</li><li>Add a technical detail.</li><li>Link it back to the question.</li>"
+        }
+      </ol>
+    </div>
+  `;
+}
+
+function openActivePracticePreview() {
+  if (!state.activePracticeQuestion) return;
+  const url = paperPdfUrlForQuestion(state.activePracticeQuestion, "qp");
+  if (url) {
+    openPaperModal(url);
+    return;
+  }
+  setPracticeStatus("The full past-paper PDF is not available locally.", true);
+}
+
+function openPaperModal(url) {
+  const modal = $("paperModal");
+  const frame = $("paperFrame");
+  if (!modal || !frame || !url) return;
+  frame.src = url;
+  modal.hidden = false;
+  document.body.classList.add("paper-modal-open");
+  $("paperCloseButton")?.focus();
+}
+
+function closePaperModal() {
+  const modal = $("paperModal");
+  const frame = $("paperFrame");
+  if (!modal || modal.hidden) return;
+  modal.hidden = true;
+  if (frame) frame.removeAttribute("src");
+  document.body.classList.remove("paper-modal-open");
+}
+
+async function submitPracticeAnswer(event) {
+  event.preventDefault();
+  const question = state.activePracticeQuestion;
+  if (!question) return;
+
+  const answer = practiceAnswerValue();
+  if (!answer) {
+    setPracticeStatus("Write an answer first.", true);
+    return;
+  }
+
+  if (state.activePracticeMode === "template") {
+    renderKeywordFeedback(answer);
+    return;
+  }
+
+  const button = $("practiceSubmitButton");
+  if (button) {
+    button.disabled = true;
+    button.textContent = "Checking...";
+  }
+  setPracticeStatus("Checking against the mark scheme...");
+
+  try {
+    const response = await fetch("/api/grade-answer", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        questionId: question.id,
+        userAnswer: answer,
+        mode: state.activePracticeMode,
+        part: activePracticePart()
+      })
+    });
+    const payload = await response.json();
+    if (!response.ok) throw new Error(payload.error || "Could not check the answer.");
+    renderPracticeFeedback(payload.grading);
+    setPracticeStatus("Checked.");
+  } catch (error) {
+    setPracticeStatus(error.message || "Could not check the answer.", true);
+  } finally {
+    if (button) {
+      button.disabled = false;
+      button.textContent = "Check answer";
+    }
+  }
+}
+
+function practiceAnswerValue() {
+  if (state.activePracticeMode === "template") {
+    return [...document.querySelectorAll("[data-keyword-input]")]
+      .map((input) => input.value.trim())
+      .join(", ")
+      .trim();
+  }
+  return $("practiceAnswer")?.value.trim() || "";
+}
+
+function renderKeywordFeedback(answer) {
+  const submitted = answer
+    .split(/,|\n/)
+    .map((item) => normaliseSearchText(item))
+    .filter(Boolean);
+  const expected = state.activeTemplateKeywords.map((item) => normaliseSearchText(item));
+  const rows = expected.map((keyword, index) => ({
+    expected: state.activeTemplateKeywords[index],
+    submitted: submitted[index] || "",
+    correct: submitted[index] === keyword
+  }));
+  const score = rows.filter((row) => row.correct).length;
+  const feedback = $("practiceFeedback");
+  if (!feedback) return;
+  feedback.hidden = false;
+  feedback.innerHTML = `
+    <div class="practice-score"><span>Keyword score</span><strong>${score}/${expected.length}</strong></div>
+    <div class="practice-mark-list ${score === expected.length ? "awarded" : "missed"}">
+      <strong>Keyword check</strong>
+      <ul>
+        ${rows.map((row, index) => `
+          <li class="${row.correct ? "is-correct" : "is-incorrect"}">
+            <span>${index + 1}. ${escapeHtml(row.expected)}</span>
+            <em>${row.correct ? "Correct" : "Incorrect"}</em>
+          </li>
+        `).join("")}
+      </ul>
+    </div>
+  `;
+  setPracticeStatus(score === expected.length ? "All keywords correct." : "Some keywords need another try.", score !== expected.length);
+}
+
+function setPracticeStatus(message, isError = false) {
+  const status = $("practiceStatus");
+  if (!status) return;
+  status.textContent = message;
+  status.classList.toggle("is-error", isError);
+}
+
+function renderPracticeFeedback(grading) {
+  const feedback = $("practiceFeedback");
+  if (!feedback) return;
+  feedback.hidden = false;
+  feedback.innerHTML = `
+    <div class="practice-score">
+      <span>Score</span>
+      <strong>${escapeHtml(formatScore(grading.score))}/${escapeHtml(formatScore(grading.maxScore))}</strong>
+    </div>
+    ${practiceListMarkup("Awarded points", grading.awardedPoints, "awarded")}
+    ${practiceListMarkup("Missed points", grading.missedPoints, "missed")}
+    ${practiceIssuesMarkup(grading.issues)}
+    <div class="practice-feedback-note">
+      <strong>Feedback</strong>
+      <p>${escapeHtml(grading.feedback || "No extra feedback.")}</p>
+    </div>
+    <div class="practice-feedback-note">
+      <strong>Improved answer</strong>
+      <p>${escapeHtml(grading.improvedAnswer || "No improved answer returned.")}</p>
+    </div>
+  `;
+}
+
+function practiceListMarkup(title, items = [], tone = "") {
+  const safeItems = Array.isArray(items) ? items : [];
+  return `
+    <div class="practice-mark-list ${tone}">
+      <strong>${escapeHtml(title)}</strong>
+      ${
+        safeItems.length
+          ? `<ul>${safeItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`
+          : `<p>No ${title.toLowerCase()} identified.</p>`
+      }
+    </div>
+  `;
+}
+
+function practiceIssuesMarkup(issues = []) {
+  if (!Array.isArray(issues) || !issues.length) return "";
+  return `
+    <div class="practice-issues">
+      <strong>Lost-mark patterns</strong>
+      <ul>
+        ${issues.map((issue) => `<li><span>${escapeHtml(issue.type)}</span>${escapeHtml(issue.comment)}</li>`).join("")}
+      </ul>
+    </div>
+  `;
+}
+
+function formatScore(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "0";
+  return Number.isInteger(number) ? String(number) : number.toFixed(1);
+}
+
 function handleQuestionPreviewClick(event) {
+  const pdfButton = event.target.closest("[data-question-preview-pdf-url]");
+  if (pdfButton) {
+    openPaperModal(pdfButton.dataset.questionPreviewPdfUrl);
+    return;
+  }
+
   const button = event.target.closest("[data-question-preview-url]");
   if (!button) return;
   const modal = $("questionImageModal");
@@ -1194,6 +1648,23 @@ function handleQuestionPreviewClick(event) {
   $("questionImageCloseButton")?.focus();
 }
 
+function handleQuestionPreviewImageError(event) {
+  const image = event.target;
+  if (!(image instanceof HTMLImageElement) || !image.classList.contains("original-question-preview")) return;
+  const button = image.closest("[data-question-preview-url]");
+  if (!button) return;
+  const question = state.questionMatches.find((match) => questionPreviewUrl(match.id, "qp") === image.getAttribute("src"));
+  const pdfUrl = paperPdfUrlForQuestion(question, "qp");
+  button.classList.add("is-preview-unavailable");
+  button.innerHTML = pdfUrl
+    ? `<span>Open full past paper</span>`
+    : `<span>Original paper preview is unavailable</span>`;
+  if (pdfUrl) {
+    button.dataset.questionPreviewPdfUrl = pdfUrl;
+    delete button.dataset.questionPreviewUrl;
+  }
+}
+
 function closeQuestionImageModal() {
   const modal = $("questionImageModal");
   const image = $("questionImageModalImage");
@@ -1201,85 +1672,6 @@ function closeQuestionImageModal() {
   modal.hidden = true;
   if (image) image.removeAttribute("src");
   document.body.classList.remove("question-image-modal-open");
-}
-
-function updateQuestionSelectionUi() {
-  const count = state.selectedQuestionIds.size;
-  const countNode = $("questionSelectionCount");
-  const downloadButton = $("downloadQuestionPdf");
-  if (countNode) countNode.textContent = `${count} selected`;
-  if (downloadButton) {
-    downloadButton.disabled = count === 0;
-    downloadButton.textContent = count ? `Generate original PDF (${count})` : "Generate original PDF";
-    downloadButton.title = count ? "Download the selected questions as original past-paper PDF pages." : "Select at least one question first.";
-  }
-  document.querySelectorAll("[data-question-card]").forEach((card) => {
-    card.classList.toggle("is-selected", state.selectedQuestionIds.has(card.dataset.questionCard));
-  });
-}
-
-function clearQuestionSelection() {
-  state.selectedQuestionIds.clear();
-  document.querySelectorAll("[data-question-select]").forEach((checkbox) => {
-    checkbox.checked = false;
-  });
-  updateQuestionSelectionUi();
-}
-
-async function downloadSelectedQuestionPdf() {
-  const selectedIds = [...state.selectedQuestionIds];
-  if (!selectedIds.length) return;
-
-  const button = $("downloadQuestionPdf");
-  const originalText = button?.textContent || "Generate PDF";
-  if (button) {
-    button.disabled = true;
-    button.textContent = "Generating...";
-  }
-
-  try {
-    const response = await fetch("/api/question-pdf", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        questionIds: selectedIds,
-        query: $("questionFinderInput")?.value || "custom practice",
-        includeMarkScheme: Boolean($("includeMarkScheme")?.checked),
-        syllabusIds: selectedQuestionSyllabusIds()
-      })
-    });
-    if (!response.ok) {
-      let message = "PDF generation failed";
-      try {
-        const payload = await response.json();
-        message = payload.error || payload.detail || message;
-      } catch {}
-      throw new Error(message);
-    }
-    const blob = await response.blob();
-    const url = URL.createObjectURL(blob);
-    const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.download = filenameForQuestionPdf($("questionFinderInput")?.value || "paperlens-questions");
-    document.body.append(anchor);
-    anchor.click();
-    anchor.remove();
-    URL.revokeObjectURL(url);
-  } catch (error) {
-    const status = $("questionFinderStatus");
-    if (status) status.textContent = error.message || "Could not generate the PDF from the original papers. Please check the selected question sources.";
-  } finally {
-    if (button) {
-      button.disabled = state.selectedQuestionIds.size === 0;
-      button.textContent = originalText.startsWith("Generating") ? `Generate PDF (${state.selectedQuestionIds.size})` : originalText;
-      updateQuestionSelectionUi();
-    }
-  }
-}
-
-function filenameForQuestionPdf(query) {
-  const slug = slugPart(query || "custom-practice") || "custom-practice";
-  return `paperlens-${slug}-questions.pdf`;
 }
 
 function questionId(hit, index) {
@@ -1311,6 +1703,27 @@ function topicForQuestion(hit, section, chapter) {
     summary: section ? `${section.code} ${section.title}` : hit.section,
     keywords: extractSearchTerms(text)
   };
+}
+
+function extractSearchTerms(text) {
+  const phrases = [
+    "lossless",
+    "lossy",
+    "compression",
+    "data storage",
+    "file size",
+    "two's complement",
+    "sample rate",
+    "sample resolution",
+    "sql",
+    "query",
+    "trace table",
+    "logic gate",
+    "truth table"
+  ];
+  const lower = String(text).toLowerCase();
+  const words = lower.match(/\b[a-z][a-z'-]{4,}\b/g) || [];
+  return [...new Set([...phrases.filter((phrase) => lower.includes(phrase)), ...words.slice(0, 16)])];
 }
 
 function locateKnowledgePoint(match, query = "") {

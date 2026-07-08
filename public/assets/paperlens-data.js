@@ -930,6 +930,24 @@
       paper: "0478/13/M/J/25",
       ref: "Q2(a)-2(c)",
       question: "Identify virtual memory, describe magnetic storage, and explain why HDD is secondary storage.",
+      parts: [
+        {
+          label: "Question 1",
+          prompt: "Identify what is meant by virtual memory.",
+          markScheme: "Partitioned secondary storage used as virtual memory."
+        },
+        {
+          label: "Question 2",
+          prompt: "Describe how magnetic storage stores data.",
+          markScheme:
+            "Magnetic storage uses tracks/sectors, rotating platters, moving parts, a read/write head, an electromagnet, and magnetised dots."
+        },
+        {
+          label: "Question 3",
+          prompt: "Explain why a hard disk drive (HDD) is secondary storage.",
+          markScheme: "An HDD is not directly accessed by the CPU and is non-volatile/permanent until deleted."
+        }
+      ],
       knowledge: "Memory and secondary storage",
       answer:
         "MS: partitioned secondary storage used as virtual memory. Magnetic storage features include tracks/sectors, rotating platters, moving parts, read/write head, electromagnet, and magnetised dots. Secondary storage is not directly accessed by CPU and is non-volatile/permanent until deleted."

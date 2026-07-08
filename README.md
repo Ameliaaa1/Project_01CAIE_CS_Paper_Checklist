@@ -66,6 +66,8 @@ Production also requires:
 - `STRIPE_SECRET_KEY` - Stripe secret API key used to create Checkout Sessions
 - `STRIPE_PRICE_ID` - Stripe Price ID for PaperLens lifetime access
 - `STRIPE_WEBHOOK_SECRET` - Stripe webhook endpoint signing secret
+- `OPENAI_API_KEY` - OpenAI API key used by Question Finder answer grading
+- `OPENAI_GRADING_MODEL` - optional model override for answer grading; defaults to `gpt-4.1-mini`
 - `PUBLIC_BASE_URL` or `APP_BASE_URL` - public origin used for Stripe success and cancel URLs
 
 Without those production variables, Vercel can serve pages and static past papers, but account registration, login state, purchases, and Question Finder trial usage will not be stored persistently.

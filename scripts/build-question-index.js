@@ -27,7 +27,9 @@ async function main() {
     const qpQuestions = questionRegions(qpGeometry, "qp");
 
     qpQuestions.forEach((question) => {
-      const section = classifySection(question.text, classifier) || "unknown";
+      const cleanText = cleanExtractedQuestionText(question.text);
+      if (!cleanText || hasCorruptPdfText(cleanText)) return;
+      const section = classifySection(cleanText, classifier) || "unknown";
       const sectionTitle = syllabusSections.find((item) => item.code === section)?.title || "Syllabus topic";
       entries.push({
         syllabusId: "caie-igcse-0478",
@@ -35,7 +37,7 @@ async function main() {
         paper,
         ref: `Q${question.number}`,
         knowledge: `${sectionTitle} - past-paper question`,
-        question: question.text,
+        question: cleanText,
         answer: "",
         autoIndexed: true
       });
@@ -174,7 +176,27 @@ function textBetween(geometry, start, end) {
       .sort((a, b) => b.y - a.y || a.x - b.x)
       .forEach((item) => output.push(item.text));
   });
-  return output.join(" ").replace(/\s+/g, " ").trim();
+  return cleanExtractedQuestionText(output.join(" "));
+}
+
+function cleanExtractedQuestionText(value) {
+  return String(value || "")
+    .replace(/[\u0000-\u001f]+/g, " ")
+    .replace(/Ĭ[^A-Za-z0-9()[\].,;:!?'" \/-]{2,}[^A-Za-z0-9()[\].,;:!?'" \/-]*/g, " ")
+    .replace(/© UCLES \d{4} 0478\/\d{2}\/[A-Z]\/[A-Z]\/\d{2}/g, " ")
+    .replace(/\[Turn over\s+\d+[^A-Za-z]*(?=(?:\([a-z]\)|\d+\s|$))/gi, " ")
+    .replace(/\bDO NOT WRITE IN THIS MARGIN\b/gi, " ")
+    .replace(/\bBLANK PAGE\b[\s\S]*?Cambridge Assessment[^.]*\./gi, " ")
+    .replace(/Permission to reproduce[\s\S]*?department of the University of Cambridge\./gi, " ")
+    .replace(/\.{8,}/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function hasCorruptPdfText(value) {
+  const text = String(value || "");
+  const suspicious = text.match(/[ĬĀĂĄĈĊČĎĐĒĔĖĘĚĜĞĠĢĤĦĨĪĬÎÏÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîï]/g) || [];
+  return suspicious.length > 8;
 }
 
 function comparePosition(a, b) {

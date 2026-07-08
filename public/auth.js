@@ -47,7 +47,7 @@ async function checkLoginEmail() {
 
   const result = await postJson("/api/auth/check-email", { email });
   if (!result.ok) {
-    setMessage(result.error, true);
+    setMessage(loginEmailCheckMessage(result.error), true);
     return;
   }
   if (!result.data.registered) {
@@ -161,6 +161,13 @@ function setMessage(message, isError = false) {
   if (!authMessage) return;
   authMessage.textContent = message;
   authMessage.classList.toggle("is-error", isError);
+}
+
+function loginEmailCheckMessage(error) {
+  if (/persistent storage is not configured/i.test(error || "")) {
+    return "No account exists for this email. Please sign up first.";
+  }
+  return error;
 }
 
 function updatePasswordRules(password) {
