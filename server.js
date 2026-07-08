@@ -285,14 +285,6 @@ function assertProductionConfiguration() {
 
   const missing = [];
   if (!process.env.SESSION_SECRET) missing.push("SESSION_SECRET");
-  if (!stripeSecretKey) missing.push("STRIPE_SECRET_KEY");
-  if (!stripePriceId) missing.push("STRIPE_PRICE_ID");
-  if (!stripeWebhookSecret) missing.push("STRIPE_WEBHOOK_SECRET");
-  if (!publicBaseUrl) missing.push("PUBLIC_BASE_URL or APP_BASE_URL");
-  if (!useRemoteStore) missing.push("KV_REST_API_URL/KV_REST_API_TOKEN or UPSTASH_REDIS_REST_URL/UPSTASH_REDIS_REST_TOKEN");
-  if (process.env.STRIPE_CHECKOUT_MOCK === "1") missing.push("STRIPE_CHECKOUT_MOCK must be disabled");
-  if (!PDFParse) missing.push("pdf-parse dependency");
-  if (!canvasTools) missing.push("@napi-rs/canvas dependency");
 
   if (process.env.SESSION_SECRET && process.env.SESSION_SECRET.length < 32) {
     missing.push("SESSION_SECRET with at least 32 characters");
@@ -1099,6 +1091,7 @@ function ensureUserDatabase() {
 }
 
 async function readUsersDb() {
+  assertPersistentStoreConfigured();
   if (useRemoteStore) return readRemoteJson(usersStoreKey, { users: [] }, normaliseUsersDb);
 
   ensureUserDatabase();
@@ -1111,6 +1104,7 @@ async function readUsersDb() {
 }
 
 async function writeUsersDb(db) {
+  assertPersistentStoreConfigured();
   const safeDb = normaliseUsersDb(db);
   if (useRemoteStore) {
     await writeRemoteJson(usersStoreKey, safeDb);
@@ -1122,6 +1116,7 @@ async function writeUsersDb(db) {
 }
 
 async function readCheckoutDb() {
+  assertPersistentStoreConfigured();
   if (useRemoteStore) return readRemoteJson(checkoutStoreKey, { sessions: [] }, normaliseCheckoutDb);
 
   ensureUserDatabase();
@@ -1134,6 +1129,7 @@ async function readCheckoutDb() {
 }
 
 async function writeCheckoutDb(db) {
+  assertPersistentStoreConfigured();
   const safeDb = normaliseCheckoutDb(db);
   if (useRemoteStore) {
     await writeRemoteJson(checkoutStoreKey, safeDb);
@@ -1150,6 +1146,11 @@ function normaliseUsersDb(db) {
 
 function normaliseCheckoutDb(db) {
   return { sessions: Array.isArray(db?.sessions) ? db.sessions : [] };
+}
+
+function assertPersistentStoreConfigured() {
+  if (!isProduction || useRemoteStore) return;
+  throwHttpError("Persistent storage is not configured. Set KV_REST_API_URL/KV_REST_API_TOKEN or UPSTASH_REDIS_REST_URL/UPSTASH_REDIS_REST_TOKEN.", 503);
 }
 
 async function readRemoteJson(key, fallback, normalise) {
@@ -1464,9 +1465,7 @@ async function createStripeCheckoutSession(sessionId, user, req) {
     };
   }
 
-  if (!stripeSecretKey || !stripePriceId) {
-    throwHttpError("Stripe Checkout is not configured.", 503);
-  }
+  assertStripeCheckoutConfigured();
 
   const baseUrl = checkoutBaseUrl(req);
   const form = new URLSearchParams();
@@ -1501,6 +1500,15 @@ async function createStripeCheckoutSession(sessionId, user, req) {
 
 function checkoutBaseUrl(req) {
   return publicBaseUrl || requestOrigin(req);
+}
+
+function assertStripeCheckoutConfigured() {
+  if (process.env.STRIPE_CHECKOUT_MOCK === "1" && isProduction) {
+    throwHttpError("Stripe Checkout mock mode must be disabled in production.", 503);
+  }
+  if (!stripeSecretKey || !stripePriceId) {
+    throwHttpError("Stripe Checkout is not configured. Set STRIPE_SECRET_KEY and STRIPE_PRICE_ID.", 503);
+  }
 }
 
 async function checkoutSessionStatus(sessionId, authenticatedUser) {
