@@ -54,6 +54,27 @@ The authoritative pre-rewrite snapshot is:
 
 The snapshot contains 11,298 entries: 389 unstaged tracked changes, 4,233 untracked files, and 6,676 ignored files. The report files themselves were created after the snapshot and are intentionally not self-inventoried.
 
+Post-rewrite content verification re-hashed all 11,298 snapshot entries:
+
+- 11,297 entries remained byte-for-byte unchanged;
+- `.gitignore` was the sole intentional content change;
+- no file was unexpectedly missing or newly present;
+- no unexpected SHA-256 mismatch remained.
+
+Git status categories necessarily changed because 294 deprecated `9709` paths and oversized generated objects are no longer tracked by the rewritten history. This is a tracking-state change, not loss of working-tree content:
+
+- Before: 335 deleted, 54 modified, 859 collapsed untracked status entries.
+- After: 39 deleted, 52 modified, 844 collapsed untracked status entries.
+- Staged entries after rewrite: 0.
+
+## Validation
+
+- `git fsck --full`: completed successfully; dangling temporary objects were reported but no corruption.
+- `git diff --check`: passed.
+- Pushable history blobs at or above 100,000,000 bytes: 0.
+- Pushable history `9709` paths: 0.
+- Largest pushable-history blob: 48,817,539 bytes.
+
 ## Status
 
 Remote push and final worktree recovery verification are recorded separately in `REMOTE_BACKUP_VERIFICATION.md`.
