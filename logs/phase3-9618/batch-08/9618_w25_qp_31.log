@@ -1,0 +1,257 @@
+[2026-07-14T17:03:20.983Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_31.pdf
+[2026-07-14T17:03:20.983Z] startTime=2026-07-14T17:03:20.983Z
+[2026-07-14T17:03:20.983Z] expectedRole=question_paper
+[2026-07-14T17:03:23.245Z] extract.exitCode=0
+[2026-07-14T17:03:23.245Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_31.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_31.pdf",
+  "pageCount": 12,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The composite record data type, ClubMember, is defined in pseudocode as: TYPE ClubMember DECLARE Code : INTEGER DECLARE LastName : STRING DECLARE FirstName : STRING DECLARE Telephone : STRING DECLARE JoinDate : DATE DECLARE Fees : REAL DECLARE FeesPaid : BOOLEAN ENDTYPE (a) (i) Write the pseudocode statement to set up a variable for one record of the compo"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Numbers are stored in a computer system using binary floating‑point representation with: 12 bits for the mantissa • 4 bits for the exponent • two’s complement form for both the mantissa and the exponent. • (a) Write the normalised floating‑point representation of the following positive binary number using this system. 0.00000001110101101 Mantissa Exponent "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 (a) Explain why protocols are essential for communication between computer systems. [2] (b) POP3 is an email communication protocol. Identify and describe two other communication protocols that are used when sending or receiving emails. Protocol 1 Description Protocol 2 Description [4] (c) Describe two ways in which packet switching ensures a complete mess"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) A scheduling routine determines how processes are managed by the operating system. Identify two scheduling routines. 1 2 [2] (b) Describe two ways in which the complexities of the computer hardware are hidden from the user. 1 2 [4]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 (a) Identify two items commonly found within a digital certificate. 1 2 [2] (b) Explain why a digital certificate is required to validate a digital signature. [3] DFD"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 (a) The diagram shows a logic circuit. P A R B Z S Q C Complete the truth table for the given logic circuit. Show your working. A B C P Q R S Z 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [3] DFD (b) (i) Complete the Karnaugh map (K‑map) for the Boolean expression: A.B.C + A.B.C + A.B.C + A.B.C BC A 00 01 11 10 0 1 [2] (ii) Draw loop(s) around appropri"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "7 (a) Identify one Artificial Intelligence (AI) algorithm to find the shortest distance between two points on a graph. [1] (b) Describe Deep Learning. [5] DFD"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 (a) Outline the purpose of lexical analysis during the compilation of a program. [2] (b) Write the Reverse Polish Notation (RPN) for the given infix expression: (2 – 6) * (13 + 7) / 5 [2] (c) The RPN expression: d a b + * c a ‑ / is to be evaluated, where: a = 6, b = 12, c = 15 and d = 5. Show the changing contents of the stack as the RPN expression is eva"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 (a) A stack has been implemented using pseudocode to store a maximum of 100 string items using the global variables in the following table: Initialisation Identifier Data type Description value Base INTEGER 0 pointer for the bottom of the stack Top INTEGER ‑1 pointer for the top of the stack StackArray STRING [0:99] 1D array to implement the stack Max INTE"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "10 Explain what is meant by exception handling. Include an example of a possible cause of an exception in your answer. Explanation Example [3] DFD"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "11 The table shows assembly language instructions for a processor that has one register, the Accumulator (ACC). Instruction Label Opcode Operand Explanation LDM #n Load the number n to ACC Load the contents of the location at the given LDD <address> address to the ACC The address to be used is at the given address. LDI <address> Load the contents of this sec"
+    }
+  ]
+}
+[2026-07-14T17:03:23.248Z] parserVersion=0.4.0
+[2026-07-14T17:03:23.248Z] documentRole=question_paper
+[2026-07-14T17:03:23.248Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:03:23.642Z] stage.exitCode=0
+[2026-07-14T17:03:23.642Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_31.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_31.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_31.staging.json",
+  "runId": "9618-2025-ON-31-QP-RUN-b80a338d4854",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_31.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 28,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-ON-31-Q1-A-II",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-ON-31-Q11-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:03:23.645Z] stagingId=9618-2025-ON-31-QP-RUN-b80a338d4854
+[2026-07-14T17:03:23.645Z] validationStatus=PASS
+[2026-07-14T17:03:23.645Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:03:23.645Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:03:23.645Z] canonicalPublishable=true
+[2026-07-14T17:03:23.645Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:03:23.645Z] endTime=2026-07-14T17:03:23.645Z
+[2026-07-14T17:03:23.645Z] status=PASS

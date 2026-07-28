@@ -1,0 +1,176 @@
+[2026-07-15T03:52:27.799Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_22.pdf
+[2026-07-15T03:52:27.799Z] startTime=2026-07-15T03:52:27.799Z
+[2026-07-15T03:52:27.799Z] expectedRole=question_paper
+[2026-07-15T03:52:29.360Z] extract.exitCode=0
+[2026-07-15T03:52:29.360Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w19_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 7,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) Describe the data structures that you have used to store the data for the concrete slabs (i) in include the name, data type and use for each data structure. Task 1 [5] State variable that you have used in . (ii) one Task 3 Give the data type for the variable. State what it is used for. Variable name Data type Use [3] Explain how you calculated the volu"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 which returns a whole number between 1 and the argument n. The algorithm then RandInt(n) allows the user to guess the number. Number RandInt(100) TotalTry 1 REPEAT PRINT \"Enter your guess now, it must be a whole number\" INPUT Guess IF TotalTry > Number THEN PRINT \"Too large try again\" ENDIF IF Guess > Number THEN PRINT \"Too small try again\" ENDIF TotalTry "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 (a) the lengths need to be between 24.9 and 25.1 metres. START Reject 0 Count 0 Yes Is Count = ? 10 No No Is Reject Count Count + 1 ? <= 1 INPUT Length Yes OUTPUT \"Batch rejected\" Is Length < Yes 25.1 AND ? Length > 24.9 No Reject Reject + 1 OUTPUT \"Batch accepted\" END Complete the trace table for the input data: 24.88, 25.01, 24.98, 25.00, 25.05, 24.99, 2"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 Four four Draw a line to connect each validation check to the correct description. Validation Check Description Checks that some data is entered. Range check Checks for a maximum number of characters Presence check in the data entered. Checks that the characters entered are all Length check numbers. Checks that the value entered is between an Type check up"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 and counting the number of baskets. The total weight is stored in a variable and the number Total of baskets is stored in a variable . BasketCount Explain, including examples of programming statements, how totalling and counting could be used in this program. Totalling Counting [4] Explain why constants, variables and arrays are used in programming."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "6 Constants Variables Arrays [6] A database table, SALES, is used to keep a record of items made and sold by a furniture maker."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 Item number Order number Notes Amount Status CH001 1921 Smith – six dining chairs 6 Delivered TB003 1921 Smith – large table 1 In progress CH001 1924 Hue – extra chairs 4 In progress CH003 1925 For stock 2 Cancelled BN001 1927 Patel – replacement bench 1 Not started ST002 1931 Sola – small table 1 Delivered CH003 1927 Patel – eight dining chairs with arms "
+    }
+  ]
+}
+[2026-07-15T03:52:29.362Z] parserVersion=0.4.0
+[2026-07-15T03:52:29.362Z] documentRole=question_paper
+[2026-07-15T03:52:29.362Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:52:29.631Z] stage.exitCode=0
+[2026-07-15T03:52:29.631Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w19_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_22.staging.json",
+  "runId": "0478-2019-ON-22-QP-RUN-e728684f5995",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 14,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 14,
+        "present": 14,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:52:29.633Z] stagingId=0478-2019-ON-22-QP-RUN-e728684f5995
+[2026-07-15T03:52:29.633Z] validationStatus=PASS
+[2026-07-15T03:52:29.633Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:52:29.633Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:52:29.633Z] canonicalPublishable=true
+[2026-07-15T03:52:29.633Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:52:29.633Z] endTime=2026-07-15T03:52:29.633Z
+[2026-07-15T03:52:29.633Z] status=PASS

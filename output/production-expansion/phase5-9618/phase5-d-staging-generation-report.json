@@ -1,0 +1,298 @@
+{
+  "generatedAt": "2026-07-15T03:13:19.478Z",
+  "startedAt": "2026-07-15T03:13:07.113Z",
+  "completedAt": "2026-07-15T03:13:19.470Z",
+  "productionWrite": false,
+  "manifestPath": "docs/phase5-9618-manifests/phase5-d.json",
+  "totalFiles": 4,
+  "successCount": 4,
+  "failedCount": 0,
+  "skippedCount": 0,
+  "failures": [],
+  "results": [
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_42.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 5-D blocker repair for 9618-2023-ON-42",
+      "status": "PASS",
+      "startTime": "2026-07-15T03:13:07.115Z",
+      "endTime": "2026-07-15T03:13:09.650Z",
+      "samplePath": "output/ingestion-samples/9618_w23_qp_42.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w23_qp_42.staging.json",
+      "logPath": "logs/phase5-9618/batch-d/9618_w23_qp_42.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2023-ON-42-QP-RUN-001ea14f2700",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 3,
+        "leafQuestionCount": 26,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2023,
+      "session": "Oct-Nov",
+      "component": "42",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_ms_42.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 5-D blocker repair for 9618-2023-ON-42",
+      "status": "PASS",
+      "startTime": "2026-07-15T03:13:09.650Z",
+      "endTime": "2026-07-15T03:13:14.156Z",
+      "samplePath": "output/ingestion-samples/9618_w23_ms_42.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w23_ms_42.staging.json",
+      "logPath": "logs/phase5-9618/batch-d/9618_w23_ms_42.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2023-ON-42-MS-RUN-3b02e55e7e92",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 34,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 37,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2023,
+      "session": "Oct-Nov",
+      "component": "42",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 5-D blocker repair for 9618-2025-MJ-13",
+      "status": "PASS",
+      "startTime": "2026-07-15T03:13:14.156Z",
+      "endTime": "2026-07-15T03:13:17.239Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_13.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_13.staging.json",
+      "logPath": "logs/phase5-9618/batch-d/9618_s25_qp_13.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-13-QP-RUN-b341d6829ba4",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 20,
+        "questionCount": 7,
+        "leafQuestionCount": 27,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "13",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 5-D blocker repair for 9618-2025-MJ-13",
+      "status": "PASS",
+      "startTime": "2026-07-15T03:13:17.239Z",
+      "endTime": "2026-07-15T03:13:19.470Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_13.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_13.staging.json",
+      "logPath": "logs/phase5-9618/batch-d/9618_s25_ms_13.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-13-MS-RUN-a334bec016c7",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 27,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "13",
+      "phase1Regression": false
+    }
+  ],
+  "phase": "Phase 2",
+  "groupStats": {
+    "bySyllabus": {
+      "9618": {
+        "total": 4,
+        "success": 4,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "byYear": {
+      "2023": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "2025": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "bySession": {
+      "Oct-Nov": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "May-June": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "byDocumentRole": {
+      "question_paper": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "mark_scheme": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "byComponent": {
+      "13": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "42": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      }
+    }
+  },
+  "phase2Analysis": {
+    "successRate": 1,
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "textQualityRegressions": [],
+    "failureCategories": {},
+    "datasetGaps": [],
+    "recommendedFuturePRs": []
+  }
+}

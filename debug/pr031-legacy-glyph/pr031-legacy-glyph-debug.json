@@ -1,0 +1,70 @@
+{
+  "solution": "PR-031_Legacy_Text_Glyph_Classification_Investigation",
+  "targetPdf": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_21.pdf",
+  "pipelineStage": "Raw span -> glyph classification -> canonical text -> text quality metrics",
+  "rootCause": {
+    "case": "B_VALID_PDF_SYMBOL",
+    "description": "A Cambridge instruction checkmark encoded with Wingdings-Regular is decoded by PyMuPDF as Latin small letter u with diaeresis.",
+    "rawCharacter": "ü",
+    "rawUnicode": "U+00FC",
+    "semanticCharacter": "✓",
+    "semanticUnicode": "U+2713",
+    "pageNumber": 2,
+    "font": "Wingdings-Regular",
+    "size": 13,
+    "bboxTopLeft": [99.1, 633.26, 109.32, 647.69],
+    "context": "Tick (...) one box"
+  },
+  "classificationFix": {
+    "rule": "Map exact U+00FC to U+2713 only when the source font is Wingdings or Wingdings-Regular.",
+    "scope": "span conversion before canonical text admission",
+    "globalThresholdChanged": false,
+    "suspiciousGlyphValidationDisabled": false,
+    "validSymbolPreserved": true
+  },
+  "before": {
+    "page": 2,
+    "rawSuspiciousGlyphCount": 1,
+    "normalizedSuspiciousGlyphCount": 1,
+    "displaySuspiciousGlyphCount": 1,
+    "validationStatus": "WARN",
+    "issueCodes": ["SUSPICIOUS_GLYPHS_REMAIN"],
+    "component21Status": "BLOCKED"
+  },
+  "after": {
+    "page": 2,
+    "rawSuspiciousGlyphCount": 0,
+    "normalizedSuspiciousGlyphCount": 0,
+    "displaySuspiciousGlyphCount": 0,
+    "validationStatus": "PASS",
+    "issueCodes": [],
+    "canonicalCompleteness": "PASS",
+    "publishable": true,
+    "responseAreaCoverage": {"required": 20, "present": 20, "ratio": 1},
+    "component21Status": "ELIGIBLE",
+    "publishStatus": "BLOCKED",
+    "publishBlockedReasons": ["ADMIN_REVIEW_APPROVED"]
+  },
+  "productionExpansion": {
+    "eligible": 4,
+    "alreadyPublished": 1,
+    "blocked": 1,
+    "remainingBlockedComponent": "22",
+    "productionWrite": false
+  },
+  "regression": {
+    "phase1": {"success": 20, "total": 20, "failures": 0},
+    "phase2": {"success": 120, "total": 120, "failures": 0},
+    "productionPilotComponent12": "PASS",
+    "targetedTests": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "artifacts": {
+    "rawPageSpans": "debug/pr031-legacy-glyph/page-002-spans.json",
+    "sample": "output/ingestion-samples/0478_s23_qp_21.sample.json",
+    "staging": "output/phase2/staging/0478_s23_qp_21.staging.json",
+    "coverageReport": "output/production-expansion/pr029-staging-coverage-report.json",
+    "expansionReport": "output/production-expansion/pr028-production-expansion-report.json"
+  }
+}

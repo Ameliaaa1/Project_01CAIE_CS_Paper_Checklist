@@ -1,0 +1,224 @@
+[2026-07-15T03:53:27.707Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_13.pdf
+[2026-07-15T03:53:27.707Z] startTime=2026-07-15T03:53:27.707Z
+[2026-07-15T03:53:27.707Z] expectedRole=question_paper
+[2026-07-15T03:53:29.056Z] extract.exitCode=0
+[2026-07-15T03:53:29.056Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w23_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_13.pdf",
+  "pageCount": 12,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Give examples of an input device that would be built into a mobile telephone. (a) two 1 2 [2] Give example of an output device that would be built into a mobile telephone. (b) one [1] The data storage in the mobile telephone can be measured using different units of (c) measurement. State how many bits are equal to a byte. (i) [1] State how many kibibytes ("
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Explain what is meant by a binary number system. (a) [2] Convert the denary numbers 14, 59 and 234 to binary. (b) 14 59 234 [3] Convert the denary numbers 9, 26 and 65 to hexadecimal. (c) 9 26 65 [3] Convert the positive denary number 123 to 8-bit binary using two’s complement. (d) Show all your working. [2] Add the binary values 00110011 and 01111000 usin"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Circle components that are built into the CPU. (a) three accumulator (ACC) control unit (CU) graphics card hard disk drive (HDD) motherboard program counter (PC) random access memory (RAM) read only memory (ROM) [3] The CPU has cache. (b) Explain the purpose of the cache. [2] The CPU has a component that regulates the number of fetch–decode–execute cycles "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Describe the main purpose of a web browser. (a) [2] The employee wants his payment details to be automatically filled in when he buys products (b) using the internet. Identify the function of a web browser that could be used for this purpose. [1] The employee wants to be able to quickly access websites that he regularly uses. (c) Identify the function of a"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Give reason an error may occur when data is transmitted. (a) one [1] Some error detection methods use a calculated value to check for errors. (b) 3 Tick ( ) box to show which error detection method does use a calculated value to one not check for errors. Check digit A Checksum B Echo check C Parity check D [1] An automatic repeat request (ARQ) can be used "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 3 Tick ( ) box to show which is a characteristic of cloud storage. (a) one not Data is accessed through a network A Data is stored locally B Data is stored remotely C Physical servers are used to store the data D [1] Explain advantages for the owners of the company of storing its data in cloud storage. (b) two 1 2 [4] Explain disadvantage to employees of t"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 colour depth for the image. State what is meant by the image resolution. (a) [1] State what is meant by the image colour depth. (b) [1] Give benefit of increasing the colour depth of the image. (c) one [1] The photographer compresses the image using a method that permanently reduces the (d) colour depth and resolution of the image. Identify which compressi"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.45,
+        "structure": 0.96,
+        "overall": 0.79
+      },
+      "textPreview": "8 [4] A computer has secondary storage."
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 The table contains statements about secondary storage. (a) Complete the table by writing the type of secondary storage that applies to each statement. Some types of secondary storage may apply to more than one statement. Type of secondary storage Statement data is stored using pits and lands data is stored using control gates and floating gates data is sto"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "10 Complete the description about the operation of the expert system. (a) Use the terms from the list. Some of the terms in the list will be used. not inference engine interface knowledge base machine learning mechanical engine output device question base rule base An expert system has a that contains a list of facts. The applies the to the to reach a diagno"
+    }
+  ]
+}
+[2026-07-15T03:53:29.057Z] parserVersion=0.4.0
+[2026-07-15T03:53:29.057Z] documentRole=question_paper
+[2026-07-15T03:53:29.057Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:29.361Z] stage.exitCode=0
+[2026-07-15T03:53:29.361Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w23_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_13.staging.json",
+  "runId": "0478-2023-ON-13-QP-RUN-994ed95b3c42",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 34,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 34,
+        "present": 34,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:29.363Z] stagingId=0478-2023-ON-13-QP-RUN-994ed95b3c42
+[2026-07-15T03:53:29.363Z] validationStatus=PASS
+[2026-07-15T03:53:29.363Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:29.363Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:29.363Z] canonicalPublishable=true
+[2026-07-15T03:53:29.363Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:29.363Z] endTime=2026-07-15T03:53:29.363Z
+[2026-07-15T03:53:29.363Z] status=PASS

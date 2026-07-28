@@ -1,0 +1,192 @@
+[2026-07-15T03:54:51.248Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_23.pdf
+[2026-07-15T03:54:51.248Z] startTime=2026-07-15T03:54:51.248Z
+[2026-07-15T03:54:51.248Z] expectedRole=question_paper
+[2026-07-15T03:54:53.572Z] extract.exitCode=0
+[2026-07-15T03:54:53.572Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s25_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_23.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The flowchart shows an algorithm used for quality control on a biscuit production line. The weight of each biscuit is entered into the variable Weight. If the weight of the biscuit is between 16.2 and 17.2 grammes, inclusive, the pass counter is incremented by 1. Otherwise, the reject counter is incremented by 1. The process continues until –1 is entered, "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Three uses of arithmetic operators and four results are shown. Draw one line from each use of arithmetic operator to the correct result. Not all results will be used. Use of arithmetic operator Result 5 355 DIV 10 355 355 / 10 35 355 MOD 10 35.5 [3]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The purpose of this pseudocode algorithm is to carry out a bubble sort to sort, in descending order, 1000 numbers stored in a one-dimensional (1D) array. 01 DECLARE Values : ARRAY[1:1000] OF REAL 02 DECLARE Index : CHAR 03 DECLARE Stop : BOOLEAN 04 DECLARE Hold : REAL FALSE 05 Stop 06 WHILE NOT Stop DO FALSE 07 Stop 1 TO 50 08 FOR Index 09 IF Values[Index "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) An input must be an integer between 10 and 95, inclusive. (i) State the type of validation check to test if the input meets this requirement. [1] (ii) Suggest suitable abnormal and extreme test data for an integer between 10 and 95 inclusive, and give a reason for each of your choices. Abnormal test data Reason Extreme test data Reason [4] (b) A passwo"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 (a) A computer store uses a database table COMPONENT to store the stock details of a range of components needed to build computer systems. Complete the table by giving appropriate data types for each field. Only the data types: text, character, Boolean, integer, real, date/time are available in this database. Field Data type Description ID unique identifie"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 This pseudocode represents an algorithm. DECLARE Store : ARRAY[1:100] OF CHAR DECLARE Word : STRING DECLARE Index : INTEGER DECLARE Letter : CHAR INPUT Word 1 TO LENGTH(Word) FOR Index SUBSTRING(Word, Index, 1) Letter CASE OF Letter \"\" 'A' : Letter \"\" 'E' : Letter \"\" 'I' : Letter \"\" 'O' : Letter \"\" 'U' : Letter ENDCASE Letter Store[Index] NEXT Index 1 TO L"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 (a) Draw the symbol for a NOR logic gate and complete the truth table for it. NOR logic gate symbol: Truth table: A B Z 0 0 0 1 1 0 1 1 [2] (b) Consider the rules given in the following table: Input Binary value Description 0 dark L 1 light 0 no motion detected M 1 motion detected 0 no sound detected S 1 sound detected A security system uses sensors to sou"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 A collector needs a video library system for a collection of videos stored on 4K Blu-ray discs, standard Blu-ray discs, DVD, or as digital downloads. The two-dimensional (2D) array Video[] is used to store, for each video item, the title, the format of the video (4K Blu-ray disc, standard Blu-ray disc, DVD, or digital download), the year it was released st"
+    }
+  ]
+}
+[2026-07-15T03:54:53.576Z] parserVersion=0.4.0
+[2026-07-15T03:54:53.576Z] documentRole=question_paper
+[2026-07-15T03:54:53.576Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:53.975Z] stage.exitCode=0
+[2026-07-15T03:54:53.975Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s25_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_23.staging.json",
+  "runId": "0478-2025-MJ-23-QP-RUN-36be017d37e8",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 19,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 19,
+        "present": 19,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:54:53.977Z] stagingId=0478-2025-MJ-23-QP-RUN-36be017d37e8
+[2026-07-15T03:54:53.977Z] validationStatus=PASS
+[2026-07-15T03:54:53.977Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:54:53.977Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:53.977Z] canonicalPublishable=true
+[2026-07-15T03:54:53.977Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:54:53.977Z] endTime=2026-07-15T03:54:53.977Z
+[2026-07-15T03:54:53.977Z] status=PASS

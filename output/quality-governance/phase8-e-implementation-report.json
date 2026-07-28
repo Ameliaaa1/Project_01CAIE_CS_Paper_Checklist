@@ -1,0 +1,413 @@
+{
+  "generatedFor": "Phase-8-E",
+  "status": "PASS",
+  "title": "Production Governance",
+  "checks": {
+    "snapshotCreated": true,
+    "snapshotVerified": true,
+    "contentAddressed": true,
+    "changeHistoryAvailable": true,
+    "auditTrailComplete": true,
+    "rollbackDryRun": true,
+    "noRestoreRequired": true
+  },
+  "details": {
+    "title": "Production Governance",
+    "status": "PASS",
+    "checks": {
+      "snapshotCreated": true,
+      "snapshotVerified": true,
+      "contentAddressed": true,
+      "changeHistoryAvailable": true,
+      "auditTrailComplete": true,
+      "rollbackDryRun": true,
+      "noRestoreRequired": true
+    },
+    "snapshot": {
+      "snapshotVersion": "1.0",
+      "snapshotId": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+      "sourcePath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production/production-store.json",
+      "snapshotPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/snapshots/production-store-ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8.json",
+      "sha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+      "byteLength": 341988119,
+      "schemaVersion": "1.0.0",
+      "sourceUpdatedAt": "2026-07-15T05:14:53.734Z",
+      "recordCounts": {
+        "batches": 221,
+        "papers": 442,
+        "questions": 6705,
+        "responseAreas": 26808,
+        "markSchemeEntries": 5226,
+        "pairings": 221,
+        "expansionBatches": 67
+      },
+      "immutable": true,
+      "reason": "PHASE_8_PRODUCTION_GOVERNANCE_BASELINE",
+      "manifestPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/snapshots/production-store-ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8.manifest.json"
+    },
+    "rollback": {
+      "mode": "DRY_RUN",
+      "executable": true,
+      "snapshotVerified": true,
+      "snapshotPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/snapshots/production-store-ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8.json",
+      "targetPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production/production-store.json",
+      "currentSha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+      "restoreSha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+      "changeRequired": false,
+      "productionWrite": false,
+      "guard": "Explicit allowWrite=true is required by restoreProductionSnapshot."
+    },
+    "auditTrail": {
+      "productionSha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+      "sourceUpdatedAt": "2026-07-15T05:14:53.734Z",
+      "schemaVersion": "1.0.0",
+      "recordCounts": {
+        "batches": 221,
+        "papers": 442,
+        "questions": 6705,
+        "responseAreas": 26808,
+        "markSchemeEntries": 5226,
+        "pairings": 221,
+        "expansionBatches": 67
+      },
+      "expansionBatchCount": 67,
+      "changeHistory": [
+        {
+          "id": "PR028-0478-2023-MJ",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR034-0478-2021-MJ-BATCH-01",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR035-0478-2020-MJ-BATCH-01",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR036-0478-2020-MJ-BATCH-02",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR037-0478-2020-MJ-BATCH-03",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR039-0478-2021-MJ-BATCH-02",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR041-0478-2021-MJ-BATCH-03",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR043-0478-2022-MJ-BATCH-01",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR045-0478-2022-MJ-BATCH-02",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR047-0478-2022-MJ-BATCH-03",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR049-9618-2021-MJ-BATCH-01",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR050-9618-2021-MJ-BATCH-02",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR051-9618-2021-ON-BATCH-03",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR052-9618-2021-ON-BATCH-04",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR053-9618-2021-ON-BATCH-05",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR054-9618-2021-ON-BATCH-06",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR055-9618-2021-MJ-BATCH-07",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR056-9618-2023-MJ-BATCH-08",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR057-9618-2025-MJ-BATCH-09",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR058-9618-2025-ON-BATCH-10",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR063-9618-2021-MJ-PREVIOUSLY-BLOCKED",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR064-9618-2021-ON-PREVIOUSLY-BLOCKED",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR065-9618-2024-ON-PREVIOUSLY-BLOCKED",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2022-MJ-41",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2021-ON-PHASE3-BATCH0",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2022-MJ-PHASE3-BATCH1",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2022-ON-PHASE3-BATCH2",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2023-MJ-PHASE3-BATCH3",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2023-ON-PHASE3-BATCH4",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2024-MJ-PHASE3-BATCH5",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2024-ON-PHASE3-BATCH6",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2025-MJ-PHASE3-BATCH7",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2025-ON-PHASE3-BATCH8",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2022-ON-PHASE5-A",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2023-MJ-PHASE5-B",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2024-ON-PHASE5-C",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2025-MJ-PHASE5-C",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2025-ON-PHASE5-C",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2023-ON-PHASE5-D",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-9618-2025-MJ-PHASE5-D",
+          "syllabus": "9618",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2019-FM-PHASE7-BATCH01",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2019-MJ-PHASE7-BATCH02",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2019-ON-PHASE7-BATCH03",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2020-FM-PHASE7-BATCH04",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2020-ON-PHASE7-BATCH05",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2021-FM-PHASE7-BATCH06",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2021-ON-PHASE7-BATCH07",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2022-FM-PHASE7-BATCH08",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2022-ON-PHASE7-BATCH09",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2023-FM-PHASE7-BATCH10",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2023-ON-PHASE7-BATCH11",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2024-FM-PHASE7-BATCH12",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2024-MJ-PHASE7-BATCH13",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2024-ON-PHASE7-BATCH14",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2025-FM-PHASE7-BATCH15",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2025-MJ-PHASE7-BATCH16",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2025-ON-PHASE7-BATCH17",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2019-ON-PHASE7-BATCH01",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2023-FM-PHASE7-BATCH02",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2024-MJ-PHASE7-BATCH03",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2024-ON-PHASE7-BATCH04",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-0478-2025-MJ-PHASE7-BATCH05",
+          "syllabus": "0478",
+          "status": null
+        },
+        {
+          "id": "PR070-9709-2020-MJ-PHASE7B-PILOT",
+          "syllabus": "9709",
+          "status": null
+        },
+        {
+          "id": "PR070-9709-2021-MJ-PHASE7B-PILOT",
+          "syllabus": "9709",
+          "status": null
+        },
+        {
+          "id": "PR070-9709-2022-MJ-PHASE7B-PILOT",
+          "syllabus": "9709",
+          "status": null
+        },
+        {
+          "id": "PR070-9709-2023-MJ-PHASE7B-PILOT",
+          "syllabus": "9709",
+          "status": null
+        },
+        {
+          "id": "PR070-9709-2024-MJ-PHASE7B-PILOT",
+          "syllabus": "9709",
+          "status": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "generatedFor": "PR-044-0478-Missing-Staging-Generation-Batch-04-Implementation-Plan",
+  "status": "PASS",
+  "productionWrite": false,
+  "scope": {
+    "syllabus": "0478",
+    "year": 2022,
+    "session": "M/J",
+    "components": ["13", "21"],
+    "artifacts": [
+      "0478_s22_qp_13.staging.json",
+      "0478_s22_ms_13.staging.json",
+      "0478_s22_qp_21.staging.json",
+      "0478_s22_ms_21.staging.json"
+    ]
+  },
+  "results": {
+    "generated": 4,
+    "validationPass": 4,
+    "completenessPass": 4,
+    "readyToPublish": 4,
+    "p0Issues": 0,
+    "p1Issues": 0,
+    "p2Issues": 0,
+    "strictBatchPassGate": "PASS",
+    "legalMultiplicationSign": "PASS",
+    "artifacts": {
+      "0478_s22_qp_13": {
+        "pageCount": 12,
+        "questionCount": 8,
+        "leafQuestionCount": 24,
+        "responseAreaCoverage": "24/24",
+        "sha256": "9b0126e031342470b5536e6bc522af0545333e91d440c1a7622770c64e52d48e"
+      },
+      "0478_s22_ms_13": {
+        "pageCount": 13,
+        "markSchemeEntryCount": 7,
+        "sha256": "33c6b14e4bf1f7ae6ea44159e052fa10d9db50f5a90def3e6a311683d38d95f1"
+      },
+      "0478_s22_qp_21": {
+        "pageCount": 12,
+        "questionCount": 6,
+        "leafQuestionCount": 14,
+        "responseAreaCoverage": "13/13",
+        "sha256": "7565e7b2d11914c5945fe2c8446d4f6c8c577d7dad793715cd4e3ccdf80ab1ab"
+      },
+      "0478_s22_ms_21": {
+        "pageCount": 13,
+        "markSchemeEntryCount": 9,
+        "sha256": "2d71756453b2150dc85d41ec30e22fdaa0fccd55d386ae03ce010bfca05c0afe"
+      }
+    }
+  },
+  "resolvedIssues": [
+    {
+      "severity": "P0",
+      "symptom": "0478_s22_qp_13 Q8 was reported as MISSING_RESPONSE_AREAS after aggregation.",
+      "affectedFile": "output/phase2/staging/0478_s22_qp_13.staging.json",
+      "rootCause": "The fill-blank validator matched text unconditionally even though duplicate parent/leaf records had merged six valid response areas.",
+      "minimalFix": "Only report MISSING_RESPONSE_AREAS when the canonical merged record has no response areas.",
+      "regressionRisk": "Covered by the Q8 aggregation assertion, PR-030, Phase 1, Phase 2, and the full test suite."
+    }
+  ],
+  "questionAggregationReview": {
+    "status": "PASS",
+    "0478_s22_qp_13": {
+      "questionId": "0478-2022-MJ-13-Q8",
+      "rawInstances": 2,
+      "canonicalRecords": 1,
+      "mergedResponseAreas": 6,
+      "responseAreaStatus": "PRESENT"
+    },
+    "0478_s22_qp_21": {
+      "aggregatedQuestionIds": ["0478-2022-MJ-21-Q2", "0478-2022-MJ-21-Q3"],
+      "canonicalStructureCompleteness": "PASS"
+    }
+  },
+  "coverageAfter": {
+    "stagingPairs": 22,
+    "eligibleUnpublishedPairs": 2,
+    "alreadyPublishedPairs": 20,
+    "missingStagingPairs": 2,
+    "year2022StagedComponents": ["11", "12", "13", "21"],
+    "year2022RemainingComponents": ["22", "23"]
+  },
+  "productionIntegrity": {
+    "beforeSha256": "1be64980e38389fa7078d0f9bab5ad1acf0c6023472d08646d9cc73301bd529a",
+    "afterSha256": "1be64980e38389fa7078d0f9bab5ad1acf0c6023472d08646d9cc73301bd529a",
+    "unchanged": true
+  },
+  "regression": {
+    "pr030": "PASS",
+    "pr031": "PASS",
+    "pr032": "PASS",
+    "pr038a": "PASS",
+    "pr040": "PASS",
+    "pr042": "PASS",
+    "phase1": "PASS (20/20)",
+    "phase2": "PASS (120/120)",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "next": {
+    "batchId": "PR045-0478-2022-MJ-BATCH-02",
+    "components": ["13", "21"],
+    "operation": "production_expansion",
+    "productionWrite": true
+  }
+}

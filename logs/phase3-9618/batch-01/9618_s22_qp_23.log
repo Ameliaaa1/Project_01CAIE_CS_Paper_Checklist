@@ -1,0 +1,217 @@
+[2026-07-14T16:51:37.522Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_23.pdf
+[2026-07-14T16:51:37.522Z] startTime=2026-07-14T16:51:37.522Z
+[2026-07-14T16:51:37.522Z] expectedRole=question_paper
+[2026-07-14T16:51:39.389Z] extract.exitCode=0
+[2026-07-14T16:51:39.389Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_23.pdf",
+  "pageCount": 20,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) Each example may include all or part of: selection • iteration (repetition) • assignment. • ✓ Complete the table by placing ticks ( ) in each row. one or more Pseudocode example Selection Iteration Assignment FOR Index 1 TO 3 GetResult() Safe[Index] NEXT Index OTHERWISE : OUTPUT \"ERROR 1202\" REPEAT UNTIL Index = 27 INPUT MyName IF Mark > 74 THEN 'A' Gr"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 One type of maintenance is called perfective. Name types of maintenance that the program may require give a reason for each. two other and Type 1 Reason Type 2 Reason [4] Four program modules are defined as follows:"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Pseudocode module header PROCEDURE Sub1_A(XT : INTEGER, PB : STRING) FUNCTION Sub1_B(RA : INTEGER) RETURNS BOOLEAN PROCEDURE Sub1_C(SB : INTEGER, BYREF SA : STRING) PROCEDURE Section_1() A structure chart will be produced as part of the development process. (a) Describe the purpose of a structure chart. [2] Module calls one of the other three modules. The "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 the item weight to the nearest gram (g) . A function is written to validate the weight of each item. The function will return \"PASS\" if the weight of the item is within the acceptable range, otherwise the function will return \"FAIL\". The acceptable weight range for an item is 150 g to 155 g inclusive. The validation function is to be properly tested. Black"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 The data will be held in a record structure of type . The fields that will be needed are as Employee shown: Field Typical value Comment A numeric value starting from 1 EmployeeNumber 123 Format: <last name>','<first name> Name \"Smith,Eric\" May contain letters and numbers Department \"1B\" Must not be before 04/02/1957 Born 13/02/2006 Represents a percentage "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 (a) For example: × × × × factorial of 5 is given by 1 2 3 4 5 = 120 × × × × × × factorial of 7 is given by 1 2 3 4 5 6 7 = 5040 factorial of 1 = 1 Note: factorial of 0 = 1 A function will: Factorial() be called with an integer number as a parameter • calculate and return the factorial of the number • return −1 if the number is negative. • Write pseudocode "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 appear in a text file. Line numbers are provided for reference only. 10 PROCEDURE LastLines(ThisFile : STRING) 11 DECLARE ThisLine : STRING 12 DECLARE Buffer : ARRAY[1:3] OF STRING 13 DECLARE LineNum : INTEGER 1 14 LineNum 15 OPENFILE ThisFile FOR READ 16 17 WHILE NOT EOF(ThisFile) 18 READFILE Thisfile, ThisLine // read a line ThisLine 19 Buffer[LineNum] L"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 cycle. Complete the diagram. (a) Analysis Maintenance [3] Explain the meaning of the downward and upward arrows. (b) Downward arrows Upward arrows [2] Identify another type of model for the program development life cycle. (c) [1] A program allows a user to save passwords used to log in to websites. A stored password is then"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 14,
+      "pageEnd": 18,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 inserted automatically when the user logs in to the corresponding website. A student is developing a program to generate a strong password. The password will be of a fixed format, consisting of alphanumeric characters, separated by the hyphen three groups of four character '-'. An example of a password is: \"FxAf-3hzV-Aq49\" A valid password: must be 14 char"
+    }
+  ]
+}
+[2026-07-14T16:51:39.391Z] parserVersion=0.4.0
+[2026-07-14T16:51:39.391Z] documentRole=question_paper
+[2026-07-14T16:51:39.391Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:51:39.685Z] stage.exitCode=0
+[2026-07-14T16:51:39.685Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_23.staging.json",
+  "runId": "9618-2022-MJ-23-QP-RUN-c7abd8069772",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-MJ-23-Q6-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:51:39.687Z] stagingId=9618-2022-MJ-23-QP-RUN-c7abd8069772
+[2026-07-14T16:51:39.687Z] validationStatus=PASS
+[2026-07-14T16:51:39.687Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:51:39.687Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:51:39.687Z] canonicalPublishable=true
+[2026-07-14T16:51:39.687Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:51:39.687Z] endTime=2026-07-14T16:51:39.687Z
+[2026-07-14T16:51:39.687Z] status=PASS

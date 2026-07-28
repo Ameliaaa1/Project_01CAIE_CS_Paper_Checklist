@@ -1,0 +1,144 @@
+[2026-07-15T03:52:50.772Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-March/0478_m22_qp_22.pdf
+[2026-07-15T03:52:50.772Z] startTime=2026-07-15T03:52:50.772Z
+[2026-07-15T03:52:50.772Z] expectedRole=question_paper
+[2026-07-15T03:52:52.364Z] extract.exitCode=0
+[2026-07-15T03:52:52.364Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m22_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-March/0478_m22_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 State constant and variable that you could have used for . Give the value (a) one one Task 1 that would be assigned to the constant. Give the data type for the variable. Explain why the constant was used rather than a variable and explain why the variable was used rather than a constant. Constant name Value Why a constant was used Variable name Data type W"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 input the ages of 100 students • count and output the number of students aged 7 and under 12 • count and output the number of students aged 12 and under 18 • count and output the number of students aged 18 and over. • Complete the pseudocode algorithm: (a) 0 01 Count7to12 ← 0 02 Count12to18 ← 0 03 CountOver18 ← 1 TO 04 FOR Student ← 05 OUTPUT \"Please enter"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Four five Draw a line from each validation check to the most appropriate description. Validation check Description checks that the data input is between two values length check checks that the data input is an integer check digit checks that the data input has three digits range check checks that the data has been input type check checks that the data inpu"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 INT example, is INT (7.5) 7 An input of ends the routine. -1 START INPUT Number Yes IS Number END = –1? No C 0 D INT(Number/2) IS Yes INT(Number/D) = Number/D? No C C + 1 D D – 1 No IS D = 1? Yes Yes IS C = 0? No OUTPUT C Complete the trace table for the given algorithm using this input data: (a) 7, 6, 5, 4, –1, 12, 34 OUTPUT Number C D [6] Describe the pu"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 bouquet. FlowerID Type Colour Style Fragrance CN001 Carnation Pink Stem Y CN002 Carnation Red Stem N CN103 Carnation White Stem N CN104 Carnation Yellow Stem Y CN105 Carnation Pink Spray Y CN106 Carnation Red Spray N CN107 Carnation White Spray N CN108 Carnation Yellow Spray Y RE101 Rose Pink Stem Y RE102 Rose Red Stem Y RE103 Rose White Stem N RE104 Rose "
+    }
+  ]
+}
+[2026-07-15T03:52:52.365Z] parserVersion=0.4.0
+[2026-07-15T03:52:52.365Z] documentRole=question_paper
+[2026-07-15T03:52:52.365Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:52:52.620Z] stage.exitCode=0
+[2026-07-15T03:52:52.620Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m22_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m22_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m22_qp_22.staging.json",
+  "runId": "0478-2022-FM-22-QP-RUN-5a22b42db276",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m22_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 12,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 12,
+        "present": 12,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:52:52.621Z] stagingId=0478-2022-FM-22-QP-RUN-5a22b42db276
+[2026-07-15T03:52:52.621Z] validationStatus=PASS
+[2026-07-15T03:52:52.621Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:52:52.621Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:52:52.621Z] canonicalPublishable=true
+[2026-07-15T03:52:52.621Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:52:52.621Z] endTime=2026-07-15T03:52:52.621Z
+[2026-07-15T03:52:52.621Z] status=PASS

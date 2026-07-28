@@ -1,0 +1,272 @@
+[2026-07-15T03:53:24.601Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_12.pdf
+[2026-07-15T03:53:24.601Z] startTime=2026-07-15T03:53:24.601Z
+[2026-07-15T03:53:24.601Z] expectedRole=question_paper
+[2026-07-15T03:53:25.968Z] extract.exitCode=0
+[2026-07-15T03:53:25.968Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w23_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 13,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 3 Tick ( ) box to show which cyber security threat is a type of malware. (a) one not Phishing A Ransomware B Virus C Worm D [1] Identify other example of malware than those given in . (b) one part 1(a) [1] Identify the type of software that is used to find and remove malware from a computer. (c) [1] A register stores the binary number:"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 1 1 1 0 0 0 1 1 Give the denary number for the binary number stored in the register. (a) [1] Give the hexadecimal number for the binary number stored in the register. (b) [2] A logical left shift of places is performed on the binary number stored in the register. (c) two Complete the binary register to show its contents after this logical left shift. [1] T"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 She wants to change it to a CPU that has a clock speed of 3 GHz. State what is meant by clock speed. (a) (i) [1] Explain the effect this change will have on the performance of the CPU. (ii) [2] The CPU contains a memory address register (MAR). (b) Describe the role of the MAR in the fetch–decode–execute cycle. [2] The CPU has a list of all the machine code"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Give characteristics of an embedded system. (a) two 1 2 [2] Circle other examples of an embedded system. (b) three freezer laptop personal computer (PC) security light system smartphone vending machine web server [3] A band is recording their new song. They need to consider the sample rate and sample resolution"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 of their recording. Give benefit of using a higher sample rate to record the song. (a) one [1] Give drawback of using a higher sample rate to record the song. (b) one [1] Describe what is meant by sample resolution. (c) [2] The band wants to compress the sound file, but they do want any data to be permanently (d) not removed. Identify the compression metho"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 Complete the table by identifying which data transmission methods are described. Data transmission method Description Data is transmitted down a single wire, one bit at a time, in one direction only. Data is transmitted down multiple wires, multiple bits at a time, in both directions, but only one direction at a time. Data is transmitted down a single wire"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 get on the train. The train station wants a system that will allow the tickets to be automatically checked. Identify suitable input devices that can be used to automatically read the tickets. (a) two 1 2 [2] The train driver pushes a button to close the train door when all passengers have boarded (b) the train. The train door will only close when there are"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 (a) [4] Identify security solution that will help keep data safe from data interception and state (b) one why it will help keep the data safe. [2] The table contains terms and descriptions about the internet."
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 Complete the table with the missing terms and descriptions. Term Description the collective name for all the web pages available a small text file, stored by the web browser, that can store a user’s personal data uniform resource locator (URL) web server the language used to create a website. Example tags are <head> and <body> a protocol that is used to re"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 State of the main characteristics of an AI system. (a) one [1] An AI system is an expert system. (b) Explain how an expert system operates. [6] A manufacturing company uses an automated system in its manufacturing process."
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "11 The automated system uses a flow sensor. (a) Identify what a flow sensor measures. [1] Explain advantage to employees of using an automated system in manufacturing. (b) one [2] Explain disadvantage to the company owner of using an automated system in (c) one manufacturing. [2] Digital currency can be used to pay for products and services."
+    },
+    {
+      "questionNumber": "12",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "12 Digital currencies are often tracked using digital ledgers. Give other features of digital currency. (a) two 1 2 [2] Identify the process that uses a digital ledger to track the use of digital currency. (b) [1] Storage and memory are important components of a computer system."
+    },
+    {
+      "questionNumber": "13",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "13 Primary storage is one type of storage in a computer system. (a) 3 Tick ( ) box to show which is an example of primary storage. (i) one compact disk (CD) A hard disk drive (HDD) B random access memory (RAM) C solid-state drive (SSD) D [1] Give characteristic of primary storage. (ii) one [1] Virtual memory can be created in a computer system. (b) Complete "
+    }
+  ]
+}
+[2026-07-15T03:53:25.969Z] parserVersion=0.4.0
+[2026-07-15T03:53:25.969Z] documentRole=question_paper
+[2026-07-15T03:53:25.969Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:26.251Z] stage.exitCode=0
+[2026-07-15T03:53:26.251Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w23_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_12.staging.json",
+  "runId": "0478-2023-ON-12-QP-RUN-8229dc19d389",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 13,
+      "leafQuestionCount": 34,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 34,
+        "present": 34,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:26.254Z] stagingId=0478-2023-ON-12-QP-RUN-8229dc19d389
+[2026-07-15T03:53:26.254Z] validationStatus=PASS
+[2026-07-15T03:53:26.254Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:26.254Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:26.254Z] canonicalPublishable=true
+[2026-07-15T03:53:26.254Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:26.254Z] endTime=2026-07-15T03:53:26.254Z
+[2026-07-15T03:53:26.254Z] status=PASS

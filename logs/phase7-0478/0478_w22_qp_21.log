@@ -1,0 +1,144 @@
+[2026-07-15T03:53:03.893Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_21.pdf
+[2026-07-15T03:53:03.893Z] startTime=2026-07-15T03:53:03.893Z
+[2026-07-15T03:53:03.893Z] expectedRole=question_paper
+[2026-07-15T03:53:05.481Z] extract.exitCode=0
+[2026-07-15T03:53:05.481Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_21.pdf",
+  "pageCount": 16,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Describe the arrays you have set up in to record the members’ details. Include in (a) (i) Task 1 your description the name, data type and sample data for each array. [5] Explain how your program for populated the arrays with the members’ details. (ii) Task 1 [2] Explain how your program removed the members that have paid their fees from the (b) not system "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 set 100 elements of the array to zero • Reading[1:100] input integer values between 1 and 100 • end the process with an input of –1 • reject all other values • count and output the number of times each value is input, starting with the largest value. • Complete the pseudocode algorithm: (a) 1 TO 01 FOR Count 0 O2 Reading[Count] 03 NEXT Count 04 OUTPUT \"Ple"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) is accepted, the following validation checks are performed: check 1 – each character must be a digit • check 2 – there must be exactly four digits • check 3 – the value of the PIN must be between 1000 and 9999 inclusive. • Describe each validation check. Check 1 Check 2 Check 3 [6] The PIN can be changed by the user. (b) Describe how the new PIN could "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 START Stock 50 Total 0 INPUT Sold Yes IS Sold = OUTPUT Total –1? No STOP Stock Stock – Sold Yes OUTPUT IS Stock \"Add new stock\" < 20? No Total Total + Sold Stock Stock + 50 Complete the trace table for the algorithm using this input data: (a) 24, 12, 6, 30, 12, 18, –1, 24 OUTPUT Sold Stock Total [4] Identify the problem that will occur if the input data st"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 14,
+      "pageEnd": 14,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 fields: ItemCode – code to identify each type of item • Description – brief description of each item • Manufacturer – name of manufacturer • Level – number in stock • Price – price in dollars ($). • State which field you would choose for the primary key. Give a reason for your choice. (a) Field Reason [2] Complete the query-by-example grid to display only "
+    }
+  ]
+}
+[2026-07-15T03:53:05.482Z] parserVersion=0.4.0
+[2026-07-15T03:53:05.482Z] documentRole=question_paper
+[2026-07-15T03:53:05.482Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:05.745Z] stage.exitCode=0
+[2026-07-15T03:53:05.745Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_21.staging.json",
+  "runId": "0478-2022-ON-21-QP-RUN-a4d919ac5355",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 13,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 13,
+        "present": 13,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:05.747Z] stagingId=0478-2022-ON-21-QP-RUN-a4d919ac5355
+[2026-07-15T03:53:05.747Z] validationStatus=PASS
+[2026-07-15T03:53:05.747Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:05.747Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:05.747Z] canonicalPublishable=true
+[2026-07-15T03:53:05.747Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:05.747Z] endTime=2026-07-15T03:53:05.747Z
+[2026-07-15T03:53:05.747Z] status=PASS

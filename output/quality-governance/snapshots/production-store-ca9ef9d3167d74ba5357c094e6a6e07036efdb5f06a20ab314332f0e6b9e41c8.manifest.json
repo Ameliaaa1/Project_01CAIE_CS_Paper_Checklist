@@ -1,0 +1,21 @@
+{
+  "snapshotVersion": "1.0",
+  "snapshotId": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+  "sourcePath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production/production-store.json",
+  "snapshotPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/snapshots/production-store-ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8.json",
+  "sha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+  "byteLength": 341988119,
+  "schemaVersion": "1.0.0",
+  "sourceUpdatedAt": "2026-07-15T05:14:53.734Z",
+  "recordCounts": {
+    "batches": 221,
+    "papers": 442,
+    "questions": 6705,
+    "responseAreas": 26808,
+    "markSchemeEntries": 5226,
+    "pairings": 221,
+    "expansionBatches": 67
+  },
+  "immutable": true,
+  "reason": "PHASE_8_PRODUCTION_GOVERNANCE_BASELINE"
+}

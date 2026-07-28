@@ -1,0 +1,290 @@
+{
+  "generatedFor": "PR-028_Production_Expansion_Strategy_Explanation",
+  "plan": {
+    "batchId": "PR028-0478-2023-MJ",
+    "phase": "A",
+    "scope": {
+      "syllabus": "0478",
+      "year": 2023,
+      "session": "M/J",
+      "components": [
+        "11",
+        "12",
+        "13",
+        "21",
+        "22",
+        "23"
+      ]
+    },
+    "strategy": [
+      {
+        "phase": "A",
+        "title": "0478 same period",
+        "syllabus": "0478",
+        "years": [
+          2023
+        ],
+        "sessions": [
+          "M/J"
+        ]
+      },
+      {
+        "phase": "B",
+        "title": "0478 multi-year",
+        "syllabus": "0478",
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023
+        ]
+      },
+      {
+        "phase": "C",
+        "title": "Add 9618",
+        "syllabus": "9618"
+      },
+      {
+        "phase": "D",
+        "title": "Full supported production",
+        "prerequisites": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "pairs": [
+      {
+        "pairingKey": "0478-2023-MJ-11",
+        "component": "11",
+        "qpId": "0478-2023-MJ-11-QP",
+        "msId": "0478-2023-MJ-11-MS",
+        "qpStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_11.staging.json",
+        "msStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_11.staging.json",
+        "status": "ELIGIBLE",
+        "blockers": []
+      },
+      {
+        "pairingKey": "0478-2023-MJ-12",
+        "component": "12",
+        "qpId": "0478-2023-MJ-12-QP",
+        "msId": "0478-2023-MJ-12-MS",
+        "qpStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_12.staging.json",
+        "msStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_12.staging.json",
+        "status": "ALREADY_PUBLISHED",
+        "blockers": []
+      },
+      {
+        "pairingKey": "0478-2023-MJ-13",
+        "component": "13",
+        "qpId": "0478-2023-MJ-13-QP",
+        "msId": "0478-2023-MJ-13-MS",
+        "qpStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_13.staging.json",
+        "msStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_13.staging.json",
+        "status": "ELIGIBLE",
+        "blockers": []
+      },
+      {
+        "pairingKey": "0478-2023-MJ-21",
+        "component": "21",
+        "qpId": "0478-2023-MJ-21-QP",
+        "msId": "0478-2023-MJ-21-MS",
+        "qpStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_21.staging.json",
+        "msStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_21.staging.json",
+        "status": "ELIGIBLE",
+        "blockers": []
+      },
+      {
+        "pairingKey": "0478-2023-MJ-22",
+        "component": "22",
+        "qpId": "0478-2023-MJ-22-QP",
+        "msId": "0478-2023-MJ-22-MS",
+        "qpStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_22.staging.json",
+        "msStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_22.staging.json",
+        "status": "ELIGIBLE",
+        "blockers": []
+      },
+      {
+        "pairingKey": "0478-2023-MJ-23",
+        "component": "23",
+        "qpId": "0478-2023-MJ-23-QP",
+        "msId": "0478-2023-MJ-23-MS",
+        "qpStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_23.staging.json",
+        "msStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_23.staging.json",
+        "status": "ELIGIBLE",
+        "blockers": []
+      }
+    ],
+    "summary": {
+      "ELIGIBLE": 5,
+      "ALREADY_PUBLISHED": 1,
+      "BLOCKED": 0
+    },
+    "readyToExecute": true,
+    "productionWrite": false
+  },
+  "result": {
+    "batchId": "PR028-0478-2023-MJ",
+    "status": "PASS",
+    "productionWrite": true,
+    "scope": {
+      "components": [
+        "11",
+        "13",
+        "21",
+        "22",
+        "23"
+      ]
+    },
+    "pairs": [
+      {
+        "component": "11",
+        "childBatchId": "PR028-0478-2023-MJ-11",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 10,
+            "leafQuestionCount": 32,
+            "responseAreaCount": 121,
+            "markSchemeEntryCount": 7
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 10,
+            "leafQuestionCount": 32,
+            "responseAreaCount": 121,
+            "markSchemeEntryCount": 7
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        }
+      },
+      {
+        "component": "13",
+        "childBatchId": "PR028-0478-2023-MJ-13",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 11,
+            "leafQuestionCount": 37,
+            "responseAreaCount": 122,
+            "markSchemeEntryCount": 5
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 11,
+            "leafQuestionCount": 37,
+            "responseAreaCount": 122,
+            "markSchemeEntryCount": 5
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        }
+      },
+      {
+        "component": "21",
+        "childBatchId": "PR028-0478-2023-MJ-21",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 11,
+            "leafQuestionCount": 20,
+            "responseAreaCount": 148,
+            "markSchemeEntryCount": 15
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 11,
+            "leafQuestionCount": 20,
+            "responseAreaCount": 148,
+            "markSchemeEntryCount": 15
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        }
+      },
+      {
+        "component": "22",
+        "childBatchId": "PR028-0478-2023-MJ-22",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 12,
+            "leafQuestionCount": 21,
+            "responseAreaCount": 148,
+            "markSchemeEntryCount": 9
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 12,
+            "leafQuestionCount": 21,
+            "responseAreaCount": 148,
+            "markSchemeEntryCount": 9
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        }
+      },
+      {
+        "component": "23",
+        "childBatchId": "PR028-0478-2023-MJ-23",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 11,
+            "leafQuestionCount": 20,
+            "responseAreaCount": 153,
+            "markSchemeEntryCount": 11
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 11,
+            "leafQuestionCount": 20,
+            "responseAreaCount": 153,
+            "markSchemeEntryCount": 11
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        }
+      }
+    ],
+    "verification": {
+      "paperDelta": 10,
+      "questionDelta": 165,
+      "responseAreaDelta": 692,
+      "markEntryDelta": 47,
+      "pairingDelta": 5
+    },
+    "issues": []
+  },
+  "monitoring": {
+    "generatedAt": "2026-07-12T05:29:23.347Z",
+    "dataQualityMetrics": {
+      "ingestionSuccessRate": 1,
+      "validationFailureRate": 0,
+      "completenessFailureRate": 0,
+      "rollbackCount": 0
+    },
+    "datasetMetrics": {
+      "totalPapers": 12,
+      "totalQuestions": 65,
+      "totalLeafQuestions": 161,
+      "totalResponseAreas": 804,
+      "totalMarkEntries": 54,
+      "totalPairings": 6,
+      "totalExpansionBatches": 1
+    }
+  },
+  "fullProduction": false
+}

@@ -1,0 +1,217 @@
+[2026-07-13T02:05:14.760Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_32.pdf
+[2026-07-13T02:05:14.760Z] startTime=2026-07-13T02:05:14.760Z
+[2026-07-13T02:05:14.760Z] expectedRole=question_paper
+[2026-07-13T02:05:16.794Z] extract.exitCode=0
+[2026-07-13T02:05:16.794Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s21_qp_32.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_32.pdf",
+  "pageCount": 12,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 10 bits for the mantissa • 6 bits for the exponent • Two’s complement form for both the mantissa and the exponent. • Calculate the normalised floating-point representation of –7.25 in this system. (a) Show your working. Mantissa Exponent Working [3] Calculate the denary value of the given binary floating-point number. (b) Show your working. Mantissa Expone"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) [2] Define, using pseudocode, the following enumerated data types: (b) to hold data about the days students are usually in school. (i) SchoolDay [1] to hold data about the days that are not school days. (ii) WeekEnd [1] Define, using pseudocode, the composite data type . This will hold data about club (c) ClubMeet members that includes: first name and "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) one Operating System (OS) most appropriate description about it. OS term Description Using secondary storage to simulate additional main memory Multi-tasking Managing the processes running on the CPU Paging Managing the execution of many programs that appear to run at the same time Interrupt handling Locating non-contiguous blocks of data and relocatin"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) (i) expressions. [2] Identify, with reasons, a data structure that could be used to evaluate an expression (ii) in RPN. [2] Write the infix expression in RPN. (b) (a – b) * (a + c) / 7 [1] Write the RPN expression as an infix expression. (c) a b / 4 * a b + - [1] Evaluate the RPN expression: (d) a b + c d / / where . a = 17, b = 3, c = 48 and d = 12 Sh"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 (a) using Dijkstra’s algorithm. Show your working write your answers in the table provided. and Base 4 5 Town 1 2 Town 2 1 8 Town 3 7 3 Town 6 1 5 6 Town 5 Town 4 Working Answers Town 1 Town 2 Town 3 Town 4 Town 5 Town 6 [5] Explain the use of graphs to aid Artificial Intelligence (AI). (b) [3] Give benefits drawbacks of packet switching."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "6 two and two Benefit 1 Benefit 2 Drawback 1 Drawback 2 [4] The diagram shows a logic circuit."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A P Y B R C Z Q Complete the truth table for the given logic circuit. Show your working. (a) Inputs Outputs A B C P Q R Y Z 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [3] State the name of the logic circuit. (b) [1] Write the Boolean expressions for the two outputs and in the truth table as (c) Y Z sum-of-products state the purpose of each output. and"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 (a) two [2] The given algorithm is a simple bubble sort that arranges a set of scores stored in a one- (b) dimensional array into order, and orders the corresponding students’ names descending stored into a two-dimensional array in the same order as the scores. All the arrays are indexed from 1. The contents of both arrays after sorting are shown. Name Sco"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 (a) an imperative (procedural) [2] Describe what is meant by programming language. (b) a declarative [2] Identify the programming paradigm for each of these program code examples. (c) Program code example Programming paradigm male(john). female(ethel). parent(john, ethel). FOR Counter = 1 TO 20 X = X * Counter NEXT Counter Start: LDD Counter INC ACC STO Co"
+    }
+  ]
+}
+[2026-07-13T02:05:16.796Z] parserVersion=0.4.0
+[2026-07-13T02:05:16.796Z] documentRole=question_paper
+[2026-07-13T02:05:16.796Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:05:17.209Z] stage.exitCode=0
+[2026-07-13T02:05:17.209Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s21_qp_32.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_32.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_32.staging.json",
+  "runId": "9618-2021-MJ-32-QP-RUN-2d0f54f9348d",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_32.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 28,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 27,
+        "present": 27,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2021-MJ-32-Q2-C",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:05:17.212Z] stagingId=9618-2021-MJ-32-QP-RUN-2d0f54f9348d
+[2026-07-13T02:05:17.212Z] validationStatus=PASS
+[2026-07-13T02:05:17.212Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:05:17.212Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:05:17.212Z] canonicalPublishable=true
+[2026-07-13T02:05:17.212Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:05:17.212Z] endTime=2026-07-13T02:05:17.212Z
+[2026-07-13T02:05:17.212Z] status=PASS

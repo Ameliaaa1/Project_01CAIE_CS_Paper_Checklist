@@ -1,0 +1,201 @@
+[2026-07-14T16:53:31.252Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_21.pdf
+[2026-07-14T16:53:31.252Z] startTime=2026-07-14T16:53:31.252Z
+[2026-07-14T16:53:31.252Z] expectedRole=question_paper
+[2026-07-14T16:53:33.695Z] extract.exitCode=0
+[2026-07-14T16:53:33.695Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_21.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Calculate() When the program is run, the function returns an unexpected value. Describe how a typical Integrated Development Environment (IDE) could be used to help (a) debug the program to find the errors in the function . Calculate() [4] The algorithm for function contains the three pseudocode statements shown. (b) Calculate() Describe the error in each "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 characters. The algorithm is described as follows: (a) 1. prompt and input a character and store in MyChar 2. prompt and input an integer and store in MyCount 3. generate a string consisting of repeated times MyChar MyCount 4. output the string. Draw a program flowchart to represent the algorithm. START END [4] A different part of the program uses the vari"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A program is used to manage the points system and the table lists some of the information stored for one customer. Information Data type required Name String Number of points collected Integer Date of birth Date Identify a suitable structure for storing the information for one customer. Explain the (a) (i) advantage of using this structure. Structure Advan"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Replace() 1. take three parameters: a string (the original string) • a char (the original character) • a char (the new character) • 2. form a new string from the original string where all instances of the original character are replaced by the new character 3. return the new string. Write pseudocode for function . Replace() [6] Several companies are develo"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 that is first to create a website that can demonstrate the interactive features of the games console will have an advantage over the others. The requirements for the website are likely to change as more information about the features of the console are made available. One company has decided to develop their website using a program development life cycle b"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 digitised (converted from analogue to digital). Digitised values are stored in array . Sample The array consists of 6 rows by 128 columns and is of type integer. Each row contains Sample 128 digitised sound samples from one user. The digitised sound samples from each user are to be processed to produce a single value which will be stored in a 1D array of t"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 of time. The system uses text files to store details of students, books and loans. A new module is to be written which will generate emails to each student who has an overdue book. Decomposition will be used to break down the problem of designing the new module into (a) sub-problems. Identify program modules that could be used in the design describe their "
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 14,
+      "pageEnd": 17,
+      "marks": 21,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 contains information about each item. Stock.txt Information for each item is stored as a single line in the file in the format: Stock.txt <ItemNum><SupplierCode><Description> Item information is as follows: Format Comment unique for each item in the range 4 numeric characters ItemNum \"0001\" to \"5999\" inclusive 5 alphabetic characters to identify the suppli"
+    }
+  ]
+}
+[2026-07-14T16:53:33.698Z] parserVersion=0.4.0
+[2026-07-14T16:53:33.698Z] documentRole=question_paper
+[2026-07-14T16:53:33.698Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:53:34.052Z] stage.exitCode=0
+[2026-07-14T16:53:34.052Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_21.staging.json",
+  "runId": "9618-2023-MJ-21-QP-RUN-ec3ce014e637",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 23,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 22,
+        "present": 22,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-MJ-21-Q1-C-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:53:34.055Z] stagingId=9618-2023-MJ-21-QP-RUN-ec3ce014e637
+[2026-07-14T16:53:34.055Z] validationStatus=PASS
+[2026-07-14T16:53:34.055Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:53:34.055Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:53:34.055Z] canonicalPublishable=true
+[2026-07-14T16:53:34.055Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:53:34.055Z] endTime=2026-07-14T16:53:34.055Z
+[2026-07-14T16:53:34.055Z] status=PASS

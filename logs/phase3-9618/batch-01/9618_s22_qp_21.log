@@ -1,0 +1,192 @@
+[2026-07-14T16:51:29.855Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_21.pdf
+[2026-07-14T16:51:29.855Z] startTime=2026-07-14T16:51:29.855Z
+[2026-07-14T16:51:29.855Z] expectedRole=question_paper
+[2026-07-14T16:51:31.902Z] extract.exitCode=0
+[2026-07-14T16:51:31.902Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_21.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) problem. Give the technical term for a sequence of steps that describe how to solve a problem. [1] The table lists some of the variables used in a program. (b) Complete the table by writing the most appropriate data type for each variable. (i) Variable Use of variable Data type Stores the average temperature Temp Stores the name of my pet PetName To ca"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Button-Y Button-Z | Output-C START S1 S3 Button-Z Button-Y Button-Y | Output-A Button-X S2 S4 Button-Z | Output-B Complete the table with reference to the diagram. (a) Answer The number of different inputs The number of different outputs The single input value that could result in S4 [3] The initial state is S1. (b) Complete the table to show the inputs, o"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 screens. Each screen shows a different film. Decomposition will be used to break the problem down into sub-problems. (a) Describe program modules that could be used in the design. three Module 1 Module 2 Module 3 [3] Two types of program modules may be used in the design of the program. (b) Identify the type of program module that should be used to return "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 store the stack. The following diagram represents the current state of the stack. points to the last value added to the stack. TopOfStack Stack Pointer Memory Value location 200 201 202 203 'F' TopOfStack 204 'C' 205 'D' 206 'E' 207 'H' Complete the following table by writing the answers. (a) Answer The value that has been on the stack for the longest time"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 <Field 1><Field 2><Field 3> An algorithm is required to search for the first instance of a given value of Field 2 and, if found, to output the corresponding values for Field 1 and Field 3. Describe the algorithm needed. Do include pseudocode statements in your answer. not [6] An algorithm will:"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 (a) output integer value between 100 and 200 that ends with the digit 7, for example, • each 107 output a final count of the number of values that are output. • Write pseudocode for this algorithm. Any variables used must be declared. [5] Study the following pseudocode. (b) CASE OF MySwitch 'a' 1: ThisChar 'y' 2: ThisChar '7' 3: ThisChar '*' OTHERWISE: Thi"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 11,
+      "pageEnd": 14,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The following strings are examples of palindromes: \"Racecar\" \"madam\" \"12344321\" Upper-case and lower-case characters need to be treated the same. For example, 'A' is equivalent to 'a'. A function will take a string parameter. The function will return if the (a) IsPalindrome() TRUE string is a palindrome and will return if the string is not a palindrome. FA"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 14,
+      "pageEnd": 17,
+      "marks": 21,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 inserted automatically when the user logs into the corresponding website. A student is developing a program to generate a password. The password will be of a fixed format, consisting of alphanumeric characters. The groups are separated by the three groups of four hyphen character '-'. An example of a password is: \"FxAf-3haV-Tq49\" A global 2D array of type "
+    }
+  ]
+}
+[2026-07-14T16:51:31.904Z] parserVersion=0.4.0
+[2026-07-14T16:51:31.904Z] documentRole=question_paper
+[2026-07-14T16:51:31.904Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:51:32.203Z] stage.exitCode=0
+[2026-07-14T16:51:32.203Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_21.staging.json",
+  "runId": "9618-2022-MJ-21-QP-RUN-42d09857276a",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 20,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 20,
+        "present": 20,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:51:32.206Z] stagingId=9618-2022-MJ-21-QP-RUN-42d09857276a
+[2026-07-14T16:51:32.206Z] validationStatus=PASS
+[2026-07-14T16:51:32.206Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:51:32.206Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:51:32.206Z] canonicalPublishable=true
+[2026-07-14T16:51:32.206Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:51:32.206Z] endTime=2026-07-14T16:51:32.206Z
+[2026-07-14T16:51:32.206Z] status=PASS

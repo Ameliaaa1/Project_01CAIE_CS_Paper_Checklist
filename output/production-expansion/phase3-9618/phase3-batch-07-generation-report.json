@@ -1,0 +1,1760 @@
+{
+  "generatedAt": "2026-07-14T17:01:51.123Z",
+  "startedAt": "2026-07-14T17:00:33.795Z",
+  "completedAt": "2026-07-14T17:01:51.114Z",
+  "productionWrite": false,
+  "manifestPath": "docs/phase3-9618-manifests/phase3-batch-07.json",
+  "totalFiles": 22,
+  "successCount": 19,
+  "failedCount": 3,
+  "skippedCount": 0,
+  "failures": [
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+      "stage": "validation",
+      "message": "Staging validation status is WARN.",
+      "severity": "P1",
+      "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+      "observed": {
+        "p0IssueCount": 0,
+        "countsByCode": {},
+        "examples": []
+      },
+      "filename": "9618_s25_qp_13.pdf",
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "13",
+      "documentRole": "question_paper",
+      "errorCode": "STAGING_VALIDATION_NOT_PASS",
+      "issue": "STAGING_VALIDATION_NOT_PASS"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+      "stage": "validation",
+      "message": "Staging validation produced blocking P1/P2 issues.",
+      "severity": "P1",
+      "suspectedRootCause": "STAGING_VALIDATION_BLOCKING_ISSUES",
+      "observed": {
+        "p0IssueCount": 0,
+        "countsByCode": {},
+        "examples": []
+      },
+      "filename": "9618_s25_qp_13.pdf",
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "13",
+      "documentRole": "question_paper",
+      "errorCode": "STAGING_VALIDATION_BLOCKING_ISSUES",
+      "issue": "STAGING_VALIDATION_BLOCKING_ISSUES"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+      "stage": "publish_gate",
+      "message": "Publish status is BLOCKED.",
+      "severity": "P2",
+      "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+      "observed": null,
+      "filename": "9618_s25_qp_13.pdf",
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "13",
+      "documentRole": "question_paper",
+      "errorCode": "STAGING_NOT_READY_TO_PUBLISH",
+      "issue": "STAGING_NOT_READY_TO_PUBLISH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+      "stage": "validation",
+      "message": "Staging validation status is WARN.",
+      "severity": "P1",
+      "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+      "observed": {
+        "p0IssueCount": 0,
+        "countsByCode": {},
+        "examples": []
+      },
+      "filename": "9618_s25_ms_13.pdf",
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "13",
+      "documentRole": "mark_scheme",
+      "errorCode": "STAGING_VALIDATION_NOT_PASS",
+      "issue": "STAGING_VALIDATION_NOT_PASS"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+      "stage": "validation",
+      "message": "Staging validation produced blocking P1/P2 issues.",
+      "severity": "P1",
+      "suspectedRootCause": "STAGING_VALIDATION_BLOCKING_ISSUES",
+      "observed": {
+        "p0IssueCount": 0,
+        "countsByCode": {},
+        "examples": []
+      },
+      "filename": "9618_s25_ms_13.pdf",
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "13",
+      "documentRole": "mark_scheme",
+      "errorCode": "STAGING_VALIDATION_BLOCKING_ISSUES",
+      "issue": "STAGING_VALIDATION_BLOCKING_ISSUES"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+      "stage": "publish_gate",
+      "message": "Publish status is BLOCKED.",
+      "severity": "P2",
+      "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+      "observed": null,
+      "filename": "9618_s25_ms_13.pdf",
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "13",
+      "documentRole": "mark_scheme",
+      "errorCode": "STAGING_NOT_READY_TO_PUBLISH",
+      "issue": "STAGING_NOT_READY_TO_PUBLISH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+      "stage": "validation",
+      "message": "Staging validation produced P0 issues.",
+      "severity": "P0",
+      "suspectedRootCause": "STAGING_VALIDATION_P0",
+      "observed": {
+        "p0IssueCount": 1,
+        "countsByCode": {
+          "MARK_SUM_MISMATCH": 1
+        },
+        "examples": [
+          {
+            "code": "MARK_SUM_MISMATCH",
+            "message": "Parent marks do not equal leaf marks.",
+            "questionId": "9618-2025-MJ-21-Q4",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_s25_qp_21.pdf",
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "21",
+      "documentRole": "question_paper",
+      "errorCode": "MARK_SUM_MISMATCH",
+      "issue": "MARK_SUM_MISMATCH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+      "stage": "validation",
+      "message": "Staging validation status is FAIL.",
+      "severity": "P1",
+      "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+      "observed": {
+        "p0IssueCount": 1,
+        "countsByCode": {
+          "MARK_SUM_MISMATCH": 1
+        },
+        "examples": [
+          {
+            "code": "MARK_SUM_MISMATCH",
+            "message": "Parent marks do not equal leaf marks.",
+            "questionId": "9618-2025-MJ-21-Q4",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_s25_qp_21.pdf",
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "21",
+      "documentRole": "question_paper",
+      "errorCode": "MARK_SUM_MISMATCH",
+      "issue": "MARK_SUM_MISMATCH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+      "stage": "canonical_completeness",
+      "message": "Canonical completeness gate blocked the staging artifact.",
+      "severity": "P0",
+      "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED",
+      "observed": {
+        "status": "FAIL",
+        "issues": [
+          {
+            "severity": "P0",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Existing parent mark validation is not valid.",
+            "questionId": "9618-2025-MJ-21-Q4",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_s25_qp_21.pdf",
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "21",
+      "documentRole": "question_paper",
+      "errorCode": "CANONICAL_COMPLETENESS_GATE_FAILED",
+      "issue": "CANONICAL_COMPLETENESS_GATE_FAILED"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+      "stage": "publish_gate",
+      "message": "Publish status is BLOCKED.",
+      "severity": "P2",
+      "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+      "observed": null,
+      "filename": "9618_s25_qp_21.pdf",
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "21",
+      "documentRole": "question_paper",
+      "errorCode": "STAGING_NOT_READY_TO_PUBLISH",
+      "issue": "STAGING_NOT_READY_TO_PUBLISH"
+    }
+  ],
+  "results": [
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_12.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-12",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:00:33.796Z",
+      "endTime": "2026-07-14T17:00:36.945Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_12.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_12.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_qp_12.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-12-QP-RUN-607722293452",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 7,
+        "leafQuestionCount": 30,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "12",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_12.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-12",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:00:36.946Z",
+      "endTime": "2026-07-14T17:00:39.365Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_12.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_12.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_ms_12.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-12-MS-RUN-0b0c41c4a793",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 29,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "12",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-13",
+      "status": "FAIL",
+      "startTime": "2026-07-14T17:00:39.365Z",
+      "endTime": "2026-07-14T17:00:43.043Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_13.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_13.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_qp_13.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-13-QP-RUN-b341d6829ba4",
+      "validationStatus": "WARN",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "BLOCKED",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 1,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 20,
+        "questionCount": 7,
+        "leafQuestionCount": 28,
+        "markSchemeEntryCount": 0,
+        "issueCount": 1
+      },
+      "failures": [
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+          "stage": "validation",
+          "message": "Staging validation status is WARN.",
+          "severity": "P1",
+          "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+          "observed": {
+            "p0IssueCount": 0,
+            "countsByCode": {},
+            "examples": []
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+          "stage": "validation",
+          "message": "Staging validation produced blocking P1/P2 issues.",
+          "severity": "P1",
+          "suspectedRootCause": "STAGING_VALIDATION_BLOCKING_ISSUES",
+          "observed": {
+            "p0IssueCount": 0,
+            "countsByCode": {},
+            "examples": []
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+          "stage": "publish_gate",
+          "message": "Publish status is BLOCKED.",
+          "severity": "P2",
+          "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+          "observed": null
+        }
+      ],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "13",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-13",
+      "status": "FAIL",
+      "startTime": "2026-07-14T17:00:43.043Z",
+      "endTime": "2026-07-14T17:00:45.297Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_13.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_13.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_ms_13.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-13-MS-RUN-a334bec016c7",
+      "validationStatus": "WARN",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "BLOCKED",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 1,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 27,
+        "issueCount": 1
+      },
+      "failures": [
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+          "stage": "validation",
+          "message": "Staging validation status is WARN.",
+          "severity": "P1",
+          "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+          "observed": {
+            "p0IssueCount": 0,
+            "countsByCode": {},
+            "examples": []
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+          "stage": "validation",
+          "message": "Staging validation produced blocking P1/P2 issues.",
+          "severity": "P1",
+          "suspectedRootCause": "STAGING_VALIDATION_BLOCKING_ISSUES",
+          "observed": {
+            "p0IssueCount": 0,
+            "countsByCode": {},
+            "examples": []
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+          "stage": "publish_gate",
+          "message": "Publish status is BLOCKED.",
+          "severity": "P2",
+          "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+          "observed": null
+        }
+      ],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "13",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-21",
+      "status": "FAIL",
+      "startTime": "2026-07-14T17:00:45.297Z",
+      "endTime": "2026-07-14T17:00:48.980Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_21.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_21.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_qp_21.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-21-QP-RUN-bdc294eb8a51",
+      "validationStatus": "FAIL",
+      "canonicalCompletenessStatus": "FAIL",
+      "canonicalPublishable": false,
+      "publishStatus": "BLOCKED",
+      "issueCounts": {
+        "P0": 1,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 20,
+        "questionCount": 7,
+        "leafQuestionCount": 18,
+        "markSchemeEntryCount": 0,
+        "issueCount": 1
+      },
+      "failures": [
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+          "stage": "validation",
+          "message": "Staging validation produced P0 issues.",
+          "severity": "P0",
+          "suspectedRootCause": "STAGING_VALIDATION_P0",
+          "observed": {
+            "p0IssueCount": 1,
+            "countsByCode": {
+              "MARK_SUM_MISMATCH": 1
+            },
+            "examples": [
+              {
+                "code": "MARK_SUM_MISMATCH",
+                "message": "Parent marks do not equal leaf marks.",
+                "questionId": "9618-2025-MJ-21-Q4",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+          "stage": "validation",
+          "message": "Staging validation status is FAIL.",
+          "severity": "P1",
+          "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+          "observed": {
+            "p0IssueCount": 1,
+            "countsByCode": {
+              "MARK_SUM_MISMATCH": 1
+            },
+            "examples": [
+              {
+                "code": "MARK_SUM_MISMATCH",
+                "message": "Parent marks do not equal leaf marks.",
+                "questionId": "9618-2025-MJ-21-Q4",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+          "stage": "canonical_completeness",
+          "message": "Canonical completeness gate blocked the staging artifact.",
+          "severity": "P0",
+          "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED",
+          "observed": {
+            "status": "FAIL",
+            "issues": [
+              {
+                "severity": "P0",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Existing parent mark validation is not valid.",
+                "questionId": "9618-2025-MJ-21-Q4",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+          "stage": "publish_gate",
+          "message": "Publish status is BLOCKED.",
+          "severity": "P2",
+          "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+          "observed": null
+        }
+      ],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "21",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_21.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-21",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:00:48.980Z",
+      "endTime": "2026-07-14T17:00:52.292Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_21.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_21.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_ms_21.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-21-MS-RUN-cc0ce7f995d0",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 14,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 18,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "21",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_22.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-22",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:00:52.292Z",
+      "endTime": "2026-07-14T17:00:55.849Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_22.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_22.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_qp_22.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-22-QP-RUN-d0888a6c10be",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 20,
+        "questionCount": 7,
+        "leafQuestionCount": 24,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "22",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_22.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-22",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:00:55.849Z",
+      "endTime": "2026-07-14T17:00:59.238Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_22.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_22.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_ms_22.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-22-MS-RUN-1a983412767f",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 20,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 26,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "22",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_23.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-23",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:00:59.238Z",
+      "endTime": "2026-07-14T17:01:02.898Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_23.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_23.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_qp_23.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-23-QP-RUN-598eed30b0b8",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 20,
+        "questionCount": 7,
+        "leafQuestionCount": 21,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "23",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_23.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-23",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:02.899Z",
+      "endTime": "2026-07-14T17:01:05.564Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_23.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_23.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_ms_23.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-23-MS-RUN-13b90d3db85a",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 14,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 22,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "23",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_31.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-31",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:05.564Z",
+      "endTime": "2026-07-14T17:01:08.718Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_31.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_31.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_qp_31.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-31-QP-RUN-68475c1640b4",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 12,
+        "leafQuestionCount": 28,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "31",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_31.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-31",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:08.719Z",
+      "endTime": "2026-07-14T17:01:11.531Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_31.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_31.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_ms_31.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-31-MS-RUN-b86fb4fdeb69",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 15,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 26,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "31",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_32.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-32",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:11.531Z",
+      "endTime": "2026-07-14T17:01:14.870Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_32.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_32.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_qp_32.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-32-QP-RUN-647369ebfe22",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 13,
+        "leafQuestionCount": 27,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "32",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_32.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-32",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:14.871Z",
+      "endTime": "2026-07-14T17:01:17.916Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_32.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_32.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_ms_32.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-32-MS-RUN-a5dc986a4997",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 27,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "32",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_33.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-33",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:17.916Z",
+      "endTime": "2026-07-14T17:01:21.211Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_33.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_33.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_qp_33.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-33-QP-RUN-137f265e230d",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 13,
+        "leafQuestionCount": 27,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "33",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_33.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-33",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:21.212Z",
+      "endTime": "2026-07-14T17:01:24.335Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_33.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_33.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_ms_33.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-33-MS-RUN-782567026e38",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 26,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "33",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_41.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-41",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:24.335Z",
+      "endTime": "2026-07-14T17:01:27.098Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_41.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_41.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_qp_41.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-41-QP-RUN-bb3f54d2e359",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 3,
+        "leafQuestionCount": 22,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "41",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_41.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-41",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:27.098Z",
+      "endTime": "2026-07-14T17:01:33.227Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_41.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_41.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_ms_41.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-41-MS-RUN-6736744388fc",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 43,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 27,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "41",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_42.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-42",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:33.227Z",
+      "endTime": "2026-07-14T17:01:35.713Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_42.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_42.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_qp_42.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-42-QP-RUN-bf1d0c138dd6",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 3,
+        "leafQuestionCount": 25,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "42",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_42.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-42",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:35.713Z",
+      "endTime": "2026-07-14T17:01:42.122Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_42.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_42.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_ms_42.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-42-MS-RUN-25658284fa54",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 45,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 26,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "42",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_43.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-43",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:42.123Z",
+      "endTime": "2026-07-14T17:01:44.680Z",
+      "samplePath": "output/ingestion-samples/9618_s25_qp_43.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_qp_43.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_qp_43.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2025-MJ-43-QP-RUN-21f1a713008e",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 3,
+        "leafQuestionCount": 23,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "43",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_43.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2025-MJ-43",
+      "status": "PASS",
+      "startTime": "2026-07-14T17:01:44.680Z",
+      "endTime": "2026-07-14T17:01:51.114Z",
+      "samplePath": "output/ingestion-samples/9618_s25_ms_43.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s25_ms_43.staging.json",
+      "logPath": "logs/phase3-9618/batch-07/9618_s25_ms_43.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2025-MJ-43-MS-RUN-f73823e54cd0",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 45,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 24,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2025,
+      "session": "May-June",
+      "component": "43",
+      "phase1Regression": false
+    }
+  ],
+  "phase": "Phase 2",
+  "groupStats": {
+    "bySyllabus": {
+      "9618": {
+        "total": 22,
+        "success": 19,
+        "failed": 3,
+        "skipped": 0
+      }
+    },
+    "byYear": {
+      "2025": {
+        "total": 22,
+        "success": 19,
+        "failed": 3,
+        "skipped": 0
+      }
+    },
+    "bySession": {
+      "May-June": {
+        "total": 22,
+        "success": 19,
+        "failed": 3,
+        "skipped": 0
+      }
+    },
+    "byDocumentRole": {
+      "question_paper": {
+        "total": 11,
+        "success": 9,
+        "failed": 2,
+        "skipped": 0
+      },
+      "mark_scheme": {
+        "total": 11,
+        "success": 10,
+        "failed": 1,
+        "skipped": 0
+      }
+    },
+    "byComponent": {
+      "12": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "13": {
+        "total": 2,
+        "success": 0,
+        "failed": 2,
+        "skipped": 0
+      },
+      "21": {
+        "total": 2,
+        "success": 1,
+        "failed": 1,
+        "skipped": 0
+      },
+      "22": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "23": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "31": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "32": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "33": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "41": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "42": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "43": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      }
+    }
+  },
+  "phase2Analysis": {
+    "successRate": 0.8636,
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "textQualityRegressions": [],
+    "failureCategories": {
+      "STAGING_VALIDATION_NOT_PASS": {
+        "count": 2,
+        "severity": "P1",
+        "examples": [
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+            "syllabus": "9618",
+            "documentRole": "mark_scheme",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS"
+          }
+        ]
+      },
+      "STAGING_VALIDATION_BLOCKING_ISSUES": {
+        "count": 2,
+        "severity": "P1",
+        "examples": [
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_BLOCKING_ISSUES"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+            "syllabus": "9618",
+            "documentRole": "mark_scheme",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_BLOCKING_ISSUES"
+          }
+        ]
+      },
+      "STAGING_NOT_READY_TO_PUBLISH": {
+        "count": 3,
+        "severity": "P2",
+        "examples": [
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "publish_gate",
+            "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+            "syllabus": "9618",
+            "documentRole": "mark_scheme",
+            "stage": "publish_gate",
+            "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "publish_gate",
+            "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH"
+          }
+        ]
+      },
+      "MARK_SUM_MISMATCH": {
+        "count": 2,
+        "severity": "P0",
+        "examples": [
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_P0"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS"
+          }
+        ]
+      },
+      "CANONICAL_COMPLETENESS_GATE_FAILED": {
+        "count": 1,
+        "severity": "P0",
+        "examples": [
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "canonical_completeness",
+            "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED"
+          }
+        ]
+      }
+    },
+    "datasetGaps": [],
+    "recommendedFuturePRs": [
+      {
+        "title": "Investigate STAGING_VALIDATION_NOT_PASS",
+        "priority": "medium",
+        "evidenceCount": 2,
+        "scope": "Create a targeted parser/staging PR only after reviewing affected debug logs and staging JSON."
+      },
+      {
+        "title": "Investigate STAGING_VALIDATION_BLOCKING_ISSUES",
+        "priority": "medium",
+        "evidenceCount": 2,
+        "scope": "Create a targeted parser/staging PR only after reviewing affected debug logs and staging JSON."
+      },
+      {
+        "title": "Investigate STAGING_NOT_READY_TO_PUBLISH",
+        "priority": "medium",
+        "evidenceCount": 3,
+        "scope": "Create a targeted parser/staging PR only after reviewing affected debug logs and staging JSON."
+      },
+      {
+        "title": "Investigate MARK_SUM_MISMATCH",
+        "priority": "high",
+        "evidenceCount": 2,
+        "scope": "Create a targeted parser/staging PR only after reviewing affected debug logs and staging JSON."
+      },
+      {
+        "title": "Investigate CANONICAL_COMPLETENESS_GATE_FAILED",
+        "priority": "high",
+        "evidenceCount": 1,
+        "scope": "Create a targeted parser/staging PR only after reviewing affected debug logs and staging JSON."
+      }
+    ]
+  }
+}

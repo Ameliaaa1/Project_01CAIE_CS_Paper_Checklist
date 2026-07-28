@@ -1,0 +1,52 @@
+{
+  "solution": "PR-033_0478_Multi_Year_Expansion_Preparation_Plan",
+  "status": "PASS",
+  "scope": {
+    "syllabus": "0478",
+    "years": [2020, 2021, 2022, 2023],
+    "session": "M/J",
+    "components": ["11", "12", "13", "21", "22", "23"]
+  },
+  "coverage": {
+    "expectedPairs": 24,
+    "availablePdfPairs": 24,
+    "stagingPairs": 14,
+    "eligibleUnpublishedPairs": 8,
+    "alreadyPublishedPairs": 6,
+    "blockedPairs": 0,
+    "missingStagingPairs": 10
+  },
+  "eligibleCandidates": {
+    "2020": ["11", "12", "13", "21", "22", "23"],
+    "2021": ["11", "12"]
+  },
+  "missingStaging": {
+    "2021": ["13", "21", "22", "23"],
+    "2022": ["11", "12", "13", "21", "22", "23"]
+  },
+  "recommendedPr034Batch": {
+    "batchId": "PR034-0478-2021-MJ-BATCH-01",
+    "year": 2021,
+    "components": ["11", "12"],
+    "pairCount": 2,
+    "reason": "Smallest complete unpublished year subset with validated QP/MS staging."
+  },
+  "regression": {
+    "phase1": {"success": 20, "total": 20},
+    "phase2": {"success": 120, "total": 120},
+    "pr030": "PASS",
+    "pr031": "PASS",
+    "pr032": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "production": {
+    "productionWrite": false,
+    "storeHashUnchanged": true
+  },
+  "artifacts": {
+    "coverageReport": "output/production-expansion/pr033-multi-year-preparation-report.json",
+    "productionHashBefore": "debug/pr033-multi-year/production-store-before.sha256",
+    "productionHashAfter": "debug/pr033-multi-year/production-store-after.sha256"
+  }
+}

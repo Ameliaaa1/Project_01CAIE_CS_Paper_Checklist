@@ -1,0 +1,85 @@
+{
+  "generatedFor": "Phase-8-A",
+  "status": "PASS",
+  "title": "Quality Monitoring",
+  "checks": {
+    "dashboardPass": true,
+    "sourceCoverageVisible": true,
+    "stagingCoverageVisible": true,
+    "productionCoverageVisible": true,
+    "validationVisible": true,
+    "regressionVisible": true,
+    "parserFailureRateVisible": true
+  },
+  "details": {
+    "title": "Quality Monitoring",
+    "status": "PASS",
+    "checks": {
+      "dashboardPass": true,
+      "sourceCoverageVisible": true,
+      "stagingCoverageVisible": true,
+      "productionCoverageVisible": true,
+      "validationVisible": true,
+      "regressionVisible": true,
+      "parserFailureRateVisible": true
+    },
+    "dashboard": {
+      "generatedFor": "Phase-8-Quality-Monitoring",
+      "status": "PASS",
+      "coverage": [
+        {
+          "syllabus": "9618",
+          "sourceCoverage": 1,
+          "stagingCoverage": 1,
+          "productionCoverage": 1,
+          "incompleteSourcePairs": 0,
+          "blockedPairs": 0,
+          "eligibleUnpublishedPairs": 0,
+          "duplicateSourceCount": 0
+        },
+        {
+          "syllabus": "9709",
+          "sourceCoverage": 1,
+          "stagingCoverage": 1,
+          "productionCoverage": 1,
+          "incompleteSourcePairs": 0,
+          "blockedPairs": 0,
+          "eligibleUnpublishedPairs": 0,
+          "duplicateSourceCount": 0
+        },
+        {
+          "syllabus": "0478",
+          "sourceCoverage": 1,
+          "stagingCoverage": 1,
+          "productionCoverage": 1,
+          "incompleteSourcePairs": 0,
+          "blockedPairs": 0,
+          "eligibleUnpublishedPairs": 0,
+          "duplicateSourceCount": 0
+        }
+      ],
+      "validation": {
+        "total": 0,
+        "byLevel": {
+          "Critical": 0,
+          "Warning": 0,
+          "Informational": 0
+        },
+        "byDomain": {},
+        "productionBlocked": false,
+        "findings": []
+      },
+      "regression": {
+        "golden0478": "PASS",
+        "edge9618": "PASS",
+        "cross9709": "PASS",
+        "future": "PASS"
+      },
+      "parser": {
+        "processedDocuments": 442,
+        "failedDocuments": 0,
+        "failureRate": 0
+      }
+    }
+  }
+}

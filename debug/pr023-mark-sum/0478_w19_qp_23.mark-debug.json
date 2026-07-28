@@ -1,0 +1,180 @@
+{
+  "debugType": "pr023_mark_sum_validation_investigation",
+  "generatedAt": "2026-07-11T08:26:13.481Z",
+  "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_23.pdf",
+  "rootCauseSummary": "Array/table index bracket tokens are excluded from mark extraction; MARK_SUM_MISMATCH resolved.",
+  "validationStatus": "PASS",
+  "issues": [],
+  "questionCount": 4,
+  "leafQuestionCount": 15,
+  "parents": [
+    {
+      "questionId": "0478-2019-ON-23-Q1",
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "parentMarks": 20,
+      "rawMarkValidation": {
+        "declared": 20,
+        "leafSum": 20,
+        "valid": true
+      },
+      "stagingLeafSum": 20,
+      "mismatch": false,
+      "rootCauseCategory": "PASS",
+      "textSample": "1 (a) All variables, constants and other identifiers must have meaningful names. Name two arrays you could use for Task 1 . State the data type and purpose of each one. Array 1 Data type 1 Purpose Array 2 Data type 2 Purpose [4] (b) Name a variable that you used for Task 2 . State the data type and purpose of this variable. Explain why you chose to use a variable rather than a constant. Variable Data type Purpose Reason for use of a variable [4] (c) Write an algorithm for Task 1 using either pse",
+      "leaves": [
+        {
+          "questionId": "0478-2019-ON-23-Q1-A",
+          "questionNumber": "1(a)",
+          "marks": 4,
+          "pageStart": 3,
+          "pageEnd": 3,
+          "textSample": "(a) All variables, constants and other identifiers must have meaningful names. Name two arrays you could use for Task 1 . State the data type and purpose of each one. Array 1 Data type 1 Purpose Array 2 Data type 2 Purpo"
+        },
+        {
+          "questionId": "0478-2019-ON-23-Q1-B",
+          "questionNumber": "1(b)",
+          "marks": 4,
+          "pageStart": 3,
+          "pageEnd": 3,
+          "textSample": "(b) Name a variable that you used for Task 2 . State the data type and purpose of this variable. Explain why you chose to use a variable rather than a constant. Variable Data type Purpose Reason for use of a variable [4]"
+        },
+        {
+          "questionId": "0478-2019-ON-23-Q1-C",
+          "questionNumber": "1(c)",
+          "marks": 6,
+          "pageStart": 4,
+          "pageEnd": 5,
+          "textSample": "(c) Write an algorithm for Task 1 using either pseudocode, programming statements or a flowchart. Assume that the first part of Task 1 the storage and display of tile descriptions, prices per box and identification codes"
+        },
+        {
+          "questionId": "0478-2019-ON-23-Q1-D",
+          "questionNumber": "1(d)",
+          "marks": 3,
+          "pageStart": 6,
+          "pageEnd": 6,
+          "textSample": "(d) Explain how you extended your program to complete Task 2 . Any programming statements you use in your answer must be fully explained. [3]"
+        },
+        {
+          "questionId": "0478-2019-ON-23-Q1-E",
+          "questionNumber": "1(e)",
+          "marks": 3,
+          "pageStart": 7,
+          "pageEnd": 8,
+          "textSample": "(e) Explain how you could validate the input for percentage waste allowance in Task 3 . [3] Section B"
+        }
+      ]
+    },
+    {
+      "questionId": "0478-2019-ON-23-Q4",
+      "questionNumber": "4",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "parentMarks": 5,
+      "rawMarkValidation": {
+        "declared": 5,
+        "leafSum": 5,
+        "valid": true
+      },
+      "stagingLeafSum": 5,
+      "mismatch": false,
+      "rootCauseCategory": "PASS",
+      "textSample": "4 The following pseudocode algorithm uses nested IF statements. IF Response = 1 THEN X + Y X ELSE IF Response = 2 THEN X – Y X ELSE IF Response = 3 THEN X * Y X ELSE IF Response = 4 THEN X / Y X ELSE OUTPUT \"No response\" ENDIF ENDIF ENDIF ENDIF (a) Name the type of statement demonstrated by the use of IF … THEN … ELSE … ENDIF [1] (b) Re-write the pseudocode algorithm using a statement. CASE [4]",
+      "leaves": [
+        {
+          "questionId": "0478-2019-ON-23-Q4-A",
+          "questionNumber": "4(a)",
+          "marks": 1,
+          "pageStart": 9,
+          "pageEnd": 9,
+          "textSample": "The following pseudocode algorithm uses nested IF statements. IF Response = 1 THEN X + Y X ELSE IF Response = 2 THEN X – Y X ELSE IF Response = 3 THEN X * Y X ELSE IF Response = 4 THEN X / Y X ELSE OUTPUT \"No response\" E"
+        },
+        {
+          "questionId": "0478-2019-ON-23-Q4-B",
+          "questionNumber": "4(b)",
+          "marks": 4,
+          "pageStart": 9,
+          "pageEnd": 9,
+          "textSample": "The following pseudocode algorithm uses nested IF statements. IF Response = 1 THEN X + Y X ELSE IF Response = 2 THEN X – Y X ELSE IF Response = 3 THEN X * Y X ELSE IF Response = 4 THEN X / Y X ELSE OUTPUT \"No response\" E"
+        }
+      ]
+    },
+    {
+      "questionId": "0478-2019-ON-23-Q5",
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "parentMarks": 8,
+      "rawMarkValidation": {
+        "declared": 8,
+        "leafSum": 8,
+        "valid": true
+      },
+      "stagingLeafSum": 8,
+      "mismatch": false,
+      "rootCauseCategory": "PASS",
+      "textSample": "5 The algorithm performs an operation on the array named MyData means integer division, so only the whole number part of the result is returned DIV e.g. returns a value of 7 DIV 2 3 0 First 16 Last FALSE Found INPUT UserIn WHILE (First <= Last) AND (Found = FALSE) DO (First + Last) DIV 2 Middle IF MyData[Middle] = UserIn THEN TRUE Found ELSE IF UserIn < MyData[Middle] THEN Middle - 1 Last ELSE Middle + 1 First ENDIF ENDIF ENDWHILE OUTPUT Found This table shows the contents of the array: e.g. sto",
+      "leaves": [
+        {
+          "questionId": "0478-2019-ON-23-Q5-A",
+          "questionNumber": "5(a)",
+          "marks": 6,
+          "pageStart": 10,
+          "pageEnd": 10,
+          "textSample": "The algorithm performs an operation on the array named MyData means integer division, so only the whole number part of the result is returned DIV e.g. returns a value of 7 DIV 2 3 0 First 16 Last FALSE Found INPUT UserIn"
+        },
+        {
+          "questionId": "0478-2019-ON-23-Q5-B",
+          "questionNumber": "5(b)",
+          "marks": 2,
+          "pageStart": 10,
+          "pageEnd": 10,
+          "textSample": "The algorithm performs an operation on the array named MyData means integer division, so only the whole number part of the result is returned DIV e.g. returns a value of 7 DIV 2 3 0 First 16 Last FALSE Found INPUT UserIn"
+        }
+      ]
+    },
+    {
+      "questionId": "0478-2019-ON-23-Q7",
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "parentMarks": 8,
+      "rawMarkValidation": {
+        "declared": 8,
+        "leafSum": 8,
+        "valid": true
+      },
+      "stagingLeafSum": 8,
+      "mismatch": false,
+      "rootCauseCategory": "PASS",
+      "textSample": "7 A teacher has decided to use a database table as her mark book for her Computer Science class, which she has called MARKBOOK. For each student, the following data will be recorded: first name, last name, their year 10 test score and their year 11 test score. The class has 32 students. (a) State the number of fields and records required for this database. Number of Fields Number of Records [2] (b) The data in MARKBOOK is stored under category headings: LastName, FirstName, Y10TestScore and Y11T",
+      "leaves": [
+        {
+          "questionId": "0478-2019-ON-23-Q7-A",
+          "questionNumber": "7(a)",
+          "marks": 2,
+          "pageStart": 12,
+          "pageEnd": 12,
+          "textSample": "A teacher has decided to use a database table as her mark book for her Computer Science class, which she has called MARKBOOK. For each student, the following data will be recorded: first name, last name, their year 10 te"
+        },
+        {
+          "questionId": "0478-2019-ON-23-Q7-B",
+          "questionNumber": "7(b)",
+          "marks": 2,
+          "pageStart": 12,
+          "pageEnd": 12,
+          "textSample": "A teacher has decided to use a database table as her mark book for her Computer Science class, which she has called MARKBOOK. For each student, the following data will be recorded: first name, last name, their year 10 te"
+        },
+        {
+          "questionId": "0478-2019-ON-23-Q7-C",
+          "questionNumber": "7(c)",
+          "marks": 4,
+          "pageStart": 12,
+          "pageEnd": 12,
+          "textSample": "A teacher has decided to use a database table as her mark book for her Computer Science class, which she has called MARKBOOK. For each student, the following data will be recorded: first name, last name, their year 10 te"
+        }
+      ]
+    }
+  ]
+}

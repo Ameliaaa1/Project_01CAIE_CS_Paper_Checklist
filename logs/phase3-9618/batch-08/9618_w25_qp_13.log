@@ -1,0 +1,192 @@
+[2026-07-14T17:02:54.177Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_13.pdf
+[2026-07-14T17:02:54.177Z] startTime=2026-07-14T17:02:54.177Z
+[2026-07-14T17:02:54.177Z] expectedRole=question_paper
+[2026-07-14T17:02:56.854Z] extract.exitCode=0
+[2026-07-14T17:02:56.854Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_13.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) A student creates sound recordings. Making changes to a sound recording may impact the accuracy of the resulting sound file or the size of the file. Draw two lines from each change to the impacts it has on the sound file. Change Impact the file size gets bigger increase the duration of the recording no change in the file size the file size gets smaller"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) Data in a computer system is represented in binary. Put one tick (3) in each row to identify the minimum number of bits used to store each example of data. Number of bits Example of data 4 8 16 24 32 64 128 the hexadecimal value F139 16 000 000 unique amplitude values an IPv4 address 256 unique colours an IPv6 address the denary value 65 000 [3] (b) Co"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 (a) Complete the truth table for the following logic expression: X = (A NOR B) NAND (C XOR B) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [2] (b) Draw a logic circuit for the logic expression: X = NOT (((A AND B) OR C) AND (C NOR D)) A B X C D [2] DFD"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A network engineer is setting up a Local Area Network (LAN) in an office. The network uses both wired and wireless connectivity. (a) Give three advantages of a wireless network compared to a wired network. 1 2 3 [3] (b) Give one drawback of using a wireless network. [1] (c) Complete the table by writing the name of the type of memory technology for each de"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 10,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A company creates a relational database to store data about its customers. The database, REVIEWS, stores data about the customers, products, complaints and staff. The database has four tables: CUSTOMER(CustomerID, CustomerFirstName, CustomerLastName, CustomerEmail) PRODUCT(ProductID, ProductName, ProductDetail, Price, Rating) COMPLAINT(ComplaintID, Product"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 The following table shows part of the instruction set for a processor. The processor has two registers: the Accumulator (ACC) and the Index Register (IX) . Instruction Explanation Opcode Operand LDM #n Immediate addressing. Load the number n to the ACC AND #n / Bn / &n Bitwise AND operation of the contents of the ACC with the operand AND <address> Bitwise "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 15,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A digital video camera records students in a classroom. The data is transferred from the digital video camera over the internet to a server. Artificial Intelligence (AI) is used to analyse the video on the server to identify when students are interacting with the lesson and the teacher. (a) Describe one ethical impact of this use of AI in the classroom. [2"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 15,
+      "pageEnd": 15,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 Compilers and interpreters are used to translate programs written in a high‑level language into a low‑level language. (a) State two disadvantages of using a compiler compared to an interpreter during program development. 1 2 [2] (b) Explain how a programmer benefits from using program libraries during program development. [3] (c) A programmer is developing"
+    }
+  ]
+}
+[2026-07-14T17:02:56.858Z] parserVersion=0.4.0
+[2026-07-14T17:02:56.858Z] documentRole=question_paper
+[2026-07-14T17:02:56.858Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:02:57.292Z] stage.exitCode=0
+[2026-07-14T17:02:57.292Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_13.staging.json",
+  "runId": "9618-2025-ON-13-QP-RUN-9b5d7e33de24",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 28,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 28,
+        "present": 28,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:02:57.296Z] stagingId=9618-2025-ON-13-QP-RUN-9b5d7e33de24
+[2026-07-14T17:02:57.296Z] validationStatus=PASS
+[2026-07-14T17:02:57.296Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:02:57.296Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:02:57.296Z] canonicalPublishable=true
+[2026-07-14T17:02:57.296Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:02:57.296Z] endTime=2026-07-14T17:02:57.296Z
+[2026-07-14T17:02:57.296Z] status=PASS

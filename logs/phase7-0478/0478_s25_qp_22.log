@@ -1,0 +1,224 @@
+[2026-07-15T03:54:46.240Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_22.pdf
+[2026-07-15T03:54:46.240Z] startTime=2026-07-15T03:54:46.240Z
+[2026-07-15T03:54:46.240Z] expectedRole=question_paper
+[2026-07-15T03:54:48.534Z] extract.exitCode=0
+[2026-07-15T03:54:48.534Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s25_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Tick (✓) one box to complete the description of abstraction. Abstraction is part of the analysis stage of the development life cycle. Abstraction means A testing the solution to the problem. B writing a program using program code. C defining the sub-systems that make up the problem. D removing details from the problem that are not relevant. [1]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A fence measuring 2 metres in height and 20 metres in length needs painting. The area of the fence needs to be calculated so that enough paint for the job is purchased. After the task is decomposed, there are three component parts: input, process and output. Three component parts and four example descriptions are shown. Draw one line from each component pa"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 A range check is used to validate that the input temperature is an integer between –100 and 0, inclusive. Suggest suitable normal, abnormal, extreme and boundary test data to test if this validation check is working correctly. Normal test data Abnormal test data Extreme test data Boundary test data [4]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 (a) State one reason for using a verification check when inputting data. [1] (b) Write the pseudocode for an algorithm to perform a double entry verification check, using the following criteria: Input 10 numbers and store them in the array Numbers[] • Input the same 10 numbers again; as each number is input, compare it with its • corresponding number in th"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 This pseudocode algorithm should allow 500 names of people and their heights to be entered and stored in two one-dimensional (1D) arrays. The name of a person and the height of that person are in the same index in both the Names[] and the Heights[] arrays. The algorithm performs as follows: at the start, the following data is entered: • name of person ◦ he"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 This pseudocode is an algorithm. DECLARE Word : STRING DECLARE V1 : INTEGER DECLARE V2 : INTEGER DECLARE Number : INTEGER DECLARE Index : INTEGER DECLARE L1 : CHAR DECLARE L2 : CHAR DECLARE Continue : BOOLEAN INPUT Number 1 TO Number FOR Index INPUT Word TRUE Continue 1 V1 LENGTH(Word) V2 WHILE Continue = TRUE AND V1 < V2 DO SUBSTRING(Word, V1, 1) L1 SUBST"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The flowchart shows an algorithm that is used to input 50 numbers. Each number is stored in the variable Value when it is input. Any number input that is less than or equal to –20 or greater than or equal to 50 is rejected and re-input. The accepted numbers are added together as they are entered and the total and average of these numbers are output at the "
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 (a) Draw the symbol for an XOR logic gate and complete the truth table for it. XOR logic gate symbol: Truth table: A B X 0 0 0 1 1 0 1 1 [2] (b) Consider the logic rules in the following table: Input Binary value Description 0 operator not present A 1 operator present 0 ignition key present B 1 ignition key not present 0 operator code correct C 1 operator "
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 A database table, CapitalCity, stores data about capital cities from around the world. Field Description Identification a unique identifier Name the name of the city Country the name of the country in which the city is located Continent the name of the continent in which the city is located Population the number of people living in the city Founded the yea"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "10 A program is required to allow students to calculate the volume of a number of standard three-dimensional shapes. It will use functions to allow other shapes to be added in the future. Cuboid height volume=base×depth×height depth base Triangular prism 1 2 volume= ×base×depth×height height depth base Sphere 4 3 volume= ×Pi×radius×radius×radius radius Pi is"
+    }
+  ]
+}
+[2026-07-15T03:54:48.537Z] parserVersion=0.4.0
+[2026-07-15T03:54:48.537Z] documentRole=question_paper
+[2026-07-15T03:54:48.537Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:48.895Z] stage.exitCode=0
+[2026-07-15T03:54:48.895Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s25_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_22.staging.json",
+  "runId": "0478-2025-MJ-22-QP-RUN-ad0706905322",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 19,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 19,
+        "present": 19,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:54:48.898Z] stagingId=0478-2025-MJ-22-QP-RUN-ad0706905322
+[2026-07-15T03:54:48.898Z] validationStatus=PASS
+[2026-07-15T03:54:48.898Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:54:48.898Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:48.898Z] canonicalPublishable=true
+[2026-07-15T03:54:48.898Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:54:48.898Z] endTime=2026-07-15T03:54:48.898Z
+[2026-07-15T03:54:48.898Z] status=PASS

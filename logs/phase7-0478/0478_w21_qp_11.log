@@ -1,0 +1,240 @@
+[2026-07-15T03:52:29.633Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_11.pdf
+[2026-07-15T03:52:29.633Z] startTime=2026-07-15T03:52:29.633Z
+[2026-07-15T03:52:29.633Z] expectedRole=question_paper
+[2026-07-15T03:52:30.894Z] extract.exitCode=0
+[2026-07-15T03:52:30.894Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w21_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_11.pdf",
+  "pageCount": 12,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 3 Tick ( ) box to show whether binary is a base-2, base-10 or base-16 number system. (a) one 3 Tick ( ) Base-2 Base-10 Base-16 [1] Hexadecimal and denary are number systems that can be used by programmers. (b) Convert these hexadecimal values into denary values. four 09 10 28 A1 [4] Magda has a mobile telephone."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 She uses the touch screen on her telephone to send emails to her customers. The touch screen breaks, stopping Magda from using it to type her emails. Identify other input device that would be built into the mobile telephone that Magda could (a) one use to send an email to her customers. [1] The touch screen operates by using the conductive properties of th"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Five check. 3 Tick ( ) to show whether each statement applies to checksum, check digit or parity check. (a) Some statements may apply to more than error-checking method. one Check Parity Statement Checksum digit check 3 3 3 ( ) ( ) ( ) uses an additional bit to create an odd or even number of 1s checks for errors on data entry compares calculated values to"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 drive for a customer. Each photograph is 100 pixels wide and 50 pixels high. The photographs are 8-bit colour photographs. Calculate the total file size, in kilobytes (kB), of all the photographs. For this calculation, you (a) may use the unit of measurement of 1024 or 1000. Show all your working. Answer kB [3] Georgia compresses photographs to store them "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 He uses the Internet regularly and is concerned about his data being viewed by unauthorised people. He currently has software method to stop his data being viewed, which is a password. one He wants to add other software methods to stop his data being viewed by unauthorised people. State other software methods that Tamaz could use to stop his data being vie"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Six 3 Tick ( ) to show whether each statement applies to the Memory Address Register (MAR), (a) Memory Data Register (MDR) or Program Counter (PC). Some statements may apply to more than one component. MAR MDR PC Statement 3 3 3 ( ) ( ) ( ) it is a register in the CPU it holds the address of the next instruction to be processed it holds the address of the "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "7 (a) one secondary or off-line storage. Justify your choice. 3 ( ) Tick Primary Secondary Off-line Justification [3] Describe the operation of an SSD and how it stores data. (b) [4] Victoria develops a computer game to sell on a gaming website. She writes her program using"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 English-like statements. State which type of programming language Victoria is using. (a) [1] Victoria uses different types of translator when creating the program for the computer (b) two game. State which translator is the most suitable for the given tasks. Give the benefits of using that translator for the task. You must choose a different translator for"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 A sensor is used in each of the given tasks. (a) Identify suitable sensor that would be used for each task. one Each sensor given must be different. Task Sensor checking the water is 30 °C checking the water acidity level after detergent is added checking the weight of the clothes to make sure that the machine is overloaded not [3] Describe how the sensor "
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 = ((( OR ) OR (NOT ( XOR ))) AND ) X A B B C C Draw a logic circuit to represent the given logic statement. (a) Do attempt to simplify the logic statement. All logic gates must have a maximum of not two inputs. A B X C [5] State the name of a logic gate that does appear in the logic statement and draw the (b) not symbol for the logic gate. Name of logic g"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "11 Complete the table with the correct terms for the given descriptions. Term Description the language used to create a web page the type of software application used to display a web page an address given to a computer, by a network, to allow the computer to be uniquely identified a text file sent by a web server to collect data about a user’s browsing habi"
+    }
+  ]
+}
+[2026-07-15T03:52:30.895Z] parserVersion=0.4.0
+[2026-07-15T03:52:30.895Z] documentRole=question_paper
+[2026-07-15T03:52:30.895Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:52:31.148Z] stage.exitCode=0
+[2026-07-15T03:52:31.148Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w21_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_11.staging.json",
+  "runId": "0478-2021-ON-11-QP-RUN-4ac43c273823",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 25,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 25,
+        "present": 25,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:52:31.149Z] stagingId=0478-2021-ON-11-QP-RUN-4ac43c273823
+[2026-07-15T03:52:31.149Z] validationStatus=PASS
+[2026-07-15T03:52:31.149Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:52:31.149Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:52:31.149Z] canonicalPublishable=true
+[2026-07-15T03:52:31.149Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:52:31.149Z] endTime=2026-07-15T03:52:31.149Z
+[2026-07-15T03:52:31.149Z] status=PASS

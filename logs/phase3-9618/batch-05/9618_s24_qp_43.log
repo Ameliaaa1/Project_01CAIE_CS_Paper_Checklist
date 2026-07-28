@@ -1,0 +1,112 @@
+[2026-07-14T16:57:45.608Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_43.pdf
+[2026-07-14T16:57:45.608Z] startTime=2026-07-14T16:57:45.608Z
+[2026-07-14T16:57:45.608Z] expectedRole=question_paper
+[2026-07-14T16:57:48.190Z] extract.exitCode=0
+[2026-07-14T16:57:48.190Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_43.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_43.pdf",
+  "pageCount": 16,
+  "questionCount": 3,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 6,
+      "marks": 27,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 number. The integer numbers will be stored in the global 1D array, with space for up to (a) DataStored 20 integers. The global variable stores the quantity of items the array contains. NumberItems Write program code to declare and . DataStored NumberItems Save your program as . Question1_J24 Copy and paste the program code into part in the evidence documen"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 6,
+      "pageEnd": 11,
+      "marks": 31,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 The user can enter their requirements for a tree and a suitable tree will be selected. The program is written using object‑oriented programming. The class stores data about the trees. Tree Tree stores the name of the tree TreeName : STRING stores the number of cm the tree will grow each year HeightGrowth : INTEGER stores the maximum height in cm that the t"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 11,
+      "pageEnd": 13,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "3 The queue is stored as a global 1D array, of string values. The array needs space for QueueData 20 elements. The global variable stores the index of the first element in the queue. QueueHead The global variable stores the index of the last element in the queue. QueueTail The main program initialises all the elements in to a suitable null value, (a) QueueDa"
+    }
+  ]
+}
+[2026-07-14T16:57:48.193Z] parserVersion=0.4.0
+[2026-07-14T16:57:48.193Z] documentRole=question_paper
+[2026-07-14T16:57:48.193Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:57:48.606Z] stage.exitCode=0
+[2026-07-14T16:57:48.606Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_43.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_43.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_43.staging.json",
+  "runId": "9618-2024-MJ-43-QP-RUN-061fd266afa5",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_43.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 3,
+      "leafQuestionCount": 25,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 25,
+        "present": 25,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:57:48.610Z] stagingId=9618-2024-MJ-43-QP-RUN-061fd266afa5
+[2026-07-14T16:57:48.610Z] validationStatus=PASS
+[2026-07-14T16:57:48.610Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:57:48.610Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:57:48.610Z] canonicalPublishable=true
+[2026-07-14T16:57:48.610Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:57:48.610Z] endTime=2026-07-14T16:57:48.610Z
+[2026-07-14T16:57:48.610Z] status=PASS

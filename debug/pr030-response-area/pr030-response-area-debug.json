@@ -1,0 +1,77 @@
+{
+  "solution": "PR-030_Response_Area_Mapping_Fix_0478_s23_qp_11",
+  "targetPdf": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_11.pdf",
+  "targetQuestionId": "0478-2023-MJ-11-Q3-B",
+  "rootCause": {
+    "summary": "A trailing fill-blank phrase caused response-area detection to return before evaluating the legacy multiple-choice layout.",
+    "legacyPattern": "one ... A ... B ... C ... D ... [1]",
+    "fix": "Only short-circuit fill-blank detection when an inline blank was actually found, then classify the legacy option layout as one choice_area."
+  },
+  "before": {
+    "requiredLeafCount": 32,
+    "presentLeafCount": 31,
+    "coverageRatio": 0.9688,
+    "canonicalCompleteness": "FAIL"
+  },
+  "after": {
+    "questionCount": 10,
+    "leafQuestionCount": 32,
+    "requiredLeafCount": 32,
+    "presentLeafCount": 32,
+    "coverageRatio": 1,
+    "validationStatus": "PASS",
+    "canonicalCompleteness": "PASS",
+    "publishable": true,
+    "publishStatus": "BLOCKED",
+    "publishBlockedReasons": [
+      "ADMIN_REVIEW_APPROVED"
+    ]
+  },
+  "questionResult": {
+    "id": "0478-2023-MJ-11-Q3-B",
+    "marks": 1,
+    "responseAreaStatus": "PRESENT",
+    "issueCodes": [],
+    "responseAreas": [
+      {
+        "id": "choice-area-1",
+        "type": "choice_area",
+        "pageNumber": 5,
+        "marks": 1,
+        "ownerQuestionId": "0478-2023-MJ-11-Q3-B",
+        "detection": "layout_keyword"
+      }
+    ],
+    "duplicateResponseAreaIds": [],
+    "orphanResponseAreaIds": []
+  },
+  "productionExpansion": {
+    "eligible": 3,
+    "alreadyPublished": 1,
+    "blocked": 2,
+    "component11Status": "ELIGIBLE",
+    "productionWrite": false
+  },
+  "regression": {
+    "phase1": {
+      "success": 20,
+      "total": 20,
+      "failures": 0
+    },
+    "phase2": {
+      "success": 120,
+      "total": 120,
+      "failures": 0
+    },
+    "targetedTests": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "artifacts": {
+    "sample": "output/ingestion-samples/0478_s23_qp_11.sample.json",
+    "staging": "output/phase2/staging/0478_s23_qp_11.staging.json",
+    "rawPageSpans": "debug/pr030-response-area/page-005-spans.json",
+    "coverageReport": "output/production-expansion/pr029-staging-coverage-report.json",
+    "expansionReport": "output/production-expansion/pr028-production-expansion-report.json"
+  }
+}

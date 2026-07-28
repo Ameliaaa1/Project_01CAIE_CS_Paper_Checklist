@@ -1,0 +1,13 @@
+{
+  "solution":"PR-038-0478-Missing-Staging-Generation-Batch-01",
+  "status":"PASS",
+  "generated":["0478_s21_qp_13.staging.json","0478_s21_ms_13.staging.json","0478_s21_qp_21.staging.json","0478_s21_ms_21.staging.json"],
+  "validationPass":4,
+  "completenessPass":4,
+  "publishReady":4,
+  "failureClassification":[],
+  "productionWrite":false,
+  "productionStoreUnchanged":true,
+  "nextBatch":{"batchId":"PR039-0478-2021-MJ-BATCH-02","components":["13","21"],"productionWrite":false},
+  "report":"output/production-expansion/pr038-staging-generation-report.json"
+}

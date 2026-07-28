@@ -1,0 +1,273 @@
+[2026-07-14T17:01:05.564Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_31.pdf
+[2026-07-14T17:01:05.564Z] startTime=2026-07-14T17:01:05.564Z
+[2026-07-14T17:01:05.564Z] expectedRole=question_paper
+[2026-07-14T17:01:08.284Z] extract.exitCode=0
+[2026-07-14T17:01:08.284Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_31.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_31.pdf",
+  "pageCount": 16,
+  "questionCount": 12,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A programmer is writing a program to manage bookings for a small taxi company. The programmer requires some user-defined data types. (a) Write a pseudocode statement to declare the enumerated data type, Vehicle, to hold the identity code of each of the company’s taxis: M100, M230, T101, T102, T120, T150 [2] (b) Write pseudocode statements to declare the co"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Numbers are stored in a computer using binary floating-point representation with: 10 bits for the mantissa • 6 bits for the exponent • two’s complement form for both the mantissa and the exponent. • (a) Write the normalised floating-point representation of the following binary number using this system. 0.00000011010111 Mantissa Exponent [2] (b) Calculate t"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) The Application Layer and Transport Layer are two layers of the TCP/IP protocol suite. Describe the purpose of the Application Layer and the purpose of the Transport Layer. Purpose of Application Layer Purpose of Transport Layer [5] (b) Describe packet switching as a method of transmitting messages across the internet. [4]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) A linked list of nodes is used to store an ordered list of integers. Each node consists of the data, a left pointer and a right pointer, for example: Left pointer Data Right pointer 20 The linked list will be organised as a binary tree. −1 is used to represent a null pointer. Complete the binary tree, including null pointers, to show how the data will "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 This truth table represents a logic circuit. INPUT OUTPUT A B C D Z 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 1 1 0 0 1 0 0 0 0 1 0 1 1 0 1 1 0 0 0 1 1 1 1 1 0 0 0 1 1 0 0 1 0 1 0 1 0 0 1 0 1 1 0 1 1 0 0 0 1 1 0 1 1 1 1 1 0 0 1 1 1 1 1 (a) Write the Boolean logic expression that corresponds to the given truth table as the sum-of-products. Z = [2] (b) (i) Complete "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.84
+      },
+      "textPreview": "6 Describe the process of executing a program using an interpreter. [4]"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Several syntax diagrams are shown. uppercase lowercase A b C d E f G h J k symbol digit $ 0 @ 1 # 2 3 & 4 % 5 6 7 8 9 lowercase passcode uppercase symbol digit (a) State why each passcode is invalid for the given syntax diagrams. #Jd7 Reason C%6A Reason [2] (b) Complete the Backus-Naur Form (BNF) for <uppercase> and <passcode>. <uppercase> ::= <passcode> :"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 (a) Describe what is meant by multi-tasking and how it benefits process management. [2] (b) Explain the function of the shortest remaining time scheduling routine and give a benefit of this routine. Function Benefit [4]"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 Secure Socket Layer (SSL) and Transport Layer Security (TLS) are two protocols. (a) State two functions of SSL/TLS. 1 2 [2] (b) Give two examples of situations where the use of SSL/TLS would be appropriate. 1 2 [2]"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 (a) Describe the purpose of a graph when used in an Artificial Intelligence (AI) system. [2] (b) Explain the use of artificial neural networks in Deep Learning. [4]"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 (a) A medical centre uses objects of the class Appointment to record treatments given and medication prescribed during each doctor’s appointment. Some of the attributes required in the class are listed in the table. Attribute Data type Description DateSeen DATE date of treatment Treatments STRING treatments given Medications STRING medications prescribed "
+    },
+    {
+      "questionNumber": "12",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "12 The pseudocode algorithm checks whether a location in a stock file StockList.dat is empty or not. The location is given by the user. If the location is empty, a suitable message is displayed, otherwise the item stored at that location is displayed. Complete this file-handling pseudocode algorithm. DECLARE Location : INTEGER DECLARE Item : STRING DECLARE C"
+    }
+  ]
+}
+[2026-07-14T17:01:08.288Z] parserVersion=0.4.0
+[2026-07-14T17:01:08.288Z] documentRole=question_paper
+[2026-07-14T17:01:08.288Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:01:08.715Z] stage.exitCode=0
+[2026-07-14T17:01:08.715Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_31.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_31.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_31.staging.json",
+  "runId": "9618-2025-MJ-31-QP-RUN-68475c1640b4",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_31.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 12,
+      "leafQuestionCount": 26,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 24,
+        "present": 24,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-MJ-31-Q1-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-MJ-31-Q5-B-III",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:01:08.718Z] stagingId=9618-2025-MJ-31-QP-RUN-68475c1640b4
+[2026-07-14T17:01:08.718Z] validationStatus=PASS
+[2026-07-14T17:01:08.718Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:01:08.718Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:01:08.718Z] canonicalPublishable=true
+[2026-07-14T17:01:08.718Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:01:08.718Z] endTime=2026-07-14T17:01:08.718Z
+[2026-07-14T17:01:08.718Z] status=PASS

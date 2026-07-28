@@ -1,0 +1,144 @@
+[2026-07-15T03:52:26.274Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_21.pdf
+[2026-07-15T03:52:26.274Z] startTime=2026-07-15T03:52:26.274Z
+[2026-07-15T03:52:26.274Z] expectedRole=question_paper
+[2026-07-15T03:52:27.520Z] extract.exitCode=0
+[2026-07-15T03:52:27.520Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w19_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_21.pdf",
+  "pageCount": 12,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) Name variables that you could have used for . State the data type and purpose of two Task 1 each variable. Variable 1 name Data type Purpose Variable 2 name Data type Purpose [6] Describe how arrays could be used to store the data about the types and price per square (b) metre of the stone slabs for . Task 1 [2] Write an algorithm to complete using pse"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 four describes a a or . Structure diagram Flowchart Library routines Structure Library Description diagram Flowchart routines A modelling tool used to show the hierarchy of a system. A collection of standard programs available for immediate use. A graphical representation used to represent an algorithm. A graphical representation to show how a system is br"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 INPUT A INPUT B INPUT C INPUT D INPUT E INPUT F INPUT G INPUT H INPUT I INPUT J INPUT K INPUT L A + B + C + D + E + F + G + H + I + J + K + L T OUTPUT \"The average equals \", T / 12 Describe what happens in this pseudocode. (a) [3] Describe how this pseudocode could be altered to allow any number of values to be input. (b) [3] Re-write the given pseudocode "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 (a) 0 Index 0 TO 7 FOR Count INPUT Value IF Value > 50 THEN Value PassMarks[Index] Index + 1 Index ENDIF NEXT Count PRINT \"Number passed \", Index Input data: 58, 40, 67, 85, 12, 13, 75, 82 PassMarks OUTPUT Index Count Value [0] [1] [2] [3] [4] [5] [6] [7] [6] Give the purpose of the algorithm shown in . (b) part (a) [1] A car manufacturer makes a range of "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 database to store the records of its range and the different options for each car model. Within the table CAR_RANGE, the following data needs to be stored: 1. Car model 2. Body style – saloon, hatchback or estate 3. How many doors it has 4. Whether it uses petrol, diesel or batteries as fuel 5. An identifier for a specific car. Complete the table to show s"
+    }
+  ]
+}
+[2026-07-15T03:52:27.522Z] parserVersion=0.4.0
+[2026-07-15T03:52:27.522Z] documentRole=question_paper
+[2026-07-15T03:52:27.522Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:52:27.797Z] stage.exitCode=0
+[2026-07-15T03:52:27.797Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w19_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_21.staging.json",
+  "runId": "0478-2019-ON-21-QP-RUN-d8c0920030a0",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 14,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 14,
+        "present": 14,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:52:27.799Z] stagingId=0478-2019-ON-21-QP-RUN-d8c0920030a0
+[2026-07-15T03:52:27.799Z] validationStatus=PASS
+[2026-07-15T03:52:27.799Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:52:27.799Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:52:27.799Z] canonicalPublishable=true
+[2026-07-15T03:52:27.799Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:52:27.799Z] endTime=2026-07-15T03:52:27.799Z
+[2026-07-15T03:52:27.799Z] status=PASS

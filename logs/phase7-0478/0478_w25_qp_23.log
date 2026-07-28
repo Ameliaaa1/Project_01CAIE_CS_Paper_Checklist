@@ -1,0 +1,224 @@
+[2026-07-15T03:55:19.264Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_23.pdf
+[2026-07-15T03:55:19.264Z] startTime=2026-07-15T03:55:19.264Z
+[2026-07-15T03:55:19.264Z] expectedRole=question_paper
+[2026-07-15T03:55:21.672Z] extract.exitCode=0
+[2026-07-15T03:55:21.672Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w25_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_23.pdf",
+  "pageCount": 16,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.84
+      },
+      "textPreview": "1 Give three ways of creating a maintainable program. 1 2 3 [3]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Four descriptions of programming techniques and five programming techniques are given. Draw one line from each description to the relevant technique. Not all techniques will be used. Description Programming technique output adding up a set of numbers selection displaying the result of a calculation totalling executing a set of instructions based on a condi"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "3 Tick (3) one box to identify the most appropriate data type to store 'M' A integer B char C real D Boolean [1] DFD"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 3,
+      "pageEnd": 5,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 (a) Tickets for a theme park are booked online. An adult ticket costs $12.99 and a child ticket costs $7.99. A booking fee of $1.99 is added to the total cost of each booking. Write an algorithm in pseudocode to: input the number of adult tickets for a booking • input the number of child tickets for a booking • calculate and output the total cost of the bo"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A program has been written in pseudocode to input five numbers between 1 and 900 inclusive and store the highest number and the lowest number entered. 900 01 Lowest 1 02 Highest 1 TO 5 03 FOR Count 04 INPUT Number 05 IF Number < Lowest 06 THEN Number 07 Lowest 08 ELSE 09 IF Number > Highest 10 THEN Number 11 Highest 12 ENDIF 13 ENDIF 14 NEXT Count (a) Comp"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 The flowchart represents an algorithm. START Position –1 Count 1 INPUT Name IS Name = Yes Position Count ClassList[Count] ? No Count Count + 1 No IS Count > 5 ? Yes OUTPUT Position STOP DFD (a) The algorithm uses the one-dimensional (1D) array ClassList that contains the following data: ClassList 1 2 3 4 5 Henil Sven Ella Asia Ridwan Complete the table by "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 An algorithm has been written in pseudocode to: input a whole number between 1 and 255 inclusive • convert the input to an 8-bit binary number • store each bit of the binary number in an array. • For example, if the denary number 127 was input, the binary number 01111111 would be stored in the array. 01 DECLARE BinaryArray : ARRAY[1:8] OF INTEGER 02 DECLAR"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 A school has set up a database table EquipmentLoan to record details of school equipment loaned to students. EquipmentID Description Name DateLoaned Returned Cam01 Digital camera James 23/04/2025 No Cam04 Digital camera Amir 12/03/2025 Yes Gra02 Graphics tablet Nikita 27/04/2025 No Tab01 Tablet Holly 18/03/2025 Yes Ext01 External Hard drive Hussein 27/04/2"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 The variables Name, Age and Found are used in a computer program. Name holds the name of a person. Age holds the age of a person as a whole number. Found holds a flag that can be set to TRUE or FALSE (a) Write pseudocode statements to declare the variables Name, Age and Found [3] (b) The procedure StoreData(Name) stores the name of a person in the file Peo"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 12,
+      "pageEnd": 15,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "10 A number game has two players. Random whole numbers are generated for each player. The numbers are compared and players are given points based on the result of the comparison. The two-dimensional (2D) array NumberGenerated[] stores each number generated for each player. The first dimension stores the player number and the second dimension stores the rando"
+    }
+  ]
+}
+[2026-07-15T03:55:21.676Z] parserVersion=0.4.0
+[2026-07-15T03:55:21.676Z] documentRole=question_paper
+[2026-07-15T03:55:21.676Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:55:22.082Z] stage.exitCode=0
+[2026-07-15T03:55:22.082Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w25_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_23.staging.json",
+  "runId": "0478-2025-ON-23-QP-RUN-f8b8f08300cf",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 23,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 23,
+        "present": 23,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:55:22.086Z] stagingId=0478-2025-ON-23-QP-RUN-f8b8f08300cf
+[2026-07-15T03:55:22.086Z] validationStatus=PASS
+[2026-07-15T03:55:22.086Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:55:22.086Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:55:22.086Z] canonicalPublishable=true
+[2026-07-15T03:55:22.086Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:55:22.086Z] endTime=2026-07-15T03:55:22.086Z
+[2026-07-15T03:55:22.086Z] status=PASS

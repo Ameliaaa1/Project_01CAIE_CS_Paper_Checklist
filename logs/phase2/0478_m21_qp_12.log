@@ -1,0 +1,209 @@
+[2026-07-13T02:04:24.297Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-March/0478_m21_qp_12.pdf
+[2026-07-13T02:04:24.297Z] startTime=2026-07-13T02:04:24.297Z
+[2026-07-13T02:04:24.297Z] expectedRole=question_paper
+[2026-07-13T02:04:26.379Z] extract.exitCode=0
+[2026-07-13T02:04:26.379Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m21_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-March/0478_m21_qp_12.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 used to store this value. 46 people watch the first match and 171 people watch the second match. (a) Show how the registers would store these denary values as 8-bit binary. Denary 8-bit binary value 46 171 [2] Give the largest denary value that can be stored in the 8-bit binary register. (b) [1] The hockey club wants to increase the number of people that c"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 users can view thumbnails of her photographs. A thumbnail is a small version of the high definition photograph. Gurdeep compresses the high definition photographs to create the thumbnails. She uses (a) lossy compression. Describe how lossy compression creates the thumbnails. [3] Gurdeep sets up a web server to host her website. She reads about an Internet "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Complete the missing device names and descriptions. Device name Description Uses either thermal bubble or piezoelectric technology Actuator Uses thousands of tiny mirrors that can move very quickly to create an image Mouse [4] A supermarket sells many products. Each product has a barcode."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Explain how the barcode is read at the supermarket checkout and how the price of the product (a) is found. [6] The supermarket stores data using a Solid State Drive (SSD). (b) Explain how an SSD stores data. (i) [3] One advantage of an SSD rather than a Hard Disk Drive (HDD) is that it has no moving (ii) parts, so it is more durable. State other advantage "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 State the logic gate that produces each truth table. (a) single Truth table Logic gate A B Output 0 0 1 0 1 1 1 0 1 1 1 0 A B Output 0 0 0 0 1 1 1 0 1 1 1 0 A B Output 0 0 1 0 1 0 1 0 0 1 1 0 [3] An aeroplane has a warning system that monitors the height of the aeroplane above the (b) ground, whether the aeroplane is ascending or descending, and the speed "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Explain how a firewall can help prevent hacking. (a) [4] Identify and describe other types of internet risk that are used to obtain personal data. (b) two Internet risk 1 Description Internet risk 2 Description [6] Adeel has used a high-level language to program a mobile application."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 11,
+      "pageEnd": 13,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Describe what is meant by a high-level language. (a) [2] Adeel uses an interpreter while developing and testing the application. (b) Adeel uses a compiler when the application is ready to be shared with others. Compare the features of interpreters and compilers. [4] Adeel is considering distributing his application as free software or shareware. (c) Explai"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 Describe what is meant by the stored program concept. (a) [2] The fetch-execute cycle of a Von Neumann model, for a computer system, uses registers and (b) buses. Describe the role of the Program Counter. (i) [2] Describe the role of the Control Bus. (ii) [2] Computers based on the Von Neumann model, for a computer system, use interrupts. (c) Explain why i"
+    }
+  ]
+}
+[2026-07-13T02:04:26.380Z] parserVersion=0.4.0
+[2026-07-13T02:04:26.380Z] documentRole=question_paper
+[2026-07-13T02:04:26.380Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:26.714Z] stage.exitCode=0
+[2026-07-13T02:04:26.714Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m21_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m21_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m21_qp_12.staging.json",
+  "runId": "0478-2021-FM-12-QP-RUN-7d752c8080db",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m21_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 28,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2021-FM-12-Q5-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2021-FM-12-Q5-H",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:04:26.717Z] stagingId=0478-2021-FM-12-QP-RUN-7d752c8080db
+[2026-07-13T02:04:26.717Z] validationStatus=PASS
+[2026-07-13T02:04:26.717Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:04:26.717Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:26.717Z] canonicalPublishable=true
+[2026-07-13T02:04:26.717Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:04:26.717Z] endTime=2026-07-13T02:04:26.717Z
+[2026-07-13T02:04:26.717Z] status=PASS

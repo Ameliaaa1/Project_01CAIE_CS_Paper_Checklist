@@ -1,0 +1,240 @@
+[2026-07-15T03:53:37.990Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_qp_22.pdf
+[2026-07-15T03:53:37.990Z] startTime=2026-07-15T03:53:37.990Z
+[2026-07-15T03:53:37.990Z] expectedRole=question_paper
+[2026-07-15T03:53:39.658Z] extract.exitCode=0
+[2026-07-15T03:53:39.658Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m24_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "1 one coding A decomposition B design C testing D [1] test data types and descriptions are shown."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) Four five Draw line to link each test data type to its most appropriate description. one Test data type Description abnormal a value that is accepted a value that is the highest or lowest value to be accepted and the corresponding lowest or highest value to be rejected boundary a value that is the highest or lowest value to be rejected extreme a value "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Fifty numbers are already stored in the array Values[1:50] Write an algorithm in pseudocode to input a number, and use a linear search to (a) MyNumber test if that number is stored in the array. If the number is found in the array, the position in the array is output. If the number is found in the array, “Not found” is output. not [4] Write an algorithm in"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "4 three 1 2 3 [3] An algorithm has been written in pseudocode to calculate the profit when an item is sold. Values"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 for cost price and selling price are input, the profit is calculated (selling price – cost price) and output. The input of zero for either value stops the algorithm. 01 REPEAT 02 OUTPUT \"Enter cost price \" 03 INPUT Cost 04 OUTPUT \"Enter selling price \" 05 OUTPUT Sell 06 IF Cost <> 0 OR Sell <> 0 07 THEN Sell - Cost 08 Profit ← 09 OUTPUT \"Profit is \", Profi"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.84
+      },
+      "textPreview": "6 two [4] Consider the logic expression:"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 = ( XOR ) AND (NOT AND ) X A B B C Draw a logic circuit for this logic expression. Each logic gate must have a maximum of (a) two inputs. Do simplify this logic expression. not A B X C [4] Complete the truth table from the given logic expression. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 [4] This flowchart represents an algorithm to find the av"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 START NumberGroups 0 Total 0 INPUT GroupSize IS Yes GroupSize Average DIV(Total, NumberGroups) = 0? No OUTPUT \"Average group NumberGroups NumberGroups + 1 size \", Average Total Total + GroupSize STOP Complete the trace table using this data: 7, 10, 2, 8, 3, 9, 0, 6 OUTPUT NumberGroups Total GroupSize Average [4] A storage unit rental company wants to set u"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 be rented. The table is called and needs to store these details: StorageUnits – size in square metres • SizeMetres – first, second or third floor • Position – whether there is a hoist available for the transfer of items • Hoist – the price in dollars for a month’s rental • PriceMonth – the code to identify each storage unit, for example S123 • StorageID Gi"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 Explain how the program can be written to make sure it can be easily maintained by the other programmer. [6] Students in a class are recording the amount of time in minutes spent in front of a screen for each"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 day of the week. The one-dimensional (1D) array contains the names of the students in the class. StudentName[] The two-dimensional (2D) array is used to input the number of minutes on each ScreenTime[] day spent in front of a screen. The position of each student’s data in the two arrays is the same. For example, the student stored at index 10 in and is th"
+    }
+  ]
+}
+[2026-07-15T03:53:39.660Z] parserVersion=0.4.0
+[2026-07-15T03:53:39.660Z] documentRole=question_paper
+[2026-07-15T03:53:39.660Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:39.918Z] stage.exitCode=0
+[2026-07-15T03:53:39.918Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m24_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m24_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m24_qp_22.staging.json",
+  "runId": "0478-2024-FM-22-QP-RUN-5678c1725c85",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m24_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 19,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 19,
+        "present": 19,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:39.920Z] stagingId=0478-2024-FM-22-QP-RUN-5678c1725c85
+[2026-07-15T03:53:39.920Z] validationStatus=PASS
+[2026-07-15T03:53:39.920Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:39.920Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:39.920Z] canonicalPublishable=true
+[2026-07-15T03:53:39.920Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:39.920Z] endTime=2026-07-15T03:53:39.920Z
+[2026-07-15T03:53:39.920Z] status=PASS

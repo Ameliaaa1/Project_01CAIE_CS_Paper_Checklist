@@ -1,0 +1,208 @@
+[2026-07-14T16:51:41.162Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_31.pdf
+[2026-07-14T16:51:41.162Z] startTime=2026-07-14T16:51:41.162Z
+[2026-07-14T16:51:41.162Z] expectedRole=question_paper
+[2026-07-14T16:51:42.799Z] extract.exitCode=0
+[2026-07-14T16:51:42.799Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_31.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_31.pdf",
+  "pageCount": 16,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The data type, is defined in pseudocode as: LibraryRecord TYPE LibraryRecord DECLARE Title : STRING DECLARE Fiction : BOOLEAN DECLARE Author : STRING DECLARE NumberOfCopies : INTEGER ENDTYPE A variable, is declared in pseudocode as: LibraryBook DECLARE LibraryBook : LibraryRecord Write statements to assign: (a) pseudocode to of • A Level Computer Science T"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 01 type(leopard, wild). 02 type(lion, wild). 03 type(cheetah, wild). 04 type(savannah, hybrid). 05 type(persian, domestic). 06 07 hair(leopard, medium). 08 hair(lion, short). 09 hair(cheetah, medium). 10 hair(savannah, medium). 11 hair(persian, long). 12 13 spots(leopard, yes). 14 spots(lion, no). 15 spots(cheetah, yes). 16 spots(savannah, yes). 17 spots(p"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Describe both methods of data transmission. Include a different advantage and disadvantage for each method. Circuit switching Advantage Disadvantage Packet switching Advantage Disadvantage [8] Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 two types of processor. Describe what is meant by and . (a) RISC CISC processors RISC CISC [4] Identify differences between RISC and CISC processors. (b) two 1 2 [2] Part of a program’s calculations uses the integer variables and ."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 j k m n p j = 3 k = 2 m = 10 n = (j + k)/(j - k) p = m * (m - j * k) Write the Reverse Polish Notation (RPN) for the expression: (a) (j + k)/(j - k) [2] Show the changing contents of the stack as the value for is calculated from its RPN (b) (i) p expression: m m j k * - * [4] Describe the main steps in the evaluation of this RPN expression using a stack. ("
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 Describe benefits and limitation of using a virtual machine for this purpose. two one Benefit 1 Benefit 2 Limitation [6] A program is to be written using Object-Oriented Programming (OOP) for a shop that sells knitting"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 yarn. There are three types of yarn: acrylic, wool or mix. The following data are stored for each type. Name • Colour • Batch code • Weight • Number of balls of yarn in stock (can be edited) • Type of yarn • The following statements apply to yarn. Acrylic can be soft or not soft. • Wool can be lamb, merino or alpaca. • Mix contains a percentage of acrylic."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Give reasons for using key cryptography. (a) (i) two 1 2 [2] Give methods of key cryptography that can be used. (ii) two 1 2 [2] When there is a secure exchange of key(s), the message is sent. (b) The use of quantum cryptography is being considered for the secure exchange. State possible benefits of using quantum cryptography. (i) two 1 2 [2] State possibl"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 register, the Accumulator (ACC). Instruction Explanation Label Opcode Operand Load the number n to ACC LDM #n Load the contents of the given address to ACC LDD <address> The address to be used is at the given address LDI <address> Load the contents of this second address to ACC Add the contents of the given address to the ACC ADD <address> Store the conten"
+    }
+  ]
+}
+[2026-07-14T16:51:42.800Z] parserVersion=0.4.0
+[2026-07-14T16:51:42.800Z] documentRole=question_paper
+[2026-07-14T16:51:42.800Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:51:43.046Z] stage.exitCode=0
+[2026-07-14T16:51:43.046Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_31.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_31.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_31.staging.json",
+  "runId": "9618-2022-MJ-31-QP-RUN-cb062c2734a9",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_31.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 24,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 24,
+        "present": 24,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:51:43.048Z] stagingId=9618-2022-MJ-31-QP-RUN-cb062c2734a9
+[2026-07-14T16:51:43.048Z] validationStatus=PASS
+[2026-07-14T16:51:43.048Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:51:43.048Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:51:43.048Z] canonicalPublishable=true
+[2026-07-14T16:51:43.048Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:51:43.048Z] endTime=2026-07-14T16:51:43.048Z
+[2026-07-14T16:51:43.048Z] status=PASS

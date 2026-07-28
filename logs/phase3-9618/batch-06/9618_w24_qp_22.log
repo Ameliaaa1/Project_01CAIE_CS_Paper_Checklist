@@ -1,0 +1,209 @@
+[2026-07-14T16:58:58.299Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_22.pdf
+[2026-07-14T16:58:58.299Z] startTime=2026-07-14T16:58:58.299Z
+[2026-07-14T16:58:58.299Z] expectedRole=question_paper
+[2026-07-14T16:59:01.998Z] extract.exitCode=0
+[2026-07-14T16:59:01.998Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_22.pdf",
+  "pageCount": 24,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A program has been developed and released for general use. After a few months of use an error is detected where under certain circumstances it outputs an unexpected value. (a) The error in the program needs to be corrected. Identify the stage of the program development life cycle that this correction is made in. [1] (b) The program contains a function Look"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A program is being developed to process bank card information. When a card number is displayed, all the characters except the last four are replaced with the asterisk character '*'. Card numbers are stored as strings. The strings are between 10 and 20 characters in length. The function Conceal() will take a string representing a card number and return a mo"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A program uses a stack to hold up to 60 numeric values. The stack is implemented using two integer variables and a 1D array. The array is declared in pseudocode as shown: DECLARE ThisStack : ARRAY[1:60] OF REAL The stack operates as follows: Global variable SP acts as a stack pointer that points to the next available stack location. The • value of SP repre"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A global integer variable Tick is always incremented every millisecond (1000 times per second) regardless of the other programs running. The value of Tick can be read by any program but the value should not be changed. Assume that the value of Tick does not overflow. As an example, the following pseudocode algorithm would output \"Goodbye\" 40 seconds after "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A program contains a global 1D array Data with 100 elements of type INTEGER. The program contains a function Process() expressed in pseudocode as follows: FUNCTION Process(Number : INTEGER, Label : STRING) RETURNS STRING DECLARE Index, Count : INTEGER DECLARE ReturnValue : STRING INT(100 / Number) Count Data[Number] Index CASE OF (Index MOD 2) TO_UPPER(RIG"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A shop sells sandwiches and snacks. The owner chooses a ‘daily special’ sandwich which is displayed on a board outside the shop. Each ‘daily special’ has two different fillings and is made with one type of bread. The owner wants a program to randomly choose the ‘daily special’ sandwich. The program designer decides to store the possible sandwich fillings i"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 15,
+      "pageEnd": 16,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A coffee shop runs a computerised loyalty card system. Customers are issued with a loyalty card with their name together with a unique customer ID. Loyalty points are added to their card each time they spend money at the shop. The following information is stored for each customer: ID, name, home address, email address, mobile phone number, date of birth, n"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 18,
+      "pageEnd": 21,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 A program is being developed to implement a game for up to six players. During the game, each player assembles a team of characters. At the start of the game there are 45 characters available. Each character has four attributes, as follows: Attribute Examples Comment Player 0, 1, 3 The player the character is assigned to. The job that the character will pe"
+    }
+  ]
+}
+[2026-07-14T16:59:02.006Z] parserVersion=0.4.0
+[2026-07-14T16:59:02.006Z] documentRole=question_paper
+[2026-07-14T16:59:02.006Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:59:02.578Z] stage.exitCode=0
+[2026-07-14T16:59:02.578Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_22.staging.json",
+  "runId": "9618-2024-ON-22-QP-RUN-23df306798f6",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 24,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 22,
+        "present": 22,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-ON-22-Q1-D",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-ON-22-Q7-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:59:02.588Z] stagingId=9618-2024-ON-22-QP-RUN-23df306798f6
+[2026-07-14T16:59:02.588Z] validationStatus=PASS
+[2026-07-14T16:59:02.588Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:59:02.588Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:59:02.588Z] canonicalPublishable=true
+[2026-07-14T16:59:02.588Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:59:02.588Z] endTime=2026-07-14T16:59:02.588Z
+[2026-07-14T16:59:02.588Z] status=PASS

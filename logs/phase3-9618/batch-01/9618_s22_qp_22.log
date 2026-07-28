@@ -1,0 +1,209 @@
+[2026-07-14T16:51:33.694Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_22.pdf
+[2026-07-14T16:51:33.694Z] startTime=2026-07-14T16:51:33.694Z
+[2026-07-14T16:51:33.694Z] expectedRole=question_paper
+[2026-07-14T16:51:35.547Z] extract.exitCode=0
+[2026-07-14T16:51:35.547Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_22.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) The programmer wants the program to stop when it reaches a specific instruction or program statement in order to check the value assigned to a variable. Give the technical term for the position at which the program stops. [1] The following table lists some activities from the program development life cycle. (b) Complete the table by writing the life cy"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 1. Input an integer value. 2. Jump to step 6 if the value is less than zero. 3. Call the function using the integer value as a parameter. IsPrime() 4. Keep a count of the number of times function returns . IsPrime() TRUE 5. Repeat from step 1. 6. Output the value of the count with a suitable message. Draw a program flowchart to represent the algorithm. STA"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) Pseudocode module header FUNCTION Mod_V(S2 : INTEGER) RETURNS BOOLEAN PROCEDURE Mod_W(P4 : INTEGER) PROCEDURE Mod_X(T4 : INTEGER, BYREF P3 : REAL) PROCEDURE Mod_Y(W3 : REAL, Z8 : INTEGER) FUNCTION Mod_Z(F3 : REAL) RETURNS INTEGER An additional module repeatedly calls three of the modules in sequence. Head() A structure chart has been partially complete"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 (a) LastLines() take the name of a text file as a parameter • output the three lines from that file, in the same order as they appear in the file. • last Note: Use local variables and to store the three lines from the file. • LineX LineY LineZ You may assume the file exists and contains three lines. • at least Write pseudocode for the procedure . LastLines"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 10 PROCEDURE Encode() 11 DECLARE CountA, CountB, ThisNum : INTEGER 12 DECLARE ThisChar : CHAR 13 DECLARE Flag : BOOLEAN 0 14 CountA 10 15 CountB TRUE 16 Flag 17 INPUT ThisNum 18 WHILE ThisNum <> 0 LEFT(NUM_TO_STR(ThisNum), 1) 19 ThisChar 20 IF Flag = TRUE THEN 21 CASE OF ThisChar CountA + 1 22 '1' : CountA 23 '2' : IF CountB < 10 THEN CountA + 1 24 CountA "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 For example: \"12,13,451,22\" Assume that: the comma character ',' is used as a separator • the string contains only the characters '0' to '9' and the comma character ','. • A procedure will: Parse take the string as a parameter • extract each number in turn • calculate the total value and average value of all the numbers • output the total and average value"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 insert The language includes a and a function, but it does have a function. not LEFT() RIGHT() MID() Write pseudocode for an algorithm to implement your own version of the function (a) MID() which will operate in the same way as that shown in the . insert Do use the function given in the but you may use any of the other functions. not insert MID() Assume t"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 14,
+      "pageEnd": 19,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 inserted automatically when the user logs in to the corresponding website. A global 2D array of type stores the passwords together with the website domain Secret STRING name where they are used. contains 1000 elements organised as 500 rows by 2 columns. Secret Unused elements contain the empty string ( ). These may occur anywhere in the array. \"\" An exampl"
+    }
+  ]
+}
+[2026-07-14T16:51:35.549Z] parserVersion=0.4.0
+[2026-07-14T16:51:35.549Z] documentRole=question_paper
+[2026-07-14T16:51:35.549Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:51:35.818Z] stage.exitCode=0
+[2026-07-14T16:51:35.818Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_22.staging.json",
+  "runId": "9618-2022-MJ-22-QP-RUN-243ad7a823b1",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 19,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 17,
+        "present": 17,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-MJ-22-Q4-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-MJ-22-Q7-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:51:35.821Z] stagingId=9618-2022-MJ-22-QP-RUN-243ad7a823b1
+[2026-07-14T16:51:35.821Z] validationStatus=PASS
+[2026-07-14T16:51:35.821Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:51:35.821Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:51:35.821Z] canonicalPublishable=true
+[2026-07-14T16:51:35.821Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:51:35.821Z] endTime=2026-07-14T16:51:35.821Z
+[2026-07-14T16:51:35.821Z] status=PASS

@@ -1,0 +1,27 @@
+{
+  "generatedFor": "Phase-7-Cross-Syllabus-Expansion-Plan",
+  "phaseId": "Phase 7-A",
+  "syllabus": "0478",
+  "status": "PASS",
+  "publishedPairsBeforePhase7": 24,
+  "publishedPairsAfterPhase7": 98,
+  "publishedPairsAddedInPhase7": 74,
+  "eligiblePairCountBeforePublicationThisRun": 0,
+  "publishedPairCountThisRun": 0,
+  "batchCountThisRun": 0,
+  "batches": [],
+  "coverageAfter": {
+    "sourcePairs": 98,
+    "completeSourcePairs": 98,
+    "stagingPairs": 98,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 0,
+    "publishedPairs": 98,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 0,
+    "blockedPairs": 0,
+    "incompleteSourcePairs": 0,
+    "partialProductionConflicts": 0
+  },
+  "failures": []
+}

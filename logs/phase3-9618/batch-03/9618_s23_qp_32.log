@@ -1,0 +1,273 @@
+[2026-07-14T16:53:50.493Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_32.pdf
+[2026-07-14T16:53:50.493Z] startTime=2026-07-14T16:53:50.493Z
+[2026-07-14T16:53:50.493Z] expectedRole=question_paper
+[2026-07-14T16:53:52.668Z] extract.exitCode=0
+[2026-07-14T16:53:52.668Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_32.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_32.pdf",
+  "pageCount": 16,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 10 bits for the mantissa • 6 bits for the exponent • two’s complement form for both the mantissa and exponent. • Write the normalised floating‑point representation of the following binary number using this (a) system: 0101010.111 Show your working. Working Mantissa Exponent [2] Describe the reason why the normalised form of the following binary number cann"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) [3] A hashing algorithm is used to calculate storage locations for records in a random access file. (b) The algorithm calculates hash values using the function modulus 5. The function modulus gives the remainder after integer division. For example, 3003 modulus 5 = 3, so the record key 3003 gives a hash value of 3. Complete the table to show the remain"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 digit letter A 0 C 1 2 E 3 G 4 I 5 K 6 M 7 O 8 Q 9 S U W Y variable letter digit State whether each variable is valid or invalid give a reason for your choice in each case. (a) and 9SW Reason UWY Reason [2] contains one or more letters. (b) <word> Complete the Backus‑Naur Form (BNF) for use this to complete the BNF for and <word> . <variable> <word> ::= <v"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 one most appropriate description. OOP term Description methods used to return the value of a property Encapsulation the process of putting data and methods together as a single unit Getters methods used to update the value of a property Polymorphism allows methods to be redefined for derived classes Setters enables the defining of a new class that inherits"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 (a) Describe the purpose of quantum cryptography. [2] Explain the differences between symmetric and asymmetric cryptography when encrypting (b) and decrypting data. [3] Write statements to declare the composite data type, to hold"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 (a) pseudocode TAppointments data about patients for a dental clinic. It will include for each patient: name (first name and last name) • date of birth • telephone number • date of last appointment • date of next appointment • all treatments are complete (yes or no). • [4] This pseudocode algorithm reads dental records stored in a random file using the use"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 (a) two [2] Give differences between circuit switching and packet switching. (b) four 1 2 3 4 [4] Describe the use of pipelining in Reduced Instruction Set Computers (RISC)."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 (a) [2] The processing of instructions is divided into five stages: (b) instruction fetch (IF) • instruction decode (ID) • operand fetch (OF) • instruction execute (IE) • write back result (WB) • Each stage is carried out using a different register when pipelining is used. Complete the table to show how a program consisting of instructions would be complet"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 INPUT OUTPUT A B C D Z 0 0 0 0 1 0 0 0 1 1 0 0 1 0 1 0 0 1 1 1 0 1 0 0 0 0 1 0 1 0 0 1 1 0 1 0 1 1 1 1 1 0 0 0 0 1 0 0 1 0 1 0 1 0 0 1 0 1 1 0 1 1 0 0 0 1 1 0 1 0 1 1 1 0 0 1 1 1 1 0 Write the Boolean logic expression that corresponds to the given truth table as the (a) sum‑of‑products. Z = [3] Complete the Karnaugh map (K‑map) for the given truth table. ("
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 11,
+      "pageEnd": 13,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 (a) one [1] Calculate the path that takes the shortest time to travel from the Begin node to the End node, (b) using the A* algorithm. Show your working in the table provided. The first two rows have already been completed. 12 Begin g = 5 h = 8 11 4 5 A D 6 7 7 C B 6 8 6 2 8 7 E 5 7 G End 7 1 4 1 F Cost from Destination Heuristic Total Start node start no"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 13,
+      "pageEnd": 14,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "11 (a) initialisation and to add new items. It is incomplete. CONSTANT MaxLength = 50 DECLARE FrontPointer : INTEGER DECLARE RearPointer : INTEGER DECLARE Length : INTEGER DECLARE Queue : ARRAY[0 : MaxLength – 1] OF STRING // initialisation of queue PROCEDURE Initialise ‑1 FrontPointer 0 ENDPROCEDURE // adding a new item to the queue PROCEDURE Enqueue(NewIte"
+    }
+  ]
+}
+[2026-07-14T16:53:52.670Z] parserVersion=0.4.0
+[2026-07-14T16:53:52.670Z] documentRole=question_paper
+[2026-07-14T16:53:52.670Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:53:53.014Z] stage.exitCode=0
+[2026-07-14T16:53:53.014Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_32.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_32.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_32.staging.json",
+  "runId": "9618-2023-MJ-32-QP-RUN-194a23956f02",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_32.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 29,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 25,
+        "present": 25,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-MJ-32-Q9-E",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-MJ-32-Q10-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-MJ-32-Q10-H",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-MJ-32-Q11-A-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:53:53.017Z] stagingId=9618-2023-MJ-32-QP-RUN-194a23956f02
+[2026-07-14T16:53:53.017Z] validationStatus=PASS
+[2026-07-14T16:53:53.017Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:53:53.017Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:53:53.017Z] canonicalPublishable=true
+[2026-07-14T16:53:53.017Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:53:53.017Z] endTime=2026-07-14T16:53:53.017Z
+[2026-07-14T16:53:53.017Z] status=PASS

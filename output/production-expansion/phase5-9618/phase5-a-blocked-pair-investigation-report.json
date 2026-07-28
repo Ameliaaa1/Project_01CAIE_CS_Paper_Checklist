@@ -1,0 +1,944 @@
+{
+  "generatedFor": "Phase-5-9618-Blocked-Pair-Investigation-Plan",
+  "status": "PASS",
+  "phaseId": "Phase 5",
+  "batchId": "PHASE5-A",
+  "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase5-9618/phase5-a-blocked-pair-investigation-report.json",
+  "targetPairs": [
+    "9618-2022-ON-31",
+    "9618-2022-ON-32",
+    "9618-2022-ON-33"
+  ],
+  "beforeState": [
+    {
+      "pairingKey": "9618-2022-ON-31",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "productionPublished": false,
+      "partialProductionConflict": false,
+      "blockerEvidenceAvailable": true,
+      "qpState": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "msState": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-32",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "productionPublished": false,
+      "partialProductionConflict": false,
+      "blockerEvidenceAvailable": true,
+      "qpState": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "msState": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-33",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "productionPublished": false,
+      "partialProductionConflict": false,
+      "blockerEvidenceAvailable": true,
+      "qpState": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "msState": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    }
+  ],
+  "blockerEvidence": [
+    {
+      "pairingKey": "9618-2022-ON-31",
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ]
+    },
+    {
+      "pairingKey": "9618-2022-ON-32",
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ]
+    },
+    {
+      "pairingKey": "9618-2022-ON-33",
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ]
+    }
+  ],
+  "rootCause": {
+    "category": "VALIDATION_RULE_ISSUE",
+    "affectedLayer": "QP staging validation",
+    "code": "TRANSLATOR_FILL_BLANK_REGEX_OVERMATCH",
+    "summary": "The fallback fill-blank rule treated the phrase 'pseudocode . part' as a missing translator blank."
+  },
+  "changes": [
+    "Restricted the translator fill-blank fallback to the two complete translator sentence patterns."
+  ],
+  "stagingGeneration": {
+    "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase5-9618/phase5-a-staging-generation-report.json",
+    "status": "PASS",
+    "artifactsRegenerated": 6
+  },
+  "investigationResults": [
+    {
+      "pairingKey": "9618-2022-ON-31",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "VALIDATION_RULE_ISSUE",
+        "affectedLayer": "QP staging validation",
+        "code": "TRANSLATOR_FILL_BLANK_REGEX_OVERMATCH",
+        "summary": "The fallback fill-blank rule treated the phrase 'pseudocode . part' as a missing translator blank."
+      },
+      "changes": [
+        "Restricted the translator fill-blank fallback to the two complete translator sentence patterns."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2022-ON-32",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "VALIDATION_RULE_ISSUE",
+        "affectedLayer": "QP staging validation",
+        "code": "TRANSLATOR_FILL_BLANK_REGEX_OVERMATCH",
+        "summary": "The fallback fill-blank rule treated the phrase 'pseudocode . part' as a missing translator blank."
+      },
+      "changes": [
+        "Restricted the translator fill-blank fallback to the two complete translator sentence patterns."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2022-ON-33",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "VALIDATION_RULE_ISSUE",
+        "affectedLayer": "QP staging validation",
+        "code": "TRANSLATOR_FILL_BLANK_REGEX_OVERMATCH",
+        "summary": "The fallback fill-blank rule treated the phrase 'pseudocode . part' as a missing translator blank."
+      },
+      "changes": [
+        "Restricted the translator fill-blank fallback to the two complete translator sentence patterns."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    }
+  ],
+  "validationAfter": [
+    {
+      "pairingKey": "9618-2022-ON-31",
+      "qp": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-32",
+      "qp": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-33",
+      "qp": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    }
+  ],
+  "strictEligibilityAfter": [
+    {
+      "pairingKey": "9618-2022-ON-31",
+      "strictEligible": true
+    },
+    {
+      "pairingKey": "9618-2022-ON-32",
+      "strictEligible": true
+    },
+    {
+      "pairingKey": "9618-2022-ON-33",
+      "strictEligible": true
+    }
+  ],
+  "productionDelta": {
+    "expectedDeltas": {
+      "papers": 6,
+      "questionRecords": 120,
+      "topLevelQuestions": 35,
+      "leafQuestions": 91,
+      "responseAreas": 361,
+      "markSchemeEntries": 96,
+      "pairings": 3,
+      "batches": 3,
+      "expansionBatches": 1
+    },
+    "actualDeltas": {
+      "papers": 6,
+      "questionRecords": 120,
+      "topLevelQuestions": 35,
+      "leafQuestions": 91,
+      "responseAreas": 361,
+      "markSchemeEntries": 96,
+      "pairings": 3,
+      "batches": 3,
+      "expansionBatches": 1
+    }
+  },
+  "deltasMatch": true,
+  "pairVerification": [
+    {
+      "component": "31",
+      "childBatchId": "PR070-9618-2022-ON-PHASE5-A-31",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 12,
+          "leafQuestionCount": 32,
+          "responseAreaCount": 118,
+          "markSchemeEntryCount": 34
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 12,
+          "leafQuestionCount": 32,
+          "responseAreaCount": 118,
+          "markSchemeEntryCount": 34
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    },
+    {
+      "component": "32",
+      "childBatchId": "PR070-9618-2022-ON-PHASE5-A-32",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 11,
+          "leafQuestionCount": 27,
+          "responseAreaCount": 125,
+          "markSchemeEntryCount": 28
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 11,
+          "leafQuestionCount": 27,
+          "responseAreaCount": 125,
+          "markSchemeEntryCount": 28
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    },
+    {
+      "component": "33",
+      "childBatchId": "PR070-9618-2022-ON-PHASE5-A-33",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 12,
+          "leafQuestionCount": 32,
+          "responseAreaCount": 118,
+          "markSchemeEntryCount": 34
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 12,
+          "leafQuestionCount": 32,
+          "responseAreaCount": 118,
+          "markSchemeEntryCount": 34
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    }
+  ],
+  "integrity": {
+    "existingProductionRecordsUnchanged": true,
+    "unrelatedStagingUnchanged": true,
+    "stagingChanges": {
+      "added": [],
+      "deleted": [],
+      "modified": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_ms_31.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_ms_32.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_ms_33.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_31.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_32.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_33.staging.json"
+      ],
+      "unrelatedChanges": []
+    },
+    "productionRecordsBefore": {
+      "papers": 258,
+      "questionRecords": 4016,
+      "topLevelQuestions": 980,
+      "leafQuestions": 3189,
+      "responseAreas": 14186,
+      "markSchemeEntries": 2998,
+      "pairings": 129,
+      "batches": 129,
+      "expansionBatches": 33
+    },
+    "productionRecordsAfter": {
+      "papers": 264,
+      "questionRecords": 4136,
+      "topLevelQuestions": 1015,
+      "leafQuestions": 3280,
+      "responseAreas": 14547,
+      "markSchemeEntries": 3094,
+      "pairings": 132,
+      "batches": 132,
+      "expansionBatches": 34
+    }
+  },
+  "regression": {
+    "phase1": "PASS",
+    "phase2": "PASS",
+    "phase3": "PASS",
+    "phase4Audit": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "next": {
+    "decision": "Phase 5-b",
+    "productionWrite": false
+  }
+}

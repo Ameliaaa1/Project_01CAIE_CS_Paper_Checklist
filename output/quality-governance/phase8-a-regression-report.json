@@ -1,0 +1,14 @@
+{
+  "generatedFor": "Phase-8-A",
+  "status": "PASS",
+  "productionWrite": false,
+  "checks": {
+    "dashboardPass": true,
+    "sourceCoverageVisible": true,
+    "stagingCoverageVisible": true,
+    "productionCoverageVisible": true,
+    "validationVisible": true,
+    "regressionVisible": true,
+    "parserFailureRateVisible": true
+  }
+}

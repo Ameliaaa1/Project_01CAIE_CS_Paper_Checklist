@@ -1,0 +1,201 @@
+[2026-07-14T16:51:26.616Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_13.pdf
+[2026-07-14T16:51:26.616Z] startTime=2026-07-14T16:51:26.616Z
+[2026-07-14T16:51:26.616Z] expectedRole=question_paper
+[2026-07-14T16:51:28.231Z] extract.exitCode=0
+[2026-07-14T16:51:28.231Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_13.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A character set is used to represent characters in a computer. (a) Describe what is meant by a . (i) character set [2] Identify character sets and state difference between them. (ii) two one Character set 1 Character set 2 Difference [3] Describe how lossless compression can be used to reduce the file size of a text file. (iii) [2] Explain why lossy compre"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) Describe each of the given steps. Step Description [PC] + 1 PC [[MAR]] MDR [PC] MAR [3] Explain how interrupts are handled during the F-E cycle. (b) [5] The table shows part of the instruction set for a processor. The processor has one general"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 9,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) purpose register, the Accumulator (ACC). Instruction Explanation Opcode Operand Immediate addressing. Load the number n to ACC LDM #n Direct addressing. Load the contents of the location at the LDD <address> given address to ACC Indirect addressing. The address to be used is at the given LDI <address> address. Load the contents of this second address t"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Describe the key management tasks of an operating system. (a) [4] Utility software is a type of system software. (b) Describe the purpose of back-up software and defragmentation software. (i) Back-up software Defragmentation software [4] Give example of utility software. (ii) one other [1] A company wants to store data about its employees in a computer sys"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 company wants to ensure the security and integrity of the data. State why data needs to be kept secure. (a) (i) [1] One way the data stored in a computer can be kept secure is by using back-up software. (ii) Give ways the data stored in a computer can be kept secure. two other 1 2 [2] The data about the employees is currently stored on paper. The data need"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 TECHNOLOGY devices used by the staff. The database has the following tables: STAFF(StaffID, FirstName, LastName, DateOfBirth, JobTitle) DEVICE(DeviceID, Type, DatePurchased, StaffID) Describe the relationship between the two tables. Refer to the primary and foreign keys in (a) your answer. [4] The database uses a Data Definition Language (DDL) and Data Man"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 (a) A B X C [3] Complete the truth table for the following logic expression: (b) = ( NAND ) OR ( AND NOT ) X A B A C A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [2] A company uses cloud computing."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 15,
+      "pageEnd": 15,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 Define cloud computing. (a) [1] State what is meant by a public cloud and a private cloud. (b) Public cloud Private cloud [2] Give benefits and drawback of using cloud computing. (c) two one Benefit 1 Benefit 2 Drawback [3]"
+    }
+  ]
+}
+[2026-07-14T16:51:28.232Z] parserVersion=0.4.0
+[2026-07-14T16:51:28.232Z] documentRole=question_paper
+[2026-07-14T16:51:28.232Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:51:28.488Z] stage.exitCode=0
+[2026-07-14T16:51:28.488Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_13.staging.json",
+  "runId": "9618-2022-MJ-13-QP-RUN-6d9ba46ddfb0",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 27,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-MJ-13-Q3-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:51:28.490Z] stagingId=9618-2022-MJ-13-QP-RUN-6d9ba46ddfb0
+[2026-07-14T16:51:28.490Z] validationStatus=PASS
+[2026-07-14T16:51:28.490Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:51:28.490Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:51:28.490Z] canonicalPublishable=true
+[2026-07-14T16:51:28.490Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:51:28.490Z] endTime=2026-07-14T16:51:28.490Z
+[2026-07-14T16:51:28.490Z] status=PASS

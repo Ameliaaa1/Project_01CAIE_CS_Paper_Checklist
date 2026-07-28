@@ -1,0 +1,46 @@
+[
+  {
+    "id": "pr044-001",
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_13.pdf",
+    "syllabus": "0478",
+    "year": 2022,
+    "session": "May-June",
+    "component": "13",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "PR-044 0478 QP May/June 2022 component 13 staging generation"
+  },
+  {
+    "id": "pr044-002",
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_13.pdf",
+    "syllabus": "0478",
+    "year": 2022,
+    "session": "May-June",
+    "component": "13",
+    "expectedRole": "mark_scheme",
+    "phase1Regression": false,
+    "purpose": "PR-044 0478 MS May/June 2022 component 13 staging generation"
+  },
+  {
+    "id": "pr044-003",
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_21.pdf",
+    "syllabus": "0478",
+    "year": 2022,
+    "session": "May-June",
+    "component": "21",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "PR-044 0478 QP May/June 2022 component 21 staging generation"
+  },
+  {
+    "id": "pr044-004",
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_21.pdf",
+    "syllabus": "0478",
+    "year": 2022,
+    "session": "May-June",
+    "component": "21",
+    "expectedRole": "mark_scheme",
+    "phase1Regression": false,
+    "purpose": "PR-044 0478 MS May/June 2022 component 21 staging generation"
+  }
+]

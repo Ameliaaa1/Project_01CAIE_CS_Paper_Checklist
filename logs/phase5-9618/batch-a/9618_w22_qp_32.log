@@ -1,0 +1,249 @@
+[2026-07-15T03:09:05.066Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_32.pdf
+[2026-07-15T03:09:05.066Z] startTime=2026-07-15T03:09:05.066Z
+[2026-07-15T03:09:05.066Z] expectedRole=question_paper
+[2026-07-15T03:09:06.315Z] extract.exitCode=0
+[2026-07-15T03:09:06.315Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_32.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_32.pdf",
+  "pageCount": 12,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 both the mantissa and the exponent with: 11 bits for the mantissa • 5 bits for the exponent. • Write the largest positive two’s complement binary number that can be stored in this system. (a) Mantissa Exponent [1] Calculate the denary value of the given binary floating-point number. (b) Show your working. Mantissa Exponent 1 0 1 1 0 0 1 0 0 1 1 0 1 0 0 1 W"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Identify stages that take place during the compilation of a program. (a) two other 1 2 [2] Outline the purpose of syntax analysis. (b) [2] Explain why a protocol is used in communication between computers."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 (a) [2] The TCP/IP protocol implementation can be viewed as a stack. (b) Complete the diagram for the TCP/IP protocol stack. Transport Link [2] Describe the purpose of the IMAP protocol. (c) [2] A program to manage regular flight details at an airport requires some user-defined data types."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Write statements to declare the enumerated data type to hold data (a) pseudocode Aircraft about the types of aircraft used for a flight. These types of aircraft are: C300, C350, D242, E757, X380. [2] Write statements to declare the composite data type to hold data about (b) pseudocode Flight flights to a specific destination. These include: flight number, "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 virtual machine Include in your answer benefits and drawbacks of using a virtual machine. two two Description Benefit 1 Benefit 2 Drawback 1 Drawback [6] State differences between symmetric and asymmetric encryption."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 (a) two [2] Explain the process by which an organisation may acquire its digital certificate. (b) [4] Supervised and unsupervised learning are two categories of machine learning."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Describe supervised learning and unsupervised learning. Supervised learning Unsupervised learning [4] Draw a logic circuit for an SR flip-flop label the inputs."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 (a) and Q ¯ Q [4] State the purpose of a flip-flop. (b) [1] Simplify the following expression using Boolean algebra, including De Morgan’s laws. (c) Show your working. (A.B).(A.C).(B.D) Working Answer [3] Explain the need for scheduling in process management."
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 (a) [3] Describe these scheduling routines identify a benefit for each one. (b) and Shortest job first Round robin First come first served [6] Define these Object-Oriented Programming (OOP) terms:"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "10 (a) Encapsulation Getter Setter [3] A school has a program written using OOP to maintain its staff and student records. (b) The object allows the details of the school’s substitute teachers to be SubstituteTeacher stored. This includes their full name, telephone number and whether or not they are in school today. For example: Sarah Jones SubName 012236587"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "11 using two 1D arrays: stores the names of the flowers. • Flower stores the pointer to the next flower name in the list. • NextPointer indicates the index of the first flower name in the linked list. HeadPointer HeadPointer 6 When the end of the linked list is reached, the next pointer has the value of 0. The following table shows the initial content of the"
+    }
+  ]
+}
+[2026-07-15T03:09:06.316Z] parserVersion=0.4.0
+[2026-07-15T03:09:06.316Z] documentRole=question_paper
+[2026-07-15T03:09:06.316Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:09:06.611Z] stage.exitCode=0
+[2026-07-15T03:09:06.611Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_32.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_32.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_32.staging.json",
+  "runId": "9618-2022-ON-32-QP-RUN-16771c5c9910",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_32.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 27,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-ON-32-Q4-C-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:09:06.613Z] stagingId=9618-2022-ON-32-QP-RUN-16771c5c9910
+[2026-07-15T03:09:06.613Z] validationStatus=PASS
+[2026-07-15T03:09:06.613Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:09:06.613Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:09:06.613Z] canonicalPublishable=true
+[2026-07-15T03:09:06.613Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:09:06.613Z] endTime=2026-07-15T03:09:06.613Z
+[2026-07-15T03:09:06.613Z] status=PASS

@@ -1,0 +1,233 @@
+[2026-07-13T02:03:43.950Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_12.pdf
+[2026-07-13T02:03:43.950Z] startTime=2026-07-13T02:03:43.950Z
+[2026-07-13T02:03:43.950Z] expectedRole=question_paper
+[2026-07-13T02:03:45.313Z] extract.exitCode=0
+[2026-07-13T02:03:45.313Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s20_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 use of registers. Identify registers that may be used. (a) three Register 1 Register 2 Register 3 [3] The CPU is responsible for processing instructions. (b) One stage of processing instructions is the decode stage. Identify the stages of processing instructions. (i) two other Stage 1 Stage 2 [2] Identify the component of the CPU that is responsible for de"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Explain why a programmer would make use of both an interpreter a compiler. (a) and [4] Give reasons why a programmer would choose to write a program in a high-level (b) three language, instead of a low-level language. Reason 1 Reason 2 Reason 3 [3] A company collects and stores data about its customers. The data is stored on a server in the"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 company’s office. The data is transmitted to cloud storage to create a back-up. The data is encrypted using symmetric encryption before it is sent to the cloud storage. Describe how the data is encrypted. (a) [4] Give methods that can be used to secure the data in the office. (b) three other Method 1 Method Method [3] Identify the name draw the logic gate "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) and single (i) A X B Name of gate: …………………………… Drawing of gate: [2] (ii) A X B Name of gate: …………………………… Drawing of gate: [2] Complete the truth table for the given logic statement: (b) = ((( OR ) AND (NOT AND NOT )) XOR ) X A C A C B A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 [4] Meena uses a browser to research information for her business."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Give functions of a browser. (a) three 1 2 3 [3] Meena buys products for her business using the Internet. (b) The Transport Layer Security (TLS) protocol is used for transferring data when she buys products. One layer of the TLS protocol is the handshake layer. Describe the purpose of the handshake layer. (i) [2] Identify the other layer of the TLS protoco"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Six 3 Tick ( ) to show if the statement applies to or touch screen technology. Capacitive Resistive Capacitive Resistive Statement 3 3 ( ) ( ) Needs pressure to be applied to create a circuit May not register a touch if the user is wearing gloves More commonly used in smartphones More responsive to a touch Needs an electrical field to be changed to registe"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 (a) denary 000000001100 (i) [1] 000011000110 (ii) [1] 010011000001 (iii) [1] 12-bit binary values can also be represented as hexadecimal values. (b) Give the value of the 12-bit binary value. hexadecimal 000011101001 [3] Leonard has a new laser printer to print letters for his business."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Leonard connects his printer to his computer using the USB port. Give benefits of using the USB port to connect the printer to the computer. (a) three Benefit 1 Benefit 2 Benefit 3 [3] State benefits and drawback of Leonard using a laser printer, instead of an inkjet (b) two one printer, to print the letters. Benefit 1 Benefit 2 Drawback [3] An interrupt s"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "9 (a) Six 3 Tick ( ) to show if the statement applies to hard disk drive ( ) storage or HDD solid state drive ( ) storage. SSD Some statements can apply to both. HDD SSD Statement 3 3 ( ) ( ) It has a limited number of read/write cycles It uses magnetic properties to store data It has moving parts It is non-volatile storage It can be used as an external stor"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "10 Two of the risks she is concerned about are phishing and pharming. Give similarity and differences between phishing and pharming. (a) one two Similarity Difference 1 Difference 2 [3] Identify other risks that Uma could encounter when using the Internet. (b) two Risk 1 Risk 2 [2] Uma uses a firewall to secure the data on her computer. (c) Uma tells her fri"
+    }
+  ]
+}
+[2026-07-13T02:03:45.314Z] parserVersion=0.4.0
+[2026-07-13T02:03:45.314Z] documentRole=question_paper
+[2026-07-13T02:03:45.314Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:45.626Z] stage.exitCode=0
+[2026-07-13T02:03:45.626Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s20_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_12.staging.json",
+  "runId": "0478-2020-MJ-12-QP-RUN-8d82a5e6da07",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 30,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 29,
+        "present": 29,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2020-MJ-12-Q9-A",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:45.628Z] stagingId=0478-2020-MJ-12-QP-RUN-8d82a5e6da07
+[2026-07-13T02:03:45.628Z] validationStatus=PASS
+[2026-07-13T02:03:45.628Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:45.628Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:45.628Z] canonicalPublishable=true
+[2026-07-13T02:03:45.628Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:45.628Z] endTime=2026-07-13T02:03:45.628Z
+[2026-07-13T02:03:45.628Z] status=PASS

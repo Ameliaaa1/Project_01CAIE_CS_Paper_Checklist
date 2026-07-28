@@ -1,0 +1,185 @@
+[2026-07-14T17:00:52.292Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_22.pdf
+[2026-07-14T17:00:52.292Z] startTime=2026-07-14T17:00:52.292Z
+[2026-07-14T17:00:52.292Z] expectedRole=question_paper
+[2026-07-14T17:00:55.436Z] extract.exitCode=0
+[2026-07-14T17:00:55.436Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_22.pdf",
+  "pageCount": 20,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A program is being developed to control the production line in a factory. (a) A number of different program life cycles are available for the development of a program. (i) Explain the need for different program development life cycles. [1] (ii) Coding is a stage in a program development life cycle. State one consideration that would influence the choice of"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A program to calculate the pay of employees working for a company is being designed. (a) Stepwise refinement has been used in the design of the program. Describe stepwise refinement. [2] (b) One of the program modules used to calculate employees’ weekly bonus pay has been completed. The amount of bonus pay they receive is based on the number of hours worke"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 An algorithm is designed to generate and output two unique random integers. Each integer value is between –10 and 10 inclusive. If both integers output are negative, a third random integer between 30 and 35 inclusive will be generated and output. Write pseudocode for this algorithm. [8]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 An algorithm will: input 100 integer values, one value at a time • store the first value input into the first location of the array Number • store the next input value in the next unused location of the array Number • output the contents of Number array in the opposite sequence to that in which the values • were input. Complete the program flowchart to rep"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 An automated digital camera system is used to take a sequence of pictures of animals in a garden. During the design of the system, a state‑transition diagram is produced. The table details the states in the automated digital camera system along with the events which cause the states to change. The system starts in standby mode. The sequence of pictures is "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Two arrays Data and Pointer are accessed by the procedure Place() Data and Pointer are both global arrays of type INTEGER The contents of these two arrays are shown: Data Pointer 1018 7 1 1 1007 3 2 2 1010 1 3 3 1056 6 4 4 1092 -1 5 5 1062 5 6 6 1034 4 7 7 0 9 8 8 0 10 9 9 0 -1 10 10 Study the pseudocode: PROCEDURE Place(Value : INTEGER, Start : INTEGER, U"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 14,
+      "pageEnd": 17,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 A program is being developed to implement a customer loyalty scheme for a coffee shop. Each customer has a unique customer ID starting at 10001 with this value increasing by one each time a new customer joins the loyalty scheme. For example, the third customer who joins the loyalty scheme is given the customer ID 10003 The loyalty scheme is limited to 1000"
+    }
+  ]
+}
+[2026-07-14T17:00:55.440Z] parserVersion=0.4.0
+[2026-07-14T17:00:55.440Z] documentRole=question_paper
+[2026-07-14T17:00:55.440Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:00:55.845Z] stage.exitCode=0
+[2026-07-14T17:00:55.845Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_22.staging.json",
+  "runId": "9618-2025-MJ-22-QP-RUN-d0888a6c10be",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 23,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 22,
+        "present": 22,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-MJ-22-Q6-A-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:00:55.849Z] stagingId=9618-2025-MJ-22-QP-RUN-d0888a6c10be
+[2026-07-14T17:00:55.849Z] validationStatus=PASS
+[2026-07-14T17:00:55.849Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:00:55.849Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:00:55.849Z] canonicalPublishable=true
+[2026-07-14T17:00:55.849Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:00:55.849Z] endTime=2026-07-14T17:00:55.849Z
+[2026-07-14T17:00:55.849Z] status=PASS

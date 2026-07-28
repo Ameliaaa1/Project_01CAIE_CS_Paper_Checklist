@@ -1,0 +1,1032 @@
+{
+  "type": "TREE_SNAPSHOT",
+  "label": "source-0478",
+  "sourcePath": "public/textbook_syllabus/pastpaper/caie-igcse-0478",
+  "sha256": "a7280113f878b0913237e36813e070a00cd2db541d428bae7d38173b88b84922",
+  "fileCount": 204,
+  "byteLength": 120966671,
+  "files": [
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/.DS_Store",
+      "sha256": "9d71c97785d45ffdc6a99ebd6bc37f5922ba595b7c9c82a50277ec0787720fdf",
+      "byteLength": 14340
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-March/0478_m19_ms_12.pdf",
+      "sha256": "f407e6504a092467dace7e8265bf5f944bab88c113ee5831b6beeee2b5280b14",
+      "byteLength": 133136
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-March/0478_m19_ms_22.pdf",
+      "sha256": "f6d6eaf9d54969701d6945ff37aecd4cad2400ce756b491557e55b5e3266824d",
+      "byteLength": 144843
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-March/0478_m19_qp_12.pdf",
+      "sha256": "be7caf4bdc0e0b6f60968af52f618b589006a140e8f87da0ba46eaa18341084d",
+      "byteLength": 1942474
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-March/0478_m19_qp_22.pdf",
+      "sha256": "cb054e030bb00e45fefae2186045512eafd9197e03240e20f908ccec4dfa58e3",
+      "byteLength": 2392882
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_ms_11.pdf",
+      "sha256": "bbabfd5d8be9cfcdeb3c770fb9480e84f6cdc124e23259a2d38b4a57ca823b4b",
+      "byteLength": 177874
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_ms_12.pdf",
+      "sha256": "3aa753d82dcee8e6def8d0c2f37eee7e8a7588aa81b1378471fc3833cb040adb",
+      "byteLength": 164705
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_ms_13.pdf",
+      "sha256": "5a3eb0af3c762a33ccdacf3936d6c8396b35d54b0866332ced7bc770416c9203",
+      "byteLength": 163848
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_ms_21.pdf",
+      "sha256": "c9d3daa76cdc42bc54657b76d28710fe4c70e81886e41c500f13d167ec212f85",
+      "byteLength": 177265
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_ms_22.pdf",
+      "sha256": "fa6a5b9d95df73f3354c805e5cefdae421bfa504ec1ca578c3456dcec6b38a1c",
+      "byteLength": 166673
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_ms_23.pdf",
+      "sha256": "8ef18bea7e4b436f264dd8c1294c6fa5ba3bf9e8c552a4d1c8f61b90d4d899d8",
+      "byteLength": 182556
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_pm_21.pdf",
+      "sha256": "5dff230276a773984a36a4bba2c5efcca4b598dae21927b08ce61fd7ac3b26ba",
+      "byteLength": 1022234
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_pm_22.pdf",
+      "sha256": "e3f3853999767bac90222c7fee0cc7456b05fd0d180e2ae24cfe17fa7023174c",
+      "byteLength": 1046099
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_pm_23.pdf",
+      "sha256": "20484e3bb872f981cb5a41e257578911773200d8b9dfc8259e58b190636a384d",
+      "byteLength": 1007164
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_11.pdf",
+      "sha256": "db65ea1db0c868e942b7b36be1e2dafdee1190c24475ec550c9ee9102916799d",
+      "byteLength": 1910631
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_12.pdf",
+      "sha256": "b6c08dc3d9018246f89fe0471a1339e7d42ca5f9fbbaff28d15746fed841c8ca",
+      "byteLength": 1931176
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_13.pdf",
+      "sha256": "435bc208d1fa34c38e1301d8f82d6595138592a2c3234b03f34463c1b30dd0f8",
+      "byteLength": 1970660
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_21.pdf",
+      "sha256": "5a9d1115d730e8e3b6759e92173c35081bff6805f43ddaa1518a1238f7f3ac9e",
+      "byteLength": 2309727
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_22.pdf",
+      "sha256": "e5ca717bae01d57afaf78a7cd97c3785166ac3c89b0428e66889080294a26360",
+      "byteLength": 2412097
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_23.pdf",
+      "sha256": "c3e51c431401694e5c6082f5e1cab3c19b83c4a7e4745f9f2c3d841e4017a363",
+      "byteLength": 2405688
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_ms_11.pdf",
+      "sha256": "57195da491490883ae0619090328a7438363a8dee8645faca063a286ec36cc46",
+      "byteLength": 143312
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_ms_12.pdf",
+      "sha256": "6d2769283b18d0025d1074c7d8cb14e966dc1bc6457557eb4d97d227b5e07d25",
+      "byteLength": 143272
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_ms_13.pdf",
+      "sha256": "f0bed281cf25853482a699b240fa5da648c55d7977310641ad44f0541f81da6c",
+      "byteLength": 162581
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_ms_21.pdf",
+      "sha256": "42626422f7dce6beb28fa907632a0906f6d3538842cc7aa426b56073c0a6e571",
+      "byteLength": 221935
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_ms_22.pdf",
+      "sha256": "43f7fc034f93e7740421e8ca3a9691155b2457d8a79e406bd663cc2eaab7423b",
+      "byteLength": 193621
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_ms_23.pdf",
+      "sha256": "90739718a8ad9fd4524e6b78265879ea0c9b992b6b36bf4c89350ec746d28390",
+      "byteLength": 191120
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_pm_21.pdf",
+      "sha256": "149dafea27b3beee77b638a7404c767cf22506ade5bedc33b5a8492e11f8a8e8",
+      "byteLength": 1044141
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_pm_22.pdf",
+      "sha256": "92dd2d530fe1617b3869f58039a53102aa36ce13f4506e4ea942cca6692e764b",
+      "byteLength": 1015546
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_pm_23.pdf",
+      "sha256": "b9864f65b578229cdf95038cbc012a45be2e8a7a2ab3d4761b8c3127cbb4f4cf",
+      "byteLength": 1047647
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_11.pdf",
+      "sha256": "179903ae676fcbd04eb9a83bea0e6aae950705089fc533646a2afd2ccdca3a19",
+      "byteLength": 954690
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_12.pdf",
+      "sha256": "afb0baa537a946a90f76196a019f712a7b61b78dab8dd58d2a7e75c01c370f8f",
+      "byteLength": 913286
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_13.pdf",
+      "sha256": "320bc87bb55ab06882c3ad60bfe96a749cc181de1bf7110108540de10294bc75",
+      "byteLength": 253556
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_21.pdf",
+      "sha256": "d8c0920030a04a034b77e2f159fff4703ec5183e3c2c1b84c3465d086f464134",
+      "byteLength": 247244
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_22.pdf",
+      "sha256": "e728684f59959638029eb310064bab111e308cfd93cfe9fc140f1738b6f3d66b",
+      "byteLength": 276516
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_23.pdf",
+      "sha256": "b4bfdd54c8541849d2c268d9a1d853b1d674313e76b443434877b6c375f050c0",
+      "byteLength": 2217718
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-March/0478_m20_ms_12.pdf",
+      "sha256": "e47d1ec17d98e5a3b4a01977df5d92b68b877b79c6bffd563a3e739299b126cd",
+      "byteLength": 206557
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-March/0478_m20_ms_22.pdf",
+      "sha256": "1a66a30accd0913a5ef5937facb6e0e88e2ebb439187fefac0f2e5f007037984",
+      "byteLength": 211388
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-March/0478_m20_qp_12.pdf",
+      "sha256": "d328fe47b0539ca746548512107d3ba72401231186f1020eafa7147bd2552726",
+      "byteLength": 977575
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-March/0478_m20_qp_22.pdf",
+      "sha256": "08a6fba6efbac2816aa677b0875abf417a8803f031e76fe65fba1578caa7b328",
+      "byteLength": 1003301
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_11.pdf",
+      "sha256": "12abac1c7605e9c23ed5619c616993d35fb2ad5bcf911baee7f663b45c4459f8",
+      "byteLength": 178810
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_12.pdf",
+      "sha256": "1ee1113db421509a0678a9217a3ceac794ec44b1e8defdc68cb2f4ed4470e1c8",
+      "byteLength": 197696
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_13.pdf",
+      "sha256": "fb1426e6b4a450e685426ab0db47d0b20f7e984b9d64e52440a10d44b736c166",
+      "byteLength": 169399
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_21.pdf",
+      "sha256": "5ecacb6f5d5e986810b4882c6db05eab2af1b1b6220ef12c7f0153aa3974d496",
+      "byteLength": 190816
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_22.pdf",
+      "sha256": "f784be55d5057e93f5c848e361674cc1bedb83cb6a3fc0c57592c1162651c365",
+      "byteLength": 178158
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_23.pdf",
+      "sha256": "7813299ecc5cb41cc3bcb8e064f9f0813afd4b0dab465135c8f831d5c5491b2a",
+      "byteLength": 185685
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_11.pdf",
+      "sha256": "962b30fee21f2516f3cb009342264f32f027f6fa89d92a948613857b38e7d8c9",
+      "byteLength": 947218
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_12.pdf",
+      "sha256": "8d82a5e6da0764074bd740d73640429cea1f3e96f71b45c1edbf533e72ea80c9",
+      "byteLength": 1890175
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_13.pdf",
+      "sha256": "52bab6334d721ff5c7c6229aabcb20a77e93cd7dc32d98bb73b3ba3798e9f065",
+      "byteLength": 940561
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_21.pdf",
+      "sha256": "d19e28bdb336c79b3e3638f03a535510a60e5560beda0578cd7f750522946b47",
+      "byteLength": 1005614
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_22.pdf",
+      "sha256": "24c3b268e2dd7bac29645c9dc9280dc5c5247b47a63fa948b2371394e7eb1a89",
+      "byteLength": 1028951
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_23.pdf",
+      "sha256": "40fd04dff5c4e8918d5e4a78f01ffef21a6405bc448b13ce79289cc48ea79954",
+      "byteLength": 990489
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_ms_11.pdf",
+      "sha256": "beb0ee738a0f0f551592a268f7f2b332e1ef9aaaebec3b85c339c84d3d73f11c",
+      "byteLength": 177319
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_ms_12.pdf",
+      "sha256": "f882fbdeb6ae93a0adb6f325bf57c2334cef9afe2b53eb5d0ea37d8c2ab37319",
+      "byteLength": 179237
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_ms_13.pdf",
+      "sha256": "be6f72a5688f592cacfa1bbd106b5da8585ec96f33f40fed558811d689dbfc15",
+      "byteLength": 180223
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_ms_21.pdf",
+      "sha256": "2df2b54cbc058924d63f15c6cd18f2bf64b7c528c1bd721cb5f5492bf00c6b3b",
+      "byteLength": 175551
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_ms_22.pdf",
+      "sha256": "938aaaacb10d507a7580e70c696f7d854b7b2f197abfee97ac05a32bff26a010",
+      "byteLength": 209712
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_ms_23.pdf",
+      "sha256": "8b2bd25cc743095bb7cb60cd094d502821dcf4b621c3067e8a0618653e315eca",
+      "byteLength": 189900
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_11.pdf",
+      "sha256": "b1b9cf12935bfc7dab67dc5f56500367899a38489aadc11435665e2aa97b5808",
+      "byteLength": 927885
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_12.pdf",
+      "sha256": "6bbc204dff20b6d6b7d4a76338fa1384015245bc625ae4001d31d087332f8a82",
+      "byteLength": 180409
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_13.pdf",
+      "sha256": "8a1c4127cd80c901eb2a8f404cdfb77ea009476c5feb547e388b7686334575ea",
+      "byteLength": 941463
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_21.pdf",
+      "sha256": "3f4ab54651149897f3bf3d70611fe92b1ff3dfdea452b6474c34b132431f082a",
+      "byteLength": 2345975
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_22.pdf",
+      "sha256": "ea1d600ec99a49757a99c282e7116d8a4d867fe3491efa035ff1c0cbf54997c6",
+      "byteLength": 2302310
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_23.pdf",
+      "sha256": "36294944d47a7fa5271a1aafb6f3c38c7a2ed8a3f796ffb989d362675e1a0a93",
+      "byteLength": 2282474
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-March/0478_m21_ms_12.pdf",
+      "sha256": "4c1949e7d7f83955e568ddbec61960a1b2c9497c9bf9e3fbbf8d6c8c3d72ad5d",
+      "byteLength": 192644
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-March/0478_m21_ms_22.pdf",
+      "sha256": "67b49a8e97a25d0919e3033bebe1b2736e5c5de31b92e19acac02ecc867ee671",
+      "byteLength": 216257
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-March/0478_m21_qp_12.pdf",
+      "sha256": "7d752c8080dbc8ceaff095804a4b1c7684d06d8b329c506326681e809cdd1d4c",
+      "byteLength": 957802
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-March/0478_m21_qp_22.pdf",
+      "sha256": "05a3cfb6c944d246e13ba7911639c9dc1ddd3c982250f6d35312aa0957f0956c",
+      "byteLength": 1046640
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_11.pdf",
+      "sha256": "f04ed734e1dcef71162bfc413a4eb73c04dc40dd4a261a05fbeb258509c7f3fc",
+      "byteLength": 207879
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_12.pdf",
+      "sha256": "dfaf78250342a80addcb75cf54d809cc837c5f113596ccb8ef8ea9ad86318dd9",
+      "byteLength": 209137
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_13.pdf",
+      "sha256": "9bd3df639f297e83e18e34f1bfa69dd603bfa7dc0d51846d6a2f8f5c346024b5",
+      "byteLength": 206016
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_21.pdf",
+      "sha256": "5dc258067f51466014245237d2feb4e6fd6629ccb3f7c6ca51d3f0e3f7a39514",
+      "byteLength": 237156
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_22.pdf",
+      "sha256": "909f3b576abec657bb2059167ae14d37c85f9f7eef61ba62845f419a3cc5764e",
+      "byteLength": 241856
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_23.pdf",
+      "sha256": "ae39bb08bbc7edeef6e2e5693123ac812ecb55b17b20692c251f60650ab3b85c",
+      "byteLength": 261034
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_11.pdf",
+      "sha256": "aaadcd89087e815a2caf439c2a28cc2cda323257905cf07e050b4e275464d0fb",
+      "byteLength": 960707
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_12.pdf",
+      "sha256": "bd25cef0646cf449d40f1c4f7d4bb0cce70248264dc01179ca18a28567dba5be",
+      "byteLength": 944340
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_13.pdf",
+      "sha256": "f30ad6c11d17b6e7a2ef76ea70be5fae74b28050745aabcf11b895efbe048f59",
+      "byteLength": 949655
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_21.pdf",
+      "sha256": "5b5d378fad52ed81b6aeb1bdf45d7874cc3db7df45bae6f9ac7d0f60433cd10c",
+      "byteLength": 1026955
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_22.pdf",
+      "sha256": "9e98f86dab129717d587ab293abb7cc07393a67ec734fbebd873f3ff5433fb30",
+      "byteLength": 1000811
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_23.pdf",
+      "sha256": "b7f63c2c8fa95370321aafcb34277829f573fa5710a14584c55011677b1ad417",
+      "byteLength": 2283478
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_ms_11.pdf",
+      "sha256": "152516fec08da73c5202c5b6cb0c81adc103435c2423d33294e525e39c20801d",
+      "byteLength": 224492
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_ms_12.pdf",
+      "sha256": "be322ab3f63af2be44263fe6b0128dd1915581018d965ad94c9d5b9f9aa09174",
+      "byteLength": 228774
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_ms_13.pdf",
+      "sha256": "d6a4cf022a6354b24c031d4b2384488e3763231f7514d5cbcd927ac093ce2d60",
+      "byteLength": 210337
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_ms_21.pdf",
+      "sha256": "94573376db33bd07aaefccda4a5c1953de1e12b19c43474567cbfbd772a57a01",
+      "byteLength": 254816
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_ms_22.pdf",
+      "sha256": "252ecb313e0ef5f6e6340840744c36f057e49c49e16c11ea0f69579471f38fad",
+      "byteLength": 242120
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_ms_23.pdf",
+      "sha256": "56a2b0cc0f72ebb1dd68a8731dc778db59c226d1b29ac5154fa9a77fbcfd3753",
+      "byteLength": 232410
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_11.pdf",
+      "sha256": "4ac43c273823013e7c40b98204bb699c6282a54487ae94a96404e6da70e14ee0",
+      "byteLength": 961280
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_12.pdf",
+      "sha256": "500fd11022cd52be2d5c49d36775f865d261d3f996c6c2551f2db2d022a8c115",
+      "byteLength": 947253
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_13.pdf",
+      "sha256": "4c9694888a656c79f83b50671251d3d7074f7768931fe9db5b4116c13bf3f982",
+      "byteLength": 947405
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_21.pdf",
+      "sha256": "a267e001f19c9cba531397bb32485395a6262c1c982bc0af3502a95f420647c9",
+      "byteLength": 995811
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_22.pdf",
+      "sha256": "54751f0de65f73eee48017fad23649dd529ff2c23aa081c43440b21974a0dd3f",
+      "byteLength": 1010170
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_23.pdf",
+      "sha256": "f1f682fa7aeb0a89fddac69d591c0e1b375f564e4383d803b3aa2ab3f28c9b9e",
+      "byteLength": 1012233
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-March/0478_m22_ms_12.pdf",
+      "sha256": "7f29a1d3ac980f1057f6e4419b9f08974462e716aaea1f690010ec7cfad897d3",
+      "byteLength": 201932
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-March/0478_m22_ms_22.pdf",
+      "sha256": "c4ebe431c5402449051bdbd14bdc34f724ace37433b90026c8bb5e3c44d1b11e",
+      "byteLength": 219559
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-March/0478_m22_qp_12.pdf",
+      "sha256": "b2de64a22db77ecdd697609ed3eeb07e96fa82005073c1369aeac1f7f56d2679",
+      "byteLength": 955495
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-March/0478_m22_qp_22.pdf",
+      "sha256": "5a22b42db276850d8c3173bff893ab286f01ab43a72d67fc47da320bfd44440b",
+      "byteLength": 1038343
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_11.pdf",
+      "sha256": "79d807bdd02b794a85cbfa57aa42886451bddf61e8ab731a684320636d4664c6",
+      "byteLength": 215614
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_12.pdf",
+      "sha256": "16a65e0c677d48ea4e20307553270796c240e4bb0df3c2c08b1365134a01a697",
+      "byteLength": 202864
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_13.pdf",
+      "sha256": "7340831eb06fa51b5270beeebd11e24ffeef008c9d915b59f8ac39ec68c2d14a",
+      "byteLength": 192902
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_21.pdf",
+      "sha256": "d8c6ac6230a927b3aeeddddcb03f237f2cc76afa90cf3bcb8f26b07580e44950",
+      "byteLength": 267370
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_22.pdf",
+      "sha256": "1958863d11e3f3efba0410a22e28a92f73d7ac30b299cf00b65b39aa2a6a6168",
+      "byteLength": 235449
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_23.pdf",
+      "sha256": "b66959b34f6c2f768cf7f3ae50bb44d4243079098a2d9363f22b209e1c185c55",
+      "byteLength": 243835
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_11.pdf",
+      "sha256": "8a4cb901568f367c37478e49b3b06e8e33949c516ccd4ed0e699580f6d9ab240",
+      "byteLength": 958104
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_12.pdf",
+      "sha256": "ef601b5a22448596053462f7dcae881c4a942af651cf0491fcaefa95ad5cbe6c",
+      "byteLength": 930301
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_13.pdf",
+      "sha256": "ef53cefa18c85f539bdf5f929267bfa2d6f6a7d4d6f9bd2eaba76a03d2dbb040",
+      "byteLength": 945596
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_21.pdf",
+      "sha256": "7b81b4a8ac008efb1860d1d6169cce8d1ff916f0a828ebc714a0db36163acd42",
+      "byteLength": 2232519
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_22.pdf",
+      "sha256": "81ecfca1c693de40dd282d6f243218ba57cf16d397b803c032829058a179b2f0",
+      "byteLength": 1025728
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_23.pdf",
+      "sha256": "f72bd6a20c878291cf5a1d7a54496df7998a0aab7da4b7a3dcc48f9d7b374ed6",
+      "byteLength": 1026458
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_ms_11.pdf",
+      "sha256": "cd9ddd51e1b9cd933e0e348da0c3e8207d8f9e3e3755e0dad35d43a99f620c44",
+      "byteLength": 244885
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_ms_12.pdf",
+      "sha256": "7f13f10a591a1a4b84f5c6083a8d176cbb3beca9ddbe7fee0133c0a080073cb5",
+      "byteLength": 237555
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_ms_13.pdf",
+      "sha256": "80def0b514327f1c4c7cf1ff866e5f04dddf43a25a8e88806b49230b555ead65",
+      "byteLength": 254875
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_ms_21.pdf",
+      "sha256": "8fcb7f8f15656ebd289149a6ba0ac6ed663a4e9a100cf02f8e616cd3870b8af7",
+      "byteLength": 278537
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_ms_22.pdf",
+      "sha256": "53c05c9dee5aeae900c64b76d8dbe61b3b5dcf70e83beea07ca7da4222cd4de3",
+      "byteLength": 322648
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_ms_23.pdf",
+      "sha256": "06be243dacfe8495d85d4159aa3714ac88cc1eed5d0e71aecb37c41599b878c6",
+      "byteLength": 279638
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_11.pdf",
+      "sha256": "2b38396c04b1fa90d300d8044be19ebf2ddad99703e2f6694dfa9905295d26bb",
+      "byteLength": 960749
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_12.pdf",
+      "sha256": "441650bbf66d031a35caf8bdc474ebaf1da062ada71ab9431d91cc1cf75e8ed5",
+      "byteLength": 2025402
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_13.pdf",
+      "sha256": "6c3003d0bf031187b477521066b7a63eed041fca8036e6e2e8289affd1ee7e3f",
+      "byteLength": 929480
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_21.pdf",
+      "sha256": "a4d919ac5355ecf4eadbc06c8f1d1f0c2a7cd9195a262a1c25755f5a5444672b",
+      "byteLength": 1016286
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_22.pdf",
+      "sha256": "cbf4c56999764cc42bdf3a27be4fabb6634c30f38ec3e93804b2cf8d12623f2e",
+      "byteLength": 1038742
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_23.pdf",
+      "sha256": "f22abe2612555e8bf4496d3ec59e7776361ca56a6e404ab094d91619d16d36ae",
+      "byteLength": 1011120
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-March/0478_m23_ms_12.pdf",
+      "sha256": "e2e08fcff6eca05498eb935a9777a4f584b7c65617d7641421301bf15d8bba5d",
+      "byteLength": 217989
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-March/0478_m23_ms_22.pdf",
+      "sha256": "a0bb1979dd3ab28c644bce8c2c85b04b9ca337c504f2f05a6a1f1aea7a450779",
+      "byteLength": 349445
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-March/0478_m23_qp_12.pdf",
+      "sha256": "5a1c45db21fb749ec64bc7bf4151feb4f135e8161abbb7fade6ed4a0af227b98",
+      "byteLength": 673439
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-March/0478_m23_qp_22.pdf",
+      "sha256": "128d7caa1b8e134ce84529cc249e17bdd88cc6851676044053944a2f92654692",
+      "byteLength": 780151
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_11.pdf",
+      "sha256": "4e527504fc62fc232808af94670bfac713c9fc90f1beaa7dc6a38ffd830e9ee3",
+      "byteLength": 215161
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_12.pdf",
+      "sha256": "f72b136cb453e76524172709f0cd8ade4afa44642190088bd26851f77a5a1a86",
+      "byteLength": 182808
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_13.pdf",
+      "sha256": "733b0b56217a557247fee39422a0c482461bf88fdbc4e585591a83c68f16289c",
+      "byteLength": 194150
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_21.pdf",
+      "sha256": "4ed07440a1356adc1ff91e00099a3cded42b763245f60533e66a361c65a3bea2",
+      "byteLength": 296552
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_22.pdf",
+      "sha256": "d5c0ceed0cd0e1ffe6b3d13c2814cd629871b8056b472036e7c2246519bcb32c",
+      "byteLength": 290217
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_23.pdf",
+      "sha256": "4d8a50b7ac8e1ceb61c0b101e74d1cb1cdc636f9394eda23a30b486717ff6252",
+      "byteLength": 299135
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_11.pdf",
+      "sha256": "288a778b0941574c0114a96f4c35d43522474a5ba05a94fc16ad9b32b5536bd9",
+      "byteLength": 662645
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_12.pdf",
+      "sha256": "6cccf26a0da8864e368e34b0f327b3d6697debad3abdfb70060f2d0bfbb09096",
+      "byteLength": 662336
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_13.pdf",
+      "sha256": "11c3045dd9b573e4464e2913fdee07ea366c73c8e1f32c35a509b4ca3adf8b11",
+      "byteLength": 677575
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_21.pdf",
+      "sha256": "0f9f03c53a051eeaee4bd2434a55461f4d4490c9fb4725a4a322a2d684bb99f0",
+      "byteLength": 777491
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_22.pdf",
+      "sha256": "7093001982117f57790650cecaf8380789a8bc485fcbb8050ac028068e2c8d43",
+      "byteLength": 759927
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_23.pdf",
+      "sha256": "257cbdc7ddc6e799ec022cf5c30d016f7faccbcdbca3596689c6b6c65356eb9f",
+      "byteLength": 767364
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_ms_11.pdf",
+      "sha256": "0e3b30c4ed90768e6803cb6c6c5037afdb639aa6aa6c9777c372b918ed8e5cdf",
+      "byteLength": 233195
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_ms_12.pdf",
+      "sha256": "b34db5a43ac4445ffc4c70e279df7a30f9dacb862af81b67c55e0d60dfd436d3",
+      "byteLength": 246334
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_ms_13.pdf",
+      "sha256": "33fa060f0a5a0c04dcd37892d84d7110dd5921c20e967dcaa8cee2cb3e676f69",
+      "byteLength": 241659
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_ms_21.pdf",
+      "sha256": "38fb779bcd7ba113a5f553fcf5822fc21daca802b9589e3af02278c642c01b54",
+      "byteLength": 306156
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_ms_22.pdf",
+      "sha256": "74e4397e4fdad9f335471e0f466d5c72c173b3df728ac3515929f309869045cc",
+      "byteLength": 356164
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_ms_23.pdf",
+      "sha256": "afb1c7e53202c4fb4008a211680c89dd7b12accf9213121bea4f4febd3cb867d",
+      "byteLength": 362842
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_11.pdf",
+      "sha256": "5b7c4de30980bcb9f8130839279cc1ae7f9f6400a78f91fe128efe99450368c7",
+      "byteLength": 662925
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_12.pdf",
+      "sha256": "8229dc19d389c9f07f065dfe7d0e6b07072493128e2972c4aa858cd143b07606",
+      "byteLength": 664872
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_13.pdf",
+      "sha256": "994ed95b3c42d47791fb2c6d1f590cfbba84bfa58a2202bcb488b402c45cebce",
+      "byteLength": 662457
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_21.pdf",
+      "sha256": "6289db4554aa3dc0fb367b90616769b26fba6266d5d133ce022e8a8a88de9a1d",
+      "byteLength": 713431
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_22.pdf",
+      "sha256": "eb60aa19a5c03168462d589552e842b96727da3db480eff4f28fa17c3c740b63",
+      "byteLength": 794183
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_23.pdf",
+      "sha256": "94308d93129fcad15591cc02403ae6ceeda060be90412b7ef7c4af79188e3778",
+      "byteLength": 781763
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_ms_12.pdf",
+      "sha256": "ee9ef355595ded1fbdb12bfa2847cd3507a77e0cbbcb7d926389b87135d85d19",
+      "byteLength": 258587
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_ms_22.pdf",
+      "sha256": "bbee45d82b5ec70201d82addc117aa6329d978d34e538ecfddc0ea1b12b0e82f",
+      "byteLength": 334991
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_qp_12.pdf",
+      "sha256": "e81e4abcacd86db63c02d35ec8d149e8eadffea50b54b3fd69679bac88494780",
+      "byteLength": 2310366
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_qp_22.pdf",
+      "sha256": "5678c1725c856d491c8322b6cb594a58f830b9aaa79ab6d62c0bf39808b1bbdf",
+      "byteLength": 820786
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_ms_11.pdf",
+      "sha256": "06cfcd676ff0afdb2f33fc38dba8a952d25beb873bdeb24bb3c0618c3885f1aa",
+      "byteLength": 143168
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_ms_12.pdf",
+      "sha256": "4dbd0f79c54f2d16e7cd497ce6901610058b96b2f5f7cf401eec81cf6b2828b3",
+      "byteLength": 143392
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_ms_13.pdf",
+      "sha256": "5929f7d9ab7ea6e7a60944a6b16095621253cc18e8578300664af04f45990670",
+      "byteLength": 125105
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_ms_21.pdf",
+      "sha256": "788a5bbe05e6e04faae389510ba4eb3f0c0af7792f56534c045bbe4916a3305a",
+      "byteLength": 271899
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_ms_22.pdf",
+      "sha256": "6234b9abd434cffec0eea824ad679f58d91893ee99e2d66d37aba80459228669",
+      "byteLength": 236138
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_ms_23.pdf",
+      "sha256": "450093b5bc7ec98ad9bc1a430dedebf1665290ff5f59add2eaff9098c82a810e",
+      "byteLength": 246783
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_11.pdf",
+      "sha256": "d59df591a91e2fc0ffb7c90fd5e0659505d04ab40eda42015046a1db8614eb8e",
+      "byteLength": 729864
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_12.pdf",
+      "sha256": "24b31b3eaa0c30ae5df2329ebc05d7f73b0a4c38647796be17776632fa310cd0",
+      "byteLength": 107537
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_13.pdf",
+      "sha256": "e5eb31603bf805d2714de4422383f4e07cce1dfe966c350b5665bf663cdeee6b",
+      "byteLength": 2033953
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_21.pdf",
+      "sha256": "91583435aba4c52a9537f592b8d8c9684c177b25b769533f444fc56d44222776",
+      "byteLength": 854047
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_22.pdf",
+      "sha256": "9bf2ee49e172122283c3ed208cf906a4d2700c48d229c8994cb10f48df3a18a8",
+      "byteLength": 146895
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_23.pdf",
+      "sha256": "27c49939ea66a1a6163b754a75873147521e8ca4caf2fba14817820b06a94877",
+      "byteLength": 883705
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_ms_11.pdf",
+      "sha256": "3bc593d4966906e99720acb1618a2a378d1317bb7b8415758fce21c41e5ec40e",
+      "byteLength": 236698
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_ms_12.pdf",
+      "sha256": "6aac0ea1d06e82b6c8df244a7fa23b1ac653182985cde9d0ca8f5ad90285294c",
+      "byteLength": 235757
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_ms_13.pdf",
+      "sha256": "f9387b1aac6a5c71c53b43d61192b9fe59bd783297e207ae292256b2212c040b",
+      "byteLength": 227453
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_ms_21.pdf",
+      "sha256": "5a2bba8d643759f76836a2f8ef561728c211051adeaf88b037084f9954070f5a",
+      "byteLength": 323032
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_ms_22.pdf",
+      "sha256": "26c4f59288531dcbbd2105c036eef0d86f42c223690c051b3e22f5d769958646",
+      "byteLength": 344872
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_ms_23.pdf",
+      "sha256": "18e7d21a5e4ed12bc25f0821979ed9a29276d3e401bad2013ad5c356d3717bf8",
+      "byteLength": 324247
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_11.pdf",
+      "sha256": "d7b375fff586dd751afe1cdce0601f29e2d124e681a9f4a3bc4dbfad628b8c1f",
+      "byteLength": 92425
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_12.pdf",
+      "sha256": "ef7be854099a9c11688012e23d86886cb1eca54f72a075e8358d30efc681ad05",
+      "byteLength": 92680
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_13.pdf",
+      "sha256": "85882ff2d1b06c929a025cc728cc6e52753a855fb61dfd8c9c58ee47a9a897e3",
+      "byteLength": 92735
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_21.pdf",
+      "sha256": "3acc56ec25f3c9108bbf3fe5b117739ea7fb90588bbdc03ed0c93c48536e1cdd",
+      "byteLength": 112566
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_22.pdf",
+      "sha256": "d5e2fa597b2f7f1f278d32684fb20e0cd0441b77af204b64c465727df0251225",
+      "byteLength": 118163
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_23.pdf",
+      "sha256": "e6ae88c92c3f6326d03b23e9afc852ef024a30cb51dbb58d215779e2c9502d8c",
+      "byteLength": 119329
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-March/0478_m25_ms_12.pdf",
+      "sha256": "65114e4408b1c76a24592c75e3aac413442994333bf5036f67607ce997b71052",
+      "byteLength": 277444
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-March/0478_m25_ms_22.pdf",
+      "sha256": "341d5559711a32077994171f8192343dde4932797fa3a76b1033d109969925c6",
+      "byteLength": 399098
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-March/0478_m25_qp_12.pdf",
+      "sha256": "6ea658aca60951f42dc9d14d49424664a6da9fb69c1ef57b4af1a22f2311a36e",
+      "byteLength": 96552
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-March/0478_m25_qp_22.pdf",
+      "sha256": "b11e7365d885f0b67ab327dc723ef63dc8f352a6a6d50b5dd17c36a0d13c3bc5",
+      "byteLength": 120714
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_ms_11.pdf",
+      "sha256": "bd56651fd7d3d6ed049c712fcd82901e590e99a9175fa1c7fe48a04970111345",
+      "byteLength": 257866
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_ms_12.pdf",
+      "sha256": "3582d641890eea21aa70061812d96c04807966237572b07f1def8c69ae371fc9",
+      "byteLength": 268746
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_ms_13.pdf",
+      "sha256": "213493b088352161346c2b066166ea26d3734b48213c557b8cee5de431897962",
+      "byteLength": 262536
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_ms_21.pdf",
+      "sha256": "24b6e2d80e88bb246a4ed5f19b6d5d29526bd355d23a3c65112eb0a2cfd75fa2",
+      "byteLength": 387341
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_ms_22.pdf",
+      "sha256": "251a44c7451a7a7acd054725d7f58e4783d775bd78ca22239af540c152bc9857",
+      "byteLength": 384886
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_ms_23.pdf",
+      "sha256": "2602dad4b1dcb16707ac94aead535b88c4b0cfb03b96385cdc63a1cbd52a8260",
+      "byteLength": 439798
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_11.pdf",
+      "sha256": "0e343decdfc0415642152e1456a5dd03297e594ebc68e763026ab12788d5df94",
+      "byteLength": 97513
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_12.pdf",
+      "sha256": "1e8dfa4e4b3cf5caa95fc3d1523ebd82b88ca9f665196a1872c3d0d8485a4c31",
+      "byteLength": 96624
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_13.pdf",
+      "sha256": "e8ec80c28a3f672e68c36ee28df27ddd7145b154747c2512cf0834a50b7433f5",
+      "byteLength": 98095
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_21.pdf",
+      "sha256": "d32afc1d844e0d9bdd32a8ede6015204b0cf8221cca0ec69cbb9a307d2903882",
+      "byteLength": 118511
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_22.pdf",
+      "sha256": "ad07069053223d438fbca7e0b94a8b59cd412000afd2547327f3671630a56acc",
+      "byteLength": 124380
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_23.pdf",
+      "sha256": "36be017d37e85d983e6f933302954abeabba9437eb0983c1c97b40e3a0981a20",
+      "byteLength": 123623
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/.DS_Store",
+      "sha256": "b1bdd3906b30ac69f2f6119915735c78318a45af9b6294ab8821734269bfc92e",
+      "byteLength": 6148
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_ms_11.pdf",
+      "sha256": "8fd70bde43eacb1f78207429631ed56da9fdcca6baa91f3b71540eb3d1e61542",
+      "byteLength": 258724
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_ms_12.pdf",
+      "sha256": "df77f2e31ab8b66fd2f00b894774b0ff5b934a6ec906fdedcf132935e9f32b06",
+      "byteLength": 257217
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_ms_13.pdf",
+      "sha256": "786d9429a5886c75a0cfd95cab40201c857204532566c6542114117a4ca8fc7f",
+      "byteLength": 249511
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_ms_21.pdf",
+      "sha256": "043d76b72f6b88371e671d8d8101bf3babd3156b8747dce3c4c718b2375b3d67",
+      "byteLength": 448362
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_ms_22.pdf",
+      "sha256": "83ab978ec70e7ccba0e4599d1e0229af519420c069af716840382353ec8242a9",
+      "byteLength": 464630
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_ms_23.pdf",
+      "sha256": "ae6fef72969f69ce5fcf2ecc32213fe57736f227df3461ce4df5e22f0da2d1b4",
+      "byteLength": 427200
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_11.pdf",
+      "sha256": "da17c433036c5c4bc7c907f144aca8c0204860fff79a07d9ca5a26fd225c2178",
+      "byteLength": 123569
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_12.pdf",
+      "sha256": "6f5b0d0102c5296cee32b3677b79e5e3db9874903536b9961c800667abb7fe70",
+      "byteLength": 100880
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_13.pdf",
+      "sha256": "fcb08bea21db20a8fd0c972297e1603013ba1ac802ac4753abc7102177bcd714",
+      "byteLength": 98488
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_21.pdf",
+      "sha256": "a4ab060e7a150dab44005fdd79a5ef15c47987694095e9666669f5f707e844c9",
+      "byteLength": 127510
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_22.pdf",
+      "sha256": "c63d3ae7c451b631cba8c5b62a28980eb9c4d2f41d63fba24c9c927095b9e511",
+      "byteLength": 129974
+    },
+    {
+      "path": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_23.pdf",
+      "sha256": "f8b8f08300cff1451891740bb7f136c0d7c9b1628980b5864a6d2f0679ac3425",
+      "byteLength": 122630
+    }
+  ],
+  "verified": true,
+  "immutable": true
+}

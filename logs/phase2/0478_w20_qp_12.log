@@ -1,0 +1,144 @@
+[2026-07-13T02:04:04.798Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_12.pdf
+[2026-07-13T02:04:04.798Z] startTime=2026-07-13T02:04:04.798Z
+[2026-07-13T02:04:04.798Z] expectedRole=question_paper
+[2026-07-13T02:04:06.543Z] extract.exitCode=0
+[2026-07-13T02:04:06.543Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 5,
+      "marks": 30,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 State what is meant by HTML. (a) [1] She uses the hexadecimal colour code #43B7F0 as the background colour for her website. (b) State whether background colour is an example of or in the (i) structure presentation website. [1] The hexadecimal colour code # is stored in three registers. (ii) 43B7F0 8-bit Give the values for each part of the hexadecimal code"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Four to each binary value creating 8-bit binary values. All the binary values have been transmitted correctly. ✓ Tick ( ) to show whether an or an parity check has been used for each binary (a) Even Odd value. Even Odd 8-bit binary value ✓ ✓ ( ) ( ) 11111111 01100110 01111011 10000000 [4] The data will also be checked using a checksum. (b) Describe how a c"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 He is concerned about accidental damage to his data. Identify ways that the data could be accidentally damaged. (a) (i) three 1 2 3 [3] State what Alessandro could do to make sure that he can retrieve his data if it is (ii) accidentally damaged. [1] Alessandro uses an SSD to store his data. (b) Describe what is meant by an SSD and how it operates to store "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 = ((( NAND ) NOR ( AND )) OR ) X A B B C C Draw a logic circuit to match the given logic statement. (a) All logic gates must have a maximum of inputs. Do attempt to simplify the logic two not statement. A B X C [4] Complete the truth table for the given logic statement. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [4] Tammy is buying a new c"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 statements about LED displays are given. (a) Five ✓ Tick ( ) to show if each statement is or . True False True False Statement ✓ ✓ ( ) ( ) It is a flat panel display It creates images using red, green and blue diodes It is not very energy efficient and gives off heat It can be used in mobile devices such as smartphones and tablets It is a front-lit display"
+    }
+  ]
+}
+[2026-07-13T02:04:06.545Z] parserVersion=0.4.0
+[2026-07-13T02:04:06.545Z] documentRole=question_paper
+[2026-07-13T02:04:06.545Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:06.952Z] stage.exitCode=0
+[2026-07-13T02:04:06.952Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_12.staging.json",
+  "runId": "0478-2020-ON-12-QP-RUN-6bbc204dff20",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 21,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:04:06.954Z] stagingId=0478-2020-ON-12-QP-RUN-6bbc204dff20
+[2026-07-13T02:04:06.954Z] validationStatus=PASS
+[2026-07-13T02:04:06.954Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:04:06.954Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:06.954Z] canonicalPublishable=true
+[2026-07-13T02:04:06.954Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:04:06.954Z] endTime=2026-07-13T02:04:06.954Z
+[2026-07-13T02:04:06.954Z] status=PASS

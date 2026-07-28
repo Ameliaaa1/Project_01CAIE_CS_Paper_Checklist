@@ -1,0 +1,241 @@
+[2026-07-13T02:01:51.193Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_23.pdf
+[2026-07-13T02:01:51.193Z] startTime=2026-07-13T02:01:51.193Z
+[2026-07-13T02:01:51.193Z] expectedRole=question_paper
+[2026-07-13T02:01:52.702Z] extract.exitCode=0
+[2026-07-13T02:01:52.702Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w23_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_23.pdf",
+  "pageCount": 16,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "1 one Double entry check A Format check B Length check C Presence check D [1] 3 Tick ( ) box to show which library routine returns the remainder of a division."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "2 one DIV A MOD B RANDOM C ROUND D [1] pseudocode descriptions and pseudocode keywords are shown."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 (a) Four five Draw line to link each pseudocode description to the most appropriate pseudocode one keyword. all pseudocode keywords will be used. Not Pseudocode description Pseudocode keyword stores data in a file OUTPUT WRITE retrieves data from a file READ displays data on a screen OPEN enters data from a keyboard INPUT [4] Give reasons for storing data "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 The programmer needs the program to accept only whole numbers that are greater than or equal to one and less than or equal to six. Give the names of validation checks that are required for this program. (a) two 1 2 [2] Complete this pseudocode to perform your validation checks, using your answers given (b) two in : (a) OUTPUT \"Please enter the number of se"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 used passwords OldList[] If the password is found, the new password will be stored at the end of the list to replace not already stored there. \"XXXX\" 01 OUTPUT \"Enter your new password \" 02 INPUT NewPassword 1 03 Posn FALSE 04 Found 05 REPEAT 06 IF Password = OldList[Posn] 07 THEN TRUE 08 Found Posn + 1 09 ELSE Posn 10 ENDIF 11 UNTIL Found AND OldList[Posn"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 three A B output . X Identify each logic gate. Complete a truth table for each logic gate. The only time the output is 1 is when both inputs are 1. (a) A B X Logic gate 0 0 Complete the truth table for this description. 0 1 1 0 1 1 [2] The output is 1 when both inputs are different. (b) A B X Logic gate 0 0 Complete the truth table for this description. 0 "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "7 Describe differences between local variables and global variables. two Difference 1 Difference 2 [4] This is an algorithm to find if a batch of parts has been manufactured successfully."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 START 0 Accept Reject 0 INPUT PartOK No IS PartOK Reject Reject + 1 = 'Y'? Yes Accept Accept + 1 No IS Accept = 10 ? Yes Yes IS Reject Error Reject/Accept * 100 > 1 ? No OUTPUT \"Too many rejected \", OUTPUT Error, \"% error\" \"Success\" STOP Complete the trace table using this data: (a) Y, Y, Y, N, Y, Y, Y, Y, N, Y, Y, Y, Y OUTPUT Accept Reject PartOK Error [5"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 PheasantList of the different species of bird at the sanctuary. Part of this table is given, showing: species, description, number of birds at the sanctuary, if the birds are breeding or and number of not young born this year. Species Description NumberBirds Breeding Young Edwards blue-black with white tail 5 Yes 0 Japanese green dark green with pale grey "
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "10 stored in a two-dimensional (2D) array Temperatures[] Each column contains 24 readings for a single day. The first temperature is recorded at 00:00 and the final temperature at 23:00. There are seven columns, one for each day of the week, starting with Monday and ending with Sunday. The variables and are used to store the maximum, minimum, and MaxDay MinD"
+    }
+  ]
+}
+[2026-07-13T02:01:52.703Z] parserVersion=0.4.0
+[2026-07-13T02:01:52.703Z] documentRole=question_paper
+[2026-07-13T02:01:52.703Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:01:52.949Z] stage.exitCode=0
+[2026-07-13T02:01:52.949Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w23_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/0478_w23_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/0478_w23_qp_23.staging.json",
+  "runId": "0478-2023-ON-23-QP-RUN-94308d93129f",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/0478_w23_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 23,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2023-ON-23-Q4-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2023-ON-23-Q9-B-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:01:52.951Z] stagingId=0478-2023-ON-23-QP-RUN-94308d93129f
+[2026-07-13T02:01:52.951Z] validationStatus=PASS
+[2026-07-13T02:01:52.951Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:01:52.951Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:01:52.951Z] canonicalPublishable=true
+[2026-07-13T02:01:52.951Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:01:52.951Z] endTime=2026-07-13T02:01:52.951Z
+[2026-07-13T02:01:52.951Z] status=PASS

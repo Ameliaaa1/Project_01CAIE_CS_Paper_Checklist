@@ -1,0 +1,217 @@
+[2026-07-14T16:54:50.595Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_11.pdf
+[2026-07-14T16:54:50.595Z] startTime=2026-07-14T16:54:50.595Z
+[2026-07-14T16:54:50.595Z] expectedRole=question_paper
+[2026-07-14T16:54:53.153Z] extract.exitCode=0
+[2026-07-14T16:54:53.153Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_11.pdf",
+  "pageCount": 16,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) one Term Description a component created drawing list using a formula defines one characteristic drawing object of a component data required to create all property components in the graphic [2] State what is meant by the of a bitmap image explain how changing the bit (b) bit depth and depth affects the image. Definition Explanation [3] Explain why a bi"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 The LAN connects to the internet using a router. (a) Describe the function of a router in a network. [3] Complete the following table by writing the purpose of each of these other hardware devices (b) used to support the LAN. Hardware device Purpose switch Wireless Access Point (WAP) bridge [3] The students can save their school files on a public cloud. (c"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The database will have the following tables: CUSTOMER(CustomerID, FirstName, LastName, Town) SHOP_ORDER(OrderNo, CustomerID, OrderDate) SUPPLIER(SupplierID, EmailAddress, TelephoneNumber) ITEM(ItemNumber, SupplierID, Description, Price) ORDER_ITEM(ItemNumber, OrderNo, Quantity) Complete the entity-relationship (E-R) diagram for the relational database. (a)"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) = NOT ( NAND ) XOR (NOT AND ( NOR )) X A B B B C A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [2] Draw a logic circuit for the logic expression: (b) = ( AND NOT ( OR )) AND ( NOR ) X A B C B C A X B C [2] The Central Processing Unit (CPU) of the basic Von Neumann model for a computer system"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 contains several special purpose registers. The Memory Data Register (MDR), Index Register (IX) and the Accumulator (ACC) are (a) examples of special purpose registers. Identify special purpose registers state their role in the CPU. two other and Special purpose register 1 Role Special purpose register 2 Role [4] Describe what is meant by the in a computer"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 language. Describe the advantages of using the interpreter compared to the compiler to translate the (a) program. [4] State reason why some high-level languages are partially compiled and partially interpreted. (b) one [1] Identify features that support the visual presentation of the code in a typical (c) (i) two Integrated Development Environment (IDE). 1"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 (a) [3] Describe the purpose of a temperature sensor within the 3D printer. (b) [2] A 3D printer contains 1 GB of Dynamic RAM (DRAM) to store print data. (c) State advantages of the printer having Dynamic RAM instead of Static RAM (SRAM). two 1 2 [2] Identify the purpose of the first pass of a two-pass assembler."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 13,
+      "pageEnd": 16,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 (a) [1] The following table shows part of the instruction set for a processor. The processor has two (b) registers, the Accumulator (ACC) and the Index Register (IX) . Instruction Explanation Opcode Operand Immediate addressing. Load the number n to IX LDR #n Store contents of ACC at the given address STO <address> Add the contents of the given address to "
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 16,
+      "pageEnd": 16,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.9
+      },
+      "textPreview": "9 (a) [2] Give example of an embedded system explain why it is an example of an embedded (b) one and system. Example Explanation [3]"
+    }
+  ]
+}
+[2026-07-14T16:54:53.156Z] parserVersion=0.4.0
+[2026-07-14T16:54:53.156Z] documentRole=question_paper
+[2026-07-14T16:54:53.156Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:54:53.598Z] stage.exitCode=0
+[2026-07-14T16:54:53.598Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_11.staging.json",
+  "runId": "9618-2023-ON-11-QP-RUN-0aca70a2e794",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 34,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 33,
+        "present": 33,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-11-Q8-B-IX",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:54:53.602Z] stagingId=9618-2023-ON-11-QP-RUN-0aca70a2e794
+[2026-07-14T16:54:53.602Z] validationStatus=PASS
+[2026-07-14T16:54:53.602Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:54:53.602Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:54:53.602Z] canonicalPublishable=true
+[2026-07-14T16:54:53.602Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:54:53.602Z] endTime=2026-07-14T16:54:53.602Z
+[2026-07-14T16:54:53.602Z] status=PASS

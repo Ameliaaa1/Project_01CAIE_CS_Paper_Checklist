@@ -1,0 +1,201 @@
+[2026-07-13T02:04:59.472Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_22.pdf
+[2026-07-13T02:04:59.472Z] startTime=2026-07-13T02:04:59.472Z
+[2026-07-13T02:04:59.472Z] expectedRole=question_paper
+[2026-07-13T02:05:01.710Z] extract.exitCode=0
+[2026-07-13T02:05:01.710Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s21_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) (i) Variable Example data value Data type Name \"Catherine\" Index 100 Modified FALSE Holiday 25/12/2020 [4] Evaluate each expression in the following table by using the initial data values shown in (ii) . part (a) (i) Expression Evaluates to Modified OR Index > 100 LENGTH(\"Student: \" & Name) INT(Index + 2.9) MID(Name, 1, 3) [4] Each pseudocode statement"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 5,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) Low level detected | Activate pump Low level detected X S2 S1 Normal level detected | Deactivate pump Normal level detected S3 Complete the table with reference to the diagram. (i) Answer The number of transitions that result in a different state The number of transitions with associated outputs The label that should replace ‘X’ The final or halting st"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A B Elk Fish Cat Dolphin Identify this type of ADT. (a) [1] Give the technical term for the item labelled in the diagram. (b) A [1] Give the technical term for the item labelled in the diagram. (c) B Explain the meaning of the value given to this item. Term Meaning [2] Complete the diagram to show the ADT after the data has been sorted in alphabetical orde"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 program to assign grades based on these results. The program will output the grades together with the average mark. Write a detailed description of the algorithm that will be needed. [6] A student is learning about arrays."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 10,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 (a) She wants to write a program to: declare a 1D array of 100 elements of type • RNum INTEGER assign each element a random value in the range 1 to 200 inclusive • count and output how many numbers generated were between 66 and 173 inclusive. • Write pseudocode to represent the algorithm. (i) [6] The student decides to modify the algorithm so that each ele"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 CountVowels() be called with a string containing alphanumeric characters as its parameter • count and output the number of occurrences of each vowel (a, e, i, o, u) in the string • count and output the number of occurrences of the other alphabetic characters (as a single • total). The string may contain both upper and lower case characters. Each count valu"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 FormatName() is called with a string containing words and spaces as its parameter. In this context, a word is • any sequence of characters that does not contain a space character. creates a new formatted string from this string with the following requirements: • 1. Any leading spaces removed (spaces before the first word). 2. Any trailing spaces removed (s"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 Some words in the full name will be ignored. For example, “the”, “and”, “of”, “for” and “to” may all be ignored. Each letter of the new string must be upper case. For example: Full name Initials Integrated Development Environment IDE The American Standard Code for Information Interchange ASCII The programmer has decided to use the following global variable"
+    }
+  ]
+}
+[2026-07-13T02:05:01.712Z] parserVersion=0.4.0
+[2026-07-13T02:05:01.712Z] documentRole=question_paper
+[2026-07-13T02:05:01.712Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:05:02.068Z] stage.exitCode=0
+[2026-07-13T02:05:02.068Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s21_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_22.staging.json",
+  "runId": "9618-2021-MJ-22-QP-RUN-c3bc9ed1a7e4",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2021-MJ-22-Q1-A-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:05:02.071Z] stagingId=9618-2021-MJ-22-QP-RUN-c3bc9ed1a7e4
+[2026-07-13T02:05:02.071Z] validationStatus=PASS
+[2026-07-13T02:05:02.071Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:05:02.071Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:05:02.071Z] canonicalPublishable=true
+[2026-07-13T02:05:02.071Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:05:02.071Z] endTime=2026-07-13T02:05:02.071Z
+[2026-07-13T02:05:02.071Z] status=PASS

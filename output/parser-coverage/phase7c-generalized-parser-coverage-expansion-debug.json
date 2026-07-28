@@ -1,0 +1,497 @@
+{
+  "generatedFor": "Phase-7C-Generalized-Parser-Coverage-Expansion-Plan",
+  "phaseId": "Phase 7-C",
+  "status": "PASS",
+  "phaseStatus": "COMPLETE",
+  "completionDecision": "FULL_PASS",
+  "productionWrite": false,
+  "scope": "PARSER_GENERALIZATION_ONLY",
+  "generalizedCapabilities": {
+    "documentNaming": [
+      "canonical CAIE",
+      "separator aliases",
+      "session aliases",
+      "long role aliases"
+    ],
+    "documentRole": [
+      "metadata",
+      "filename",
+      "content signals",
+      "conflict diagnostics"
+    ],
+    "questionReferences": [
+      "1",
+      "1(a)",
+      "1(b)(i)",
+      "2(c)(ii)"
+    ],
+    "markScheme": [
+      "cross-level headers",
+      "array-index exclusion",
+      "source trace"
+    ],
+    "responseLayouts": {
+      "answerLine": "answer_line",
+      "choice": "choice_area",
+      "table": "structured_table",
+      "visual": "visual_response_area",
+      "structured": "structured_response_area",
+      "text": "text_response_area"
+    },
+    "regressionFixtures": [
+      "9618",
+      "9709",
+      "0478",
+      "future"
+    ]
+  },
+  "subphases": {
+    "A": {
+      "title": "Document Structure Generalization",
+      "status": "PASS",
+      "checks": {
+        "canonicalFilename": true,
+        "separatorAndLongRoleAliases": true,
+        "sessionAndMarkSchemeAliases": true,
+        "questionPaperSignals": true,
+        "markSchemeSignals": true,
+        "conflictingSignalsReported": true
+      },
+      "aliases": [
+        {
+          "subjectCode": "2210",
+          "year": 2024,
+          "yearCode": "24",
+          "sessionCode": "s",
+          "session": "M/J",
+          "role": "QP",
+          "roleCode": "qp",
+          "component": "11",
+          "paperNumber": "1",
+          "variant": "1",
+          "paperGroupId": "2210_s_24_11",
+          "normalizedName": "2210_s24_qp_11.pdf"
+        },
+        {
+          "subjectCode": "2210",
+          "year": 2024,
+          "yearCode": "24",
+          "sessionCode": "s",
+          "session": "M/J",
+          "role": "QP",
+          "roleCode": "qp",
+          "component": "11",
+          "paperNumber": "1",
+          "variant": "1",
+          "paperGroupId": "2210_s_24_11",
+          "normalizedName": "2210_s24_qp_11.pdf"
+        },
+        {
+          "subjectCode": "2210",
+          "year": 2024,
+          "yearCode": "24",
+          "sessionCode": "w",
+          "session": "O/N",
+          "role": "MS",
+          "roleCode": "ms",
+          "component": "22",
+          "paperNumber": "2",
+          "variant": "2",
+          "paperGroupId": "2210_w_24_22",
+          "normalizedName": "2210_w24_ms_22.pdf"
+        }
+      ],
+      "qp": {
+        "role": "question_paper",
+        "parserProfile": "QUESTION_PAPER",
+        "validationProfile": "QUESTION_PAPER",
+        "confidence": "high",
+        "signals": {
+          "explicitRole": null,
+          "filenameRole": "question_paper",
+          "textRole": "question_paper"
+        },
+        "conflict": false,
+        "diagnostics": []
+      },
+      "ms": {
+        "role": "mark_scheme",
+        "parserProfile": "MARK_SCHEME",
+        "validationProfile": "MARK_SCHEME",
+        "confidence": "high",
+        "signals": {
+          "explicitRole": null,
+          "filenameRole": "mark_scheme",
+          "textRole": "mark_scheme"
+        },
+        "conflict": false,
+        "diagnostics": []
+      },
+      "conflict": {
+        "role": "question_paper",
+        "parserProfile": "QUESTION_PAPER",
+        "validationProfile": "QUESTION_PAPER",
+        "confidence": "high",
+        "signals": {
+          "explicitRole": "question_paper",
+          "filenameRole": "mark_scheme",
+          "textRole": "mark_scheme"
+        },
+        "conflict": true,
+        "diagnostics": [
+          "DOCUMENT_ROLE_SIGNAL_CONFLICT"
+        ]
+      }
+    },
+    "B": {
+      "title": "Question Parsing Generalization",
+      "status": "PASS",
+      "checks": {
+        "q1": true,
+        "part": true,
+        "nestedRoman": true,
+        "secondNestedRoman": true,
+        "invalidIdentifierRejected": true
+      },
+      "inputs": [
+        "Q1",
+        "Question 1(a)",
+        "Q1(b)(i)",
+        "Q2(c)(ii)"
+      ],
+      "references": [
+        {
+          "topLevel": 1,
+          "sectionPath": [
+            "1"
+          ],
+          "normalized": "1",
+          "depth": 0
+        },
+        {
+          "topLevel": 1,
+          "sectionPath": [
+            "1",
+            "a"
+          ],
+          "normalized": "1(a)",
+          "depth": 1
+        },
+        {
+          "topLevel": 1,
+          "sectionPath": [
+            "1",
+            "b",
+            "i"
+          ],
+          "normalized": "1(b)(i)",
+          "depth": 2
+        },
+        {
+          "topLevel": 2,
+          "sectionPath": [
+            "2",
+            "c",
+            "ii"
+          ],
+          "normalized": "2(c)(ii)",
+          "depth": 2
+        }
+      ]
+    },
+    "C": {
+      "title": "Mark Scheme Generalization",
+      "status": "PASS",
+      "checks": {
+        "arrayIndexesExcluded": true,
+        "ordinaryMarkRetained": true,
+        "generalizedHeader": true,
+        "entrySourceTrace": true,
+        "correctProfile": true
+      },
+      "arrayText": "Array[0] Array[1] Array[2] stores values [5]",
+      "ordinaryText": "Award one mark for each valid statement. [3]",
+      "profiled": {
+        "paper": {
+          "sourcePath": "future_s26_ms_11.pdf",
+          "documentRole": "mark_scheme",
+          "parserProfile": "MARK_SCHEME",
+          "validationProfile": "MARK_SCHEME"
+        },
+        "pages": [
+          {
+            "pageNumber": 2,
+            "width": 600,
+            "height": 800,
+            "displayText": "Cambridge International AS & A Level MARK SCHEME Question Answer Marks",
+            "items": [
+              {
+                "text": "Cambridge International AS & A Level MARK SCHEME",
+                "x": 120,
+                "y": 760,
+                "width": 240,
+                "height": 10,
+                "pageNumber": 2,
+                "globalOrder": 0,
+                "regionType": "content",
+                "blockIndex": 0,
+                "lineIndex": 0,
+                "spanIndex": 0
+              },
+              {
+                "text": "1(a)",
+                "x": 40,
+                "y": 700,
+                "width": 20,
+                "height": 10,
+                "pageNumber": 2,
+                "globalOrder": 1,
+                "regionType": "content",
+                "blockIndex": 1,
+                "lineIndex": 0,
+                "spanIndex": 0
+              },
+              {
+                "text": "Accept any valid identifier",
+                "x": 140,
+                "y": 700,
+                "width": 135,
+                "height": 10,
+                "pageNumber": 2,
+                "globalOrder": 2,
+                "regionType": "content",
+                "blockIndex": 2,
+                "lineIndex": 0,
+                "spanIndex": 0
+              },
+              {
+                "text": "2",
+                "x": 540,
+                "y": 700,
+                "width": 10,
+                "height": 10,
+                "pageNumber": 2,
+                "globalOrder": 3,
+                "regionType": "content",
+                "blockIndex": 3,
+                "lineIndex": 0,
+                "spanIndex": 0
+              }
+            ],
+            "pageType": "mark_scheme_answers",
+            "contentRegions": [
+              {
+                "type": "MARK_SCHEME_HEADER",
+                "yMin": 30,
+                "yMax": 40
+              },
+              {
+                "type": "QUESTION_NUMBER",
+                "yMin": 90,
+                "yMax": 100
+              },
+              {
+                "type": "ANSWER",
+                "yMin": 30,
+                "yMax": 100
+              },
+              {
+                "type": "MARK_COLUMN",
+                "yMin": 90,
+                "yMax": 100
+              }
+            ]
+          }
+        ],
+        "questions": [],
+        "markSchemeEntries": [
+          {
+            "questionId": "1(a)",
+            "answerText": [
+              "Accept any valid identifier"
+            ],
+            "marks": 2,
+            "annotations": [],
+            "sourceTrace": {
+              "page": 2,
+              "blockIndex": 1,
+              "lineIndex": 0,
+              "spanIndex": 0,
+              "text": "1(a)"
+            },
+            "answerSourceTrace": [
+              {
+                "page": 2,
+                "blockIndex": 2,
+                "lineIndex": 0,
+                "spanIndex": 0,
+                "text": "Accept any valid identifier"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "D": {
+      "title": "Response Area Generalization",
+      "status": "PASS",
+      "checks": {
+        "explicitAnswerLinePreferred": true,
+        "choiceClassified": true,
+        "tableClassified": true,
+        "visualClassified": true,
+        "structuredClassified": true,
+        "textFallbackClassified": true,
+        "requiredLayoutsClassified": true
+      },
+      "layouts": {
+        "answerLine": "answer_line",
+        "choice": "choice_area",
+        "table": "structured_table",
+        "visual": "visual_response_area",
+        "structured": "structured_response_area",
+        "text": "text_response_area"
+      }
+    },
+    "E": {
+      "title": "Regression Expansion",
+      "status": "PASS",
+      "checks": {
+        "syllabus0478": true,
+        "syllabus9618": true,
+        "syllabus9709": true,
+        "futureFixture": true
+      },
+      "fixtures": {
+        "9618": {
+          "status": "PASS",
+          "relativePath": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_11.pdf",
+          "paperId": "9618-2021-MJ-11",
+          "questionCount": 8,
+          "leafCount": 30,
+          "totalMarks": 75,
+          "stableIds": [
+            "9618-2021-MJ-11-Q1",
+            "9618-2021-MJ-11-Q2",
+            "9618-2021-MJ-11-Q3",
+            "9618-2021-MJ-11-Q4",
+            "9618-2021-MJ-11-Q5",
+            "9618-2021-MJ-11-Q6",
+            "9618-2021-MJ-11-Q7",
+            "9618-2021-MJ-11-Q8"
+          ]
+        },
+        "9709": {
+          "status": "PASS",
+          "relativePath": "public/textbook_syllabus/pastpaper/caie-as-a-level-9709/2024 May June/9709_s24_qp_12.pdf",
+          "paperId": "9709-2024-MJ-12",
+          "questionCount": 10,
+          "leafCount": 27,
+          "totalMarks": 75,
+          "stableIds": [
+            "9709-2024-MJ-12-Q1",
+            "9709-2024-MJ-12-Q2",
+            "9709-2024-MJ-12-Q3",
+            "9709-2024-MJ-12-Q4",
+            "9709-2024-MJ-12-Q5",
+            "9709-2024-MJ-12-Q6",
+            "9709-2024-MJ-12-Q7",
+            "9709-2024-MJ-12-Q8",
+            "9709-2024-MJ-12-Q9",
+            "9709-2024-MJ-12-Q10"
+          ]
+        },
+        "0478": {
+          "status": "PASS",
+          "relativePath": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-March/0478_m23_qp_12.pdf",
+          "paperId": "0478-2023-FM-12",
+          "questionCount": 6,
+          "leafCount": 26,
+          "totalMarks": 75,
+          "stableIds": [
+            "0478-2023-FM-12-Q1",
+            "0478-2023-FM-12-Q2",
+            "0478-2023-FM-12-Q3",
+            "0478-2023-FM-12-Q4",
+            "0478-2023-FM-12-Q5",
+            "0478-2023-FM-12-Q6"
+          ]
+        }
+      },
+      "futureFixture": {
+        "status": "PASS",
+        "filename": "9999-mj26-question-paper-12.pdf",
+        "questionReference": "Q2(c)(ii)",
+        "purpose": "Future syllabus fixture without syllabus-specific logic"
+      }
+    }
+  },
+  "integrity": {
+    "production": {
+      "beforeSha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+      "afterSha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+      "unchanged": true
+    },
+    "canonical": {
+      "beforeSha256": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "afterSha256": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "unchanged": true
+    }
+  },
+  "regression": {
+    "syllabus0478": "PASS",
+    "syllabus9618": "PASS",
+    "syllabus9709": "PASS",
+    "futureFixture": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "completionChecks": {
+    "parserGeneralizationImproved": true,
+    "syllabusSpecificLogicReduced": true,
+    "regressionCoverageExpanded": true,
+    "existingProductionUnchanged": true,
+    "canonicalModelUnchanged": true,
+    "validationNotWeakened": true,
+    "documentRolesStable": true
+  },
+  "remainingIssues": [],
+  "reports": {
+    "subphases": {
+      "A": {
+        "designPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/docs/phase7c-a-design.md",
+        "implementationPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-a-implementation-report.json",
+        "regressionPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-a-regression-report.json"
+      },
+      "B": {
+        "designPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/docs/phase7c-b-design.md",
+        "implementationPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-b-implementation-report.json",
+        "regressionPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-b-regression-report.json"
+      },
+      "C": {
+        "designPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/docs/phase7c-c-design.md",
+        "implementationPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-c-implementation-report.json",
+        "regressionPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-c-regression-report.json"
+      },
+      "D": {
+        "designPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/docs/phase7c-d-design.md",
+        "implementationPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-d-implementation-report.json",
+        "regressionPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-d-regression-report.json"
+      },
+      "E": {
+        "designPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/docs/phase7c-e-design.md",
+        "implementationPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-e-implementation-report.json",
+        "regressionPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-e-regression-report.json"
+      }
+    },
+    "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-generalized-parser-coverage-expansion-report.json",
+    "debugPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/parser-coverage/phase7c-generalized-parser-coverage-expansion-debug.json"
+  },
+  "next": {
+    "phase": "Phase 8",
+    "decision": "Long-Term Data Quality Improvement",
+    "productionWrite": false
+  }
+}

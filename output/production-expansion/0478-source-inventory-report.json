@@ -1,0 +1,57 @@
+{
+  "generatedFor": "Phase-7-Cross-Syllabus-Expansion-Plan",
+  "phaseId": "Phase 7-A",
+  "syllabus": "0478",
+  "status": "PASS",
+  "sourceFilesComplete": true,
+  "sourcePairs": 98,
+  "completeSourcePairs": 98,
+  "incompleteSourcePairs": 0,
+  "qpFilesAvailable": true,
+  "msFilesAvailable": true,
+  "duplicateSourceCheckComplete": true,
+  "duplicateSourceCount": 0,
+  "missingQpFiles": [],
+  "missingMsFiles": [],
+  "orphanQpFiles": [],
+  "orphanMsFiles": [],
+  "failures": [],
+  "recoveredSourceFiles": [
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_ms_11.pdf",
+      "exists": true,
+      "bytes": 177874,
+      "sha256": "bbabfd5d8be9cfcdeb3c770fb9480e84f6cdc124e23259a2d38b4a57ca823b4b"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_ms_12.pdf",
+      "exists": true,
+      "bytes": 164705,
+      "sha256": "3aa753d82dcee8e6def8d0c2f37eee7e8a7588aa81b1378471fc3833cb040adb"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_ms_13.pdf",
+      "exists": true,
+      "bytes": 163848,
+      "sha256": "5a3eb0af3c762a33ccdacf3936d6c8396b35d54b0866332ced7bc770416c9203"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_13.pdf",
+      "exists": true,
+      "bytes": 253556,
+      "sha256": "320bc87bb55ab06882c3ad60bfe96a749cc181de1bf7110108540de10294bc75"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_21.pdf",
+      "exists": true,
+      "bytes": 247244,
+      "sha256": "d8c0920030a04a034b77e2f159fff4703ec5183e3c2c1b84c3465d086f464134"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_22.pdf",
+      "exists": true,
+      "bytes": 276516,
+      "sha256": "e728684f59959638029eb310064bab111e308cfd93cfe9fc140f1738b6f3d66b"
+    }
+  ]
+}

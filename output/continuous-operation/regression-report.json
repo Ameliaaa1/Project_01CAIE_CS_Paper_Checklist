@@ -1,0 +1,105 @@
+{
+  "generatedFor": "Phase-8-Continuous-Operation-Plan",
+  "status": "PASS",
+  "fixtures": {
+    "golden0478": {
+      "fixtureClass": "golden",
+      "syllabus": "0478",
+      "relativePath": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_12.pdf",
+      "status": "PASS",
+      "expected": {
+        "questionCount": 5,
+        "leafCount": 27,
+        "totalMarks": 75
+      },
+      "actual": {
+        "questionCount": 5,
+        "leafCount": 27,
+        "totalMarks": 75
+      },
+      "failureClassification": null
+    },
+    "edge9618": {
+      "fixtureClass": "edge_case",
+      "syllabus": "9618",
+      "relativePath": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_11.pdf",
+      "status": "PASS",
+      "expected": {
+        "questionCount": 8,
+        "leafCount": 30,
+        "totalMarks": 75
+      },
+      "actual": {
+        "questionCount": 8,
+        "leafCount": 30,
+        "totalMarks": 75
+      },
+      "failureClassification": null
+    },
+    "cross9709": {
+      "fixtureClass": "cross_syllabus",
+      "syllabus": "9709",
+      "relativePath": "public/textbook_syllabus/pastpaper/caie-as-a-level-9709/2024 May June/9709_s24_qp_12.pdf",
+      "status": "PASS",
+      "expected": {
+        "questionCount": 10,
+        "leafCount": 27,
+        "totalMarks": 75
+      },
+      "actual": {
+        "questionCount": 10,
+        "leafCount": 27,
+        "totalMarks": 75
+      },
+      "failureClassification": null
+    },
+    "future": {
+      "fixtureClass": "future_syllabus",
+      "syllabus": "generic",
+      "status": "PASS",
+      "expected": {
+        "failureDomain": "RESPONSE_AREA"
+      },
+      "actual": {
+        "failureDomain": "RESPONSE_AREA"
+      },
+      "failureClassification": null
+    }
+  },
+  "failureHistory": [
+    {
+      "phase": "Phase 7-C",
+      "reportPath": "output/parser-coverage/phase7c-generalized-parser-coverage-expansion-debug.json",
+      "status": "PASS",
+      "remainingIssues": []
+    },
+    {
+      "phase": "Phase 8",
+      "reportPath": "output/quality-governance/phase8-long-term-data-quality-improvement-debug.json",
+      "status": "PASS",
+      "remainingIssues": []
+    }
+  ],
+  "syllabusCoverage": [
+    {
+      "syllabus": "0478",
+      "covered": true
+    },
+    {
+      "syllabus": "9618",
+      "covered": true
+    },
+    {
+      "syllabus": "9709",
+      "covered": true
+    },
+    {
+      "syllabus": "generic",
+      "covered": true
+    }
+  ],
+  "fullTestSuite": "PASS",
+  "architectureFailures": [],
+  "documentRoleRegressions": [],
+  "reportPath": "output/continuous-operation/regression-report.json"
+}

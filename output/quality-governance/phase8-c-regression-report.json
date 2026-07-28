@@ -1,0 +1,13 @@
+{
+  "generatedFor": "Phase-8-C",
+  "status": "PASS",
+  "productionWrite": false,
+  "checks": {
+    "sourceSpanRecorded": true,
+    "classificationRecorded": true,
+    "transformationRecorded": true,
+    "canonicalOutputRecorded": true,
+    "exclusionsExplainable": true,
+    "traceVersioned": true
+  }
+}

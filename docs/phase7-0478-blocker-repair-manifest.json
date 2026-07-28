@@ -1,0 +1,57 @@
+[
+  {
+    "id": "phase7-0478-repair-001",
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_ms_22.pdf",
+    "syllabus": "0478",
+    "year": 2019,
+    "session": "Oct-Nov",
+    "component": "22",
+    "expectedRole": "mark_scheme",
+    "phase1Regression": false,
+    "purpose": "Phase 7-A stale legacy mark scheme revalidation"
+  },
+  {
+    "id": "phase7-0478-repair-002",
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-March/0478_m23_qp_12.pdf",
+    "syllabus": "0478",
+    "year": 2023,
+    "session": "March",
+    "component": "12",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "Phase 7-A structural question marker repair"
+  },
+  {
+    "id": "phase7-0478-repair-003",
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_23.pdf",
+    "syllabus": "0478",
+    "year": 2024,
+    "session": "May-June",
+    "component": "23",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "Phase 7-A natural-language diacritic validation"
+  },
+  {
+    "id": "phase7-0478-repair-004",
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_21.pdf",
+    "syllabus": "0478",
+    "year": 2024,
+    "session": "Oct-Nov",
+    "component": "21",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "Phase 7-A natural-language diacritic validation"
+  },
+  {
+    "id": "phase7-0478-repair-005",
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_21.pdf",
+    "syllabus": "0478",
+    "year": 2025,
+    "session": "May-June",
+    "component": "21",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "Phase 7-A tick-box font glyph validation"
+  }
+]

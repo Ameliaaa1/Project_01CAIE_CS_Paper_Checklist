@@ -1,0 +1,160 @@
+[2026-07-13T02:03:09.384Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_13.pdf
+[2026-07-13T02:03:09.384Z] startTime=2026-07-13T02:03:09.384Z
+[2026-07-13T02:03:09.384Z] expectedRole=question_paper
+[2026-07-13T02:03:10.726Z] extract.exitCode=0
+[2026-07-13T02:03:10.726Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_13.pdf",
+  "pageCount": 12,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 24,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Victoria is building a website for her cake design business. (a) She uses the hexadecimal colour code #D2E3F5 as the background colour for her website. The colour code is stored in two 12‑bit binary registers. Show how the code would be stored in the registers. D2E 3F5 [6] (b) Victoria uses HTML to create her website. State what is meant by HTML. [1] (c) T"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) A computer can have both a MAC address and an IP address. Four statements are given about MAC addresses and IP addresses. ✓ Tick ( ) to show whether each statement is True or False . True False Statement ✓ ✓ ( ) ( ) A MAC address is unique to a computer on a network Once an IP address has been set it cannot be changed A MAC address is made up of the co"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A finance company is concerned that its employees are being distracted by using gaming websites at work. (a) Explain how a firewall could help prevent this distraction. [4] (b) The finance company is also worried about the security of the data stored on its servers. The company has decided to encrypt the data to improve the security. Describe how the data "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Consider the given logic circuit: A X B C (a) Redraw the logic circuit using only 4 logic gates. Each logic gate used must have a maximum of two inputs. A X B C [4] (b) Complete the truth table for the given logic circuit. A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [4] (c) Describe the purpose of a logic gate in a logic circuit. [2]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 The three binary numbers in the registers given have been transmitted from one computer to another. One binary number has been transmitted incorrectly. This can be identified by the use of a Parity bit . Identify the binary number that has been transmitted incorrectly . Explain how you identified the incorrect binary number. Parity bit Register A 1 0 1 1 1"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "6 A museum has an information point. Visitors to the museum can use the information point to plan their visit to the museum. The information point allows visitors to access the information using a resistive touch screen. Visitors can either listen to the information or read it on the screen. They can also select to output a paper copy of the information they"
+    }
+  ]
+}
+[2026-07-13T02:03:10.727Z] parserVersion=0.4.0
+[2026-07-13T02:03:10.727Z] documentRole=question_paper
+[2026-07-13T02:03:10.727Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:11.000Z] stage.exitCode=0
+[2026-07-13T02:03:11.000Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_13.staging.json",
+  "runId": "0478-2019-MJ-13-QP-RUN-435bc208d1fa",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 21,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:11.002Z] stagingId=0478-2019-MJ-13-QP-RUN-435bc208d1fa
+[2026-07-13T02:03:11.002Z] validationStatus=PASS
+[2026-07-13T02:03:11.002Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:11.002Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:11.002Z] canonicalPublishable=true
+[2026-07-13T02:03:11.002Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:11.002Z] endTime=2026-07-13T02:03:11.002Z
+[2026-07-13T02:03:11.002Z] status=PASS

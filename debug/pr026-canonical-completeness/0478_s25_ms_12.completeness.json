@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "publishable": true,
+  "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_ms_12.staging.json",
+  "documentRole": "mark_scheme",
+  "checks": {
+    "questionCoverage": "PASS",
+    "leafCoverage": "PASS",
+    "markCoverage": "PASS",
+    "responseAreaCoverage": "PASS",
+    "sourceTraceCoverage": "PASS",
+    "canonicalStructureCompleteness": "PASS"
+  },
+  "summary": {
+    "questionCount": 0,
+    "leafQuestionCount": 0,
+    "markSchemeEntryCount": 28,
+    "responseAreaCoverage": {
+      "required": 0,
+      "present": 0,
+      "ratio": 1
+    }
+  },
+  "issues": []
+}

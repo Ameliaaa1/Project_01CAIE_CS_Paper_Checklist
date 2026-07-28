@@ -1,0 +1,2343 @@
+{
+  "generatedAt": "2026-07-14T16:59:54.069Z",
+  "startedAt": "2026-07-14T16:58:41.812Z",
+  "completedAt": "2026-07-14T16:59:54.061Z",
+  "productionWrite": false,
+  "manifestPath": "docs/phase3-9618-manifests/phase3-batch-06.json",
+  "totalFiles": 22,
+  "successCount": 18,
+  "failedCount": 4,
+  "skippedCount": 0,
+  "failures": [
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+      "stage": "validation",
+      "message": "Staging validation produced P0 issues.",
+      "severity": "P0",
+      "suspectedRootCause": "STAGING_VALIDATION_P0",
+      "observed": {
+        "p0IssueCount": 1,
+        "countsByCode": {
+          "MARK_SUM_MISMATCH": 1
+        },
+        "examples": [
+          {
+            "code": "MARK_SUM_MISMATCH",
+            "message": "Parent marks do not equal leaf marks.",
+            "questionId": "9618-2024-ON-21-Q8",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_21.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "21",
+      "documentRole": "question_paper",
+      "errorCode": "MARK_SUM_MISMATCH",
+      "issue": "MARK_SUM_MISMATCH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+      "stage": "validation",
+      "message": "Staging validation status is FAIL.",
+      "severity": "P1",
+      "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+      "observed": {
+        "p0IssueCount": 1,
+        "countsByCode": {
+          "MARK_SUM_MISMATCH": 1
+        },
+        "examples": [
+          {
+            "code": "MARK_SUM_MISMATCH",
+            "message": "Parent marks do not equal leaf marks.",
+            "questionId": "9618-2024-ON-21-Q8",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_21.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "21",
+      "documentRole": "question_paper",
+      "errorCode": "MARK_SUM_MISMATCH",
+      "issue": "MARK_SUM_MISMATCH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+      "stage": "canonical_completeness",
+      "message": "Canonical completeness gate blocked the staging artifact.",
+      "severity": "P0",
+      "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED",
+      "observed": {
+        "status": "FAIL",
+        "issues": [
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-21-Q1-B-II",
+            "pageNumber": null
+          },
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-21-Q3-B",
+            "pageNumber": null
+          },
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-21-Q3-C",
+            "pageNumber": null
+          },
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-21-Q7-B",
+            "pageNumber": null
+          },
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-21-Q8-C",
+            "pageNumber": null
+          },
+          {
+            "severity": "P0",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Existing parent mark validation is not valid.",
+            "questionId": "9618-2024-ON-21-Q8",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_21.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "21",
+      "documentRole": "question_paper",
+      "errorCode": "CANONICAL_COMPLETENESS_GATE_FAILED",
+      "issue": "CANONICAL_COMPLETENESS_GATE_FAILED"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+      "stage": "publish_gate",
+      "message": "Publish status is BLOCKED.",
+      "severity": "P2",
+      "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+      "observed": null,
+      "filename": "9618_w24_qp_21.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "21",
+      "documentRole": "question_paper",
+      "errorCode": "STAGING_NOT_READY_TO_PUBLISH",
+      "issue": "STAGING_NOT_READY_TO_PUBLISH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+      "stage": "validation",
+      "message": "Staging validation produced P0 issues.",
+      "severity": "P0",
+      "suspectedRootCause": "STAGING_VALIDATION_P0",
+      "observed": {
+        "p0IssueCount": 1,
+        "countsByCode": {
+          "MARK_SUM_MISMATCH": 1
+        },
+        "examples": [
+          {
+            "code": "MARK_SUM_MISMATCH",
+            "message": "Parent marks do not equal leaf marks.",
+            "questionId": "9618-2024-ON-23-Q1",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_23.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "23",
+      "documentRole": "question_paper",
+      "errorCode": "MARK_SUM_MISMATCH",
+      "issue": "MARK_SUM_MISMATCH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+      "stage": "validation",
+      "message": "Staging validation status is FAIL.",
+      "severity": "P1",
+      "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+      "observed": {
+        "p0IssueCount": 1,
+        "countsByCode": {
+          "MARK_SUM_MISMATCH": 1
+        },
+        "examples": [
+          {
+            "code": "MARK_SUM_MISMATCH",
+            "message": "Parent marks do not equal leaf marks.",
+            "questionId": "9618-2024-ON-23-Q1",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_23.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "23",
+      "documentRole": "question_paper",
+      "errorCode": "MARK_SUM_MISMATCH",
+      "issue": "MARK_SUM_MISMATCH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+      "stage": "canonical_completeness",
+      "message": "Canonical completeness gate blocked the staging artifact.",
+      "severity": "P0",
+      "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED",
+      "observed": {
+        "status": "FAIL",
+        "issues": [
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-23-Q1-C",
+            "pageNumber": null
+          },
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-23-Q4-A",
+            "pageNumber": null
+          },
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-23-Q8-C",
+            "pageNumber": null
+          },
+          {
+            "severity": "P0",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Existing parent mark validation is not valid.",
+            "questionId": "9618-2024-ON-23-Q1",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_23.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "23",
+      "documentRole": "question_paper",
+      "errorCode": "CANONICAL_COMPLETENESS_GATE_FAILED",
+      "issue": "CANONICAL_COMPLETENESS_GATE_FAILED"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+      "stage": "publish_gate",
+      "message": "Publish status is BLOCKED.",
+      "severity": "P2",
+      "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+      "observed": null,
+      "filename": "9618_w24_qp_23.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "23",
+      "documentRole": "question_paper",
+      "errorCode": "STAGING_NOT_READY_TO_PUBLISH",
+      "issue": "STAGING_NOT_READY_TO_PUBLISH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+      "stage": "validation",
+      "message": "Staging validation produced P0 issues.",
+      "severity": "P0",
+      "suspectedRootCause": "STAGING_VALIDATION_P0",
+      "observed": {
+        "p0IssueCount": 1,
+        "countsByCode": {
+          "MARK_SUM_MISMATCH": 1
+        },
+        "examples": [
+          {
+            "code": "MARK_SUM_MISMATCH",
+            "message": "Parent marks do not equal leaf marks.",
+            "questionId": "9618-2024-ON-31-Q7",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_31.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "31",
+      "documentRole": "question_paper",
+      "errorCode": "MARK_SUM_MISMATCH",
+      "issue": "MARK_SUM_MISMATCH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+      "stage": "validation",
+      "message": "Staging validation status is FAIL.",
+      "severity": "P1",
+      "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+      "observed": {
+        "p0IssueCount": 1,
+        "countsByCode": {
+          "MARK_SUM_MISMATCH": 1
+        },
+        "examples": [
+          {
+            "code": "MARK_SUM_MISMATCH",
+            "message": "Parent marks do not equal leaf marks.",
+            "questionId": "9618-2024-ON-31-Q7",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_31.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "31",
+      "documentRole": "question_paper",
+      "errorCode": "MARK_SUM_MISMATCH",
+      "issue": "MARK_SUM_MISMATCH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+      "stage": "canonical_completeness",
+      "message": "Canonical completeness gate blocked the staging artifact.",
+      "severity": "P0",
+      "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED",
+      "observed": {
+        "status": "FAIL",
+        "issues": [
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-31-Q7-C-II",
+            "pageNumber": null
+          },
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-31-Q11-B",
+            "pageNumber": null
+          },
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-31-Q11-C",
+            "pageNumber": null
+          },
+          {
+            "severity": "P0",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Existing parent mark validation is not valid.",
+            "questionId": "9618-2024-ON-31-Q7",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_31.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "31",
+      "documentRole": "question_paper",
+      "errorCode": "CANONICAL_COMPLETENESS_GATE_FAILED",
+      "issue": "CANONICAL_COMPLETENESS_GATE_FAILED"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+      "stage": "publish_gate",
+      "message": "Publish status is BLOCKED.",
+      "severity": "P2",
+      "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+      "observed": null,
+      "filename": "9618_w24_qp_31.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "31",
+      "documentRole": "question_paper",
+      "errorCode": "STAGING_NOT_READY_TO_PUBLISH",
+      "issue": "STAGING_NOT_READY_TO_PUBLISH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+      "stage": "validation",
+      "message": "Staging validation produced P0 issues.",
+      "severity": "P0",
+      "suspectedRootCause": "STAGING_VALIDATION_P0",
+      "observed": {
+        "p0IssueCount": 1,
+        "countsByCode": {
+          "MARK_SUM_MISMATCH": 1
+        },
+        "examples": [
+          {
+            "code": "MARK_SUM_MISMATCH",
+            "message": "Parent marks do not equal leaf marks.",
+            "questionId": "9618-2024-ON-33-Q7",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_33.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "33",
+      "documentRole": "question_paper",
+      "errorCode": "MARK_SUM_MISMATCH",
+      "issue": "MARK_SUM_MISMATCH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+      "stage": "validation",
+      "message": "Staging validation status is FAIL.",
+      "severity": "P1",
+      "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+      "observed": {
+        "p0IssueCount": 1,
+        "countsByCode": {
+          "MARK_SUM_MISMATCH": 1
+        },
+        "examples": [
+          {
+            "code": "MARK_SUM_MISMATCH",
+            "message": "Parent marks do not equal leaf marks.",
+            "questionId": "9618-2024-ON-33-Q7",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_33.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "33",
+      "documentRole": "question_paper",
+      "errorCode": "MARK_SUM_MISMATCH",
+      "issue": "MARK_SUM_MISMATCH"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+      "stage": "canonical_completeness",
+      "message": "Canonical completeness gate blocked the staging artifact.",
+      "severity": "P0",
+      "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED",
+      "observed": {
+        "status": "FAIL",
+        "issues": [
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-33-Q7-C-II",
+            "pageNumber": null
+          },
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-33-Q11-B",
+            "pageNumber": null
+          },
+          {
+            "severity": "P3",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+            "questionId": "9618-2024-ON-33-Q11-C",
+            "pageNumber": null
+          },
+          {
+            "severity": "P0",
+            "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+            "check": "markCoverage",
+            "message": "Existing parent mark validation is not valid.",
+            "questionId": "9618-2024-ON-33-Q7",
+            "pageNumber": null
+          }
+        ]
+      },
+      "filename": "9618_w24_qp_33.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "33",
+      "documentRole": "question_paper",
+      "errorCode": "CANONICAL_COMPLETENESS_GATE_FAILED",
+      "issue": "CANONICAL_COMPLETENESS_GATE_FAILED"
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+      "stage": "publish_gate",
+      "message": "Publish status is BLOCKED.",
+      "severity": "P2",
+      "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+      "observed": null,
+      "filename": "9618_w24_qp_33.pdf",
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "33",
+      "documentRole": "question_paper",
+      "errorCode": "STAGING_NOT_READY_TO_PUBLISH",
+      "issue": "STAGING_NOT_READY_TO_PUBLISH"
+    }
+  ],
+  "results": [
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_11.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-11",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:58:41.814Z",
+      "endTime": "2026-07-14T16:58:44.937Z",
+      "samplePath": "output/ingestion-samples/9618_w24_qp_11.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_qp_11.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_qp_11.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2024-ON-11-QP-RUN-94d1aed5bc14",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 8,
+        "leafQuestionCount": 32,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "11",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_11.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-11",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:58:44.938Z",
+      "endTime": "2026-07-14T16:58:46.922Z",
+      "samplePath": "output/ingestion-samples/9618_w24_ms_11.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_ms_11.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_ms_11.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2024-ON-11-MS-RUN-e9674e802b5b",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 9,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 33,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "11",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_13.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-13",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:58:46.923Z",
+      "endTime": "2026-07-14T16:58:50.279Z",
+      "samplePath": "output/ingestion-samples/9618_w24_qp_13.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_qp_13.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_qp_13.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2024-ON-13-QP-RUN-1633471ff692",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 20,
+        "questionCount": 9,
+        "leafQuestionCount": 30,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "13",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_13.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-13",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:58:50.279Z",
+      "endTime": "2026-07-14T16:58:52.313Z",
+      "samplePath": "output/ingestion-samples/9618_w24_ms_13.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_ms_13.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_ms_13.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2024-ON-13-MS-RUN-d3ee5286285e",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 9,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 30,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "13",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-21",
+      "status": "FAIL",
+      "startTime": "2026-07-14T16:58:52.313Z",
+      "endTime": "2026-07-14T16:58:55.650Z",
+      "samplePath": "output/ingestion-samples/9618_w24_qp_21.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_qp_21.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_qp_21.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2024-ON-21-QP-RUN-75d0f339acc8",
+      "validationStatus": "FAIL",
+      "canonicalCompletenessStatus": "FAIL",
+      "canonicalPublishable": false,
+      "publishStatus": "BLOCKED",
+      "issueCounts": {
+        "P0": 1,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 20,
+        "questionCount": 8,
+        "leafQuestionCount": 27,
+        "markSchemeEntryCount": 0,
+        "issueCount": 1
+      },
+      "failures": [
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+          "stage": "validation",
+          "message": "Staging validation produced P0 issues.",
+          "severity": "P0",
+          "suspectedRootCause": "STAGING_VALIDATION_P0",
+          "observed": {
+            "p0IssueCount": 1,
+            "countsByCode": {
+              "MARK_SUM_MISMATCH": 1
+            },
+            "examples": [
+              {
+                "code": "MARK_SUM_MISMATCH",
+                "message": "Parent marks do not equal leaf marks.",
+                "questionId": "9618-2024-ON-21-Q8",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+          "stage": "validation",
+          "message": "Staging validation status is FAIL.",
+          "severity": "P1",
+          "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+          "observed": {
+            "p0IssueCount": 1,
+            "countsByCode": {
+              "MARK_SUM_MISMATCH": 1
+            },
+            "examples": [
+              {
+                "code": "MARK_SUM_MISMATCH",
+                "message": "Parent marks do not equal leaf marks.",
+                "questionId": "9618-2024-ON-21-Q8",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+          "stage": "canonical_completeness",
+          "message": "Canonical completeness gate blocked the staging artifact.",
+          "severity": "P0",
+          "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED",
+          "observed": {
+            "status": "FAIL",
+            "issues": [
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-21-Q1-B-II",
+                "pageNumber": null
+              },
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-21-Q3-B",
+                "pageNumber": null
+              },
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-21-Q3-C",
+                "pageNumber": null
+              },
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-21-Q7-B",
+                "pageNumber": null
+              },
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-21-Q8-C",
+                "pageNumber": null
+              },
+              {
+                "severity": "P0",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Existing parent mark validation is not valid.",
+                "questionId": "9618-2024-ON-21-Q8",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+          "stage": "publish_gate",
+          "message": "Publish status is BLOCKED.",
+          "severity": "P2",
+          "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+          "observed": null
+        }
+      ],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "21",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_21.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-21",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:58:55.650Z",
+      "endTime": "2026-07-14T16:58:58.299Z",
+      "samplePath": "output/ingestion-samples/9618_w24_ms_21.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_ms_21.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_ms_21.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2024-ON-21-MS-RUN-0c1ea5a48c24",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 13,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 22,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "21",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_22.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-22",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:58:58.299Z",
+      "endTime": "2026-07-14T16:59:02.588Z",
+      "samplePath": "output/ingestion-samples/9618_w24_qp_22.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_qp_22.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_qp_22.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2024-ON-22-QP-RUN-23df306798f6",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 24,
+        "questionCount": 8,
+        "leafQuestionCount": 26,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "22",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_22.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-22",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:02.588Z",
+      "endTime": "2026-07-14T16:59:05.230Z",
+      "samplePath": "output/ingestion-samples/9618_w24_ms_22.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_ms_22.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_ms_22.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2024-ON-22-MS-RUN-ae619e0388fc",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 25,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "22",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-23",
+      "status": "FAIL",
+      "startTime": "2026-07-14T16:59:05.230Z",
+      "endTime": "2026-07-14T16:59:08.605Z",
+      "samplePath": "output/ingestion-samples/9618_w24_qp_23.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_qp_23.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_qp_23.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2024-ON-23-QP-RUN-43a2a12ba004",
+      "validationStatus": "FAIL",
+      "canonicalCompletenessStatus": "FAIL",
+      "canonicalPublishable": false,
+      "publishStatus": "BLOCKED",
+      "issueCounts": {
+        "P0": 1,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 20,
+        "questionCount": 8,
+        "leafQuestionCount": 21,
+        "markSchemeEntryCount": 0,
+        "issueCount": 1
+      },
+      "failures": [
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+          "stage": "validation",
+          "message": "Staging validation produced P0 issues.",
+          "severity": "P0",
+          "suspectedRootCause": "STAGING_VALIDATION_P0",
+          "observed": {
+            "p0IssueCount": 1,
+            "countsByCode": {
+              "MARK_SUM_MISMATCH": 1
+            },
+            "examples": [
+              {
+                "code": "MARK_SUM_MISMATCH",
+                "message": "Parent marks do not equal leaf marks.",
+                "questionId": "9618-2024-ON-23-Q1",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+          "stage": "validation",
+          "message": "Staging validation status is FAIL.",
+          "severity": "P1",
+          "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+          "observed": {
+            "p0IssueCount": 1,
+            "countsByCode": {
+              "MARK_SUM_MISMATCH": 1
+            },
+            "examples": [
+              {
+                "code": "MARK_SUM_MISMATCH",
+                "message": "Parent marks do not equal leaf marks.",
+                "questionId": "9618-2024-ON-23-Q1",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+          "stage": "canonical_completeness",
+          "message": "Canonical completeness gate blocked the staging artifact.",
+          "severity": "P0",
+          "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED",
+          "observed": {
+            "status": "FAIL",
+            "issues": [
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-23-Q1-C",
+                "pageNumber": null
+              },
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-23-Q4-A",
+                "pageNumber": null
+              },
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-23-Q8-C",
+                "pageNumber": null
+              },
+              {
+                "severity": "P0",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Existing parent mark validation is not valid.",
+                "questionId": "9618-2024-ON-23-Q1",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+          "stage": "publish_gate",
+          "message": "Publish status is BLOCKED.",
+          "severity": "P2",
+          "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+          "observed": null
+        }
+      ],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "23",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_23.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-23",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:08.605Z",
+      "endTime": "2026-07-14T16:59:11.332Z",
+      "samplePath": "output/ingestion-samples/9618_w24_ms_23.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_ms_23.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_ms_23.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2024-ON-23-MS-RUN-40a5ba8794ae",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 14,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 22,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "23",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-31",
+      "status": "FAIL",
+      "startTime": "2026-07-14T16:59:11.332Z",
+      "endTime": "2026-07-14T16:59:14.290Z",
+      "samplePath": "output/ingestion-samples/9618_w24_qp_31.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_qp_31.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_qp_31.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2024-ON-31-QP-RUN-2679dc897568",
+      "validationStatus": "FAIL",
+      "canonicalCompletenessStatus": "FAIL",
+      "canonicalPublishable": false,
+      "publishStatus": "BLOCKED",
+      "issueCounts": {
+        "P0": 1,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 11,
+        "leafQuestionCount": 29,
+        "markSchemeEntryCount": 0,
+        "issueCount": 1
+      },
+      "failures": [
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+          "stage": "validation",
+          "message": "Staging validation produced P0 issues.",
+          "severity": "P0",
+          "suspectedRootCause": "STAGING_VALIDATION_P0",
+          "observed": {
+            "p0IssueCount": 1,
+            "countsByCode": {
+              "MARK_SUM_MISMATCH": 1
+            },
+            "examples": [
+              {
+                "code": "MARK_SUM_MISMATCH",
+                "message": "Parent marks do not equal leaf marks.",
+                "questionId": "9618-2024-ON-31-Q7",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+          "stage": "validation",
+          "message": "Staging validation status is FAIL.",
+          "severity": "P1",
+          "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+          "observed": {
+            "p0IssueCount": 1,
+            "countsByCode": {
+              "MARK_SUM_MISMATCH": 1
+            },
+            "examples": [
+              {
+                "code": "MARK_SUM_MISMATCH",
+                "message": "Parent marks do not equal leaf marks.",
+                "questionId": "9618-2024-ON-31-Q7",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+          "stage": "canonical_completeness",
+          "message": "Canonical completeness gate blocked the staging artifact.",
+          "severity": "P0",
+          "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED",
+          "observed": {
+            "status": "FAIL",
+            "issues": [
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-31-Q7-C-II",
+                "pageNumber": null
+              },
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-31-Q11-B",
+                "pageNumber": null
+              },
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-31-Q11-C",
+                "pageNumber": null
+              },
+              {
+                "severity": "P0",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Existing parent mark validation is not valid.",
+                "questionId": "9618-2024-ON-31-Q7",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+          "stage": "publish_gate",
+          "message": "Publish status is BLOCKED.",
+          "severity": "P2",
+          "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+          "observed": null
+        }
+      ],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "31",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_31.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-31",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:14.291Z",
+      "endTime": "2026-07-14T16:59:17.280Z",
+      "samplePath": "output/ingestion-samples/9618_w24_ms_31.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_ms_31.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_ms_31.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2024-ON-31-MS-RUN-ce0106f1b96b",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 17,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 26,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "31",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_32.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-32",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:17.281Z",
+      "endTime": "2026-07-14T16:59:20.146Z",
+      "samplePath": "output/ingestion-samples/9618_w24_qp_32.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_qp_32.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_qp_32.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2024-ON-32-QP-RUN-94438657867c",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 11,
+        "leafQuestionCount": 31,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "32",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_32.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-32",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:20.146Z",
+      "endTime": "2026-07-14T16:59:22.655Z",
+      "samplePath": "output/ingestion-samples/9618_w24_ms_32.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_ms_32.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_ms_32.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2024-ON-32-MS-RUN-5cda9c53cbe5",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 15,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 29,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "32",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-33",
+      "status": "FAIL",
+      "startTime": "2026-07-14T16:59:22.655Z",
+      "endTime": "2026-07-14T16:59:25.598Z",
+      "samplePath": "output/ingestion-samples/9618_w24_qp_33.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_qp_33.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_qp_33.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2024-ON-33-QP-RUN-21da638061df",
+      "validationStatus": "FAIL",
+      "canonicalCompletenessStatus": "FAIL",
+      "canonicalPublishable": false,
+      "publishStatus": "BLOCKED",
+      "issueCounts": {
+        "P0": 1,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 11,
+        "leafQuestionCount": 29,
+        "markSchemeEntryCount": 0,
+        "issueCount": 1
+      },
+      "failures": [
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+          "stage": "validation",
+          "message": "Staging validation produced P0 issues.",
+          "severity": "P0",
+          "suspectedRootCause": "STAGING_VALIDATION_P0",
+          "observed": {
+            "p0IssueCount": 1,
+            "countsByCode": {
+              "MARK_SUM_MISMATCH": 1
+            },
+            "examples": [
+              {
+                "code": "MARK_SUM_MISMATCH",
+                "message": "Parent marks do not equal leaf marks.",
+                "questionId": "9618-2024-ON-33-Q7",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+          "stage": "validation",
+          "message": "Staging validation status is FAIL.",
+          "severity": "P1",
+          "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS",
+          "observed": {
+            "p0IssueCount": 1,
+            "countsByCode": {
+              "MARK_SUM_MISMATCH": 1
+            },
+            "examples": [
+              {
+                "code": "MARK_SUM_MISMATCH",
+                "message": "Parent marks do not equal leaf marks.",
+                "questionId": "9618-2024-ON-33-Q7",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+          "stage": "canonical_completeness",
+          "message": "Canonical completeness gate blocked the staging artifact.",
+          "severity": "P0",
+          "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED",
+          "observed": {
+            "status": "FAIL",
+            "issues": [
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-33-Q7-C-II",
+                "pageNumber": null
+              },
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-33-Q11-B",
+                "pageNumber": null
+              },
+              {
+                "severity": "P3",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+                "questionId": "9618-2024-ON-33-Q11-C",
+                "pageNumber": null
+              },
+              {
+                "severity": "P0",
+                "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+                "check": "markCoverage",
+                "message": "Existing parent mark validation is not valid.",
+                "questionId": "9618-2024-ON-33-Q7",
+                "pageNumber": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+          "stage": "publish_gate",
+          "message": "Publish status is BLOCKED.",
+          "severity": "P2",
+          "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH",
+          "observed": null
+        }
+      ],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "33",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_33.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-33",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:25.599Z",
+      "endTime": "2026-07-14T16:59:28.863Z",
+      "samplePath": "output/ingestion-samples/9618_w24_ms_33.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_ms_33.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_ms_33.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2024-ON-33-MS-RUN-c12c17cabb62",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 17,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 26,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "33",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_41.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-41",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:28.864Z",
+      "endTime": "2026-07-14T16:59:31.905Z",
+      "samplePath": "output/ingestion-samples/9618_w24_qp_41.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_qp_41.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_qp_41.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2024-ON-41-QP-RUN-2c91c43abd65",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 3,
+        "leafQuestionCount": 26,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "41",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_41.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-41",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:31.905Z",
+      "endTime": "2026-07-14T16:59:37.186Z",
+      "samplePath": "output/ingestion-samples/9618_w24_ms_41.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_ms_41.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_ms_41.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2024-ON-41-MS-RUN-efa60c884ce1",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 37,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 47,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "41",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_42.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-42",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:37.186Z",
+      "endTime": "2026-07-14T16:59:40.214Z",
+      "samplePath": "output/ingestion-samples/9618_w24_qp_42.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_qp_42.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_qp_42.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2024-ON-42-QP-RUN-714d785ed067",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 3,
+        "leafQuestionCount": 24,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "42",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_42.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-42",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:40.214Z",
+      "endTime": "2026-07-14T16:59:45.650Z",
+      "samplePath": "output/ingestion-samples/9618_w24_ms_42.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_ms_42.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_ms_42.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2024-ON-42-MS-RUN-f0048b6d4675",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 39,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 51,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "42",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_43.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-43",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:45.650Z",
+      "endTime": "2026-07-14T16:59:48.636Z",
+      "samplePath": "output/ingestion-samples/9618_w24_qp_43.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_qp_43.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_qp_43.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2024-ON-43-QP-RUN-fed8c938aee2",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 3,
+        "leafQuestionCount": 26,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "43",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_43.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 3 missing staging generation for 9618-2024-ON-43",
+      "status": "PASS",
+      "startTime": "2026-07-14T16:59:48.637Z",
+      "endTime": "2026-07-14T16:59:54.061Z",
+      "samplePath": "output/ingestion-samples/9618_w24_ms_43.sample.json",
+      "stagingPath": "output/phase2/staging/9618_w24_ms_43.staging.json",
+      "logPath": "logs/phase3-9618/batch-06/9618_w24_ms_43.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2024-ON-43-MS-RUN-6b537ad93498",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 37,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 47,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2024,
+      "session": "Oct-Nov",
+      "component": "43",
+      "phase1Regression": false
+    }
+  ],
+  "phase": "Phase 2",
+  "groupStats": {
+    "bySyllabus": {
+      "9618": {
+        "total": 22,
+        "success": 18,
+        "failed": 4,
+        "skipped": 0
+      }
+    },
+    "byYear": {
+      "2024": {
+        "total": 22,
+        "success": 18,
+        "failed": 4,
+        "skipped": 0
+      }
+    },
+    "bySession": {
+      "Oct-Nov": {
+        "total": 22,
+        "success": 18,
+        "failed": 4,
+        "skipped": 0
+      }
+    },
+    "byDocumentRole": {
+      "question_paper": {
+        "total": 11,
+        "success": 7,
+        "failed": 4,
+        "skipped": 0
+      },
+      "mark_scheme": {
+        "total": 11,
+        "success": 11,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "byComponent": {
+      "11": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "13": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "21": {
+        "total": 2,
+        "success": 1,
+        "failed": 1,
+        "skipped": 0
+      },
+      "22": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "23": {
+        "total": 2,
+        "success": 1,
+        "failed": 1,
+        "skipped": 0
+      },
+      "31": {
+        "total": 2,
+        "success": 1,
+        "failed": 1,
+        "skipped": 0
+      },
+      "32": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "33": {
+        "total": 2,
+        "success": 1,
+        "failed": 1,
+        "skipped": 0
+      },
+      "41": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "42": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "43": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      }
+    }
+  },
+  "phase2Analysis": {
+    "successRate": 0.8182,
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "textQualityRegressions": [],
+    "failureCategories": {
+      "MARK_SUM_MISMATCH": {
+        "count": 8,
+        "severity": "P0",
+        "examples": [
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_P0"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_P0"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_P0"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_P0"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "validation",
+            "suspectedRootCause": "STAGING_VALIDATION_NOT_PASS"
+          }
+        ]
+      },
+      "CANONICAL_COMPLETENESS_GATE_FAILED": {
+        "count": 4,
+        "severity": "P0",
+        "examples": [
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "canonical_completeness",
+            "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "canonical_completeness",
+            "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "canonical_completeness",
+            "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "canonical_completeness",
+            "suspectedRootCause": "CANONICAL_COMPLETENESS_GATE_FAILED"
+          }
+        ]
+      },
+      "STAGING_NOT_READY_TO_PUBLISH": {
+        "count": 4,
+        "severity": "P2",
+        "examples": [
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "publish_gate",
+            "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "publish_gate",
+            "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "publish_gate",
+            "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH"
+          },
+          {
+            "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+            "syllabus": "9618",
+            "documentRole": "question_paper",
+            "stage": "publish_gate",
+            "suspectedRootCause": "STAGING_NOT_READY_TO_PUBLISH"
+          }
+        ]
+      }
+    },
+    "datasetGaps": [],
+    "recommendedFuturePRs": [
+      {
+        "title": "Investigate MARK_SUM_MISMATCH",
+        "priority": "high",
+        "evidenceCount": 8,
+        "scope": "Create a targeted parser/staging PR only after reviewing affected debug logs and staging JSON."
+      },
+      {
+        "title": "Investigate CANONICAL_COMPLETENESS_GATE_FAILED",
+        "priority": "high",
+        "evidenceCount": 4,
+        "scope": "Create a targeted parser/staging PR only after reviewing affected debug logs and staging JSON."
+      },
+      {
+        "title": "Investigate STAGING_NOT_READY_TO_PUBLISH",
+        "priority": "medium",
+        "evidenceCount": 4,
+        "scope": "Create a targeted parser/staging PR only after reviewing affected debug logs and staging JSON."
+      }
+    ]
+  }
+}

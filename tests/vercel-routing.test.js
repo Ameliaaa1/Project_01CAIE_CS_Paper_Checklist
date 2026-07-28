@@ -15,8 +15,10 @@ for (const pathname of [
   "auth.js",
   "auth.css",
   "assets/paperlens-data.js",
+  "assets/question-index.json",
   "assets/study-workspace.png",
-  "textbook_syllabus/pastpaper/2025-March/0478_m25_qp_12.pdf",
+  "textbook_syllabus/pastpaper/caie-igcse-0478/2025-March/0478_m25_qp_12.pdf",
+  "textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_11.pdf",
   "index.html",
   "checkout.html"
 ]) {

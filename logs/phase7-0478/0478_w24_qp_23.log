@@ -1,0 +1,256 @@
+[2026-07-15T03:54:18.389Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_23.pdf
+[2026-07-15T03:54:18.389Z] startTime=2026-07-15T03:54:18.389Z
+[2026-07-15T03:54:18.389Z] expectedRole=question_paper
+[2026-07-15T03:54:20.311Z] extract.exitCode=0
+[2026-07-15T03:54:20.311Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_23.pdf",
+  "pageCount": 16,
+  "questionCount": 12,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "1 Tick (✓) one box to show which of the following is used to validate data on input. A checksum B double entry check C type check D visual check [1]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 Tick (✓) one box to show a method used to construct a solution to a problem. A abstraction B structure diagram C test data D variable [1]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Four logic gates and five logic gate symbols are shown. Draw one line to link each logic gate to its correct symbol. Not all logic gate symbols will be used. Logic gate symbol Logic gate AND NAND NOR XOR [4]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Complete the paragraph about databases. Use terms from the list. You may need to use a term more than once. Some of the terms in the list will not be used. fields comments columns constant key table primary key program records rows scripts database validation variable Database tables consist of and . Rows are . are fields. Structured query language (SQL) a"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 One stage of the program development life cycle is the analysis stage. Identify and describe two other stages of the program development life cycle. Stage Description Stage Description [6]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 An incomplete algorithm has been written in pseudocode to count the number of values stored in an array and to find their average. Values have been stored in the array starting at A[1] All the values to be counted are non-zero. A value of zero in the array indicates there are no more values stored. 01 DECLARE A : ARRAY[1:50] OF INTEGER 02 DECLARE C : INTEG"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A programmer is testing a program that requires a positive value between 1 and 100 inclusive to be entered. The range check in the program is to be tested. Identify three different types of test data to be used. For each type of test data, give an example of the value(s) to be used and the expected outcome. Type 1 Example Outcome Type 2 Example Outcome Typ"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 A logic circuit is to be built to control the automatic opening of a window. The window W opens if the temperature T is too high, the heater H is off, and the air conditioning A is off. air conditioning off 0 air conditioning A air conditioning on 1 not too high 0 temperature T too high 1 heater off 0 heater H heater on 1 window closed 0 window W window op"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "9 A flowchart checks that values stored in three variables are identical. If they are different, the highest value is stored in all three variables. START No Is A = B AND STOP B = C ? Yes Yes Is A >= B OR B A A >= C ? C A No Yes Is B >= A AND A B B >= C ? C B No A C B C Identify four errors in the flowchart and suggest a correction for each error. You may la"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 An algorithm has been written in pseudocode to check that a password meets a set of rules. 01 OUTPUT \"Please enter password \" 02 INPUT Password TRUE 03 Accept 04 IF LENGTH(Password) < 8 OR LENGTH(Password) > 20 05 THEN FALSE 06 Accept 07 ENDIF 08 IF LCASE(Password) = Password OR UCASE(Password) = Password 09 THEN FALSE 10 Accept 11 ENDIF 1 12 Index FALSE "
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "11 Building materials are sold in bags. A new database table called BuildStock has been set up to store details about the materials for sale. Part of this table is given. MtNo Name InStock WeightKg PricePerBag NumberBags MT01 Builders sand Yes 50 4.50 50 MT02 Sharp sand Yes 25 3.50 21 MT03 Red sand No 50 2.75 0 MT04 Cement No 25 6.85 0 MT05 Chippings Yes 50 "
+    },
+    {
+      "questionNumber": "12",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "12 Members of a litter picking group complete a litter pick every month. Members’ names are stored in one-dimensional (1D) array PickerName[] Each member stores the weight of the litter they have picked in another one-dimensional (1D) array PickedWeight[] The weights are in kilograms with one decimal place, for example 8.4 The position of each member’s data "
+    }
+  ]
+}
+[2026-07-15T03:54:20.314Z] parserVersion=0.4.0
+[2026-07-15T03:54:20.314Z] documentRole=question_paper
+[2026-07-15T03:54:20.314Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:20.634Z] stage.exitCode=0
+[2026-07-15T03:54:20.634Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_23.staging.json",
+  "runId": "0478-2024-ON-23-QP-RUN-e6ae88c92c3f",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 12,
+      "leafQuestionCount": 17,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 17,
+        "present": 17,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:54:20.636Z] stagingId=0478-2024-ON-23-QP-RUN-e6ae88c92c3f
+[2026-07-15T03:54:20.636Z] validationStatus=PASS
+[2026-07-15T03:54:20.636Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:54:20.636Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:20.636Z] canonicalPublishable=true
+[2026-07-15T03:54:20.636Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:54:20.636Z] endTime=2026-07-15T03:54:20.636Z
+[2026-07-15T03:54:20.636Z] status=PASS

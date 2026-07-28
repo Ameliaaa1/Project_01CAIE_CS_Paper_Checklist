@@ -1,0 +1,160 @@
+[2026-07-13T02:03:17.338Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_23.pdf
+[2026-07-13T02:03:17.338Z] startTime=2026-07-13T02:03:17.338Z
+[2026-07-13T02:03:17.338Z] expectedRole=question_paper
+[2026-07-13T02:03:19.108Z] extract.exitCode=0
+[2026-07-13T02:03:19.108Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_23.pdf",
+  "pageCount": 16,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) All variables, constants and other identifiers must have meaningful names. Describe the data structures you have used in Task 1 to record the items available that day. Include some sample data for each data structure you have described. [5] (b) Explain how your program for Task 1 ensures all the item codes are different. [2] (c) Explain how your progra"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) An algorithm has been written in pseudocode to input the weight of 500 items and reject any that are over-weight or under-weight, then print the percentage rejected. 1 Count 0 Reject 62 Over 58 Under REPEAT INPUT ItemWeight IF ItemWeight > Over AND ItemWeight < Under THEN Reject - 1 Reject ENDIF Count + 1 Count UNTIL Count > = 500 Reject / 100 Reject P"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 This flowchart inputs the tread depth of five tyres, four on the car and a spare tyre. Any tread depth of 1.6 mm or less is rejected. To be potentially roadworthy, a car must have four tyres with a tread depth greater than 1.6 mm. START TreadReject 0 Count 1 Is Yes Count = 6? Count Count + 1 No Is No INPUT Depth TreadReject <= 1? Yes OUTPUT \"Car is not roa"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 For each of the four checks in the table, place a tick in the correct column to show whether it is an example of a validation or verification check. Statements Validation Verification Range check Double entry Check digit Presence check [4]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Identify and describe three loop structures that are available in pseudocode. Loop structure 1 Description Loop structure 2 Description Loop structure 3 Description [6] Question 6 begins on page 14."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "6 A database table, TRAIN, is used to keep a record of train departures from a station. Train Number Platform Destination Departure Time Status 1A37 1 Newtown 08:00 On time 2X19 2 Anytown 08:10 Late 1A29 1 Bigcity 08:15 On time 1A28 2 Anytown 08:30 Cancelled 1A67 3 Gardenvillage 08:45 On time 1A37 1 Newtown 08:50 On time 1A24 2 Charter Train 09:00 Late 1A67 "
+    }
+  ]
+}
+[2026-07-13T02:03:19.109Z] parserVersion=0.4.0
+[2026-07-13T02:03:19.109Z] documentRole=question_paper
+[2026-07-13T02:03:19.109Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:19.396Z] stage.exitCode=0
+[2026-07-13T02:03:19.396Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_23.staging.json",
+  "runId": "0478-2019-MJ-23-QP-RUN-c3e51c431401",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 12,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 12,
+        "present": 12,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:19.398Z] stagingId=0478-2019-MJ-23-QP-RUN-c3e51c431401
+[2026-07-13T02:03:19.398Z] validationStatus=PASS
+[2026-07-13T02:03:19.398Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:19.398Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:19.398Z] canonicalPublishable=true
+[2026-07-13T02:03:19.398Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:19.398Z] endTime=2026-07-13T02:03:19.398Z
+[2026-07-13T02:03:19.398Z] status=PASS

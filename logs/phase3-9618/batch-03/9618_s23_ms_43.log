@@ -1,0 +1,69 @@
+[2026-07-14T16:54:16.590Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_ms_43.pdf
+[2026-07-14T16:54:16.590Z] startTime=2026-07-14T16:54:16.590Z
+[2026-07-14T16:54:16.590Z] expectedRole=mark_scheme
+[2026-07-14T16:54:21.116Z] extract.exitCode=0
+[2026-07-14T16:54:21.116Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_ms_43.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_ms_43.pdf",
+  "pageCount": 38,
+  "questionCount": 0,
+  "questions": []
+}
+[2026-07-14T16:54:21.119Z] parserVersion=0.4.0
+[2026-07-14T16:54:21.119Z] documentRole=mark_scheme
+[2026-07-14T16:54:21.119Z] validationProfile=MARK_SCHEME
+[2026-07-14T16:54:21.503Z] stage.exitCode=0
+[2026-07-14T16:54:21.503Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_ms_43.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_ms_43.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_ms_43.staging.json",
+  "runId": "9618-2023-MJ-43-MS-RUN-31d11e334df2",
+  "status": "NEEDS_REVIEW",
+  "publishStatus": "BLOCKED",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_ms_43.staging.json",
+    "documentRole": "mark_scheme",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 0,
+      "leafQuestionCount": 0,
+      "markSchemeEntryCount": 23,
+      "responseAreaCoverage": {
+        "required": 0,
+        "present": 0,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 1,
+  "p1": 0,
+  "p2": 0,
+  "issues": [
+    [
+      "P0",
+      "BARCODE_TEXT_PRESENT",
+      null
+    ]
+  ]
+}
+[2026-07-14T16:54:21.506Z] stagingId=9618-2023-MJ-43-MS-RUN-31d11e334df2
+[2026-07-14T16:54:21.506Z] validationStatus=FAIL
+[2026-07-14T16:54:21.506Z] publishStatus=BLOCKED
+[2026-07-14T16:54:21.506Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:54:21.506Z] canonicalPublishable=true
+[2026-07-14T16:54:21.506Z] issueCounts={"P0":1,"P1":0,"P2":0}
+[2026-07-14T16:54:21.506Z] endTime=2026-07-14T16:54:21.506Z
+[2026-07-14T16:54:21.506Z] status=FAIL

@@ -1,0 +1,112 @@
+[2026-07-13T02:02:55.214Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_42.pdf
+[2026-07-13T02:02:55.214Z] startTime=2026-07-13T02:02:55.214Z
+[2026-07-13T02:02:55.214Z] expectedRole=question_paper
+[2026-07-13T02:02:56.505Z] extract.exitCode=0
+[2026-07-13T02:02:56.505Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_42.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_42.pdf",
+  "pageCount": 12,
+  "questionCount": 3,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 6,
+      "marks": 28,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The class stores the data about the birds: Bird Bird stores the number of kilometres per hour (km/h) the bird DistancePerHour : Real can fly (between 0.0 and 100.0 inclusive) stores the species of the bird, for example Pigeon Species : String stores the current horizontal position of the bird XPosition : Real stores the current vertical position of the bir"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 6,
+      "pageEnd": 10,
+      "marks": 26,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 local to the main program. Write program code to declare the array local to the main program and store 20 (a) unique random numbers between 0 and 100 (inclusive) in the array. Save your program as . Question2_N25 Copy and paste the program code into part in the evidence document. 2(a) [3] The procedure takes an integer array as a parameter. The procedure o"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 21,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "3 as a 2D array. Each node is stored with three values: a pointer to the left node • the data • a pointer to the right node. • All null values are stored as –1 The binary tree can store up to 50 nodes. Nodes cannot be deleted from the binary tree. The binary tree is stored as a global array with the identifier . The left pointer, the (a) TreeArray data and t"
+    }
+  ]
+}
+[2026-07-13T02:02:56.506Z] parserVersion=0.4.0
+[2026-07-13T02:02:56.506Z] documentRole=question_paper
+[2026-07-13T02:02:56.506Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:02:56.769Z] stage.exitCode=0
+[2026-07-13T02:02:56.769Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_42.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_42.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_42.staging.json",
+  "runId": "9618-2025-ON-42-QP-RUN-42bae8891b7d",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_42.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 3,
+      "leafQuestionCount": 21,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:02:56.771Z] stagingId=9618-2025-ON-42-QP-RUN-42bae8891b7d
+[2026-07-13T02:02:56.771Z] validationStatus=PASS
+[2026-07-13T02:02:56.771Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:02:56.771Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:02:56.771Z] canonicalPublishable=true
+[2026-07-13T02:02:56.771Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:02:56.771Z] endTime=2026-07-13T02:02:56.771Z
+[2026-07-13T02:02:56.771Z] status=PASS

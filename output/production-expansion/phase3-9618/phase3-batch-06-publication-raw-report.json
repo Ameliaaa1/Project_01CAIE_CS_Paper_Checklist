@@ -1,0 +1,997 @@
+{
+  "generatedFor": "PR-034-0478-Production-Expansion-Batch-01-Implementation-Plan",
+  "batchId": "PR070-9618-2024-ON-PHASE3-BATCH6",
+  "status": "PASS",
+  "productionWrite": true,
+  "previouslyBlocked": false,
+  "resolvedBy": [],
+  "scope": {
+    "syllabus": "9618",
+    "year": 2024,
+    "session": "O/N",
+    "components": [
+      "11",
+      "13",
+      "22",
+      "32",
+      "41",
+      "42",
+      "43"
+    ]
+  },
+  "preflight": [
+    {
+      "component": "11",
+      "status": "PASS",
+      "qp": {
+        "id": "9618-2024-ON-11-QP",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "94d1aed5bc14f0a3fd60da0e932cf5b8b40bd8342550ff0254c19afe89001ef7",
+        "parserVersion": "0.4.0"
+      },
+      "ms": {
+        "id": "9618-2024-ON-11-MS",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "e9674e802b5b850509834b1ab1b84008740729d668ae844e9b0142607dbdf1a2",
+        "parserVersion": "0.4.0"
+      }
+    },
+    {
+      "component": "13",
+      "status": "PASS",
+      "qp": {
+        "id": "9618-2024-ON-13-QP",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "1633471ff692292618910635b391aef69624188ec30b72425738f8a46354cc04",
+        "parserVersion": "0.4.0"
+      },
+      "ms": {
+        "id": "9618-2024-ON-13-MS",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "d3ee5286285e4611838cb9922a4fd9706a1a4e733ece048f24f89ee5cb48ec37",
+        "parserVersion": "0.4.0"
+      }
+    },
+    {
+      "component": "22",
+      "status": "PASS",
+      "qp": {
+        "id": "9618-2024-ON-22-QP",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "23df306798f666dc38c29fe896027b4193ba57e0db15ad9681f2680ae4897902",
+        "parserVersion": "0.4.0"
+      },
+      "ms": {
+        "id": "9618-2024-ON-22-MS",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "ae619e0388fcae32fdf1a37b3c70c0beceac85426c50bd7692d08be8f4e27c74",
+        "parserVersion": "0.4.0"
+      }
+    },
+    {
+      "component": "32",
+      "status": "PASS",
+      "qp": {
+        "id": "9618-2024-ON-32-QP",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "94438657867c9301845ef932a8cbc09abb70b41cbf675764c030db8c0b529be8",
+        "parserVersion": "0.4.0"
+      },
+      "ms": {
+        "id": "9618-2024-ON-32-MS",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "5cda9c53cbe573c36fd3bbb999c8e2756a16c35b713a6dfcb217c6fd0554955a",
+        "parserVersion": "0.4.0"
+      }
+    },
+    {
+      "component": "41",
+      "status": "PASS",
+      "qp": {
+        "id": "9618-2024-ON-41-QP",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "2c91c43abd658b2b985cf2063909faa0873b7ae1f11596233662f4702a2b01c7",
+        "parserVersion": "0.4.0"
+      },
+      "ms": {
+        "id": "9618-2024-ON-41-MS",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "efa60c884ce1ce9383de3c03214eb43bd001e7bfbeb03ff3dc9550e22b027e5d",
+        "parserVersion": "0.4.0"
+      }
+    },
+    {
+      "component": "42",
+      "status": "PASS",
+      "qp": {
+        "id": "9618-2024-ON-42-QP",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "714d785ed06744a0fdb69c0a33488cfd9a6ad6fe9ae7a8ad9d7d4da54bb76480",
+        "parserVersion": "0.4.0"
+      },
+      "ms": {
+        "id": "9618-2024-ON-42-MS",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "f0048b6d46754e49d4ad24b7820b6e9372b581b96c98066a6858ab814316d425",
+        "parserVersion": "0.4.0"
+      }
+    },
+    {
+      "component": "43",
+      "status": "PASS",
+      "qp": {
+        "id": "9618-2024-ON-43-QP",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "fed8c938aee2777c070b94bfeb0e47976d5ccdb58b8f38c91baf1ae29a992e5a",
+        "parserVersion": "0.4.0"
+      },
+      "ms": {
+        "id": "9618-2024-ON-43-MS",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "fileHash": "6b537ad9349887a3654d2beb41631ad5ac8f1ec4834838cfeefe22dfb2411cb8",
+        "parserVersion": "0.4.0"
+      }
+    }
+  ],
+  "alreadyPublished": false,
+  "partialProductionConflict": false,
+  "expectedDeltas": {
+    "papers": 14,
+    "questionRecords": 230,
+    "topLevelQuestions": 45,
+    "leafQuestions": 189,
+    "responseAreas": 663,
+    "markSchemeEntries": 262,
+    "pairings": 7,
+    "batches": 7,
+    "expansionBatches": 1
+  },
+  "result": {
+    "batchId": "PR070-9618-2024-ON-PHASE3-BATCH6",
+    "status": "PASS",
+    "productionWrite": true,
+    "scope": {
+      "components": [
+        "11",
+        "13",
+        "22",
+        "32",
+        "41",
+        "42",
+        "43"
+      ]
+    },
+    "pairs": [
+      {
+        "component": "11",
+        "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-11",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 8,
+            "leafQuestionCount": 32,
+            "responseAreaCount": 145,
+            "markSchemeEntryCount": 33
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 8,
+            "leafQuestionCount": 32,
+            "responseAreaCount": 145,
+            "markSchemeEntryCount": 33
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        },
+        "frontendVerification": {
+          "questionFinder": "PASS",
+          "knowledgeChecklist": "PASS",
+          "markSchemeSearch": "PASS",
+          "aiRetrieval": "PASS",
+          "openOriginalQuestion": "PASS",
+          "qpMsCorrespondence": "PASS"
+        }
+      },
+      {
+        "component": "13",
+        "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-13",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 9,
+            "leafQuestionCount": 30,
+            "responseAreaCount": 148,
+            "markSchemeEntryCount": 30
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 9,
+            "leafQuestionCount": 30,
+            "responseAreaCount": 148,
+            "markSchemeEntryCount": 30
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        },
+        "frontendVerification": {
+          "questionFinder": "PASS",
+          "knowledgeChecklist": "PASS",
+          "markSchemeSearch": "PASS",
+          "aiRetrieval": "PASS",
+          "openOriginalQuestion": "PASS",
+          "qpMsCorrespondence": "PASS"
+        }
+      },
+      {
+        "component": "22",
+        "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-22",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 8,
+            "leafQuestionCount": 24,
+            "responseAreaCount": 174,
+            "markSchemeEntryCount": 25
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 8,
+            "leafQuestionCount": 24,
+            "responseAreaCount": 174,
+            "markSchemeEntryCount": 25
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        },
+        "frontendVerification": {
+          "questionFinder": "PASS",
+          "knowledgeChecklist": "PASS",
+          "markSchemeSearch": "PASS",
+          "aiRetrieval": "PASS",
+          "openOriginalQuestion": "PASS",
+          "qpMsCorrespondence": "PASS"
+        }
+      },
+      {
+        "component": "32",
+        "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-32",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 11,
+            "leafQuestionCount": 27,
+            "responseAreaCount": 118,
+            "markSchemeEntryCount": 29
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 11,
+            "leafQuestionCount": 27,
+            "responseAreaCount": 118,
+            "markSchemeEntryCount": 29
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        },
+        "frontendVerification": {
+          "questionFinder": "PASS",
+          "knowledgeChecklist": "PASS",
+          "markSchemeSearch": "PASS",
+          "aiRetrieval": "PASS",
+          "openOriginalQuestion": "PASS",
+          "qpMsCorrespondence": "PASS"
+        }
+      },
+      {
+        "component": "41",
+        "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-41",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 3,
+            "leafQuestionCount": 26,
+            "responseAreaCount": 26,
+            "markSchemeEntryCount": 47
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 3,
+            "leafQuestionCount": 26,
+            "responseAreaCount": 26,
+            "markSchemeEntryCount": 47
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        },
+        "frontendVerification": {
+          "questionFinder": "PASS",
+          "knowledgeChecklist": "PASS",
+          "markSchemeSearch": "PASS",
+          "aiRetrieval": "PASS",
+          "openOriginalQuestion": "PASS",
+          "qpMsCorrespondence": "PASS"
+        }
+      },
+      {
+        "component": "42",
+        "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-42",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 3,
+            "leafQuestionCount": 24,
+            "responseAreaCount": 26,
+            "markSchemeEntryCount": 51
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 3,
+            "leafQuestionCount": 24,
+            "responseAreaCount": 26,
+            "markSchemeEntryCount": 51
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        },
+        "frontendVerification": {
+          "questionFinder": "PASS",
+          "knowledgeChecklist": "PASS",
+          "markSchemeSearch": "PASS",
+          "aiRetrieval": "PASS",
+          "openOriginalQuestion": "PASS",
+          "qpMsCorrespondence": "PASS"
+        }
+      },
+      {
+        "component": "43",
+        "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-43",
+        "status": "PASS",
+        "verification": {
+          "status": "PASS",
+          "counts": {
+            "paperCount": 2,
+            "questionCount": 3,
+            "leafQuestionCount": 26,
+            "responseAreaCount": 26,
+            "markSchemeEntryCount": 47
+          },
+          "expectedCounts": {
+            "paperCount": 2,
+            "questionCount": 3,
+            "leafQuestionCount": 26,
+            "responseAreaCount": 26,
+            "markSchemeEntryCount": 47
+          },
+          "sourceTraceAvailable": true,
+          "pairingLinked": true
+        },
+        "frontendVerification": {
+          "questionFinder": "PASS",
+          "knowledgeChecklist": "PASS",
+          "markSchemeSearch": "PASS",
+          "aiRetrieval": "PASS",
+          "openOriginalQuestion": "PASS",
+          "qpMsCorrespondence": "PASS"
+        }
+      }
+    ],
+    "verification": {
+      "paperDelta": 14,
+      "questionDelta": 230,
+      "responseAreaDelta": 663,
+      "markEntryDelta": 262,
+      "pairingDelta": 7
+    },
+    "issues": []
+  },
+  "publication": {
+    "productionWrite": true,
+    "expectedDeltas": {
+      "papers": 14,
+      "questionRecords": 230,
+      "topLevelQuestions": 45,
+      "leafQuestions": 189,
+      "responseAreas": 663,
+      "markSchemeEntries": 262,
+      "pairings": 7,
+      "batches": 7,
+      "expansionBatches": 1
+    },
+    "actualDeltas": {
+      "papers": 14,
+      "questionRecords": 230,
+      "topLevelQuestions": 45,
+      "leafQuestions": 189,
+      "responseAreas": 663,
+      "markSchemeEntries": 262,
+      "pairings": 7,
+      "batches": 7,
+      "expansionBatches": 1
+    },
+    "deltasMatch": true
+  },
+  "pairVerification": [
+    {
+      "component": "11",
+      "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-11",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 8,
+          "leafQuestionCount": 32,
+          "responseAreaCount": 145,
+          "markSchemeEntryCount": 33
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 8,
+          "leafQuestionCount": 32,
+          "responseAreaCount": 145,
+          "markSchemeEntryCount": 33
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    },
+    {
+      "component": "13",
+      "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-13",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 9,
+          "leafQuestionCount": 30,
+          "responseAreaCount": 148,
+          "markSchemeEntryCount": 30
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 9,
+          "leafQuestionCount": 30,
+          "responseAreaCount": 148,
+          "markSchemeEntryCount": 30
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    },
+    {
+      "component": "22",
+      "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-22",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 8,
+          "leafQuestionCount": 24,
+          "responseAreaCount": 174,
+          "markSchemeEntryCount": 25
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 8,
+          "leafQuestionCount": 24,
+          "responseAreaCount": 174,
+          "markSchemeEntryCount": 25
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    },
+    {
+      "component": "32",
+      "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-32",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 11,
+          "leafQuestionCount": 27,
+          "responseAreaCount": 118,
+          "markSchemeEntryCount": 29
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 11,
+          "leafQuestionCount": 27,
+          "responseAreaCount": 118,
+          "markSchemeEntryCount": 29
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    },
+    {
+      "component": "41",
+      "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-41",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 26,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 47
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 26,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 47
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    },
+    {
+      "component": "42",
+      "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-42",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 24,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 51
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 24,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 51
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    },
+    {
+      "component": "43",
+      "childBatchId": "PR070-9618-2024-ON-PHASE3-BATCH6-43",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 26,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 47
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 26,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 47
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    }
+  ],
+  "frontendVerification": {
+    "questionFinder": "PASS",
+    "knowledgeChecklist": "PASS",
+    "markSchemeSearch": "PASS",
+    "aiRetrieval": "PASS",
+    "openOriginalQuestion": "PASS",
+    "qpMsCorrespondence": "PASS"
+  },
+  "integrity": {
+    "beforeSha256": "6a37b92ae34360fa8f0d855e29991a7c27b9a2a781e50cb07e64da0281c405c1",
+    "afterSha256": "4e96b4726a9bd8b2c421395e542fc56d5f45ab01ac44ce94226f51d039e22e0a",
+    "productionHashChanged": true,
+    "existingRecordsUnchanged": true,
+    "existingRecordChanges": {
+      "batches": 0,
+      "papers": 0,
+      "questions": 0,
+      "responseAreas": 0,
+      "markSchemeEntries": 0,
+      "pairings": 0,
+      "expansionBatches": 0
+    },
+    "stagingArtifactsUnchanged": true
+  },
+  "productionState": {
+    "papers": 220,
+    "questionRecords": 3396,
+    "topLevelQuestions": 825,
+    "leafQuestions": 2695,
+    "responseAreas": 12229,
+    "markSchemeEntries": 2455,
+    "pairings": 110,
+    "batches": 110,
+    "expansionBatches": 31
+  },
+  "coverageAfter": {
+    "sourcePairs": 118,
+    "completeSourcePairs": 118,
+    "stagingPairs": 96,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 22,
+    "publishedPairs": 86,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 22,
+    "blockedPairs": 10,
+    "incompleteSourcePairs": 0,
+    "partialProductionConflicts": 0
+  },
+  "next": {
+    "decision": "Issue Resolution PR",
+    "pairCount": 0,
+    "pairingKeys": [],
+    "productionWrite": false
+  },
+  "regression": {
+    "pr030": "PASS",
+    "pr031": "PASS",
+    "pr032": "PASS",
+    "pr038a": "PASS",
+    "pr040": "PASS",
+    "pr042": "PASS",
+    "pr044": "PASS",
+    "pr045": "PASS",
+    "pr046": "PASS",
+    "pr047": "PASS",
+    "pr048": "PASS",
+    "pr048a": "PASS",
+    "pr049": "PASS",
+    "pr050": "PASS",
+    "pr051": "PASS",
+    "pr052": "PASS",
+    "pr053": "PASS",
+    "pr054": "PASS",
+    "pr055": "PASS",
+    "pr056": "PASS",
+    "pr057": "PASS",
+    "pr058": "PASS",
+    "pr059": "PASS",
+    "pr060": "PASS",
+    "pr061": "PASS",
+    "pr062": "PASS",
+    "pr063": "PASS",
+    "pr064": "PASS",
+    "legalMultiplicationResolutionContexts": "PASS",
+    "otherSuspiciousGlyphsRemainDetected": "PASS",
+    "linkedListNullPointerContext": "PASS",
+    "unrelatedNullPointerGlyphRemainsSuspicious": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "phase1": "PASS (20/20)",
+    "phase2": "PASS (120/120)",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  }
+}

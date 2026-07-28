@@ -1,0 +1,160 @@
+[2026-07-15T04:09:46.451Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-March/0478_m23_qp_12.pdf
+[2026-07-15T04:09:46.451Z] startTime=2026-07-15T04:09:46.451Z
+[2026-07-15T04:09:46.451Z] expectedRole=question_paper
+[2026-07-15T04:09:48.130Z] extract.exitCode=0
+[2026-07-15T04:09:48.130Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m23_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-March/0478_m23_qp_12.pdf",
+  "pageCount": 16,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 ✓ Tick ( ) box to show a correct definition of spyware. (a) one Software that activates a webcam and transmits the video to a third party A that outputs it live on a website. Software that detects when a password is being entered and then emails B the password to a third party. Software that records all data entered into a computer, analyses this data C to"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 to develop a program for the game. The program needs to run efficiently, but it must also be developed as soon as possible. ✓ Tick ( ) box to identify whether the programmer should use a high‑level language or a (a) one low‑level language to develop the program. Explain the reasons for your choice. High‑level language Low‑level language Reasons for your ch"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Data storage is measured using binary denominations. (a) Complete each conversion. 8 bytes = nibbles 512 kibibytes (KiB) = mebibytes (MiB) 4 gibibytes (GiB) = mebibytes (MiB) 1 exbibyte (EiB) = pebibytes (PiB) [4] Random access memory (RAM) is an example of primary storage. (b) Give examples of data that is commonly stored in RAM. three 1 2 3 [3] Describe "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Complete the table by defining each term about images. (a) Image term Definition pixel resolution [2] × One of the images has a resolution of 1000 1000 and a colour depth of 2 bytes. (b) Calculate the file size of the image. Give your answer in bytes. Show your working. File size bytes [2] The photographer decides to purchase a solid‑state storage device t"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 13,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Computer A sends a request for the homepage to the website’s server. The request is sent using packet switching. (a) The structure of a packet of data has three elements. One element is the packet header. Identify items of data contained in a packet header. (i) two 1 2 [2] Identify the other elements of a packet. (ii) two 1 2 [2] Computer A needs to be dir"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 13,
+      "pageEnd": 15,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "6 One of its robots is designed to make a specific movement depending on a binary value. The table gives some of the movements for the robot. (a) Complete the table by writing the missing binary, denary or hexadecimal value for each movement. Movement Binary Denary Hexadecimal forward 1 step 00011111 31 back 1 step 140 8C turn right 01011010 5A turn left 120"
+    }
+  ]
+}
+[2026-07-15T04:09:48.133Z] parserVersion=0.4.0
+[2026-07-15T04:09:48.133Z] documentRole=question_paper
+[2026-07-15T04:09:48.133Z] validationProfile=QUESTION_PAPER
+[2026-07-15T04:09:48.480Z] stage.exitCode=0
+[2026-07-15T04:09:48.480Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m23_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m23_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m23_qp_12.staging.json",
+  "runId": "0478-2023-FM-12-QP-RUN-5a1c45db21fb",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m23_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 26,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T04:09:48.483Z] stagingId=0478-2023-FM-12-QP-RUN-5a1c45db21fb
+[2026-07-15T04:09:48.483Z] validationStatus=PASS
+[2026-07-15T04:09:48.483Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T04:09:48.483Z] canonicalCompletenessStatus=PASS
+[2026-07-15T04:09:48.483Z] canonicalPublishable=true
+[2026-07-15T04:09:48.483Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T04:09:48.483Z] endTime=2026-07-15T04:09:48.483Z
+[2026-07-15T04:09:48.483Z] status=PASS

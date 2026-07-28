@@ -1,0 +1,192 @@
+[2026-07-13T02:04:44.112Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_12.pdf
+[2026-07-13T02:04:44.112Z] startTime=2026-07-13T02:04:44.112Z
+[2026-07-13T02:04:44.112Z] expectedRole=question_paper
+[2026-07-13T02:04:46.294Z] extract.exitCode=0
+[2026-07-13T02:04:46.294Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s21_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_12.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 the people who rent houses, and the houses they rent. The database, has the HOUSE_RENTALS following structure: CUSTOMER(CustomerID, FirstName, LastName, DateOfBirth, Email) HOUSE(HouseID, HouseNumber, Road, Town, Bedrooms, Bathrooms) RENTAL(RentalID, CustomerID, HouseID, MonthlyCost, DepositPaid) Give the definition of the following database terms, using a"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Explain the reasons why it is important that Aisha acts ethically in relation to her team (a) members. [2] The team are developing a computer game where the user plays a board game (such as (b) chess) against the computer. Describe how the computer would use Artificial Intelligence (AI) to play the board game. [3] The final game will be released under a li"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 = ( AND AND ) OR ( XOR ) S A B C B C Draw the logic circuit for the given expression. (a) A B S C [4] Complete the truth table for the logic expression: (b) = ( AND AND ) OR ( XOR ) S A B C B C A B C S 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 [2] The table shows part of the instruction set for a processor. The processor has one general purpose"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 register, the Accumulator (ACC), and an Index Register (IX) . Instruction Explanation Opcode Operand Immediate addressing. Load the number n to ACC LDM #n Direct addressing. Load the contents of the location at the given address to LDD <address> ACC Store contents of ACC at the given address STO <address> Add the contents of the given address to the ACC AD"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 9,
+      "pageEnd": 12,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Complete the following descriptions of internal components of a computer by writing the (a) missing terms. The transmits the signals to coordinate events based on the electronic pulses of the . The carries data to the components, while the carries the address where data needs to be written to or read from. The performs mathematical operations and logical c"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 State the number of characters that can be represented by the ASCII character set and the (a) extended ASCII character set. ASCII Extended ASCII [2] Explain how a word such as ‘HOUSE’ is represented by the ASCII character set. (b) [2] Unicode is a different character set. (c) The Unicode value for the character ‘1’ is denary value 49. Write the hexadecimal"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 13,
+      "pageEnd": 14,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Jennifer uses a program library to help her write her computer program. (a) Describe how a program library can be used while writing a computer program. [2] Jennifer uses an Integrated Development Environment (IDE) to write her computer program. (b) The IDE allows Jennifer to use both an interpreter and a compiler while creating her (i) computer program. D"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 14,
+      "pageEnd": 14,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 its computers. Describe the difference between the security and privacy of data. (a) [2] Each employee has a username and password to allow them to log onto a computer. An (b) employee’s access rights to the data on the computers is set to either read-only, or read and write. Identify other software-based measure that could be used to restrict the access t"
+    }
+  ]
+}
+[2026-07-13T02:04:46.296Z] parserVersion=0.4.0
+[2026-07-13T02:04:46.296Z] documentRole=question_paper
+[2026-07-13T02:04:46.296Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:46.661Z] stage.exitCode=0
+[2026-07-13T02:04:46.661Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s21_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_12.staging.json",
+  "runId": "9618-2021-MJ-12-QP-RUN-63c51bb1e39c",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 28,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 28,
+        "present": 28,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:04:46.664Z] stagingId=9618-2021-MJ-12-QP-RUN-63c51bb1e39c
+[2026-07-13T02:04:46.664Z] validationStatus=PASS
+[2026-07-13T02:04:46.664Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:04:46.664Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:46.664Z] canonicalPublishable=true
+[2026-07-13T02:04:46.664Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:04:46.664Z] endTime=2026-07-13T02:04:46.664Z
+[2026-07-13T02:04:46.664Z] status=PASS

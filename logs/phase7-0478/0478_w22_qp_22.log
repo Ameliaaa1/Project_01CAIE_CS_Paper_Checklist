@@ -1,0 +1,176 @@
+[2026-07-15T03:53:07.086Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_22.pdf
+[2026-07-15T03:53:07.086Z] startTime=2026-07-15T03:53:07.086Z
+[2026-07-15T03:53:07.086Z] expectedRole=question_paper
+[2026-07-15T03:53:08.718Z] extract.exitCode=0
+[2026-07-15T03:53:08.718Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 7,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify constant you could have used for and state its value. (a) (i) one Task 1 Constant Value [2] Identify array you could have used in and describe its use. (ii) one Task 1 Array Use [2] Describe how your program could validate the input for the day number within the two-week (b) period to make sure an appropriate value is entered (part of ). Task 1 Yo"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 Programming concept Description carrying out an action multiple times within a loop structure counting adding together the numbers in a list of numbers repetition tracking the number of iterations a program has selection performed in a loop sequence branching off to take a course of action depending on the answer to a question totalling a set of statements"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "3 database. Explain why verification is necessary. [3] Describe type of test data that must be used to test if a program accepts valid input data."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 one [2] This pseudocode should allow 500 marks to be entered into the algorithm. If the mark is 80 or"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 greater it is stored in an array for higher marks. If the mark is less than 80, but greater than or equal to 50 it is stored in an array for middle marks. The remaining marks are stored in an array for lower marks. The results from the algorithm are displayed at the end. 0 01 HighList 0 02 MidList 0 03 LowList 0 04 MarksEntry 05 REPEAT 06 INPUT Mark 07 IF "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 The pre-defined function gives the value of the result of integer division, for example DIV gives the value Y = 9 DIV 4 Y = 2 The pre-defined function gives the value of the remainder of integer division, for example MOD gives the value R = 9 MOD 4 R = 1 START Counter 0 Counter Counter + 1 IS Yes Counter > 7? No INPUT Number IS Yes Number < 100? No IS Yes "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 number of candidates for each of the subjects in its curriculum. SubjectCode SubjectName Exams Practicals Candidates COMP Computer Science 2 1 200 INFO Information Technology 1 2 200 MATH Mathematics 3 0 350 PHYS Physics 2 1 120 CHEM Chemistry 2 1 120 BIOL Biology 2 1 200 GEOG Geography 2 0 200 HIST History 2 0 250 GEOL Geology 2 0 80 PHED Physical Educati"
+    }
+  ]
+}
+[2026-07-15T03:53:08.719Z] parserVersion=0.4.0
+[2026-07-15T03:53:08.719Z] documentRole=question_paper
+[2026-07-15T03:53:08.719Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:09.007Z] stage.exitCode=0
+[2026-07-15T03:53:09.007Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_22.staging.json",
+  "runId": "0478-2022-ON-22-QP-RUN-cbf4c5699976",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 16,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 16,
+        "present": 16,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:09.010Z] stagingId=0478-2022-ON-22-QP-RUN-cbf4c5699976
+[2026-07-15T03:53:09.010Z] validationStatus=PASS
+[2026-07-15T03:53:09.010Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:09.010Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:09.010Z] canonicalPublishable=true
+[2026-07-15T03:53:09.010Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:09.010Z] endTime=2026-07-15T03:53:09.010Z
+[2026-07-15T03:53:09.010Z] status=PASS

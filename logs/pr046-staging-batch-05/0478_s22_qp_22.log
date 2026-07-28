@@ -1,0 +1,144 @@
+[2026-07-13T05:21:51.635Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_22.pdf
+[2026-07-13T05:21:51.635Z] startTime=2026-07-13T05:21:51.635Z
+[2026-07-13T05:21:51.635Z] expectedRole=question_paper
+[2026-07-13T05:21:53.036Z] extract.exitCode=0
+[2026-07-13T05:21:53.036Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s22_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_22.pdf",
+  "pageCount": 12,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify constant that you could have used for . (a) (i) one Task 1 Give the value and use of the constant. Constant Value Use [3] Identify variable that you could have used for . (ii) one Task 2 Give the data type and use of the variable. Variable Data type Use [3] Explain how your program showed the days available for booking in . (b) Task 1 [3] Explain "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 characters in the password. Then, the user is asked to re-input the password to check that both inputs are the same. The user is allowed three attempts at inputting a password of the correct length and a matching pair of passwords. The pre-defined function returns the number of LEN(X) characters in the string, X 0 01 Attempt ← 02 REPEAT TRUE 03 PassCheck ←"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) [3] Explain how indexing could be used to search for a value stored in a one-dimensional array. (b) [2] This algorithm checks the temperature of hot food being served to customers."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 START Counter 0 Hot 0 Cold 0 Serve 0 INPUT Temp Yes Error Is Temp ((Hot + Cold) / Counter) * 100 = –1? No Yes OUTPUT Is Temp Hot Hot + 1 \"Too Hot\" > 86? No Counter Counter + 1 OUTPUT Error Yes Is Temp Cold Cold + 1 < 63? No OUTPUT \"Too Cold\" Serve Serve + 1 END Complete the trace table for the algorithm using this input data: (a) 75, 78, 84, 87, 91, 80, 75"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 This is part of the table: ItemNumber Description SingleUse Uses StockLevel ReorderLevel DIG1 Glove (pair) Y 1 500 800 DIA1 Apron Y 1 700 800 DIM5 Hair net Y 1 650 500 DIA2 Apron N 5 25 100 DIS4 Suit N 3 70 50 DIV9 Shoe cover (pair) Y 1 400 250 Complete this query-by-example grid to display only the item number and the description of (a) single use items, "
+    }
+  ]
+}
+[2026-07-13T05:21:53.037Z] parserVersion=0.4.0
+[2026-07-13T05:21:53.037Z] documentRole=question_paper
+[2026-07-13T05:21:53.037Z] validationProfile=QUESTION_PAPER
+[2026-07-13T05:21:53.282Z] stage.exitCode=0
+[2026-07-13T05:21:53.282Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s22_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_22.staging.json",
+  "runId": "0478-2022-MJ-22-QP-RUN-81ecfca1c693",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 16,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 16,
+        "present": 16,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T05:21:53.284Z] stagingId=0478-2022-MJ-22-QP-RUN-81ecfca1c693
+[2026-07-13T05:21:53.284Z] validationStatus=PASS
+[2026-07-13T05:21:53.284Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T05:21:53.284Z] canonicalCompletenessStatus=PASS
+[2026-07-13T05:21:53.284Z] canonicalPublishable=true
+[2026-07-13T05:21:53.284Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T05:21:53.284Z] endTime=2026-07-13T05:21:53.284Z
+[2026-07-13T05:21:53.284Z] status=PASS

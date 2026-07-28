@@ -1,0 +1,63 @@
+[2026-07-14T15:54:51.931Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_ms_41.pdf
+[2026-07-14T15:54:51.931Z] startTime=2026-07-14T15:54:51.931Z
+[2026-07-14T15:54:51.931Z] expectedRole=mark_scheme
+[2026-07-14T15:54:54.572Z] extract.exitCode=0
+[2026-07-14T15:54:54.572Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_ms_41.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_ms_41.pdf",
+  "pageCount": 34,
+  "questionCount": 0,
+  "questions": []
+}
+[2026-07-14T15:54:54.576Z] parserVersion=0.4.0
+[2026-07-14T15:54:54.576Z] documentRole=mark_scheme
+[2026-07-14T15:54:54.576Z] validationProfile=MARK_SCHEME
+[2026-07-14T15:54:54.826Z] stage.exitCode=0
+[2026-07-14T15:54:54.826Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_ms_41.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_ms_41.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_ms_41.staging.json",
+  "runId": "9618-2022-MJ-41-MS-RUN-203cc5900d90",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_ms_41.staging.json",
+    "documentRole": "mark_scheme",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 0,
+      "leafQuestionCount": 0,
+      "markSchemeEntryCount": 24,
+      "responseAreaCoverage": {
+        "required": 0,
+        "present": 0,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T15:54:54.828Z] stagingId=9618-2022-MJ-41-MS-RUN-203cc5900d90
+[2026-07-14T15:54:54.828Z] validationStatus=PASS
+[2026-07-14T15:54:54.828Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T15:54:54.828Z] canonicalCompletenessStatus=PASS
+[2026-07-14T15:54:54.828Z] canonicalPublishable=true
+[2026-07-14T15:54:54.828Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T15:54:54.828Z] endTime=2026-07-14T15:54:54.828Z
+[2026-07-14T15:54:54.828Z] status=PASS

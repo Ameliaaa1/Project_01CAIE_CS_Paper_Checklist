@@ -1,0 +1,26 @@
+{
+  "generatedFor": "Phase-7-Cross-Syllabus-Expansion-Plan",
+  "phaseId": "Phase 7-A",
+  "syllabus": "0478",
+  "status": "PASS",
+  "stagingPairsBeforePhase7": 47,
+  "stagingPartialPairsBeforePhase7": 6,
+  "stagingMissingPairsBeforePhase7": 45,
+  "stagingArtifactsAddedInPhase7": 96,
+  "stagingPairs": 98,
+  "stagingPartialPairs": 0,
+  "stagingMissingPairs": 0,
+  "generatedArtifactCountThisRun": 0,
+  "generation": {
+    "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase7-0478/phase7-0478-staging-generation-report.json",
+    "totalFiles": 0,
+    "successCount": 0,
+    "failedCount": 0
+  },
+  "stagingChanges": {
+    "added": [],
+    "deleted": [],
+    "modified": []
+  },
+  "roleFailures": []
+}

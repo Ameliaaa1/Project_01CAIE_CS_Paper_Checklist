@@ -1,0 +1,630 @@
+{
+  "debugType": "phase1_batch_ingestion_validation",
+  "generatedAt": "2026-07-11T07:27:46.961Z",
+  "sourceReport": "output/phase1/phase1-ingestion-report.json",
+  "sourceManifest": "docs/staging-manifest-phase1.json",
+  "productionWrite": false,
+  "summary": {
+    "totalFiles": 20,
+    "successCount": 20,
+    "failedCount": 0,
+    "skippedCount": 0,
+    "byRole": {
+      "question_paper": {
+        "total": 10,
+        "success": 10,
+        "failed": 0,
+        "skipped": 0
+      },
+      "mark_scheme": {
+        "total": 10,
+        "success": 10,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "issueCounts": {}
+  },
+  "files": [
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_12.pdf",
+      "expectedRole": "question_paper",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "BLOCKED",
+      "stagingId": "0478-2023-MJ-12-QP-RUN-6cccf26a0da8",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_s23_qp_12.sample.json",
+      "stagingJson": "output/phase1/staging/0478_s23_qp_12.staging.json",
+      "logFile": "logs/phase1/0478_s23_qp_12.log",
+      "startTime": "2026-07-11T07:26:45.539Z",
+      "endTime": "2026-07-11T07:26:47.026Z",
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 10,
+        "leafQuestionCount": 31,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_12.pdf",
+      "expectedRole": "mark_scheme",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "0478-2023-MJ-12-MS-RUN-f72b136cb453",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_s23_ms_12.sample.json",
+      "stagingJson": "output/phase1/staging/0478_s23_ms_12.staging.json",
+      "logFile": "logs/phase1/0478_s23_ms_12.log",
+      "startTime": "2026-07-11T07:26:47.026Z",
+      "endTime": "2026-07-11T07:26:48.315Z",
+      "stageSummary": {
+        "pageCount": 10,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 7,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_23.pdf",
+      "expectedRole": "question_paper",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "BLOCKED",
+      "stagingId": "0478-2023-ON-23-QP-RUN-94308d93129f",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_w23_qp_23.sample.json",
+      "stagingJson": "output/phase1/staging/0478_w23_qp_23.staging.json",
+      "logFile": "logs/phase1/0478_w23_qp_23.log",
+      "startTime": "2026-07-11T07:26:48.315Z",
+      "endTime": "2026-07-11T07:26:50.087Z",
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 10,
+        "leafQuestionCount": 25,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_ms_23.pdf",
+      "expectedRole": "mark_scheme",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "0478-2023-ON-23-MS-RUN-afb1c7e53202",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_w23_ms_23.sample.json",
+      "stagingJson": "output/phase1/staging/0478_w23_ms_23.staging.json",
+      "logFile": "logs/phase1/0478_w23_ms_23.log",
+      "startTime": "2026-07-11T07:26:50.087Z",
+      "endTime": "2026-07-11T07:26:51.841Z",
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 30,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_qp_12.pdf",
+      "expectedRole": "question_paper",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "BLOCKED",
+      "stagingId": "0478-2024-FM-12-QP-RUN-e81e4abcacd8",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_m24_qp_12.sample.json",
+      "stagingJson": "output/phase1/staging/0478_m24_qp_12.staging.json",
+      "logFile": "logs/phase1/0478_m24_qp_12.log",
+      "startTime": "2026-07-11T07:26:51.841Z",
+      "endTime": "2026-07-11T07:26:53.575Z",
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 8,
+        "leafQuestionCount": 35,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_ms_12.pdf",
+      "expectedRole": "mark_scheme",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "0478-2024-FM-12-MS-RUN-ee9ef355595d",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_m24_ms_12.sample.json",
+      "stagingJson": "output/phase1/staging/0478_m24_ms_12.staging.json",
+      "logFile": "logs/phase1/0478_m24_ms_12.log",
+      "startTime": "2026-07-11T07:26:53.575Z",
+      "endTime": "2026-07-11T07:26:55.089Z",
+      "stageSummary": {
+        "pageCount": 13,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 36,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_22.pdf",
+      "expectedRole": "question_paper",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "BLOCKED",
+      "stagingId": "0478-2024-ON-22-QP-RUN-d5e2fa597b2f",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_w24_qp_22.sample.json",
+      "stagingJson": "output/phase1/staging/0478_w24_qp_22.staging.json",
+      "logFile": "logs/phase1/0478_w24_qp_22.log",
+      "startTime": "2026-07-11T07:26:55.090Z",
+      "endTime": "2026-07-11T07:26:56.873Z",
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 12,
+        "leafQuestionCount": 21,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_ms_22.pdf",
+      "expectedRole": "mark_scheme",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "0478-2024-ON-22-MS-RUN-26c4f5928853",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_w24_ms_22.sample.json",
+      "stagingJson": "output/phase1/staging/0478_w24_ms_22.staging.json",
+      "logFile": "logs/phase1/0478_w24_ms_22.log",
+      "startTime": "2026-07-11T07:26:56.874Z",
+      "endTime": "2026-07-11T07:26:58.495Z",
+      "stageSummary": {
+        "pageCount": 14,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 47,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_12.pdf",
+      "expectedRole": "question_paper",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "0478-2025-MJ-12-QP-RUN-1e8dfa4e4b3c",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_s25_qp_12.sample.json",
+      "stagingJson": "output/phase1/staging/0478_s25_qp_12.staging.json",
+      "logFile": "logs/phase1/0478_s25_qp_12.log",
+      "startTime": "2026-07-11T07:26:58.495Z",
+      "endTime": "2026-07-11T07:27:00.063Z",
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 5,
+        "leafQuestionCount": 27,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_ms_12.pdf",
+      "expectedRole": "mark_scheme",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "0478-2025-MJ-12-MS-RUN-3582d641890e",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_s25_ms_12.sample.json",
+      "stagingJson": "output/phase1/staging/0478_s25_ms_12.staging.json",
+      "logFile": "logs/phase1/0478_s25_ms_12.log",
+      "startTime": "2026-07-11T07:27:00.063Z",
+      "endTime": "2026-07-11T07:27:01.719Z",
+      "stageSummary": {
+        "pageCount": 15,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 28,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_11.pdf",
+      "expectedRole": "question_paper",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "BLOCKED",
+      "stagingId": "0478-2025-ON-11-QP-RUN-da17c433036c",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_w25_qp_11.sample.json",
+      "stagingJson": "output/phase1/staging/0478_w25_qp_11.staging.json",
+      "logFile": "logs/phase1/0478_w25_qp_11.log",
+      "startTime": "2026-07-11T07:27:01.719Z",
+      "endTime": "2026-07-11T07:27:03.201Z",
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 7,
+        "leafQuestionCount": 36,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_ms_11.pdf",
+      "expectedRole": "mark_scheme",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "0478-2025-ON-11-MS-RUN-8fd70bde43ea",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/0478_w25_ms_11.sample.json",
+      "stagingJson": "output/phase1/staging/0478_w25_ms_11.staging.json",
+      "logFile": "logs/phase1/0478_w25_ms_11.log",
+      "startTime": "2026-07-11T07:27:03.202Z",
+      "endTime": "2026-07-11T07:27:04.777Z",
+      "stageSummary": {
+        "pageCount": 14,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 34,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_11.pdf",
+      "expectedRole": "question_paper",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "BLOCKED",
+      "stagingId": "9618-2023-MJ-11-QP-RUN-547b5fef50d1",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/9618_s23_qp_11.sample.json",
+      "stagingJson": "output/phase1/staging/9618_s23_qp_11.staging.json",
+      "logFile": "logs/phase1/9618_s23_qp_11.log",
+      "startTime": "2026-07-11T07:27:04.778Z",
+      "endTime": "2026-07-11T07:27:06.510Z",
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 6,
+        "leafQuestionCount": 29,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_ms_11.pdf",
+      "expectedRole": "mark_scheme",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "9618-2023-MJ-11-MS-RUN-9955c377d09a",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/9618_s23_ms_11.sample.json",
+      "stagingJson": "output/phase1/staging/9618_s23_ms_11.staging.json",
+      "logFile": "logs/phase1/9618_s23_ms_11.log",
+      "startTime": "2026-07-11T07:27:06.515Z",
+      "endTime": "2026-07-11T07:27:07.743Z",
+      "stageSummary": {
+        "pageCount": 9,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 30,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_12.pdf",
+      "expectedRole": "question_paper",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "status": "PASS",
+      "validationStatus": "WARN",
+      "publishStatus": "BLOCKED",
+      "stagingId": "9618-2024-ON-12-QP-RUN-3d754f83188e",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/9618_w24_qp_12.sample.json",
+      "stagingJson": "output/phase1/staging/9618_w24_qp_12.staging.json",
+      "logFile": "logs/phase1/9618_w24_qp_12.log",
+      "startTime": "2026-07-11T07:27:07.743Z",
+      "endTime": "2026-07-11T07:27:09.500Z",
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 9,
+        "leafQuestionCount": 26,
+        "markSchemeEntryCount": 0,
+        "issueCount": 1
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 1,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_12.pdf",
+      "expectedRole": "mark_scheme",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "9618-2024-ON-12-MS-RUN-42b8ef4e24bd",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/9618_w24_ms_12.sample.json",
+      "stagingJson": "output/phase1/staging/9618_w24_ms_12.staging.json",
+      "logFile": "logs/phase1/9618_w24_ms_12.log",
+      "startTime": "2026-07-11T07:27:09.513Z",
+      "endTime": "2026-07-11T07:27:10.829Z",
+      "stageSummary": {
+        "pageCount": 10,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 26,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_11.pdf",
+      "expectedRole": "question_paper",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "9618-2025-MJ-11-QP-RUN-bdf74d4f15c6",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/9618_s25_qp_11.sample.json",
+      "stagingJson": "output/phase1/staging/9618_s25_qp_11.staging.json",
+      "logFile": "logs/phase1/9618_s25_qp_11.log",
+      "startTime": "2026-07-11T07:27:10.829Z",
+      "endTime": "2026-07-11T07:27:12.849Z",
+      "stageSummary": {
+        "pageCount": 20,
+        "questionCount": 8,
+        "leafQuestionCount": 28,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_11.pdf",
+      "expectedRole": "mark_scheme",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "9618-2025-MJ-11-MS-RUN-8bf543ddd26e",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/9618_s25_ms_11.sample.json",
+      "stagingJson": "output/phase1/staging/9618_s25_ms_11.staging.json",
+      "logFile": "logs/phase1/9618_s25_ms_11.log",
+      "startTime": "2026-07-11T07:27:12.849Z",
+      "endTime": "2026-07-11T07:27:14.299Z",
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 28,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_42.pdf",
+      "expectedRole": "question_paper",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "9618-2025-ON-42-QP-RUN-42bae8891b7d",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/9618_w25_qp_42.sample.json",
+      "stagingJson": "output/phase1/staging/9618_w25_qp_42.staging.json",
+      "logFile": "logs/phase1/9618_w25_qp_42.log",
+      "startTime": "2026-07-11T07:27:14.299Z",
+      "endTime": "2026-07-11T07:27:15.744Z",
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 3,
+        "leafQuestionCount": 21,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_ms_42.pdf",
+      "expectedRole": "mark_scheme",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "status": "PASS",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "stagingId": "9618-2025-ON-42-MS-RUN-5bfdaabc0844",
+      "parserVersion": "0.4.0",
+      "sampleJson": "output/ingestion-samples/9618_w25_ms_42.sample.json",
+      "stagingJson": "output/phase1/staging/9618_w25_ms_42.staging.json",
+      "logFile": "logs/phase1/9618_w25_ms_42.log",
+      "startTime": "2026-07-11T07:27:15.745Z",
+      "endTime": "2026-07-11T07:27:19.009Z",
+      "stageSummary": {
+        "pageCount": 38,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 37,
+        "issueCount": 0
+      },
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "failures": []
+    }
+  ]
+}

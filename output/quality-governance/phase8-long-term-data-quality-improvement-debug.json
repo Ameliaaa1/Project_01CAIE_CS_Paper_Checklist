@@ -1,0 +1,867 @@
+{
+  "generatedFor": "Phase-8-Long-Term-Data-Quality-Improvement-Plan-v2",
+  "phaseId": "Phase 8",
+  "status": "PASS",
+  "phaseStatus": "COMPLETE",
+  "completionDecision": "FULL_PASS",
+  "productionWrite": false,
+  "dashboard": {
+    "generatedFor": "Phase-8-Quality-Monitoring",
+    "status": "PASS",
+    "coverage": [
+      {
+        "syllabus": "9618",
+        "sourceCoverage": 1,
+        "stagingCoverage": 1,
+        "productionCoverage": 1,
+        "incompleteSourcePairs": 0,
+        "blockedPairs": 0,
+        "eligibleUnpublishedPairs": 0,
+        "duplicateSourceCount": 0
+      },
+      {
+        "syllabus": "9709",
+        "sourceCoverage": 1,
+        "stagingCoverage": 1,
+        "productionCoverage": 1,
+        "incompleteSourcePairs": 0,
+        "blockedPairs": 0,
+        "eligibleUnpublishedPairs": 0,
+        "duplicateSourceCount": 0
+      },
+      {
+        "syllabus": "0478",
+        "sourceCoverage": 1,
+        "stagingCoverage": 1,
+        "productionCoverage": 1,
+        "incompleteSourcePairs": 0,
+        "blockedPairs": 0,
+        "eligibleUnpublishedPairs": 0,
+        "duplicateSourceCount": 0
+      }
+    ],
+    "validation": {
+      "total": 0,
+      "byLevel": {
+        "Critical": 0,
+        "Warning": 0,
+        "Informational": 0
+      },
+      "byDomain": {},
+      "productionBlocked": false,
+      "findings": []
+    },
+    "regression": {
+      "golden0478": "PASS",
+      "edge9618": "PASS",
+      "cross9709": "PASS",
+      "future": "PASS"
+    },
+    "parser": {
+      "processedDocuments": 442,
+      "failedDocuments": 0,
+      "failureRate": 0
+    }
+  },
+  "subphases": {
+    "A": {
+      "title": "Quality Monitoring",
+      "status": "PASS",
+      "checks": {
+        "dashboardPass": true,
+        "sourceCoverageVisible": true,
+        "stagingCoverageVisible": true,
+        "productionCoverageVisible": true,
+        "validationVisible": true,
+        "regressionVisible": true,
+        "parserFailureRateVisible": true
+      },
+      "dashboard": {
+        "generatedFor": "Phase-8-Quality-Monitoring",
+        "status": "PASS",
+        "coverage": [
+          {
+            "syllabus": "9618",
+            "sourceCoverage": 1,
+            "stagingCoverage": 1,
+            "productionCoverage": 1,
+            "incompleteSourcePairs": 0,
+            "blockedPairs": 0,
+            "eligibleUnpublishedPairs": 0,
+            "duplicateSourceCount": 0
+          },
+          {
+            "syllabus": "9709",
+            "sourceCoverage": 1,
+            "stagingCoverage": 1,
+            "productionCoverage": 1,
+            "incompleteSourcePairs": 0,
+            "blockedPairs": 0,
+            "eligibleUnpublishedPairs": 0,
+            "duplicateSourceCount": 0
+          },
+          {
+            "syllabus": "0478",
+            "sourceCoverage": 1,
+            "stagingCoverage": 1,
+            "productionCoverage": 1,
+            "incompleteSourcePairs": 0,
+            "blockedPairs": 0,
+            "eligibleUnpublishedPairs": 0,
+            "duplicateSourceCount": 0
+          }
+        ],
+        "validation": {
+          "total": 0,
+          "byLevel": {
+            "Critical": 0,
+            "Warning": 0,
+            "Informational": 0
+          },
+          "byDomain": {},
+          "productionBlocked": false,
+          "findings": []
+        },
+        "regression": {
+          "golden0478": "PASS",
+          "edge9618": "PASS",
+          "cross9709": "PASS",
+          "future": "PASS"
+        },
+        "parser": {
+          "processedDocuments": 442,
+          "failedDocuments": 0,
+          "failureRate": 0
+        }
+      }
+    },
+    "B": {
+      "title": "Regression Intelligence",
+      "status": "PASS",
+      "checks": {
+        "goldenFixture": true,
+        "edgeCaseFixture": true,
+        "crossSyllabusFixture": true,
+        "futureFixture": true,
+        "failureClassification": true
+      },
+      "fixtures": {
+        "golden0478": {
+          "fixtureClass": "golden",
+          "syllabus": "0478",
+          "relativePath": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_12.pdf",
+          "status": "PASS",
+          "expected": {
+            "questionCount": 5,
+            "leafCount": 27,
+            "totalMarks": 75
+          },
+          "actual": {
+            "questionCount": 5,
+            "leafCount": 27,
+            "totalMarks": 75
+          },
+          "failureClassification": null
+        },
+        "edge9618": {
+          "fixtureClass": "edge_case",
+          "syllabus": "9618",
+          "relativePath": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_11.pdf",
+          "status": "PASS",
+          "expected": {
+            "questionCount": 8,
+            "leafCount": 30,
+            "totalMarks": 75
+          },
+          "actual": {
+            "questionCount": 8,
+            "leafCount": 30,
+            "totalMarks": 75
+          },
+          "failureClassification": null
+        },
+        "cross9709": {
+          "fixtureClass": "cross_syllabus",
+          "syllabus": "9709",
+          "relativePath": "public/textbook_syllabus/pastpaper/caie-as-a-level-9709/2024 May June/9709_s24_qp_12.pdf",
+          "status": "PASS",
+          "expected": {
+            "questionCount": 10,
+            "leafCount": 27,
+            "totalMarks": 75
+          },
+          "actual": {
+            "questionCount": 10,
+            "leafCount": 27,
+            "totalMarks": 75
+          },
+          "failureClassification": null
+        },
+        "future": {
+          "fixtureClass": "future_syllabus",
+          "syllabus": "generic",
+          "status": "PASS",
+          "expected": {
+            "failureDomain": "RESPONSE_AREA"
+          },
+          "actual": {
+            "failureDomain": "RESPONSE_AREA"
+          },
+          "failureClassification": null
+        }
+      }
+    },
+    "C": {
+      "title": "Parser Observability",
+      "status": "PASS",
+      "checks": {
+        "sourceSpanRecorded": true,
+        "classificationRecorded": true,
+        "transformationRecorded": true,
+        "canonicalOutputRecorded": true,
+        "exclusionsExplainable": true,
+        "traceVersioned": true
+      },
+      "sourceFixture": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_12.pdf",
+      "traces": [
+        {
+          "traceVersion": "1.0",
+          "source": {
+            "page": 1,
+            "blockIndex": 2,
+            "lineIndex": 0,
+            "spanIndex": 0,
+            "text": "Cambridge",
+            "font": "AllAndNone",
+            "size": 18,
+            "bbox": [
+              56.729896545410156,
+              104.6401596069336,
+              149.7502899169922,
+              122.6401596069336
+            ]
+          },
+          "decision": {
+            "classification": "content",
+            "includedInCanonical": true,
+            "reason": "Canonical content region admitted.",
+            "evidence": [
+              "regionType=content"
+            ]
+          },
+          "transformation": {
+            "operation": "NORMALIZE_AND_INCLUDE",
+            "input": "Cambridge",
+            "output": "Cambridge"
+          },
+          "canonicalTarget": "page.normalizedText"
+        },
+        {
+          "traceVersion": "1.0",
+          "source": {
+            "page": 1,
+            "blockIndex": 0,
+            "lineIndex": 0,
+            "spanIndex": 0,
+            "text": "* 0000800000001 *",
+            "font": "AllAndNone",
+            "size": 8,
+            "bbox": [
+              82.20472717285156,
+              19.273218154907227,
+              150.70069885253906,
+              27.273218154907227
+            ]
+          },
+          "decision": {
+            "classification": "barcode",
+            "includedInCanonical": false,
+            "reason": "barcode regions are retained for diagnostics but excluded from canonical text.",
+            "evidence": [
+              "machine-readable barcode geometry or font signal"
+            ]
+          },
+          "transformation": {
+            "operation": "EXCLUDE_FROM_CANONICAL",
+            "input": "* 0000800000001 *",
+            "output": ""
+          },
+          "canonicalTarget": null
+        },
+        {
+          "traceVersion": "1.0",
+          "source": {
+            "page": 1,
+            "blockIndex": 17,
+            "lineIndex": 1,
+            "spanIndex": 0,
+            "text": "©",
+            "font": "AllAndNone",
+            "size": 8,
+            "bbox": [
+              56.730682373046875,
+              778.781982421875,
+              61.29801495869955,
+              786.781982421875
+            ]
+          },
+          "decision": {
+            "classification": "footer",
+            "includedInCanonical": false,
+            "reason": "footer regions are retained for diagnostics but excluded from canonical text.",
+            "evidence": [
+              "footer geometry or repeated footer token"
+            ]
+          },
+          "transformation": {
+            "operation": "EXCLUDE_FROM_CANONICAL",
+            "input": "©",
+            "output": ""
+          },
+          "canonicalTarget": null
+        }
+      ]
+    },
+    "D": {
+      "title": "Validation Intelligence",
+      "status": "PASS",
+      "checks": {
+        "threeLevels": true,
+        "criticalBlocks": true,
+        "warningDoesNotBypassReview": true,
+        "informationalNonBlocking": true,
+        "arrayIdentifierNotMark": true,
+        "persistedFindingsClassified": true
+      },
+      "levels": {
+        "critical": {
+          "severity": "P0",
+          "code": "CANONICAL_REQUIRED_MARK_MISSING",
+          "domain": "MARK_ALLOCATION",
+          "level": "Critical",
+          "blocksProduction": true,
+          "requiresReview": true
+        },
+        "warning": {
+          "severity": "P1",
+          "code": "CANONICAL_RESPONSE_AREA_COVERAGE_LOW",
+          "domain": "RESPONSE_AREA",
+          "level": "Warning",
+          "blocksProduction": false,
+          "requiresReview": true
+        },
+        "informational": {
+          "severity": "P2",
+          "code": "SOURCE_PAIR_PENDING_REVIEW",
+          "domain": "SOURCE",
+          "level": "Informational",
+          "blocksProduction": false,
+          "requiresReview": false
+        }
+      },
+      "identifierExample": {
+        "text": "Array[5] contains the value. Award [3].",
+        "parsedMarks": [
+          {
+            "value": 3,
+            "index": 35,
+            "raw": "[3]"
+          }
+        ],
+        "classification": "Array[5] is an identifier; [3] is a mark allocation."
+      },
+      "persistedFindings": {
+        "total": 0,
+        "byLevel": {
+          "Critical": 0,
+          "Warning": 0,
+          "Informational": 0
+        },
+        "byDomain": {},
+        "productionBlocked": false,
+        "findings": []
+      }
+    },
+    "E": {
+      "title": "Production Governance",
+      "status": "PASS",
+      "checks": {
+        "snapshotCreated": true,
+        "snapshotVerified": true,
+        "contentAddressed": true,
+        "changeHistoryAvailable": true,
+        "auditTrailComplete": true,
+        "rollbackDryRun": true,
+        "noRestoreRequired": true
+      },
+      "snapshot": {
+        "snapshotVersion": "1.0",
+        "snapshotId": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+        "sourcePath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production/production-store.json",
+        "snapshotPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/snapshots/production-store-ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8.json",
+        "sha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+        "byteLength": 341988119,
+        "schemaVersion": "1.0.0",
+        "sourceUpdatedAt": "2026-07-15T05:14:53.734Z",
+        "recordCounts": {
+          "batches": 221,
+          "papers": 442,
+          "questions": 6705,
+          "responseAreas": 26808,
+          "markSchemeEntries": 5226,
+          "pairings": 221,
+          "expansionBatches": 67
+        },
+        "immutable": true,
+        "reason": "PHASE_8_PRODUCTION_GOVERNANCE_BASELINE",
+        "manifestPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/snapshots/production-store-ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8.manifest.json"
+      },
+      "rollback": {
+        "mode": "DRY_RUN",
+        "executable": true,
+        "snapshotVerified": true,
+        "snapshotPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/snapshots/production-store-ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8.json",
+        "targetPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production/production-store.json",
+        "currentSha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+        "restoreSha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+        "changeRequired": false,
+        "productionWrite": false,
+        "guard": "Explicit allowWrite=true is required by restoreProductionSnapshot."
+      },
+      "auditTrail": {
+        "productionSha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+        "sourceUpdatedAt": "2026-07-15T05:14:53.734Z",
+        "schemaVersion": "1.0.0",
+        "recordCounts": {
+          "batches": 221,
+          "papers": 442,
+          "questions": 6705,
+          "responseAreas": 26808,
+          "markSchemeEntries": 5226,
+          "pairings": 221,
+          "expansionBatches": 67
+        },
+        "expansionBatchCount": 67,
+        "changeHistory": [
+          {
+            "id": "PR028-0478-2023-MJ",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR034-0478-2021-MJ-BATCH-01",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR035-0478-2020-MJ-BATCH-01",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR036-0478-2020-MJ-BATCH-02",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR037-0478-2020-MJ-BATCH-03",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR039-0478-2021-MJ-BATCH-02",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR041-0478-2021-MJ-BATCH-03",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR043-0478-2022-MJ-BATCH-01",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR045-0478-2022-MJ-BATCH-02",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR047-0478-2022-MJ-BATCH-03",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR049-9618-2021-MJ-BATCH-01",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR050-9618-2021-MJ-BATCH-02",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR051-9618-2021-ON-BATCH-03",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR052-9618-2021-ON-BATCH-04",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR053-9618-2021-ON-BATCH-05",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR054-9618-2021-ON-BATCH-06",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR055-9618-2021-MJ-BATCH-07",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR056-9618-2023-MJ-BATCH-08",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR057-9618-2025-MJ-BATCH-09",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR058-9618-2025-ON-BATCH-10",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR063-9618-2021-MJ-PREVIOUSLY-BLOCKED",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR064-9618-2021-ON-PREVIOUSLY-BLOCKED",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR065-9618-2024-ON-PREVIOUSLY-BLOCKED",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2022-MJ-41",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2021-ON-PHASE3-BATCH0",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2022-MJ-PHASE3-BATCH1",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2022-ON-PHASE3-BATCH2",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2023-MJ-PHASE3-BATCH3",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2023-ON-PHASE3-BATCH4",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2024-MJ-PHASE3-BATCH5",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2024-ON-PHASE3-BATCH6",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2025-MJ-PHASE3-BATCH7",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2025-ON-PHASE3-BATCH8",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2022-ON-PHASE5-A",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2023-MJ-PHASE5-B",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2024-ON-PHASE5-C",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2025-MJ-PHASE5-C",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2025-ON-PHASE5-C",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2023-ON-PHASE5-D",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-9618-2025-MJ-PHASE5-D",
+            "syllabus": "9618",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2019-FM-PHASE7-BATCH01",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2019-MJ-PHASE7-BATCH02",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2019-ON-PHASE7-BATCH03",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2020-FM-PHASE7-BATCH04",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2020-ON-PHASE7-BATCH05",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2021-FM-PHASE7-BATCH06",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2021-ON-PHASE7-BATCH07",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2022-FM-PHASE7-BATCH08",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2022-ON-PHASE7-BATCH09",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2023-FM-PHASE7-BATCH10",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2023-ON-PHASE7-BATCH11",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2024-FM-PHASE7-BATCH12",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2024-MJ-PHASE7-BATCH13",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2024-ON-PHASE7-BATCH14",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2025-FM-PHASE7-BATCH15",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2025-MJ-PHASE7-BATCH16",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2025-ON-PHASE7-BATCH17",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2019-ON-PHASE7-BATCH01",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2023-FM-PHASE7-BATCH02",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2024-MJ-PHASE7-BATCH03",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2024-ON-PHASE7-BATCH04",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-0478-2025-MJ-PHASE7-BATCH05",
+            "syllabus": "0478",
+            "status": null
+          },
+          {
+            "id": "PR070-9709-2020-MJ-PHASE7B-PILOT",
+            "syllabus": "9709",
+            "status": null
+          },
+          {
+            "id": "PR070-9709-2021-MJ-PHASE7B-PILOT",
+            "syllabus": "9709",
+            "status": null
+          },
+          {
+            "id": "PR070-9709-2022-MJ-PHASE7B-PILOT",
+            "syllabus": "9709",
+            "status": null
+          },
+          {
+            "id": "PR070-9709-2023-MJ-PHASE7B-PILOT",
+            "syllabus": "9709",
+            "status": null
+          },
+          {
+            "id": "PR070-9709-2024-MJ-PHASE7B-PILOT",
+            "syllabus": "9709",
+            "status": null
+          }
+        ]
+      }
+    }
+  },
+  "integrity": {
+    "production": {
+      "beforeSha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+      "afterSha256": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+      "unchanged": true
+    },
+    "canonical": {
+      "beforeSha256": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "afterSha256": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "unchanged": true
+    },
+    "productionRecordCounts": {
+      "before": {
+        "batches": 221,
+        "papers": 442,
+        "questions": 6705,
+        "responseAreas": 26808,
+        "markSchemeEntries": 5226,
+        "pairings": 221,
+        "expansionBatches": 67
+      },
+      "after": {
+        "batches": 221,
+        "papers": 442,
+        "questions": 6705,
+        "responseAreas": 26808,
+        "markSchemeEntries": 5226,
+        "pairings": 221,
+        "expansionBatches": 67
+      },
+      "unchanged": true
+    }
+  },
+  "architectureFailures": [],
+  "completionChecks": {
+    "qualityMetricsAutomated": true,
+    "regressionVisibilityImproved": true,
+    "parserDecisionsTraceable": true,
+    "validationPrecisionImproved": true,
+    "productionChangesAuditable": true,
+    "existingProductionUnchanged": true,
+    "canonicalConsistent": true,
+    "validationNotWeakened": true,
+    "architectureStable": true
+  },
+  "remainingIssues": [],
+  "reports": {
+    "subphases": {
+      "A": {
+        "designPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/docs/phase8-a-design.md",
+        "implementationPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-a-implementation-report.json",
+        "regressionPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-a-regression-report.json"
+      },
+      "B": {
+        "designPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/docs/phase8-b-design.md",
+        "implementationPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-b-implementation-report.json",
+        "regressionPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-b-regression-report.json"
+      },
+      "C": {
+        "designPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/docs/phase8-c-design.md",
+        "implementationPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-c-implementation-report.json",
+        "regressionPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-c-regression-report.json"
+      },
+      "D": {
+        "designPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/docs/phase8-d-design.md",
+        "implementationPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-d-implementation-report.json",
+        "regressionPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-d-regression-report.json"
+      },
+      "E": {
+        "designPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/docs/phase8-e-design.md",
+        "implementationPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-e-implementation-report.json",
+        "regressionPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-e-regression-report.json"
+      }
+    },
+    "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-long-term-data-quality-improvement-report.json",
+    "debugPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/quality-governance/phase8-long-term-data-quality-improvement-debug.json"
+  },
+  "next": {
+    "phase": "Phase 8 Continuous Operation",
+    "decision": "Run monitoring and governance checks for every future ingestion change",
+    "productionWrite": false
+  }
+}

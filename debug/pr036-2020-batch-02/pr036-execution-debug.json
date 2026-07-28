@@ -1,0 +1,71 @@
+{
+  "solution": "PR-036-0478-2020-MJ-BATCH-02-Production-Expansion-Plan",
+  "batchId": "PR036-0478-2020-MJ-BATCH-02",
+  "status": "PASS",
+  "scope": {
+    "syllabus": "0478",
+    "year": 2020,
+    "session": "M/J",
+    "components": ["13", "21"]
+  },
+  "preflight": {
+    "artifacts": 4,
+    "validationPass": 4,
+    "completenessPass": 4,
+    "publishReady": 4,
+    "component13ResponseAreaCoverage": {"required": 20, "present": 20, "ratio": 1},
+    "component21ResponseAreaCoverage": {"required": 16, "present": 16, "ratio": 1}
+  },
+  "publication": {
+    "productionWrite": true,
+    "paperDelta": 4,
+    "questionRecordDelta": 49,
+    "topLevelQuestionDelta": 16,
+    "leafQuestionDelta": 37,
+    "responseAreaDelta": 235,
+    "markSchemeEntryDelta": 16,
+    "pairingDelta": 2,
+    "existingRecordsUnchanged": true,
+    "stagingArtifactsUnchanged": true
+  },
+  "productionState": {
+    "papers": 24,
+    "questionRecords": 386,
+    "topLevelQuestions": 116,
+    "leafQuestions": 301,
+    "responseAreas": 1421,
+    "markSchemeEntries": 127,
+    "pairings": 12,
+    "batches": 12,
+    "expansionBatches": 4
+  },
+  "frontendVerification": {
+    "questionFinder": "PASS",
+    "knowledgeChecklist": "PASS",
+    "markSchemeSearch": "PASS",
+    "aiRetrieval": "PASS",
+    "openOriginalQuestion": "PASS",
+    "qpMsCorrespondence": "PASS"
+  },
+  "regression": {
+    "phase1": {"success": 20, "total": 20},
+    "phase2": {"success": 120, "total": 120},
+    "pr030": "PASS",
+    "pr031": "PASS",
+    "pr032": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "integrity": {
+    "productionStoreBeforeSha256": "7187dfb6cedb75a60d8a7ddd16dded3be7abc0a3bb9aa4ef9de51192fe5d9d52",
+    "productionStoreAfterSha256": "bc8746153b6fa48b8ce4ba07b13e0fa4d66727ac1eae13a163bc26eb9d543d14",
+    "productionSnapshot": "debug/pr036-2020-batch-02/production-store-before.json",
+    "stagingHashesBefore": "debug/pr036-2020-batch-02/staging-before.sha256",
+    "stagingHashesAfter": "debug/pr036-2020-batch-02/staging-after.sha256"
+  },
+  "nextBatch": {
+    "batchId": "PR037-0478-2020-MJ-BATCH-03",
+    "components": ["22", "23"],
+    "productionWrite": false
+  }
+}

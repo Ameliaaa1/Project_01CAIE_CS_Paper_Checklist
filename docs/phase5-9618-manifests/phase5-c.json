@@ -1,0 +1,134 @@
+[
+  {
+    "id": "phase5-c-001",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+    "syllabus": "9618",
+    "year": 2024,
+    "session": "Oct-Nov",
+    "component": "21",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2024-ON-21"
+  },
+  {
+    "id": "phase5-c-002",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_21.pdf",
+    "syllabus": "9618",
+    "year": 2024,
+    "session": "Oct-Nov",
+    "component": "21",
+    "expectedRole": "mark_scheme",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2024-ON-21"
+  },
+  {
+    "id": "phase5-c-003",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf",
+    "syllabus": "9618",
+    "year": 2024,
+    "session": "Oct-Nov",
+    "component": "23",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2024-ON-23"
+  },
+  {
+    "id": "phase5-c-004",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_23.pdf",
+    "syllabus": "9618",
+    "year": 2024,
+    "session": "Oct-Nov",
+    "component": "23",
+    "expectedRole": "mark_scheme",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2024-ON-23"
+  },
+  {
+    "id": "phase5-c-005",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+    "syllabus": "9618",
+    "year": 2024,
+    "session": "Oct-Nov",
+    "component": "31",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2024-ON-31"
+  },
+  {
+    "id": "phase5-c-006",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_31.pdf",
+    "syllabus": "9618",
+    "year": 2024,
+    "session": "Oct-Nov",
+    "component": "31",
+    "expectedRole": "mark_scheme",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2024-ON-31"
+  },
+  {
+    "id": "phase5-c-007",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_33.pdf",
+    "syllabus": "9618",
+    "year": 2024,
+    "session": "Oct-Nov",
+    "component": "33",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2024-ON-33"
+  },
+  {
+    "id": "phase5-c-008",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_33.pdf",
+    "syllabus": "9618",
+    "year": 2024,
+    "session": "Oct-Nov",
+    "component": "33",
+    "expectedRole": "mark_scheme",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2024-ON-33"
+  },
+  {
+    "id": "phase5-c-009",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+    "syllabus": "9618",
+    "year": 2025,
+    "session": "May-June",
+    "component": "21",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2025-MJ-21"
+  },
+  {
+    "id": "phase5-c-010",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_21.pdf",
+    "syllabus": "9618",
+    "year": 2025,
+    "session": "May-June",
+    "component": "21",
+    "expectedRole": "mark_scheme",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2025-MJ-21"
+  },
+  {
+    "id": "phase5-c-011",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_23.pdf",
+    "syllabus": "9618",
+    "year": 2025,
+    "session": "Oct-Nov",
+    "component": "23",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2025-ON-23"
+  },
+  {
+    "id": "phase5-c-012",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_ms_23.pdf",
+    "syllabus": "9618",
+    "year": 2025,
+    "session": "Oct-Nov",
+    "component": "23",
+    "expectedRole": "mark_scheme",
+    "phase1Regression": false,
+    "purpose": "Phase 5-C blocker repair for 9618-2025-ON-23"
+  }
+]

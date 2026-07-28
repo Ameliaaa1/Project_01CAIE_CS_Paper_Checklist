@@ -1,0 +1,144 @@
+[2026-07-13T02:04:28.428Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-March/0478_m21_qp_22.pdf
+[2026-07-13T02:04:28.428Z] startTime=2026-07-13T02:04:28.428Z
+[2026-07-13T02:04:28.428Z] expectedRole=question_paper
+[2026-07-13T02:04:30.404Z] extract.exitCode=0
+[2026-07-13T02:04:30.404Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m21_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-March/0478_m21_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify the variable that you used to store the student’s answer in . Give the most (a) Task 1 appropriate data type for this variable. Explain how your program ensured that any data entered for the answer was valid. Variable Data type Validation [4] Identify and give the data type of a variable, that you could have used in . (b) different Task 2 State th"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 input 25 positive whole numbers less than 100 • find and output the largest number • find and output the average of all the numbers • 0 01 A ← 0 O2 B ← 0 03 C ← 04 REPEAT 05 REPEAT 06 INPUT D 07 UNTIL D > 0 AND D < 100 AND D = INT(D) 08 IF D > B 09 THEN D 10 B ← 11 ENDIF C + D 12 C ← A + 1 13 A ← 14 UNTIL A >= 25 C / A 15 E ← 16 OUTPUT \"Largest number is \""
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Draw a line from each pseudocode statement to its correct flowchart symbol. Pseudocode statement Flowchart symbol IF X > 12 INPUT X X Y + Z OUTPUT X [4] This algorithm accepts weights of bags of cookies. Any cookie bag weighing between 0.9 and"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 1.1 kilograms inclusive is acceptable. Underweight bags weigh less than 0.9 kilograms and overweight bags weigh more than 1.1 kilograms. An input of a negative number stops the process. Then the total number of bags, the number of overweight bags and the number of underweight bags weighed are output. 0 Accept ← 0 Over ← 0 Under ← OUTPUT \"Enter weight of fi"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 categorised by: SIZE – small or large • FILLING – brief description, for example mint crunch • PRICE – price in Rupees, for example ₹2.50 • NUMBERSOLD – how many sold • A database management system uses these data types: Text Number Currency Boolean Select the most appropriate data type for these three fields from the four data types shown. (a) Each data t"
+    }
+  ]
+}
+[2026-07-13T02:04:30.406Z] parserVersion=0.4.0
+[2026-07-13T02:04:30.406Z] documentRole=question_paper
+[2026-07-13T02:04:30.406Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:30.719Z] stage.exitCode=0
+[2026-07-13T02:04:30.719Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m21_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m21_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m21_qp_22.staging.json",
+  "runId": "0478-2021-FM-22-QP-RUN-05a3cfb6c944",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m21_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 13,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 13,
+        "present": 13,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:04:30.722Z] stagingId=0478-2021-FM-22-QP-RUN-05a3cfb6c944
+[2026-07-13T02:04:30.722Z] validationStatus=PASS
+[2026-07-13T02:04:30.722Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:04:30.722Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:30.722Z] canonicalPublishable=true
+[2026-07-13T02:04:30.722Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:04:30.722Z] endTime=2026-07-13T02:04:30.722Z
+[2026-07-13T02:04:30.722Z] status=PASS

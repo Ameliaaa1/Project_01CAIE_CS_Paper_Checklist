@@ -1,0 +1,112 @@
+[2026-07-15T03:11:23.215Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_43.pdf
+[2026-07-15T03:11:23.215Z] startTime=2026-07-15T03:11:23.215Z
+[2026-07-15T03:11:23.215Z] expectedRole=question_paper
+[2026-07-15T03:11:24.457Z] extract.exitCode=0
+[2026-07-15T03:11:24.457Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_43.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_43.pdf",
+  "pageCount": 12,
+  "questionCount": 3,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The main program needs to read 25 integer data items from the text file into a (a) Data.txt local 1D array, DataArray Write program code to declare the local array (i) DataArray Save your program as . Question1_J2023 Copy and paste the program code into in the evidence document. part 1(a)(i) [1] Amend the main program to read the contents of into (ii) Data"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 8,
+      "marks": 32,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 being developed using object‑oriented programming. The class stores data about the vehicles. Each vehicle has an identification name, Vehicle a maximum speed, a current speed and a horizontal position. The value is IncreaseAmount added to the current speed each time the vehicle increases its speed. Vehicle stores the identification name for the vehicle ID "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 25,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "3 stack stores the names of animals. The program contains the following global arrays and variables: (a) 1D array to store the names of up to 20 animals. • Animal 1D array to store the names of up to 10 colours. • Colour to point to the next free space in the array initialised to 0. • AnimalTopPointer Animal to point to the next free space in the array initi"
+    }
+  ]
+}
+[2026-07-15T03:11:24.458Z] parserVersion=0.4.0
+[2026-07-15T03:11:24.458Z] documentRole=question_paper
+[2026-07-15T03:11:24.458Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:11:24.708Z] stage.exitCode=0
+[2026-07-15T03:11:24.708Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_43.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_43.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_43.staging.json",
+  "runId": "9618-2023-MJ-43-QP-RUN-609cadb80084",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_43.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 3,
+      "leafQuestionCount": 26,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:11:24.710Z] stagingId=9618-2023-MJ-43-QP-RUN-609cadb80084
+[2026-07-15T03:11:24.710Z] validationStatus=PASS
+[2026-07-15T03:11:24.710Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:11:24.710Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:11:24.710Z] canonicalPublishable=true
+[2026-07-15T03:11:24.710Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:11:24.710Z] endTime=2026-07-15T03:11:24.710Z
+[2026-07-15T03:11:24.710Z] status=PASS

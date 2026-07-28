@@ -8,6 +8,7 @@ const expectedPublic = [
   ["/index.html", 200, /^text\/html/],
   ["/app.js", 200, /^text\/javascript/],
   ["/assets/paperlens-data.js", 200, /^text\/javascript/],
+  ["/assets/question-index.json", 200, /^application\/json/],
   ["/styles.css", 200, /^text\/css/],
   ["/checkout.html", 200, /^text\/html/],
   ["/checkout.js", 200, /^text\/javascript/],
@@ -16,7 +17,8 @@ const expectedPublic = [
   ["/auth.js", 200, /^text\/javascript/],
   ["/auth.css", 200, /^text\/css/],
   ["/assets/study-workspace.png", 200, /^image\/png/],
-  ["/textbook_syllabus/pastpaper/2025-March/0478_m25_qp_12.pdf", 200, /^application\/pdf/]
+  ["/textbook_syllabus/pastpaper/caie-igcse-0478/2025-March/0478_m25_qp_12.pdf", 200, /^application\/pdf/],
+  ["/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025%20May%20June/9618_s25_qp_11.pdf", 200, /^application\/pdf/]
 ];
 
 const expectedPrivate = [

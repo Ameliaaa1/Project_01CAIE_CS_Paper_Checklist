@@ -1,0 +1,26 @@
+{
+  "generatedFor": "Phase-8-Continuous-Operation-Plan",
+  "status": "PASS",
+  "mode": "CONTROLLED_INGESTION_CONTRACT",
+  "productionWrite": false,
+  "workflow": {
+    "status": "PASS",
+    "steps": [
+      "SOURCE_COLLECTION",
+      "DOCUMENT_PROFILE_VERIFICATION",
+      "PARSER_PROCESSING",
+      "CANONICAL_GENERATION",
+      "STAGING_VALIDATION",
+      "REGRESSION_TEST",
+      "PRODUCTION_ELIGIBILITY_CHECK",
+      "PRODUCTION_PUBLISH",
+      "AUDIT_REPORT"
+    ],
+    "missing": [],
+    "orderingFailures": [],
+    "directProductionPath": false,
+    "bypassedStaging": false
+  },
+  "directPdfToProductionAllowed": false,
+  "reportPath": "output/continuous-operation/ingestion-report.json"
+}

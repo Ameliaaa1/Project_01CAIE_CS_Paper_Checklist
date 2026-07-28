@@ -1,0 +1,177 @@
+{
+  "generatedFor": "PR-028_Production_Expansion_Strategy_Explanation",
+  "infrastructureStatus": "PASS",
+  "phaseAExecutionStatus": "BLOCKED",
+  "productionWrite": false,
+  "batchId": "PR028-0478-2023-MJ",
+  "strategy": [
+    {
+      "phase": "A",
+      "title": "0478 same period",
+      "syllabus": "0478",
+      "years": [
+        2023
+      ],
+      "sessions": [
+        "M/J"
+      ]
+    },
+    {
+      "phase": "B",
+      "title": "0478 multi-year",
+      "syllabus": "0478",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ]
+    },
+    {
+      "phase": "C",
+      "title": "Add 9618",
+      "syllabus": "9618"
+    },
+    {
+      "phase": "D",
+      "title": "Full supported production",
+      "prerequisites": [
+        "A",
+        "B",
+        "C"
+      ]
+    }
+  ],
+  "phaseA": {
+    "scope": {
+      "syllabus": "0478",
+      "year": 2023,
+      "session": "M/J",
+      "components": [
+        "11",
+        "12",
+        "13",
+        "21",
+        "22",
+        "23"
+      ]
+    },
+    "summary": {
+      "ELIGIBLE": 0,
+      "ALREADY_PUBLISHED": 1,
+      "BLOCKED": 5
+    },
+    "readyToExecute": false,
+    "alreadyPublished": [
+      "0478-2023-MJ-12"
+    ],
+    "blockedPairs": [
+      {
+        "pairingKey": "0478-2023-MJ-11",
+        "component": "11",
+        "blockers": [
+          "MISSING_STAGING_PAIR"
+        ],
+        "qpStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_11.staging.json",
+        "msStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_11.staging.json"
+      },
+      {
+        "pairingKey": "0478-2023-MJ-13",
+        "component": "13",
+        "blockers": [
+          "MISSING_STAGING_PAIR"
+        ],
+        "qpStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_13.staging.json",
+        "msStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_13.staging.json"
+      },
+      {
+        "pairingKey": "0478-2023-MJ-21",
+        "component": "21",
+        "blockers": [
+          "MISSING_STAGING_PAIR"
+        ],
+        "qpStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_21.staging.json",
+        "msStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_21.staging.json"
+      },
+      {
+        "pairingKey": "0478-2023-MJ-22",
+        "component": "22",
+        "blockers": [
+          "MISSING_STAGING_PAIR"
+        ],
+        "qpStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_22.staging.json",
+        "msStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_22.staging.json"
+      },
+      {
+        "pairingKey": "0478-2023-MJ-23",
+        "component": "23",
+        "blockers": [
+          "MISSING_STAGING_PAIR"
+        ],
+        "qpStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_23.staging.json",
+        "msStagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_23.staging.json"
+      }
+    ]
+  },
+  "workflowVerification": {
+    "batchPlanner": "PASS",
+    "stableBatchIdentity": "PASS",
+    "perPairValidationCompletenessPublishGates": "PASS",
+    "isolatedBatchTransaction": "PASS",
+    "atomicCommit": "PASS",
+    "duplicateBatchBlocked": "PASS",
+    "injectedFailureLeavesProductionUnchanged": "PASS",
+    "exactBatchRollback": "PASS",
+    "productionVerificationAutomated": "PASS",
+    "monitoringReportGenerated": "PASS"
+  },
+  "monitoring": {
+    "generatedAt": "2026-07-11T13:51:32.789Z",
+    "dataQualityMetrics": {
+      "ingestionSuccessRate": 1,
+      "validationFailureRate": 0,
+      "completenessFailureRate": 0,
+      "rollbackCount": 0
+    },
+    "datasetMetrics": {
+      "totalPapers": 2,
+      "totalQuestions": 10,
+      "totalLeafQuestions": 31,
+      "totalResponseAreas": 112,
+      "totalMarkEntries": 7,
+      "totalPairings": 1,
+      "totalExpansionBatches": 0
+    }
+  },
+  "productionStatePreserved": {
+    "batchIds": [
+      "PR027-0478-2023-MJ-12"
+    ],
+    "paperIds": [
+      "0478-2023-MJ-12-QP",
+      "0478-2023-MJ-12-MS"
+    ],
+    "expansionBatchCount": 0
+  },
+  "regression": {
+    "phase1": {
+      "totalFiles": 20,
+      "successCount": 20,
+      "failedCount": 0
+    },
+    "phase2": {
+      "totalFiles": 120,
+      "successCount": 120,
+      "failedCount": 0,
+      "successRate": 1
+    },
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "textQualityRegressions": [],
+    "datasetGaps": [],
+    "npmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "safetyDecision": "Components 11, 13, 21, 22, and 23 were not published because approved Phase2 staging pairs do not exist.",
+  "fullProduction": false
+}

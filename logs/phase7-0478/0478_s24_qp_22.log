@@ -1,0 +1,240 @@
+[2026-07-15T03:53:55.826Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_22.pdf
+[2026-07-15T03:53:55.826Z] startTime=2026-07-15T03:53:55.826Z
+[2026-07-15T03:53:55.826Z] expectedRole=question_paper
+[2026-07-15T03:53:57.526Z] extract.exitCode=0
+[2026-07-15T03:53:57.526Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 Tick ( ✓ ) one box to identify a method used to design and construct a solution to a computing problem. A analysis B coding C flowchart D testing [1]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Four logic functions and five standard symbols for logic gates are shown. Draw one line to link each logic function to its standard symbol. Not all standard symbols will be used. Logic function Standard symbol AND XOR NAND OR [4]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "3 Identify three different tasks in the analysis stage of the program development life cycle. 1 [3]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A program needs to make sure the characters input for a product code meet these rules: The product code is six characters in length. • The first two characters must be “PD”. • The last four characters must be a number in the range 1000 to 9999 inclusive. • (a) Identify three validation checks and state how each check would make sure the product code met on"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A high-level programming language makes use of arithmetic, Boolean and logical operators. State how each type of operator is used. Give an example statement, in pseudocode, for each one. Arithmetic Example Boolean Example Logical Example [6]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Totalling and counting are standard methods of solution. Numbers are input. The number 9999.9 is the last number to be input and is ignored. (a) Write an algorithm in pseudocode to total the numbers input and to output the total. You do not need to validate the input. [4] (b) Write an algorithm in pseudocode to count and output the number of input values t"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 An algorithm has been written in pseudocode to find and display the maximum and minimum values in an array of 1000 positive numbers. The array List[] starts at index 1 List[1] 01 Max List[1] 02 Min 2 TO 1000 03 FOR Counter 04 IF List[Counter] < Max 05 THEN List[Counter] 06 Max 07 ENDIF 08 IF List[Count] ˂ Min 09 THEN List[Counter] 10 Min 11 ENDWHILE 12 NEX"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 A logic circuit is to be built to control the opening of a safe used to store money. There are two keys, A and B and a time switch C . The safe can only open if both keys are used and the time switch is off. not used 0 key A used 1 not used 0 key B used 1 switch off 0 time switch C switch on 1 safe cannot open 0 safe X safe can open 1 (a) Write the logic e"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 This flowchart represents an algorithm. START A FALSE B 1 No > IS List[B] T List[B] + 1]? List[B Yes List[B] List[B + 1] List[B + 1] T A TRUE B B + 1 No IS B = 5? Yes Yes IS A = TRUE? No STOP (a) The array List[1:5] used in the flowchart contains this data: List[1] List[2] List[3] List[4] List[5] Complete the trace table using the data given in the array. "
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 A television subscription service has a new database table named Contract to store details of their subscribers’ contracts. The table contains these fields: ContractNumber – the contract number, for example CT567 • Months – the length of the contract in months, for example 6 • EndDate – the date the contract finishes, for example 30 November 2024 • News –"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 A one-player game uses the two-dimensional (2D) array Grid[] to store the location of a secret cell to be found by the player in 10 moves. Each row and column has 5 cells. Start Grid[1,1] At the start of the game: The program places an ‘X’ in a random cell ( not in Grid[1,1] ) and empties all the other • cells in the grid. The player starts at the top lef"
+    }
+  ]
+}
+[2026-07-15T03:53:57.528Z] parserVersion=0.4.0
+[2026-07-15T03:53:57.528Z] documentRole=question_paper
+[2026-07-15T03:53:57.528Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:57.792Z] stage.exitCode=0
+[2026-07-15T03:53:57.792Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_22.staging.json",
+  "runId": "0478-2024-MJ-22-QP-RUN-9bf2ee49e172",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 20,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 20,
+        "present": 20,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:57.794Z] stagingId=0478-2024-MJ-22-QP-RUN-9bf2ee49e172
+[2026-07-15T03:53:57.794Z] validationStatus=PASS
+[2026-07-15T03:53:57.794Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:57.794Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:57.794Z] canonicalPublishable=true
+[2026-07-15T03:53:57.794Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:57.794Z] endTime=2026-07-15T03:53:57.794Z
+[2026-07-15T03:53:57.794Z] status=PASS

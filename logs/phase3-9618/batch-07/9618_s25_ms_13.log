@@ -1,0 +1,69 @@
+[2026-07-14T17:00:43.043Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf
+[2026-07-14T17:00:43.043Z] startTime=2026-07-14T17:00:43.043Z
+[2026-07-14T17:00:43.043Z] expectedRole=mark_scheme
+[2026-07-14T17:00:44.881Z] extract.exitCode=0
+[2026-07-14T17:00:44.881Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_ms_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_13.pdf",
+  "pageCount": 12,
+  "questionCount": 0,
+  "questions": []
+}
+[2026-07-14T17:00:44.884Z] parserVersion=0.4.0
+[2026-07-14T17:00:44.884Z] documentRole=mark_scheme
+[2026-07-14T17:00:44.884Z] validationProfile=MARK_SCHEME
+[2026-07-14T17:00:45.294Z] stage.exitCode=0
+[2026-07-14T17:00:45.294Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_ms_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_ms_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_ms_13.staging.json",
+  "runId": "9618-2025-MJ-13-MS-RUN-a334bec016c7",
+  "status": "NEEDS_REVIEW",
+  "publishStatus": "BLOCKED",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_ms_13.staging.json",
+    "documentRole": "mark_scheme",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 0,
+      "leafQuestionCount": 0,
+      "markSchemeEntryCount": 27,
+      "responseAreaCoverage": {
+        "required": 0,
+        "present": 0,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 1,
+  "p2": 0,
+  "issues": [
+    [
+      "P1",
+      "SUSPICIOUS_GLYPHS_REMAIN",
+      null
+    ]
+  ]
+}
+[2026-07-14T17:00:45.297Z] stagingId=9618-2025-MJ-13-MS-RUN-a334bec016c7
+[2026-07-14T17:00:45.297Z] validationStatus=WARN
+[2026-07-14T17:00:45.297Z] publishStatus=BLOCKED
+[2026-07-14T17:00:45.297Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:00:45.297Z] canonicalPublishable=true
+[2026-07-14T17:00:45.297Z] issueCounts={"P0":0,"P1":1,"P2":0}
+[2026-07-14T17:00:45.297Z] endTime=2026-07-14T17:00:45.297Z
+[2026-07-14T17:00:45.297Z] status=FAIL

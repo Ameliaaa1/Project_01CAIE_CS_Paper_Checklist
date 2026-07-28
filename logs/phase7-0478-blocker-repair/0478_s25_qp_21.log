@@ -1,0 +1,246 @@
+[2026-07-15T04:09:54.068Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_21.pdf
+[2026-07-15T04:09:54.068Z] startTime=2026-07-15T04:09:54.068Z
+[2026-07-15T04:09:54.068Z] expectedRole=question_paper
+[2026-07-15T04:09:56.403Z] extract.exitCode=0
+[2026-07-15T04:09:56.403Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s25_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_21.pdf",
+  "pageCount": 16,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "1 Tick ( ü value. A normal test data B abnormal test data C extreme test data D boundary test data [1]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Four requirements for validating inputs and five types of validation check are given. (a) Draw one line from each requirement to the most appropriate validation check. Not all validation checks will be used. Requirement Validation check length check Date of birth must be between 01/01/1900 and 01/01/2010. format check Name has been entered. range check Pas"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The following pseudocode algorithm uses a count-controlled loop to read in 10 names and store them in the array Names[] 1 TO 10 FOR Count OUTPUT \"Please enter a name\" INPUT Name Name Names[Count] NEXT Count Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop. [4]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A telephone number with 13 characters is input. The first character is a ‘+’, followed by a 2-digit country code, for example: +20xxxxxxxxxx where 20 is the country code and x is a digit between 0 and 9 inclusive. The algorithm includes checks for the country codes: 44 for the UK and 20 for Egypt. (a) Write an algorithm using pseudocode to: input the telep"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Two library routines used in programming are MOD and DIV. State the purpose of each of the library routines. Give one example pseudocode statement for each of the library routines. MOD purpose Example pseudocode DIV purpose Example pseudocode [4]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 An algorithm has been written in pseudocode to generate a random integer between 1 and 100 inclusive and store the value in N. The user enters a guess for the number and the algorithm indicates whether the guess is higher or lower than the random number. The algorithm outputs the number of guesses when the user has correctly guessed the random number. 0 01"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Consider the logic expression: X = (A AND B) XOR (B OR NOT C) (a) Draw a logic circuit for this logic expression. Each logic gate must have a maximum of two inputs. Do not simplify the logic expression. A B X C [4] (b) Complete the truth table for the given logic expression. A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [4]"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 A bus company has set up a new database table called BUS to store details of the buses leaving the main bus terminal. RouteID Destination Stops Driver Time Return BC01 Town Centre 10 B Smith 9:00 Yes BC02 The Fountain 5 A Patel 9:10 Yes BC03 The Palace 9 B Hayes 9:28 No BC04 City Park 12 W Gao 9:55 Yes BC05 City Mall 9 R Hussein 10:10 No BC06 Swan Lake 14 "
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 The variables A and B are used in a program. A holds a whole number and B holds text. (a) Write pseudocode statements to declare the variables A and B [2] (b) The function Odds(X) returns ‘Odd’ if the value of X is an odd number and returns ‘Even’ if the value of X is an even number. Write pseudocode statements to: define the function • call the function u"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 The flowchart represents an algorithm to calculate grades. START INPUT Score IS Score Yes Grade \"C\" >= 40 ? No IS Score Yes Grade \"B\" >= 60 ? No IS Score Yes Grade \"A\" >= 80 ? No Grade \"D\" OUTPUT \"You achieved a \", Grade STOP (a) Complete the trace table for the algorithm, using the input data: 21, 46, 63, 91, 12 Score Grade OUTPUT [3] (b) Explain how the"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 The one-dimensional (1D) array CompetitorName[] contains the names of 25 competitors in a tournament that includes five events. Another two-dimensional (2D) array CompetitorScore[] contains the points scored by each competitor in the five events. The first dimension of this array contains the index of the competitor from CompetitorName[] and the second di"
+    }
+  ]
+}
+[2026-07-15T04:09:56.407Z] parserVersion=0.4.0
+[2026-07-15T04:09:56.407Z] documentRole=question_paper
+[2026-07-15T04:09:56.407Z] validationProfile=QUESTION_PAPER
+[2026-07-15T04:09:56.759Z] stage.exitCode=0
+[2026-07-15T04:09:56.759Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s25_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_21.staging.json",
+  "runId": "0478-2025-MJ-21-QP-RUN-d32afc1d844e",
+  "status": "NEEDS_REVIEW",
+  "publishStatus": "BLOCKED",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 20,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 20,
+        "present": 20,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 1,
+  "p2": 0,
+  "issues": [
+    [
+      "P1",
+      "SUSPICIOUS_GLYPHS_REMAIN",
+      null
+    ]
+  ]
+}
+[2026-07-15T04:09:56.763Z] stagingId=0478-2025-MJ-21-QP-RUN-d32afc1d844e
+[2026-07-15T04:09:56.763Z] validationStatus=WARN
+[2026-07-15T04:09:56.763Z] publishStatus=BLOCKED
+[2026-07-15T04:09:56.763Z] canonicalCompletenessStatus=PASS
+[2026-07-15T04:09:56.763Z] canonicalPublishable=true
+[2026-07-15T04:09:56.763Z] issueCounts={"P0":0,"P1":1,"P2":0}
+[2026-07-15T04:09:56.763Z] endTime=2026-07-15T04:09:56.763Z
+[2026-07-15T04:09:56.763Z] status=FAIL

@@ -1,0 +1,665 @@
+{
+  "generatedFor": "Phase-5-9618-Blocked-Pair-Investigation-Plan",
+  "status": "PASS",
+  "phaseId": "Phase 5",
+  "batchId": "PHASE5-B",
+  "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase5-9618/phase5-b-blocked-pair-investigation-report.json",
+  "targetPairs": [
+    "9618-2023-MJ-41",
+    "9618-2023-MJ-43"
+  ],
+  "beforeState": [
+    {
+      "pairingKey": "9618-2023-MJ-41",
+      "classification": "BLOCKED",
+      "blockers": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "productionPublished": false,
+      "partialProductionConflict": false,
+      "blockerEvidenceAvailable": true,
+      "qpState": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "msState": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-43",
+      "classification": "BLOCKED",
+      "blockers": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "productionPublished": false,
+      "partialProductionConflict": false,
+      "blockerEvidenceAvailable": true,
+      "qpState": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "msState": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      }
+    }
+  ],
+  "blockerEvidence": [
+    {
+      "pairingKey": "9618-2023-MJ-41",
+      "issueCodes": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ]
+    },
+    {
+      "pairingKey": "9618-2023-MJ-43",
+      "issueCodes": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ]
+    }
+  ],
+  "rootCause": {
+    "category": "DOCUMENT_LAYOUT_ISSUE",
+    "affectedLayer": "PDF region classification",
+    "code": "ROTATED_MS_FOOTER_TOKENIZATION",
+    "summary": "Rotated mark-scheme footer spans were tokenized before classification, leaving © UCLES in canonical page text."
+  },
+  "changes": [
+    "Preserved source span text and classified rotated Page/© UCLES spans as footer regions."
+  ],
+  "stagingGeneration": {
+    "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase5-9618/phase5-b-staging-generation-report.json",
+    "status": "PASS",
+    "artifactsRegenerated": 4
+  },
+  "investigationResults": [
+    {
+      "pairingKey": "9618-2023-MJ-41",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "FAIL",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "DOCUMENT_LAYOUT_ISSUE",
+        "affectedLayer": "PDF region classification",
+        "code": "ROTATED_MS_FOOTER_TOKENIZATION",
+        "summary": "Rotated mark-scheme footer spans were tokenized before classification, leaving © UCLES in canonical page text."
+      },
+      "changes": [
+        "Preserved source span text and classified rotated Page/© UCLES spans as footer regions."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-43",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "FAIL",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "DOCUMENT_LAYOUT_ISSUE",
+        "affectedLayer": "PDF region classification",
+        "code": "ROTATED_MS_FOOTER_TOKENIZATION",
+        "summary": "Rotated mark-scheme footer spans were tokenized before classification, leaving © UCLES in canonical page text."
+      },
+      "changes": [
+        "Preserved source span text and classified rotated Page/© UCLES spans as footer regions."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    }
+  ],
+  "validationAfter": [
+    {
+      "pairingKey": "9618-2023-MJ-41",
+      "qp": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-43",
+      "qp": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    }
+  ],
+  "strictEligibilityAfter": [
+    {
+      "pairingKey": "9618-2023-MJ-41",
+      "strictEligible": true
+    },
+    {
+      "pairingKey": "9618-2023-MJ-43",
+      "strictEligible": true
+    }
+  ],
+  "productionDelta": {
+    "expectedDeltas": {
+      "papers": 4,
+      "questionRecords": 58,
+      "topLevelQuestions": 6,
+      "leafQuestions": 52,
+      "responseAreas": 52,
+      "markSchemeEntries": 46,
+      "pairings": 2,
+      "batches": 2,
+      "expansionBatches": 1
+    },
+    "actualDeltas": {
+      "papers": 4,
+      "questionRecords": 58,
+      "topLevelQuestions": 6,
+      "leafQuestions": 52,
+      "responseAreas": 52,
+      "markSchemeEntries": 46,
+      "pairings": 2,
+      "batches": 2,
+      "expansionBatches": 1
+    }
+  },
+  "deltasMatch": true,
+  "pairVerification": [
+    {
+      "component": "41",
+      "childBatchId": "PR070-9618-2023-MJ-PHASE5-B-41",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 26,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 23
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 26,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 23
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    },
+    {
+      "component": "43",
+      "childBatchId": "PR070-9618-2023-MJ-PHASE5-B-43",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 26,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 23
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 26,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 23
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    }
+  ],
+  "integrity": {
+    "existingProductionRecordsUnchanged": true,
+    "unrelatedStagingUnchanged": true,
+    "stagingChanges": {
+      "added": [],
+      "deleted": [],
+      "modified": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_ms_41.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_ms_43.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_41.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_43.staging.json"
+      ],
+      "unrelatedChanges": []
+    },
+    "productionRecordsBefore": {
+      "papers": 264,
+      "questionRecords": 4136,
+      "topLevelQuestions": 1015,
+      "leafQuestions": 3280,
+      "responseAreas": 14547,
+      "markSchemeEntries": 3094,
+      "pairings": 132,
+      "batches": 132,
+      "expansionBatches": 34
+    },
+    "productionRecordsAfter": {
+      "papers": 268,
+      "questionRecords": 4194,
+      "topLevelQuestions": 1021,
+      "leafQuestions": 3332,
+      "responseAreas": 14599,
+      "markSchemeEntries": 3140,
+      "pairings": 134,
+      "batches": 134,
+      "expansionBatches": 35
+    }
+  },
+  "regression": {
+    "phase1": "PASS",
+    "phase2": "PASS",
+    "phase3": "PASS",
+    "phase4Audit": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "next": {
+    "decision": "Phase 5-c",
+    "productionWrite": false
+  }
+}

@@ -1,0 +1,233 @@
+[2026-07-14T16:52:20.069Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_12.pdf
+[2026-07-14T16:52:20.069Z] startTime=2026-07-14T16:52:20.069Z
+[2026-07-14T16:52:20.069Z] expectedRole=question_paper
+[2026-07-14T16:52:21.967Z] extract.exitCode=0
+[2026-07-14T16:52:21.967Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_12.pdf",
+  "pageCount": 20,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) one Purpose Utility software to reorganise files so they are contiguous virus checker to scan for malicious program code disk formatter to decrease the file size backup to initialise a disk disk repair to create copies of files in case the original is lost defragmentation to check for and fix inconsistencies on a disk [5] Compilers and interpreters tra"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) (i) 10010110 Answer [1] Convert the unsigned binary integer into hexadecimal. (ii) 10010110 Answer [1] Convert the unsigned binary integer into Binary Coded Decimal (BCD). Show your (iii) working. 10010101 Working Answer [2] Perform the following binary addition. (b) 1 0 0 0 1 1 0 0 + 0 1 0 0 0 1 1 0 [1] A greenhouse has an automatic window."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 (a) The window ( ) operates according to the following criteria: X Parameter Description of parameter Binary value Condition 1 Too high Temperature T 0 Acceptable 1 Too high Wind speed W 0 Acceptable 1 Detected Rain R 0 Not detected 1 On Manual override M 0 Off The window opens ( = 1) if: X the temperature is too high the wind speed is acceptable • and • a"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 (a) data verification data validation [1] A checksum can be used to detect errors during data transmission. (b) Describe how a checksum is used. [3] One validation method is a presence check. (c) Describe validation methods that can be used to validate non-numeric data. two other 1 2 [2] A relational database, has the following tables:"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 9,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 GARDEN OWNER(OwnerID, FirstName, TelephoneNo, TreeID, TreePosition) TREE(TreeID, ScientificName, MaxHeight, FastGrowing) The database is in Third Normal Form (3NF). (a) not Explain how the database can be normalised to 3NF. [3] Write the Structured Query Language (SQL) script to add a new record in the table to (b) TREE store the following data: Attribute "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 (a) Explain how a digital signature ensures the email is authentic. (i) [2] Describe how a firewall protects the data on the computer. (ii) [3] The student records a sound file. (b) Explain the effect of increasing the sampling rate on the accuracy of the sound recording. (i) [2] Explain the effect of decreasing the sampling resolution on the file size of "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 15,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 general purpose register, the Accumulator (ACC), and an Index Register (IX) . Instruction Explanation Opcode Operand Immediate addressing. Load the number n to ACC LDM #n Direct addressing. Load the contents of the location at the given address to LDD <address> ACC Indexed addressing. Form the address from <address> + the contents of the LDX <address> inde"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 15,
+      "pageEnd": 16,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 per pixel. The image is displayed on a monitor that has a screen resolution of 1920 × 1080 pixels. 3 Tick ( ) box in each row to identify the effect of each action on the image file size. (a) one Increases the Decreases the No change to Action file size file size the file size Change the colour depth of the image file to 16 bits per pixel. Change the scree"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 16,
+      "pageEnd": 17,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 Describe the social impact of using facial recognition software to identify individuals in an airport. [2] A Local Area Network (LAN) consists of four computers, one server and a switch."
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 17,
+      "pageEnd": 17,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "10 The LAN uses a star topology. Complete the following diagram to show how the hardware is connected. (a) Switch Computer Computer Server Computer Computer [1] A router is attached to one of the devices on the LAN shown in to connect the LAN to (b) part (a) the internet. Identify the device. Give a reason for your choice. (i) Device Reason [2] Describe the "
+    }
+  ]
+}
+[2026-07-14T16:52:21.969Z] parserVersion=0.4.0
+[2026-07-14T16:52:21.969Z] documentRole=question_paper
+[2026-07-14T16:52:21.969Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:52:22.232Z] stage.exitCode=0
+[2026-07-14T16:52:22.232Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_12.staging.json",
+  "runId": "9618-2022-ON-12-QP-RUN-b4598c980326",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 37,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 36,
+        "present": 36,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-ON-12-Q10-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:52:22.235Z] stagingId=9618-2022-ON-12-QP-RUN-b4598c980326
+[2026-07-14T16:52:22.235Z] validationStatus=PASS
+[2026-07-14T16:52:22.235Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:52:22.235Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:52:22.235Z] canonicalPublishable=true
+[2026-07-14T16:52:22.235Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:52:22.235Z] endTime=2026-07-14T16:52:22.235Z
+[2026-07-14T16:52:22.235Z] status=PASS

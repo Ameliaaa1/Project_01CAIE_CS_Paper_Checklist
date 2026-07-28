@@ -1,0 +1,201 @@
+[2026-07-14T17:03:07.218Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_22.pdf
+[2026-07-14T17:03:07.218Z] startTime=2026-07-14T17:03:07.218Z
+[2026-07-14T17:03:07.218Z] expectedRole=question_paper
+[2026-07-14T17:03:10.362Z] extract.exitCode=0
+[2026-07-14T17:03:10.362Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_22.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) The table contains pseudocode examples. Each example may contain statements that relate to one or more of: selection • iteration (repetition) • subroutines (procedures or functions). • Complete the table by placing one or more ticks (‘3’) in each row. Pseudocode example Selection Iteration Subroutine IF Status = FALSE THEN FOR Count 1 TO 20 CALL Reset("
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Data is a global 1D array containing 20 elements of type REAL An algorithm will: input a sequence of real values, one at a time • assign each value to consecutive array elements, starting from index 1 • end when the value 99.9 is input, or all 20 elements have been assigned (the value 99.9 must • not be stored in the array). Complete the program flowchart "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A text file OldFile.txt contains IDs, names and email addresses for members of a club. Three information items are stored for each member and each item is stored on a separate line. The example shows the information for the first two members in the first six lines of the file: Line in file Information item Example data \"AB1234\" 1 member 1 ID \"Freddie Jones"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A quiz has nine questions. There are: five easy questions each worth 3 points • four hard questions each worth 5 points. • At the end of the quiz the points for each correctly answered question are added to give a total score. A check is made to test that the total score is valid using a 1D array CheckTotal of type BOOLEAN. Each index value of the array re"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A program is developed to satisfy a specific customer requirement. The project follows a program development life cycle model. This model divides the development process into several different stages. (a) The table lists some of the development activities. Complete the table by writing the name of the life cycle stage for each activity: Activity Name of li"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A string function Compare() will compare two strings. The function will: take four parameters: • ○ two strings, String1 and String2 ○ a character, Position, to indicate whether String1 will be compared with the start ('s'), or the end ('e') of String2 ○ a Boolean, CaseMatters, to indicate whether an upper case character and lower case character (for exampl"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The structure chart shows part of a program design: Convert Count P2 T1 Key Analyse Update Sort (a) Explain the meaning of the curved arrow symbol in this structure chart. [2] (b) The program designer has noted that: Count is the number of elements in an array • T1 is a value representing the number of elements in an array that have been modified • Key is "
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 14,
+      "pageEnd": 18,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 A program is being developed to manage student book loans from a college library. The programmer has defined a record type to define each loan. The data items are: Data item Data type Comment StudentID STRING the unique ID of the student who has borrowed the book BookID STRING the unique ID of the book being borrowed OnLoan BOOLEAN TRUE if the book has not"
+    }
+  ]
+}
+[2026-07-14T17:03:10.366Z] parserVersion=0.4.0
+[2026-07-14T17:03:10.366Z] documentRole=question_paper
+[2026-07-14T17:03:10.366Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:03:10.817Z] stage.exitCode=0
+[2026-07-14T17:03:10.817Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_22.staging.json",
+  "runId": "9618-2025-ON-22-QP-RUN-02da3baced99",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 19,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 18,
+        "present": 18,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-ON-22-Q1-C",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:03:10.821Z] stagingId=9618-2025-ON-22-QP-RUN-02da3baced99
+[2026-07-14T17:03:10.821Z] validationStatus=PASS
+[2026-07-14T17:03:10.821Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:03:10.821Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:03:10.821Z] canonicalPublishable=true
+[2026-07-14T17:03:10.821Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:03:10.821Z] endTime=2026-07-14T17:03:10.821Z
+[2026-07-14T17:03:10.821Z] status=PASS

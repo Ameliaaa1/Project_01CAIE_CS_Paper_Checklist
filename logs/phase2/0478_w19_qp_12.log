@@ -1,0 +1,257 @@
+[2026-07-13T02:03:23.815Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_12.pdf
+[2026-07-13T02:03:23.815Z] startTime=2026-07-13T02:03:23.815Z
+[2026-07-13T02:03:23.815Z] expectedRole=question_paper
+[2026-07-13T02:03:25.127Z] extract.exitCode=0
+[2026-07-13T02:03:25.127Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w19_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 Computer memory size is measured in multiples of bytes. Four statements about computer memory sizes are given in the table. ✓ Tick ( ) to show if the statement is True or False . True False Statement ✓ ✓ ( ) ( ) 25 kB is larger than 100 MB 999 MB is larger than 50 GB 3500 kB is smaller than 2 GB 2350 bytes is smaller than 2 kB [4]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 The Von Neumann model for a computer system uses several components in the fetch-execute cycle. One component that is used is the Control Unit (CU). Identify four other components that are used in the Von Neumann model for a computer system. 1 2 3 4 [4]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The data from a sensor must be converted from analogue to digital to be processed by a computer. (a) State what is meant by analogue data. [1] (b) State what is meant by digital data. [1]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 An 8-bit binary register contains the value: 0 0 1 1 0 1 0 0 (a) Convert the binary value to denary. [1] (b) The contents of the register shifted one place to the right would give the result: 0 0 0 1 1 0 1 0 The contents of the register shown at the start of question 4 are shifted two places to the left. Show the contents of the register after this shift h"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Audrey wants to send a sound file to Nico using email. The file is too large to attach to an email so Audrey decides to compress the file. She uses lossy compression to reduce the size of the sound file. (a) Describe how lossy compression reduces the size of the sound file. [4] (b) Nico asks Audrey why she used lossy compression rather than lossless. (i) S"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 Touch screen technologies can be described as resistive or capacitive. Six statements are given about resistive and capacitive technology. ✓ Tick ( ) to show if the statement applies to Resistive or Capacitive technology. Resistive Capacitive Statement ✓ ✓ ( ) ( ) This touch screen has multi-touch capabilities This touch screen cannot be used whilst wearin"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Gerald uses a keyboard to enter a website address into the address bar of his browser. (a) Describe how Gerald’s key presses on his keyboard are processed by the computer. [4] (b) State three functions of a browser. 1 2 3 [3] (c) The website Gerald visits uses https. Explain what is meant by https. [3]"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Consider the logic circuit: A X B C (a) Write a logic statement to match the given logic circuit. [3] (b) Complete the truth table for the given logic circuit. A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [4]"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 Maisey purchases a new router and attaches it to her computer. The connection she sets up uses duplex data transmission. (a) Five statements are given about duplex data transmission. ✓ Tick ( ) to show if the statement is True or False . True False Statement ✓ ✓ ( ) ( ) Duplex data transmission can be either serial or parallel Duplex data transmission is w"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 Data is valuable to a company. (a) Companies use error detection methods to make sure that data is accurate. One error detection method is the use of a check digit. Explain what is meant by a check digit and how it is used to detect errors. [4] (b) Companies can use a range of security methods to keep their data secure. Identify two security methods that "
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "11 Robert has a mobile device that uses RAM, ROM and an SSD. (a) State what the RAM, ROM and SSD are used for. RAM ROM SSD [3] (b) Give two reasons why an SSD, rather than a HDD, is used in the mobile device. Reason 1 Reason 2 [2]"
+    }
+  ]
+}
+[2026-07-13T02:03:25.129Z] parserVersion=0.4.0
+[2026-07-13T02:03:25.129Z] documentRole=question_paper
+[2026-07-13T02:03:25.129Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:25.456Z] stage.exitCode=0
+[2026-07-13T02:03:25.456Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w19_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_12.staging.json",
+  "runId": "0478-2019-ON-12-QP-RUN-afb0baa537a9",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 25,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 23,
+        "present": 23,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2019-ON-12-Q4-C",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2019-ON-12-Q9-A",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:25.458Z] stagingId=0478-2019-ON-12-QP-RUN-afb0baa537a9
+[2026-07-13T02:03:25.458Z] validationStatus=PASS
+[2026-07-13T02:03:25.458Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:25.458Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:25.458Z] canonicalPublishable=true
+[2026-07-13T02:03:25.458Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:25.458Z] endTime=2026-07-13T02:03:25.458Z
+[2026-07-13T02:03:25.458Z] status=PASS

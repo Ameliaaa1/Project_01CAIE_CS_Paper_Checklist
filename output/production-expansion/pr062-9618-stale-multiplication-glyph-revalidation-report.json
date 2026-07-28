@@ -1,0 +1,1545 @@
+{
+  "generatedFor": "PR-062-9618-Stale-Multiplication-Glyph-Staging-Revalidation-Plan",
+  "status": "PASS",
+  "productionWrite": false,
+  "scope": {
+    "syllabus": "9618",
+    "operation": "staging revalidation",
+    "pairingKeys": [
+      "9618-2021-MJ-11",
+      "9618-2021-MJ-13",
+      "9618-2021-MJ-31",
+      "9618-2021-MJ-32",
+      "9618-2021-MJ-33",
+      "9618-2021-ON-22",
+      "9618-2024-ON-12"
+    ],
+    "affectedDocumentCount": 9,
+    "symbol": "×"
+  },
+  "rootCause": {
+    "category": "A_VALIDATION_FALSE_POSITIVE",
+    "subtype": "STALE_LEGAL_MULTIPLICATION_GLYPH_DIAGNOSTIC",
+    "explanation": "Stored text-quality diagnostics predated the current classifier; source-backed multiplication and resolution glyphs already recompute to zero suspicious characters."
+  },
+  "implementation": {
+    "strategy": "Regenerate only affected staging artifacts from existing parser samples with current text-quality metrics.",
+    "classifierChanged": false,
+    "parserChanged": false,
+    "canonicalModelChanged": false,
+    "questionSplitChanged": false,
+    "responseAreaPipelineChanged": false,
+    "markSchemePipelineChanged": false,
+    "nullPointerRuleChanged": false,
+    "globalGlyphAllowlistAdded": false
+  },
+  "affectedArtifacts": {
+    "allowed": [
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_11.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_13.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_31.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_32.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_33.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_13.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_ms_22.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json"
+    ],
+    "changed": [
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_11.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_13.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_31.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_32.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_33.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_13.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_ms_22.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json"
+    ],
+    "unrelatedChanges": []
+  },
+  "beforeState": [
+    {
+      "paperId": "9618-2021-MJ-11-QP",
+      "documentRole": "question_paper",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+      "sha256": "edd59bfb49fa4c4dd6cd2a662fe04b58941e56bded037b0223b638959f17f97d",
+      "validationStatus": "WARN",
+      "publishStatus": "BLOCKED",
+      "p0": 0,
+      "p1": 1,
+      "p2": 0,
+      "issueCodes": [
+        "SUSPICIOUS_GLYPHS_REMAIN"
+      ],
+      "failedChecks": [
+        "CANONICAL_TEXT_CLEAN"
+      ],
+      "multiplicationPages": [
+        {
+          "pageNumber": 2,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 1,
+          "storedDisplaySuspiciousCount": 1,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-11-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_11.staging.json",
+      "sha256": "f545fb1408e015fb2a54910fce3c7df72e51dfe01a9df114718aceabf3f5ae63",
+      "validationStatus": "WARN",
+      "publishStatus": "BLOCKED",
+      "p0": 0,
+      "p1": 1,
+      "p2": 0,
+      "issueCodes": [
+        "SUSPICIOUS_GLYPHS_REMAIN"
+      ],
+      "failedChecks": [
+        "CANONICAL_TEXT_CLEAN"
+      ],
+      "multiplicationPages": [
+        {
+          "pageNumber": 3,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 1,
+          "storedDisplaySuspiciousCount": 1,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-13-QP",
+      "documentRole": "question_paper",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_13.staging.json",
+      "sha256": "ccdc1548b8006088d4038adc9fadaa72d17811aa7b20f992f5fce96bf505cb1d",
+      "validationStatus": "WARN",
+      "publishStatus": "BLOCKED",
+      "p0": 0,
+      "p1": 1,
+      "p2": 0,
+      "issueCodes": [
+        "SUSPICIOUS_GLYPHS_REMAIN"
+      ],
+      "failedChecks": [
+        "CANONICAL_TEXT_CLEAN"
+      ],
+      "multiplicationPages": [
+        {
+          "pageNumber": 2,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 1,
+          "storedDisplaySuspiciousCount": 1,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-13-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_13.staging.json",
+      "sha256": "f8e3e55e9525e5c8a568a0231660a9b104fa72d9604374ab53b5e5334e43f6d9",
+      "validationStatus": "WARN",
+      "publishStatus": "BLOCKED",
+      "p0": 0,
+      "p1": 1,
+      "p2": 0,
+      "issueCodes": [
+        "SUSPICIOUS_GLYPHS_REMAIN"
+      ],
+      "failedChecks": [
+        "CANONICAL_TEXT_CLEAN"
+      ],
+      "multiplicationPages": [
+        {
+          "pageNumber": 3,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 1,
+          "storedDisplaySuspiciousCount": 1,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-31-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_31.staging.json",
+      "sha256": "cd968ecc05afd17e360a6e7f7e826f8799664f358098d78205f587725da71783",
+      "validationStatus": "WARN",
+      "publishStatus": "BLOCKED",
+      "p0": 0,
+      "p1": 1,
+      "p2": 0,
+      "issueCodes": [
+        "SUSPICIOUS_GLYPHS_REMAIN"
+      ],
+      "failedChecks": [
+        "CANONICAL_TEXT_CLEAN"
+      ],
+      "multiplicationPages": [
+        {
+          "pageNumber": 3,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 9,
+          "storedDisplaySuspiciousCount": 9,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-32-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_32.staging.json",
+      "sha256": "a51807f4281b0492b5e123458072a9d707eded2d6da4a54be059c6cf8c3b1f2e",
+      "validationStatus": "WARN",
+      "publishStatus": "BLOCKED",
+      "p0": 0,
+      "p1": 1,
+      "p2": 0,
+      "issueCodes": [
+        "SUSPICIOUS_GLYPHS_REMAIN"
+      ],
+      "failedChecks": [
+        "CANONICAL_TEXT_CLEAN"
+      ],
+      "multiplicationPages": [
+        {
+          "pageNumber": 3,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 9,
+          "storedDisplaySuspiciousCount": 9,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-33-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_33.staging.json",
+      "sha256": "16421042447cc48e8156cfd41420853ee417842e313228c4a038c3a5a6f3fea0",
+      "validationStatus": "WARN",
+      "publishStatus": "BLOCKED",
+      "p0": 0,
+      "p1": 1,
+      "p2": 0,
+      "issueCodes": [
+        "SUSPICIOUS_GLYPHS_REMAIN"
+      ],
+      "failedChecks": [
+        "CANONICAL_TEXT_CLEAN"
+      ],
+      "multiplicationPages": [
+        {
+          "pageNumber": 3,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 9,
+          "storedDisplaySuspiciousCount": 9,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-ON-22-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_ms_22.staging.json",
+      "sha256": "51cf9002fca12b17f859eb02ee8b516821a8e5716aacdec57fb96e69c076df4e",
+      "validationStatus": "WARN",
+      "publishStatus": "BLOCKED",
+      "p0": 0,
+      "p1": 1,
+      "p2": 0,
+      "issueCodes": [
+        "SUSPICIOUS_GLYPHS_REMAIN"
+      ],
+      "failedChecks": [
+        "CANONICAL_TEXT_CLEAN"
+      ],
+      "multiplicationPages": [
+        {
+          "pageNumber": 9,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 1,
+          "storedDisplaySuspiciousCount": 1,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2024-ON-12-QP",
+      "documentRole": "question_paper",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json",
+      "sha256": "ab7b76524521ddd1e7d9b1fd19437c1bf35af13736a58fd2e5915c99483c6e27",
+      "validationStatus": "WARN",
+      "publishStatus": "BLOCKED",
+      "p0": 0,
+      "p1": 1,
+      "p2": 0,
+      "issueCodes": [
+        "SUSPICIOUS_GLYPHS_REMAIN"
+      ],
+      "failedChecks": [
+        "CANONICAL_TEXT_CLEAN"
+      ],
+      "multiplicationPages": [
+        {
+          "pageNumber": 5,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 1,
+          "storedDisplaySuspiciousCount": 1,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    }
+  ],
+  "afterState": [
+    {
+      "paperId": "9618-2021-MJ-11-QP",
+      "documentRole": "question_paper",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+      "sha256": "017752744aedda2f5665b87ca57bf795763a4440d123aefdcfadb79839abbeda",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "issueCodes": [],
+      "failedChecks": [],
+      "multiplicationPages": [
+        {
+          "pageNumber": 2,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 0,
+          "storedDisplaySuspiciousCount": 0,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-11-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_11.staging.json",
+      "sha256": "88377c5e40b8a7132ac3ef42c876449ee0566e470ce147ac5f4de26cc68576e7",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "issueCodes": [],
+      "failedChecks": [],
+      "multiplicationPages": [
+        {
+          "pageNumber": 3,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 0,
+          "storedDisplaySuspiciousCount": 0,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-13-QP",
+      "documentRole": "question_paper",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_13.staging.json",
+      "sha256": "e1c2251a086ac618d327dcd56a261b3105152a74d9ec848f3414fc5ec6ec1902",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "issueCodes": [],
+      "failedChecks": [],
+      "multiplicationPages": [
+        {
+          "pageNumber": 2,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 0,
+          "storedDisplaySuspiciousCount": 0,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-13-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_13.staging.json",
+      "sha256": "fbe38f8d1ec4c9f3ef6c0be45c72bd6677ceb33a5784d962c1cc1d15b0af1c53",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "issueCodes": [],
+      "failedChecks": [],
+      "multiplicationPages": [
+        {
+          "pageNumber": 3,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 0,
+          "storedDisplaySuspiciousCount": 0,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-31-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_31.staging.json",
+      "sha256": "2643365d2fcc132c9b14b68cca103363601aae016cc5de78391fbf4a771956fe",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "issueCodes": [],
+      "failedChecks": [],
+      "multiplicationPages": [
+        {
+          "pageNumber": 3,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 0,
+          "storedDisplaySuspiciousCount": 0,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-32-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_32.staging.json",
+      "sha256": "68351c189921c7c4e1fbbb35717969103ebbc18bdfdce6ec0b179153a5661743",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "issueCodes": [],
+      "failedChecks": [],
+      "multiplicationPages": [
+        {
+          "pageNumber": 3,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 0,
+          "storedDisplaySuspiciousCount": 0,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-MJ-33-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_33.staging.json",
+      "sha256": "a949f21486b88add541e85794b0a5ae14873174d868fb13e1265b706ffae5580",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "issueCodes": [],
+      "failedChecks": [],
+      "multiplicationPages": [
+        {
+          "pageNumber": 3,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 0,
+          "storedDisplaySuspiciousCount": 0,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2021-ON-22-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_ms_22.staging.json",
+      "sha256": "14d96f1120326193ad6f25ae41f5e17eccb98942093debfaa1443d943cae33e8",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "issueCodes": [],
+      "failedChecks": [],
+      "multiplicationPages": [
+        {
+          "pageNumber": 9,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 0,
+          "storedDisplaySuspiciousCount": 0,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    },
+    {
+      "paperId": "9618-2024-ON-12-QP",
+      "documentRole": "question_paper",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json",
+      "sha256": "88c2a00b80a3e841d552a07735b9c831ab06244ffe18c3ab8a96f9f847be9749",
+      "validationStatus": "PASS",
+      "publishStatus": "READY_TO_PUBLISH",
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "issueCodes": [],
+      "failedChecks": [],
+      "multiplicationPages": [
+        {
+          "pageNumber": 5,
+          "symbolPreserved": true,
+          "storedNormalizedSuspiciousCount": 0,
+          "storedDisplaySuspiciousCount": 0,
+          "recomputedNormalizedSuspiciousCount": 0,
+          "recomputedDisplaySuspiciousCount": 0
+        }
+      ],
+      "completenessStatus": "PASS",
+      "completenessChecks": {
+        "questionCoverage": "PASS",
+        "leafCoverage": "PASS",
+        "markCoverage": "PASS",
+        "responseAreaCoverage": "PASS",
+        "sourceTraceCoverage": "PASS",
+        "canonicalStructureCompleteness": "PASS"
+      }
+    }
+  ],
+  "validationResults": [
+    {
+      "pairingKey": "9618-2021-MJ-11",
+      "paperId": "9618-2021-MJ-11-QP",
+      "documentRole": "question_paper",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+      "before": {
+        "paperId": "9618-2021-MJ-11-QP",
+        "documentRole": "question_paper",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+        "sha256": "edd59bfb49fa4c4dd6cd2a662fe04b58941e56bded037b0223b638959f17f97d",
+        "validationStatus": "WARN",
+        "publishStatus": "BLOCKED",
+        "p0": 0,
+        "p1": 1,
+        "p2": 0,
+        "issueCodes": [
+          "SUSPICIOUS_GLYPHS_REMAIN"
+        ],
+        "failedChecks": [
+          "CANONICAL_TEXT_CLEAN"
+        ],
+        "multiplicationPages": [
+          {
+            "pageNumber": 2,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 1,
+            "storedDisplaySuspiciousCount": 1,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      },
+      "after": {
+        "paperId": "9618-2021-MJ-11-QP",
+        "documentRole": "question_paper",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+        "sha256": "017752744aedda2f5665b87ca57bf795763a4440d123aefdcfadb79839abbeda",
+        "validationStatus": "PASS",
+        "publishStatus": "READY_TO_PUBLISH",
+        "p0": 0,
+        "p1": 0,
+        "p2": 0,
+        "issueCodes": [],
+        "failedChecks": [],
+        "multiplicationPages": [
+          {
+            "pageNumber": 2,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 0,
+            "storedDisplaySuspiciousCount": 0,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      }
+    },
+    {
+      "pairingKey": "9618-2021-MJ-11",
+      "paperId": "9618-2021-MJ-11-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_11.staging.json",
+      "before": {
+        "paperId": "9618-2021-MJ-11-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_11.staging.json",
+        "sha256": "f545fb1408e015fb2a54910fce3c7df72e51dfe01a9df114718aceabf3f5ae63",
+        "validationStatus": "WARN",
+        "publishStatus": "BLOCKED",
+        "p0": 0,
+        "p1": 1,
+        "p2": 0,
+        "issueCodes": [
+          "SUSPICIOUS_GLYPHS_REMAIN"
+        ],
+        "failedChecks": [
+          "CANONICAL_TEXT_CLEAN"
+        ],
+        "multiplicationPages": [
+          {
+            "pageNumber": 3,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 1,
+            "storedDisplaySuspiciousCount": 1,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      },
+      "after": {
+        "paperId": "9618-2021-MJ-11-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_11.staging.json",
+        "sha256": "88377c5e40b8a7132ac3ef42c876449ee0566e470ce147ac5f4de26cc68576e7",
+        "validationStatus": "PASS",
+        "publishStatus": "READY_TO_PUBLISH",
+        "p0": 0,
+        "p1": 0,
+        "p2": 0,
+        "issueCodes": [],
+        "failedChecks": [],
+        "multiplicationPages": [
+          {
+            "pageNumber": 3,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 0,
+            "storedDisplaySuspiciousCount": 0,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      }
+    },
+    {
+      "pairingKey": "9618-2021-MJ-13",
+      "paperId": "9618-2021-MJ-13-QP",
+      "documentRole": "question_paper",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_13.staging.json",
+      "before": {
+        "paperId": "9618-2021-MJ-13-QP",
+        "documentRole": "question_paper",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_13.staging.json",
+        "sha256": "ccdc1548b8006088d4038adc9fadaa72d17811aa7b20f992f5fce96bf505cb1d",
+        "validationStatus": "WARN",
+        "publishStatus": "BLOCKED",
+        "p0": 0,
+        "p1": 1,
+        "p2": 0,
+        "issueCodes": [
+          "SUSPICIOUS_GLYPHS_REMAIN"
+        ],
+        "failedChecks": [
+          "CANONICAL_TEXT_CLEAN"
+        ],
+        "multiplicationPages": [
+          {
+            "pageNumber": 2,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 1,
+            "storedDisplaySuspiciousCount": 1,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      },
+      "after": {
+        "paperId": "9618-2021-MJ-13-QP",
+        "documentRole": "question_paper",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_13.staging.json",
+        "sha256": "e1c2251a086ac618d327dcd56a261b3105152a74d9ec848f3414fc5ec6ec1902",
+        "validationStatus": "PASS",
+        "publishStatus": "READY_TO_PUBLISH",
+        "p0": 0,
+        "p1": 0,
+        "p2": 0,
+        "issueCodes": [],
+        "failedChecks": [],
+        "multiplicationPages": [
+          {
+            "pageNumber": 2,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 0,
+            "storedDisplaySuspiciousCount": 0,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      }
+    },
+    {
+      "pairingKey": "9618-2021-MJ-13",
+      "paperId": "9618-2021-MJ-13-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_13.staging.json",
+      "before": {
+        "paperId": "9618-2021-MJ-13-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_13.staging.json",
+        "sha256": "f8e3e55e9525e5c8a568a0231660a9b104fa72d9604374ab53b5e5334e43f6d9",
+        "validationStatus": "WARN",
+        "publishStatus": "BLOCKED",
+        "p0": 0,
+        "p1": 1,
+        "p2": 0,
+        "issueCodes": [
+          "SUSPICIOUS_GLYPHS_REMAIN"
+        ],
+        "failedChecks": [
+          "CANONICAL_TEXT_CLEAN"
+        ],
+        "multiplicationPages": [
+          {
+            "pageNumber": 3,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 1,
+            "storedDisplaySuspiciousCount": 1,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      },
+      "after": {
+        "paperId": "9618-2021-MJ-13-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_13.staging.json",
+        "sha256": "fbe38f8d1ec4c9f3ef6c0be45c72bd6677ceb33a5784d962c1cc1d15b0af1c53",
+        "validationStatus": "PASS",
+        "publishStatus": "READY_TO_PUBLISH",
+        "p0": 0,
+        "p1": 0,
+        "p2": 0,
+        "issueCodes": [],
+        "failedChecks": [],
+        "multiplicationPages": [
+          {
+            "pageNumber": 3,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 0,
+            "storedDisplaySuspiciousCount": 0,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      }
+    },
+    {
+      "pairingKey": "9618-2021-MJ-31",
+      "paperId": "9618-2021-MJ-31-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_31.staging.json",
+      "before": {
+        "paperId": "9618-2021-MJ-31-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_31.staging.json",
+        "sha256": "cd968ecc05afd17e360a6e7f7e826f8799664f358098d78205f587725da71783",
+        "validationStatus": "WARN",
+        "publishStatus": "BLOCKED",
+        "p0": 0,
+        "p1": 1,
+        "p2": 0,
+        "issueCodes": [
+          "SUSPICIOUS_GLYPHS_REMAIN"
+        ],
+        "failedChecks": [
+          "CANONICAL_TEXT_CLEAN"
+        ],
+        "multiplicationPages": [
+          {
+            "pageNumber": 3,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 9,
+            "storedDisplaySuspiciousCount": 9,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      },
+      "after": {
+        "paperId": "9618-2021-MJ-31-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_31.staging.json",
+        "sha256": "2643365d2fcc132c9b14b68cca103363601aae016cc5de78391fbf4a771956fe",
+        "validationStatus": "PASS",
+        "publishStatus": "READY_TO_PUBLISH",
+        "p0": 0,
+        "p1": 0,
+        "p2": 0,
+        "issueCodes": [],
+        "failedChecks": [],
+        "multiplicationPages": [
+          {
+            "pageNumber": 3,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 0,
+            "storedDisplaySuspiciousCount": 0,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      }
+    },
+    {
+      "pairingKey": "9618-2021-MJ-32",
+      "paperId": "9618-2021-MJ-32-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_32.staging.json",
+      "before": {
+        "paperId": "9618-2021-MJ-32-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_32.staging.json",
+        "sha256": "a51807f4281b0492b5e123458072a9d707eded2d6da4a54be059c6cf8c3b1f2e",
+        "validationStatus": "WARN",
+        "publishStatus": "BLOCKED",
+        "p0": 0,
+        "p1": 1,
+        "p2": 0,
+        "issueCodes": [
+          "SUSPICIOUS_GLYPHS_REMAIN"
+        ],
+        "failedChecks": [
+          "CANONICAL_TEXT_CLEAN"
+        ],
+        "multiplicationPages": [
+          {
+            "pageNumber": 3,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 9,
+            "storedDisplaySuspiciousCount": 9,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      },
+      "after": {
+        "paperId": "9618-2021-MJ-32-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_32.staging.json",
+        "sha256": "68351c189921c7c4e1fbbb35717969103ebbc18bdfdce6ec0b179153a5661743",
+        "validationStatus": "PASS",
+        "publishStatus": "READY_TO_PUBLISH",
+        "p0": 0,
+        "p1": 0,
+        "p2": 0,
+        "issueCodes": [],
+        "failedChecks": [],
+        "multiplicationPages": [
+          {
+            "pageNumber": 3,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 0,
+            "storedDisplaySuspiciousCount": 0,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      }
+    },
+    {
+      "pairingKey": "9618-2021-MJ-33",
+      "paperId": "9618-2021-MJ-33-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_33.staging.json",
+      "before": {
+        "paperId": "9618-2021-MJ-33-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_33.staging.json",
+        "sha256": "16421042447cc48e8156cfd41420853ee417842e313228c4a038c3a5a6f3fea0",
+        "validationStatus": "WARN",
+        "publishStatus": "BLOCKED",
+        "p0": 0,
+        "p1": 1,
+        "p2": 0,
+        "issueCodes": [
+          "SUSPICIOUS_GLYPHS_REMAIN"
+        ],
+        "failedChecks": [
+          "CANONICAL_TEXT_CLEAN"
+        ],
+        "multiplicationPages": [
+          {
+            "pageNumber": 3,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 9,
+            "storedDisplaySuspiciousCount": 9,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      },
+      "after": {
+        "paperId": "9618-2021-MJ-33-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_33.staging.json",
+        "sha256": "a949f21486b88add541e85794b0a5ae14873174d868fb13e1265b706ffae5580",
+        "validationStatus": "PASS",
+        "publishStatus": "READY_TO_PUBLISH",
+        "p0": 0,
+        "p1": 0,
+        "p2": 0,
+        "issueCodes": [],
+        "failedChecks": [],
+        "multiplicationPages": [
+          {
+            "pageNumber": 3,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 0,
+            "storedDisplaySuspiciousCount": 0,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      }
+    },
+    {
+      "pairingKey": "9618-2021-ON-22",
+      "paperId": "9618-2021-ON-22-MS",
+      "documentRole": "mark_scheme",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_ms_22.staging.json",
+      "before": {
+        "paperId": "9618-2021-ON-22-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_ms_22.staging.json",
+        "sha256": "51cf9002fca12b17f859eb02ee8b516821a8e5716aacdec57fb96e69c076df4e",
+        "validationStatus": "WARN",
+        "publishStatus": "BLOCKED",
+        "p0": 0,
+        "p1": 1,
+        "p2": 0,
+        "issueCodes": [
+          "SUSPICIOUS_GLYPHS_REMAIN"
+        ],
+        "failedChecks": [
+          "CANONICAL_TEXT_CLEAN"
+        ],
+        "multiplicationPages": [
+          {
+            "pageNumber": 9,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 1,
+            "storedDisplaySuspiciousCount": 1,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      },
+      "after": {
+        "paperId": "9618-2021-ON-22-MS",
+        "documentRole": "mark_scheme",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_ms_22.staging.json",
+        "sha256": "14d96f1120326193ad6f25ae41f5e17eccb98942093debfaa1443d943cae33e8",
+        "validationStatus": "PASS",
+        "publishStatus": "READY_TO_PUBLISH",
+        "p0": 0,
+        "p1": 0,
+        "p2": 0,
+        "issueCodes": [],
+        "failedChecks": [],
+        "multiplicationPages": [
+          {
+            "pageNumber": 9,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 0,
+            "storedDisplaySuspiciousCount": 0,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-12",
+      "paperId": "9618-2024-ON-12-QP",
+      "documentRole": "question_paper",
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json",
+      "before": {
+        "paperId": "9618-2024-ON-12-QP",
+        "documentRole": "question_paper",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json",
+        "sha256": "ab7b76524521ddd1e7d9b1fd19437c1bf35af13736a58fd2e5915c99483c6e27",
+        "validationStatus": "WARN",
+        "publishStatus": "BLOCKED",
+        "p0": 0,
+        "p1": 1,
+        "p2": 0,
+        "issueCodes": [
+          "SUSPICIOUS_GLYPHS_REMAIN"
+        ],
+        "failedChecks": [
+          "CANONICAL_TEXT_CLEAN"
+        ],
+        "multiplicationPages": [
+          {
+            "pageNumber": 5,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 1,
+            "storedDisplaySuspiciousCount": 1,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      },
+      "after": {
+        "paperId": "9618-2024-ON-12-QP",
+        "documentRole": "question_paper",
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json",
+        "sha256": "88c2a00b80a3e841d552a07735b9c831ab06244ffe18c3ab8a96f9f847be9749",
+        "validationStatus": "PASS",
+        "publishStatus": "READY_TO_PUBLISH",
+        "p0": 0,
+        "p1": 0,
+        "p2": 0,
+        "issueCodes": [],
+        "failedChecks": [],
+        "multiplicationPages": [
+          {
+            "pageNumber": 5,
+            "symbolPreserved": true,
+            "storedNormalizedSuspiciousCount": 0,
+            "storedDisplaySuspiciousCount": 0,
+            "recomputedNormalizedSuspiciousCount": 0,
+            "recomputedDisplaySuspiciousCount": 0
+          }
+        ],
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        }
+      }
+    }
+  ],
+  "integrity": {
+    "production": {
+      "before": "2553faa90d2ba6a9935f2d5b28114eb65f313aa02a0f6fb5bb230cd4974f18c5",
+      "after": "2553faa90d2ba6a9935f2d5b28114eb65f313aa02a0f6fb5bb230cd4974f18c5",
+      "unchanged": true
+    },
+    "sourceAssets": {
+      "before": "1fc4965a3c1d44b4325098c1eb762cebdda836acbe05fe455ac5988f1d0905f2",
+      "after": "1fc4965a3c1d44b4325098c1eb762cebdda836acbe05fe455ac5988f1d0905f2",
+      "unchanged": true
+    },
+    "staging": {
+      "allowedChangedArtifacts": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_11.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_13.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_31.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_32.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_33.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_13.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_ms_22.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json"
+      ],
+      "actualChangedArtifacts": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_11.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_13.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_31.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_32.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_33.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_13.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_ms_22.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json"
+      ],
+      "allAllowedArtifactsChanged": true,
+      "unrelatedArtifactsUnchanged": true,
+      "unrelatedChanges": []
+    }
+  },
+  "regression": {
+    "legalMultiplicationResolutionContexts": "PASS",
+    "otherSuspiciousGlyphsRemainDetected": "PASS",
+    "linkedListNullPointerContext": "PASS",
+    "unrelatedNullPointerGlyphRemainsSuspicious": "PASS",
+    "pr030": "PASS",
+    "pr031": "PASS",
+    "pr032": "PASS",
+    "pr048": "PASS",
+    "pr049": "PASS",
+    "pr050": "PASS",
+    "pr051": "PASS",
+    "pr052": "PASS",
+    "pr053": "PASS",
+    "pr054": "PASS",
+    "pr055": "PASS",
+    "pr056": "PASS",
+    "pr057": "PASS",
+    "pr058": "PASS",
+    "pr059": "PASS",
+    "pr060": "PASS",
+    "pr061": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "phase1": "PASS (20/20)",
+    "phase2": "PASS (120/120)",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "remainingBlockedPairs": [],
+  "eligibleUnpublishedPairs": [
+    {
+      "pairingKey": "9618-2021-MJ-11",
+      "year": 2021,
+      "session": "M/J",
+      "component": "11",
+      "status": "ELIGIBLE_UNPUBLISHED",
+      "qpValidationStatus": "PASS",
+      "msValidationStatus": "PASS",
+      "qpPublishStatus": "READY_TO_PUBLISH",
+      "msPublishStatus": "READY_TO_PUBLISH"
+    },
+    {
+      "pairingKey": "9618-2021-MJ-13",
+      "year": 2021,
+      "session": "M/J",
+      "component": "13",
+      "status": "ELIGIBLE_UNPUBLISHED",
+      "qpValidationStatus": "PASS",
+      "msValidationStatus": "PASS",
+      "qpPublishStatus": "READY_TO_PUBLISH",
+      "msPublishStatus": "READY_TO_PUBLISH"
+    },
+    {
+      "pairingKey": "9618-2021-MJ-21",
+      "year": 2021,
+      "session": "M/J",
+      "component": "21",
+      "status": "ELIGIBLE_UNPUBLISHED",
+      "qpValidationStatus": "PASS",
+      "msValidationStatus": "PASS",
+      "qpPublishStatus": "READY_TO_PUBLISH",
+      "msPublishStatus": "READY_TO_PUBLISH"
+    },
+    {
+      "pairingKey": "9618-2021-MJ-23",
+      "year": 2021,
+      "session": "M/J",
+      "component": "23",
+      "status": "ELIGIBLE_UNPUBLISHED",
+      "qpValidationStatus": "PASS",
+      "msValidationStatus": "PASS",
+      "qpPublishStatus": "READY_TO_PUBLISH",
+      "msPublishStatus": "READY_TO_PUBLISH"
+    },
+    {
+      "pairingKey": "9618-2021-MJ-31",
+      "year": 2021,
+      "session": "M/J",
+      "component": "31",
+      "status": "ELIGIBLE_UNPUBLISHED",
+      "qpValidationStatus": "PASS",
+      "msValidationStatus": "PASS",
+      "qpPublishStatus": "READY_TO_PUBLISH",
+      "msPublishStatus": "READY_TO_PUBLISH"
+    },
+    {
+      "pairingKey": "9618-2021-MJ-32",
+      "year": 2021,
+      "session": "M/J",
+      "component": "32",
+      "status": "ELIGIBLE_UNPUBLISHED",
+      "qpValidationStatus": "PASS",
+      "msValidationStatus": "PASS",
+      "qpPublishStatus": "READY_TO_PUBLISH",
+      "msPublishStatus": "READY_TO_PUBLISH"
+    },
+    {
+      "pairingKey": "9618-2021-MJ-33",
+      "year": 2021,
+      "session": "M/J",
+      "component": "33",
+      "status": "ELIGIBLE_UNPUBLISHED",
+      "qpValidationStatus": "PASS",
+      "msValidationStatus": "PASS",
+      "qpPublishStatus": "READY_TO_PUBLISH",
+      "msPublishStatus": "READY_TO_PUBLISH"
+    },
+    {
+      "pairingKey": "9618-2021-ON-22",
+      "year": 2021,
+      "session": "O/N",
+      "component": "22",
+      "status": "ELIGIBLE_UNPUBLISHED",
+      "qpValidationStatus": "PASS",
+      "msValidationStatus": "PASS",
+      "qpPublishStatus": "READY_TO_PUBLISH",
+      "msPublishStatus": "READY_TO_PUBLISH"
+    },
+    {
+      "pairingKey": "9618-2024-ON-12",
+      "year": 2024,
+      "session": "O/N",
+      "component": "12",
+      "status": "ELIGIBLE_UNPUBLISHED",
+      "qpValidationStatus": "PASS",
+      "msValidationStatus": "PASS",
+      "qpPublishStatus": "READY_TO_PUBLISH",
+      "msPublishStatus": "READY_TO_PUBLISH"
+    }
+  ],
+  "coverage": {
+    "sourcePairs": 118,
+    "completeSourcePairs": 117,
+    "stagingPairs": 25,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 93,
+    "publishedPairs": 16,
+    "eligibleUnpublishedPairs": 9,
+    "missingStagingPairs": 92,
+    "blockedPairs": 0,
+    "incompleteSourcePairs": 1,
+    "partialProductionConflicts": 0
+  },
+  "next": {
+    "proposedPr": "PR-063",
+    "decision": "9618 Previously Blocked Pair Production Expansion",
+    "pairingKeys": [
+      "9618-2021-MJ-11",
+      "9618-2021-MJ-13",
+      "9618-2021-MJ-21",
+      "9618-2021-MJ-23",
+      "9618-2021-MJ-31",
+      "9618-2021-MJ-32",
+      "9618-2021-MJ-33",
+      "9618-2021-ON-22",
+      "9618-2024-ON-12"
+    ],
+    "productionWrite": false,
+    "includedInPr062": false
+  }
+}

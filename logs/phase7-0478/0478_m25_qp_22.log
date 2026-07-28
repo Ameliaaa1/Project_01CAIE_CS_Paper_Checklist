@@ -1,0 +1,224 @@
+[2026-07-15T03:54:26.355Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-March/0478_m25_qp_22.pdf
+[2026-07-15T03:54:26.355Z] startTime=2026-07-15T03:54:26.355Z
+[2026-07-15T03:54:26.355Z] expectedRole=question_paper
+[2026-07-15T03:54:28.467Z] extract.exitCode=0
+[2026-07-15T03:54:28.467Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m25_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-March/0478_m25_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 Tick (✓) one box to complete this sentence. A standard method of solution used to find a piece of data in an array is a A bubble sort. B counting routine. C linear search. D selection search. [1]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 Tick (✓) one box to complete this sentence. The pseudocode to store a hotel name held in the variable Name to a text file is A READFILE Hotels.txt, Name B WRITEFILE Hotels.txt, Name C WRITEFILE Name, Hotels.txt D STOREFILE Hotels.txt, Name [1]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Four development life cycle stages and five descriptions are shown. Draw one line from each stage to the most appropriate description. Not all descriptions will be used. Stage Description identifying the problem and requirements testing reviewing the final solution to suggest further developments analysis making sure the program code works as expected codi"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) A presence check is a type of validation check. State the purpose of a presence check. [1] (b) A value input into a computer system must be an integer. (i) Identify the validation check used to test whether the value input meets this requirement. [1] (ii) Write the pseudocode for an algorithm to allow a number to be input into an appropriate variable a"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A program is written to only accept data that contains more than 9 characters. The program needs to be tested. The table, when completed, shows appropriate test data that matches the type of test data and the purpose of the test data. Complete the table by inserting the missing information. Test data Type of test data Purpose of test data ABC Boundary to m"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 This pseudocode algorithm is intended to allow 1000 positive integers to be input and stored in a one-dimensional (1D) array. The integers are added together as they are input and the highest value is identified. At the end of the algorithm, the highest number, the total and the average of the numbers are output. 01 DECLARE Numbers : ARRAY[1:1000] OF INTEG"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 This flowchart represents an algorithm. START OUTPUT \"Continue?\" INPUT Answer No Yes IS Answer = 'Y' ? INPUT Value1 STOP INPUT Operator INPUT Yes IS Operator = Value2 'A' ? OUTPUT Value1 + No Value2 Yes IS Operator = 'S' ? OUTPUT Value1 – No Value2 Yes No IS Operator = 'M' ? * / (a) Complete the trace table for the input data: Y, 7, S, 9, Y, 5, M, 12, Y, 2"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 A database table, MajorCity, stores some details about a number of cities from around the world. Code City Capital Country Continent Population ASY6 Abu Dhabi TRUE United Arab Emirates Asia 1,566,999 EUY3 Amsterdam TRUE Netherlands Europe 1,174,025 ASY1 Beijing TRUE China Asia 21,766,214 SAY1 Buenos Aires TRUE Argentina South America 15,490,415 AFY1 Cairo "
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 Consider this logic expression: Z = (A NAND B) XOR (NOT (NOT B NAND C)) (a) Draw a logic circuit for this logic expression. Each logic gate must have a maximum of two inputs. Do not simplify the logic expression. A B Z C [5] (b) Complete the truth table from the given logic expression. A B C Z 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 [4]"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "10 A sports club uses a six-character alphanumeric membership code to identify each member of the club. The one-dimensional (1D) array MemberID[] is used to store the unique membership codes for club members. The two-dimensional (2D) array Name[] is used to store the names of the club members. The first and last name of each member will be stored in separate"
+    }
+  ]
+}
+[2026-07-15T03:54:28.470Z] parserVersion=0.4.0
+[2026-07-15T03:54:28.470Z] documentRole=question_paper
+[2026-07-15T03:54:28.470Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:28.820Z] stage.exitCode=0
+[2026-07-15T03:54:28.820Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m25_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m25_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m25_qp_22.staging.json",
+  "runId": "0478-2025-FM-22-QP-RUN-b11e7365d885",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m25_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 21,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:54:28.822Z] stagingId=0478-2025-FM-22-QP-RUN-b11e7365d885
+[2026-07-15T03:54:28.822Z] validationStatus=PASS
+[2026-07-15T03:54:28.822Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:54:28.822Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:28.822Z] canonicalPublishable=true
+[2026-07-15T03:54:28.822Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:54:28.822Z] endTime=2026-07-15T03:54:28.822Z
+[2026-07-15T03:54:28.822Z] status=PASS

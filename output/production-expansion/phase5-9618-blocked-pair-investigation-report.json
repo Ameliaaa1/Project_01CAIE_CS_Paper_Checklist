@@ -1,0 +1,1611 @@
+{
+  "generatedFor": "Phase-5-9618-Blocked-Pair-Investigation-Plan",
+  "status": "PASS",
+  "phaseId": "Phase 5",
+  "productionWrite": true,
+  "scope": {
+    "syllabus": "9618",
+    "pairCount": 13,
+    "pairingKeys": [
+      "9618-2022-ON-31",
+      "9618-2022-ON-32",
+      "9618-2022-ON-33",
+      "9618-2023-MJ-41",
+      "9618-2023-MJ-43",
+      "9618-2024-ON-21",
+      "9618-2024-ON-23",
+      "9618-2024-ON-31",
+      "9618-2024-ON-33",
+      "9618-2025-MJ-21",
+      "9618-2025-ON-23",
+      "9618-2023-ON-42",
+      "9618-2025-MJ-13"
+    ]
+  },
+  "beforeState": {
+    "sourcePairs": 118,
+    "completeSourcePairs": 118,
+    "stagingPairs": 118,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 0,
+    "publishedPairs": 105,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 0,
+    "blockedPairs": 13,
+    "incompleteSourcePairs": 0,
+    "partialProductionConflicts": 0,
+    "duplicateSourceCount": 0
+  },
+  "rootCauseSummary": {
+    "TRANSLATOR_FILL_BLANK_REGEX_OVERMATCH": {
+      "category": "VALIDATION_RULE_ISSUE",
+      "count": 3,
+      "pairingKeys": [
+        "9618-2022-ON-31",
+        "9618-2022-ON-32",
+        "9618-2022-ON-33"
+      ]
+    },
+    "ROTATED_MS_FOOTER_TOKENIZATION": {
+      "category": "DOCUMENT_LAYOUT_ISSUE",
+      "count": 2,
+      "pairingKeys": [
+        "9618-2023-MJ-41",
+        "9618-2023-MJ-43"
+      ]
+    },
+    "INLINE_REFERENCE_AND_TABLE_INDEX_AMBIGUITY": {
+      "category": "PARSER_ISSUE",
+      "count": 6,
+      "pairingKeys": [
+        "9618-2024-ON-21",
+        "9618-2024-ON-23",
+        "9618-2024-ON-31",
+        "9618-2024-ON-33",
+        "9618-2025-MJ-21",
+        "9618-2025-ON-23"
+      ]
+    },
+    "LEGAL_DIVISION_AND_ENCODING_GLYPHS": {
+      "category": "VALIDATION_RULE_ISSUE",
+      "count": 2,
+      "pairingKeys": [
+        "9618-2023-ON-42",
+        "9618-2025-MJ-13"
+      ]
+    }
+  },
+  "batches": [
+    {
+      "batchId": "PHASE5-A",
+      "status": "PASS",
+      "targetPairs": [
+        "9618-2022-ON-31",
+        "9618-2022-ON-32",
+        "9618-2022-ON-33"
+      ],
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase5-9618/phase5-a-blocked-pair-investigation-report.json",
+      "expectedDeltas": {
+        "papers": 6,
+        "questionRecords": 120,
+        "topLevelQuestions": 35,
+        "leafQuestions": 91,
+        "responseAreas": 361,
+        "markSchemeEntries": 96,
+        "pairings": 3,
+        "batches": 3,
+        "expansionBatches": 1
+      },
+      "actualDeltas": {
+        "papers": 6,
+        "questionRecords": 120,
+        "topLevelQuestions": 35,
+        "leafQuestions": 91,
+        "responseAreas": 361,
+        "markSchemeEntries": 96,
+        "pairings": 3,
+        "batches": 3,
+        "expansionBatches": 1
+      },
+      "deltasMatch": true
+    },
+    {
+      "batchId": "PHASE5-B",
+      "status": "PASS",
+      "targetPairs": [
+        "9618-2023-MJ-41",
+        "9618-2023-MJ-43"
+      ],
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase5-9618/phase5-b-blocked-pair-investigation-report.json",
+      "expectedDeltas": {
+        "papers": 4,
+        "questionRecords": 58,
+        "topLevelQuestions": 6,
+        "leafQuestions": 52,
+        "responseAreas": 52,
+        "markSchemeEntries": 46,
+        "pairings": 2,
+        "batches": 2,
+        "expansionBatches": 1
+      },
+      "actualDeltas": {
+        "papers": 4,
+        "questionRecords": 58,
+        "topLevelQuestions": 6,
+        "leafQuestions": 52,
+        "responseAreas": 52,
+        "markSchemeEntries": 46,
+        "pairings": 2,
+        "batches": 2,
+        "expansionBatches": 1
+      },
+      "deltasMatch": true
+    },
+    {
+      "batchId": "PHASE5-C",
+      "status": "PASS",
+      "targetPairs": [
+        "9618-2024-ON-21",
+        "9618-2024-ON-23",
+        "9618-2024-ON-31",
+        "9618-2024-ON-33",
+        "9618-2025-MJ-21",
+        "9618-2025-ON-23"
+      ],
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase5-9618/phase5-c-blocked-pair-investigation-report.json",
+      "expectedDeltas": {
+        "papers": 12,
+        "questionRecords": 173,
+        "topLevelQuestions": 53,
+        "leafQuestions": 130,
+        "responseAreas": 824,
+        "markSchemeEntries": 138,
+        "pairings": 6,
+        "batches": 6,
+        "expansionBatches": 3
+      },
+      "actualDeltas": {
+        "papers": 12,
+        "questionRecords": 173,
+        "topLevelQuestions": 53,
+        "leafQuestions": 130,
+        "responseAreas": 824,
+        "markSchemeEntries": 138,
+        "pairings": 6,
+        "batches": 6,
+        "expansionBatches": 3
+      },
+      "deltasMatch": true
+    },
+    {
+      "batchId": "PHASE5-D",
+      "status": "PASS",
+      "targetPairs": [
+        "9618-2023-ON-42",
+        "9618-2025-MJ-13"
+      ],
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase5-9618/phase5-d-blocked-pair-investigation-report.json",
+      "expectedDeltas": {
+        "papers": 4,
+        "questionRecords": 63,
+        "topLevelQuestions": 10,
+        "leafQuestions": 53,
+        "responseAreas": 140,
+        "markSchemeEntries": 64,
+        "pairings": 2,
+        "batches": 2,
+        "expansionBatches": 2
+      },
+      "actualDeltas": {
+        "papers": 4,
+        "questionRecords": 63,
+        "topLevelQuestions": 10,
+        "leafQuestions": 53,
+        "responseAreas": 140,
+        "markSchemeEntries": 64,
+        "pairings": 2,
+        "batches": 2,
+        "expansionBatches": 2
+      },
+      "deltasMatch": true
+    }
+  ],
+  "investigationResults": [
+    {
+      "pairingKey": "9618-2022-ON-31",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "VALIDATION_RULE_ISSUE",
+        "affectedLayer": "QP staging validation",
+        "code": "TRANSLATOR_FILL_BLANK_REGEX_OVERMATCH",
+        "summary": "The fallback fill-blank rule treated the phrase 'pseudocode . part' as a missing translator blank."
+      },
+      "changes": [
+        "Restricted the translator fill-blank fallback to the two complete translator sentence patterns."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2022-ON-32",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "VALIDATION_RULE_ISSUE",
+        "affectedLayer": "QP staging validation",
+        "code": "TRANSLATOR_FILL_BLANK_REGEX_OVERMATCH",
+        "summary": "The fallback fill-blank rule treated the phrase 'pseudocode . part' as a missing translator blank."
+      },
+      "changes": [
+        "Restricted the translator fill-blank fallback to the two complete translator sentence patterns."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2022-ON-33",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "VALIDATION_RULE_ISSUE",
+        "affectedLayer": "QP staging validation",
+        "code": "TRANSLATOR_FILL_BLANK_REGEX_OVERMATCH",
+        "summary": "The fallback fill-blank rule treated the phrase 'pseudocode . part' as a missing translator blank."
+      },
+      "changes": [
+        "Restricted the translator fill-blank fallback to the two complete translator sentence patterns."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-41",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "FAIL",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "DOCUMENT_LAYOUT_ISSUE",
+        "affectedLayer": "PDF region classification",
+        "code": "ROTATED_MS_FOOTER_TOKENIZATION",
+        "summary": "Rotated mark-scheme footer spans were tokenized before classification, leaving © UCLES in canonical page text."
+      },
+      "changes": [
+        "Preserved source span text and classified rotated Page/© UCLES spans as footer regions."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-43",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "FAIL",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "DOCUMENT_LAYOUT_ISSUE",
+        "affectedLayer": "PDF region classification",
+        "code": "ROTATED_MS_FOOTER_TOKENIZATION",
+        "summary": "Rotated mark-scheme footer spans were tokenized before classification, leaving © UCLES in canonical page text."
+      },
+      "changes": [
+        "Preserved source span text and classified rotated Page/© UCLES spans as footer regions."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2024-ON-21",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "FAIL",
+          "canonicalPublishable": false,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "COMPLETENESS_NOT_PASS",
+            "CANONICAL_NOT_PUBLISHABLE",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "PARSER_ISSUE",
+        "affectedLayer": "Localized question marker and mark extraction",
+        "code": "INLINE_REFERENCE_AND_TABLE_INDEX_AMBIGUITY",
+        "summary": "Inline references such as '(c)' and table/array indices were interpreted as structural markers or mark allocations."
+      },
+      "changes": [
+        "Limited leaf markers to the left structural column.",
+        "Calculated marks from the right-side printed mark column when geometry is available."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2024-ON-23",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "FAIL",
+          "canonicalPublishable": false,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "COMPLETENESS_NOT_PASS",
+            "CANONICAL_NOT_PUBLISHABLE",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "PARSER_ISSUE",
+        "affectedLayer": "Localized question marker and mark extraction",
+        "code": "INLINE_REFERENCE_AND_TABLE_INDEX_AMBIGUITY",
+        "summary": "Inline references such as '(c)' and table/array indices were interpreted as structural markers or mark allocations."
+      },
+      "changes": [
+        "Limited leaf markers to the left structural column.",
+        "Calculated marks from the right-side printed mark column when geometry is available."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2024-ON-31",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "FAIL",
+          "canonicalPublishable": false,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "COMPLETENESS_NOT_PASS",
+            "CANONICAL_NOT_PUBLISHABLE",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "PARSER_ISSUE",
+        "affectedLayer": "Localized question marker and mark extraction",
+        "code": "INLINE_REFERENCE_AND_TABLE_INDEX_AMBIGUITY",
+        "summary": "Inline references such as '(c)' and table/array indices were interpreted as structural markers or mark allocations."
+      },
+      "changes": [
+        "Limited leaf markers to the left structural column.",
+        "Calculated marks from the right-side printed mark column when geometry is available."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2024-ON-33",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "FAIL",
+          "canonicalPublishable": false,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "COMPLETENESS_NOT_PASS",
+            "CANONICAL_NOT_PUBLISHABLE",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "PARSER_ISSUE",
+        "affectedLayer": "Localized question marker and mark extraction",
+        "code": "INLINE_REFERENCE_AND_TABLE_INDEX_AMBIGUITY",
+        "summary": "Inline references such as '(c)' and table/array indices were interpreted as structural markers or mark allocations."
+      },
+      "changes": [
+        "Limited leaf markers to the left structural column.",
+        "Calculated marks from the right-side printed mark column when geometry is available."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-21",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "FAIL",
+          "canonicalPublishable": false,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "COMPLETENESS_NOT_PASS",
+            "CANONICAL_NOT_PUBLISHABLE",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "PARSER_ISSUE",
+        "affectedLayer": "Localized question marker and mark extraction",
+        "code": "INLINE_REFERENCE_AND_TABLE_INDEX_AMBIGUITY",
+        "summary": "Inline references such as '(c)' and table/array indices were interpreted as structural markers or mark allocations."
+      },
+      "changes": [
+        "Limited leaf markers to the left structural column.",
+        "Calculated marks from the right-side printed mark column when geometry is available."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2025-ON-23",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "FAIL",
+          "canonicalPublishable": false,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 2,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "COMPLETENESS_NOT_PASS",
+            "CANONICAL_NOT_PUBLISHABLE",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_COMPLETENESS_NOT_PASS",
+          "QP_CANONICAL_NOT_PUBLISHABLE",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P0",
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "rootCause": {
+        "category": "PARSER_ISSUE",
+        "affectedLayer": "Localized question marker and mark extraction",
+        "code": "INLINE_REFERENCE_AND_TABLE_INDEX_AMBIGUITY",
+        "summary": "Inline references such as '(c)' and table/array indices were interpreted as structural markers or mark allocations."
+      },
+      "changes": [
+        "Limited leaf markers to the left structural column.",
+        "Calculated marks from the right-side printed mark column when geometry is available."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2023-ON-42",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "WARN",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 2,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P1"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P1",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P1",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "rootCause": {
+        "category": "VALIDATION_RULE_ISSUE",
+        "affectedLayer": "Text quality validation",
+        "code": "LEGAL_DIVISION_AND_ENCODING_GLYPHS",
+        "summary": "Source-backed ÷ and the ü character in a character-encoding table were counted as suspicious glyphs."
+      },
+      "changes": [
+        "Recognized ÷ as a legal mathematical symbol.",
+        "Recognized ü only in a source-backed Character/Denary/Binary/Hexadecimal table context."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-13",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "WARN",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 2,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P1"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "WARN",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 2,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P1"
+          ]
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P1",
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P1",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P1",
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P1",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "rootCause": {
+        "category": "VALIDATION_RULE_ISSUE",
+        "affectedLayer": "Text quality validation",
+        "code": "LEGAL_DIVISION_AND_ENCODING_GLYPHS",
+        "summary": "Source-backed ÷ and the ü character in a character-encoding table were counted as suspicious glyphs."
+      },
+      "changes": [
+        "Recognized ÷ as a legal mathematical symbol.",
+        "Recognized ü only in a source-backed Character/Denary/Binary/Hexadecimal table context."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    }
+  ],
+  "resolvedPairs": [
+    "9618-2022-ON-31",
+    "9618-2022-ON-32",
+    "9618-2022-ON-33",
+    "9618-2023-MJ-41",
+    "9618-2023-MJ-43",
+    "9618-2024-ON-21",
+    "9618-2024-ON-23",
+    "9618-2024-ON-31",
+    "9618-2024-ON-33",
+    "9618-2025-MJ-21",
+    "9618-2025-ON-23",
+    "9618-2023-ON-42",
+    "9618-2025-MJ-13"
+  ],
+  "unresolvedPairs": [],
+  "coverageAfter": {
+    "sourcePairs": 118,
+    "completeSourcePairs": 118,
+    "stagingPairs": 118,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 0,
+    "publishedPairs": 118,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 0,
+    "blockedPairs": 0,
+    "incompleteSourcePairs": 0,
+    "partialProductionConflicts": 0
+  },
+  "integrity": {
+    "existingProductionRecordsUnchanged": true,
+    "unrelatedStagingUnchanged": true,
+    "sourceAssets": {
+      "beforeSha256": "98fa669e82d6a53ed4faba792ffd1d6fc2c6da56055b935b1b4cb72cb6dd944f",
+      "afterSha256": "98fa669e82d6a53ed4faba792ffd1d6fc2c6da56055b935b1b4cb72cb6dd944f",
+      "unchanged": true
+    },
+    "parserDuringExecution": {
+      "beforeSha256": "0a648a4b16ea8f52b2cb418e84a95de442368c56075859afee68f2c548405b4c",
+      "afterSha256": "0a648a4b16ea8f52b2cb418e84a95de442368c56075859afee68f2c548405b4c",
+      "unchanged": true
+    },
+    "canonicalDuringExecution": {
+      "beforeSha256": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "afterSha256": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "unchanged": true
+    }
+  },
+  "stableModuleAssessment": {
+    "broadParserRedesign": false,
+    "canonicalModelRedesign": false,
+    "validationGateDisabled": false,
+    "forcePublishUsed": false,
+    "changesAreLocalizedAndFixtureBacked": true
+  },
+  "regression": {
+    "phase1": "PASS",
+    "phase2": "PASS",
+    "phase3": "PASS",
+    "phase4Audit": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "next": {
+    "phaseId": "Phase 6",
+    "decision": "9618 Final Production Closure",
+    "productionWrite": false
+  }
+}

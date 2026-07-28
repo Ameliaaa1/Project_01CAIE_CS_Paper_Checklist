@@ -1,0 +1,245 @@
+{
+  "generatedFor": "PR-067-9618-Incomplete-Source-Investigation-Plan",
+  "status": "PASS",
+  "productionWrite": false,
+  "auditOnly": true,
+  "targetPair": {
+    "pairingKey": "9618-2022-MJ-41",
+    "syllabus": "9618",
+    "year": 2022,
+    "session": "M/J",
+    "sessionCode": "s22",
+    "component": "41",
+    "expectedQpFilename": "9618_s22_qp_41.pdf",
+    "expectedMsFilename": "9618_s22_ms_41.pdf"
+  },
+  "sourceEvidence": {
+    "local": {
+      "directory": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June",
+      "questionPaperPresent": true,
+      "questionPaperPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_41.pdf",
+      "markSchemePresent": false,
+      "expectedMarkSchemePath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_ms_41.pdf",
+      "sourcePairStatus": "INCOMPLETE_SOURCE_PAIR",
+      "coverageStatus": "INCOMPLETE_SOURCE_PAIR"
+    },
+    "official": {
+      "evidenceType": "CAMBRIDGE_OFFICIAL_INDEX_AND_DOCUMENT_METADATA",
+      "officialUrl": "https://www.cambridgeinternational.org/Images/673626-june-2022-mark-scheme-paper-41.pdf",
+      "officiallyPublished": true,
+      "indexedDocumentAvailable": true,
+      "documentIdentity": {
+        "qualification": "Cambridge International AS & A Level",
+        "subject": "Computer Science",
+        "syllabusComponent": "9618/41",
+        "paper": "Paper 41 Computer Science",
+        "session": "May/June 2022",
+        "documentRole": "MARK_SCHEME",
+        "publicationStatus": "Published",
+        "maximumMark": 75,
+        "printedPages": 34,
+        "copyrightHolder": "UCLES",
+        "copyrightYear": 2022
+      },
+      "directFetch": {
+        "checkedAt": "2026-07-14",
+        "method": "HTTP GET",
+        "httpStatus": 404,
+        "ingestedIntoRepository": false,
+        "interpretation": "The current public static URL is not directly retrievable, but Cambridge's official index contains the complete document identity and published content evidence."
+      },
+      "officialAcquisitionChannels": [
+        "Cambridge School Support Hub",
+        "Cambridge Assessment Archive Service"
+      ]
+    },
+    "prohibitedSubstitutionsApplied": false,
+    "emptyPlaceholderCreated": false,
+    "unrelatedMarkSchemeCopied": false
+  },
+  "directoryScan": {
+    "directory": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June",
+    "fileCount": 28,
+    "pdfCount": 27,
+    "files": [
+      ".DS_Store",
+      "9618_s22_in_21.pdf",
+      "9618_s22_in_22.pdf",
+      "9618_s22_in_23.pdf",
+      "9618_s22_ms_11.pdf",
+      "9618_s22_ms_12.pdf",
+      "9618_s22_ms_13.pdf",
+      "9618_s22_ms_21.pdf",
+      "9618_s22_ms_22.pdf",
+      "9618_s22_ms_23.pdf",
+      "9618_s22_ms_31.pdf",
+      "9618_s22_ms_32.pdf",
+      "9618_s22_ms_33.pdf",
+      "9618_s22_ms_42.pdf",
+      "9618_s22_ms_43.pdf",
+      "9618_s22_qp_11.pdf",
+      "9618_s22_qp_12.pdf",
+      "9618_s22_qp_13.pdf",
+      "9618_s22_qp_21.pdf",
+      "9618_s22_qp_22.pdf",
+      "9618_s22_qp_23.pdf",
+      "9618_s22_qp_31.pdf",
+      "9618_s22_qp_32.pdf",
+      "9618_s22_qp_33.pdf",
+      "9618_s22_qp_41.pdf",
+      "9618_s22_qp_42.pdf",
+      "9618_s22_qp_43.pdf",
+      "9618_w21_ms_41.pdf"
+    ],
+    "expectedQpFound": true,
+    "expectedMsFound": false,
+    "exactMsMatches": [],
+    "misplacedMatches": [
+      {
+        "filename": "9618_w21_ms_41.pdf",
+        "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_w21_ms_41.pdf",
+        "parsedIdentity": {
+          "syllabus": "9618",
+          "sessionCode": "w21",
+          "year": 2021,
+          "session": "O/N",
+          "role": "ms",
+          "component": "41"
+        },
+        "validSubstitute": false,
+        "reason": "Session/year code does not match s22; this file belongs to 9618-2021-ON-41."
+      }
+    ]
+  },
+  "namingPatternValidation": {
+    "expectedQpFilename": "9618_s22_qp_41.pdf",
+    "expectedMsFilename": "9618_s22_ms_41.pdf",
+    "qpPatternValid": true,
+    "msPatternValid": true,
+    "typoFound": false,
+    "alternateNamingFound": false,
+    "archiveNamingFound": false,
+    "sessionComponentMappingError": false
+  },
+  "missingFiles": [
+    "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_ms_41.pdf"
+  ],
+  "alternateMatches": [],
+  "inventoryCrossCheck": {
+    "totalPdfFiles": 266,
+    "sourcePairs": 118,
+    "completeSourcePairs": 117,
+    "incompleteSourcePairs": 1,
+    "incompletePairingKeys": [
+      "9618-2022-MJ-41"
+    ],
+    "missingQpFiles": [],
+    "missingMsFiles": [
+      "9618-2022-MJ-41"
+    ],
+    "orphanQpFiles": [
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_41.pdf"
+    ],
+    "orphanMsFiles": [],
+    "duplicateSources": [
+      {
+        "pairingKey": "9618-2021-ON-41",
+        "qpFiles": [
+          "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_41.pdf"
+        ],
+        "msFiles": [
+          "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_ms_41.pdf",
+          "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_w21_ms_41.pdf"
+        ]
+      }
+    ]
+  },
+  "rootCause": {
+    "identified": true,
+    "code": "LOCAL_SOURCE_OMISSION",
+    "summary": "Cambridge published the correct 9618/41 May/June 2022 mark scheme, but the repository does not contain 9618_s22_ms_41.pdf.",
+    "evidence": [
+      "The expected QP exists under the standard s22 naming convention.",
+      "No exact or alternate local MS filename matches syllabus 9618, session s22, role ms, component 41.",
+      "The similarly named w21 MS in the target directory belongs to the 2021 O/N session and is not a substitute.",
+      "Cambridge's official index identifies the published 9618/41 May/June 2022 mark scheme."
+    ],
+    "ruledOut": [
+      "PARSER_FAILURE",
+      "VALIDATION_FAILURE",
+      "PRODUCTION_FAILURE",
+      "FILENAME_TYPO",
+      "ALTERNATE_NAMING",
+      "SESSION_COMPONENT_MAPPING_ERROR",
+      "CAMBRIDGE_SOURCE_UNAVAILABLE"
+    ]
+  },
+  "classification": "SOURCE_RECOVERED",
+  "recoveryState": "LOCATED_NOT_INGESTED",
+  "sourceAcquisitionRequired": true,
+  "incompleteStatusMaintained": true,
+  "recommendedNextStep": {
+    "proposedPr": "PR-068",
+    "decision": "9618-2022-MJ-41 Source Recovery Preparation",
+    "pairingKeys": [
+      "9618-2022-MJ-41"
+    ],
+    "productionWrite": false,
+    "acquireFromOfficialChannel": true,
+    "generateStaging": false,
+    "publishProduction": false
+  },
+  "integrity": {
+    "production": {
+      "method": "SHA256_CONTENT",
+      "before": "09fe6bf2a7bd501efcbe4f15265b38919b2a607cca684121a568d4be3c87d517",
+      "after": "09fe6bf2a7bd501efcbe4f15265b38919b2a607cca684121a568d4be3c87d517",
+      "unchanged": true
+    },
+    "staging": {
+      "method": "SHA256_TREE_CONTENT",
+      "before": "f92f7b632a3f5255bef276545445041e370e926b895a30244a7f0a465b4a4aaa",
+      "after": "f92f7b632a3f5255bef276545445041e370e926b895a30244a7f0a465b4a4aaa",
+      "unchanged": true
+    },
+    "canonical": {
+      "method": "SHA256_CONTENT",
+      "before": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "after": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "unchanged": true
+    },
+    "parser": {
+      "method": "SHA256_TREE_CONTENT",
+      "before": "395539419d86b2f03bdf19906234708e0bc95149ac7749a57406b5083220c7f1",
+      "after": "395539419d86b2f03bdf19906234708e0bc95149ac7749a57406b5083220c7f1",
+      "unchanged": true
+    },
+    "sourceAssets": {
+      "method": "SHA256_TREE_METADATA",
+      "before": "1fc4965a3c1d44b4325098c1eb762cebdda836acbe05fe455ac5988f1d0905f2",
+      "after": "1fc4965a3c1d44b4325098c1eb762cebdda836acbe05fe455ac5988f1d0905f2",
+      "unchanged": true
+    }
+  },
+  "stableModules": {
+    "questionSplitModified": false,
+    "stableQuestionIdModified": false,
+    "parentLeafModelModified": false,
+    "marksValidationModified": false,
+    "textQualityPipelineModified": false,
+    "responseAreaPipelineModified": false,
+    "documentRoleRouterModified": false,
+    "questionPaperPipelineModified": false,
+    "markSchemePipelineModified": false,
+    "pairingLogicModified": false
+  },
+  "regression": {
+    "pr066": "PASS",
+    "phase1": "PASS (20/20)",
+    "phase2": "PASS (120/120)",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  }
+}

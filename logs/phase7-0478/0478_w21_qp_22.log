@@ -1,0 +1,160 @@
+[2026-07-15T03:52:41.306Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_22.pdf
+[2026-07-15T03:52:41.306Z] startTime=2026-07-15T03:52:41.306Z
+[2026-07-15T03:52:41.306Z] expectedRole=question_paper
+[2026-07-15T03:52:42.616Z] extract.exitCode=0
+[2026-07-15T03:52:42.616Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w21_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_22.pdf",
+  "pageCount": 12,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 7,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify variable you could have used for and state its use. (a) (i) one Task 2 Variable Use [2] Describe the arrays you could have used in . Include the name, data type, use (ii) Task 1 and sample data for each array. [5] Describe how you could validate the data entry for the input of the codes for the different (b) stages of the journey in . Task 2 [3] W"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 Validation Verification Neither Statement 3 3 3 ( ) ( ) ( ) a check where data is re-entered to make sure no errors have been introduced during data entry an automatic check to make sure the data entered has the correct number of characters a check to make sure the data entered is sensible a check to make sure the data entered is correct [3] A program chec"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Identify piece of normal, extreme and erroneous test data for this program, and give a reason one for each. Normal test data Reason Extreme test data Reason Erroneous test data Reason [6] The pseudocode algorithm should work as a calculator and output the result."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 1 1 Continue 2 WHILE Continue = 0 3 OUTPUT \"Enter 1 for +, 2 for -, 3 for * or 4 for /\" 4 INPUT Operator 5 OUTPUT \"Enter the first value\" 6 INPUT Value1 7 OUTPUT \"Enter the second value\" 8 OUTPUT Value2 9 IF Operator Value1 + Value2 10 1: Answer Value1 - Value2 11 2: Answer Value1 * Value2 12 3: Answer Value1 / Value2 13 4: Answer 14 ENDCASE 15 OUTPUT \"The"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 The algorithm will terminate if –1 is entered at the input. List START List1 0 ← List2 0 ← INPUT List IS Yes List = –1 ? No INPUT Value Yes IS List1 List1 + Value List = 1 ? ← No Yes IS List2 List2 + Value List = 2 ? ← OUTPUT \"List 1 = \", List1 No OUTPUT OUTPUT \"Input Error\" \"List 2 = \", List2 IS Yes List1 > List2 ? No OUTPUT \"List 1 is greatest\" OUTPUT \"L"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "6 The fields are: Field name Description ProductID code to identify the product ProductName name of product ProductDescription information about the product Animal type of animal the product is for, e.g. cat, bird, horse ProductType type of product, e.g. food, toy, medicine InStock whether the product is in stock or not Identify the field that could have a B"
+    }
+  ]
+}
+[2026-07-15T03:52:42.617Z] parserVersion=0.4.0
+[2026-07-15T03:52:42.617Z] documentRole=question_paper
+[2026-07-15T03:52:42.617Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:52:42.904Z] stage.exitCode=0
+[2026-07-15T03:52:42.904Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w21_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_22.staging.json",
+  "runId": "0478-2021-ON-22-QP-RUN-54751f0de65f",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 13,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 13,
+        "present": 13,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:52:42.907Z] stagingId=0478-2021-ON-22-QP-RUN-54751f0de65f
+[2026-07-15T03:52:42.907Z] validationStatus=PASS
+[2026-07-15T03:52:42.907Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:52:42.907Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:52:42.907Z] canonicalPublishable=true
+[2026-07-15T03:52:42.907Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:52:42.907Z] endTime=2026-07-15T03:52:42.907Z
+[2026-07-15T03:52:42.907Z] status=PASS

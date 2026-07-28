@@ -1,0 +1,209 @@
+[2026-07-14T16:57:03.159Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_23.pdf
+[2026-07-14T16:57:03.159Z] startTime=2026-07-14T16:57:03.159Z
+[2026-07-14T16:57:03.159Z] expectedRole=question_paper
+[2026-07-14T16:57:06.442Z] extract.exitCode=0
+[2026-07-14T16:57:06.442Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_23.pdf",
+  "pageCount": 24,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A program uses many complex algorithms. One algorithm is repeated in several places. The code for the algorithm is the same wherever it is used, but the calculations within the algorithm may operate on different data. The result of each calculation is used by the code that follows it. It is decided to modify the program and implement the algorithm as a sep"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) A program uses a global 1D array of type string and a text file. An algorithm that forms part of the program is expressed as follows: copy the first line from the file into the first element of the array • copy the second line from the file into the second element of the array • continue until all lines in the file have been copied into the array. • St"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A record structure is declared to hold data relating to components being produced in a factory: TYPE Component DECLARE Item_ID : STRING DECLARE Reject : BOOLEAN DECLARE Weight : REAL ENDTYPE The factory normally produces a batch (or set) of 1000 components at a time. A global array is declared to store 1000 records for a batch: DECLARE Batch : ARRAY [1:100"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A procedure TwoParts() will input a sequence of real values, one at a time. The procedure will: process the sequence in two parts • form a first total by adding the values until the first zero • form a second total by adding the values after the first zero until the second zero • output the average of the two totals, together with a suitable message. • Tot"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A program is being designed in pseudocode. The program contains the following declaration: DECLARE Data : ARRAY[1:1000] OF STRING A procedure ArrayInitialise() is written to initialise the values in the array: PROCEDURE ArrayInitialise(Label : STRING) DECLARE Index : INTEGER 1 Index WHILE Index <= 1000 CASE OF (Index MOD 2) FormatA(Label) 0 : Data[Index] I"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A program displays a progress bar to inform the user of the progress of tasks that take a significant time to complete, such as those involving file transfer operations. Task progress is divided into 11 steps. Each step represents the amount of progress as a percentage. An image is associated with each step and each image is stored in a different file. Dif"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 16,
+      "pageEnd": 17,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Seven program modules form part of a program. A description of the relationship between the modules is summarised below. Any return values are stated in the description. Module name Description Mod-A calls Mod-B followed by Mod-C called with parameters Par1 and Par2 • Mod-B calls either Mod-D or Mod-E, determined when the program runs • returns a Boolean v"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 18,
+      "pageEnd": 21,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 A teacher is designing a program to process pseudocode projects written by her students. The program analyses a student project and extracts information about each module that is defined (each procedure or function). This information is stored in a global 2D array ModInfo of type string. A module header is the first line of a module definition and starts w"
+    }
+  ]
+}
+[2026-07-14T16:57:06.446Z] parserVersion=0.4.0
+[2026-07-14T16:57:06.446Z] documentRole=question_paper
+[2026-07-14T16:57:06.446Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:57:06.858Z] stage.exitCode=0
+[2026-07-14T16:57:06.858Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_23.staging.json",
+  "runId": "9618-2024-MJ-23-QP-RUN-1824d4b34caf",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 21,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 19,
+        "present": 19,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-MJ-23-Q2-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-MJ-23-Q4-B-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:57:06.862Z] stagingId=9618-2024-MJ-23-QP-RUN-1824d4b34caf
+[2026-07-14T16:57:06.862Z] validationStatus=PASS
+[2026-07-14T16:57:06.862Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:57:06.862Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:57:06.862Z] canonicalPublishable=true
+[2026-07-14T16:57:06.862Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:57:06.862Z] endTime=2026-07-14T16:57:06.862Z
+[2026-07-14T16:57:06.862Z] status=PASS

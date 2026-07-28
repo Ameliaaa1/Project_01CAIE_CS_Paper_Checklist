@@ -1,0 +1,257 @@
+[2026-07-14T17:02:48.801Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_12.pdf
+[2026-07-14T17:02:48.801Z] startTime=2026-07-14T17:02:48.801Z
+[2026-07-14T17:02:48.801Z] expectedRole=question_paper
+[2026-07-14T17:02:51.500Z] extract.exitCode=0
+[2026-07-14T17:02:51.500Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_12.pdf",
+  "pageCount": 16,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 Draw one line from each verification method to indicate whether it is used during data transfer or data entry. Verification Method Use Parity byte check Checksum Data transfer Visual check Data entry Parity block check [2]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) Complete the table by describing each term. Term Description Copyright Open Source (Initiative) Shareware Software Licence [4] DFD (b) Describe the purpose of a code of conduct. [2]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 6,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) (i) State what is meant by relative addressing. [1] (ii) Registers such as the Accumulator (ACC) and the Index Register (IX) are used in the CPU. Identify two special purpose registers used in the CPU. Do not include the ACC or IX in your answers. 1 2 [2] DFD (b) The following table shows part of the instruction set for a processor. The processor has t"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A relational database, SHIPPING, stores data about the ships in a company and the containers that are carried on the ships. The database has the following tables: CONTAINER(ContainerID, Type, Weight, OwnerName, ShipID) SHIP(ShipID, Type, Capacity, ShipName) (a) Describe the relationship between the two tables. Refer to the primary and foreign keys in your "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A local area network (LAN) has five computers, one switch and one server. (a) Describe the characteristics of a LAN. [2] (b) Complete the following diagram to show how these devices are connected in a star topology. Computer Computer Computer Computer Computer Server Switch [2] (c) Describe how packets are transmitted between two hosts using a star topolog"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 (a) A sound file is compressed by reducing the sampling rate. State whether this is lossless or lossy compression. Justify your choice. Type of compression Justification [1] (b) The following table shows some words and corresponding denary values. Word Denary value Computing 55 Science 56 Computers 57 are 58 Brilliant! 59 is 60 Fun! 61 Amazing! 62 The foll"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "7 (a) The following binary addition is performed using 8‑bit registers. Complete the calculation using binary addition. 1 0 0 0 0 1 1 1 + 0 0 1 1 1 0 0 1 [1] (b) A computer uses the Unicode character set. State the number of bits used to store one character from the Unicode character set. [1] (c) ASCII is another character set. The ASCII value for the charac"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 13,
+      "pageEnd": 14,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 A restaurant accesses software and stores data using cloud computing. (a) (i) Give two benefits of storing data using cloud computing. 1 2 [2] (ii) Give two drawbacks of using cloud computing. 1 2 [2] (b) The restaurant uses touchscreens as input devices to allow staff to select items from a menu. (i) Explain how a touchscreen converts the point of touch t"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "9 (a) Consider the following logic circuit: A X B C Write the logic expression for the logic circuit. Do not simplify the expression. X = [2] (b) Consider the following logic expression: X = NOT ((A NAND B) XOR (NOT A OR NOT C)) A truth table for the logic expression is given: Row number A B C X 1 0 0 0 1 2 0 0 1 0 3 0 1 0 1 4 0 1 1 0 5 1 0 0 1 6 1 0 1 0 7 1"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 15,
+      "pageEnd": 16,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 A programmer is developing a computer program. (a) Explain how the programmer can first use an interpreter and then a compiler to develop the computer program. Interpreter Compiler [4] (b) The programmer releases the program as Free Software. Describe what is meant by Free Software. [2] (c) A user downloads the computer program from the internet. State wh"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 16,
+      "pageEnd": 16,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 An automated system opens doors when a person is detected within 2 metres. The system closes the doors when there is no longer a person within 2 metres. Identify whether the automated system is an example of a monitoring system or a control system. Justify your choice. Monitoring or Control Justification [3]"
+    }
+  ]
+}
+[2026-07-14T17:02:51.503Z] parserVersion=0.4.0
+[2026-07-14T17:02:51.503Z] documentRole=question_paper
+[2026-07-14T17:02:51.503Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:02:51.892Z] stage.exitCode=0
+[2026-07-14T17:02:51.892Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_12.staging.json",
+  "runId": "9618-2025-ON-12-QP-RUN-ea65e75a4182",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 36,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 34,
+        "present": 34,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-ON-12-Q3-A-II",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-ON-12-Q9-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:02:51.896Z] stagingId=9618-2025-ON-12-QP-RUN-ea65e75a4182
+[2026-07-14T17:02:51.896Z] validationStatus=PASS
+[2026-07-14T17:02:51.896Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:02:51.896Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:02:51.896Z] canonicalPublishable=true
+[2026-07-14T17:02:51.896Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:02:51.896Z] endTime=2026-07-14T17:02:51.896Z
+[2026-07-14T17:02:51.896Z] status=PASS

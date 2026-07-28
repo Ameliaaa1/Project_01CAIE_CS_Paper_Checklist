@@ -1,0 +1,145 @@
+{
+  "generatedFor": "Phase-7-C-C",
+  "status": "PASS",
+  "title": "Mark Scheme Generalization",
+  "checks": {
+    "arrayIndexesExcluded": true,
+    "ordinaryMarkRetained": true,
+    "generalizedHeader": true,
+    "entrySourceTrace": true,
+    "correctProfile": true
+  },
+  "diagnostics": {
+    "title": "Mark Scheme Generalization",
+    "status": "PASS",
+    "checks": {
+      "arrayIndexesExcluded": true,
+      "ordinaryMarkRetained": true,
+      "generalizedHeader": true,
+      "entrySourceTrace": true,
+      "correctProfile": true
+    },
+    "arrayText": "Array[0] Array[1] Array[2] stores values [5]",
+    "ordinaryText": "Award one mark for each valid statement. [3]",
+    "profiled": {
+      "paper": {
+        "sourcePath": "future_s26_ms_11.pdf",
+        "documentRole": "mark_scheme",
+        "parserProfile": "MARK_SCHEME",
+        "validationProfile": "MARK_SCHEME"
+      },
+      "pages": [
+        {
+          "pageNumber": 2,
+          "width": 600,
+          "height": 800,
+          "displayText": "Cambridge International AS & A Level MARK SCHEME Question Answer Marks",
+          "items": [
+            {
+              "text": "Cambridge International AS & A Level MARK SCHEME",
+              "x": 120,
+              "y": 760,
+              "width": 240,
+              "height": 10,
+              "pageNumber": 2,
+              "globalOrder": 0,
+              "regionType": "content",
+              "blockIndex": 0,
+              "lineIndex": 0,
+              "spanIndex": 0
+            },
+            {
+              "text": "1(a)",
+              "x": 40,
+              "y": 700,
+              "width": 20,
+              "height": 10,
+              "pageNumber": 2,
+              "globalOrder": 1,
+              "regionType": "content",
+              "blockIndex": 1,
+              "lineIndex": 0,
+              "spanIndex": 0
+            },
+            {
+              "text": "Accept any valid identifier",
+              "x": 140,
+              "y": 700,
+              "width": 135,
+              "height": 10,
+              "pageNumber": 2,
+              "globalOrder": 2,
+              "regionType": "content",
+              "blockIndex": 2,
+              "lineIndex": 0,
+              "spanIndex": 0
+            },
+            {
+              "text": "2",
+              "x": 540,
+              "y": 700,
+              "width": 10,
+              "height": 10,
+              "pageNumber": 2,
+              "globalOrder": 3,
+              "regionType": "content",
+              "blockIndex": 3,
+              "lineIndex": 0,
+              "spanIndex": 0
+            }
+          ],
+          "pageType": "mark_scheme_answers",
+          "contentRegions": [
+            {
+              "type": "MARK_SCHEME_HEADER",
+              "yMin": 30,
+              "yMax": 40
+            },
+            {
+              "type": "QUESTION_NUMBER",
+              "yMin": 90,
+              "yMax": 100
+            },
+            {
+              "type": "ANSWER",
+              "yMin": 30,
+              "yMax": 100
+            },
+            {
+              "type": "MARK_COLUMN",
+              "yMin": 90,
+              "yMax": 100
+            }
+          ]
+        }
+      ],
+      "questions": [],
+      "markSchemeEntries": [
+        {
+          "questionId": "1(a)",
+          "answerText": [
+            "Accept any valid identifier"
+          ],
+          "marks": 2,
+          "annotations": [],
+          "sourceTrace": {
+            "page": 2,
+            "blockIndex": 1,
+            "lineIndex": 0,
+            "spanIndex": 0,
+            "text": "1(a)"
+          },
+          "answerSourceTrace": [
+            {
+              "page": 2,
+              "blockIndex": 2,
+              "lineIndex": 0,
+              "spanIndex": 0,
+              "text": "Accept any valid identifier"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

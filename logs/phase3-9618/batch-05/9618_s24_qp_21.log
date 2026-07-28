@@ -1,0 +1,209 @@
+[2026-07-14T16:56:50.275Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_21.pdf
+[2026-07-14T16:56:50.275Z] startTime=2026-07-14T16:56:50.275Z
+[2026-07-14T16:56:50.275Z] expectedRole=question_paper
+[2026-07-14T16:56:53.880Z] extract.exitCode=0
+[2026-07-14T16:56:53.881Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_21.pdf",
+  "pageCount": 24,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The following table shows four valid pseudocode assignment statements. (a) Complete the table by giving an appropriate data type to declare each of the variables A B C and . D Assignment statement Data type A LEFT(MyName, 1) Total * 2 B INT(ItemCost) / 3 C \"Odd OR Even\" D [4] Other variables in the program have example values as shown: (b) Variable Value S"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 1. repeatedly input a pair of numeric values and A B 2. count the number of pairs that are input until has been greater than 10 times A B 3. output the number of pairs that were input. Complete the program flowchart. (a) START INPUT A, B Yes No END [5] Step 1 of the algorithm is changed. (b) A variable is used to enter a sequence of 10 pairs of numeric val"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 have been added. PS is the start pointer. • PF is the free list pointer. • Labels Df, Dc, Db and Dy represent the data items of nodes in the list. • Labels Fg, Fh, Fm and Fw represent the data items of nodes in the free list. • The symbol Ø represents a null pointer. • PS Df Dc Db Dy Ø PF Fg Fh Fm Fw Ø Describe the linked list immediately after initialisat"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Data A function will: Check() total the element values in odd index locations (1, 3, 5 ... 97, 99) • total the element values in even index locations (2, 4, 6 ... 98, 100) • return one of three strings ‘Odd’, ‘Even’ or ‘Same’ to indicate which total is the greater, or • whether the totals are the same. Write pseudocode for the function . Check() [6] A glob"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 \"aaaaaa\" Data[1] \"bbbbbb\" Data[2] \"cccccc\" Data[3] Procedure manipulates the values in the array. Process() The procedure is written in pseudocode as follows: PROCEDURE Process(Format : STRING) DECLARE Count, Index, L : INTEGER DECLARE Result : STRING DECLARE C : CHAR \"****\" Result 1 TO LENGTH(Format) STEP 2 FOR Count MID(Format, Count, 1) C STR_TO_NUM(MID"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 16,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 y 10 9 8 7 6 5 C B 4 3 A 2 1 x 0 1 2 3 4 5 6 7 8 9 10 A triangle is said to be right-angled if the following test is true (where A is the length of the longest side): 2 2 2 = B + C A 2 2 × means A multiplied by A, for example 3 means 3 3 which evaluates to 9 A 2 2 2 B and C by using the coordinates of the endpoints of each line. You can calculate A 2 is ca"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 16,
+      "pageEnd": 18,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 different exercise classes. The following information is stored for each club member: name, home address, email address, mobile phone number, date of birth and the exercise(s) they are interested in. When an exercise class is planned, a new module will send personalised text messages to (a) each member who has expressed an interest in that exercise. Member"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 18,
+      "pageEnd": 21,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 Each student project is stored in a text file. The process is split into a number of stages. Each stage performs a different task and creates a new file named as shown: File name Comment student project file produced by student Michael Aday MichaelAday_src.txt file produced by stage 1 MichaelAday_S1.txt file produced by stage 2 MichaelAday_S2.txt The teach"
+    }
+  ]
+}
+[2026-07-14T16:56:53.884Z] parserVersion=0.4.0
+[2026-07-14T16:56:53.884Z] documentRole=question_paper
+[2026-07-14T16:56:53.884Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:56:54.335Z] stage.exitCode=0
+[2026-07-14T16:56:54.335Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_21.staging.json",
+  "runId": "9618-2024-MJ-21-QP-RUN-cea305866786",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 23,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-MJ-21-Q1-C",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-MJ-21-Q6-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:56:54.339Z] stagingId=9618-2024-MJ-21-QP-RUN-cea305866786
+[2026-07-14T16:56:54.339Z] validationStatus=PASS
+[2026-07-14T16:56:54.339Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:56:54.339Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:56:54.339Z] canonicalPublishable=true
+[2026-07-14T16:56:54.339Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:56:54.339Z] endTime=2026-07-14T16:56:54.339Z
+[2026-07-14T16:56:54.339Z] status=PASS

@@ -1,0 +1,208 @@
+[2026-07-15T03:53:41.885Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_11.pdf
+[2026-07-15T03:53:41.885Z] startTime=2026-07-15T03:53:41.885Z
+[2026-07-15T03:53:41.885Z] expectedRole=question_paper
+[2026-07-15T03:53:43.325Z] extract.exitCode=0
+[2026-07-15T03:53:43.325Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_11.pdf",
+  "pageCount": 12,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify input devices that could be built into the portable tablet computer. (a) two 1 2 [2] Identify output device that could be built into the portable tablet computer. (b) one [1] Identify type of storage device that could be built into the portable tablet computer. (c) one [1] Hypertext markup language (HTML) colour codes can be represented as hexadec"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 3 Tick ( ) box to show which statement about the hexadecimal number system is incorrect. (a) one It uses the values 0 to 9 and A to F. A It can be used as a shorter representation of binary. B It is a base 10 system. C It can be used to represent error codes. D [1] Denary numbers can be converted to hexadecimal. (b) Convert the denary numbers to hexadecima"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A logical left shift of places is performed on the binary number. three Give the 8-bit binary number that will be stored after the shift has taken place. (a) [1] 3 Tick ( ) box to show which statement about a logical left shift of places is correct. (b) one two It would divide the binary number by 2. A It would multiply the binary number by 2. B It would d"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Describe the structure of a data packet. (a) [3] Packet switching is used to transmit the data packets across the network. (b) Identify the device that controls which path is taken by each data packet. [1] Serial data transmission is used to transmit the data packets across the network. (c) Explain why serial data transmission is used to transmit the data "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 State the purpose of secondary storage. (a) [1] One type of secondary storage is optical. (b) Circle examples of optical storage. three read only memory (ROM) secure digital (SD) card compact disk (CD) hard disk drive (HDD) digital versatile disk (DVD) Blu-ray disk universal serial bus (USB) drive solid-state drive (SSD) [3] Explain why a computer needs RA"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 State the purpose of firmware. (a) [1] Give example of firmware. (b) one [1] Give examples of system software. (c) two 1 2 [2] Data is encrypted to keep it safe during transmission."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Complete the paragraph about asymmetric encryption. Use the terms from the list. Some of the terms in the list will be used. You should only use a term once. not asymmetric certificate cipher text decrypted encrypted parallel key plain text private key protected public key serial key symmetric is encrypted into using a . The encrypted data is then transmit"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 State what is meant by the robot being automated. (a) [1] Give characteristics of a robot. (b) three 1 2 3 [3] The robot plants seeds and stops when it reaches a fence. It then turns and continues planting (c) seeds. The robot uses sensors and a microprocessor to know when it reaches a fence. Explain how the robot uses sensors and a microprocessor to know "
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 network. The company owner is concerned that data might have errors after transmission. Explain how the data might have errors after transmission. (a) [3] The company owner decides to introduce an error detection system to check the data for (b) errors after transmission. The error detection system uses an odd parity check and a positive automatic repeat q"
+    }
+  ]
+}
+[2026-07-15T03:53:43.326Z] parserVersion=0.4.0
+[2026-07-15T03:53:43.326Z] documentRole=question_paper
+[2026-07-15T03:53:43.326Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:43.600Z] stage.exitCode=0
+[2026-07-15T03:53:43.600Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_11.staging.json",
+  "runId": "0478-2024-MJ-11-QP-RUN-d59df591a91e",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 31,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 31,
+        "present": 31,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:43.602Z] stagingId=0478-2024-MJ-11-QP-RUN-d59df591a91e
+[2026-07-15T03:53:43.602Z] validationStatus=PASS
+[2026-07-15T03:53:43.602Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:43.602Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:43.602Z] canonicalPublishable=true
+[2026-07-15T03:53:43.602Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:43.602Z] endTime=2026-07-15T03:53:43.602Z
+[2026-07-15T03:53:43.602Z] status=PASS

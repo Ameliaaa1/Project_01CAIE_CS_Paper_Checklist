@@ -1,0 +1,265 @@
+[2026-07-14T16:55:26.140Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_32.pdf
+[2026-07-14T16:55:26.140Z] startTime=2026-07-14T16:55:26.140Z
+[2026-07-14T16:55:26.140Z] expectedRole=question_paper
+[2026-07-14T16:55:28.599Z] extract.exitCode=0
+[2026-07-14T16:55:28.599Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_32.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_32.pdf",
+  "pageCount": 16,
+  "questionCount": 12,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) 10 bits for the mantissa • 6 bits for the exponent • two’s complement form for both the mantissa and the exponent. • Write the normalised floating‑point representation of –96.75 in this system. Show your working. Mantissa Exponent Working [3] Explain why a binary representation is sometimes only an approximation to the real number it (b) represents. [3"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "2 composite non‑composite Composite Non‑composite [4] The location of a record in a random file is determined using a hashing algorithm."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A collision may occur during the process of adding a record. Outline what is meant by the term in this context. (a) collision [2] Explain how a collision can be dealt with when writing records to a random file. (b) [3] Complete the following paragraph about a using words from the given list."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 protocol suite Some words are used. not BitTorrent circuit switching layered link list peer‑to‑peer queue stack star TCP/IP The protocols in a determine the interconnectivity rules for a network model such as the model. [3] Outline the reasons why an operating system may need to use virtual memory."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "5 (a) [2] Explain the circumstances in which disk thrashing could occur. (b) [3] The Reverse Polish Notation (RPN) expression:"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 (a) a b * 2 / c d / * is to be evaluated where a = 20, b = 3, c = 10 and d = 5. Show the changing contents of the following stack as the RPN expression is evaluated. [4] Explain how an expression stored in RPN can be evaluated. (b) [3] This logic circuit represents the Boolean expression:"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "7 (a) X = A + B + C A X B C Complete this truth table for the given logic circuit. A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [1] Apply De Morgan’s laws to the expression: (b) X = A + B + C = [1] X Simplify the following expression using Boolean algebra. (c) Show all the stages in your simplification. T = X.Y.Z + X.Y.Z + X [3] Calculate the shor"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Start using Dijkstra’s algorithm. Show your working write your answers in the table provided. and 4 8 A B C 2 3 8 9 D 2 E 7 10 Start F Working Answers: A B C D E F [5] A stack Abstract Data Type (ADT) is to be implemented using pseudocode, with procedures"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 (a) to initialise it and to push new items onto the stack. A 1D array stores the contents of the stack. Stack Study the pseudocode in and complete the table of identifiers by writing the (i) part (a) (ii) missing data types and descriptions. Identifier Data type Description BasePointer TopPointer Stack REAL [2] Complete the pseudocode. (ii) CONSTANT MaxSiz"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "10 SIMD MISD [4] A programming language is used to represent some facts about people and their"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "11 declarative hobbies. 01 hobby(music). 02 hobby(caving). 03 hobby(climbing). 04 hobby(camping). 05 hobby(baking). 06 hobby(travelling). 07 person(toby). 08 person(natasha). 09 person(fatima). 10 person(joseph). 11 person(elijah). 12 person(nina). 13 enjoys(natasha, travelling). 14 enjoys(toby, climbing). 15 enjoys(nina, climbing). 16 enjoys(elijah, camping"
+    },
+    {
+      "questionNumber": "12",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "12 (a) exception [2] A pseudocode algorithm searches for a customer record in a random file (b) . A user inputs the name of the customer. AccountRecord.dat The records are stored using the user‑defined data type . TAccount TYPE TAccount DECLARE AccountNumber : INTEGER DECLARE Name : STRING DECLARE Address : STRING DECLARE Telephone : STRING ENDTYPE If the re"
+    }
+  ]
+}
+[2026-07-14T16:55:28.601Z] parserVersion=0.4.0
+[2026-07-14T16:55:28.601Z] documentRole=question_paper
+[2026-07-14T16:55:28.601Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:55:29.057Z] stage.exitCode=0
+[2026-07-14T16:55:29.057Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_32.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_32.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_32.staging.json",
+  "runId": "9618-2023-ON-32-QP-RUN-540d9563722e",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_32.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 12,
+      "leafQuestionCount": 24,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 23,
+        "present": 23,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-32-Q9-A-I",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:55:29.060Z] stagingId=9618-2023-ON-32-QP-RUN-540d9563722e
+[2026-07-14T16:55:29.060Z] validationStatus=PASS
+[2026-07-14T16:55:29.060Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:55:29.060Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:55:29.060Z] canonicalPublishable=true
+[2026-07-14T16:55:29.060Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:55:29.060Z] endTime=2026-07-14T16:55:29.060Z
+[2026-07-14T16:55:29.060Z] status=PASS

@@ -1,0 +1,144 @@
+[2026-07-13T02:02:01.690Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_12.pdf
+[2026-07-13T02:02:01.690Z] startTime=2026-07-13T02:02:01.690Z
+[2026-07-13T02:02:01.690Z] expectedRole=question_paper
+[2026-07-13T02:02:03.094Z] extract.exitCode=0
+[2026-07-13T02:02:03.094Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s25_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A computer stores data temporarily in random access memory (RAM). (a) RAM is one example of primary storage. Give one other example of primary storage. [1] (b) Give one reason why data is only stored temporarily in the RAM. [1] (c) The denary numbers 19 and 230 are converted to binary numbers to be stored in the RAM. Convert the two denary numbers to binar"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A student has an image file stored on their computer. (a) The image file was taken by a digital camera. Tick (✓) one box to show whether a digital camera is an example of an input, output, process or storage device. A input B output C process D storage [1] (b) The size of the image file is 3072 bytes. (i) Give the size of the image file in kibibytes (KiB)."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 22,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A programmer writes a program to store and sort all the data for the books in her home library. (a) The programmer uses a high-level language to write the program. One reason for writing the program using a high-level language is that it is easier to read and write. Give two other reasons why the programmer chose to use a high-level language. 1 2 [2] (b) T"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 An employee uses a computer that has a Von Neumann architecture to complete many different tasks in their working day. (a) The computer has a central processing unit (CPU). Complete the table of components in the CPU and their descriptions. Component Description It sends signals to all the components in the CPU to manage the flow of data through the CPU. I"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 23,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 A hospital has computers and technology that it uses when caring for its patients. (a) One computer is an expert system that is used to help diagnose a patient’s illness. The doctor inputs the patient’s symptoms into an interface and a diagnosis is output. Describe how the expert system decides the diagnosis. [3] (b) The hospital has a robot that is used t"
+    }
+  ]
+}
+[2026-07-13T02:02:03.096Z] parserVersion=0.4.0
+[2026-07-13T02:02:03.096Z] documentRole=question_paper
+[2026-07-13T02:02:03.096Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:02:03.402Z] stage.exitCode=0
+[2026-07-13T02:02:03.402Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s25_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/0478_s25_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/0478_s25_qp_12.staging.json",
+  "runId": "0478-2025-MJ-12-QP-RUN-1e8dfa4e4b3c",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/0478_s25_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 27,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 27,
+        "present": 27,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:02:03.404Z] stagingId=0478-2025-MJ-12-QP-RUN-1e8dfa4e4b3c
+[2026-07-13T02:02:03.404Z] validationStatus=PASS
+[2026-07-13T02:02:03.404Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:02:03.404Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:02:03.404Z] canonicalPublishable=true
+[2026-07-13T02:02:03.404Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:02:03.404Z] endTime=2026-07-13T02:02:03.404Z
+[2026-07-13T02:02:03.404Z] status=PASS

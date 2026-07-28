@@ -1,0 +1,209 @@
+[2026-07-14T16:56:56.781Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_22.pdf
+[2026-07-14T16:56:56.781Z] startTime=2026-07-14T16:56:56.781Z
+[2026-07-14T16:56:56.781Z] expectedRole=question_paper
+[2026-07-14T16:57:00.279Z] extract.exitCode=0
+[2026-07-14T16:57:00.279Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_22.pdf",
+  "pageCount": 24,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) Each example may contain statements that relate to one or more of the following: selection • iteration (repetition) • input/output. • 3 Complete the table by placing ticks ( ) in each row. one or more Pseudocode example Selection Iteration Input/Output FOR Index 1 TO 10 0 Data[Index] NEXT Index WRITEFILE ThisFile, \"****\" UNTIL Level > 25 IF Mark > 74 T"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 7,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 An algorithm for part of the program will: (a) input three numeric values and assign them to identifiers and • Num1 Num2 Num3 assign the largest value to variable • Ans output a message giving the largest value and the average of the three numeric values. • Assume the values are all different and are input in no particular order. Complete the program flowc"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Data will be stored about each item. The data for each item will be held in a record structure of type . Component The programmer has started to define the fields that will be needed as shown in the table. Field Example value Comment a numeric value used as an array index Item_Num 123478 if this item has been rejected Reject FALSE TRUE a letter to indicate"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 C B A In this example, A is the length of the longest side. This triangle is said to be right‑angled if the following equation is true: × × × A A = (B B) + (C C) A procedure will be written to check whether three lengths represent a right‑angled triangle. The lengths will be input in any sequence. The procedure will: IsRA() prompt and input three integer v"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 The program contains a global 1D array of type string containing 200 elements. Data The first element has the index value 1. A procedure is written to initialise the values in the array: Process() PROCEDURE Process(Label : STRING) DECLARE Index : INTEGER 0 Index INPUT Data[Index] WHILE Index < 200 Index + 1 Index CASE OF (Index MOD 2) TO_UPPER(Label) 0 : D"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 16,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 played. Up to 16 characters can be displayed. Track titles longer than 16 characters will need to be (a) trimmed as follows: Words must be removed from the end of the track title until the resulting title is less than • 14 characters. When a word is removed, the space in front of that word is also removed. • Three dots are added to the end of the last word"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 16,
+      "pageEnd": 18,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The system stores information for each club member: name, home address, email address, mobile phone number, date of birth and exercise preferences. Many classes are full, and the club creates a waiting list for each class. The club adds details of members who want to join a class that is full to the waiting list for that class. When the system identifies t"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 18,
+      "pageEnd": 21,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 Each student project is stored in a text file. The process is split into a number of stages. Each stage performs a different task and creates a new file. For example: File name Comment Student project file produced by student Michael Aday MichaelAday_src.txt File produced by stage 1 MichaelAday_S1.txt File produced by stage 2 MichaelAday_S2.txt Suggest a r"
+    }
+  ]
+}
+[2026-07-14T16:57:00.282Z] parserVersion=0.4.0
+[2026-07-14T16:57:00.282Z] documentRole=question_paper
+[2026-07-14T16:57:00.282Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:57:00.688Z] stage.exitCode=0
+[2026-07-14T16:57:00.688Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_22.staging.json",
+  "runId": "9618-2024-MJ-22-QP-RUN-2a454e3660ac",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 20,
+        "present": 20,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-MJ-22-Q1-C",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-MJ-22-Q6-B-III",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:57:00.692Z] stagingId=9618-2024-MJ-22-QP-RUN-2a454e3660ac
+[2026-07-14T16:57:00.692Z] validationStatus=PASS
+[2026-07-14T16:57:00.692Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:57:00.692Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:57:00.692Z] canonicalPublishable=true
+[2026-07-14T16:57:00.692Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:57:00.692Z] endTime=2026-07-14T16:57:00.692Z
+[2026-07-14T16:57:00.692Z] status=PASS

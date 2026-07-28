@@ -1,0 +1,49 @@
+{
+  "solution":"PR-038A-Canonical-Mark-Coverage-Diagnostic-Severity-Alignment-Plan",
+  "status":"PASS",
+  "rootCause":"Allowed leaf null-mark diagnostics were hard-coded as P2 even though P2 does not affect completeness or publish status and is not counted by staging validation aggregates.",
+  "change":{
+    "code":"CANONICAL_MARK_COVERAGE_INCOMPLETE",
+    "condition":"Leaf mark is null under the existing rule that only requires marks for non-leaf canonical records.",
+    "beforeSeverity":"P2",
+    "afterSeverity":"P3",
+    "parserChanged":false,
+    "markExtractionChanged":false,
+    "completenessGateChanged":false,
+    "productionWrite":false
+  },
+  "allowedNullFixture":{
+    "staging":"output/phase2/staging/0478_s21_qp_13.staging.json",
+    "questionId":"0478-2021-MJ-13-Q10-A",
+    "severity":"P3",
+    "p0IssueCount":0,
+    "p1IssueCount":0,
+    "p2IssueCount":0,
+    "markCoverage":"PASS",
+    "completenessStatus":"PASS",
+    "publishable":true,
+    "publishStatus":"READY_TO_PUBLISH"
+  },
+  "realMissingMarkGuard":{
+    "fixture":"Synthetic required parent mark removal",
+    "code":"CANONICAL_REQUIRED_MARK_MISSING",
+    "severity":"P0",
+    "markCoverage":"FAIL",
+    "publishable":false,
+    "downgraded":false
+  },
+  "regression":{
+    "phase1":{"success":20,"total":20},
+    "phase2":{"success":120,"total":120},
+    "pr030":"PASS",
+    "pr031":"PASS",
+    "pr032":"PASS",
+    "fullNpmTest":"PASS",
+    "prismaValidate":"PASS"
+  },
+  "productionIntegrity":{
+    "beforeSha256":"3f0b1333d245436a1239e758b72d0e441f7cb02a508d7b76bc09cc575236676a",
+    "afterSha256":"3f0b1333d245436a1239e758b72d0e441f7cb02a508d7b76bc09cc575236676a",
+    "unchanged":true
+  }
+}

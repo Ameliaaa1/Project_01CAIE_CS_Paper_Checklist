@@ -1,0 +1,160 @@
+[2026-07-14T16:51:20.468Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_11.pdf
+[2026-07-14T16:51:20.468Z] startTime=2026-07-14T16:51:20.467Z
+[2026-07-14T16:51:20.468Z] expectedRole=question_paper
+[2026-07-14T16:51:22.101Z] extract.exitCode=0
+[2026-07-14T16:51:22.101Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_11.pdf",
+  "pageCount": 16,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 State the difference between a tebibyte and a terabyte. (a) [1] Convert the signed denary value –100 into an 8-bit two’s complement binary integer. (b) Working Answer [1] Convert the denary number 251 into hexadecimal. Show your working. (c) Working Answer [2] Add the following unsigned binary integers. (d) 0 1 0 1 0 0 0 0 + 0 0 1 1 1 1 1 0 [1] A computer "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 6,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 The hardware includes different types of memory. (a) Complete the description of computer memory. (i) Random Access Memory (RAM) and Read Only Memory (ROM) are both examples of memory. One item that is stored in RAM is . One item that is stored in ROM is . RAM can be either Static RAM (SRAM) or Dynamic RAM (DRAM). SRAM uses transistors arranged as . DRAM u"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 internet. The teacher is concerned about the security and privacy of the papers. State the difference between the security of data and the privacy of data. (a) [1] Identify describe threats to the data. Identify security measure to protect against (b) and two one each threat. Each security measure must be different. Threat 1 Description Security measure Th"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 10,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 MARKS The database has the following structure: STUDENT(StudentID, FirstName, LastName) TEST(TestID, Description, TotalMarks) STUDENT_TEST(StudentID, TestID, Mark) Describe the advantages of using a relational database compared to a file-based approach. (a) [4] Give the highest level of Normal Form (NF) the database is in justify your choice. (b) and MARKS"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Draw line from each IDE feature to its correct description. (a) one IDE feature Description Executes one line of the program and Context-sensitive prompt then stops Underlines or highlights statements Dynamic syntax check that do not meet the rules of the language Outputs the contents of variables and Breakpoint data structures Single stepping Stops the co"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 15,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "6 (a) Describe the role of the registers in the Fetch-Execute (F-E) cycle. (i) [5] Describe when interrupts are detected in the F-E cycle how the interrupts are (ii) and handled. Detected Handled [5] Identify factor that can affect the performance of the computer system state how it (b) one and impacts the performance. Factor Impact [2] Question 6 continues "
+    }
+  ]
+}
+[2026-07-14T16:51:22.103Z] parserVersion=0.4.0
+[2026-07-14T16:51:22.103Z] documentRole=question_paper
+[2026-07-14T16:51:22.103Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:51:22.357Z] stage.exitCode=0
+[2026-07-14T16:51:22.357Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_11.staging.json",
+  "runId": "9618-2022-MJ-11-QP-RUN-d5940b47c521",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 25,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 25,
+        "present": 25,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:51:22.359Z] stagingId=9618-2022-MJ-11-QP-RUN-d5940b47c521
+[2026-07-14T16:51:22.359Z] validationStatus=PASS
+[2026-07-14T16:51:22.359Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:51:22.359Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:51:22.359Z] canonicalPublishable=true
+[2026-07-14T16:51:22.359Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:51:22.359Z] endTime=2026-07-14T16:51:22.359Z
+[2026-07-14T16:51:22.359Z] status=PASS

@@ -1,0 +1,110 @@
+{
+  "generatedFor": "Phase-7-C-A",
+  "status": "PASS",
+  "title": "Document Structure Generalization",
+  "checks": {
+    "canonicalFilename": true,
+    "separatorAndLongRoleAliases": true,
+    "sessionAndMarkSchemeAliases": true,
+    "questionPaperSignals": true,
+    "markSchemeSignals": true,
+    "conflictingSignalsReported": true
+  },
+  "diagnostics": {
+    "title": "Document Structure Generalization",
+    "status": "PASS",
+    "checks": {
+      "canonicalFilename": true,
+      "separatorAndLongRoleAliases": true,
+      "sessionAndMarkSchemeAliases": true,
+      "questionPaperSignals": true,
+      "markSchemeSignals": true,
+      "conflictingSignalsReported": true
+    },
+    "aliases": [
+      {
+        "subjectCode": "2210",
+        "year": 2024,
+        "yearCode": "24",
+        "sessionCode": "s",
+        "session": "M/J",
+        "role": "QP",
+        "roleCode": "qp",
+        "component": "11",
+        "paperNumber": "1",
+        "variant": "1",
+        "paperGroupId": "2210_s_24_11",
+        "normalizedName": "2210_s24_qp_11.pdf"
+      },
+      {
+        "subjectCode": "2210",
+        "year": 2024,
+        "yearCode": "24",
+        "sessionCode": "s",
+        "session": "M/J",
+        "role": "QP",
+        "roleCode": "qp",
+        "component": "11",
+        "paperNumber": "1",
+        "variant": "1",
+        "paperGroupId": "2210_s_24_11",
+        "normalizedName": "2210_s24_qp_11.pdf"
+      },
+      {
+        "subjectCode": "2210",
+        "year": 2024,
+        "yearCode": "24",
+        "sessionCode": "w",
+        "session": "O/N",
+        "role": "MS",
+        "roleCode": "ms",
+        "component": "22",
+        "paperNumber": "2",
+        "variant": "2",
+        "paperGroupId": "2210_w_24_22",
+        "normalizedName": "2210_w24_ms_22.pdf"
+      }
+    ],
+    "qp": {
+      "role": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "confidence": "high",
+      "signals": {
+        "explicitRole": null,
+        "filenameRole": "question_paper",
+        "textRole": "question_paper"
+      },
+      "conflict": false,
+      "diagnostics": []
+    },
+    "ms": {
+      "role": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "confidence": "high",
+      "signals": {
+        "explicitRole": null,
+        "filenameRole": "mark_scheme",
+        "textRole": "mark_scheme"
+      },
+      "conflict": false,
+      "diagnostics": []
+    },
+    "conflict": {
+      "role": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "confidence": "high",
+      "signals": {
+        "explicitRole": "question_paper",
+        "filenameRole": "mark_scheme",
+        "textRole": "mark_scheme"
+      },
+      "conflict": true,
+      "diagnostics": [
+        "DOCUMENT_ROLE_SIGNAL_CONFLICT"
+      ]
+    }
+  }
+}

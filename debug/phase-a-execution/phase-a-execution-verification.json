@@ -1,0 +1,77 @@
+{
+  "plan": "PR-028_Production_Expansion_Phase_A_Execution_Plan",
+  "batchId": "PR028-0478-2023-MJ",
+  "status": "PASS",
+  "scope": {
+    "syllabus": "0478",
+    "year": 2023,
+    "session": "M/J",
+    "components": ["11", "12", "13", "21", "22", "23"]
+  },
+  "prePublish": {
+    "stagingArtifacts": 12,
+    "validationPass": 12,
+    "canonicalCompletenessPass": 12,
+    "humanAdminReview": 12,
+    "readyToPublish": 12,
+    "canonicalHashesUnchangedByApproval": true,
+    "phase1": {"success": 20, "total": 20},
+    "phase2": {"success": 120, "total": 120},
+    "pr030": "PASS",
+    "pr031": "PASS",
+    "pr032": "PASS"
+  },
+  "publication": {
+    "productionWrite": true,
+    "transactionStatus": "PASS",
+    "alreadyPublishedComponents": ["12"],
+    "publishedComponents": ["11", "13", "21", "22", "23"],
+    "paperDelta": 10,
+    "questionRecordDelta": 165,
+    "responseAreaDelta": 692,
+    "markSchemeEntryDelta": 47,
+    "pairingDelta": 5,
+    "automaticRollbackExercise": {
+      "trigger": "QP/MS correspondence verification rejected unmatched legacy line-number entries",
+      "result": "BATCH_TRANSACTION_DISCARDED",
+      "productionStoreUnchanged": true
+    }
+  },
+  "productionState": {
+    "papers": 12,
+    "questionPapers": 6,
+    "markSchemes": 6,
+    "topLevelQuestions": 65,
+    "leafQuestions": 161,
+    "responseAreas": 804,
+    "markSchemeEntries": 54,
+    "pairings": 6,
+    "expansionBatches": 1
+  },
+  "workflowVerification": {
+    "questionFinder": "PASS",
+    "questionHierarchy": "PASS",
+    "knowledgeChecklist": "PASS",
+    "marksVisibility": "PASS",
+    "markSchemeSearch": "PASS",
+    "qpMsLinkage": "PASS",
+    "aiRetrieval": "PASS",
+    "canonicalTextAvailable": "PASS",
+    "sourceTraceAvailable": "PASS",
+    "originalPdfAvailable": "PASS"
+  },
+  "postPublish": {
+    "targetedProductionTests": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS",
+    "productionRollbackRequired": false
+  },
+  "artifacts": {
+    "productionStore": "output/production/production-store.json",
+    "prePublishSnapshot": "debug/phase-a-execution/production-store-before.json",
+    "canonicalHashesBefore": "debug/phase-a-execution/canonical-hashes-before.txt",
+    "canonicalHashesAfter": "debug/phase-a-execution/canonical-hashes-after.txt",
+    "productionReport": "output/production-expansion/pr028-production-expansion-report.json",
+    "coverageReport": "output/production-expansion/pr029-staging-coverage-report.json"
+  }
+}

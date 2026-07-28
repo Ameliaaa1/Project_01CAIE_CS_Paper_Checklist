@@ -1,0 +1,83 @@
+{
+  "generatedFor": "Phase-7-C-E",
+  "status": "PASS",
+  "title": "Regression Expansion",
+  "checks": {
+    "syllabus0478": true,
+    "syllabus9618": true,
+    "syllabus9709": true,
+    "futureFixture": true
+  },
+  "diagnostics": {
+    "title": "Regression Expansion",
+    "status": "PASS",
+    "checks": {
+      "syllabus0478": true,
+      "syllabus9618": true,
+      "syllabus9709": true,
+      "futureFixture": true
+    },
+    "fixtures": {
+      "9618": {
+        "status": "PASS",
+        "relativePath": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_11.pdf",
+        "paperId": "9618-2021-MJ-11",
+        "questionCount": 8,
+        "leafCount": 30,
+        "totalMarks": 75,
+        "stableIds": [
+          "9618-2021-MJ-11-Q1",
+          "9618-2021-MJ-11-Q2",
+          "9618-2021-MJ-11-Q3",
+          "9618-2021-MJ-11-Q4",
+          "9618-2021-MJ-11-Q5",
+          "9618-2021-MJ-11-Q6",
+          "9618-2021-MJ-11-Q7",
+          "9618-2021-MJ-11-Q8"
+        ]
+      },
+      "9709": {
+        "status": "PASS",
+        "relativePath": "public/textbook_syllabus/pastpaper/caie-as-a-level-9709/2024 May June/9709_s24_qp_12.pdf",
+        "paperId": "9709-2024-MJ-12",
+        "questionCount": 10,
+        "leafCount": 27,
+        "totalMarks": 75,
+        "stableIds": [
+          "9709-2024-MJ-12-Q1",
+          "9709-2024-MJ-12-Q2",
+          "9709-2024-MJ-12-Q3",
+          "9709-2024-MJ-12-Q4",
+          "9709-2024-MJ-12-Q5",
+          "9709-2024-MJ-12-Q6",
+          "9709-2024-MJ-12-Q7",
+          "9709-2024-MJ-12-Q8",
+          "9709-2024-MJ-12-Q9",
+          "9709-2024-MJ-12-Q10"
+        ]
+      },
+      "0478": {
+        "status": "PASS",
+        "relativePath": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-March/0478_m23_qp_12.pdf",
+        "paperId": "0478-2023-FM-12",
+        "questionCount": 6,
+        "leafCount": 26,
+        "totalMarks": 75,
+        "stableIds": [
+          "0478-2023-FM-12-Q1",
+          "0478-2023-FM-12-Q2",
+          "0478-2023-FM-12-Q3",
+          "0478-2023-FM-12-Q4",
+          "0478-2023-FM-12-Q5",
+          "0478-2023-FM-12-Q6"
+        ]
+      }
+    },
+    "futureFixture": {
+      "status": "PASS",
+      "filename": "9999-mj26-question-paper-12.pdf",
+      "questionReference": "Q2(c)(ii)",
+      "purpose": "Future syllabus fixture without syllabus-specific logic"
+    }
+  }
+}

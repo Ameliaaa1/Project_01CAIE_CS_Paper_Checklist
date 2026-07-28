@@ -1,0 +1,192 @@
+[2026-07-15T03:54:07.223Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_12.pdf
+[2026-07-15T03:54:07.223Z] startTime=2026-07-15T03:54:07.223Z
+[2026-07-15T03:54:07.223Z] expectedRole=question_paper
+[2026-07-15T03:54:08.676Z] extract.exitCode=0
+[2026-07-15T03:54:08.676Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Different types of software can be run on a computer. (a) State what is meant by software. [1] (b) Utility software is one type of software that can be run on a computer. Tick (3) one box to show which software is an example of utility software. A spreadsheet B anti-virus C web browser D database [1] (c) Identify the type of software that manages inputs an"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Data storage can be measured using different units of measurement. (a) Identify the name of the smallest unit of measurement of data. [1] (b) State how many nibbles there are in 2 bytes. [1] (c) A 10 second sound effect is recorded for a movie. It is recorded with a sample rate of 22,016 Hz and a sample resolution of 8 bits. Calculate the file size of the "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A user enters data that is hexadecimal into a computer system. The data is converted to binary to be processed by the computer. (a) (i) Give one similarity between hexadecimal and binary. [1] (ii) Give two differences between hexadecimal and binary. 1 2 [2] (b) Data that is denary can also be converted to binary. Give the binary number for each of the thre"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A student has a smartwatch. (a) The smartwatch has built-in input and output devices. Identify two input devices that can be built into the smartwatch. 1 2 [2] (b) Identify one output device that can be built into the smartwatch. [1] (c) The smartwatch has read only memory (ROM). Explain why the smartwatch needs ROM. [2] (d) The smartwatch uses a text mess"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A barcode scanning system uses a check digit to check for errors in data on input. (a) Explain how the barcode scanning system operates to check for errors. [4] (b) After a barcode is scanned, data is sent to a stock control system to update the stock value stored for that product. The data is sent to the stock control system using serial simplex data tran"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 The table contains names and descriptions of components in a central processing unit (CPU). Complete the table by giving the missing component names and descriptions. Component name Description sends signals to manage the flow of data through the CPU program counter stores the address of the data that is about to be fetched from random access memory (RAM) "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A student enters the uniform resource locator (URL) for a web page into their tablet computer. (a) State what is meant by a URL. [1] (b) Identify two different parts of a URL. 1 2 [2] (c) The student enters the URL into a piece of software that then displays the web page. Identify the name of this software. [1] (d) Draw and annotate a diagram to show how t"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 A robot vacuum cleaner uses sensors to navigate around obstacles in a room. (a) Tick (3) one box to show which sensor would be the most suitable for this purpose. A proximity B flow C pressure D level [1] (b) An expert system can be used to diagnose an error with a robot vacuum cleaner. Circle three components that are part of an expert system. knowledge b"
+    }
+  ]
+}
+[2026-07-15T03:54:08.678Z] parserVersion=0.4.0
+[2026-07-15T03:54:08.678Z] documentRole=question_paper
+[2026-07-15T03:54:08.678Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:08.987Z] stage.exitCode=0
+[2026-07-15T03:54:08.987Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_12.staging.json",
+  "runId": "0478-2024-ON-12-QP-RUN-ef7be854099a",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 34,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 34,
+        "present": 34,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:54:08.989Z] stagingId=0478-2024-ON-12-QP-RUN-ef7be854099a
+[2026-07-15T03:54:08.989Z] validationStatus=PASS
+[2026-07-15T03:54:08.989Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:54:08.989Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:08.989Z] canonicalPublishable=true
+[2026-07-15T03:54:08.989Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:54:08.989Z] endTime=2026-07-15T03:54:08.989Z
+[2026-07-15T03:54:08.989Z] status=PASS

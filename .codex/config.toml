@@ -1,0 +1,16 @@
+[mcp_servers.docling]
+command = "/Users/amelia/Library/Python/3.10/bin/uvx"
+args = [
+  "--from",
+  "docling-mcp[local]",
+  "docling-mcp-server",
+  "--transport",
+  "stdio"
+]
+startup_timeout_sec = 120
+tool_timeout_sec = 300
+enabled = true
+default_tools_approval_mode = "prompt"
+
+[mcp_servers.docling.env]
+DOCLING_CONVERSION_MODE = "local"

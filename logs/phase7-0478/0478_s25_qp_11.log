@@ -1,0 +1,208 @@
+[2026-07-15T03:54:31.711Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_11.pdf
+[2026-07-15T03:54:31.711Z] startTime=2026-07-15T03:54:31.711Z
+[2026-07-15T03:54:31.711Z] expectedRole=question_paper
+[2026-07-15T03:54:33.449Z] extract.exitCode=0
+[2026-07-15T03:54:33.449Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s25_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_11.pdf",
+  "pageCount": 12,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The size of a file can be measured using different data storage units. (a) Tick (3) one box to show the smallest data storage unit. A byte B gibibyte (GiB) C kibibyte (KiB) D nibble [1] (b) State how many tebibytes (TiB) are equal to 2 pebibytes (PiB). [1] (c) The size of a file needs to be reduced. (i) Give the name of the process that is used to reduce t"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A clothes store has a ticket system to allow customers to speak to a personal shopper. The ticket displays a ticket number in hexadecimal, for example 11B. (a) The ticket system has an output device that creates a paper ticket. Identify an appropriate output device to produce the paper ticket. [1] (b) Each ticket number is stored as a binary number in the "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 An image is converted to binary to be represented by a computer. Complete the table with the missing terms and definition about representing an image. Term Definition This is the smallest component of an image. resolution This is the number of bits used to create each colour in an image. This is additional data that is stored with an image that can provide"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A restaurant has an electronic ordering system. The system allows customers to select the food they want to order. The data for the order is transmitted across their network to a computer in the restaurant kitchen. (a) The data is sent using serial full-duplex data transmission. (i) Give two reasons why serial full-duplex is a suitable data transmission me"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Data is processed by the central processing unit (CPU) in a computer that has a Von Neumann architecture. (a) Complete the table with the missing terms and definitions about processing data. Term Definition current instruction register (CIR) This is a processing unit within the CPU that can fetch, decode and execute instructions. This is a list of all the "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Data can be encrypted using asymmetric encryption. (a) Complete the paragraph about asymmetric encryption. Use the terms from the list. Some of the terms in the list will not be used. You may use a term more than once. algorithm binary cipher text compression error hardware hexadecimal meaningless plain text private public readable transmission unreadable "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A student’s computer has primary storage. One example of primary storage is random access memory (RAM). (a) Identify one other example of primary storage. [1] (b) Explain why RAM is an example of primary storage and not secondary storage. [3] (c) The student is editing a large video file for a project and during this process the RAM becomes full. This make"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 A robot is used to move car parts in a factory. (a) One characteristic of the robot is that it has a mechanical structure. Give one other characteristic of a robot. [1] (b) The robot has firmware. State what is meant by firmware. [1] (c) Interrupts are generated when the robot is operating in the factory. Give two examples of interrupts that may be generat"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 Each employee in a finance company has a computer and an electronic account. (a) Each computer has an operating system. One function of the operating system is to manage memory. Describe the role of the operating system in managing memory. [3] (b) The finance company is concerned that a hacker may perform a brute-force attack to gain access to an employee’"
+    }
+  ]
+}
+[2026-07-15T03:54:33.452Z] parserVersion=0.4.0
+[2026-07-15T03:54:33.452Z] documentRole=question_paper
+[2026-07-15T03:54:33.452Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:33.806Z] stage.exitCode=0
+[2026-07-15T03:54:33.806Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s25_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_11.staging.json",
+  "runId": "0478-2025-MJ-11-QP-RUN-0e343decdfc0",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s25_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 36,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 36,
+        "present": 36,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:54:33.809Z] stagingId=0478-2025-MJ-11-QP-RUN-0e343decdfc0
+[2026-07-15T03:54:33.809Z] validationStatus=PASS
+[2026-07-15T03:54:33.809Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:54:33.809Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:33.809Z] canonicalPublishable=true
+[2026-07-15T03:54:33.809Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:54:33.809Z] endTime=2026-07-15T03:54:33.809Z
+[2026-07-15T03:54:33.809Z] status=PASS

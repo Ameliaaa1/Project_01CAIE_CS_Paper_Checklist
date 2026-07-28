@@ -1,0 +1,112 @@
+[2026-07-14T16:52:49.033Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_41.pdf
+[2026-07-14T16:52:49.033Z] startTime=2026-07-14T16:52:49.033Z
+[2026-07-14T16:52:49.033Z] expectedRole=question_paper
+[2026-07-14T16:52:50.382Z] extract.exitCode=0
+[2026-07-14T16:52:50.382Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_41.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_41.pdf",
+  "pageCount": 12,
+  "questionCount": 3,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 23,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 IntegerData.txt program is required to read in this data and perform searching and sorting on the data. Write program code to declare a global 1D array, with space for 100 integer (a) DataArray values. Save your program as . Question1_N22 Copy and paste the program code into in the evidence document. part 1(a) [2] The procedure must read in the numbers fro"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 8,
+      "marks": 31,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 object-oriented programming. The program has two classes: and . Card Hand The methods and attributes of these classes are shown: Card stores the card number from 1 to 5 inclusive Number : INTEGER stores the card colour: red, blue or yellow Colour : STRING takes a number and colour as parameters and sets Constructor() the private values to these parameters "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 11,
+      "marks": 21,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "3 pointer. The binary tree is stored using a global 2D array. The pseudocode declaration for the array is: DECLARE ArrayNodes : ARRAY[0:19, 0:2] OF INTEGER For example: stores the left pointer for the first node. • ArrayNodes[0, 0] stores the data for the first node. • ArrayNodes[0, 1] stores the right pointer for the first node. • ArrayNodes[0, 2] indicates"
+    }
+  ]
+}
+[2026-07-14T16:52:50.383Z] parserVersion=0.4.0
+[2026-07-14T16:52:50.383Z] documentRole=question_paper
+[2026-07-14T16:52:50.383Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:52:50.666Z] stage.exitCode=0
+[2026-07-14T16:52:50.666Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_41.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_41.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_41.staging.json",
+  "runId": "9618-2022-ON-41-QP-RUN-9d89d836ed79",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_41.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 3,
+      "leafQuestionCount": 21,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:52:50.668Z] stagingId=9618-2022-ON-41-QP-RUN-9d89d836ed79
+[2026-07-14T16:52:50.668Z] validationStatus=PASS
+[2026-07-14T16:52:50.668Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:52:50.668Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:52:50.668Z] canonicalPublishable=true
+[2026-07-14T16:52:50.668Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:52:50.668Z] endTime=2026-07-14T16:52:50.668Z
+[2026-07-14T16:52:50.668Z] status=PASS

@@ -1,0 +1,176 @@
+[2026-07-15T03:13:14.156Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf
+[2026-07-15T03:13:14.156Z] startTime=2026-07-15T03:13:14.156Z
+[2026-07-15T03:13:14.156Z] expectedRole=question_paper
+[2026-07-15T03:13:16.831Z] extract.exitCode=0
+[2026-07-15T03:13:16.831Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_13.pdf",
+  "pageCount": 20,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) A student paints a picture in an art class. The student takes a photograph of the picture using a digital camera. The digital camera creates an image with a resolution of 2 million pixels and uses a bit depth of 16 bits. (i) Calculate the file size of the image created by the digital camera in megabytes (MB). Show your working. Answer MB [2] (ii) The s"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A computer has a processor. (a) The processor has a Control Unit (CU) and system clock. (i) Explain how the CU and the system clock work together. [2] (ii) The processor runs the Fetch-Execute (F-E) cycle. Write the stages of the F-E cycle using register transfer notation. [4] (b) The computer has cache memory. Describe one benefit of the computer using ca"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A programmer is writing a program in a high-level language. (a) Complete the description of compilers and interpreters by writing the missing words. A compiler checks all the code before attempting to translate the program. If any errors are found, they are all reported at the same time and the program does not translate or run. If there are no errors foun"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) Write the logic expressions for the following logic circuit. A X B C Y D X = Y = [2] (b) Complete the truth table for the logic expression: X = (A OR B) XOR (B OR C) XOR (NOT A NAND C) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [2]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 13,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 The following table shows part of the instruction set for a processor. The processor has two registers: the Accumulator (ACC) and an Index Register (IX) . Instruction Explanation Opcode Operand LDM #n Immediate addressing. Load the number n to ACC STO <address> Store the contents of ACC at the given address ADD #n/Bn/&n Add the number n to the ACC ADD <add"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A shop sells pens to customers. Customers place an order with the shop and collect the items the next day. The shop uses a database to store the information about the orders. The database contains the following tables: CUSTOMER(CustomerID, CustomerName, Email) ORDER(OrderID, CustomerID, Date, Collected) ORDER_PRODUCT(OrderID, ProductID, Quantity) PRODUCT(P"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 17,
+      "pageEnd": 17,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "7 (a) A computer can perform logical and arithmetic shifts. (i) Show the result of a logical left shift of 2 places on the two’s complement binary integer 11001010 [1] (ii) Show the result of an arithmetic right shift of 3 places on the two’s complement binary integer 10011110 [1] (b) Complete the following binary addition. Show your working. Include any ove"
+    }
+  ]
+}
+[2026-07-15T03:13:16.834Z] parserVersion=0.4.0
+[2026-07-15T03:13:16.834Z] documentRole=question_paper
+[2026-07-15T03:13:16.834Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:13:17.236Z] stage.exitCode=0
+[2026-07-15T03:13:17.236Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_13.staging.json",
+  "runId": "9618-2025-MJ-13-QP-RUN-b341d6829ba4",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 27,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 27,
+        "present": 27,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:13:17.239Z] stagingId=9618-2025-MJ-13-QP-RUN-b341d6829ba4
+[2026-07-15T03:13:17.239Z] validationStatus=PASS
+[2026-07-15T03:13:17.239Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:13:17.239Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:13:17.239Z] canonicalPublishable=true
+[2026-07-15T03:13:17.239Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:13:17.239Z] endTime=2026-07-15T03:13:17.239Z
+[2026-07-15T03:13:17.239Z] status=PASS

@@ -1,0 +1,176 @@
+[2026-07-13T02:04:16.381Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_22.pdf
+[2026-07-13T02:04:16.381Z] startTime=2026-07-13T02:04:16.381Z
+[2026-07-13T02:04:16.381Z] expectedRole=question_paper
+[2026-07-13T02:04:18.018Z] extract.exitCode=0
+[2026-07-13T02:04:18.018Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_22.pdf",
+  "pageCount": 12,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify array you could have used for and state its purpose. (a) (i) one Task 1 Array Purpose [2] Identify variable you could have used for and state its purpose. (ii) one Task 2 Variable Purpose [2] Identify constant you could have used for and state its purpose. (iii) one Task 3 Constant Purpose [2] Explain the benefits of storing Price as a real data t"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 one true false true false Statement 3 3 ( ) ( ) A subroutine is called from within a program. A subroutine is a complete program. not A subroutine is a self-contained piece of code. A subroutine must return a value to the code from which it was called. [2] This pseudocode algorithm is used as a validation check."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 PRINT \"Input a number from 1 to 5000\" REPEAT INPUT Number IF Number < 1 OR Number > 5000 THEN PRINT \"Invalid number, please try again\" ENDIF UNTIL Number >= 1 AND Number <= 5000 PRINT Number, \" is within the correct range\" Identify different types of test data. For each type, give an example of the test data you three would use to test this algorithm and s"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 . Number 1 TO 5000 FOR Count INPUT Number[Count] NEXT Count Extend and re-write the algorithm using pseudocode to also count and output how many of the numbers stored in the array are greater than 500, using the variable . Only output Higher Higher once with an appropriate message. [6] This pseudocode represents an algorithm."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 27,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 REPEAT 0 Flag 0 to 3 FOR Count IF Num[Count] < Num[Count + 1] THEN Num[Count] Store Num[Count + 1] Num[Count] Store Num[Count + 1] 1 Flag ENDIF NEXT Count UNTIL Flag = 0 The contents of the array at the start of the algorithm are: (a) Num[0] Num[1] Num[2] Num[3] Num[4] 45 56 30 12 15 Complete the trace table for the algorithm using the data given in the ar"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 Input/Output Decision [2] Question 7 starts on Page 12. The table AUDIOPARTS stores the part number, description, cost and quantity in stock of the"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 items sold by a music shop. PartNum Description Cost Quantity A01 Compact Amplifier Case 50.00 15 A02 Deluxe Amplifier Case 75.00 1 A03 Amplifier Standard 79.99 48 A04 Amplifier Midrange 149.99 50 A05 Amplifier Megablaster 299.99 48 S01 Tweeter 59.99 10 S02 Midrange Woofer 99.99 0 S03 Subwoofer 139.99 16 S04 Tower Speaker Basic 159.99 25 S05 Tower Speaker "
+    }
+  ]
+}
+[2026-07-13T02:04:18.020Z] parserVersion=0.4.0
+[2026-07-13T02:04:18.020Z] documentRole=question_paper
+[2026-07-13T02:04:18.020Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:18.397Z] stage.exitCode=0
+[2026-07-13T02:04:18.397Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_22.staging.json",
+  "runId": "0478-2020-ON-22-QP-RUN-ea1d600ec99a",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 16,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 16,
+        "present": 16,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:04:18.399Z] stagingId=0478-2020-ON-22-QP-RUN-ea1d600ec99a
+[2026-07-13T02:04:18.399Z] validationStatus=PASS
+[2026-07-13T02:04:18.399Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:04:18.399Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:18.399Z] canonicalPublishable=true
+[2026-07-13T02:04:18.399Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:04:18.399Z] endTime=2026-07-13T02:04:18.399Z
+[2026-07-13T02:04:18.399Z] status=PASS

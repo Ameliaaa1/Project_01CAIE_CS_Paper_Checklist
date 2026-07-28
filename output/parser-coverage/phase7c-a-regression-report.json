@@ -1,0 +1,19 @@
+{
+  "generatedFor": "Phase-7-C-A",
+  "status": "PASS",
+  "crossSyllabus": {
+    "syllabus0478": "PASS",
+    "syllabus9618": "PASS",
+    "syllabus9709": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "checks": {
+    "canonicalFilename": true,
+    "separatorAndLongRoleAliases": true,
+    "sessionAndMarkSchemeAliases": true,
+    "questionPaperSignals": true,
+    "markSchemeSignals": true,
+    "conflictingSignalsReported": true
+  }
+}

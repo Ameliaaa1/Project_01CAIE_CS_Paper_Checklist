@@ -1,0 +1,208 @@
+[2026-07-13T02:03:40.837Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_11.pdf
+[2026-07-13T02:03:40.837Z] startTime=2026-07-13T02:03:40.837Z
+[2026-07-13T02:03:40.837Z] expectedRole=question_paper
+[2026-07-13T02:03:42.216Z] extract.exitCode=0
+[2026-07-13T02:03:42.216Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s20_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_11.pdf",
+  "pageCount": 12,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify input device that is part of the smartphone. (a) one [1] Identify output devices that are part of the smartphone. (b) two 1 2 [2] All smartphones have a MAC address. (c) State what is meant by the term MAC address. (i) [1] Describe the structure of a MAC address. (ii) [3] A smartphone needs both RAM and ROM. (d) State why a smartphone needs RAM an"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 = ((( NAND ) OR ( XOR )) AND NOT ) X A B B C C Draw a logic circuit to match the given logic statement. (a) All logic gates must have a maximum of inputs. Do attempt to simplify the logic two not statement. A B X C [5] Complete the truth table to represent the given logic statement. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 [4] Carla’s computer has a"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Carla uses the USB port to connect her mobile device to her computer, to transfer her photos. Give benefits of using a USB port to connect the mobile device to the computer. (a) three Benefit 1 Benefit 2 Benefit 3 [3] State the type of data transmission used when transferring data using a USB port. (b) [1] Carla wants to reduce the file size of the photos "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Give similarities between the check digit and checksum methods. (a) two 1 2 [2] Identify error detection method that Allison’s computer could use. (b) one other Describe how the method checks for errors. Method Description [4] components of a computer are given."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Six Some are part of the central processing unit (CPU) of the Von Neumann model for a computer system. ✓ Tick ( ) to show if each component is a or is . CPU component Not a CPU component CPU Not a CPU Component component component ✓ ✓ ( ) ( ) Arithmetic logic unit (ALU) Hard disk drive (HDD) Memory address register (MAR) Random access memory (RAM) Solid st"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 Four Identify the most suitable sensor for each scenario. A sensor must be used for each scenario. different Sensor Scenario Detecting when a person is approaching an automatic door system Monitoring the pollution level in a river Checking if a tropical aquarium is 25 degrees Celsius Counting the number of cars that cross a bridge [4] Hans has a website se"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 books. Customers enter a username and password to log in to their account. Customers may worry about keylogging software being used to gain unauthorised access to (a) their account. Describe how keylogging software can be used to gain unauthorised access to a (i) customer’s account. [4] Identify a feature that Hans can add to the website to limit the threa"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Benny is printing some photos and the paper gets jammed in the printer. (a) A signal is sent to alert the computer about the paper jam. State the name of this type of signal. [1] Identify benefit and drawbacks of Benny using an inkjet printer, instead of a laser (b) one two printer, to print his photos. Benefit Drawback 1 Drawback 2 [3] statements are give"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 Identify features of a low-level language. (a) three Feature 1 Feature 2 Feature 3 [3] Give examples of a low-level language. (b) two Example 1 Example 2 [2] Give drawback of writing programs in a low-level language, instead of a high-level (c) one language. [1] A low-level language needs to be converted to binary before it can be processed by a (d) comput"
+    }
+  ]
+}
+[2026-07-13T02:03:42.218Z] parserVersion=0.4.0
+[2026-07-13T02:03:42.218Z] documentRole=question_paper
+[2026-07-13T02:03:42.218Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:42.491Z] stage.exitCode=0
+[2026-07-13T02:03:42.491Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s20_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_11.staging.json",
+  "runId": "0478-2020-MJ-11-QP-RUN-962b30fee21f",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 29,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 29,
+        "present": 29,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:42.493Z] stagingId=0478-2020-MJ-11-QP-RUN-962b30fee21f
+[2026-07-13T02:03:42.493Z] validationStatus=PASS
+[2026-07-13T02:03:42.493Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:42.493Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:42.493Z] canonicalPublishable=true
+[2026-07-13T02:03:42.493Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:42.493Z] endTime=2026-07-13T02:03:42.493Z
+[2026-07-13T02:03:42.493Z] status=PASS

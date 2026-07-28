@@ -1,0 +1,69 @@
+{
+  "solution": "PR-034-0478-Production-Expansion-Batch-01-Implementation-Plan",
+  "batchId": "PR034-0478-2021-MJ-BATCH-01",
+  "status": "PASS",
+  "scope": {
+    "syllabus": "0478",
+    "year": 2021,
+    "session": "M/J",
+    "components": ["11", "12"]
+  },
+  "preflight": {
+    "artifacts": 4,
+    "validationPass": 4,
+    "completenessPass": 4,
+    "publishReady": 4,
+    "component11ResponseAreaCoverage": {"required": 23, "present": 23, "ratio": 1},
+    "component12ResponseAreaCoverage": {"required": 21, "present": 21, "ratio": 1}
+  },
+  "publication": {
+    "productionWrite": true,
+    "paperDelta": 4,
+    "questionRecordDelta": 57,
+    "responseAreaDelta": 187,
+    "markSchemeEntryDelta": 44,
+    "pairingDelta": 2,
+    "existingRecordsUnchanged": true,
+    "stagingArtifactsUnchanged": true
+  },
+  "productionState": {
+    "papers": 16,
+    "questionRecords": 262,
+    "topLevelQuestions": 81,
+    "leafQuestions": 205,
+    "responseAreas": 991,
+    "markSchemeEntries": 98,
+    "pairings": 8,
+    "batches": 8,
+    "expansionBatches": 2
+  },
+  "frontendVerification": {
+    "questionFinder": "PASS",
+    "knowledgeChecklist": "PASS",
+    "markSchemeSearch": "PASS",
+    "aiRetrieval": "PASS",
+    "openOriginalQuestion": "PASS",
+    "qpMsCorrespondence": "PASS"
+  },
+  "regression": {
+    "phase1": {"success": 20, "total": 20},
+    "phase2": {"success": 120, "total": 120},
+    "pr030": "PASS",
+    "pr031": "PASS",
+    "pr032": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "integrity": {
+    "productionStoreBeforeSha256": "88b4b40121042edd86f6acc6d378d11ccec565a7fcb44247d69fd186626fbe8c",
+    "productionStoreAfterSha256": "789fd17656b16a2124ea1c73eadc28cfc4f22a40a0ded2110b733660dc294dc8",
+    "productionSnapshot": "debug/pr034-batch-01/production-store-before.json",
+    "stagingHashesBefore": "debug/pr034-batch-01/staging-before.sha256",
+    "stagingHashesAfter": "debug/pr034-batch-01/staging-after.sha256"
+  },
+  "nextBatch": {
+    "batchId": "PR035-0478-2020-MJ-BATCH-01",
+    "components": ["11", "12"],
+    "productionWrite": false
+  }
+}

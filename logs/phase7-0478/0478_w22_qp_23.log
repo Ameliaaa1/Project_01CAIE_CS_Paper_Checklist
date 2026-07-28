@@ -1,0 +1,144 @@
+[2026-07-15T03:53:10.830Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_23.pdf
+[2026-07-15T03:53:10.830Z] startTime=2026-07-15T03:53:10.830Z
+[2026-07-15T03:53:10.830Z] expectedRole=question_paper
+[2026-07-15T03:53:12.453Z] extract.exitCode=0
+[2026-07-15T03:53:12.453Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_23.pdf",
+  "pageCount": 16,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify constant that you could have used for . (a) (i) one Task 1 State the value that would be assigned to the constant. Give a reason why a constant was used rather than a variable. Constant name Value Reason [3] Describe the array that you set up in to record the customer details. (ii) Task 1 Include the name, data type and sample data for the array i"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 set all 50 elements of the array to zero • Reading[1:50] input values between 35 and 50 inclusive • end the process when an input of –1 is made or 50 valid numbers have been entered • reject all other values • count the number of times each valid value is input • output the number of times each value has been input, starting with the lowest value. • Comple"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 contains five digits and the check digit. The check digit is calculated by adding up the first five digits, dividing by 10 and taking the remainder. For example, divided by gives a remainder of so the six-digit 5 + 1 + 2 + 4 + 3 10 5 identification number would be 512435 Calculate the check digit for (a) (i) 69321 [1] State which of these identification nu"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 START Stock 10 Total 0 INPUT Sale Yes Is Sale = OUTPUT Total \"N\"? No STOP Stock Stock – 1 Yes OUTPUT Is Stock \"Add new stock\" < 5? No Total Total + 1 Stock Stock + 10 Complete the trace table for the algorithm using this input data: (a) “Y”, “Y”, “Y”, “Y”, “Y”, “Y”, “N” OUTPUT Sale Stock Total [4] Explain how you could extend the algorithm to allow for the"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 14,
+      "pageEnd": 14,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 these fields: ItemCode – code for each type of item, for example ART0005 • Description – brief description of each item, for example gold coin • InStore – whether the item is in store or for example Y • not Century – century when item made, for example 18 • Country – country of origin, for example China. • Identify which field you would choose for the prim"
+    }
+  ]
+}
+[2026-07-15T03:53:12.455Z] parserVersion=0.4.0
+[2026-07-15T03:53:12.455Z] documentRole=question_paper
+[2026-07-15T03:53:12.455Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:12.741Z] stage.exitCode=0
+[2026-07-15T03:53:12.741Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_23.staging.json",
+  "runId": "0478-2022-ON-23-QP-RUN-f22abe261255",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 16,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 16,
+        "present": 16,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:12.744Z] stagingId=0478-2022-ON-23-QP-RUN-f22abe261255
+[2026-07-15T03:53:12.744Z] validationStatus=PASS
+[2026-07-15T03:53:12.744Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:12.744Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:12.744Z] canonicalPublishable=true
+[2026-07-15T03:53:12.744Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:12.744Z] endTime=2026-07-15T03:53:12.744Z
+[2026-07-15T03:53:12.744Z] status=PASS

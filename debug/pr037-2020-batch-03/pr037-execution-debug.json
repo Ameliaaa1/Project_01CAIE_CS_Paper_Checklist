@@ -1,0 +1,72 @@
+{
+  "solution": "PR-037-0478-2020-MJ-BATCH-03-Production-Expansion-Plan",
+  "batchId": "PR037-0478-2020-MJ-BATCH-03",
+  "status": "PASS",
+  "scope": {
+    "syllabus": "0478",
+    "year": 2020,
+    "session": "M/J",
+    "components": ["22", "23"]
+  },
+  "preflight": {
+    "artifacts": 4,
+    "validationPass": 4,
+    "completenessPass": 4,
+    "publishReady": 4,
+    "component22ResponseAreaCoverage": {"required": 12, "present": 12, "ratio": 1},
+    "component23ResponseAreaCoverage": {"required": 14, "present": 14, "ratio": 1}
+  },
+  "publication": {
+    "productionWrite": true,
+    "paperDelta": 4,
+    "questionRecordDelta": 35,
+    "topLevelQuestionDelta": 13,
+    "leafQuestionDelta": 28,
+    "responseAreaDelta": 297,
+    "markSchemeEntryDelta": 12,
+    "pairingDelta": 2,
+    "existingRecordsUnchanged": true,
+    "stagingArtifactsUnchanged": true
+  },
+  "productionState": {
+    "papers": 28,
+    "questionRecords": 421,
+    "topLevelQuestions": 129,
+    "leafQuestions": 329,
+    "responseAreas": 1718,
+    "markSchemeEntries": 139,
+    "pairings": 14,
+    "batches": 14,
+    "expansionBatches": 5
+  },
+  "coverageState": {
+    "publishedPairs": 14,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 10,
+    "year2020MayJuneComplete": true
+  },
+  "frontendVerification": {
+    "questionFinder": "PASS",
+    "knowledgeChecklist": "PASS",
+    "markSchemeSearch": "PASS",
+    "aiRetrieval": "PASS",
+    "openOriginalQuestion": "PASS",
+    "qpMsCorrespondence": "PASS"
+  },
+  "regression": {
+    "phase1": {"success": 20, "total": 20},
+    "phase2": {"success": 120, "total": 120},
+    "pr030": "PASS",
+    "pr031": "PASS",
+    "pr032": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "integrity": {
+    "productionStoreBeforeSha256": "bc8746153b6fa48b8ce4ba07b13e0fa4d66727ac1eae13a163bc26eb9d543d14",
+    "productionStoreAfterSha256": "3f0b1333d245436a1239e758b72d0e441f7cb02a508d7b76bc09cc575236676a",
+    "productionSnapshot": "debug/pr037-2020-batch-03/production-store-before.json",
+    "stagingHashesBefore": "debug/pr037-2020-batch-03/staging-before.sha256",
+    "stagingHashesAfter": "debug/pr037-2020-batch-03/staging-after.sha256"
+  }
+}

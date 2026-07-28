@@ -1,0 +1,249 @@
+[2026-07-13T02:06:20.918Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_32.pdf
+[2026-07-13T02:06:20.918Z] startTime=2026-07-13T02:06:20.918Z
+[2026-07-13T02:06:20.918Z] expectedRole=question_paper
+[2026-07-13T02:06:23.471Z] extract.exitCode=0
+[2026-07-13T02:06:23.471Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w21_qp_32.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_32.pdf",
+  "pageCount": 16,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) 12 bits for the mantissa • 4 bits for the exponent • two’s complement form for both the mantissa and exponent. • Write the normalised floating-point representation of the following unsigned binary (i) number using this system. 1011100 011001 . Working Mantissa Exponent [2] State the consequence of storing the binary number in as a floating-point (ii) p"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 one most appropriate Programming paradigm Description Programs using the instruction set of a processor Declarative Programs based on events such as user actions or sensor outputs Imperative Programs using the concepts of class, inheritance, encapsulation and polymorphism Low-level Programs with an explicit sequence of commands that update the program stat"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Write to create an enumerated type called to include these parts sold in (a) pseudocode Parts a computer shop: Monitor, CPU, SSD, HDD, LaserPrinter, Keyboard, Mouse [2] Write to create a pointer type called that will reference the (b) pseudocode SelectParts memory location in which the current part name is stored. [2] The following syntax diagrams for a pa"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 a digit • a capital letter • a character. • capital letter digit A 0 E 1 I 2 O 3 U 4 5 character $ 6 % 7 & 8 * 9 # Write the Backus-Naur Form (BNF) notation of the syntax diagram for character. (a) [2] A password must begin with a character and be followed by one or more digits or capital (b) letters. State an example of a valid password. (i) [1] A valid p"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 (a) [4] State the most suitable method of file access when a record is referenced by a unique (b) address on a disk-type storage medium. [1] State the most suitable method of file access when a bank stores its data records in ascending (c) order of account number. [1] Explain how packet switching is used to transfer messages across the internet."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 (a) [5] Outline the function of a router in packet switching. (b) [3] Write the Boolean expression that corresponds to the given truth table as a sum-of-products."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "7 (a) INPUT OUTPUT A B C D Z 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 1 0 0 1 0 0 0 0 1 0 1 0 0 1 1 0 0 0 1 1 1 0 1 0 0 0 0 1 0 0 1 1 1 0 1 0 0 1 0 1 1 1 1 1 0 0 1 1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 = Z [3] Complete the Karnaugh map (K-map) for the given truth table. (b) (i) AB 00 01 11 10 CD 00 01 11 10 [2] Draw loop(s) around appropriate group(s) of 1s in the K-map "
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 (a) protocols. [2] Explain how SSL/TLS protocols are used when a client-server communication is initiated. (b) [4] The diagram shown represents an artificial neural network."
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 11,
+      "pageEnd": 13,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 (a) Output Layer Input Layer Hidden Hidden Hidden Layer 1 Layer 3 Layer 2 State the reason for having multiple hidden layers in an artificial neural network. (i) [1] Explain how artificial neural networks enable machine learning. (ii) [4] Find the shortest path between the Home and School nodes using the A* algorithm. (b) Show your working in the table pro"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 13,
+      "pageEnd": 14,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "10 (a) three recursion 1 2 3 [3] Explain the reasons why a stack is a suitable Abstract Data Type (ADT) to implement (b) recursion. [3] Identify ADTs other than a stack. (c) two 1 2 [2] The function checks whether a stack is full. (d) StackFull() The function uses the variable to represent the pointer to the most recent TopOfStack position used on the stack,"
+    }
+  ]
+}
+[2026-07-13T02:06:23.473Z] parserVersion=0.4.0
+[2026-07-13T02:06:23.473Z] documentRole=question_paper
+[2026-07-13T02:06:23.473Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:06:23.960Z] stage.exitCode=0
+[2026-07-13T02:06:23.960Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w21_qp_32.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_32.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_32.staging.json",
+  "runId": "9618-2021-ON-32-QP-RUN-62e4197f4256",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_32.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 30,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 27,
+        "present": 27,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2021-ON-32-Q1-A-II",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2021-ON-32-Q9-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2021-ON-32-Q9-G",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:06:23.963Z] stagingId=9618-2021-ON-32-QP-RUN-62e4197f4256
+[2026-07-13T02:06:23.963Z] validationStatus=PASS
+[2026-07-13T02:06:23.963Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:06:23.963Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:06:23.963Z] canonicalPublishable=true
+[2026-07-13T02:06:23.963Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:06:23.963Z] endTime=2026-07-13T02:06:23.963Z
+[2026-07-13T02:06:23.963Z] status=PASS

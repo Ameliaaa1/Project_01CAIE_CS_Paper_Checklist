@@ -1,0 +1,701 @@
+{
+  "generatedFor": "Phase-5-9618-Blocked-Pair-Investigation-Plan",
+  "status": "PASS",
+  "phaseId": "Phase 5",
+  "batchId": "PHASE5-D",
+  "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase5-9618/phase5-d-blocked-pair-investigation-report.json",
+  "targetPairs": [
+    "9618-2023-ON-42",
+    "9618-2025-MJ-13"
+  ],
+  "beforeState": [
+    {
+      "pairingKey": "9618-2023-ON-42",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "productionPublished": false,
+      "partialProductionConflict": false,
+      "blockerEvidenceAvailable": true,
+      "qpState": {
+        "documentRole": "question_paper",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "msState": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-13",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "productionPublished": false,
+      "partialProductionConflict": false,
+      "blockerEvidenceAvailable": true,
+      "qpState": {
+        "documentRole": "question_paper",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "msState": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      }
+    }
+  ],
+  "blockerEvidence": [
+    {
+      "pairingKey": "9618-2023-ON-42",
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ]
+    },
+    {
+      "pairingKey": "9618-2025-MJ-13",
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ]
+    }
+  ],
+  "rootCause": {
+    "category": "VALIDATION_RULE_ISSUE",
+    "affectedLayer": "Text quality validation",
+    "code": "LEGAL_DIVISION_AND_ENCODING_GLYPHS",
+    "summary": "Source-backed ÷ and the ü character in a character-encoding table were counted as suspicious glyphs."
+  },
+  "changes": [
+    "Recognized ÷ as a legal mathematical symbol.",
+    "Recognized ü only in a source-backed Character/Denary/Binary/Hexadecimal table context."
+  ],
+  "stagingGeneration": {
+    "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase5-9618/phase5-d-staging-generation-report.json",
+    "status": "PASS",
+    "artifactsRegenerated": 4
+  },
+  "investigationResults": [
+    {
+      "pairingKey": "9618-2023-ON-42",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "WARN",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 2,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P1"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P1",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P1",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "rootCause": {
+        "category": "VALIDATION_RULE_ISSUE",
+        "affectedLayer": "Text quality validation",
+        "code": "LEGAL_DIVISION_AND_ENCODING_GLYPHS",
+        "summary": "Source-backed ÷ and the ü character in a character-encoding table were counted as suspicious glyphs."
+      },
+      "changes": [
+        "Recognized ÷ as a legal mathematical symbol.",
+        "Recognized ü only in a source-backed Character/Denary/Binary/Hexadecimal table context."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-13",
+      "beforeState": {
+        "qp": {
+          "documentRole": "question_paper",
+          "validationStatus": "WARN",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 2,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P1"
+          ]
+        },
+        "ms": {
+          "documentRole": "mark_scheme",
+          "validationStatus": "WARN",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "BLOCKED",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 2,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": [
+            "VALIDATION_NOT_PASS",
+            "PUBLISH_NOT_READY",
+            "UNRESOLVED_P1"
+          ]
+        },
+        "productionPublished": false
+      },
+      "blockerEvidence": {
+        "issueCodes": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P1",
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P1",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ],
+        "failedChecks": [
+          "QP_VALIDATION_NOT_PASS",
+          "QP_PUBLISH_NOT_READY",
+          "QP_UNRESOLVED_P1",
+          "MS_VALIDATION_NOT_PASS",
+          "MS_PUBLISH_NOT_READY",
+          "MS_UNRESOLVED_P1",
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "rootCause": {
+        "category": "VALIDATION_RULE_ISSUE",
+        "affectedLayer": "Text quality validation",
+        "code": "LEGAL_DIVISION_AND_ENCODING_GLYPHS",
+        "summary": "Source-backed ÷ and the ü character in a character-encoding table were counted as suspicious glyphs."
+      },
+      "changes": [
+        "Recognized ÷ as a legal mathematical symbol.",
+        "Recognized ü only in a source-backed Character/Denary/Binary/Hexadecimal table context."
+      ],
+      "validationAfter": {
+        "qp": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        },
+        "ms": {
+          "status": "PASS",
+          "completenessStatus": "PASS",
+          "canonicalPublishable": true,
+          "publishStatus": "READY_TO_PUBLISH",
+          "severityCounts": {
+            "P0": 0,
+            "P1": 0,
+            "P2": 0,
+            "P3": 0
+          },
+          "blockers": []
+        }
+      },
+      "strictEligibilityAfter": true,
+      "productionPublished": true,
+      "pairVerification": "PASS"
+    }
+  ],
+  "validationAfter": [
+    {
+      "pairingKey": "9618-2023-ON-42",
+      "qp": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-13",
+      "qp": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "status": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    }
+  ],
+  "strictEligibilityAfter": [
+    {
+      "pairingKey": "9618-2023-ON-42",
+      "strictEligible": true
+    },
+    {
+      "pairingKey": "9618-2025-MJ-13",
+      "strictEligible": true
+    }
+  ],
+  "productionDelta": {
+    "expectedDeltas": {
+      "papers": 4,
+      "questionRecords": 63,
+      "topLevelQuestions": 10,
+      "leafQuestions": 53,
+      "responseAreas": 140,
+      "markSchemeEntries": 64,
+      "pairings": 2,
+      "batches": 2,
+      "expansionBatches": 2
+    },
+    "actualDeltas": {
+      "papers": 4,
+      "questionRecords": 63,
+      "topLevelQuestions": 10,
+      "leafQuestions": 53,
+      "responseAreas": 140,
+      "markSchemeEntries": 64,
+      "pairings": 2,
+      "batches": 2,
+      "expansionBatches": 2
+    }
+  },
+  "deltasMatch": true,
+  "pairVerification": [
+    {
+      "component": "42",
+      "childBatchId": "PR070-9618-2023-ON-PHASE5-D-42",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 26,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 37
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 26,
+          "responseAreaCount": 26,
+          "markSchemeEntryCount": 37
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    },
+    {
+      "component": "13",
+      "childBatchId": "PR070-9618-2025-MJ-PHASE5-D-13",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 7,
+          "leafQuestionCount": 27,
+          "responseAreaCount": 114,
+          "markSchemeEntryCount": 27
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 7,
+          "leafQuestionCount": 27,
+          "responseAreaCount": 114,
+          "markSchemeEntryCount": 27
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    }
+  ],
+  "integrity": {
+    "existingProductionRecordsUnchanged": true,
+    "unrelatedStagingUnchanged": true,
+    "stagingChanges": {
+      "added": [],
+      "deleted": [],
+      "modified": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_ms_13.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_13.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_ms_42.staging.json",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_42.staging.json"
+      ],
+      "unrelatedChanges": []
+    },
+    "productionRecordsBefore": {
+      "papers": 280,
+      "questionRecords": 4367,
+      "topLevelQuestions": 1074,
+      "leafQuestions": 3462,
+      "responseAreas": 15423,
+      "markSchemeEntries": 3278,
+      "pairings": 140,
+      "batches": 140,
+      "expansionBatches": 38
+    },
+    "productionRecordsAfter": {
+      "papers": 284,
+      "questionRecords": 4430,
+      "topLevelQuestions": 1084,
+      "leafQuestions": 3515,
+      "responseAreas": 15563,
+      "markSchemeEntries": 3342,
+      "pairings": 142,
+      "batches": 142,
+      "expansionBatches": 40
+    }
+  },
+  "regression": {
+    "phase1": "PASS",
+    "phase2": "PASS",
+    "phase3": "PASS",
+    "phase4Audit": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "next": {
+    "decision": "Phase 5 completion audit",
+    "productionWrite": false
+  }
+}

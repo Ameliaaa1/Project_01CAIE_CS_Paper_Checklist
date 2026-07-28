@@ -1,0 +1,192 @@
+[2026-07-13T02:02:30.833Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_qp_12.pdf
+[2026-07-13T02:02:30.833Z] startTime=2026-07-13T02:02:30.833Z
+[2026-07-13T02:02:30.833Z] expectedRole=question_paper
+[2026-07-13T02:02:32.511Z] extract.exitCode=0
+[2026-07-13T02:02:32.511Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m24_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_qp_12.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 ✓ Tick ( ) box to show the reason why computers use binary to represent data. (a) one Computers only allow 1s and 0s to be entered. A Computers are made of switches and gates that can only be on or off. B Binary does need to be converted into other forms of data to be displayed. C not Both computers and humans can quickly process binary data. D [1] One for"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 The CPU includes the registers: Program counter (PC) • Memory address register (MAR) • Memory data register (MDR) • Accumulator (ACC) • Current instruction register (CIR). • The table contains statements about the role of registers in the fetch–decode–execute (a) five cycle of a CPU. Letter Statement A PC stores the address of the next instruction to be ac"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Complete the table by writing each missing OS function name and description. (a) Function name Description …………………………………………………………………………… …………………………………………………………………………… managing memory …………………………………………………………………………… …………………………………………………………………………… …………………… … allows application software to run on the computer …………………… … …………………………………………………………………………… ………………………………"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Draw and annotate a diagram to show the process from the user entering the URL to the web browser displaying the web page. [5] Complete the description of digital currencies using the terms provided."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 blockchains changed datachains decentralised deleted encryption passport physical address physically records time-stamp traced transaction-chains virtually A digital currency does exist it can only be accessed not electronically. Some digital currencies have digital ledgers called These are decentralised databases where each transaction is stored as a new "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 13,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 automatically through the field, turning at each end and stopping when it has finished. One reason the self-driving tractor is a robot is because it has a mechanical structure that (a) includes wheels, an engine, and a framework. Give other reason why the self-driving tractor is an example of a robot. one [1] If a person is detected within 3 metres whilst "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 13,
+      "pageEnd": 14,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The data is encrypted before transmission. (a) State the purpose of encrypting data. (i) [1] Describe the differences between symmetric and asymmetric encryption. (ii) [4] The data is transmitted using packet switching. (b) Identify items of data contained in a packet header. (i) two 1 2 [2] Give the purpose of a router in the packet-switching process. (ii"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 (a) Convert the denary number 236 into hexadecimal. (i) [1] Give benefit of using hexadecimal instead of binary to represent data. (ii) one [1] Two’s complement can be used to represent positive and negative binary integers. (b) Convert the two’s complement integer 10110111 into denary. (i) Show all your working. [2] Convert the denary number 45 into an 8-"
+    }
+  ]
+}
+[2026-07-13T02:02:32.513Z] parserVersion=0.4.0
+[2026-07-13T02:02:32.513Z] documentRole=question_paper
+[2026-07-13T02:02:32.513Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:02:32.821Z] stage.exitCode=0
+[2026-07-13T02:02:32.821Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m24_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m24_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m24_qp_12.staging.json",
+  "runId": "0478-2024-FM-12-QP-RUN-e81e4abcacd8",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m24_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 35,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 35,
+        "present": 35,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:02:32.824Z] stagingId=0478-2024-FM-12-QP-RUN-e81e4abcacd8
+[2026-07-13T02:02:32.824Z] validationStatus=PASS
+[2026-07-13T02:02:32.824Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:02:32.824Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:02:32.824Z] canonicalPublishable=true
+[2026-07-13T02:02:32.824Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:02:32.824Z] endTime=2026-07-13T02:02:32.824Z
+[2026-07-13T02:02:32.824Z] status=PASS

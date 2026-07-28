@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-07-13T02:22:21.108Z",
+  "startedAt": "2026-07-13T02:22:14.263Z",
+  "completedAt": "2026-07-13T02:22:21.104Z",
+  "productionWrite": false,
+  "manifestPath": "docs/staging-manifest-pr040.json",
+  "totalFiles": 4,
+  "successCount": 4,
+  "failedCount": 0,
+  "skippedCount": 0,
+  "failures": [],
+  "results": [
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_22.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "PR-040 0478 QP May/June 2021 component 22 staging generation",
+      "status": "PASS",
+      "startTime": "2026-07-13T02:22:14.264Z",
+      "endTime": "2026-07-13T02:22:16.198Z",
+      "samplePath": "output/ingestion-samples/0478_s21_qp_22.sample.json",
+      "stagingPath": "output/phase2/staging/0478_s21_qp_22.staging.json",
+      "logPath": "logs/pr040-staging-batch-02/0478_s21_qp_22.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "0478-2021-MJ-22-QP-RUN-9e98f86dab12",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 16,
+        "questionCount": 6,
+        "leafQuestionCount": 13,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "0478",
+      "year": 2021,
+      "session": "May-June",
+      "component": "22",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_22.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "PR-040 0478 MS May/June 2021 component 22 staging generation",
+      "status": "PASS",
+      "startTime": "2026-07-13T02:22:16.198Z",
+      "endTime": "2026-07-13T02:22:17.724Z",
+      "samplePath": "output/ingestion-samples/0478_s21_ms_22.sample.json",
+      "stagingPath": "output/phase2/staging/0478_s21_ms_22.staging.json",
+      "logPath": "logs/pr040-staging-batch-02/0478_s21_ms_22.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "0478-2021-MJ-22-MS-RUN-909f3b576abe",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 13,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 8,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "0478",
+      "year": 2021,
+      "session": "May-June",
+      "component": "22",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_23.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "PR-040 0478 QP May/June 2021 component 23 staging generation",
+      "status": "PASS",
+      "startTime": "2026-07-13T02:22:17.724Z",
+      "endTime": "2026-07-13T02:22:19.232Z",
+      "samplePath": "output/ingestion-samples/0478_s21_qp_23.sample.json",
+      "stagingPath": "output/phase2/staging/0478_s21_qp_23.staging.json",
+      "logPath": "logs/pr040-staging-batch-02/0478_s21_qp_23.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "0478-2021-MJ-23-QP-RUN-b7f63c2c8fa9",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 6,
+        "leafQuestionCount": 16,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "0478",
+      "year": 2021,
+      "session": "May-June",
+      "component": "23",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_23.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "PR-040 0478 MS May/June 2021 component 23 staging generation",
+      "status": "PASS",
+      "startTime": "2026-07-13T02:22:19.232Z",
+      "endTime": "2026-07-13T02:22:21.104Z",
+      "samplePath": "output/ingestion-samples/0478_s21_ms_23.sample.json",
+      "stagingPath": "output/phase2/staging/0478_s21_ms_23.staging.json",
+      "logPath": "logs/pr040-staging-batch-02/0478_s21_ms_23.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "0478-2021-MJ-23-MS-RUN-ae39bb08bbc7",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 17,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 9,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "0478",
+      "year": 2021,
+      "session": "May-June",
+      "component": "23",
+      "phase1Regression": false
+    }
+  ],
+  "phase": "Phase 2",
+  "groupStats": {
+    "bySyllabus": {
+      "0478": {
+        "total": 4,
+        "success": 4,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "byYear": {
+      "2021": {
+        "total": 4,
+        "success": 4,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "bySession": {
+      "May-June": {
+        "total": 4,
+        "success": 4,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "byDocumentRole": {
+      "question_paper": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "mark_scheme": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "byComponent": {
+      "22": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "23": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      }
+    }
+  },
+  "phase2Analysis": {
+    "successRate": 1,
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "textQualityRegressions": [],
+    "failureCategories": {},
+    "datasetGaps": [],
+    "recommendedFuturePRs": []
+  }
+}

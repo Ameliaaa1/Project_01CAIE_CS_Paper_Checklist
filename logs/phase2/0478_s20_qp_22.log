@@ -1,0 +1,169 @@
+[2026-07-13T02:03:54.036Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_22.pdf
+[2026-07-13T02:03:54.036Z] startTime=2026-07-13T02:03:54.036Z
+[2026-07-13T02:03:54.036Z] expectedRole=question_paper
+[2026-07-13T02:03:55.834Z] extract.exitCode=0
+[2026-07-13T02:03:55.834Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s20_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 7,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify variables that you could have used for . Give the data type and state the (a) two Task 1 use of each variable. Variable 1 Data type Use Variable 2 Data type Use [4] Data input by a customer for includes the day and the hour of arrival. (b) Task 1 Identify suitable validation check for each input and justify your choice. Your validation one checks "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 he has used. State the data type that Ahmad is describing in each sentence. Choose the data type from this list of programming terms. Array Boolean Char Constant Function Integer Iteration Procedure Real String Variable A number with a fractional part that can be positive or negative and used in calculations Data type A whole number that can be positive, n"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) The algorithm stores the names and marks in two arrays and . The highest Name[ ] Mark[ ] mark awarded is found and the number of students with that mark is counted. Both of these values are output. 100 01 HighestMark ← 0 02 HighestMarkStudents ← 1 TO 35 03 FOR Count ← 04 OUTPUT \"Please enter student name\" 05 INPUT Name[Count] 06 OUTPUT \"Please enter st"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 between the points won and lost is calculated and depending on the result the player can: move up to the next level, stay at the same level, or move down to the previous level. The flowchart finishes when the input for points won is –1. START INPUT PointsWon, PointsLost IS Yes END = –1 ? PointsWon No Difference PointsWon - PointsLost IS OUTPUT Yes Differen"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": null,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.35,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 and index in an array. Use examples of arrays in your explanations. Dimension Index [3] A database table, JUICE, is used to keep a record of cartons of fresh fruit juice available for sale."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "6 Juice code Fruit 1 Fruit 2 Size Volume (ml) Stock level LMO10 Mango Orange Large 1000 18 MOO05 Orange Orange Medium 500 8 SAM02 Apple Mango Small 200 25 SAA02 Apple Apple Small 200 50 SPP02 Pineapple Pineapple Small 200 10 MMM05 Mango Mango Medium 500 12 LMM10 Mango Mango Large 1000 5 MGG05 Guava Guava Medium 500 5 SMO02 Mango Orange Small 200 7 MOP05 Oran"
+    }
+  ]
+}
+[2026-07-13T02:03:55.836Z] parserVersion=0.4.0
+[2026-07-13T02:03:55.836Z] documentRole=question_paper
+[2026-07-13T02:03:55.836Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:56.127Z] stage.exitCode=0
+[2026-07-13T02:03:56.127Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s20_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_22.staging.json",
+  "runId": "0478-2020-MJ-22-QP-RUN-24c3b268e2dd",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 13,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 12,
+        "present": 12,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2020-MJ-22-Q5",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:56.129Z] stagingId=0478-2020-MJ-22-QP-RUN-24c3b268e2dd
+[2026-07-13T02:03:56.129Z] validationStatus=PASS
+[2026-07-13T02:03:56.129Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:56.129Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:56.129Z] canonicalPublishable=true
+[2026-07-13T02:03:56.129Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:56.129Z] endTime=2026-07-13T02:03:56.129Z
+[2026-07-13T02:03:56.129Z] status=PASS

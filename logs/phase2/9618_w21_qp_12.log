@@ -1,0 +1,201 @@
+[2026-07-13T02:05:49.958Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_12.pdf
+[2026-07-13T02:05:49.958Z] startTime=2026-07-13T02:05:49.958Z
+[2026-07-13T02:05:49.958Z] expectedRole=question_paper
+[2026-07-13T02:05:52.215Z] extract.exitCode=0
+[2026-07-13T02:05:52.215Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w21_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_12.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 the data. Draw line from each measure to indicate whether it keeps data secure or protects the integrity one of data. Measure Firewall Double entry Data Security Presence check Data Integrity Access rights Password [2] Complete the truth table for each of the following two logic gates."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) A B Output 0 0 A B 0 1 1 0 1 1 A B Output 0 0 A B 0 1 1 0 1 1 [2] Draw a logic circuit for the following logic expression. (b) = NOT(NOT( AND )AND ) X A B C A X B C [2] Andy likes to play computer games."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Andy uses several input devices to play the games. These include a keyboard and a (a) microphone. Describe the principal operation of a microphone. [3] Andy plays some of the computer games over the internet. He has several devices that (b) connect wirelessly to the router in his house. Identify the topology of Andy’s home network. Justify your choice. (i)"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 1 1 0 0 1 1 0 1 The binary value in the register represents an unsigned binary integer. (a) Convert the unsigned binary integer into denary. [1] The binary value in the register represents a two’s complement binary integer. (b) Convert the two’s complement binary integer into denary. [1] The binary value in the register represents a hexadecimal number. (c)"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 R Complete the table by writing a description of each vector graphic term give an example (a) and for this logo. Term Description Example from logo Property Drawing list [4] Riya takes a photograph using a digital camera. The photograph is stored as a bitmap image. (b) Describe differences between a vector graphic and a bitmap image. (i) two 1 [4] Riya nee"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 sales. The database, has the following structure: PLANTSALES PLANT(PlantName, QuantityInStock, Cost) CUSTOMER(CustomerID, FirstName, LastName, Address, Email) PURCHASE(PurchaseID, CustomerID) PURCHASE_ITEM(PurchaseID, PlantName, Quantity) The database is normalised. (a) The table lists the following three stages of normalisation: (i) The first stage is fro"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The Operating System handles interrupts. (a) Tick ( ) box in each row to identify whether each event is an example of a hardware  one interrupt or a software interrupt. Event Hardware interrupt Software interrupt Buffer full Printer is out of paper User has pressed a key on the keyboard Division by zero Power failure Stack overflow [3] Describe the file m"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 13,
+      "pageEnd": 16,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 Describe the role of the following special purpose registers in the fetch-execute (F-E) cycle. (a) Memory Address Register (MAR) (i) Memory Data Register (MDR) [4] Another special purpose register is the Index Register. (ii) Identify special purpose register used in the Von Neumann model for a one other computer system. [1] The following table shows part o"
+    }
+  ]
+}
+[2026-07-13T02:05:52.217Z] parserVersion=0.4.0
+[2026-07-13T02:05:52.217Z] documentRole=question_paper
+[2026-07-13T02:05:52.217Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:05:52.609Z] stage.exitCode=0
+[2026-07-13T02:05:52.609Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w21_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_12.staging.json",
+  "runId": "9618-2021-ON-12-QP-RUN-9fa28bfd2764",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 29,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 28,
+        "present": 28,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2021-ON-12-Q8-B-IX",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:05:52.612Z] stagingId=9618-2021-ON-12-QP-RUN-9fa28bfd2764
+[2026-07-13T02:05:52.612Z] validationStatus=PASS
+[2026-07-13T02:05:52.612Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:05:52.612Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:05:52.612Z] canonicalPublishable=true
+[2026-07-13T02:05:52.612Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:05:52.612Z] endTime=2026-07-13T02:05:52.612Z
+[2026-07-13T02:05:52.612Z] status=PASS

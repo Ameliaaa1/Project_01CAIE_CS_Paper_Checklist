@@ -1,0 +1,240 @@
+[2026-07-15T03:55:06.575Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_21.pdf
+[2026-07-15T03:55:06.575Z] startTime=2026-07-15T03:55:06.575Z
+[2026-07-15T03:55:06.575Z] expectedRole=question_paper
+[2026-07-15T03:55:09.477Z] extract.exitCode=0
+[2026-07-15T03:55:09.477Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w25_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_21.pdf",
+  "pageCount": 20,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 Four descriptions of structured query language (SQL) keywords and five SQL keywords are given. Draw one line from each description to its matching keyword. Not all SQL keywords will be used. Description SQL keywords ORDER BY identifies the database table COUNT sets the condition WHERE sorts the results SUM returns the number of records FROM [4]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "2 Identify three different types of test data that can be used to test a program. 1 2 3 [3]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "3 Tick (✓) one box to identify the operator that returns the quotient of a calculation with the fractional part discarded. A / B DIV C ^ D MOD [1] DFD"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 3,
+      "pageEnd": 5,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 (a) A restaurant offers a fixed priced menu. A meal for an adult costs $9.99 and a meal for a child costs $6.99. If there are 6 or more people at a table, a 15% discount is applied to the total cost of the order. Write an algorithm in pseudocode to: input the number of adults and the number of children at a table • calculate the total cost of the order wit"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 A hotel booking system is an example of a computer system that is made up of sub-systems. The booking system: allows the user to select the room type and the number of nights required • displays the types of rooms available to the user as pictures or as a list. • Complete the structure diagram for the given parts of the hotel booking system. Hotel booking "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A check digit is one method to validate a 5-digit number. The check digit for a 5-digit number is calculated as follows: Each digit is multiplied by its position (the first digit on the left is in position 1). • The result of each multiplication is totalled. • MOD(Total, 11) is used to calculate the check digit. • If the result of the MOD function is 10, t"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 12,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The flowchart represents an algorithm. START Count 0 INPUT Number Value Count * Number IS Value <= Count Count + 1 Yes 100 ? No Count Count - 1 OUTPUT Count STOP DFD (a) Complete the tables, using the flowchart, for the given data: Input data: 20 Count Number Value Output Input data: 110 Count Number Value Output [4] DFD (b) State the purpose of the algori"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 A school has set up a database table SchoolTrip to record details of students that will go on a school trip. StudentID StudentName ParentName Permission DateReceived STU147 Amir Mr Akar True 03/03/2025 STU348 Filip Mrs Johnson True 04/03/2025 STU274 Matthew Mr Smith False STU873 Jafar Mr Al-Saigh True 21/03/2025 STU221 Hussein Mr Alkasab True 28/02/2025 ST"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "9 A school stores all the students’ attendance data in a file called Attendance.txt Write an algorithm in pseudocode to read a line of text from the file and store this line in the variable StudentAttendance [4]"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 13,
+      "pageEnd": 14,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 The variables Seconds and Minutes are used in a program. Seconds holds the number of seconds as a whole number and Minutes holds the number of minutes as a whole number. (a) Write pseudocode statements to declare the variables Seconds and Minutes [1] (b) The procedure Time(TotalSeconds) takes the number of seconds as a parameter. The procedure converts th"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 14,
+      "pageEnd": 17,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 The scores for each competitor in an archery competition are recorded. The one-dimensional (1D) array CompetitorName[] is used to store the names of the competitors. The maximum number of competitors is 30. There are 10 rounds in the competition with a maximum score of 30 per round. The two-dimensional (2D) array CompetitorScore[] stores the score in each"
+    }
+  ]
+}
+[2026-07-15T03:55:09.481Z] parserVersion=0.4.0
+[2026-07-15T03:55:09.481Z] documentRole=question_paper
+[2026-07-15T03:55:09.481Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:55:09.921Z] stage.exitCode=0
+[2026-07-15T03:55:09.921Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w25_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_21.staging.json",
+  "runId": "0478-2025-ON-21-QP-RUN-a4ab060e7a15",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 24,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 24,
+        "present": 24,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:55:09.925Z] stagingId=0478-2025-ON-21-QP-RUN-a4ab060e7a15
+[2026-07-15T03:55:09.925Z] validationStatus=PASS
+[2026-07-15T03:55:09.925Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:55:09.925Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:55:09.925Z] canonicalPublishable=true
+[2026-07-15T03:55:09.925Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:55:09.925Z] endTime=2026-07-15T03:55:09.925Z
+[2026-07-15T03:55:09.925Z] status=PASS

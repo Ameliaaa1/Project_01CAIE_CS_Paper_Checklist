@@ -1,0 +1,192 @@
+[2026-07-15T03:52:54.048Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_11.pdf
+[2026-07-15T03:52:54.048Z] startTime=2026-07-15T03:52:54.048Z
+[2026-07-15T03:52:54.048Z] expectedRole=question_paper
+[2026-07-15T03:52:55.361Z] extract.exitCode=0
+[2026-07-15T03:52:55.361Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_11.pdf",
+  "pageCount": 12,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 and where they are located. Identify input device that could be built into the information point. (a) one Give an example of how that device would be used. Input device Example [2] Identify output device that could be built into the information point. (b) one Give an example of how that device would be used. Output device Example [2] Identify example of pr"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 central processing unit (CPU). One type of component within the CPU is an address bus. (a) Identify other types of bus and state what each is responsible for transmitting in the CPU. two Bus 1 Bus 2 [4] The CPU performs a cycle that has three stages. One of these stages is execute. (b) Identify other stage of the cycle that is performed by the CPU. one [1]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 in a 12-bit binary register. The error code 404 means ‘file not found’. (a) Give the 12-bit binary value that would be stored for the hexadecimal error code 404 [2] The error code 12B means ‘hardware fault’. (b) Give the 12-bit binary value that would be stored for the hexadecimal error code 12B [2] Hexadecimal values can also be represented as denary valu"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 She thinks her bank details were stolen electronically, whilst she was using the Internet. Identify and describe methods that could have been used to steal Rebekah’s bank details (a) two electronically. Method 1 Method 2 [6] Rebekah decides to encrypt the data that she transmits whilst using the Internet. She does (b) this to keep the data safe. State why "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 = (((( OR ) AND NOT ) NAND ) OR NOT ) X B C C B A Draw a logic circuit to represent the given logic statement. (a) Do attempt to simplify the logic statement. All logic gates must have a maximum of not two inputs. A B X C [6] State the name of logic gate that is included in the given logic statement. (b) one not [1] Complete the truth table for the given l"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 until the buffer is full. When the buffer is no longer full, it sends a signal back to the computer to state it is ready for more data. State the name of this signal and give other examples of when this type of signal is used. two Signal name Examples [3] Cameron writes software for coffee machines. He uses assembly language to write his software."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 3 Tick ( ) to show whether assembly language is an example of a high-level language, (a) a low-level language or machine code. 3 ) Tick ( High-level language Low-level language Machine code [1] Identify the translator that is required for assembly language. (b) [1] Give reasons why Cameron chooses to write the software for the coffee machines in (c) two as"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 Hypertext Markup Language (HTML) is used to create the website. The HTML is separated (a) into presentation and structure. Give examples of HTML presentation. (i) two Example 1 Example 2 [2] Give examples of HTML structure. (ii) two Example 1 Example 2 [2] Eleanor uses a secure connection to allow customers to buy the cakes from her website. (b) Describe h"
+    }
+  ]
+}
+[2026-07-15T03:52:55.363Z] parserVersion=0.4.0
+[2026-07-15T03:52:55.363Z] documentRole=question_paper
+[2026-07-15T03:52:55.363Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:52:55.622Z] stage.exitCode=0
+[2026-07-15T03:52:55.622Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_11.staging.json",
+  "runId": "0478-2022-ON-11-QP-RUN-2b38396c04b1",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 28,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 28,
+        "present": 28,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:52:55.623Z] stagingId=0478-2022-ON-11-QP-RUN-2b38396c04b1
+[2026-07-15T03:52:55.623Z] validationStatus=PASS
+[2026-07-15T03:52:55.623Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:52:55.623Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:52:55.623Z] canonicalPublishable=true
+[2026-07-15T03:52:55.623Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:52:55.623Z] endTime=2026-07-15T03:52:55.623Z
+[2026-07-15T03:52:55.623Z] status=PASS

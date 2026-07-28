@@ -1,0 +1,176 @@
+[2026-07-15T03:52:57.366Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_12.pdf
+[2026-07-15T03:52:57.366Z] startTime=2026-07-15T03:52:57.366Z
+[2026-07-15T03:52:57.366Z] expectedRole=question_paper
+[2026-07-15T03:52:58.662Z] extract.exitCode=0
+[2026-07-15T03:52:58.662Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 6,
+      "marks": 27,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A customer can use the ticket machine to select and pay for their ticket. One input device built into the ticket machine is a touch screen. Identify other input devices that could be built into the ticket machine. (a) two Input device 1 Input device 2 [2] The ticket machine has a help icon that a user can touch to contact customer support. (b) The ticket m"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 from the tap when a person’s hands are placed underneath the tap. Water stops flowing when the person’s hands are removed from underneath the tap. Explain how the water tap system uses a sensor and a microprocessor to operate. (a) [6] descriptions are shown of different systems. (b) Three Identify the most suitable sensor that could be used in each system."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Five Solid State Drive (SSD) and a USB flash memory drive. ✓ Tick ( ) to show which statements apply to each component. Some statements may apply to more than component. one Component Internal USB flash RAM Statement SSD memory drive ✓ ( ) ✓ ✓ ( ) ( ) it is a type of primary storage it is volatile it uses NAND and NOR technology it does have any moving par"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 She accidentally loses some data by deleting a file. State methods she could use to help prevent accidental loss of data in this way. two Describe how each method would help prevent accidental loss of the data. Method 1 Method 2 [4] 8 bytes of data are transmitted from one computer to another. Each byte of data has a parity bit."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 The data is also sent with a parity byte. Each bit in the parity byte allows a check to be performed on each column of bits. A parity check is performed on the data and an error is found in one bit. The table shows the data that was received. Parity Bit 2 Bit 3 Bit 4 Bit 5 Bit 6 Bit 7 Bit 8 bit 0 1 0 1 0 0 1 1 Byte 1 1 0 0 1 1 1 1 1 Byte 2 1 1 1 1 1 1 0 0 "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 kept secure during transmission. Give ways that a user could check that a website uses the SSL protocol. (a) two 1 2 [2] State the name of the updated version of the SSL protocol. (b) [1] Jian’s system for his website has a proxy server. (c) Explain why Jian uses a proxy server as part of the system for his website. [4] Jian sells products using his websit"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 statements are shown about the logic gates. (a) Four ✓ Tick ( ) to show which statements apply to each logic gate. Some statements may apply to more than one logic gate. NAND OR XOR Statement ✓ ✓ ✓ ( ) ( ) ( ) if both inputs are 1, the output is 1 if both inputs are different from each other, the output is 1 if both inputs are 0, the output is 0 if both in"
+    }
+  ]
+}
+[2026-07-15T03:52:58.664Z] parserVersion=0.4.0
+[2026-07-15T03:52:58.664Z] documentRole=question_paper
+[2026-07-15T03:52:58.664Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:52:58.908Z] stage.exitCode=0
+[2026-07-15T03:52:58.908Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_12.staging.json",
+  "runId": "0478-2022-ON-12-QP-RUN-441650bbf66d",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 24,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 24,
+        "present": 24,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:52:58.910Z] stagingId=0478-2022-ON-12-QP-RUN-441650bbf66d
+[2026-07-15T03:52:58.910Z] validationStatus=PASS
+[2026-07-15T03:52:58.910Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:52:58.910Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:52:58.910Z] canonicalPublishable=true
+[2026-07-15T03:52:58.910Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:52:58.910Z] endTime=2026-07-15T03:52:58.910Z
+[2026-07-15T03:52:58.910Z] status=PASS

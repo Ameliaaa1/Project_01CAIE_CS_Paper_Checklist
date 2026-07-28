@@ -1,0 +1,225 @@
+[2026-07-14T16:55:10.648Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_22.pdf
+[2026-07-14T16:55:10.648Z] startTime=2026-07-14T16:55:10.648Z
+[2026-07-14T16:55:10.648Z] expectedRole=question_paper
+[2026-07-14T16:55:13.322Z] extract.exitCode=0
+[2026-07-14T16:55:13.322Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_22.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 current stock. A program is being developed to create and manage the customer orders. The following identifier table shows some of the data that will be stored for each order. (a) Complete the identifier table by adding meaningful variable names and appropriate data types. Example Explanation Variable name Data type value The name of the customer \"Mr Khan\""
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 1. input a sequence of integer values, one at a time 2. ignore all values until the value 27 is input, then sum the remaining values in the sequence 3. stop summing values when the value 0 is input and then output the sum of the values. Draw a program flowchart to represent the algorithm. (a) START END [5] The solution to the algorithm includes iteration. "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Ptr1 is the start pointer. Ptr2 is the free list pointer. • Labels D40, D32, D11 and D100 represent the data items of nodes in the list. • Labels F1, F2, F3 and F4 represent the data items of nodes in the free list. • The symbol Ø represents a null pointer. • Ptr1 D40 D32 D11 D100 Ø Ptr2 F1 F2 F3 F4 Ø The linked list is implemented using two variables and "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Count() 1. input a value (all values will be positive integers) 2. count the number of odd values and count the number of even values 3. repeat from step 1 until the value input is 99 4. output the two count values, with a suitable message. The value 99 must not be counted. Write pseudocode for the procedure . (a) Count() [6] The procedure is to be tested."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 1 Mix[1] ← 3 Mix[2] ← 4 Mix[3] ← 2 Mix[4] ← A procedure manipulates the values in the array. Process() The procedure is written in pseudocode: PROCEDURE Process(Start : INTEGER) DECLARE Value, Index, Count : INTEGER Start Index ← 0 Count ← REPEAT Mix[Index] Value ← Mix[Index] - 1 Mix[Index] ← Value Index ← Count + 1 Count ← UNTIL Count = 5 Count * Index Mi"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 (a) CreateFiles() a string representing a file name • an integer representing the number of files to be created. • The procedure will create the number of text files specified. Each file is given a different name. Each file name is formed by concatenating the file name with a suffix based on the file number. The suffix is always three characters. For examp"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Pseudocode module header PROCEDURE Module-A() PROCEDURE Module-X(T1 : INTEGER, S2 : REAL) PROCEDURE Reset(BYREF Code : INTEGER) FUNCTION Restore(OldCode : INTEGER) RETURNS BOOLEAN FUNCTION Module-Y(RA : INTEGER, RB : BOOLEAN) RETURNS BOOLEAN FUNCTION Module-Z(SA : INTEGER) RETURNS INTEGER calls Module-X() Reset() calls Module-Y() Restore() Complete the str"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 16,
+      "pageEnd": 20,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 are connected together to form a wired network. Serial ports are used to connect one computer to another. Each computer: is assigned a unique three-digit ID • has three ports, each identified by an integer value • is connected to between one and three other computers. • Data is sent as individual message strings. Each string contains the destination ID (th"
+    }
+  ]
+}
+[2026-07-14T16:55:13.325Z] parserVersion=0.4.0
+[2026-07-14T16:55:13.325Z] documentRole=question_paper
+[2026-07-14T16:55:13.325Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:55:13.728Z] stage.exitCode=0
+[2026-07-14T16:55:13.728Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_22.staging.json",
+  "runId": "9618-2023-ON-22-QP-RUN-8e46de8183ec",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 18,
+        "present": 18,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-22-Q1-C",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-22-Q6-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-22-Q7-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-22-Q8-C",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:55:13.731Z] stagingId=9618-2023-ON-22-QP-RUN-8e46de8183ec
+[2026-07-14T16:55:13.731Z] validationStatus=PASS
+[2026-07-14T16:55:13.731Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:55:13.731Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:55:13.731Z] canonicalPublishable=true
+[2026-07-14T16:55:13.731Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:55:13.731Z] endTime=2026-07-14T16:55:13.731Z
+[2026-07-14T16:55:13.731Z] status=PASS

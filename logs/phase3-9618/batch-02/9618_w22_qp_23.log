@@ -1,0 +1,176 @@
+[2026-07-14T16:52:35.099Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_23.pdf
+[2026-07-14T16:52:35.099Z] startTime=2026-07-14T16:52:35.099Z
+[2026-07-14T16:52:35.099Z] expectedRole=question_paper
+[2026-07-14T16:52:37.026Z] extract.exitCode=0
+[2026-07-14T16:52:37.026Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_23.pdf",
+  "pageCount": 20,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Part of the program requires four variables. The following table describes the use of each (a) variable. Complete the table by adding the most appropriate data type for each variable. Variable use Data type Store the number of days in the current month Store the first letter of the customer’s first name Store an indication of whether a year is a leap year "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 choice. Decomposition will be used to break the problem down into sub-problems. Identify program modules that could be used in the design describe their use. three and Module 1 Use Module 2 Use Module 3 Use [3] An algorithm is needed to process a sequence of numbers. Numbers may be positive or negative"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 and may be integer or decimal. The algorithm will: prompt and input one number at a time until the value zero is input • sum the negative numbers • sum the positive numbers • when zero is input, output the two sum values and then end. • Describe the algorithm needed. Do include pseudocode statements in your answer. not [5] A program contains a 1D array wit"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) DataItem State the piece of information required before the array can be declared. one additional [1] A programmer decides to implement a queue Abstract Data Type (ADT) in order to store (b) characters received from the keyboard. The queue will need to store at least 10 characters and will be implemented using an array. Describe operations that are typ"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 10,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 (a) <StockID><Description><Cost> Item lengths are: Item Length StockID 5 Description 32 Cost the remainder of the string A procedure takes four parameters of type string. One parameter is the original Unpack() text string. The other three parameters are used to represent the three data items shown in the table and are assigned values within the procedure. "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Components that weigh at least 3 grams more than the maximum weight, or at least 3 grams less than the minimum weight, are rejected. A component is rechecked if it weighs within 2 grams of either the maximum or minimum weight. The final outcome of weighing each component is shown below: Outcome Weight Reject Max + 2 Recheck Max Maximum weight Max – 2 Accep"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 17,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 students. Two global 1D arrays are used to store the syntax error data. Both arrays contain 500 elements. Array contains integer values that represent an error number in the range 1 to 800. • ErrCode Array contains string values that represent an error description. • ErrText The following diagram shows an example of the arrays. Index ErrCode ErrText 1 10 \""
+    }
+  ]
+}
+[2026-07-14T16:52:37.028Z] parserVersion=0.4.0
+[2026-07-14T16:52:37.028Z] documentRole=question_paper
+[2026-07-14T16:52:37.028Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:52:37.353Z] stage.exitCode=0
+[2026-07-14T16:52:37.353Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_23.staging.json",
+  "runId": "9618-2022-ON-23-QP-RUN-7edce9204665",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 22,
+        "present": 22,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:52:37.356Z] stagingId=9618-2022-ON-23-QP-RUN-7edce9204665
+[2026-07-14T16:52:37.356Z] validationStatus=PASS
+[2026-07-14T16:52:37.356Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:52:37.356Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:52:37.356Z] canonicalPublishable=true
+[2026-07-14T16:52:37.356Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:52:37.356Z] endTime=2026-07-14T16:52:37.356Z
+[2026-07-14T16:52:37.356Z] status=PASS

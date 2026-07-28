@@ -1,0 +1,39 @@
+[
+  {
+    "name": "0478_w19_qp_23",
+    "out": "debug/pr023-mark-sum/0478_w19_qp_23.mark-debug.json",
+    "validationStatus": "PASS",
+    "markSumIssues": [],
+    "rootCauseSummary": "Array/table index bracket tokens are excluded from mark extraction; MARK_SUM_MISMATCH resolved.",
+    "mismatches": []
+  },
+  {
+    "name": "0478_s20_qp_22",
+    "out": "debug/pr023-mark-sum/0478_s20_qp_22.mark-debug.json",
+    "validationStatus": "FAIL",
+    "markSumIssues": [
+      "0478-2020-MJ-22-Q18"
+    ],
+    "rootCauseSummary": "Remaining MARK_SUM_MISMATCH is caused by pseudocode line numbers being interpreted as question boundaries; defer to a targeted question marker PR.",
+    "mismatches": [
+      {
+        "questionId": "0478-2020-MJ-22-Q18",
+        "parentMarks": 22,
+        "markValidation": {
+          "declared": 22,
+          "leafSum": 18,
+          "valid": false
+        },
+        "rootCauseCategory": "Category 1: parser question marker/boundary bug"
+      }
+    ]
+  },
+  {
+    "name": "9618_w21_qp_41",
+    "out": "debug/pr023-mark-sum/9618_w21_qp_41.mark-debug.json",
+    "validationStatus": "PASS",
+    "markSumIssues": [],
+    "rootCauseSummary": "Array/table index bracket tokens are excluded from mark extraction; MARK_SUM_MISMATCH resolved.",
+    "mismatches": []
+  }
+]

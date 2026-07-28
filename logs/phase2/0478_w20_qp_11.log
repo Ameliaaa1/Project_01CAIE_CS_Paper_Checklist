@@ -1,0 +1,208 @@
+[2026-07-13T02:04:01.282Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_11.pdf
+[2026-07-13T02:04:01.282Z] startTime=2026-07-13T02:04:01.282Z
+[2026-07-13T02:04:01.282Z] expectedRole=question_paper
+[2026-07-13T02:04:02.809Z] extract.exitCode=0
+[2026-07-13T02:04:02.809Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_11.pdf",
+  "pageCount": 12,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 3 Tick ( ) to show if each device is an or device. Input Output Storage Input Output Storage Device 3 3 3 ( ) ( ) ( ) Keyboard Sensor 3D cutter 2D scanner Microphone Hard disk drive (HDD) [6] Ron is attending a music concert. He has bought three tickets."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Each ticket number is displayed as a hexadecimal number. Complete the table to show the values and the values for each (a) 12-bit binary Denary Hexadecimal ticket number. Hexadecimal 12-bit binary value Denary value ticket number 028 1A9 20C [6] Each ticket also has a QR code. The QR code is scanned at the entrance to the venue. (b) A person can only enter"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Internet. Identify the layers in the TLS protocol. (a) two Layer 1 Layer 2 [2] The following paragraph explains how data is sent securely using the TLS protocol. (b) Use the terms to complete the paragraph. Not all terms may need to be used. authentic • binary • browser • certificate • internet service provider • signal • web page • web server • website • "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 = ((NOT ( NAND )) OR ( NOR )) X A B B C Draw a logic circuit to represent the given logic statement. (a) All logic gates must have a maximum of inputs. Do attempt to simplify the logic two not statement. A B X C [4] Complete the truth table for the given logic statement. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 [4] The logic statement given ha"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 He is using HTML to create the website. HTML can be separated into structure and (a) presentation. Give examples of HTML structure. (i) two Example 1 Example 2 [2] Give examples of HTML presentation. (ii) two Example 1 Example 2 [2] Luke is concerned that his web server may be hacked or subjected to a denial of service (b) (DoS) attack. State security meth"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Parallel data transmission is used in an IC. (a) Describe how data is transmitted using parallel data transmission. (i) [2] Give benefit of using parallel, rather than serial, data transmission. (ii) one [1] The computer has a central processing unit (CPU). (b) Identify the bus that carries signals around the CPU to control the components. (i) [1] Identify"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 record them in MIDI or MP3 format. Explain what is meant by MIDI and MP3 format. MIDI MP3 [4] Matthew is buying a new television with a display that uses LED technology."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Explain what is meant by LED technology. (a) [3] State benefits of LED technology. (b) three Benefit 1 Benefit 2 Benefit 3 [3] Identify technology that could have been used for the display. (c) one other [1] Victoria is entering data into a computer system. The data will be transmitted to cloud storage."
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 An even parity check is used to check for errors in the binary values after transmission. (a) For each of the write the that makes sure parity is met. 7-bit binary values Parity bit even 7-bit binary value Parity bit 1100010 1001011 [4] Identify other error checking methods that could be used to check the binary values are (b) two correct after transmissio"
+    }
+  ]
+}
+[2026-07-13T02:04:02.811Z] parserVersion=0.4.0
+[2026-07-13T02:04:02.811Z] documentRole=question_paper
+[2026-07-13T02:04:02.811Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:03.100Z] stage.exitCode=0
+[2026-07-13T02:04:03.100Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_11.staging.json",
+  "runId": "0478-2020-ON-11-QP-RUN-b1b9cf12935b",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 24,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 24,
+        "present": 24,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:04:03.102Z] stagingId=0478-2020-ON-11-QP-RUN-b1b9cf12935b
+[2026-07-13T02:04:03.102Z] validationStatus=PASS
+[2026-07-13T02:04:03.102Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:04:03.102Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:03.102Z] canonicalPublishable=true
+[2026-07-13T02:04:03.102Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:04:03.102Z] endTime=2026-07-13T02:04:03.102Z
+[2026-07-13T02:04:03.102Z] status=PASS

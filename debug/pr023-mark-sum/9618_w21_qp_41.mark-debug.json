@@ -1,0 +1,226 @@
+{
+  "debugType": "pr023_mark_sum_validation_investigation",
+  "generatedAt": "2026-07-11T08:26:13.770Z",
+  "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_41.pdf",
+  "rootCauseSummary": "Array/table index bracket tokens are excluded from mark extraction; MARK_SUM_MISMATCH resolved.",
+  "validationStatus": "PASS",
+  "issues": [],
+  "questionCount": 3,
+  "leafQuestionCount": 20,
+  "parents": [
+    {
+      "questionId": "9618-2021-ON-41-Q1",
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "parentMarks": 17,
+      "rawMarkValidation": {
+        "declared": 17,
+        "leafSum": 17,
+        "valid": true
+      },
+      "stagingLeafSum": 12,
+      "mismatch": false,
+      "rootCauseCategory": "PASS",
+      "textSample": "1 FUNCTION Unknown(BYVAL X, BYVAL Y : INTEGER) RETURNS INTEGER IF X < Y THEN OUTPUT X + Y RETURN (Unknown(X + 1, Y) * 2) ELSE IF X = Y THEN RETURN 1 ELSE OUTPUT X + Y RETURN (Unknown(X - 1, Y) DIV 2) ENDIF ENDIF ENDFUNCTION The operator returns the integer value after division e.g. would give DIV 13 DIV 2 6 Write program code to declare the function . (a) Unknown() Save your program as . question 1 Copy and paste the program code into in the evidence document. part 1(a) [3] The main program need",
+      "leaves": [
+        {
+          "questionId": "9618-2021-ON-41-Q1-A",
+          "questionNumber": "1(a)",
+          "marks": 3,
+          "pageStart": 2,
+          "pageEnd": 3,
+          "textSample": "FUNCTION Unknown(BYVAL X, BYVAL Y : INTEGER) RETURNS INTEGER IF X < Y THEN OUTPUT X + Y RETURN (Unknown(X + 1, Y) * 2) ELSE IF X = Y THEN RETURN 1 ELSE OUTPUT X + Y RETURN (Unknown(X - 1, Y) DIV 2) ENDIF ENDIF ENDFUNCTIO"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q1-B-I",
+          "questionNumber": "1(b)(i)",
+          "marks": 1,
+          "pageStart": 3,
+          "pageEnd": 3,
+          "textSample": "FUNCTION Unknown(BYVAL X, BYVAL Y : INTEGER) RETURNS INTEGER IF X < Y THEN OUTPUT X + Y RETURN (Unknown(X + 1, Y) * 2) ELSE IF X = Y THEN RETURN 1 ELSE OUTPUT X + Y RETURN (Unknown(X - 1, Y) DIV 2) ENDIF ENDIF ENDFUNCTIO"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q1-B-II",
+          "questionNumber": "1(b)(ii)",
+          "marks": 1,
+          "pageStart": 3,
+          "pageEnd": 4,
+          "textSample": "FUNCTION Unknown(BYVAL X, BYVAL Y : INTEGER) RETURNS INTEGER IF X < Y THEN OUTPUT X + Y RETURN (Unknown(X + 1, Y) * 2) ELSE IF X = Y THEN RETURN 1 ELSE OUTPUT X + Y RETURN (Unknown(X - 1, Y) DIV 2) ENDIF ENDIF ENDFUNCTIO"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q1-C",
+          "questionNumber": "1(c)",
+          "marks": 7,
+          "pageStart": 3,
+          "pageEnd": 3,
+          "textSample": "FUNCTION Unknown(BYVAL X, BYVAL Y : INTEGER) RETURNS INTEGER IF X < Y THEN OUTPUT X + Y RETURN (Unknown(X + 1, Y) * 2) ELSE IF X = Y THEN RETURN 1 ELSE OUTPUT X + Y RETURN (Unknown(X - 1, Y) DIV 2) ENDIF ENDIF ENDFUNCTIO"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q1-D",
+          "questionNumber": "1(d)",
+          "marks": null,
+          "pageStart": 3,
+          "pageEnd": 3,
+          "textSample": "FUNCTION Unknown(BYVAL X, BYVAL Y : INTEGER) RETURNS INTEGER IF X < Y THEN OUTPUT X + Y RETURN (Unknown(X + 1, Y) * 2) ELSE IF X = Y THEN RETURN 1 ELSE OUTPUT X + Y RETURN (Unknown(X - 1, Y) DIV 2) ENDIF ENDIF ENDFUNCTIO"
+        }
+      ]
+    },
+    {
+      "questionId": "9618-2021-ON-41-Q2",
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 8,
+      "parentMarks": 30,
+      "rawMarkValidation": {
+        "declared": 30,
+        "leafSum": 30,
+        "valid": true
+      },
+      "stagingLeafSum": 30,
+      "mismatch": false,
+      "rootCauseCategory": "PASS",
+      "textSample": "2 The program stores the dimensions of the picture (width and height), the colour of the frame (e.g. black), and a description of the picture (e.g. flowers). The class has the following attributes and methods. Picture Description : STRING // stores a description of the picture Width : INTEGER // stores the width e.g. 30 Height : INTEGER // stores the height e.g. 40 FrameColour : STRING // stores the colour e.g. black Constructor() // takes all four values as parameters and sets them to the priva",
+      "leaves": [
+        {
+          "questionId": "9618-2021-ON-41-Q2-A",
+          "questionNumber": "2(a)",
+          "marks": 5,
+          "pageStart": 4,
+          "pageEnd": 4,
+          "textSample": "The program stores the dimensions of the picture (width and height), the colour of the frame (e.g. black), and a description of the picture (e.g. flowers). The class has the following attributes and methods. Picture Desc"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q2-B",
+          "questionNumber": "2(b)",
+          "marks": 3,
+          "pageStart": 4,
+          "pageEnd": 5,
+          "textSample": "The program stores the dimensions of the picture (width and height), the colour of the frame (e.g. black), and a description of the picture (e.g. flowers). The class has the following attributes and methods. Picture Desc"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q2-C",
+          "questionNumber": "2(c)",
+          "marks": 2,
+          "pageStart": 5,
+          "pageEnd": 5,
+          "textSample": "The program stores the dimensions of the picture (width and height), the colour of the frame (e.g. black), and a description of the picture (e.g. flowers). The class has the following attributes and methods. Picture Desc"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q2-D",
+          "questionNumber": "2(d)",
+          "marks": 1,
+          "pageStart": 5,
+          "pageEnd": 5,
+          "textSample": "The program stores the dimensions of the picture (width and height), the colour of the frame (e.g. black), and a description of the picture (e.g. flowers). The class has the following attributes and methods. Picture Desc"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q2-E",
+          "questionNumber": "2(e)",
+          "marks": 8,
+          "pageStart": 5,
+          "pageEnd": 5,
+          "textSample": "The program stores the dimensions of the picture (width and height), the colour of the frame (e.g. black), and a description of the picture (e.g. flowers). The class has the following attributes and methods. Picture Desc"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q2-F",
+          "questionNumber": "2(f)",
+          "marks": 2,
+          "pageStart": 5,
+          "pageEnd": 6,
+          "textSample": "The program stores the dimensions of the picture (width and height), the colour of the frame (e.g. black), and a description of the picture (e.g. flowers). The class has the following attributes and methods. Picture Desc"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q2-G",
+          "questionNumber": "2(g)",
+          "marks": 7,
+          "pageStart": 6,
+          "pageEnd": 6,
+          "textSample": "The program stores the dimensions of the picture (width and height), the colour of the frame (e.g. black), and a description of the picture (e.g. flowers). The class has the following attributes and methods. Picture Desc"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q2-H",
+          "questionNumber": "2(h)",
+          "marks": 2,
+          "pageStart": 6,
+          "pageEnd": 8,
+          "textSample": "The program stores the dimensions of the picture (width and height), the colour of the frame (e.g. black), and a description of the picture (e.g. flowers). The class has the following attributes and methods. Picture Desc"
+        }
+      ]
+    },
+    {
+      "questionId": "9618-2021-ON-41-Q3",
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 11,
+      "parentMarks": 28,
+      "rawMarkValidation": {
+        "declared": 28,
+        "leafSum": 28,
+        "valid": true
+      },
+      "stagingLeafSum": 27,
+      "mismatch": false,
+      "rootCauseCategory": "PASS",
+      "textSample": "3 The data for the binary tree is stored in a 2D array with the following structure: LeftPointer Data RightPointer Index [0] [1] [2] 1 10 2 [0] -1 5 -1 [1] -1 16 -1 [2] Each row in the table represents one node on the tree. The number represents a null pointer. -1 The 2D array, is declared with space for 20 nodes. (a) ArrayNodes Each node has a left pointer, data and right pointer. The program also initialises the: to (null); this points to the first node in the binary tree • RootPointer -1 to ;",
+      "leaves": [
+        {
+          "questionId": "9618-2021-ON-41-Q3-A",
+          "questionNumber": "3(a)",
+          "marks": 4,
+          "pageStart": 8,
+          "pageEnd": 8,
+          "textSample": "The data for the binary tree is stored in a 2D array with the following structure: LeftPointer Data RightPointer Index [0] [1] [2] 1 10 2 [0] -1 5 -1 [1] -1 16 -1 [2] Each row in the table represents one node on the tree"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q3-B",
+          "questionNumber": "3(b)",
+          "marks": 8,
+          "pageStart": 8,
+          "pageEnd": 10,
+          "textSample": "The data for the binary tree is stored in a 2D array with the following structure: LeftPointer Data RightPointer Index [0] [1] [2] 1 10 2 [0] -1 5 -1 [1] -1 16 -1 [2] Each row in the table represents one node on the tree"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q3-C",
+          "questionNumber": "3(c)",
+          "marks": 4,
+          "pageStart": 10,
+          "pageEnd": 10,
+          "textSample": "The data for the binary tree is stored in a 2D array with the following structure: LeftPointer Data RightPointer Index [0] [1] [2] 1 10 2 [0] -1 5 -1 [1] -1 16 -1 [2] Each row in the table represents one node on the tree"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q3-D-I",
+          "questionNumber": "3(d)(i)",
+          "marks": 3,
+          "pageStart": 10,
+          "pageEnd": 10,
+          "textSample": "The data for the binary tree is stored in a 2D array with the following structure: LeftPointer Data RightPointer Index [0] [1] [2] 1 10 2 [0] -1 5 -1 [1] -1 16 -1 [2] Each row in the table represents one node on the tree"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q3-D-II",
+          "questionNumber": "3(d)(ii)",
+          "marks": 1,
+          "pageStart": 11,
+          "pageEnd": 11,
+          "textSample": "The data for the binary tree is stored in a 2D array with the following structure: LeftPointer Data RightPointer Index [0] [1] [2] 1 10 2 [0] -1 5 -1 [1] -1 16 -1 [2] Each row in the table represents one node on the tree"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q3-E-I",
+          "questionNumber": "3(e)(i)",
+          "marks": 7,
+          "pageStart": 11,
+          "pageEnd": 11,
+          "textSample": "The data for the binary tree is stored in a 2D array with the following structure: LeftPointer Data RightPointer Index [0] [1] [2] 1 10 2 [0] -1 5 -1 [1] -1 16 -1 [2] Each row in the table represents one node on the tree"
+        },
+        {
+          "questionId": "9618-2021-ON-41-Q3-E-II",
+          "questionNumber": "3(e)(ii)",
+          "marks": null,
+          "pageStart": 11,
+          "pageEnd": 11,
+          "textSample": "The data for the binary tree is stored in a 2D array with the following structure: LeftPointer Data RightPointer Index [0] [1] [2] 1 10 2 [0] -1 5 -1 [1] -1 16 -1 [2] Each row in the table represents one node on the tree"
+        }
+      ]
+    }
+  ]
+}

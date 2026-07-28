@@ -1,0 +1,88 @@
+{
+  "generatedFor": "Phase-8-B",
+  "status": "PASS",
+  "title": "Regression Intelligence",
+  "checks": {
+    "goldenFixture": true,
+    "edgeCaseFixture": true,
+    "crossSyllabusFixture": true,
+    "futureFixture": true,
+    "failureClassification": true
+  },
+  "details": {
+    "title": "Regression Intelligence",
+    "status": "PASS",
+    "checks": {
+      "goldenFixture": true,
+      "edgeCaseFixture": true,
+      "crossSyllabusFixture": true,
+      "futureFixture": true,
+      "failureClassification": true
+    },
+    "fixtures": {
+      "golden0478": {
+        "fixtureClass": "golden",
+        "syllabus": "0478",
+        "relativePath": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_12.pdf",
+        "status": "PASS",
+        "expected": {
+          "questionCount": 5,
+          "leafCount": 27,
+          "totalMarks": 75
+        },
+        "actual": {
+          "questionCount": 5,
+          "leafCount": 27,
+          "totalMarks": 75
+        },
+        "failureClassification": null
+      },
+      "edge9618": {
+        "fixtureClass": "edge_case",
+        "syllabus": "9618",
+        "relativePath": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_11.pdf",
+        "status": "PASS",
+        "expected": {
+          "questionCount": 8,
+          "leafCount": 30,
+          "totalMarks": 75
+        },
+        "actual": {
+          "questionCount": 8,
+          "leafCount": 30,
+          "totalMarks": 75
+        },
+        "failureClassification": null
+      },
+      "cross9709": {
+        "fixtureClass": "cross_syllabus",
+        "syllabus": "9709",
+        "relativePath": "public/textbook_syllabus/pastpaper/caie-as-a-level-9709/2024 May June/9709_s24_qp_12.pdf",
+        "status": "PASS",
+        "expected": {
+          "questionCount": 10,
+          "leafCount": 27,
+          "totalMarks": 75
+        },
+        "actual": {
+          "questionCount": 10,
+          "leafCount": 27,
+          "totalMarks": 75
+        },
+        "failureClassification": null
+      },
+      "future": {
+        "fixtureClass": "future_syllabus",
+        "syllabus": "generic",
+        "status": "PASS",
+        "expected": {
+          "failureDomain": "RESPONSE_AREA"
+        },
+        "actual": {
+          "failureDomain": "RESPONSE_AREA"
+        },
+        "failureClassification": null
+      }
+    }
+  }
+}

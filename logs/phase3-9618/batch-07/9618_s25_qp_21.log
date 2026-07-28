@@ -1,0 +1,191 @@
+[2026-07-14T17:00:45.297Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf
+[2026-07-14T17:00:45.297Z] startTime=2026-07-14T17:00:45.297Z
+[2026-07-14T17:00:45.297Z] expectedRole=question_paper
+[2026-07-14T17:00:48.480Z] extract.exitCode=0
+[2026-07-14T17:00:48.480Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_21.pdf",
+  "pageCount": 20,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A program is being developed to help the manager of a shop control the stock. (a) An identifier table has been used during the design stage. Complete the identifier table: Example value Explanation Variable name Data type a category of stock \"Fruit\" that is sold in the shop when an item was 20/02/2025 sold 12.67 the cost of an item to indicate if an item i"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A program is being developed to calculate the pay of employees working for a company. A function CalculateBonus() calculates bonus pay based on the value of sales. Bonus pay is calculated as shown in the table. Value of sales Bonus pay (in dollars) (in dollars) below 2000 0 between 2000 and 4000 inclusive 10 above 4000 100 A flowchart for the function Calc"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 A student has been asked to create a simple guessing game program. This program will generate a random integer value between 1 and 100. It will then repeatedly prompt the user to input an integer value until they input the randomly generated value. The student has written a structured English description: step 1 – randomly generate an integer value between"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.35,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 Study the algorithm: DECLARE Chars : ARRAY[1:4] OF CHAR DECLARE I, J : INTEGER DECLARE Key : CHAR 2 I 'D' Chars[1] 'T' Chars[2] 'H' Chars[3] 'R' Chars[4] WHILE I <= 4 //Outer loop Chars[I] Key I – 1 J WHILE J >= 0 AND Chars[J] > Key //Inner loop Chars[J] Chars[J + 1] J – 1 J ENDWHILE Key Chars[J + 1] I + 1 I ENDWHILE (a) The outer loop structure used in th"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 Stacks and queues are both abstract data types. A stack uses a top-of-stack pointer to indicate the location of the last item added to the stack. A queue uses two pointers: a front pointer to indicate the location of the next item to be removed from the queue • a rear pointer to indicate the location of the next item to be added to the queue. • A queue can"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A program monitors the speed of vehicles as they move around a large building site. Each vehicle contains a sensor which reads an integer value that represents the speed of the vehicle. The value is expected to be in the range 0 to 60 inclusive. The sensors cannot read values less than 0. A program module has been written to validate the values read by the"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 14,
+      "pageEnd": 18,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 A program is being developed to implement a customer loyalty scheme for a coffee shop. The programmer has decided that the following data items need to be stored for each customer: Data item Description customer ID a unique six-digit string an integer value that is increased by one for every cup of coffee the points customer orders When a customer visits t"
+    }
+  ]
+}
+[2026-07-14T17:00:48.485Z] parserVersion=0.4.0
+[2026-07-14T17:00:48.485Z] documentRole=question_paper
+[2026-07-14T17:00:48.485Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:00:48.975Z] stage.exitCode=0
+[2026-07-14T17:00:48.975Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_21.staging.json",
+  "runId": "9618-2025-MJ-21-QP-RUN-bdc294eb8a51",
+  "status": "NEEDS_REVIEW",
+  "publishStatus": "BLOCKED",
+  "canonicalCompleteness": {
+    "status": "FAIL",
+    "publishable": false,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "FAIL",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 18,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 18,
+        "present": 18,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P0",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Existing parent mark validation is not valid.",
+        "questionId": "9618-2025-MJ-21-Q4",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 1,
+  "p1": 0,
+  "p2": 0,
+  "issues": [
+    [
+      "P0",
+      "MARK_SUM_MISMATCH",
+      "9618-2025-MJ-21-Q4"
+    ]
+  ]
+}
+[2026-07-14T17:00:48.979Z] stagingId=9618-2025-MJ-21-QP-RUN-bdc294eb8a51
+[2026-07-14T17:00:48.979Z] validationStatus=FAIL
+[2026-07-14T17:00:48.979Z] publishStatus=BLOCKED
+[2026-07-14T17:00:48.979Z] canonicalCompletenessStatus=FAIL
+[2026-07-14T17:00:48.979Z] canonicalPublishable=false
+[2026-07-14T17:00:48.979Z] issueCounts={"P0":1,"P1":0,"P2":0}
+[2026-07-14T17:00:48.980Z] endTime=2026-07-14T17:00:48.980Z
+[2026-07-14T17:00:48.980Z] status=FAIL

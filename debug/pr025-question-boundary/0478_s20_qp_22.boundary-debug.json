@@ -1,0 +1,455 @@
+{
+  "pr": "PR-025",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_22.pdf",
+  "objective": "Question marker boundary detection for pseudocode and numeric content",
+  "markerSummary": {
+    "accepted": 6,
+    "rejected": 18,
+    "acceptedTokens": [
+      {
+        "token": "1",
+        "pageNumber": 3,
+        "sourceLine": "1",
+        "font": "Arial-BoldMT"
+      },
+      {
+        "token": "2",
+        "pageNumber": 7,
+        "sourceLine": "2",
+        "font": "Arial-BoldMT"
+      },
+      {
+        "token": "3",
+        "pageNumber": 8,
+        "sourceLine": "3",
+        "font": "Arial-BoldMT"
+      },
+      {
+        "token": "4",
+        "pageNumber": 10,
+        "sourceLine": "4",
+        "font": "Arial-BoldMT"
+      },
+      {
+        "token": "5",
+        "pageNumber": 12,
+        "sourceLine": "5",
+        "font": "Arial-BoldMT"
+      },
+      {
+        "token": "6",
+        "pageNumber": 13,
+        "sourceLine": "6",
+        "font": "Arial-BoldMT"
+      }
+    ],
+    "rejectedPseudocodeTokens": [
+      {
+        "token": "01",
+        "pageNumber": 8,
+        "sourceLine": "01 HighestMark ← 100",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 0
+      },
+      {
+        "token": "02",
+        "pageNumber": 8,
+        "sourceLine": "02 HighestMarkStudents ← 0",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 1
+      },
+      {
+        "token": "03",
+        "pageNumber": 8,
+        "sourceLine": "03 FOR Count ← 1 TO 35",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 2
+      },
+      {
+        "token": "04",
+        "pageNumber": 8,
+        "sourceLine": "04 OUTPUT \"Please enter student name\"",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 3
+      },
+      {
+        "token": "05",
+        "pageNumber": 8,
+        "sourceLine": "05 INPUT Name[Count]",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 4
+      },
+      {
+        "token": "06",
+        "pageNumber": 8,
+        "sourceLine": "06 OUTPUT \"Please enter student mark\"",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 5
+      },
+      {
+        "token": "07",
+        "pageNumber": 8,
+        "sourceLine": "07 INPUT Mark[Counter]",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 6
+      },
+      {
+        "token": "08",
+        "pageNumber": 8,
+        "sourceLine": "08 IF Mark[Count] = HighestMark",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 7
+      },
+      {
+        "token": "09",
+        "pageNumber": 8,
+        "sourceLine": "09 THEN",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 8
+      },
+      {
+        "token": "10",
+        "pageNumber": 8,
+        "sourceLine": "10 HighestMarkStudents ← HighestMarkStudents – 1",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 9
+      },
+      {
+        "token": "11",
+        "pageNumber": 8,
+        "sourceLine": "11 ENDIF",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 10
+      },
+      {
+        "token": "12",
+        "pageNumber": 8,
+        "sourceLine": "12 IF Mark[Count] > HighestMark",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 11
+      },
+      {
+        "token": "13",
+        "pageNumber": 8,
+        "sourceLine": "13 THEN",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 12
+      },
+      {
+        "token": "14",
+        "pageNumber": 8,
+        "sourceLine": "14 Mark[Count] ← HighestMark",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 13
+      },
+      {
+        "token": "15",
+        "pageNumber": 8,
+        "sourceLine": "15 HighestMarkStudents ← 1",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 14
+      },
+      {
+        "token": "16",
+        "pageNumber": 8,
+        "sourceLine": "16 ENDIF",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 15
+      },
+      {
+        "token": "17",
+        "pageNumber": 8,
+        "sourceLine": "17 NEXT Count",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 16
+      },
+      {
+        "token": "18",
+        "pageNumber": 8,
+        "sourceLine": "18 OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \",",
+        "font": "CourierNewPSMT",
+        "blockIndex": 3,
+        "lineIndex": 17
+      }
+    ]
+  },
+  "boundaryOutput": [
+    {
+      "id": "0478-2020-MJ-22-Q1",
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 7,
+      "marker": {
+        "pageNumber": 3,
+        "x": 50,
+        "y": 765,
+        "globalOrder": 20011
+      },
+      "marks": 20,
+      "markValidation": {
+        "declared": 20,
+        "leafSum": 20,
+        "valid": true
+      },
+      "issues": [],
+      "leafQuestions": [
+        {
+          "id": "0478-2020-MJ-22-Q1-A",
+          "questionNumber": "1(a)",
+          "pageStart": 3,
+          "pageEnd": 3,
+          "marks": 4,
+          "responseAreaStatus": "PRESENT"
+        },
+        {
+          "id": "0478-2020-MJ-22-Q1-B",
+          "questionNumber": "1(b)",
+          "pageStart": 3,
+          "pageEnd": 4,
+          "marks": 4,
+          "responseAreaStatus": "PRESENT"
+        },
+        {
+          "id": "0478-2020-MJ-22-Q1-C",
+          "questionNumber": "1(c)",
+          "pageStart": 4,
+          "pageEnd": 4,
+          "marks": 4,
+          "responseAreaStatus": "PRESENT"
+        },
+        {
+          "id": "0478-2020-MJ-22-Q1-D",
+          "questionNumber": "1(d)",
+          "pageStart": 4,
+          "pageEnd": 6,
+          "marks": 4,
+          "responseAreaStatus": "PRESENT"
+        },
+        {
+          "id": "0478-2020-MJ-22-Q1-E",
+          "questionNumber": "1(e)",
+          "pageStart": 6,
+          "pageEnd": 7,
+          "marks": 4,
+          "responseAreaStatus": "PRESENT"
+        }
+      ]
+    },
+    {
+      "id": "0478-2020-MJ-22-Q2",
+      "questionNumber": "2",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marker": {
+        "pageNumber": 7,
+        "x": 50,
+        "y": 739,
+        "globalOrder": 60017
+      },
+      "marks": 5,
+      "markValidation": {
+        "declared": 5,
+        "leafSum": 5,
+        "valid": true
+      },
+      "issues": [
+        {
+          "severity": "P0",
+          "code": "LEAF_VALIDATION_FAILED",
+          "message": "At least one leaf question is blocked."
+        }
+      ],
+      "leafQuestions": [
+        {
+          "id": "0478-2020-MJ-22-Q2",
+          "questionNumber": "2",
+          "pageStart": 7,
+          "pageEnd": 8,
+          "marks": 5,
+          "responseAreaStatus": "PRESENT"
+        }
+      ]
+    },
+    {
+      "id": "0478-2020-MJ-22-Q3",
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marker": {
+        "pageNumber": 8,
+        "x": 50,
+        "y": 765,
+        "globalOrder": 70017
+      },
+      "marks": 10,
+      "markValidation": {
+        "declared": 10,
+        "leafSum": 10,
+        "valid": true
+      },
+      "issues": [
+        {
+          "severity": "P0",
+          "code": "LEAF_VALIDATION_FAILED",
+          "message": "At least one leaf question is blocked."
+        }
+      ],
+      "leafQuestions": [
+        {
+          "id": "0478-2020-MJ-22-Q3-A",
+          "questionNumber": "3(a)",
+          "pageStart": 8,
+          "pageEnd": 9,
+          "marks": 4,
+          "responseAreaStatus": "PRESENT"
+        },
+        {
+          "id": "0478-2020-MJ-22-Q3-B",
+          "questionNumber": "3(b)",
+          "pageStart": 9,
+          "pageEnd": 10,
+          "marks": 6,
+          "responseAreaStatus": "PRESENT"
+        }
+      ]
+    },
+    {
+      "id": "0478-2020-MJ-22-Q4",
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marker": {
+        "pageNumber": 10,
+        "x": 50,
+        "y": 765,
+        "globalOrder": 90017
+      },
+      "marks": 6,
+      "markValidation": {
+        "declared": 6,
+        "leafSum": 6,
+        "valid": true
+      },
+      "issues": [],
+      "leafQuestions": [
+        {
+          "id": "0478-2020-MJ-22-Q4-A",
+          "questionNumber": "4(a)",
+          "pageStart": 11,
+          "pageEnd": 11,
+          "marks": 3,
+          "responseAreaStatus": "PRESENT"
+        },
+        {
+          "id": "0478-2020-MJ-22-Q4-B",
+          "questionNumber": "4(b)",
+          "pageStart": 11,
+          "pageEnd": 12,
+          "marks": 3,
+          "responseAreaStatus": "PRESENT"
+        }
+      ]
+    },
+    {
+      "id": "0478-2020-MJ-22-Q5",
+      "questionNumber": "5",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marker": {
+        "pageNumber": 12,
+        "x": 50,
+        "y": 765,
+        "globalOrder": 110016
+      },
+      "marks": null,
+      "markValidation": {
+        "declared": null,
+        "leafSum": 0,
+        "valid": false
+      },
+      "issues": [
+        {
+          "severity": "P0",
+          "code": "MARK_SUM_MISMATCH",
+          "message": "Parent marks do not equal leaf marks."
+        }
+      ],
+      "leafQuestions": [
+        {
+          "id": "0478-2020-MJ-22-Q5",
+          "questionNumber": "5",
+          "pageStart": 12,
+          "pageEnd": 13,
+          "marks": null,
+          "responseAreaStatus": "PRESENT"
+        }
+      ]
+    },
+    {
+      "id": "0478-2020-MJ-22-Q6",
+      "questionNumber": "6",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "marker": {
+        "pageNumber": 13,
+        "x": 50,
+        "y": 765,
+        "globalOrder": 120020
+      },
+      "marks": 6,
+      "markValidation": {
+        "declared": 6,
+        "leafSum": 6,
+        "valid": true
+      },
+      "issues": [],
+      "leafQuestions": [
+        {
+          "id": "0478-2020-MJ-22-Q6-A",
+          "questionNumber": "6(a)",
+          "pageStart": 13,
+          "pageEnd": 13,
+          "marks": 2,
+          "responseAreaStatus": "PRESENT"
+        },
+        {
+          "id": "0478-2020-MJ-22-Q6-B",
+          "questionNumber": "6(b)",
+          "pageStart": 13,
+          "pageEnd": 13,
+          "marks": 4,
+          "responseAreaStatus": "PRESENT"
+        }
+      ]
+    }
+  ],
+  "stagingSummary": {
+    "status": "NEEDS_REVIEW",
+    "publishStatus": "BLOCKED",
+    "markSumMismatchIssues": [],
+    "issueCounts": {}
+  },
+  "acceptance": {
+    "q18PseudoMarkerRejected": true,
+    "q18QuestionAbsent": true,
+    "q6Present": true,
+    "markSumMismatchCount": 0
+  }
+}

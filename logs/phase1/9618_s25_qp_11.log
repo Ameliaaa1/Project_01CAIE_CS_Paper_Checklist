@@ -1,0 +1,192 @@
+[2026-07-13T02:02:14.908Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_11.pdf
+[2026-07-13T02:02:14.908Z] startTime=2026-07-13T02:02:14.908Z
+[2026-07-13T02:02:14.908Z] expectedRole=question_paper
+[2026-07-13T02:02:16.779Z] extract.exitCode=0
+[2026-07-13T02:02:16.779Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_11.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) Write the logic expressions for the following logic circuit. P X Q R Y S X = Y = [2] (b) Complete the truth table for the following logic circuit. A B X C A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [2]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Programmers in a software development company take part in live video conferences to discuss their work. The live video conferences take place using real‑time bit streaming. The video is compressed before it is transmitted. (a) Explain how data is transferred using real‑time bit streaming. [4] (b) (i) Explain the reasons why a video is compressed before it"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A computer stores images and text files. (a) One of the images is a bitmapped image. Complete the table by writing the answer for each statement. Statement Answer the term for the smallest element that makes up an image the largest number of different colours that can be represented with a bit depth of 8 bits the term for the dots per inch (dpi) when an im"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A shop installs a new system that allows users to purchase items without going through a manual checkout. The new system: identifies customers when they enter the shop and matches them to their account • prevents a customer from walking through the automatic barriers if they do not have an • account automatically detects the items that a customer has taken"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A company builds and sells furniture to customers. The company stores data about customers, their payment cards and their furniture orders in a database. The database, FURNITURE, has the following tables: CUSTOMER(CustomerID, Name, Phone) CUSTOMER_CARD_DATA(CardID, CustomerID, CardType, CardNumber, EndDate) ORDER(OrderID, CustomerID, TotalCost, Paid, Order"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A programmer is buying a new computer. (a) The programmer is considering the following two computers: Quad‑core 2.2 GHz processor 16‑bit architecture Computer 1 1 GB Random Access Memory (RAM) 500 GB magnetic hard disk Dual‑core 3.8 GHz processor 32‑bit architecture Computer 2 2 GB RAM 500 GB solid state drive (SSD) (i) Computer 1 has a magnetic hard disk."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A banker stores personal data on their work computer. (a) The banker needs to transfer confidential data across the internet. Identify and describe one method of restricting the risks posed by an unauthorised person intercepting the data whilst it is being transferred across the internet. Method Description [3] (b) The banker receives confidential data acr"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 14,
+      "pageEnd": 17,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 (a) The following table shows part of the instruction set for a processor. The processor has two registers: the Accumulator (ACC) and an Index Register (IX) . Instruction Explanation Opcode Operand LDM #n Immediate addressing. Load the number n to ACC Direct addressing. Load the contents of the location at the given LDD <address> address to ACC Indirect ad"
+    }
+  ]
+}
+[2026-07-13T02:02:16.781Z] parserVersion=0.4.0
+[2026-07-13T02:02:16.781Z] documentRole=question_paper
+[2026-07-13T02:02:16.781Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:02:17.057Z] stage.exitCode=0
+[2026-07-13T02:02:17.057Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/9618_s25_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/9618_s25_qp_11.staging.json",
+  "runId": "9618-2025-MJ-11-QP-RUN-bdf74d4f15c6",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/9618_s25_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 28,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 28,
+        "present": 28,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:02:17.059Z] stagingId=9618-2025-MJ-11-QP-RUN-bdf74d4f15c6
+[2026-07-13T02:02:17.059Z] validationStatus=PASS
+[2026-07-13T02:02:17.059Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:02:17.059Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:02:17.059Z] canonicalPublishable=true
+[2026-07-13T02:02:17.059Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:02:17.059Z] endTime=2026-07-13T02:02:17.059Z
+[2026-07-13T02:02:17.059Z] status=PASS

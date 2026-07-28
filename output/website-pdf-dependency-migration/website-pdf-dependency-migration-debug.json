@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-15T11:59:12.081Z",
+  "status": "PASS",
+  "architecture": "PDF -> Parser Pipeline -> Canonical -> Production -> Website",
+  "dataSource": "PRODUCTION_CANONICAL",
+  "checks": {
+    "questionDisplay": true,
+    "markSchemeDisplay": true,
+    "search": true,
+    "pdfViewer": true,
+    "canonicalIntegrity": true,
+    "noWebsitePdfParsing": true,
+    "syllabusRegression": true,
+    "productionStoreUnchanged": true
+  },
+  "counts": {
+    "questions": 1745,
+    "markSchemeAnswers": 1540,
+    "sourceReferencesChecked": 3490,
+    "missingReferences": 0,
+    "bySyllabus": {
+      "caie-igcse-0478": 808,
+      "caie-as-a-level-9618": 882,
+      "caie-as-a-level-9709": 55
+    },
+    "answersBySyllabus": {
+      "caie-igcse-0478": 637,
+      "caie-as-a-level-9618": 848,
+      "caie-as-a-level-9709": 55
+    }
+  },
+  "rollback": "Restore the previous production API/data adapter only; never restore website PDF parsing.",
+  "files": {
+    "productionStore": "output/production/production-store.json",
+    "serverIndex": "generated/production-question-index.json",
+    "browserIndex": "public/assets/question-index.json",
+    "report": "output/website-pdf-dependency-migration/website-pdf-dependency-migration-report.json",
+    "debug": "output/website-pdf-dependency-migration/website-pdf-dependency-migration-debug.json"
+  },
+  "hashes": {
+    "productionStoreBefore": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+    "productionStoreAfter": "ca9ef9d3167d74ba5357c094e6a6e07036efdb5f06a20ab314332f0e6b9e41c8",
+    "serverIndex": "0cb9776a98966f2ba65841d9f757931f650b135ec58d3087a73f33981d4c10d1",
+    "browserIndex": "daa7a96ec41fe5471a6b8b1ed53d5d5fc7d4ac7941e257d49bf831a7bbe4cf99"
+  },
+  "dependencyAudit": {
+    "status": "PASS",
+    "files": [
+      "server.js",
+      "public/app.js",
+      "scripts/build-question-index.js"
+    ],
+    "violations": [],
+    "allowedPdfUse": [
+      "Static original-reference serving",
+      "Canonical-text practice PDF generation via PDFDocument.create"
+    ]
+  },
+  "integrity": {
+    "adapterEntryCount": 1745,
+    "serverEntryCount": 1745,
+    "publicEntryCount": 1745,
+    "serverEqualsProductionAdapter": true,
+    "browserEqualsServer": true,
+    "missingReferences": []
+  },
+  "samples": {
+    "caie-igcse-0478": {
+      "syllabusId": "caie-igcse-0478",
+      "section": "unknown",
+      "paper": "0478/12/M/J/23",
+      "ref": "Q2",
+      "knowledge": "Production canonical past-paper question",
+      "question": "2 Convert the binary numbers to hexadecimal. (a) two 10010011 00001101 [4] A value is stored as a binary number in a register. (b) 0 1 1 1 1 0 1 0 A logical right shift of places is performed on the binary number. three Complete the binary register to show its contents after this logical right shift. (i) [1] State effect this logical shift has on the binary number. (ii) one [1] Give reasons why a programmer may use hexadecimal to represent binary numbers. (c) two 1 2 [2] Denary numbers can also be converted to hexadecimal. (d) Convert the denary number to hexadecimal. 301 [2] When keys are pressed on a keyboard, the text is converted to binary to be processed by the",
+      "answer": "MS: 1 Marks Answer 1 3 2 Page 6 of 10 2 anti-malware Marks Answer 1 4 Page 9 of 10",
+      "canonicalQuestionId": "0478-2023-MJ-12-Q2",
+      "production": true,
+      "dataSource": "PRODUCTION_CANONICAL",
+      "sourceReferences": {
+        "questionPaper": {
+          "paperId": "0478-2023-MJ-12-QP",
+          "storageKey": "pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_12.pdf",
+          "url": "/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_12.pdf",
+          "pages": [
+            2,
+            3,
+            4
+          ],
+          "pageStart": 2,
+          "pageEnd": 4,
+          "fileHash": "6cccf26a0da8864e368e34b0f327b3d6697debad3abdfb70060f2d0bfbb09096"
+        },
+        "markScheme": {
+          "paperId": "0478-2023-MJ-12-MS",
+          "storageKey": "pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_12.pdf",
+          "url": "/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_12.pdf",
+          "pages": [
+            6,
+            9
+          ],
+          "pageStart": 6,
+          "pageEnd": 9,
+          "fileHash": "f72b136cb453e76524172709f0cd8ade4afa44642190088bd26851f77a5a1a86"
+        }
+      }
+    },
+    "caie-as-a-level-9618": {
+      "syllabusId": "caie-as-a-level-9618",
+      "section": "unknown",
+      "paper": "9618/12/M/J/21",
+      "ref": "Q1",
+      "knowledge": "Production canonical past-paper question",
+      "question": "1 the people who rent houses, and the houses they rent. The database, has the HOUSE_RENTALS following structure: CUSTOMER(CustomerID, FirstName, LastName, DateOfBirth, Email) HOUSE(HouseID, HouseNumber, Road, Town, Bedrooms, Bathrooms) RENTAL(RentalID, CustomerID, HouseID, MonthlyCost, DepositPaid) Give the definition of the following database terms, using an example from the database (a) for each definition. HOUSE_RENTALS Term Definition and example Field Entity Foreign key [6] 3 Tick ( ) box to identify whether the database is in Third Normal Form (b) one HOUSE_RENTALS (3NF) or not in 3NF. Justify your choice using one or more examples from the database . HOUSE_RENTALS In 3NF Not in 3NF Justification [2] Example data from the table are given: (c) RENTAL RentalID CustomerID HouseID MonthlyCost DepositPaid 1 22 15B5L 1000.00 Yes 2 13 3F 687.00 No 3 1 12AB 550.00 Yes 4 3 37 444.50 Yes Complete the following Data Definition Language (DDL) statement to define the table (i) . RENTAL CREATE ( RentalID INTEGER NOT NULL, CustomerID INTEGER NOT NULL, HouseID (5) NOT NULL, MonthlyCost NOT NULL, DepositPaid BOOLEAN NOT NULL, (RentalID) ); [4] Write a Data Manipulation Language (DML) script to return the first name and last name (ii) of all customers who have paid their deposit. not [4] Aisha manages a team of software developers.",
+      "answer": "MS: 1 mark for definition, 1 mark for appropriate example in each Term Definition and example A column/attribute in a table Field e.g. in the table CustomerID CUSTOMER Anything that data can be stored about Entity e.g. A customer or a house A field in one table that is 1 mark per bullet point to max 2 • All fields in all tables are dependant fully on the PK and on no other fields • for example all fields in table are fully dependent on Customer CustomerID 1 mark for each correctly completed line CREATE ( TABLE RENTAL RentalID INTEGER NOT NULL, CustomerID INTEGER NOT NULL, HouseID (5) NOT NULL, VARCHAR NOT NULL, MonthlyCost REAL/CURRENCY DepositPaid BOOLEAN NOT NULL, RentalID ( ) PRIMARY KEY ); 1 mark per bullet point • and Select FirstName LastName • From both tables • Where DepositPaid = No • Joining tables (either or ) AND INNER JOIN Example script: SELECT FirstName, LastName FROM CUSTOMER, RENTAL WHERE DepositPaid = No AND RENTAL.CustomerID = CUSTOMER.CustomerID;",
+      "canonicalQuestionId": "9618-2021-MJ-12-Q1",
+      "production": true,
+      "dataSource": "PRODUCTION_CANONICAL",
+      "sourceReferences": {
+        "questionPaper": {
+          "paperId": "9618-2021-MJ-12-QP",
+          "storageKey": "pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_12.pdf",
+          "url": "/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_12.pdf",
+          "pages": [
+            2,
+            3,
+            4
+          ],
+          "pageStart": 2,
+          "pageEnd": 4,
+          "fileHash": "63c51bb1e39c8795d3dae421cf4e2a79c82a823fcfbdd817c2041b6c6c052eb1"
+        },
+        "markScheme": {
+          "paperId": "9618-2021-MJ-12-MS",
+          "storageKey": "pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_ms_12.pdf",
+          "url": "/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_ms_12.pdf",
+          "pages": [
+            3
+          ],
+          "pageStart": 3,
+          "pageEnd": 3,
+          "fileHash": "faab5e3e4410d94ab99080d659f2f7c60aab15c716ae9978aa3819fc1836da0c"
+        }
+      }
+    },
+    "caie-as-a-level-9709": {
+      "syllabusId": "caie-as-a-level-9709",
+      "section": "unknown",
+      "paper": "9709/12/M/J/20",
+      "ref": "Q1",
+      "knowledge": "Production canonical past-paper question",
+      "question": "1 (a) . [2] Find the coeﬃcient of in the expansion of x x @ A x 6 2 2 2 + − (b) . [3] Find the coeﬃcient of in the expansion of 2 3 x x x A @ x = 1 1 1",
+      "answer": "MS: marks a particular will be awarded method for has a been scale specified drawing. in the question, full marks may be awarded for any correct method. However, if a calculation is required Term Coefficient ( 2 + 3 in x ) ( x x ² − in = 2 x ( ) 60 x 6 − 2 x ) 6 = 15 x 4 ×   − x 2    2 Constant Coefficient Answer term of x in ² ( in x − ( 2 2 x + ) 6 3 x = ) ( 20 x − x 3 2 x × ) 6   = − x 2 120    3 (−160) – 480",
+      "canonicalQuestionId": "9709-2020-MJ-12-Q1",
+      "production": true,
+      "dataSource": "PRODUCTION_CANONICAL",
+      "sourceReferences": {
+        "questionPaper": {
+          "paperId": "9709-2020-MJ-12-QP",
+          "storageKey": "pastpaper/caie-as-a-level-9709/2020 May June/9709_s20_qp_12.pdf",
+          "url": "/textbook_syllabus/pastpaper/caie-as-a-level-9709/2020 May June/9709_s20_qp_12.pdf",
+          "pages": [
+            2,
+            3
+          ],
+          "pageStart": 2,
+          "pageEnd": 3,
+          "fileHash": "bfd38cacbadc91e4256be88b9a323f42d5ef1fa12b9229e668ec5f3aef698649"
+        },
+        "markScheme": {
+          "paperId": "9709-2020-MJ-12-MS",
+          "storageKey": "pastpaper/caie-as-a-level-9709/2020 May June/9709_s20_ms_12.pdf",
+          "url": "/textbook_syllabus/pastpaper/caie-as-a-level-9709/2020 May June/9709_s20_ms_12.pdf",
+          "pages": [
+            3,
+            6
+          ],
+          "pageStart": 3,
+          "pageEnd": 6,
+          "fileHash": "9f32de018c46d7681ba9956ee397b3d4115e75b6775525d2c05f976e33254132"
+        }
+      }
+    }
+  }
+}

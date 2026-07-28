@@ -1,0 +1,112 @@
+[2026-07-14T17:01:42.123Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_43.pdf
+[2026-07-14T17:01:42.123Z] startTime=2026-07-14T17:01:42.123Z
+[2026-07-14T17:01:42.123Z] expectedRole=question_paper
+[2026-07-14T17:01:44.288Z] extract.exitCode=0
+[2026-07-14T17:01:44.288Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_43.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_43.pdf",
+  "pageCount": 12,
+  "questionCount": 3,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 26,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Queue a 1D array of up to 50 elements. The queue has the following pointers: – this stores the index of the first element in the queue, initialised to • HeadPointer –1 – this stores the index of the last element in the queue, initialised to • TailPointer –1 is a global array of 50 integers with all elements initialised to in the main program. (a) Queue –1 "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 7,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 DataArray DataArray values. stores 14 integer values and is declared local to the main program. DataArray Write program code to create and initialise it with the following data values in the (a) DataArray order they are written: 0 3 4 56 67 44 43 32 31 345 45 6 54 1 Save your program as . Question2_J25 Copy and paste the program code into part in the evide"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 7,
+      "pageEnd": 10,
+      "marks": 29,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "3 The class stores data about the nodes. Node Node stores the integer data TheData : Integer stores the next node in the linked list NextNode : Node initialises to its parameter value, initialises Constructor() TheData NextNode to a null value returns GetData() TheData returns GetNextNode() NextNode takes an object of type as a parameter and stores it in Set"
+    }
+  ]
+}
+[2026-07-14T17:01:44.290Z] parserVersion=0.4.0
+[2026-07-14T17:01:44.290Z] documentRole=question_paper
+[2026-07-14T17:01:44.290Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:01:44.677Z] stage.exitCode=0
+[2026-07-14T17:01:44.677Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_43.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_43.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_43.staging.json",
+  "runId": "9618-2025-MJ-43-QP-RUN-21f1a713008e",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_43.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 3,
+      "leafQuestionCount": 23,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 23,
+        "present": 23,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:01:44.680Z] stagingId=9618-2025-MJ-43-QP-RUN-21f1a713008e
+[2026-07-14T17:01:44.680Z] validationStatus=PASS
+[2026-07-14T17:01:44.680Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:01:44.680Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:01:44.680Z] canonicalPublishable=true
+[2026-07-14T17:01:44.680Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:01:44.680Z] endTime=2026-07-14T17:01:44.680Z
+[2026-07-14T17:01:44.680Z] status=PASS

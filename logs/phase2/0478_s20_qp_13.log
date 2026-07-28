@@ -1,0 +1,224 @@
+[2026-07-13T02:03:47.038Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_13.pdf
+[2026-07-13T02:03:47.038Z] startTime=2026-07-13T02:03:47.038Z
+[2026-07-13T02:03:47.038Z] expectedRole=question_paper
+[2026-07-13T02:03:48.385Z] extract.exitCode=0
+[2026-07-13T02:03:48.385Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s20_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_13.pdf",
+  "pageCount": 12,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The first three hexadecimal values he reads are and . (a) 15 102 A9 Give the values for the three hexadecimal values. denary 15 102 A9 [3] Pradeep has two 8-bit binary values that he needs to convert to hexadecimal values for his (b) project. Give the values for the two 8-bit binary values. hexadecimal 01010000 00111101 [4] hardware devices are shown."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) Six ✓ Tick ( ) to show if each hardware device is an or device. Input Output Storage Input Output Storage Hardware device ✓ ✓ ✓ ( ) ( ) ( ) Solid state drive (SSD) Sensor Headphones Microphone USB flash drive Actuator [6] Genevieve writes a paragraph about a barcode reader. (b) Using the list given, complete the paragraph. Not all terms in the list nee"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 website for his business. Describe the role of a web browser in requesting and displaying the web pages for the (a) website. [3] Thomas is worried about a denial of service (DoS) attack on his web server. (b) Describe what happens in a denial of service attack. [3] The table shows definitions."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 four Complete the table giving the missing for each definition. Term Term Definition A data transmission method that sends data one bit at a time, down a single wire An address given to a device on a network. The address is assigned by the network The software used to render HTML and display a web page An address given to a device at the manufacturing stag"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 (a) The checkout is linked to a stock control system. The system monitors stock levels and automatically keeps them above a minimum level. Explain how the stock control system automatically keeps the stock levels above a minimum level. [4] The software for the stock control system is stored on a central computer. The computer uses (b) random access memory "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 = ((( XOR ) AND ) OR NOT ) X A B C C Draw a logic circuit to match the given logic statement. (a) All logic gates must have a maximum of inputs. Do attempt to simplify the logic two not statement. A B X C [4] Complete the truth table for the given logic statement. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 [4] Edie uses a firewall to help prevent her "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 them to see. Describe how the firewall helps prevent her children from accessing these websites. (a) [4] Edie is concerned that her children may download a virus when accessing websites. (b) State what is meant by a and explain what could happen if a virus was downloaded. virus [3] Edie explains to her children how to identify if a website is secure. (c) G"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Six ✓ Tick ( ) to show whether the statement applies to a printer, an printer or a printer. 3D Inkjet Laser Some statements apply to more than one printer. 3D Inkjet Laser Statement ✓ ✓ ✓ ( ) ( ) ( ) Uses a moving print head Uses liquid ink Produces output using materials such as plastic and resin Uses piezoelectric or thermal technology Uses a rotating dr"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 is being used to check for errors in the binary values. Write the correct for each to make sure it meets parity. Parity bit 7-bit binary value odd Parity bit 7-bit binary value 0000011 1000000 0111111 1010101 [4] Clive has a laptop computer that he uses for his business. He enters a username and password to"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "10 log in to his laptop. Clive is worried about spyware being used to find out his username and password. Describe how spyware could be used to find out Clive’s username and password. (a) [4] The threat of spyware makes Clive concerned about typing a password to log in to his laptop. (b) Give an example of how Clive could log in securely without typing a pas"
+    }
+  ]
+}
+[2026-07-13T02:03:48.387Z] parserVersion=0.4.0
+[2026-07-13T02:03:48.387Z] documentRole=question_paper
+[2026-07-13T02:03:48.387Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:48.636Z] stage.exitCode=0
+[2026-07-13T02:03:48.636Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s20_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_13.staging.json",
+  "runId": "0478-2020-MJ-13-QP-RUN-52bab6334d72",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 20,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 20,
+        "present": 20,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:48.637Z] stagingId=0478-2020-MJ-13-QP-RUN-52bab6334d72
+[2026-07-13T02:03:48.637Z] validationStatus=PASS
+[2026-07-13T02:03:48.637Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:48.637Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:48.637Z] canonicalPublishable=true
+[2026-07-13T02:03:48.637Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:48.637Z] endTime=2026-07-13T02:03:48.637Z
+[2026-07-13T02:03:48.637Z] status=PASS

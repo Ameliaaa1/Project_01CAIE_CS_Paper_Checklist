@@ -1,0 +1,20 @@
+{
+  "generatedFor": "Phase-7-C-D",
+  "status": "PASS",
+  "crossSyllabus": {
+    "syllabus0478": "PASS",
+    "syllabus9618": "PASS",
+    "syllabus9709": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "checks": {
+    "explicitAnswerLinePreferred": true,
+    "choiceClassified": true,
+    "tableClassified": true,
+    "visualClassified": true,
+    "structuredClassified": true,
+    "textFallbackClassified": true,
+    "requiredLayoutsClassified": true
+  }
+}

@@ -1,0 +1,240 @@
+[2026-07-15T03:53:34.261Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_22.pdf
+[2026-07-15T03:53:34.261Z] startTime=2026-07-15T03:53:34.261Z
+[2026-07-15T03:53:34.261Z] expectedRole=question_paper
+[2026-07-15T03:53:35.935Z] extract.exitCode=0
+[2026-07-15T03:53:35.935Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w23_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 one Verification is used to make sure that a value entered has changed during input. A not is an integer. B is correct. C is a string. D not [1] A type of validation check is a length check. Another type of validation check is used to make sure"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 that any date entered is in the dd/mm/yyyy style: dd means day, mm means month and yyyy means year. State the type of validation check used. (a) [1] Give example of normal test data and example of abnormal test data you should (b) one one use to make sure the check is working properly. in part (a) State a reason for each of your choices of test data. Norma"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Four five Draw line to link each pseudocode statement to the most appropriate pseudocode use. (a) one all pseudocode uses will be required. Not Pseudocode use Pseudocode statement counting CALL Colour(NewColour) finding an average Value (A1 + A2 + A3) / 3 totalling Loop1 Loop1 + 1 using a conditional statement using a procedure IF Count > 7 THEN X1 0 [4] A"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 be entered and stored in a two‑dimensional (2D) array. The contents of the array are then output. 01 DECLARE City ARRAY[1:50, 1:2] OF BOOLEAN 02 DECLARE Count : INTEGER 03 DECLARE Out : INTEGER 1 04 Count 05 IF 06 OUTPUT \"Enter the name of the city\" 07 INPUT City[Count, 2] 08 OUTPUT \"Enter the name of the country\" 09 INPUT City[Count, 2] Count + 1 10 Count"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "5 [3] The flowchart represents an algorithm that performs a process on groups of values that are input."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 The algorithm will fail if the first value of any group is 0. An input of –1 will terminate the algorithm. START Total 0 OUTPUT \"Average is \", Average Count 0 OUTPUT INPUT \"Total is \", Value Total IS Yes Value = Average Total / Count 0 ? No IS Yes STOP Value = –1 ? No Total Total + Value Count Count + 1 Complete the trace table for the input data: (a) 25, "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "7 SUBSTRING(Quote, Start, Number) Quote beginning at position that is characters long. The first character in is in Start Number Quote position 1. Write pseudocode statements to: store the string in • \"Learning Never Exhausts The Mind\" Quote extract and display the words from the string • \"The Mind\" output the original string in lower case. • [5] Explain why"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.84
+      },
+      "textPreview": "8 [4] Consider the logic expression:"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 = ( NAND ) OR NOT ( XOR ) Z A B B C Draw a logic circuit for this logic expression. (a) Each logic gate must have a maximum of inputs. two Do simplify this logic expression. not A Z B C [4] Complete the truth table from the given logic expression. (b) A B C Z 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 [4] A database table called stores details about the horses ke"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 Horses Code Breed BreedOrigin Gender Age Arrived H002 Arabian Saudi Arabia M 5 28/09/2022 H004 Percheron France M 5 30/10/2022 H010 Friesian Netherlands M 6 15/11/2022 H011 Fjord Norway F 4 17/11/2022 H012 Clydesdale Scotland M 10 18/11/2022 H015 Arabian Saudi Arabia F 5 15/12/2022 H016 Arabian Saudi Arabia F 5 15/12/2022 H017 Clydesdale Scotland F 4 16/0"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 . A two‑dimensional (2D) array stores details of each customer’s Customers[] Quotations[] quotation: length of room (one decimal place) • width of room (one decimal place) • area of wood required (rounded up to next whole number) • choice of wood index (whole number) • price of wood required in dollars (two decimal places). • The floor measurements (room "
+    }
+  ]
+}
+[2026-07-15T03:53:35.937Z] parserVersion=0.4.0
+[2026-07-15T03:53:35.937Z] documentRole=question_paper
+[2026-07-15T03:53:35.937Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:36.218Z] stage.exitCode=0
+[2026-07-15T03:53:36.218Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w23_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_22.staging.json",
+  "runId": "0478-2023-ON-22-QP-RUN-eb60aa19a5c0",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 20,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 20,
+        "present": 20,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:36.220Z] stagingId=0478-2023-ON-22-QP-RUN-eb60aa19a5c0
+[2026-07-15T03:53:36.220Z] validationStatus=PASS
+[2026-07-15T03:53:36.220Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:36.220Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:36.220Z] canonicalPublishable=true
+[2026-07-15T03:53:36.220Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:36.220Z] endTime=2026-07-15T03:53:36.220Z
+[2026-07-15T03:53:36.220Z] status=PASS

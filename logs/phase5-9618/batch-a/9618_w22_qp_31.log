@@ -1,0 +1,265 @@
+[2026-07-15T03:09:01.504Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_31.pdf
+[2026-07-15T03:09:01.504Z] startTime=2026-07-15T03:09:01.504Z
+[2026-07-15T03:09:01.504Z] expectedRole=question_paper
+[2026-07-15T03:09:02.963Z] extract.exitCode=0
+[2026-07-15T03:09:02.963Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_31.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_31.pdf",
+  "pageCount": 12,
+  "questionCount": 12,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 8 bits for the mantissa • 8 bits for the exponent • two’s complement form for both mantissa and exponent. • Write the normalised floating-point representation of +202 in this system. (a) Show your working. Mantissa Exponent Working [3] Write the normalised floating-point representation of –202 in this system. (b) Show your working. Mantissa Exponent Workin"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.84
+      },
+      "textPreview": "2 Transport layer Internet layer [5] State what is meant by the term ."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 (a) enumerated data type [1] State what is meant by the term . (b) pointer data type [1] The months of the year are: January, February, March, April, May, June, July, August, (c) September, October, November and December. Write the statement to define the data type to hold the names of the pseudocode Quarter1 first three months of a year. [2] The composite"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 one most appropriate Stage of compilation Description minimising a program’s execution time and memory requirement Lexical analysis converting an intermediate representation of source code into an executable form Syntax analysis converting a sequence of characters into a sequence of tokens Code generation directly executing instructions written in a script"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 (a) a * b + b - d + 15 [1] Write the RPN expression in infix form. (b) (i) a b - c d + * a / [1] Evaluate your infix expression from when a = 5, b = 10, c = 27 and d = 12. (ii) part (b) (i) [1] A message is encrypted using a private key and sent to an individual using asymmetric encryption."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 State what is meant by a . (a) private key [2] Describe the process of asymmetric encryption. (b) [2] Explain how a digital signature is used to verify a message when it is received. (c) [4] Complete the Karnaugh map (K-map) for the Boolean expression."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "7 (a) Z = ¯A. B. ¯C. ¯D + ¯A. B. ¯C. D + A. B. ¯C. ¯D + A. B. ¯C. D + A. ¯B. ¯C. ¯D + A. ¯B. ¯C. D AB 00 01 11 10 CD 00 01 11 10 [2] Draw loop(s) around appropriate group(s) in the K-map to produce an optimal (b) sum-of-products. [2] Write the Boolean expression from your answer to as a simplified sum-of-products. (c) part (b) Use Boolean algebra to give you"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Explain what is meant by . (a) virtual memory [3] State difference between paging and segmentation in the way memory is divided. (b) one [1] Deep learning is used in Artificial Intelligence (AI)."
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 Describe what is meant by . (a) deep learning [2] Outline the reasons for using deep learning. (b) [2] Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 two types of processor. 3 Tick ( ) box in each row to show if the statement applies to RISC or CISC processors. (a) one Statement RISC CISC uses a smaller instruction set uses single-cycle instructions and limited addressing modes uses fewer general-purpose registers uses both hardwired and micro-coded control unit uses a system where cache is split betwe"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 (a) Instance Inheritance Polymorphism [3] In OOP, a class contains attributes and methods. (b) Complete the pseudocode for the class to enable objects to be created. The class needs Car to include: string attributes to store the make, model, body type and fuel type • an integer attribute to store the number of cars of that type built. • The attributes mus"
+    },
+    {
+      "questionNumber": "12",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "12 (a) Names[0:99] Complete this pseudocode binary search algorithm. 0 Lower ← Mid 0 ← Exit FALSE ← OUTPUT \"Enter the name to be found \" INPUT Target REPEAT THEN OUTPUT Target, \" does not exist\" Exit TRUE ← ENDIF Mid Lower + (Upper – Lower + 1) DIV 2 ← IF Names[Mid] < Target THEN Lower ← ENDIF IF Names[Mid] > Target THEN ENDIF THEN OUTPUT Target, \" was found"
+    }
+  ]
+}
+[2026-07-15T03:09:02.964Z] parserVersion=0.4.0
+[2026-07-15T03:09:02.964Z] documentRole=question_paper
+[2026-07-15T03:09:02.964Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:09:03.287Z] stage.exitCode=0
+[2026-07-15T03:09:03.287Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_31.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_31.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_31.staging.json",
+  "runId": "9618-2022-ON-31-QP-RUN-7175b7ae719b",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_31.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 12,
+      "leafQuestionCount": 32,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 31,
+        "present": 31,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-ON-31-Q3-D-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:09:03.289Z] stagingId=9618-2022-ON-31-QP-RUN-7175b7ae719b
+[2026-07-15T03:09:03.289Z] validationStatus=PASS
+[2026-07-15T03:09:03.289Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:09:03.289Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:09:03.289Z] canonicalPublishable=true
+[2026-07-15T03:09:03.289Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:09:03.289Z] endTime=2026-07-15T03:09:03.289Z
+[2026-07-15T03:09:03.289Z] status=PASS

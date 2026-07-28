@@ -1,0 +1,102 @@
+[
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_12.pdf",
+    "expectedRole": "question_paper",
+    "purpose": "0478 QP May/June 2023 component 12 layout"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_12.pdf",
+    "expectedRole": "mark_scheme",
+    "purpose": "0478 MS May/June 2023 component 12 footer/layout regression"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_23.pdf",
+    "expectedRole": "question_paper",
+    "purpose": "0478 QP Oct/Nov 2023 variant 23"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_ms_23.pdf",
+    "expectedRole": "mark_scheme",
+    "purpose": "0478 MS Oct/Nov 2023 variant 23"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_qp_12.pdf",
+    "expectedRole": "question_paper",
+    "purpose": "0478 QP March 2024 component 12"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-March/0478_m24_ms_12.pdf",
+    "expectedRole": "mark_scheme",
+    "purpose": "0478 MS March 2024 component 12"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_22.pdf",
+    "expectedRole": "question_paper",
+    "purpose": "0478 QP Oct/Nov 2024 paper 2 variant"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_ms_22.pdf",
+    "expectedRole": "mark_scheme",
+    "purpose": "0478 MS Oct/Nov 2024 paper 2 variant"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_12.pdf",
+    "expectedRole": "question_paper",
+    "purpose": "0478 QP golden fixture"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_ms_12.pdf",
+    "expectedRole": "mark_scheme",
+    "purpose": "0478 MS May/June 2025 paired fixture"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_11.pdf",
+    "expectedRole": "question_paper",
+    "purpose": "0478 QP Oct/Nov 2025 component 11"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_ms_11.pdf",
+    "expectedRole": "mark_scheme",
+    "purpose": "0478 MS Oct/Nov 2025 profile separation fixture"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_11.pdf",
+    "expectedRole": "question_paper",
+    "purpose": "9618 QP May/June 2023 cross-syllabus coverage"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_ms_11.pdf",
+    "expectedRole": "mark_scheme",
+    "purpose": "9618 MS May/June 2023 cross-syllabus coverage"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_12.pdf",
+    "expectedRole": "question_paper",
+    "purpose": "9618 QP Oct/Nov 2024 cross-session coverage"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_ms_12.pdf",
+    "expectedRole": "mark_scheme",
+    "purpose": "9618 MS Oct/Nov 2024 cross-session coverage"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_11.pdf",
+    "expectedRole": "question_paper",
+    "purpose": "9618 QP May/June 2025 deployment smoke fixture"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_ms_11.pdf",
+    "expectedRole": "mark_scheme",
+    "purpose": "9618 MS May/June 2025 paired fixture"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_42.pdf",
+    "expectedRole": "question_paper",
+    "purpose": "9618 QP Oct/Nov 2025 paper 4 layout"
+  },
+  {
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_ms_42.pdf",
+    "expectedRole": "mark_scheme",
+    "purpose": "9618 MS Oct/Nov 2025 paper 4 layout"
+  }
+]

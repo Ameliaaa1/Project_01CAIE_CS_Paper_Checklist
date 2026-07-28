@@ -1,0 +1,526 @@
+{
+  "generatedFor": "Phase-1-9618-2022-MJ-41-Staging-Validation-Production-Plan",
+  "status": "PASS",
+  "phaseId": "Phase 1",
+  "sourceRecoveredBy": "PR-068",
+  "stagingGeneratedBy": "PR-069",
+  "targetPair": {
+    "pairingKey": "9618-2022-MJ-41",
+    "syllabus": "9618",
+    "year": 2022,
+    "session": "M/J",
+    "component": "41",
+    "qpId": "9618-2022-MJ-41-QP",
+    "msId": "9618-2022-MJ-41-MS"
+  },
+  "sourcePreconditions": {
+    "status": "PASS",
+    "sourcePairStatus": "COMPLETE",
+    "qp": {
+      "exists": true,
+      "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_41.pdf",
+      "sha256": "baf6c7a8e6486e9ff36e01e61bc304d6b50c4114849b7bc44923b4bfdbf13cf1"
+    },
+    "ms": {
+      "exists": true,
+      "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_ms_41.pdf",
+      "sha256": "203cc5900d90e14ce40e48b2d9943d762a5d2ae25c8f38c51221ed27bc8cceb6",
+      "identity": {
+        "status": "PASS",
+        "syllabus": {
+          "expected": "9618",
+          "actual": "9618",
+          "matches": true
+        },
+        "component": {
+          "expected": "41",
+          "actual": "41",
+          "matches": true
+        },
+        "sessionCode": {
+          "expected": "s22",
+          "actual": "s22",
+          "matches": true
+        },
+        "year": {
+          "expected": 2022,
+          "actual": 2022,
+          "matches": true
+        },
+        "session": {
+          "expected": "M/J",
+          "actual": "M/J",
+          "matches": true
+        },
+        "documentRole": {
+          "expected": "MARK_SCHEME",
+          "actual": "MARK_SCHEME",
+          "matches": true
+        },
+        "maximumMark": {
+          "expected": 75,
+          "actual": 75,
+          "matches": true
+        },
+        "printedPages": {
+          "expected": 34,
+          "actual": 34,
+          "matches": true
+        },
+        "unrelatedSubstituteUsed": false
+      },
+      "pageCount": 34
+    }
+  },
+  "stagingGeneration": {
+    "status": "PASS",
+    "mode": "REUSED_VALIDATED_PR069_ARTIFACTS",
+    "qp": {
+      "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_41.staging.json",
+      "available": true
+    },
+    "ms": {
+      "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_ms_41.staging.json",
+      "available": true
+    },
+    "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/pr069-9618-2022-mj-41-staging-generation-validation-report.json"
+  },
+  "qpValidation": {
+    "documentRole": "question_paper",
+    "validationStatus": "PASS",
+    "completenessStatus": "PASS",
+    "canonicalPublishable": true,
+    "publishStatus": "READY_TO_PUBLISH",
+    "severityCounts": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    },
+    "issueCodes": [],
+    "failedChecks": [],
+    "counts": {
+      "questionCount": 3,
+      "leafQuestionCount": 23,
+      "responseAreaCount": 23,
+      "markSchemeEntryCount": 0
+    },
+    "completenessEvidence": {
+      "questionCoverage": {
+        "status": "PASS",
+        "evidence": null
+      },
+      "leafCoverage": {
+        "status": "PASS",
+        "evidence": null
+      },
+      "markCoverage": {
+        "status": "PASS",
+        "evidence": null
+      },
+      "responseAreaCoverage": {
+        "status": "PASS",
+        "evidence": {
+          "required": 23,
+          "present": 23,
+          "ratio": 1
+        }
+      },
+      "sourceTraceCoverage": {
+        "status": "PASS",
+        "evidence": null
+      },
+      "canonicalStructureCompleteness": {
+        "status": "PASS",
+        "evidence": null
+      }
+    },
+    "sourceTraceAvailable": true,
+    "fileHash": "baf6c7a8e6486e9ff36e01e61bc304d6b50c4114849b7bc44923b4bfdbf13cf1",
+    "parserVersion": "0.4.0"
+  },
+  "msValidation": {
+    "documentRole": "mark_scheme",
+    "validationStatus": "PASS",
+    "completenessStatus": "PASS",
+    "canonicalPublishable": true,
+    "publishStatus": "READY_TO_PUBLISH",
+    "severityCounts": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    },
+    "issueCodes": [],
+    "failedChecks": [],
+    "counts": {
+      "questionCount": 0,
+      "leafQuestionCount": 0,
+      "responseAreaCount": 0,
+      "markSchemeEntryCount": 24
+    },
+    "completenessEvidence": {
+      "questionCoverage": {
+        "status": "PASS",
+        "evidence": null
+      },
+      "leafCoverage": {
+        "status": "PASS",
+        "evidence": null
+      },
+      "markCoverage": {
+        "status": "PASS",
+        "evidence": null
+      },
+      "responseAreaCoverage": {
+        "status": "PASS",
+        "evidence": {
+          "required": 0,
+          "present": 0,
+          "ratio": 1
+        }
+      },
+      "sourceTraceCoverage": {
+        "status": "PASS",
+        "evidence": null
+      },
+      "canonicalStructureCompleteness": {
+        "status": "PASS",
+        "evidence": null
+      }
+    },
+    "sourceTraceAvailable": true,
+    "fileHash": "203cc5900d90e14ce40e48b2d9943d762a5d2ae25c8f38c51221ed27bc8cceb6",
+    "parserVersion": "0.4.0"
+  },
+  "strictEligibility": {
+    "eligible": true,
+    "blockers": []
+  },
+  "productionPreflight": {
+    "strictEligible": true,
+    "alreadyPublished": false,
+    "qpExists": false,
+    "msExists": false,
+    "pairingExists": false,
+    "partialProductionConflict": false,
+    "status": "PASS"
+  },
+  "expectedDeltas": {
+    "papers": 2,
+    "questionRecords": 26,
+    "topLevelQuestions": 3,
+    "leafQuestions": 23,
+    "responseAreas": 23,
+    "markSchemeEntries": 24,
+    "pairings": 1,
+    "batches": 1,
+    "expansionBatches": 1
+  },
+  "actualDeltas": {
+    "papers": 2,
+    "questionRecords": 26,
+    "topLevelQuestions": 3,
+    "leafQuestions": 23,
+    "responseAreas": 23,
+    "markSchemeEntries": 24,
+    "pairings": 1,
+    "batches": 1,
+    "expansionBatches": 1
+  },
+  "deltasMatch": true,
+  "publication": {
+    "status": "PASS",
+    "productionWrite": true,
+    "batchId": "PR070-9618-2022-MJ-41",
+    "rawReportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase1-9618-2022-mj-41-publication-raw-report.json"
+  },
+  "pairVerification": {
+    "component": "41",
+    "childBatchId": "PR070-9618-2022-MJ-41-41",
+    "status": "PASS",
+    "verification": {
+      "status": "PASS",
+      "counts": {
+        "paperCount": 2,
+        "questionCount": 3,
+        "leafQuestionCount": 23,
+        "responseAreaCount": 23,
+        "markSchemeEntryCount": 24
+      },
+      "expectedCounts": {
+        "paperCount": 2,
+        "questionCount": 3,
+        "leafQuestionCount": 23,
+        "responseAreaCount": 23,
+        "markSchemeEntryCount": 24
+      },
+      "sourceTraceAvailable": true,
+      "pairingLinked": true
+    },
+    "frontendVerification": {
+      "questionFinder": "PASS",
+      "knowledgeChecklist": "PASS",
+      "markSchemeSearch": "PASS",
+      "aiRetrieval": "PASS",
+      "openOriginalQuestion": "PASS",
+      "qpMsCorrespondence": "PASS"
+    }
+  },
+  "frontendVerification": {
+    "questionFinder": "PASS",
+    "knowledgeChecklist": "PASS",
+    "markSchemeSearch": "PASS",
+    "aiRetrieval": "PASS",
+    "openOriginalQuestion": "PASS",
+    "qpMsCorrespondence": "PASS"
+  },
+  "stagingChanges": {
+    "added": [
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_ms_41.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_41.staging.json"
+    ],
+    "modified": [],
+    "deleted": [],
+    "unrelatedChanges": [],
+    "unrelatedStagingArtifactsUnchanged": true
+  },
+  "integrity": {
+    "production": {
+      "beforeSha256": "09fe6bf2a7bd501efcbe4f15265b38919b2a607cca684121a568d4be3c87d517",
+      "afterSha256": "de1d4e0e5f46936f09a074ae6c0d2c5c88280c9f823f570a1e037044c00af676",
+      "productionHashChanged": true
+    },
+    "existingRecordsUnchanged": true,
+    "existingRecordChanges": {
+      "batches": 0,
+      "papers": 0,
+      "questions": 0,
+      "responseAreas": 0,
+      "markSchemeEntries": 0,
+      "pairings": 0,
+      "expansionBatches": 0
+    },
+    "stagingArtifactsUnchanged": true,
+    "sourceAssets": {
+      "before": "b2ee6194520ea6b048d860fb0c5d3d2a4775bac357e5441fabb318e665aaf414",
+      "after": "b2ee6194520ea6b048d860fb0c5d3d2a4775bac357e5441fabb318e665aaf414",
+      "unchanged": true
+    },
+    "qpSource": {
+      "before": "baf6c7a8e6486e9ff36e01e61bc304d6b50c4114849b7bc44923b4bfdbf13cf1",
+      "after": "baf6c7a8e6486e9ff36e01e61bc304d6b50c4114849b7bc44923b4bfdbf13cf1",
+      "unchanged": true
+    },
+    "msSource": {
+      "before": "203cc5900d90e14ce40e48b2d9943d762a5d2ae25c8f38c51221ed27bc8cceb6",
+      "after": "203cc5900d90e14ce40e48b2d9943d762a5d2ae25c8f38c51221ed27bc8cceb6",
+      "unchanged": true
+    },
+    "parser": {
+      "before": "29c5cf22b904a40e4160a391d60f00dec84148822110f321f1d46b5c855efae9",
+      "after": "29c5cf22b904a40e4160a391d60f00dec84148822110f321f1d46b5c855efae9",
+      "unchanged": true
+    },
+    "canonical": {
+      "before": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "after": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "unchanged": true
+    }
+  },
+  "productionState": {
+    "papers": 100,
+    "questionRecords": 1474,
+    "topLevelQuestions": 378,
+    "leafQuestions": 1162,
+    "responseAreas": 5633,
+    "markSchemeEntries": 887,
+    "pairings": 50,
+    "batches": 50,
+    "expansionBatches": 24
+  },
+  "coverageBefore": {
+    "sourcePairs": 118,
+    "completeSourcePairs": 118,
+    "stagingPairs": 26,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 92,
+    "publishedPairs": 25,
+    "eligibleUnpublishedPairs": 1,
+    "missingStagingPairs": 92,
+    "blockedPairs": 0,
+    "incompleteSourcePairs": 0,
+    "partialProductionConflicts": 0
+  },
+  "coverageAfter": {
+    "sourcePairs": 118,
+    "completeSourcePairs": 118,
+    "stagingPairs": 26,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 92,
+    "publishedPairs": 26,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 92,
+    "blockedPairs": 0,
+    "incompleteSourcePairs": 0,
+    "partialProductionConflicts": 0
+  },
+  "targetStateBefore": {
+    "syllabus": "9618",
+    "year": 2022,
+    "session": "M/J",
+    "sessionCode": "MJ",
+    "component": "41",
+    "pairingKey": "9618-2022-MJ-41",
+    "qpId": "9618-2022-MJ-41-QP",
+    "msId": "9618-2022-MJ-41-MS",
+    "sourcePairStatus": "COMPLETE",
+    "stagingStatus": "STAGING_COMPLETE",
+    "status": "ELIGIBLE_UNPUBLISHED",
+    "publishEligibility": "YES",
+    "production": {
+      "qpPublished": false,
+      "msPublished": false,
+      "pairingLinked": false
+    },
+    "qp": {
+      "pdfAvailable": true,
+      "pdfFiles": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_41.pdf"
+      ],
+      "stagingAvailable": true,
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_41.staging.json",
+      "documentRole": "question_paper",
+      "validationStatus": "PASS",
+      "completenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "severityCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      },
+      "blockers": []
+    },
+    "ms": {
+      "pdfAvailable": true,
+      "pdfFiles": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_ms_41.pdf"
+      ],
+      "stagingAvailable": true,
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_ms_41.staging.json",
+      "documentRole": "mark_scheme",
+      "validationStatus": "PASS",
+      "completenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "severityCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      },
+      "blockers": []
+    },
+    "blockers": []
+  },
+  "targetStateAfter": {
+    "syllabus": "9618",
+    "year": 2022,
+    "session": "M/J",
+    "sessionCode": "MJ",
+    "component": "41",
+    "pairingKey": "9618-2022-MJ-41",
+    "qpId": "9618-2022-MJ-41-QP",
+    "msId": "9618-2022-MJ-41-MS",
+    "sourcePairStatus": "COMPLETE",
+    "stagingStatus": "STAGING_COMPLETE",
+    "status": "ALREADY_PUBLISHED",
+    "publishEligibility": "NO",
+    "production": {
+      "qpPublished": true,
+      "msPublished": true,
+      "pairingLinked": true
+    },
+    "qp": {
+      "pdfAvailable": true,
+      "pdfFiles": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_41.pdf"
+      ],
+      "stagingAvailable": true,
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_41.staging.json",
+      "documentRole": "question_paper",
+      "validationStatus": "PASS",
+      "completenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "severityCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      },
+      "blockers": []
+    },
+    "ms": {
+      "pdfAvailable": true,
+      "pdfFiles": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_ms_41.pdf"
+      ],
+      "stagingAvailable": true,
+      "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_ms_41.staging.json",
+      "documentRole": "mark_scheme",
+      "validationStatus": "PASS",
+      "completenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "severityCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      },
+      "blockers": []
+    },
+    "blockers": []
+  },
+  "stableModules": {
+    "questionSplitModified": false,
+    "stableQuestionIdModified": false,
+    "parentLeafModelModified": false,
+    "marksValidationModified": false,
+    "binaryOperandPreservationModified": false,
+    "negativeNumberPreservationModified": false,
+    "textQualityPipelineModified": false,
+    "responseAreaPipelineModified": false,
+    "documentRoleRouterModified": false,
+    "questionPaperPipelineModified": false,
+    "markSchemePipelineModified": false,
+    "pairingLogicModified": false
+  },
+  "regression": {
+    "pr066": "PASS",
+    "pr067": "PASS",
+    "pr068": "PASS",
+    "pr069": "PASS",
+    "phase1": "PASS (20/20)",
+    "phase2": "PASS (120/120)",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS",
+    "legalMultiplicationResolutionContexts": "PASS",
+    "otherSuspiciousGlyphsRemainDetected": "PASS",
+    "linkedListNullPointerContext": "PASS",
+    "unrelatedNullPointerGlyphRemainsSuspicious": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "next": {
+    "phaseId": "Phase 2",
+    "decision": "9618 Duplicate Source Investigation + Cleanup",
+    "pairingKeys": [
+      "9618-2021-ON-41"
+    ],
+    "productionWrite": false
+  }
+}

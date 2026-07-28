@@ -1,0 +1,160 @@
+[2026-07-13T05:21:54.774Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_23.pdf
+[2026-07-13T05:21:54.774Z] startTime=2026-07-13T05:21:54.774Z
+[2026-07-13T05:21:54.774Z] expectedRole=question_paper
+[2026-07-13T05:21:56.015Z] extract.exitCode=0
+[2026-07-13T05:21:56.015Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s22_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_23.pdf",
+  "pageCount": 12,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 7,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify variable and array you could have used for or . (a) one one Task 1 Task 2 Give the use for the variable and array. Variable Use Array Use [4] Describe how you could test if the validation of the input to choose a meeting room works (b) ( ). Task 2 [2] Explain how your program in could be altered to allow a 30% discount on bookings for (c) Task 2 t"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 one Types of test data Description Erroneous / Boundary Extreme Normal Abnormal test data that is always on the limit of acceptability test data that is either on the limit of acceptability or test data that is just outside the limit of acceptability test data that will always be rejected test data that is within the limits of acceptability [4] Describe wh"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 answer. Variable Constant [4] The pseudocode represents an algorithm."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 The pre-defined function gives the value of the result of integer division. DIV For example, gives the value Y = 11 DIV 4 Y = 2 0 Count ← INPUT Limit 1 TO Limit FOR In ← TRUE Logic ← 2 Test ← INPUT Number REPEAT IF Number / Test = Number DIV Test THEN FALSE Logic ← ELSE Test + 1 Test ← ENDIF UNTIL NOT Logic OR Test >= Number DIV 2 IF Logic THEN Number Stor"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 allow 100 numbers to be entered into the variable • Number total the numbers as they are entered • output the total and average of the numbers after they have all been entered. • Complete this flowchart: START Total 0 Counter 0 No Yes END [6] Data about planets in the solar system is stored in a database table called PLANETS. The fields"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "6 used in the table are shown. Name of field Contents of field PlanetName the name of the planet PlanetMass the planet’s mass in kilograms Larger whether or the planet has a greater mass than Earth not MaxDistance the maximum distance the planet is from Earth in kilometres MinDistance the minimum distance the planet is from Earth in kilometres YearLength the"
+    }
+  ]
+}
+[2026-07-13T05:21:56.016Z] parserVersion=0.4.0
+[2026-07-13T05:21:56.016Z] documentRole=question_paper
+[2026-07-13T05:21:56.016Z] validationProfile=QUESTION_PAPER
+[2026-07-13T05:21:56.258Z] stage.exitCode=0
+[2026-07-13T05:21:56.258Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s22_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_23.staging.json",
+  "runId": "0478-2022-MJ-23-QP-RUN-f72bd6a20c87",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 13,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 13,
+        "present": 13,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T05:21:56.260Z] stagingId=0478-2022-MJ-23-QP-RUN-f72bd6a20c87
+[2026-07-13T05:21:56.260Z] validationStatus=PASS
+[2026-07-13T05:21:56.260Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T05:21:56.260Z] canonicalCompletenessStatus=PASS
+[2026-07-13T05:21:56.260Z] canonicalPublishable=true
+[2026-07-13T05:21:56.260Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T05:21:56.260Z] endTime=2026-07-13T05:21:56.260Z
+[2026-07-13T05:21:56.260Z] status=PASS

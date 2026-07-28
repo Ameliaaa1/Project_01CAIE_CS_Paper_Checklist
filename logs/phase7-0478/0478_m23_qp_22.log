@@ -1,0 +1,240 @@
+[2026-07-15T03:53:17.563Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-March/0478_m23_qp_22.pdf
+[2026-07-15T03:53:17.563Z] startTime=2026-07-15T03:53:17.563Z
+[2026-07-15T03:53:17.563Z] expectedRole=question_paper
+[2026-07-15T03:53:19.379Z] extract.exitCode=0
+[2026-07-15T03:53:19.379Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m23_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-March/0478_m23_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "1 one procedure. Function A Global B Local C Subroutine D [1] descriptions and pseudocode statements are shown."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) Four five Draw line to link each description to its most appropriate pseudocode statement. one all pseudocode statements will be used. Not Description Pseudocode statement a statement to count FOR Count 1 TO 10 Value Value + NewValue a statement to total WHILE Value > 10 DO a statement to start a pre-condition loop Value Value + 1 a statement to start "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "3 Description Example [3] Describe how variables and constants are used in programming."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "4 [3] A food ordering system is an example of a computer system that is made up of sub-systems."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 The food ordering system: allows the user to enter the details of the food they want to order and to pay for the order • displays food available as pictures or as a list. • Complete the structure diagram for the given parts of the food ordering system. Food ordering system [4] The energy efficiency of an electrical appliance is the percentage of useful ene"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 the total energy in. An algorithm has been written in pseudocode to calculate the energy efficiency of an appliance. Values for total energy in and useful energy out are input. The efficiency is calculated and output as a percentage. The entry of the number –1 for either value stops the algorithm. 01 REPEAT 02 OUTPUT \"Enter total energy in \" 03 INPUT Total"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 = ( OR NOT ) AND ( AND NOT ) X A B B C Draw a logic circuit for this logic expression. Each logic gate must have a maximum of (a) two inputs. Do simplify this logic expression. not A B X C [5] Complete the truth table from the given logic expression. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 [4] This flowchart represents an algorithm to find the aver"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 START NumberSales 0 Total 0 INPUT SaleValue IS Yes SaleValue Average Total / NumberSales = 0? No OUTPUT \"Average sale NumberSales NumberSales + 1 value \", Average Total Total + SaleValue STOP Complete the trace table using this data: (a) 5.50, 3.40, 6.25, 3.85, –11.00, 0 OUTPUT NumberSales Total SaleValue Average [4] Identify the error in the algorithm and"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 BookList Part of this table is given. CatNo Title Fiction Author PaperBack Price StockLevel BK01 The Princes’ Story Yes B Penn Yes 4.50 500 BK02 The Princesses’ Story Yes B Penn Yes 4.50 350 BK03 Computer Science No Way Yu Yes 19.99 20 BK04 The Modern World No P Patel No 25.00 5 BK05 The Ancient World Yes P Patel No 25.00 5 BK06 Computer Science No R Dale "
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 X Y Z X Y number and stores a flag that can be set to or Z TRUE FALSE Write pseudocode statements to declare the variables and (a) X Y Z [3] The function returns if the value of is the same as the value of when (b) Same(A,B) TRUE A B B is rounded to the nearest whole number and otherwise. FALSE Write pseudocode statements to: define the function • call th"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 TeamName[] The two-dimensional (2D) array contains the points awarded for each match. TeamPoints[] The position of each team’s data in the two arrays is the same. For example, the team stored at index 10 in and is the same. TeamName[] TeamPoints[] The variable contains the number of teams in the league. The variable LeagueSize MatchNo contains the number "
+    }
+  ]
+}
+[2026-07-15T03:53:19.381Z] parserVersion=0.4.0
+[2026-07-15T03:53:19.381Z] documentRole=question_paper
+[2026-07-15T03:53:19.381Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:19.679Z] stage.exitCode=0
+[2026-07-15T03:53:19.679Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m23_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m23_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m23_qp_22.staging.json",
+  "runId": "0478-2023-FM-22-QP-RUN-128d7caa1b8e",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m23_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 22,
+        "present": 22,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:19.681Z] stagingId=0478-2023-FM-22-QP-RUN-128d7caa1b8e
+[2026-07-15T03:53:19.681Z] validationStatus=PASS
+[2026-07-15T03:53:19.681Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:19.681Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:19.681Z] canonicalPublishable=true
+[2026-07-15T03:53:19.681Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:19.681Z] endTime=2026-07-15T03:53:19.681Z
+[2026-07-15T03:53:19.681Z] status=PASS

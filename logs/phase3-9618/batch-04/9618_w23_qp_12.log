@@ -1,0 +1,225 @@
+[2026-07-14T16:54:55.631Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_12.pdf
+[2026-07-14T16:54:55.631Z] startTime=2026-07-14T16:54:55.631Z
+[2026-07-14T16:54:55.631Z] expectedRole=question_paper
+[2026-07-14T16:54:57.998Z] extract.exitCode=0
+[2026-07-14T16:54:57.998Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_12.pdf",
+  "pageCount": 16,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The factory uses a conveyor belt that moves the products from one stage of production to the next stage. An automated system counts the number of chocolate bars made at the end of production. (a) The system includes a sensor positioned above the conveyor belt. Identify appropriate type of sensor that can be used. one [1] A second automated system removes c"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) Entity Primary key Referential integrity [3] Authentication is one method a Database Management System (DBMS) can use to improve (b) the security of a database. Describe methods that a DBMS can use to improve the security of a database. other [4] The following database table is not normalised. (c) StudentName DateOfBirth TutorGroup Subject SubjectCode "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) one [1] Convert the denary value into a 12-bit two’s complement binary integer. (b) (i) −196 Answer [1] Convert the Binary Coded Decimal (BCD) into denary. (ii) 100001100101 Answer [1] Convert the unsigned binary integer into denary. (iii) 000111010110 Answer [1] Identify practical application of BCD justify why BCD is used in this application. (c) one"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) A B X C [3] Complete the truth table for the logic expression: (b) = XOR ( AND ( NAND ) AND NOT ) X A B A B C A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [2] State the meaning of ."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 (a) privacy of data [1] State the meaning of . (b) integrity of data [1] Describe the following threats to a computer system. (c) Phishing email Spyware [4] A real-time video of a music concert needs to be streamed to subscribers."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 (a) ✓ Tick ( ) box to identify the most appropriate type of compression justify your answer. one and Lossy Lossless Justification [3] Explain the impact of changing the sampling resolution on the accuracy of a sound recording. (b) [3] A bitmap image has a resolution of 2048 pixels wide and 1024 pixels high. (c) The image has a bit depth of 10 bits per pixe"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 13,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 a router • two laptop computers • a server. • The server has the IP address 192.168.3.2 (a) Explain why this is an IPv6 address. not [2] The LAN is set up as a star topology. (b) (i) Draw a diagram of the topology of the LAN. [2] Explain how data is transmitted between the two laptops in the LAN. (ii) [2] Subnetting can be used to separate a network into l"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 13,
+      "pageEnd": 14,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 State purpose of the Operating System. (a) one [1] The Operating System has utility software. (b) The purpose of some utility software is to improve security. Identify example of utility software that is intended to improve security. one not Explain why this software is needed. Utility software Explanation [3] An optical disc reader/writer is connected to "
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 registers, the Accumulator (ACC) and the Index Register (IX) . Instruction Explanation Opcode Operand Direct addressing. Load the contents of the location at the given LDD <address> address to ACC Indexed addressing. Form the address from <address> + the contents of the index register. Copy the contents of this LDX <address> calculated address to ACC Immed"
+    }
+  ]
+}
+[2026-07-14T16:54:58.000Z] parserVersion=0.4.0
+[2026-07-14T16:54:58.000Z] documentRole=question_paper
+[2026-07-14T16:54:58.000Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:54:58.383Z] stage.exitCode=0
+[2026-07-14T16:54:58.383Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_12.staging.json",
+  "runId": "9618-2023-ON-12-QP-RUN-e1e0c98c7049",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 32,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 30,
+        "present": 30,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-12-Q5-A",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-12-Q5-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:54:58.387Z] stagingId=9618-2023-ON-12-QP-RUN-e1e0c98c7049
+[2026-07-14T16:54:58.387Z] validationStatus=PASS
+[2026-07-14T16:54:58.387Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:54:58.387Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:54:58.387Z] canonicalPublishable=true
+[2026-07-14T16:54:58.387Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:54:58.387Z] endTime=2026-07-14T16:54:58.387Z
+[2026-07-14T16:54:58.387Z] status=PASS

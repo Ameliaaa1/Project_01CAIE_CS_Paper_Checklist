@@ -1,0 +1,160 @@
+[2026-07-13T02:03:14.160Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_22.pdf
+[2026-07-13T02:03:14.160Z] startTime=2026-07-13T02:03:14.160Z
+[2026-07-13T02:03:14.160Z] expectedRole=question_paper
+[2026-07-13T02:03:15.766Z] extract.exitCode=0
+[2026-07-13T02:03:15.766Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) All variables, constants and other identifiers must have meaningful names. Describe the data structures you have used in Task 1 to record the items for sale. Include some sample data for each data structure you have described. [5] (b) Explain how your program for Task 1 ensures the item number is unique. [2] (c) Write an algorithm for the part of Task "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) An algorithm has been written in pseudocode to input 100 numbers, select and print the largest number and smallest number. Count 1 INPUT Number High Number Low Count REPEAT INPUT Number IF Number > High THEN High Number ENDIF IF Number > Low THEN Low Number ENDIF Count Count + 1 UNTIL Count = 99 PRINT \"Largest Number is \", Number PRINT \"Smallest Number"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 This flowchart inputs the marks gained in an examination. An input of –1 ends the routine. START Total 0 Count 0 Distinction 0 INPUT Mark Yes Is Mark = –1 ? Total Total + Mark Count Count + 1 No OUTPUT \"Number of No Is Distinctions \", Distinction Mark >= OUTPUT \"Average Mark \" ? 80 Total/Count Yes END Distinction Distinction + 1 Complete the trace table fo"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 For each of the four groups of statements in the table, place a tick in the correct column to show whether it is an example of Selection or Repetition . Statements Selection Repetition FOR A 1 TO 100 B B + 1 NEXT A CASE A OF 100: B A 200: C A ENDCASE IF A > 100 THEN B A ENDIF REPEAT A B * 10 UNTIL A > 100 [4]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "5 Explain what is meant by validation and verification . Give an example for each one. Validation Example Verification Example [6]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "6 A database table, FLIGHT, is used to keep a record of flights from a small airfield. Planes can carry passengers, freight or both. Some flights are marked as private and only carry passengers. Flight number Plane Notes Departure time Passengers FN101 Caravan 1 Private passenger flight 08:00 Y CN101 Caravan 2 Freight only 08:30 N CN102 Piper 1 Freight only "
+    }
+  ]
+}
+[2026-07-13T02:03:15.768Z] parserVersion=0.4.0
+[2026-07-13T02:03:15.768Z] documentRole=question_paper
+[2026-07-13T02:03:15.768Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:16.046Z] stage.exitCode=0
+[2026-07-13T02:03:16.046Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_22.staging.json",
+  "runId": "0478-2019-MJ-22-QP-RUN-e5ca717bae01",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 12,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 12,
+        "present": 12,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:16.048Z] stagingId=0478-2019-MJ-22-QP-RUN-e5ca717bae01
+[2026-07-13T02:03:16.048Z] validationStatus=PASS
+[2026-07-13T02:03:16.048Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:16.048Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:16.048Z] canonicalPublishable=true
+[2026-07-13T02:03:16.048Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:16.048Z] endTime=2026-07-13T02:03:16.048Z
+[2026-07-13T02:03:16.048Z] status=PASS

@@ -1,0 +1,201 @@
+[2026-07-15T03:12:08.708Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_23.pdf
+[2026-07-15T03:12:08.708Z] startTime=2026-07-15T03:12:08.708Z
+[2026-07-15T03:12:08.708Z] expectedRole=question_paper
+[2026-07-15T03:12:11.018Z] extract.exitCode=0
+[2026-07-15T03:12:11.018Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_23.pdf",
+  "pageCount": 24,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A user requires a program that implements complex data encryption to a recognised international standard. A programmer has started the design of the program. (a) The programmer decides to use a library routine to provide part of the solution. One reason for this is that library routines may perform functions that the programmer is unable to program themsel"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) A program contains a global 1D array of type STRING containing 65 elements. An existing text file is used to store the data in the array. Only non-blank elements (those that do not contain an empty string) are written to the text file. An algorithm will: write the first element of the array as a new line in the text file • continue until all elements h"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A program uses a stack to hold up to 30 integer values. The stack is implemented using a global integer variable and a global 1D array. The array is declared in pseudocode: DECLARE ThisStack : ARRAY[1:30] OF INTEGER Stack design notes: The global variable SP acts as a stack pointer. SP contains the array index of the last value • pushed onto the stack. If "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 A program contains a global 1D array Data containing 20 elements of type INTEGER A global string NumString represents a sequence of three-digit numbers, separated by commas. For example: \"101,456,219,754,328\" The string contains at least four three-digit numbers. The total number of three-digit numbers in the string is unknown. A procedure Store() will: ex"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 14,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A global 1D array Num of integers contains four elements. A program assigns values to these elements as shown: 1 Num[1] 2 Num[2] 5 Num[3] 3 Num[4] A procedure Process() manipulates the values in the array. The procedure is written in pseudocode: PROCEDURE Process(Start : INTEGER) DECLARE CaseVar, Index, Count : INTEGER Start Index 0 Count WHILE Count <= 20"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Students are learning about a simple check digit method for data validation. In this method, a single check digit is appended to the end of an original number to give a new number. The students are studying a method which: calculates the sum of all the digits in the original number • uses integer division to calculate the remainder when the sum is divided "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 16,
+      "pageEnd": 18,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 There are several different ways to express an algorithm during the design of a program. (a) One part of the program contains an algorithm which is represented by a state-transition diagram. The table shows the inputs, outputs and states for the algorithm: Current state Input Output Next state S1 A1 S2 S2 A2 X4 S3 S3 A1 X1 S3 S3 A2 X1 S3 S3 A3 X3 S4 S3 A4 "
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 18,
+      "pageEnd": 21,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 A program is being developed to manage student book loans from a college library. The programmer has defined a record type to define each loan. The data items are: Data item Data type Comment the unique ID of the student who has borrowed the book StudentID STRING The first three characters of a StudentID represent a tutor ID. Each student has one tutor. Bo"
+    }
+  ]
+}
+[2026-07-15T03:12:11.020Z] parserVersion=0.4.0
+[2026-07-15T03:12:11.020Z] documentRole=question_paper
+[2026-07-15T03:12:11.020Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:12:11.290Z] stage.exitCode=0
+[2026-07-15T03:12:11.290Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_23.staging.json",
+  "runId": "9618-2025-ON-23-QP-RUN-7d4f54c31626",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 20,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 19,
+        "present": 19,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-ON-23-Q2-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:12:11.293Z] stagingId=9618-2025-ON-23-QP-RUN-7d4f54c31626
+[2026-07-15T03:12:11.293Z] validationStatus=PASS
+[2026-07-15T03:12:11.293Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:12:11.293Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:12:11.293Z] canonicalPublishable=true
+[2026-07-15T03:12:11.293Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:12:11.293Z] endTime=2026-07-15T03:12:11.293Z
+[2026-07-15T03:12:11.293Z] status=PASS

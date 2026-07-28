@@ -1,0 +1,153 @@
+[2026-07-13T02:04:20.126Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_23.pdf
+[2026-07-13T02:04:20.126Z] startTime=2026-07-13T02:04:20.126Z
+[2026-07-13T02:04:20.126Z] expectedRole=question_paper
+[2026-07-13T02:04:22.306Z] extract.exitCode=0
+[2026-07-13T02:04:22.306Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_23.pdf",
+  "pageCount": 16,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify constant and identify variable that you could have used for . Give the (a) one one Task 1 value that would be assigned to the constant. Give the data type for the variable. State what each one could be used for. Constant Value Use Variable Data type Use [6] Write an algorithm to allow a customer to choose the filling and salad items for their (b) "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 freezer are within the range –18 degrees to –25 degrees inclusive. The algorithm counts the number of times that the temperature reading is below –25 degrees and the number of times that the temperature reading is above –18 degrees. An engineer is called if there are more than 10 temperature readings below –25 degrees. An alarm sounds if there are more tha"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Draw a line to connect each to its correct . Not all Descriptions Programming concept Description will be connected to a Programming concept. Programming concept Description A subroutine that does not have to Validation return a value An automatic check to ensure that data input is reasonable and sensible Verification A subroutine that always returns a val"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 calculation. The predefined function MOD finds the remainder from integer division for example 8 MOD 5 X gives a value of . X 3 START INPUT Y,Z Yes IS END Y = 0 ? No Yes IS A Y MOD Z ? Y > Z No A Z MOD Y IS Yes OUTPUT ? A = 0 \"Valid\" No OUTPUT \"Invalid\" Complete a trace table for this set of input data: (a) 11, 4, 6, 2, 3, 9, 3, 2, 2, 6, 0, 0, 1, 1 OUTPUT "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 Creature Class Quantity Ready for release Offspring Manta Ray Fish 3 Y N Short-tailed Albatross Bird 4 Y N Emperor Penguin Bird 50 Y Y Bluefin Tuna Fish 2 N N Manatee Mammal 4 Y N Hawksbill Turtle Reptile 10 Y Y Hammerhead Shark Fish 3 Y N Yellow-eyed Penguin Bird 4 Y N Kemp’s Ridley Sea Turtle Reptile 1 Y N State how many fields and how many records are s"
+    }
+  ]
+}
+[2026-07-13T02:04:22.308Z] parserVersion=0.4.0
+[2026-07-13T02:04:22.308Z] documentRole=question_paper
+[2026-07-13T02:04:22.308Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:22.685Z] stage.exitCode=0
+[2026-07-13T02:04:22.685Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_23.staging.json",
+  "runId": "0478-2020-ON-23-QP-RUN-36294944d47a",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 14,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 13,
+        "present": 13,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2020-ON-23-Q1-B-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:04:22.687Z] stagingId=0478-2020-ON-23-QP-RUN-36294944d47a
+[2026-07-13T02:04:22.687Z] validationStatus=PASS
+[2026-07-13T02:04:22.687Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:04:22.687Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:22.687Z] canonicalPublishable=true
+[2026-07-13T02:04:22.687Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:04:22.687Z] endTime=2026-07-13T02:04:22.687Z
+[2026-07-13T02:04:22.687Z] status=PASS

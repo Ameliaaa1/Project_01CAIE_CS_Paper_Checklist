@@ -1,0 +1,124 @@
+{
+  "generatedFor": "Phase-8-C",
+  "status": "PASS",
+  "title": "Parser Observability",
+  "checks": {
+    "sourceSpanRecorded": true,
+    "classificationRecorded": true,
+    "transformationRecorded": true,
+    "canonicalOutputRecorded": true,
+    "exclusionsExplainable": true,
+    "traceVersioned": true
+  },
+  "details": {
+    "title": "Parser Observability",
+    "status": "PASS",
+    "checks": {
+      "sourceSpanRecorded": true,
+      "classificationRecorded": true,
+      "transformationRecorded": true,
+      "canonicalOutputRecorded": true,
+      "exclusionsExplainable": true,
+      "traceVersioned": true
+    },
+    "sourceFixture": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_12.pdf",
+    "traces": [
+      {
+        "traceVersion": "1.0",
+        "source": {
+          "page": 1,
+          "blockIndex": 2,
+          "lineIndex": 0,
+          "spanIndex": 0,
+          "text": "Cambridge",
+          "font": "AllAndNone",
+          "size": 18,
+          "bbox": [
+            56.729896545410156,
+            104.6401596069336,
+            149.7502899169922,
+            122.6401596069336
+          ]
+        },
+        "decision": {
+          "classification": "content",
+          "includedInCanonical": true,
+          "reason": "Canonical content region admitted.",
+          "evidence": [
+            "regionType=content"
+          ]
+        },
+        "transformation": {
+          "operation": "NORMALIZE_AND_INCLUDE",
+          "input": "Cambridge",
+          "output": "Cambridge"
+        },
+        "canonicalTarget": "page.normalizedText"
+      },
+      {
+        "traceVersion": "1.0",
+        "source": {
+          "page": 1,
+          "blockIndex": 0,
+          "lineIndex": 0,
+          "spanIndex": 0,
+          "text": "* 0000800000001 *",
+          "font": "AllAndNone",
+          "size": 8,
+          "bbox": [
+            82.20472717285156,
+            19.273218154907227,
+            150.70069885253906,
+            27.273218154907227
+          ]
+        },
+        "decision": {
+          "classification": "barcode",
+          "includedInCanonical": false,
+          "reason": "barcode regions are retained for diagnostics but excluded from canonical text.",
+          "evidence": [
+            "machine-readable barcode geometry or font signal"
+          ]
+        },
+        "transformation": {
+          "operation": "EXCLUDE_FROM_CANONICAL",
+          "input": "* 0000800000001 *",
+          "output": ""
+        },
+        "canonicalTarget": null
+      },
+      {
+        "traceVersion": "1.0",
+        "source": {
+          "page": 1,
+          "blockIndex": 17,
+          "lineIndex": 1,
+          "spanIndex": 0,
+          "text": "©",
+          "font": "AllAndNone",
+          "size": 8,
+          "bbox": [
+            56.730682373046875,
+            778.781982421875,
+            61.29801495869955,
+            786.781982421875
+          ]
+        },
+        "decision": {
+          "classification": "footer",
+          "includedInCanonical": false,
+          "reason": "footer regions are retained for diagnostics but excluded from canonical text.",
+          "evidence": [
+            "footer geometry or repeated footer token"
+          ]
+        },
+        "transformation": {
+          "operation": "EXCLUDE_FROM_CANONICAL",
+          "input": "©",
+          "output": ""
+        },
+        "canonicalTarget": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "generatedFor": "PR-068-9618-2022-MJ-41-Source-Recovery-Preparation-Plan",
+  "status": "PASS",
+  "productionWrite": false,
+  "targetPair": {
+    "pairingKey": "9618-2022-MJ-41",
+    "syllabus": "9618",
+    "year": 2022,
+    "session": "M/J",
+    "sessionCode": "s22",
+    "component": "41",
+    "questionPaperFilename": "9618_s22_qp_41.pdf",
+    "markSchemeFilename": "9618_s22_ms_41.pdf",
+    "sourceDirectory": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June"
+  },
+  "acquisition": {
+    "status": "ACQUIRED",
+    "sourceType": "TRUSTED_SOURCE_WITH_VERIFIABLE_OFFICIAL_IDENTITY",
+    "sourceOrigin": "Cambridge International published document recovered through a trusted past-paper mirror",
+    "acquisitionChannel": "BEST_EXAM_HELP_TRUSTED_MIRROR",
+    "acquisitionDate": "2026-07-14",
+    "sourceUrl": "https://bestexamhelp.com/exam/cambridge-international-a-level/computer-science-9618/2022/9618_s22_ms_41.pdf",
+    "officialEvidenceUrl": "https://www.cambridgeinternational.org/Images/673626-june-2022-mark-scheme-paper-41.pdf",
+    "originalFilename": "9618_s22_ms_41.pdf",
+    "repositoryFilename": "9618_s22_ms_41.pdf",
+    "stagingGenerated": false,
+    "productionPublished": false
+  },
+  "sourceEvidence": {
+    "repositoryPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_ms_41.pdf",
+    "sha256": "203cc5900d90e14ce40e48b2d9943d762a5d2ae25c8f38c51221ed27bc8cceb6",
+    "fileSize": 308797,
+    "pageCount": 34,
+    "pdfVersion": "PDF 1.3",
+    "metadataTitle": "Microsoft Word - 9618_s22_ms_41",
+    "metadataAuthor": "whitej",
+    "metadataCreator": "PScript5.dll Version 5.2.2",
+    "metadataProducer": "Acrobat Distiller 22.0 (Windows)",
+    "metadataCreationDate": "D:20220809120332+01'00'",
+    "firstPageIdentityText": "This document consists of 34 printed pages. | © UCLES 2022 | [Turn over | Cambridge International AS & A Level | COMPUTER SCIENCE | 9618/41 | Paper 41 Computer Science | May/June 2022 | MARK SCHEME | Maximum Mark: 75 | Published | This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the | examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the | details of the discussions that took place at an Examiners’ meeting before marking began, which would have | considered the acceptability of alternative answers. | Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for | Teachers. | Cambridge International will not enter into discussions about these mark schemes. | Cambridge International is publishing the mark schemes for the May/June 2022 series for most | Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some | Cambridge O Level components.",
+    "visualVerification": "PASS",
+    "visualVerificationMethod": "Poppler page-1 render inspected at 1241x1755; no mirror watermark or layout corruption observed"
+  },
+  "identityVerification": {
+    "status": "PASS",
+    "syllabus": {
+      "expected": "9618",
+      "actual": "9618",
+      "matches": true
+    },
+    "component": {
+      "expected": "41",
+      "actual": "41",
+      "matches": true
+    },
+    "sessionCode": {
+      "expected": "s22",
+      "actual": "s22",
+      "matches": true
+    },
+    "year": {
+      "expected": 2022,
+      "actual": 2022,
+      "matches": true
+    },
+    "session": {
+      "expected": "M/J",
+      "actual": "M/J",
+      "matches": true
+    },
+    "documentRole": {
+      "expected": "MARK_SCHEME",
+      "actual": "MARK_SCHEME",
+      "matches": true
+    },
+    "maximumMark": {
+      "expected": 75,
+      "actual": 75,
+      "matches": true
+    },
+    "printedPages": {
+      "expected": 34,
+      "actual": 34,
+      "matches": true
+    },
+    "unrelatedSubstituteUsed": false
+  },
+  "integrityVerification": {
+    "status": "PASS",
+    "fileExists": true,
+    "fileReadable": true,
+    "isPdf": true,
+    "nonEmpty": true,
+    "opensSuccessfully": true,
+    "pageCountPositive": true,
+    "sha256MatchesAcquiredArtifact": true
+  },
+  "sourceChanges": {
+    "added": [
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_ms_41.pdf"
+    ],
+    "modified": [],
+    "deleted": [],
+    "unrelatedSourceAssetsUnchanged": true,
+    "onlyIntendedSourceAssetChanged": true
+  },
+  "sourceAssetFingerprints": {
+    "before": "1fc4965a3c1d44b4325098c1eb762cebdda836acbe05fe455ac5988f1d0905f2",
+    "afterExcludingRecoveredFile": "1fc4965a3c1d44b4325098c1eb762cebdda836acbe05fe455ac5988f1d0905f2",
+    "afterIncludingRecoveredFile": "fcc9e4ce43ff2be065a1cddcb0992d3814f744d4ca6b3c88dd919041828b852a"
+  },
+  "inventoryBefore": {
+    "totalPdfFiles": 266,
+    "sourcePairs": 118,
+    "completeSourcePairs": 117,
+    "incompleteSourcePairs": 1,
+    "missingMsFiles": [
+      "9618-2022-MJ-41"
+    ]
+  },
+  "inventoryAfter": {
+    "totalPdfFiles": 267,
+    "sourcePairs": 118,
+    "completeSourcePairs": 118,
+    "incompleteSourcePairs": 0,
+    "missingQpFiles": [],
+    "missingMsFiles": [],
+    "orphanQpFiles": [],
+    "orphanMsFiles": []
+  },
+  "targetStateAfter": {
+    "sourcePairStatus": "COMPLETE",
+    "stagingStatus": "STAGING_MISSING",
+    "coverageStatus": "MISSING_STAGING",
+    "productionWrite": false
+  },
+  "remainingIncompleteSources": [],
+  "duplicateSources": [
+    {
+      "pairingKey": "9618-2021-ON-41",
+      "qpFiles": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_41.pdf"
+      ],
+      "msFiles": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_ms_41.pdf",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_w21_ms_41.pdf"
+      ]
+    }
+  ],
+  "integrity": {
+    "production": {
+      "method": "SHA256_CONTENT",
+      "baseline": "09fe6bf2a7bd501efcbe4f15265b38919b2a607cca684121a568d4be3c87d517",
+      "before": "09fe6bf2a7bd501efcbe4f15265b38919b2a607cca684121a568d4be3c87d517",
+      "after": "09fe6bf2a7bd501efcbe4f15265b38919b2a607cca684121a568d4be3c87d517",
+      "unchanged": true
+    },
+    "staging": {
+      "method": "SHA256_TREE_CONTENT",
+      "baseline": "f92f7b632a3f5255bef276545445041e370e926b895a30244a7f0a465b4a4aaa",
+      "before": "f92f7b632a3f5255bef276545445041e370e926b895a30244a7f0a465b4a4aaa",
+      "after": "f92f7b632a3f5255bef276545445041e370e926b895a30244a7f0a465b4a4aaa",
+      "unchanged": true
+    },
+    "parser": {
+      "method": "SHA256_TREE_CONTENT",
+      "baseline": "395539419d86b2f03bdf19906234708e0bc95149ac7749a57406b5083220c7f1",
+      "before": "395539419d86b2f03bdf19906234708e0bc95149ac7749a57406b5083220c7f1",
+      "after": "395539419d86b2f03bdf19906234708e0bc95149ac7749a57406b5083220c7f1",
+      "unchanged": true
+    },
+    "canonical": {
+      "method": "SHA256_CONTENT",
+      "baseline": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "before": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "after": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "unchanged": true
+    }
+  },
+  "stableModules": {
+    "questionSplitModified": false,
+    "stableQuestionIdModified": false,
+    "parentLeafModelModified": false,
+    "marksValidationModified": false,
+    "textQualityPipelineModified": false,
+    "responseAreaPipelineModified": false,
+    "documentRoleRouterModified": false,
+    "questionPaperPipelineModified": false,
+    "markSchemePipelineModified": false,
+    "pairingLogicModified": false,
+    "stagingPipelineModified": false,
+    "productionLogicModified": false
+  },
+  "regression": {
+    "pr066": "PASS",
+    "pr067": "PASS",
+    "phase1": "PASS (20/20)",
+    "phase2": "PASS (120/120)",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "next": {
+    "proposedPr": "PR-069",
+    "decision": "9618-2022-MJ-41 Staging Generation and Validation",
+    "pairingKeys": [
+      "9618-2022-MJ-41"
+    ],
+    "productionWrite": false,
+    "generateStaging": true,
+    "publishProduction": false
+  }
+}

@@ -1,0 +1,185 @@
+[2026-07-14T16:56:44.909Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_13.pdf
+[2026-07-14T16:56:44.909Z] startTime=2026-07-14T16:56:44.909Z
+[2026-07-14T16:56:44.909Z] expectedRole=question_paper
+[2026-07-14T16:56:47.422Z] extract.exitCode=0
+[2026-07-14T16:56:47.422Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_13.pdf",
+  "pageCount": 16,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) Complete the following description. A kibibyte has a prefix. Three kibibytes is the same as bytes. A megabyte has a prefix. Two terabytes is the same as gigabytes. [4] (b) Convert the denary number 241 to hexadecimal. [1] (c) State what is meant by an overflow in binary addition . [1] (d) Computers use character sets when representing characters in bin"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A photograph is stored as a bitmap image. (a) The photograph has a resolution of 4000 pixels wide by 3000 pixels high. The bit depth is 4 bytes. Calculate an estimate for the file size of the photograph in megabytes. Show your working. Working Answer megabytes [2] (b) The photograph is compressed before being uploaded to a web server. (i) Give three benefi"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 7,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The following table shows part of the instruction set for a processor. The processor has two registers: the Accumulator (ACC) and an Index Register (IX) . Instruction Explanation Opcode Operand Immediate addressing. Load the number n to ACC LDM #n Direct addressing. Load the contents of the location at the given LDD <address> address to ACC Indirect addres"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A theatre wants to use a database to store data about the shows that are scheduled, their customers and the seats that the customers have booked. In the theatre: Each show can take place on multiple dates. • Some dates can have more than one performance. • There are multiple rows of seats. • Each seat can be individually booked by its row letter and seat n"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A multimedia design company has an office with a LAN (local area network). The LAN can have up to 20 devices connected with cables and other devices connected using wireless access. (a) The company has private cloud storage for its employees to store their work. (i) Define the term private cloud . [1] (ii) Describe the benefits to the company of using priv"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Each of the following truth tables has three inputs ( A B and C ) and one output ( X ). Draw one line to match each truth table with its logic expression. Truth table Logic expression A B C X 0 0 0 0 NOT ( A XOR B ) AND C 0 0 1 1 0 1 0 0 0 1 1 0 1 0 0 1 1 0 1 1 1 1 0 0 ( A OR C ) AND NOT B 1 1 1 0 A B C X 0 0 0 0 0 0 1 1 0 1 0 0 A NAND B NAND C 0 1 1 0 1 0"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 13,
+      "pageEnd": 16,
+      "marks": 22,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 Robots are used to serve food and drink to customers at a restaurant. (a) A robot navigates through the restaurant to the table it is serving. Complete the table by identifying two sensors that can be included in the robot and the purpose of each sensor in the navigation system. Sensor Purpose of sensor in navigation system [2] (b) The robot uses Artificia"
+    }
+  ]
+}
+[2026-07-14T16:56:47.425Z] parserVersion=0.4.0
+[2026-07-14T16:56:47.425Z] documentRole=question_paper
+[2026-07-14T16:56:47.425Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:56:47.820Z] stage.exitCode=0
+[2026-07-14T16:56:47.820Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_13.staging.json",
+  "runId": "9618-2024-MJ-13-QP-RUN-79f3dbe24332",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 30,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 29,
+        "present": 29,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-MJ-13-Q4-C",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:56:47.824Z] stagingId=9618-2024-MJ-13-QP-RUN-79f3dbe24332
+[2026-07-14T16:56:47.824Z] validationStatus=PASS
+[2026-07-14T16:56:47.824Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:56:47.824Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:56:47.824Z] canonicalPublishable=true
+[2026-07-14T16:56:47.824Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:56:47.824Z] endTime=2026-07-14T16:56:47.824Z
+[2026-07-14T16:56:47.824Z] status=PASS

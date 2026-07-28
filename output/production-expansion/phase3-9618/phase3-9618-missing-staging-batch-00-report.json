@@ -1,0 +1,276 @@
+{
+  "generatedFor": "Phase-3-9618-Missing-Staging-Expansion-by-Batch-Plan",
+  "status": "PASS",
+  "phaseId": "Phase 3",
+  "batchId": "PHASE3-9618-BATCH-00",
+  "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-00-report.json",
+  "scope": {
+    "syllabus": "9618",
+    "year": 2021,
+    "session": "O/N",
+    "pairCount": 1,
+    "pairingKeys": [
+      "9618-2021-ON-42"
+    ]
+  },
+  "pairingKeys": [
+    "9618-2021-ON-42"
+  ],
+  "sourcePreconditions": [
+    {
+      "pairingKey": "9618-2021-ON-42",
+      "sourcePairStatus": "COMPLETE",
+      "qpExists": true,
+      "msExists": true,
+      "status": "PASS"
+    }
+  ],
+  "stagingGeneration": {
+    "status": "PASS",
+    "manifestPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/docs/phase3-9618-manifests/phase3-batch-00.json",
+    "rawReportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-batch-00-generation-report.json",
+    "totalFiles": 2,
+    "successCount": 2,
+    "failedCount": 0
+  },
+  "pairResults": [
+    {
+      "pairingKey": "9618-2021-ON-42",
+      "component": "42",
+      "classification": "STRICT_ELIGIBLE",
+      "sourcePairStatus": "COMPLETE",
+      "stagingPairComplete": true,
+      "sourceTraceAvailable": true,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null
+    }
+  ],
+  "classifications": {
+    "STRICT_ELIGIBLE": 1,
+    "BLOCKED": 0,
+    "NEEDS_INVESTIGATION": 0
+  },
+  "strictEligiblePairs": [
+    "9618-2021-ON-42"
+  ],
+  "blockedPairs": [],
+  "needsInvestigationPairs": [],
+  "productionPreflight": [
+    {
+      "pairingKey": "9618-2021-ON-42",
+      "qpExists": false,
+      "msExists": false,
+      "pairingExists": false,
+      "alreadyPublished": false,
+      "partialProductionConflict": false,
+      "status": "PASS"
+    }
+  ],
+  "expectedDeltas": {
+    "papers": 2,
+    "questionRecords": 23,
+    "topLevelQuestions": 3,
+    "leafQuestions": 20,
+    "responseAreas": 21,
+    "markSchemeEntries": 33,
+    "pairings": 1,
+    "batches": 1,
+    "expansionBatches": 1
+  },
+  "actualDeltas": {
+    "papers": 2,
+    "questionRecords": 23,
+    "topLevelQuestions": 3,
+    "leafQuestions": 20,
+    "responseAreas": 21,
+    "markSchemeEntries": 33,
+    "pairings": 1,
+    "batches": 1,
+    "expansionBatches": 1
+  },
+  "deltasMatch": true,
+  "publication": {
+    "productionWrite": true,
+    "status": "PASS",
+    "rawReportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-batch-00-publication-raw-report.json"
+  },
+  "pairVerification": [
+    {
+      "component": "42",
+      "childBatchId": "PR070-9618-2021-ON-PHASE3-BATCH0-42",
+      "status": "PASS",
+      "verification": {
+        "status": "PASS",
+        "counts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 20,
+          "responseAreaCount": 21,
+          "markSchemeEntryCount": 33
+        },
+        "expectedCounts": {
+          "paperCount": 2,
+          "questionCount": 3,
+          "leafQuestionCount": 20,
+          "responseAreaCount": 21,
+          "markSchemeEntryCount": 33
+        },
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "frontendVerification": {
+        "questionFinder": "PASS",
+        "knowledgeChecklist": "PASS",
+        "markSchemeSearch": "PASS",
+        "aiRetrieval": "PASS",
+        "openOriginalQuestion": "PASS",
+        "qpMsCorrespondence": "PASS"
+      }
+    }
+  ],
+  "frontendVerification": {
+    "questionFinder": "PASS",
+    "knowledgeChecklist": "PASS",
+    "markSchemeSearch": "PASS",
+    "aiRetrieval": "PASS",
+    "openOriginalQuestion": "PASS",
+    "qpMsCorrespondence": "PASS"
+  },
+  "stagingChanges": {
+    "added": [
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_ms_42.staging.json",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_42.staging.json"
+    ],
+    "modified": [],
+    "deleted": [],
+    "unrelatedChanges": [],
+    "unrelatedStagingArtifactsUnchanged": true
+  },
+  "integrity": {
+    "productionHashChanged": true,
+    "existingRecordsUnchanged": true,
+    "existingRecordChanges": {
+      "batches": 0,
+      "papers": 0,
+      "questions": 0,
+      "responseAreas": 0,
+      "markSchemeEntries": 0,
+      "pairings": 0,
+      "expansionBatches": 0
+    },
+    "sourceAssets": {
+      "beforeSha256": "69fda241de5be51e4061a90decba4d15d9a19e6e85d0c24d5aa5a7d02c10937d",
+      "afterSha256": "69fda241de5be51e4061a90decba4d15d9a19e6e85d0c24d5aa5a7d02c10937d",
+      "unchanged": true
+    },
+    "parser": {
+      "beforeSha256": "29c5cf22b904a40e4160a391d60f00dec84148822110f321f1d46b5c855efae9",
+      "afterSha256": "29c5cf22b904a40e4160a391d60f00dec84148822110f321f1d46b5c855efae9",
+      "unchanged": true
+    },
+    "canonical": {
+      "beforeSha256": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "afterSha256": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "unchanged": true
+    }
+  },
+  "productionState": {
+    "papers": 102,
+    "questionRecords": 1497,
+    "topLevelQuestions": 381,
+    "leafQuestions": 1182,
+    "responseAreas": 5654,
+    "markSchemeEntries": 920,
+    "pairings": 51,
+    "batches": 51,
+    "expansionBatches": 25
+  },
+  "coverageBefore": {
+    "sourcePairs": 118,
+    "completeSourcePairs": 118,
+    "stagingPairs": 26,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 92,
+    "publishedPairs": 26,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 92,
+    "blockedPairs": 0,
+    "incompleteSourcePairs": 0,
+    "partialProductionConflicts": 0
+  },
+  "coverageAfter": {
+    "sourcePairs": 118,
+    "completeSourcePairs": 118,
+    "stagingPairs": 27,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 91,
+    "publishedPairs": 27,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 91,
+    "blockedPairs": 0,
+    "incompleteSourcePairs": 0,
+    "partialProductionConflicts": 0
+  },
+  "stableModules": {
+    "questionSplitModified": false,
+    "stableQuestionIdModified": false,
+    "parentLeafModelModified": false,
+    "marksValidationModified": false,
+    "binaryOperandPreservationModified": false,
+    "negativeNumberPreservationModified": false,
+    "textQualityPipelineModified": false,
+    "responseAreaPipelineModified": false,
+    "documentRoleRouterModified": false,
+    "questionPaperPipelineModified": false,
+    "markSchemePipelineModified": false,
+    "pairingLogicModified": false
+  },
+  "regression": {
+    "phase1ProductionPlan": "PASS",
+    "phase2CleanupPlan": "PASS",
+    "phase1": "PASS (20/20)",
+    "phase2": "PASS (120/120)",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS",
+    "legalMultiplicationResolutionContexts": "PASS",
+    "otherSuspiciousGlyphsRemainDetected": "PASS",
+    "linkedListNullPointerContext": "PASS",
+    "unrelatedNullPointerGlyphRemainsSuspicious": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "next": {
+    "decision": "Phase 3 Batch 1",
+    "productionWrite": false
+  }
+}

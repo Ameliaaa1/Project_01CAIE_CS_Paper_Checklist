@@ -1,0 +1,1234 @@
+{
+  "generatedFor": "PR-033_0478_Multi_Year_Expansion_Preparation_Plan",
+  "syllabus": "0478",
+  "years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "session": "M/J",
+  "productionWrite": false,
+  "summary": {
+    "expectedPairs": 24,
+    "availablePairs": 24,
+    "stagingPairs": 24,
+    "eligiblePairs": 0,
+    "alreadyPublishedPairs": 24,
+    "blockedPairs": 0,
+    "missingStagingPairs": 0
+  },
+  "coverageMatrix": [
+    {
+      "syllabus": "0478",
+      "year": 2020,
+      "session": "M/J",
+      "component": "11",
+      "pairingKey": "0478-2020-MJ-11",
+      "qpId": "0478-2020-MJ-11-QP",
+      "msId": "0478-2020-MJ-11-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_11.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_11.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_11.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_ms_11.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2020,
+      "session": "M/J",
+      "component": "12",
+      "pairingKey": "0478-2020-MJ-12",
+      "qpId": "0478-2020-MJ-12-QP",
+      "msId": "0478-2020-MJ-12-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_12.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_12.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_12.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_ms_12.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2020,
+      "session": "M/J",
+      "component": "13",
+      "pairingKey": "0478-2020-MJ-13",
+      "qpId": "0478-2020-MJ-13-QP",
+      "msId": "0478-2020-MJ-13-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_13.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_13.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_13.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_ms_13.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2020,
+      "session": "M/J",
+      "component": "21",
+      "pairingKey": "0478-2020-MJ-21",
+      "qpId": "0478-2020-MJ-21-QP",
+      "msId": "0478-2020-MJ-21-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_21.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_21.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_21.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_ms_21.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2020,
+      "session": "M/J",
+      "component": "22",
+      "pairingKey": "0478-2020-MJ-22",
+      "qpId": "0478-2020-MJ-22-QP",
+      "msId": "0478-2020-MJ-22-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_22.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_22.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_22.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_ms_22.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2020,
+      "session": "M/J",
+      "component": "23",
+      "pairingKey": "0478-2020-MJ-23",
+      "qpId": "0478-2020-MJ-23-QP",
+      "msId": "0478-2020-MJ-23-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_23.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_23.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_ms_23.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_ms_23.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2021,
+      "session": "M/J",
+      "component": "11",
+      "pairingKey": "0478-2021-MJ-11",
+      "qpId": "0478-2021-MJ-11-QP",
+      "msId": "0478-2021-MJ-11-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_11.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_11.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_11.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_ms_11.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2021,
+      "session": "M/J",
+      "component": "12",
+      "pairingKey": "0478-2021-MJ-12",
+      "qpId": "0478-2021-MJ-12-QP",
+      "msId": "0478-2021-MJ-12-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_12.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_12.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_12.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_ms_12.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2021,
+      "session": "M/J",
+      "component": "13",
+      "pairingKey": "0478-2021-MJ-13",
+      "qpId": "0478-2021-MJ-13-QP",
+      "msId": "0478-2021-MJ-13-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_13.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_13.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_13.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_ms_13.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2021,
+      "session": "M/J",
+      "component": "21",
+      "pairingKey": "0478-2021-MJ-21",
+      "qpId": "0478-2021-MJ-21-QP",
+      "msId": "0478-2021-MJ-21-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_21.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_21.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_21.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_ms_21.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2021,
+      "session": "M/J",
+      "component": "22",
+      "pairingKey": "0478-2021-MJ-22",
+      "qpId": "0478-2021-MJ-22-QP",
+      "msId": "0478-2021-MJ-22-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_22.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_22.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_22.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_ms_22.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2021,
+      "session": "M/J",
+      "component": "23",
+      "pairingKey": "0478-2021-MJ-23",
+      "qpId": "0478-2021-MJ-23-QP",
+      "msId": "0478-2021-MJ-23-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_23.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_23.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_ms_23.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_ms_23.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2022,
+      "session": "M/J",
+      "component": "11",
+      "pairingKey": "0478-2022-MJ-11",
+      "qpId": "0478-2022-MJ-11-QP",
+      "msId": "0478-2022-MJ-11-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_11.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_11.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_11.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_ms_11.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2022,
+      "session": "M/J",
+      "component": "12",
+      "pairingKey": "0478-2022-MJ-12",
+      "qpId": "0478-2022-MJ-12-QP",
+      "msId": "0478-2022-MJ-12-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_12.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_12.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_12.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_ms_12.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2022,
+      "session": "M/J",
+      "component": "13",
+      "pairingKey": "0478-2022-MJ-13",
+      "qpId": "0478-2022-MJ-13-QP",
+      "msId": "0478-2022-MJ-13-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_13.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_13.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_13.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_ms_13.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2022,
+      "session": "M/J",
+      "component": "21",
+      "pairingKey": "0478-2022-MJ-21",
+      "qpId": "0478-2022-MJ-21-QP",
+      "msId": "0478-2022-MJ-21-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_21.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_21.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_21.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_ms_21.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2022,
+      "session": "M/J",
+      "component": "22",
+      "pairingKey": "0478-2022-MJ-22",
+      "qpId": "0478-2022-MJ-22-QP",
+      "msId": "0478-2022-MJ-22-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_22.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_22.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_22.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_ms_22.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2022,
+      "session": "M/J",
+      "component": "23",
+      "pairingKey": "0478-2022-MJ-23",
+      "qpId": "0478-2022-MJ-23-QP",
+      "msId": "0478-2022-MJ-23-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_qp_23.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_qp_23.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-May-June/0478_s22_ms_23.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s22_ms_23.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2023,
+      "session": "M/J",
+      "component": "11",
+      "pairingKey": "0478-2023-MJ-11",
+      "qpId": "0478-2023-MJ-11-QP",
+      "msId": "0478-2023-MJ-11-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_11.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_11.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_11.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_11.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2023,
+      "session": "M/J",
+      "component": "12",
+      "pairingKey": "0478-2023-MJ-12",
+      "qpId": "0478-2023-MJ-12-QP",
+      "msId": "0478-2023-MJ-12-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_12.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_12.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_12.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_12.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2023,
+      "session": "M/J",
+      "component": "13",
+      "pairingKey": "0478-2023-MJ-13",
+      "qpId": "0478-2023-MJ-13-QP",
+      "msId": "0478-2023-MJ-13-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_13.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_13.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_13.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_13.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2023,
+      "session": "M/J",
+      "component": "21",
+      "pairingKey": "0478-2023-MJ-21",
+      "qpId": "0478-2023-MJ-21-QP",
+      "msId": "0478-2023-MJ-21-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_21.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_21.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_21.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_21.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2023,
+      "session": "M/J",
+      "component": "22",
+      "pairingKey": "0478-2023-MJ-22",
+      "qpId": "0478-2023-MJ-22-QP",
+      "msId": "0478-2023-MJ-22-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_22.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_22.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_22.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_22.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    },
+    {
+      "syllabus": "0478",
+      "year": 2023,
+      "session": "M/J",
+      "component": "23",
+      "pairingKey": "0478-2023-MJ-23",
+      "qpId": "0478-2023-MJ-23-QP",
+      "msId": "0478-2023-MJ-23-MS",
+      "status": "ALREADY_PUBLISHED",
+      "publishEligibility": "NO",
+      "qp": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_23.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_23.staging.json",
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "ms": {
+        "pdfAvailable": true,
+        "pdfPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_ms_23.pdf",
+        "stagingAvailable": true,
+        "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_23.staging.json",
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "completenessChecks": {
+          "questionCoverage": "PASS",
+          "leafCoverage": "PASS",
+          "markCoverage": "PASS",
+          "responseAreaCoverage": "PASS",
+          "sourceTraceCoverage": "PASS",
+          "canonicalStructureCompleteness": "PASS"
+        },
+        "publishStatus": "READY_TO_PUBLISH",
+        "blockers": []
+      },
+      "blockers": []
+    }
+  ],
+  "missingArtifacts": [],
+  "expansionCandidates": [],
+  "recommendedBatch": {
+    "batchId": null,
+    "rationale": "No eligible unpublished candidates.",
+    "year": null,
+    "components": [],
+    "pairCount": 0,
+    "pairingKeys": [],
+    "productionWrite": false
+  }
+}

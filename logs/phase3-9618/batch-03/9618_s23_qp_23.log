@@ -1,0 +1,217 @@
+[2026-07-14T16:53:41.094Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_23.pdf
+[2026-07-14T16:53:41.094Z] startTime=2026-07-14T16:53:41.093Z
+[2026-07-14T16:53:41.094Z] expectedRole=question_paper
+[2026-07-14T16:53:43.693Z] extract.exitCode=0
+[2026-07-14T16:53:43.693Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_23.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Line numbers are for reference only. 10 DECLARE Sheet4 : ARRAY[1:2, 1:50] OF INTEGER … 100 FOR PCount 0 TO 49 0 101 Sheet4[1, PCount] 47 102 Sheet4[2, PCount] 103 NEXT PCount The pseudocode contains references to an array. (a) Complete the table by writing the answer for each row. Answer The dimension of the array The name of the variable used as an array "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 MyDOB DATE has been assigned a valid value corresponding to Kevin’s date of birth. (a) MyDOB Complete the pseudocode statement to test whether Kevin was born on a Thursday. [2] IF THEN A function will take three integer parameters representing a day, month and (b) CheckDate() year of a given date. The function will validate the date of birth for a student "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The following diagram shows the current state of the stack. (a) The operation of this stack may be summarised as follows: The pointer points to the last item added to the stack. • TopOfStack The pointer points to the first item on the stack. • BottomOfStack The stack grows upwards when items are added. • Stack Pointer Memory location Value 506 505 WWW TopO"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 MakeString() 1 take two parameters: . a count as an integer • a character • 2 generate a string of length equal to the count, made up of the character . 3 return the string generated, or return if the count is less than 1. . \"ERROR\" For example, the function call: will return the string MakeString(3, 'Z') \"ZZZ\" Write pseudocode for function . MakeString() "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 The program will be tested using the walkthrough method. (a) Additional information will be needed before this method can be used. Identify this additional information explain why it is needed. and Additional information Explanation [3] Testing is completed and the program is made available to users. (b) Some time later, changes are made to the program to "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Select() 1. take two integer values as parameters representing start and end values where both values are greater than 9 and the end value is greater than the start value 2. output integer value between the start and the end value ( including the start and each not end values), where the sum of the last two digits is 6, for example, 142. Write pseudocode f"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Information relating to students and books is stored in text files. Student information includes name, home address, email address, date of birth, tutor and subject choices. Book information includes author, title, subject category, library location and the date that the book was borrowed. A program helps the staff to manage the borrowing of books. A new m"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 14,
+      "pageEnd": 18,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 file contains information about each item. Stock.txt Information for each item is stored as a single line in the file in the format: Stock.txt <ItemNum><SupplierCode><Description> Item information is as follows: Format Comment unique number for each item in the range “0001” 4 numeric characters ItemNum to “5999” inclusive 3 alphabetic characters code to id"
+    }
+  ]
+}
+[2026-07-14T16:53:43.696Z] parserVersion=0.4.0
+[2026-07-14T16:53:43.696Z] documentRole=question_paper
+[2026-07-14T16:53:43.696Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:53:44.068Z] stage.exitCode=0
+[2026-07-14T16:53:44.068Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_23.staging.json",
+  "runId": "9618-2023-MJ-23-QP-RUN-138f8a69b146",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 25,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 22,
+        "present": 22,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-MJ-23-Q1-A",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-MJ-23-Q1-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-MJ-23-Q8-C",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:53:44.072Z] stagingId=9618-2023-MJ-23-QP-RUN-138f8a69b146
+[2026-07-14T16:53:44.072Z] validationStatus=PASS
+[2026-07-14T16:53:44.072Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:53:44.072Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:53:44.072Z] canonicalPublishable=true
+[2026-07-14T16:53:44.072Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:53:44.072Z] endTime=2026-07-14T16:53:44.072Z
+[2026-07-14T16:53:44.072Z] status=PASS

@@ -1,0 +1,240 @@
+[2026-07-15T03:11:56.919Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf
+[2026-07-15T03:11:56.919Z] startTime=2026-07-15T03:11:56.919Z
+[2026-07-15T03:11:56.919Z] expectedRole=question_paper
+[2026-07-15T03:11:58.596Z] extract.exitCode=0
+[2026-07-15T03:11:58.596Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_31.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_31.pdf",
+  "pageCount": 16,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Numbers are stored in a computer using binary floating-point representation with: 10 bits for the mantissa • 6 bits for the exponent • two’s complement form for both the mantissa and the exponent. • (a) Calculate the normalised binary floating-point representation of +201.125 in this system. Show your working. Mantissa Exponent Working [3] (b) Calculate th"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "2 Reduced Instruction Set Computers (RISC) is a type of processor. Identify four features of a RISC processor. 1 2 3 4 [4]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) Describe circuit switching as a method of data transmission. [3] (b) State one benefit and one drawback of circuit switching as a method of data transmission. Benefit Drawback [2]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 The TCP/IP protocol may be viewed as a stack that contains four layers: Application, Transport, Internet, Link. Describe how the layers of the TCP/IP protocol stack interact with each other. [4]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 (a) Explain what is meant by a hashing algorithm in the context of file access. [3] (b) The use of a hashing algorithm can result in the same storage location being identified for more than one record. Outline two methods of overcoming this issue. 1 2 [2]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 (a) Describe the user-defined data type set. [3] (b) Write pseudocode statements to declare the set data type, SymbolSet, to hold the following set of mathematical operators, using the variable Operators. + – * / ^ [4]"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The truth table for a logic circuit is shown. INPUT OUTPUT A B C D T 0 0 0 0 0 0 0 0 1 1 0 0 1 0 0 0 0 1 1 1 0 1 0 0 0 0 1 0 1 0 0 1 1 0 0 0 1 1 1 0 1 0 0 0 0 1 0 0 1 1 1 0 1 0 0 1 0 1 1 1 1 1 0 0 0 1 1 0 1 1 1 1 1 0 0 1 1 1 1 1 (a) Write the Boolean logic expression that corresponds to the given truth table as the sum-of-products. T = [3] (b) Complete the"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "8 (a) Describe the process of segmentation for memory management. [4] (b) Explain what is meant by disk thrashing. [3]"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 A veterinary surgery wants to create a class for individual pets. Some of the attributes required in the class are listed in the table. Attribute Data type Description PetID STRING unique ID assigned at registration PetType STRING type of pet assigned at registration telephone number of owner assigned at OwnerTelephone STRING registration DateRegistered DA"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 Several syntax diagrams are shown. letter operator A + E – I * O / digit U 0 Y 1 symbol 2 # 3 $ 4 ? 5 & 6 @ 7 8 9 label digit digit letter equation operator = (a) Complete the Backus-Naur Form (BNF) for the given syntax diagrams. <operator> ::= <label> ::= <equation> ::= [4] (b) A new syntax rule, password, is required. It must begin with a letter or a sy"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "11 The following diagram shows an ordered binary tree. Red Green Yellow Blue Orange Violet Indigo (a) A linked list of nodes is used to store the data. Each node consists of a left pointer, the data and a right pointer. –1 is used to represent a null pointer. Complete this linked list to represent the given binary tree. RootPtr LeftPtr Data RightPtr Red Gree"
+    }
+  ]
+}
+[2026-07-15T03:11:58.598Z] parserVersion=0.4.0
+[2026-07-15T03:11:58.598Z] documentRole=question_paper
+[2026-07-15T03:11:58.598Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:11:58.859Z] stage.exitCode=0
+[2026-07-15T03:11:58.859Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_31.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_31.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_31.staging.json",
+  "runId": "9618-2024-ON-31-QP-RUN-2679dc897568",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_31.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 25,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 25,
+        "present": 25,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:11:58.861Z] stagingId=9618-2024-ON-31-QP-RUN-2679dc897568
+[2026-07-15T03:11:58.861Z] validationStatus=PASS
+[2026-07-15T03:11:58.861Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:11:58.861Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:11:58.861Z] canonicalPublishable=true
+[2026-07-15T03:11:58.861Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:11:58.861Z] endTime=2026-07-15T03:11:58.861Z
+[2026-07-15T03:11:58.861Z] status=PASS

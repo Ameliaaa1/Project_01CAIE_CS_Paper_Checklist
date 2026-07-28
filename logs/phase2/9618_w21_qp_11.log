@@ -1,0 +1,201 @@
+[2026-07-13T02:05:44.580Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_11.pdf
+[2026-07-13T02:05:44.580Z] startTime=2026-07-13T02:05:44.580Z
+[2026-07-13T02:05:44.580Z] expectedRole=question_paper
+[2026-07-13T02:05:47.417Z] extract.exitCode=0
+[2026-07-13T02:05:47.417Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w21_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_11.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) one Binary value 1 kibibyte 8 bits 1 gigabyte 8000 bits 1 byte 1000 kilobytes 1 kilobyte 1024 mebibytes 1 gibibyte 8192 bits 1 megabyte 1 mebibyte [5] Perform the following binary addition. Show your working. (b) (i) 10101010 + 00110111 [2] State how an overflow can occur when adding two binary integers. (ii) [1] Convert the hexadecimal value F0 into d"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Explain the difference between data security and data integrity. (a) [2] Xanthe uses both data validation and data verification when entering data on her computer. (b) Describe how data validation helps to protect the integrity of the data. Give an example (i) in your answer. Description Example [2] Describe how data verification helps to protect the integ"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A B X C Write the logic expression for the logic circuit. (a) [3] Complete the truth table for the given logic circuit. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [2] Identify logic gate used in the given logic circuit. Draw the symbol for the logic gate (c) one not complete its truth table. and : ……………………………… Logic gate : Symbol : Truth t"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Francis has been advised to join a professional ethical body. (a) Describe the benefits to Francis of joining a professional ethical body. [3] Francis is shown the software he will be working on. He is unfamiliar with the Integrated (b) Development Environment (IDE) he is required to use. Describe the ways in which Francis can act ethically in this situati"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 11,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 one or more shops. He uses the relational database to store the data about his business. CARS Part of the database is shown: SHOP(ShopID, ManagerID, Address, Town, TelephoneNumber) MANAGER(ManagerID, FirstName, LastName, DateOfBirth, Wage) CAR(RegistrationNumber, Make, Model, NumberOfMiles, ShopID) Tick ( ) box in each row to identify whether each field is"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 11,
+      "pageEnd": 14,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 (a) two [PC] 1 MAR [PC] − 1 2 PC [MAR] 3 MDR [MDR] 4 CIR Complete the following table by: identifying the line number of each error • describing the error • writing the correct statement. • Line Description of the error Correct statement number [4] The following table shows part of the instruction set for a processor. The processor has one (b) general purp"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 He repeats the recording of the sound several times, with a different sample rate each time. (a) Describe the reasons why the sound is closer to the original when a higher sample rate (i) is used. [2] Describe the reasons why the sound file size increases when a higher sample rate is (ii) used. [2] Bobby wants to email the sound file to his school email ad"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 15,
+      "pageEnd": 15,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 State whether the network will be a LAN (local area network) or a WAN (wide area network). (a) Justify your choice. [3] One classroom in the building has 30 computers. The computers need to be connected to the (b) network. Each computer has a network interface card (NIC). Identify possible devices that can be used to physically connect the 30 computers to "
+    }
+  ]
+}
+[2026-07-13T02:05:47.420Z] parserVersion=0.4.0
+[2026-07-13T02:05:47.420Z] documentRole=question_paper
+[2026-07-13T02:05:47.420Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:05:47.911Z] stage.exitCode=0
+[2026-07-13T02:05:47.911Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w21_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_11.staging.json",
+  "runId": "9618-2021-ON-11-QP-RUN-69922d70a5e1",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 29,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 28,
+        "present": 28,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2021-ON-11-Q6-A",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:05:47.914Z] stagingId=9618-2021-ON-11-QP-RUN-69922d70a5e1
+[2026-07-13T02:05:47.914Z] validationStatus=PASS
+[2026-07-13T02:05:47.914Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:05:47.914Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:05:47.914Z] canonicalPublishable=true
+[2026-07-13T02:05:47.914Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:05:47.914Z] endTime=2026-07-13T02:05:47.914Z
+[2026-07-13T02:05:47.914Z] status=PASS

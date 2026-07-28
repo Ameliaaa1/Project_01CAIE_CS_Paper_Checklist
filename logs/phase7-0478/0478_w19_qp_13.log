@@ -1,0 +1,192 @@
+[2026-07-15T03:52:24.711Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_13.pdf
+[2026-07-15T03:52:24.711Z] startTime=2026-07-15T03:52:24.711Z
+[2026-07-15T03:52:24.711Z] expectedRole=question_paper
+[2026-07-15T03:52:26.012Z] extract.exitCode=0
+[2026-07-15T03:52:26.012Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w19_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_13.pdf",
+  "pageCount": 12,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 29,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A library has a system that allows customers to check out the books that they want to borrow. Each book has a barcode that can be used to identify the book. (a) (i) two Identify input devices that may be used in the library’s system. Input device 1 Input device 2 [2] (ii) two Identify storage devices that may be used in the library’s system. Storage device"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A programmer uses a high-level language to write a computer program. (a) Four statements are given about high-level programming languages. 3 Tick ( ) True False to show if each statement is or . True False Statement 3 3 ( ) ( ) High-level languages need to be translated into machine code to run on a computer High-level languages are written using mnemonic "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Blair writes a paragraph about data transmission in her Computer Science examination. five missing terms. Not all Use the list given to complete Blair’s paragraph by inserting the correct terms will be used. Terms can be used more than once. • duplex • half-duplex • parallel • serial • simplex data transmission is when data is transmitted a single bit at a"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A factory that manufactures cleaning products has a system that monitors conditions throughout the manufacturing process. The inputs to the system are: Input Binary value Condition 1 pH > 7 A 0 pH < = 7 1 Temperature < 35 °C T 0 Temperature > = 35 °C % 1 Pressure > = 80 P % 0 Pressure < 80 (a) X The system will sound an alarm ( ) when certain conditions ar"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 Odd The contents of three binary registers have been transmitted from one computer to another. parity has been used as an error detection method. The outcome after transmission is: • Register A Register B correctly and have been transmitted . • Register C incorrectly has been transmitted . Parity bit Write the appropriate for each register to show the give"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 five Jesse is taking his Computer Science examination. He answers questions about ethics. (a) For the first question, he writes the answer: “This type of software can be copied and shared without the permission of the owner.” State what Jesse is describing. [1] (b) For the second question, he writes the answer: “With this type of software, the owner still "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The Von Neumann model for a computer system has several components that are used in the fetch-execute cycle. (a) One component is main memory. (i) Describe what is meant by main memory and how it is used in the Von Neumann model for a computer system. [3] (ii) two State other components in the Von Neumann model for a computer system. 1 2 [2] (b) Computer s"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.9
+      },
+      "textPreview": "8 A company discovers malware on its network. two Explain ways that the malware could have been introduced to the company’s network. [4]"
+    }
+  ]
+}
+[2026-07-15T03:52:26.014Z] parserVersion=0.4.0
+[2026-07-15T03:52:26.014Z] documentRole=question_paper
+[2026-07-15T03:52:26.014Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:52:26.272Z] stage.exitCode=0
+[2026-07-15T03:52:26.272Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w19_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_13.staging.json",
+  "runId": "0478-2019-ON-13-QP-RUN-320bc87bb55a",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 25,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 25,
+        "present": 25,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:52:26.274Z] stagingId=0478-2019-ON-13-QP-RUN-320bc87bb55a
+[2026-07-15T03:52:26.274Z] validationStatus=PASS
+[2026-07-15T03:52:26.274Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:52:26.274Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:52:26.274Z] canonicalPublishable=true
+[2026-07-15T03:52:26.274Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:52:26.274Z] endTime=2026-07-15T03:52:26.274Z
+[2026-07-15T03:52:26.274Z] status=PASS

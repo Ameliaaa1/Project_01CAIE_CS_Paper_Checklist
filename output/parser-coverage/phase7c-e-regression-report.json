@@ -1,0 +1,17 @@
+{
+  "generatedFor": "Phase-7-C-E",
+  "status": "PASS",
+  "crossSyllabus": {
+    "syllabus0478": "PASS",
+    "syllabus9618": "PASS",
+    "syllabus9709": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "checks": {
+    "syllabus0478": true,
+    "syllabus9618": true,
+    "syllabus9709": true,
+    "futureFixture": true
+  }
+}

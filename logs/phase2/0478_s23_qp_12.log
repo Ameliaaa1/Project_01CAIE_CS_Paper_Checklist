@@ -1,0 +1,224 @@
+[2026-07-13T02:02:24.002Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_12.pdf
+[2026-07-13T02:02:24.002Z] startTime=2026-07-13T02:02:24.002Z
+[2026-07-13T02:02:24.002Z] expectedRole=question_paper
+[2026-07-13T02:02:25.330Z] extract.exitCode=0
+[2026-07-13T02:02:25.330Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s23_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Circle devices that are output devices. three actuator digital versatile disk (DVD) keyboard microphone mouse printer scanner sensor solid‑state drive (SSD) speaker [3] Binary numbers can be converted to hexadecimal."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Convert the binary numbers to hexadecimal. (a) two 10010011 00001101 [4] A value is stored as a binary number in a register. (b) 0 1 1 1 1 0 1 0 A logical right shift of places is performed on the binary number. three Complete the binary register to show its contents after this logical right shift. (i) [1] State effect this logical shift has on the binary "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 computer. Describe how the text is converted to binary to be processed by the computer. (a) [3] Text that is input into a computer can be stored in a text file. (b) A text file can be compressed using lossless compression. State what effect this has on the file size. (i) [1] Describe how lossless compression compresses the text file. (ii) [4] Give reasons "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 The student needs to transmit the photographs to their computer. They could use serial data transmission or parallel data transmission to transmit the photographs. Describe how the photographs would be transmitted using serial data transmission. (a) (i) [2] Give benefits of transmitting the photographs using serial data transmission. (ii) two 1 2 [2] State"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 3 Tick ( ) box to show which statement is correct about writing computer programs in a (a) one high‑level language. Mnemonics are used to create instructions. A The computer program is harder to debug than a low‑level language program. B The computer program is machine independent. C The hardware of the computer can be directly manipulated. D [1] The progr"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 (a) Use the terms from the list. Some of the terms in the list will be used. Some terms may be used more than once. not compression executable hypertext markup language (HTML) hypertext transfer protocol (HTTP) image internet protocol (IP) address persistent session sound text uniform resource locater (URL) web browser web server Cookies are small files th"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Draw and annotate a diagram to represent the process of a DDoS. (a) [6] State aims of carrying out a DDoS attack. (b) two 1 2 [2] Give security solutions that can be used to help prevent a DDoS attack being successful. (c) two 1 2 [2] A computer is connected to a network and assigned an IPv4 address."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 3 Tick ( ) box to show which device would assign the IPv4 address to the computer. (a) one Domain name server (DNS) A Network interface card (NIC) B Router C Web server D [1] Describe the characteristics of an IPv4 address. (b) [4] One component of an expert system is the inference engine."
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 Identify the other components in an expert system. (a) three 1 2 3 [3] Describe the role of the inference engine in an expert system. (b) [2] A user has both system software and application software installed on their computer."
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "10 Describe the difference between system software and application software. (a) Give an example of each software in your answer. [4] State which component in the computer would store both types of software when the power is (b) turned off. [1]"
+    }
+  ]
+}
+[2026-07-13T02:02:25.332Z] parserVersion=0.4.0
+[2026-07-13T02:02:25.332Z] documentRole=question_paper
+[2026-07-13T02:02:25.332Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:02:25.632Z] stage.exitCode=0
+[2026-07-13T02:02:25.632Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s23_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_12.staging.json",
+  "runId": "0478-2023-MJ-12-QP-RUN-6cccf26a0da8",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 31,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 31,
+        "present": 31,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:02:25.635Z] stagingId=0478-2023-MJ-12-QP-RUN-6cccf26a0da8
+[2026-07-13T02:02:25.635Z] validationStatus=PASS
+[2026-07-13T02:02:25.635Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:02:25.635Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:02:25.635Z] canonicalPublishable=true
+[2026-07-13T02:02:25.635Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:02:25.635Z] endTime=2026-07-13T02:02:25.635Z
+[2026-07-13T02:02:25.635Z] status=PASS

@@ -1,0 +1,144 @@
+[2026-07-13T02:04:12.746Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_21.pdf
+[2026-07-13T02:04:12.746Z] startTime=2026-07-13T02:04:12.746Z
+[2026-07-13T02:04:12.746Z] expectedRole=question_paper
+[2026-07-13T02:04:14.719Z] extract.exitCode=0
+[2026-07-13T02:04:14.719Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_21.pdf",
+  "pageCount": 16,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 7,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify array that you could have used for . Give the data type and state the use (a) one Task 1 of the array. Array Data type Use [3] Data entered by a customer includes the age of the driver in . (b) Task 1 Identify different validation checks you could use for the age of the driver. two Justify your choice for each one. Validation check 1 Justification"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 [4] This pseudocode algorithm calculates the weight and number of bags in a load of firewood. The"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 weight in kilograms of each bag is input. The algorithm finishes when either 50 bags have been weighed, or as soon as the total weight exceeds 1000 kilograms. Only then are the total weight and the number of bags in the load output. 1000 01 TotalWeight ← 0 02 BagCount ← 50 03 MaxBag ← 1000 04 MaxWeight ← 05 REPEAT 06 OUTPUT \"Please Enter weight of bag\" 07 "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 The predefined function MOD finds the remainder from integer division for example gives a value of 25 MOD 11 R 3 R ← START INPUT V,W,X,Y,Z Yes IS END V = 0 ? No A V*2 + W*3 + X*4 + Y*5 ← B A MOD 11 ← Yes IS OUTPUT B = Z ? \"Valid\" No OUTPUT \"Invalid\" Complete the trace table for this set of input data: (a) 5, 4, 6, 2, 1, 9, 3, 2, 1, 6, 7, 6, 1, 5, 1, 0, 0, "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 Number of Number of Head office Share price Code Airline name employees countries FJ FastJet 60000 30 Europe 514.50 MA MurphyAir 35000 8 Europe 152.67 JS JetSeven 45000 22 Asia 257.44 K3 Koala3 22000 11 Australia 501.21 NS NorthState 30000 4 America 108.22 SS SouthState 30000 4 America 126.35 BJ BlueJet 15000 7 Africa 215.45 SK SkyKing 32000 27 Europe 506."
+    }
+  ]
+}
+[2026-07-13T02:04:14.721Z] parserVersion=0.4.0
+[2026-07-13T02:04:14.721Z] documentRole=question_paper
+[2026-07-13T02:04:14.721Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:15.065Z] stage.exitCode=0
+[2026-07-13T02:04:15.065Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_21.staging.json",
+  "runId": "0478-2020-ON-21-QP-RUN-3f4ab5465114",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 14,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 14,
+        "present": 14,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:04:15.067Z] stagingId=0478-2020-ON-21-QP-RUN-3f4ab5465114
+[2026-07-13T02:04:15.067Z] validationStatus=PASS
+[2026-07-13T02:04:15.067Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:04:15.067Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:15.067Z] canonicalPublishable=true
+[2026-07-13T02:04:15.067Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:04:15.067Z] endTime=2026-07-13T02:04:15.067Z
+[2026-07-13T02:04:15.067Z] status=PASS

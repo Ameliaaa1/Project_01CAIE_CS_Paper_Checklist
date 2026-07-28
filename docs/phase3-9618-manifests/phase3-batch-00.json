@@ -1,0 +1,24 @@
+[
+  {
+    "id": "phase3-b2021-ON-001",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_42.pdf",
+    "syllabus": "9618",
+    "year": 2021,
+    "session": "Oct-Nov",
+    "component": "42",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "Phase 3 missing staging generation for 9618-2021-ON-42"
+  },
+  {
+    "id": "phase3-b2021-ON-002",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_ms_42.pdf",
+    "syllabus": "9618",
+    "year": 2021,
+    "session": "Oct-Nov",
+    "component": "42",
+    "expectedRole": "mark_scheme",
+    "phase1Regression": false,
+    "purpose": "Phase 3 missing staging generation for 9618-2021-ON-42"
+  }
+]

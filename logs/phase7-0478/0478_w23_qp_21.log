@@ -1,0 +1,224 @@
+[2026-07-15T03:53:30.712Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_21.pdf
+[2026-07-15T03:53:30.712Z] startTime=2026-07-15T03:53:30.712Z
+[2026-07-15T03:53:30.712Z] expectedRole=question_paper
+[2026-07-15T03:53:32.340Z] extract.exitCode=0
+[2026-07-15T03:53:32.340Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w23_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_21.pdf",
+  "pageCount": 16,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "1 one OR A < B <= C >= D [1] 3 Tick ( ) box to show how a value can be passed to a procedure."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "2 one function A parameter B return C subroutine D [1] descriptions of data and data types are shown."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Four five Draw line to link each description to the most appropriate data type. one all data types will be used. Not Description Data type BOOLEAN a whole number CHAR a single letter INTEGER a word or phrase REAL a number with two decimal places STRING [4] Circle the words representing places where data may be stored."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 three array constant dimension input output procedure variable [3] The first stage of the program development life cycle is analysis. Two of the tasks in analysis are"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 abstraction and decomposition. Describe what is meant by abstraction. (a) [2] Identify of the component parts when a problem has been decomposed at the analysis (b) three stage. 1 2 3 [3] Identify and describe other stage of the program development life cycle. (c) one [2] An algorithm has been written in pseudocode."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 01 DECLARE A[1:10] : STRING 02 DECLARE T : STRING 03 DECLARE C, L : INTEGER 10 04 L 1 TO L 05 FOR C 06 OUTPUT \"Please enter name \" 07 INPUT A[C] 08 NEXT C 1 TO L 09 FOR C 1 TO 9 10 FOR L 11 IF A[L] > A[L + 1] 12 THEN A[L] 13 T A[L + 1] 14 A[L] T 15 A[L + 1] 16 ENDIF 17 NEXT L 18 NEXT C 1 TO L 19 FOR C 20 OUTPUT \"Name \", C, \" is \", A[C] 21 NEXT C State the "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A B X C Write a logic expression for this logic circuit. Do attempt to simplify this logic expression. (a) not = X [4] Complete the truth table from the given logic circuit. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 [4] A programmer is designing an algorithm to calculate the cost of a length of rope."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 The program requirements are: input two values: the length of rope in metres and the cost of one metre • Length Cost perform a validation check on the length to ensure that the value is between and • 0.5 6.0 inclusive calculate the price • Price output the price rounded to two decimal places. • Use the variable names given. State the name of the validation"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 for sale. The shop wants to store this information about the model figures: Field 1 – catalogue number, for example MD1234 Field 2 – description, for example ‘small white dog’ Field 3 – number in stock, for example 5 Field 4 – the price of each model, for example 7.40 Field 5 – if the model has already been painted, yes or no. The shop needs fields for eac"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "10 booked for this performance. The theatre has 10 rows of 20 seats. The status of the seat bookings for the evening is held in the two-dimensional (2D) Boolean array Evening[] Each element contains if the seat is available and if the seat is booked. FALSE TRUE Up to and including four seats can be booked at one time. Seats are allocated in order from those "
+    }
+  ]
+}
+[2026-07-15T03:53:32.341Z] parserVersion=0.4.0
+[2026-07-15T03:53:32.341Z] documentRole=question_paper
+[2026-07-15T03:53:32.341Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:32.605Z] stage.exitCode=0
+[2026-07-15T03:53:32.605Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w23_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_21.staging.json",
+  "runId": "0478-2023-ON-21-QP-RUN-6289db4554aa",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w23_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 23,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 23,
+        "present": 23,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:32.607Z] stagingId=0478-2023-ON-21-QP-RUN-6289db4554aa
+[2026-07-15T03:53:32.607Z] validationStatus=PASS
+[2026-07-15T03:53:32.607Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:32.607Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:32.607Z] canonicalPublishable=true
+[2026-07-15T03:53:32.607Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:32.607Z] endTime=2026-07-15T03:53:32.607Z
+[2026-07-15T03:53:32.607Z] status=PASS

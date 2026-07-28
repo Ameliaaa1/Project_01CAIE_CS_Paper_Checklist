@@ -1,0 +1,320 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum UserStatus {
+  ACTIVE
+  SUSPENDED
+  DELETED
+}
+
+enum PurchaseStatus {
+  PENDING
+  PAID
+  FAILED
+  REFUNDED
+  CANCELED
+}
+
+enum QuestionAttemptStatus {
+  DRAFT
+  SUBMITTED
+  GRADED
+  ERROR
+}
+
+model User {
+  id                  String                   @id @default(cuid())
+  email               String                   @unique
+  firstName           String
+  lastName            String
+  role                UserRole                 @default(USER)
+  status              UserStatus               @default(ACTIVE)
+  emailVerifiedAt     DateTime?
+  lastLoginAt         DateTime?
+  createdAt           DateTime                 @default(now())
+  updatedAt           DateTime                 @updatedAt
+  deletedAt           DateTime?
+  credential          UserCredential?
+  sessions            Session[]
+  purchases           Purchase[]
+  questionSearches    QuestionSearch[]
+  questionAttempts    QuestionAttempt[]
+  passwordResetTokens PasswordResetToken[]
+  emailVerifyTokens   EmailVerificationToken[]
+
+  @@index([status])
+  @@index([createdAt])
+}
+
+model UserCredential {
+  id                 String   @id @default(cuid())
+  userId             String   @unique
+  passwordHash       String
+  passwordSalt       String
+  passwordAlgorithm  String   @default("pbkdf2-sha256")
+  passwordIterations Int      @default(120000)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Session {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  revokedAt DateTime?
+  ipAddress String?
+  userAgent String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Purchase {
+  id                      String         @id @default(cuid())
+  userId                  String
+  provider                String         @default("STRIPE")
+  status                  PurchaseStatus @default(PENDING)
+  stripeCustomerId        String?
+  stripeCheckoutSessionId String?
+  stripePaymentIntentId   String?
+  amount                  Int?
+  currency                String?
+  checkoutUrl             String?
+  providerEventId         String?
+  purchasedAt             DateTime?
+  createdAt               DateTime       @default(now())
+  updatedAt               DateTime       @updatedAt
+  user                    User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([status])
+  @@index([stripeCheckoutSessionId])
+}
+
+model QuestionSearch {
+  id          String   @id @default(cuid())
+  userId      String?
+  query       String
+  filters     Json
+  resultCount Int      @default(0)
+  source      String   @default("question-finder")
+  questionIds Json?
+  searchKey   String?
+  createdAt   DateTime @default(now())
+  user        User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([createdAt])
+  @@unique([userId, searchKey])
+}
+
+model QuestionAttempt {
+  id         String                @id @default(cuid())
+  userId     String
+  questionId String
+  userAnswer Json
+  score      Float?
+  feedback   String?
+  status     QuestionAttemptStatus @default(DRAFT)
+  createdAt  DateTime              @default(now())
+  updatedAt  DateTime              @updatedAt
+  user       User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([questionId])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model EmailVerificationToken {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model StagingIngestionRun {
+  id                     String   @id
+  sourceFile             String
+  fileHash               String
+  parserVersion          String
+  schemaVersion          String
+  status                 String
+  startedAt              DateTime
+  completedAt            DateTime?
+  totalPages             Int      @default(0)
+  totalQuestions         Int      @default(0)
+  totalLeafQuestions     Int      @default(0)
+  p0IssueCount           Int      @default(0)
+  p1IssueCount           Int      @default(0)
+  p2IssueCount           Int      @default(0)
+  publishStatus          String   @default("BLOCKED")
+  summaryJson            Json?
+  papers                 StagingPaper[]
+  pages                  StagingPage[]
+  questions              StagingQuestion[]
+  issues                 StagingIssue[]
+  reviewActions          StagingReviewAction[]
+
+  @@index([status])
+  @@index([publishStatus])
+  @@index([startedAt])
+}
+
+model StagingPaper {
+  id                String              @id
+  ingestionRunId    String
+  paperGroupId      String
+  subjectCode       String
+  year              Int
+  session           String
+  component         String
+  documentRole      String
+  storageKey        String
+  fileHash          String
+  parserVersion     String
+  schemaVersion     String
+  rawJson           Json
+  validationStatus  String
+  ingestionRun      StagingIngestionRun @relation(fields: [ingestionRunId], references: [id], onDelete: Cascade)
+
+  @@index([ingestionRunId])
+  @@index([paperGroupId])
+  @@index([validationStatus])
+}
+
+model StagingPage {
+  id                 String              @id
+  ingestionRunId     String
+  paperId            String
+  pageNumber         Int
+  pageType           String
+  rawText            String?
+  normalizedText     String?
+  displayText        String?
+  requiresOcr        Boolean             @default(false)
+  hasVisualContent   Boolean             @default(false)
+  containsBackMatter Boolean             @default(false)
+  contentRegionsJson Json?
+  textQualityJson    Json?
+  sourceBlocksJson   Json?
+  pageImageKey       String?
+  validationStatus   String
+  ingestionRun       StagingIngestionRun @relation(fields: [ingestionRunId], references: [id], onDelete: Cascade)
+
+  @@index([ingestionRunId])
+  @@index([paperId])
+  @@index([pageNumber])
+  @@index([validationStatus])
+}
+
+model StagingQuestion {
+  id                String              @id
+  ingestionRunId    String
+  paperId           String
+  parentQuestionId  String?
+  questionNumber    String
+  sectionPathJson   Json
+  depth             Int
+  isLeaf            Boolean
+  contextText       String?
+  questionText      String?
+  displayText       String?
+  searchText        String?
+  pageStart         Int
+  pageEnd           Int
+  marks             Int?
+  bboxJson          Json?
+  hasVisualContent  Boolean             @default(false)
+  visualType        String?
+  questionImageKey  String?
+  questionImageHash String?
+  responseAreasJson Json?
+  responseAreaStatus String?
+  confidenceJson    Json?
+  reviewStatus      String
+  validationStatus  String
+  rawJson           Json
+  ingestionRun      StagingIngestionRun @relation(fields: [ingestionRunId], references: [id], onDelete: Cascade)
+
+  @@index([ingestionRunId])
+  @@index([paperId])
+  @@index([parentQuestionId])
+  @@index([isLeaf])
+  @@index([reviewStatus])
+  @@index([validationStatus])
+}
+
+model StagingIssue {
+  id               String              @id
+  ingestionRunId   String
+  paperId          String?
+  questionId       String?
+  pageNumber       Int?
+  severity         String
+  code             String
+  message          String
+  observedJson     Json?
+  expectedJson     Json?
+  status           String              @default("OPEN")
+  createdAt        DateTime
+  resolvedAt       DateTime?
+  resolutionNote   String?
+  ingestionRun     StagingIngestionRun @relation(fields: [ingestionRunId], references: [id], onDelete: Cascade)
+
+  @@index([ingestionRunId])
+  @@index([severity])
+  @@index([code])
+  @@index([status])
+}
+
+model StagingReviewAction {
+  id             String              @id
+  ingestionRunId String
+  recordType     String
+  recordId       String
+  action         String
+  approvalType   String?
+  beforeJson     Json?
+  afterJson      Json?
+  reviewer       String?
+  createdAt      DateTime
+  ingestionRun   StagingIngestionRun @relation(fields: [ingestionRunId], references: [id], onDelete: Cascade)
+
+  @@index([ingestionRunId])
+  @@index([recordType, recordId])
+  @@index([action])
+}

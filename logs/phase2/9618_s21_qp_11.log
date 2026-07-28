@@ -1,0 +1,198 @@
+[2026-07-13T02:04:39.798Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_11.pdf
+[2026-07-13T02:04:39.798Z] startTime=2026-07-13T02:04:39.798Z
+[2026-07-13T02:04:39.798Z] expectedRole=question_paper
+[2026-07-13T02:04:41.931Z] extract.exitCode=0
+[2026-07-13T02:04:41.931Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s21_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_11.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 5,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 The scanned image is a bitmapped image. (a) Complete the following table to describe the two terms about graphics. (i) Term Description Pixel File header [2] × The image is scanned with an image resolution of 1024 512 pixels, and a colour depth (ii) of 8 bits per pixel. Calculate an estimate for the file size, giving your answer in mebibytes. Show your wor"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Draw line from each utility software to its correct description. (a) one Utility software Description Scans software for errors and repairs the problems Moves parts of files so that each file is Disk formatter contiguous in memory Creates a copy of data that is no longer Defragmentation required Back-up Sets up a disk so it is ready to store files Scans fo"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 11,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 purpose registers. Complete the following description of the role of the registers in the fetch-execute cycle by (a) writing the missing registers. The holds the address of the next instruction to be loaded. This address is sent to the . The holds the data fetched from this address. This data is sent to the and the Control Unit decodes the instruction’s op"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 11,
+      "pageEnd": 13,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Describe the key features of a peer-to-peer network. (a) [2] Describe drawbacks to Melinda and her friends of using a peer-to-peer network. (b) two 1 2 [4] Melinda connects her laptop to the internet through her router. (c) 3 Tick ( ) box in each row to identify whether the task is performed by the router or (i) one not. Performed by Not performed Task rou"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 13,
+      "pageEnd": 14,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 She has an embedded system in her washing machine. (a) Describe what is meant by an using the washing machine as an example. embedded system [2] The washing machine’s embedded system makes use of both Random Access Memory (b) (RAM) and Read Only Memory (ROM). State the purpose of RAM and ROM within the washing machine’s embedded system. RAM ROM [2] The tem"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 State the type of validation check that each of the algorithms performs. (a) INPUT x IF x < 0 OR x > 10 THEN OUTPUT \"Invalid\" ENDIF [1] (b) INPUT x IF x = \"\" THEN OUTPUT \"Invalid\" ENDIF [1] (c) INPUT x IF NOT(x = \"Red\" OR x = \"Yellow\" OR x = \"Blue\") THEN OUTPUT \"Invalid\" ENDIF [1] Bobby and Kim are discussing databases."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 15,
+      "pageEnd": 16,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Bobby tells Kim that a file-based approach is usually better than a relational database. (a) Explain why Bobby is incorrect. [3] Bobby has a shop that sells products to customers. His database will store data about his (b) customers, their payment details, orders and the products he sells. Customers will have login details to access their accounts. The dat"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 16,
+      "pageEnd": 16,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 one Statement AND NAND NOR XOR OR The output is 1 only when both inputs are 1 The output is 1 only when both inputs are different The output is 1 only when both inputs are 0 [3]"
+    }
+  ]
+}
+[2026-07-13T02:04:41.935Z] parserVersion=0.4.0
+[2026-07-13T02:04:41.935Z] documentRole=question_paper
+[2026-07-13T02:04:41.935Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:42.340Z] stage.exitCode=0
+[2026-07-13T02:04:42.340Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s21_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+  "runId": "9618-2021-MJ-11-QP-RUN-d73fa3294ec3",
+  "status": "NEEDS_REVIEW",
+  "publishStatus": "BLOCKED",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 30,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 30,
+        "present": 30,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 1,
+  "p2": 0,
+  "issues": [
+    [
+      "P1",
+      "SUSPICIOUS_GLYPHS_REMAIN",
+      null
+    ]
+  ]
+}
+[2026-07-13T02:04:42.343Z] stagingId=9618-2021-MJ-11-QP-RUN-d73fa3294ec3
+[2026-07-13T02:04:42.343Z] validationStatus=WARN
+[2026-07-13T02:04:42.343Z] publishStatus=BLOCKED
+[2026-07-13T02:04:42.343Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:42.343Z] canonicalPublishable=true
+[2026-07-13T02:04:42.343Z] issueCounts={"P0":0,"P1":1,"P2":0}
+[2026-07-13T02:04:42.343Z] endTime=2026-07-13T02:04:42.343Z
+[2026-07-13T02:04:42.343Z] status=PASS

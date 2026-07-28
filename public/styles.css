@@ -995,6 +995,11 @@ details p {
   cursor: pointer;
 }
 
+.topic-suggestion-row button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 .question-builder-summary {
   display: flex;
   align-items: center;
@@ -1052,6 +1057,11 @@ details p {
   background: #f3f7ff;
 }
 
+.question-result-card.is-completed {
+  border-color: rgba(23, 76, 63, 0.26);
+  background: #f6f8f4;
+}
+
 .question-card-head {
   display: flex;
   flex-wrap: wrap;
@@ -1062,14 +1072,44 @@ details p {
 
 .question-card-title {
   display: grid;
-  gap: 5px;
+  gap: 7px;
   min-width: min(100%, 320px);
+}
+
+.question-title-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
 }
 
 .question-card-title strong {
   color: var(--ink);
   font-size: 16px;
   line-height: 1.3;
+}
+
+.question-complete-badge {
+  display: inline-flex;
+  min-height: 22px;
+  align-items: center;
+  border: 1px solid rgba(23, 76, 63, 0.2);
+  border-radius: 999px;
+  padding: 0 8px;
+  background: #e7f0ea;
+  color: var(--forest);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.question-card-prompt {
+  max-width: 760px;
+  color: #1d2824;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.45;
 }
 
 .question-meta-row {
@@ -1147,17 +1187,24 @@ details p {
 }
 
 .question-preview-button.is-preview-unavailable {
-  display: inline-flex;
+  display: inline-grid;
   width: fit-content;
   min-height: 42px;
   align-items: center;
+  gap: 2px;
   border: 1px solid rgba(23, 76, 63, 0.18);
   border-radius: 8px;
-  padding: 0 13px;
+  padding: 8px 13px;
   background: #fff;
   color: var(--forest);
   font-weight: 900;
   cursor: pointer;
+}
+
+.preview-fallback-label {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 850;
 }
 
 .question-answer-preview {
@@ -1930,6 +1977,10 @@ details p {
   background: transparent;
 }
 
+.exam-question-group.is-hidden {
+  display: none;
+}
+
 .exam-patterns {
   max-width: none;
   margin: 12px 0 0;
@@ -1969,17 +2020,11 @@ details p {
   box-shadow: none;
 }
 
-.exam-pattern summary {
+.exam-pattern-head {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 4px;
   padding: 8px 0;
-  cursor: pointer;
-  list-style-position: outside;
-}
-
-.exam-pattern[open] summary {
-  border-bottom: 0;
 }
 
 .pattern-meta {
@@ -2018,16 +2063,105 @@ details p {
   line-height: 1.35;
 }
 
+.pattern-question-structured {
+  display: grid;
+  gap: 8px;
+  padding: 2px 0 10px;
+}
+
+.pattern-question-single {
+  padding: 2px 0 10px;
+}
+
+.pattern-question-single > summary {
+  cursor: pointer;
+  line-height: 1.35;
+}
+
+.question-stem {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.question-part {
+  display: grid;
+  gap: 6px;
+}
+
+.question-part-detail {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.question-part-detail > summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+  padding: 3px 0;
+  cursor: pointer;
+  list-style-position: outside;
+  line-height: 1.35;
+}
+
+.question-part-detail > summary::marker {
+  color: var(--forest);
+}
+
+.question-label {
+  color: var(--forest);
+  font-weight: 900;
+}
+
+.question-subparts {
+  display: grid;
+  gap: 4px;
+  margin-left: 24px;
+  padding-left: 14px;
+  border-left: 2px solid rgba(23, 76, 63, 0.14);
+}
+
+.question-part-minor > summary {
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.exam-question-more-button {
+  display: inline-flex;
+  justify-self: start;
+  min-height: 34px;
+  align-items: center;
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 10px;
+  background: #f7fbf8;
+  color: var(--forest);
+  font: inherit;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 900;
+}
+
 .pattern-answer {
   margin: 0 !important;
-  padding: 0 0 9px 18px;
+  padding: 0 0 9px 0;
   line-height: 1.4 !important;
+}
+
+.pattern-answer.is-empty {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
 }
 
 .pattern-answer-points {
   display: grid;
   gap: 6px;
-  padding: 0 0 9px 18px;
+  padding: 0 0 9px 0;
 }
 
 .answer-label {
@@ -2044,12 +2178,47 @@ details p {
   display: grid;
   gap: 5px;
   margin: 0;
-  padding-left: 18px;
+  padding-left: 0;
+  list-style: none;
 }
 
 .pattern-answer-points li {
   color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
   line-height: 1.38;
+}
+
+.exam-original-previews {
+  display: grid;
+  gap: 10px;
+  margin: 8px 0 12px;
+}
+
+.exam-original-preview {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+}
+
+.exam-original-preview figcaption,
+.exam-original-preview > summary {
+  width: fit-content;
+  border-radius: 8px;
+  padding: 3px 7px;
+  background: #edf3ee;
+  color: var(--forest);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.exam-answer-crop {
+  border: 0;
+  padding: 0;
+}
+
+.exam-answer-crop > summary {
+  cursor: pointer;
 }
 
 mark {

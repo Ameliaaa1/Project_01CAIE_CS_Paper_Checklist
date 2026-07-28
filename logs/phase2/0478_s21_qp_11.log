@@ -1,0 +1,192 @@
+[2026-07-13T02:04:32.221Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_11.pdf
+[2026-07-13T02:04:32.221Z] startTime=2026-07-13T02:04:32.221Z
+[2026-07-13T02:04:32.221Z] expectedRole=question_paper
+[2026-07-13T02:04:34.263Z] extract.exitCode=0
+[2026-07-13T02:04:34.263Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s21_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_11.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 198.167.214.0 The IP address is represented as denary values. Convert the denary values 167 and 214 from the IP address to 8-bit binary. (a) 167 214 [2] Benedict’s computer is also assigned a Media Access Control (MAC) address. (b) Identify similarity between an IP address and a MAC address. (i) one [1] Identify differences between an IP address and a MAC "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 5,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 She stores three copies of the data using a hard disk drive (HDD), a solid state drive (SSD) and a USB flash memory drive. Identify devices Julia can use to input personal data into her computer. (a) three Device 1 Device 2 Device 3 [3] Six statements are shown about HDDs, SSDs and USB flash memory drives. (b) ✓ Tick ( ) to show which statements apply to e"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The given paragraph describes how the firewall operates to help keep the data secure. (a) Complete the paragraph using the most appropriate terms from the given list. all of the Not terms on the list need to be used. Accept • Criteria • Hacking • Input • Network • Outgoing • Output • Processor • Reject • Software • Store • Storage • A firewall can be or ha"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Describe what is meant by phishing and pharming. Phishing Pharming [6] Jamelia has a greenhouse that she uses to grow fruit and vegetables. She needs to make sure"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 the temperature in the greenhouse stays between 25 °C and 30 °C (inclusive). A system that has a temperature sensor and a microprocessor is used to maintain the temperature in the greenhouse. The system will: open a window and turn a heater off if it gets too hot • close a window and turn a heater on if it gets too cold. • Describe how the system uses the "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 X = ((( AND ) OR ( AND NOT )) XOR NOT ) A B C B C Draw a logic circuit to represent the given logic statement. (a) Do attempt to simplify the statement. All logic gates must have a maximum of two inputs. not A B X C [6] Consider the completed truth table for the given logic statement. (b) Row A B C X number 1 0 0 0 0 2 0 0 1 1 3 0 1 0 0 4 0 1 1 1 5 1 0 0 0"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 files. The sound files are compressed using lossless compression. (a) Describe how the sound files are compressed using lossless compression. (i) [4] State reason why the music company would compress the sound files using (ii) one lossless, rather than lossy, compression. [1] Give benefit, to the user, of the music company compressing the sound files. (iii"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 each binary value creating 8-bit binary values. All the binary values are transmitted and received correctly. Identify whether each 8-bit binary value has been sent using odd or even parity by writing odd (a) or even in the type of parity column. 8-bit binary value Type of parity 01100100 10010001 00000011 10110010 [4] An error may be detected when using a"
+    }
+  ]
+}
+[2026-07-13T02:04:34.265Z] parserVersion=0.4.0
+[2026-07-13T02:04:34.265Z] documentRole=question_paper
+[2026-07-13T02:04:34.265Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:34.664Z] stage.exitCode=0
+[2026-07-13T02:04:34.664Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s21_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_11.staging.json",
+  "runId": "0478-2021-MJ-11-QP-RUN-aaadcd89087e",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 23,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 23,
+        "present": 23,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:04:34.666Z] stagingId=0478-2021-MJ-11-QP-RUN-aaadcd89087e
+[2026-07-13T02:04:34.666Z] validationStatus=PASS
+[2026-07-13T02:04:34.666Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:04:34.666Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:34.666Z] canonicalPublishable=true
+[2026-07-13T02:04:34.666Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:04:34.666Z] endTime=2026-07-13T02:04:34.666Z
+[2026-07-13T02:04:34.666Z] status=PASS

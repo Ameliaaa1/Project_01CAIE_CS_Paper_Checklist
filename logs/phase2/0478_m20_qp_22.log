@@ -1,0 +1,153 @@
+[2026-07-13T02:03:37.542Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-March/0478_m20_qp_22.pdf
+[2026-07-13T02:03:37.542Z] startTime=2026-07-13T02:03:37.542Z
+[2026-07-13T02:03:37.542Z] expectedRole=question_paper
+[2026-07-13T02:03:39.138Z] extract.exitCode=0
+[2026-07-13T02:03:39.138Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m20_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-March/0478_m20_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 State the name of constant that you could have used for . Give the value that (a) one Task 1 would be assigned to the constant. State the use of this constant. Constant name Value Use [3] State the name of the variable that you used to store the amount offered for the trade-in of (b) an old car in . Give the most appropriate data type for this variable. Ex"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) stored in the array . Negative numbers are stored in the array . PosNum[ ] NegNum[ ] Zeros are not included in the positive and negative counts. 0 Count ← Count PosCount ← Count NegCount ← REPEAT INPUT Number IF Number > 0 THEN PosCount + 1 PosCount ← Number PosNum[PosCount] ← ELSE NegCount + 1 NegCount ← Number NegNum[NegCount] ← ENDIF Count + 1 Count"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 marks is 80% or over then a distinction grade is awarded. If the average of these marks is less than 40% then a fail grade is awarded. Otherwise a pass grade is awarded. START INPUT Mark1,Mark2,Mark3 Total Mark1 + Mark2 + Mark3 Average Total / 3 IS OUTPUT Yes Average >= 80 ? \"Distinction\" No IS Yes OUTPUT Average < 40 ? \"Fail\" No OUTPUT \"Pass\" END Complete"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 Include an example of each type of check in your answer. [4] Question 5 starts on page 14. A database table, BOX, is used to keep a record of boxes made and sold by a craftsman. Boxes"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 are categorised by: SIZE – small, medium or large • SHAPE – brief description for example ‘star shaped’ • WOOD – maple, beech, walnut or ebony • PRICE – price in $ • SOLD – whether the box is sold or not. • A database management system uses these data types: Text Number Currency Boolean Select the most appropriate data type for each field from the four typ"
+    }
+  ]
+}
+[2026-07-13T02:03:39.140Z] parserVersion=0.4.0
+[2026-07-13T02:03:39.140Z] documentRole=question_paper
+[2026-07-13T02:03:39.140Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:39.407Z] stage.exitCode=0
+[2026-07-13T02:03:39.407Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m20_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m20_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m20_qp_22.staging.json",
+  "runId": "0478-2020-FM-22-QP-RUN-08a6fba6efba",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m20_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 13,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 12,
+        "present": 12,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2020-FM-22-Q5-B-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:39.409Z] stagingId=0478-2020-FM-22-QP-RUN-08a6fba6efba
+[2026-07-13T02:03:39.409Z] validationStatus=PASS
+[2026-07-13T02:03:39.409Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:39.409Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:39.409Z] canonicalPublishable=true
+[2026-07-13T02:03:39.409Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:39.409Z] endTime=2026-07-13T02:03:39.409Z
+[2026-07-13T02:03:39.409Z] status=PASS

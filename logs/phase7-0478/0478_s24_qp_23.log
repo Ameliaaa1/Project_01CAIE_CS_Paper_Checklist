@@ -1,0 +1,214 @@
+[2026-07-15T03:53:59.698Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_23.pdf
+[2026-07-15T03:53:59.698Z] startTime=2026-07-15T03:53:59.698Z
+[2026-07-15T03:53:59.698Z] expectedRole=question_paper
+[2026-07-15T03:54:01.451Z] extract.exitCode=0
+[2026-07-15T03:54:01.451Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_23.pdf",
+  "pageCount": 16,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 one This flowchart symbol represents a subroutine. A represents a decision. B represents an input/output. C represents a terminator. D [1] logic gate symbols and logic functions are shown."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) Four five Draw line to link each logic gate symbol to the appropriate logic function. one all logic functions will be used. Not Logic gate symbol Logic function AND XOR NOT NAND OR [4] Complete the truth table for this logic circuit. (b) A B Z C A B C Z 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [4] Describe the characteristics of the string and c"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 String Example Char Example [4] This pseudocode algorithm is intended to allow data for up to 50 people to be entered and stored"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 in a two-dimensional (2D) array. The data is their last name, first name and the city in which they live. 01 DECLARE People : ARRAY[1:50, 1:3] OF REAL 02 DECLARE Count : INTEGER 03 DECLARE Response : CHAR 04 DECLARE Continue : BOOLEAN 05 FOR I 1 TO 50 06 FOR J 1 TO 3 07 People[I, J] \"\" 08 NEXT J 09 NEXT I 10 Count 100 11 Continue TRUE 12 CASE OF 13 OUTPUT "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 START L 0 S 10000 T 0 A 0 INPUT Limit Count 1 INPUT Value IS IS No No < S > L Value Value ? ? Yes Yes L Value S Value T T + Value IS No > Count Count Count + 1 Limit ? Yes / Limit A T \", L, \" S \", OUTPUT \"L \", T, \" A \", A S, \" T STOP Complete the trace table for the input data: (a) 10, 30, 18, 8, 25, 12, 17, 2, 50, 15, 5 OUTPUT L S T A Limit Count Value [6"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 inclusive. Give examples of normal, abnormal and extreme test data that could be used to make sure (a) the program only accepts valid data. Normal test data Abnormal test data Extreme test data [3] Describe what is meant by extreme test data. (b) [2] The string operation returns a string from"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 (a) SUBSTRING(FullText, X, Y) FullText beginning at position that is characters long. The first character in is in X Y FullText position 1. Write the pseudocode statements to: store the string “IGCSE Computer Science at Cambridge” in • FullText extract and display the words “Computer Science” from the string and store it in a suitable • variable output the"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 Hangar1 ID Make Model Year Engines Airworthy JM1 Hawker Siddeley Nimrod 1966 4 Y JM2 Douglas DC-10 1970 3 Y JM3 Aérospatiale-BAC Concorde 1973 4 N PB1 De Havilland DH-9 1918 1 Y PB2 Hawker Fury 1935 1 Y PB3 Hawker Nimrod 1934 1 Y PM1 Fieseler Storch 1942 1 N PM2 Hawker Hurricane 1942 1 Y PM3 Supermarine Spitfire 1942 1 N PM4 Douglas C-47 Dakota 1942 2 N PS"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "9 Teams[] A two-dimensional (2D) array stores, for each team, the total number of: Results[] games won • games drawn • games lost • points. • The position of any team’s data is the same in both arrays. For example the data in index 3 of belongs to the team in index 3 of Results[] Teams[] The array data will be used to find the current leader of the league. T"
+    }
+  ]
+}
+[2026-07-15T03:54:01.453Z] parserVersion=0.4.0
+[2026-07-15T03:54:01.453Z] documentRole=question_paper
+[2026-07-15T03:54:01.453Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:01.727Z] stage.exitCode=0
+[2026-07-15T03:54:01.727Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_23.staging.json",
+  "runId": "0478-2024-MJ-23-QP-RUN-27c49939ea66",
+  "status": "NEEDS_REVIEW",
+  "publishStatus": "BLOCKED",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 19,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 19,
+        "present": 19,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 1,
+  "p2": 0,
+  "issues": [
+    [
+      "P1",
+      "SUSPICIOUS_GLYPHS_REMAIN",
+      null
+    ]
+  ]
+}
+[2026-07-15T03:54:01.729Z] stagingId=0478-2024-MJ-23-QP-RUN-27c49939ea66
+[2026-07-15T03:54:01.729Z] validationStatus=WARN
+[2026-07-15T03:54:01.729Z] publishStatus=BLOCKED
+[2026-07-15T03:54:01.729Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:01.729Z] canonicalPublishable=true
+[2026-07-15T03:54:01.729Z] issueCounts={"P0":0,"P1":1,"P2":0}
+[2026-07-15T03:54:01.729Z] endTime=2026-07-15T03:54:01.729Z
+[2026-07-15T03:54:01.729Z] status=FAIL

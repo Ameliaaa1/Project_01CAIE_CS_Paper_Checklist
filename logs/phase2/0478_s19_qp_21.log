@@ -1,0 +1,153 @@
+[2026-07-13T02:03:11.002Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_21.pdf
+[2026-07-13T02:03:11.002Z] startTime=2026-07-13T02:03:11.002Z
+[2026-07-13T02:03:11.002Z] expectedRole=question_paper
+[2026-07-13T02:03:12.582Z] extract.exitCode=0
+[2026-07-13T02:03:12.582Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_21.pdf",
+  "pageCount": 16,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": null,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.35,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 – Setting up the data storage. Using arrays set up a system to enable data for each bus route to be entered covering each day of a four-week period. It must be possible to enter the data supplied or your own set of data, using suitable prompts as necessary. Task"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 8,
+      "marks": 26,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 – Working out the statistics. Extend your program so that the following statistics for the four-week period may be calculated and output: • the number of late arrivals for each bus route • the average number of minutes late for each bus route the bus route with the highest number of days on which it was late the average number of minutes late for each bus "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "3 (a) Give an example of a conditional statement using pseudocode. [2] (b) Describe the purpose of a conditional statement. [2] Question 4 starts on page 10."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 This section of program code may be used as a validation check. 1 PRINT \"Input a value between 0 and 100 inclusive\" 2 INPUT Value 3 WHILE Value < 0 OR Value > 100 4 PRINT \"Invalid value, try again\" 5 INPUT Value 6 ENDWHILE 7 PRINT \"Accepted: \", Value (a) Give a name for this type of validation check. [1] (b) Describe what is happening in this validation ch"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 The table, BEVERAGES, shows the number of calories in 100 ml of a range of popular beverages. It also shows the availability of these drinks in a can, a small bottle and a large bottle. BevNo BevName Calories Can Small Bottle Large Bottle Bev01 Cola 40 Yes Yes Yes Bev02 Lime 45 Yes No Yes Bev03 Energy Drink 1 52 Yes Yes No Bev04 Energy Drink 2 43 Yes No No"
+    }
+  ]
+}
+[2026-07-13T02:03:12.583Z] parserVersion=0.4.0
+[2026-07-13T02:03:12.583Z] documentRole=question_paper
+[2026-07-13T02:03:12.583Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:12.877Z] stage.exitCode=0
+[2026-07-13T02:03:12.877Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_21.staging.json",
+  "runId": "0478-2019-MJ-21-QP-RUN-5a9d1115d730",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 16,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 15,
+        "present": 15,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2019-MJ-21-Q1",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:12.880Z] stagingId=0478-2019-MJ-21-QP-RUN-5a9d1115d730
+[2026-07-13T02:03:12.880Z] validationStatus=PASS
+[2026-07-13T02:03:12.880Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:12.880Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:12.880Z] canonicalPublishable=true
+[2026-07-13T02:03:12.880Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:12.880Z] endTime=2026-07-13T02:03:12.880Z
+[2026-07-13T02:03:12.880Z] status=PASS

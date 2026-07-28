@@ -1,0 +1,176 @@
+[2026-07-15T03:54:57.567Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_12.pdf
+[2026-07-15T03:54:57.567Z] startTime=2026-07-15T03:54:57.567Z
+[2026-07-15T03:54:57.567Z] expectedRole=question_paper
+[2026-07-15T03:54:59.539Z] extract.exitCode=0
+[2026-07-15T03:54:59.539Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w25_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A toy store gives each of the toys it sells a unique code. The codes are 3-digit hexadecimal codes, for example A4B. A computer is used to store a database of the codes. The computer has 12-bit registers. (a) Give the largest hexadecimal number that can be stored in a 12-bit register. [1] (b) Give the largest denary number that can be stored in a 12-bit re"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Two binary numbers are stored in a computer. (a) Add the two binary numbers using binary addition. Give your answer in binary. Show all of your working. 11110101 + 00111001 [4] (b) A logic right shift of three places is performed on the binary number 11110101. Give the denary number for the binary number that would be stored after the logical shift of thre"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A programmer uses assembly language to create a program for a coffee machine. (a) Describe what is meant by assembly language. [2] (b) Identify the translator needed for assembly language. [1] (c) Tick (✓) one box to show which statement is an advantage of using assembly language. A It is close to human language. B It is memory efficient. C It is easy to d"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A computer with a Von Neumann architecture has a central processing unit (CPU) that performs the fetch–decode–execute (FDE) cycle. (a) Complete and annotate the diagram to show how instructions are decoded and executed. arithmetic logic unit (ALU) control unit (CU) [5] (b) The CPU is dual core and has a processor speed of 2.4 GHz. Describe what is meant by"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A computer system has a mouse. An interrupt is sent to the CPU every time a button on the mouse is clicked. (a) Identify the name of this type of interrupt. [1] (b) The interrupt is placed in a queue. Explain how the interrupt is serviced after it is placed in the queue. [4] (c) The mouse is connected using a universal serial bus (USB) connection. (i) Expl"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 9,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 An online clothing company has a homepage at the uniform resource locator (URL) https://www.cieclothes.com/index.html (a) Write down the three different parts of the URL shown by the labels a, b and c. https://www.cieclothes.com/index.html a b c a b c [3] (b) The web pages are stored on a web server. A proxy server is used to stop distributed denial of ser"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 A house has a smart speaker that can take voice commands as input. A person in the house can tell the smart speaker to play music or audio books. (a) The smart speaker cannot be described as a robot. Explain why the smart speaker is not a robot. [3] (b) Identify the input device that allows voice commands to be used as input. [1] DFD (c) The smart speaker "
+    }
+  ]
+}
+[2026-07-15T03:54:59.542Z] parserVersion=0.4.0
+[2026-07-15T03:54:59.542Z] documentRole=question_paper
+[2026-07-15T03:54:59.542Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:59.921Z] stage.exitCode=0
+[2026-07-15T03:54:59.921Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w25_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_12.staging.json",
+  "runId": "0478-2025-ON-12-QP-RUN-6f5b0d0102c5",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 32,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 32,
+        "present": 32,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:54:59.925Z] stagingId=0478-2025-ON-12-QP-RUN-6f5b0d0102c5
+[2026-07-15T03:54:59.925Z] validationStatus=PASS
+[2026-07-15T03:54:59.925Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:54:59.925Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:59.925Z] canonicalPublishable=true
+[2026-07-15T03:54:59.925Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:54:59.925Z] endTime=2026-07-15T03:54:59.925Z
+[2026-07-15T03:54:59.925Z] status=PASS

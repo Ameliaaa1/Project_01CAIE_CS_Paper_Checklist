@@ -1,0 +1,225 @@
+[2026-07-14T16:51:23.533Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_12.pdf
+[2026-07-14T16:51:23.533Z] startTime=2026-07-14T16:51:23.533Z
+[2026-07-14T16:51:23.533Z] expectedRole=question_paper
+[2026-07-14T16:51:25.077Z] extract.exitCode=0
+[2026-07-14T16:51:25.077Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_12.pdf",
+  "pageCount": 16,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) one Term Definition The number of pixels wide by the number of Pixel pixels high The smallest identifiable component of an Bit depth image Stores data about the image file, e.g. file Image resolution format, number of bits per pixel, file size The number of bits used to represent each File header colour [3] The following section of a bitmap image is 10"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 One feature is a lane detection system. This system monitors the lines on either side of the (a) lane. If the car gets too close to one line, the system automatically moves the car away from the line. Explain why the lane detection system is an example of an embedded system. [2] Two other features: (b) record the number of miles travelled in the current jo"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 register, the Accumulator (ACC). Instruction Explanation Opcode Operand Bitwise AND operation of the contents of ACC with the operand AND #n Bitwise AND operation of the contents of ACC with the contents AND <address> of <address> Bitwise XOR operation of the contents of ACC with the operand XOR #n Bitwise XOR operation of the contents of ACC with the cont"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Explain why the school needs to keep both its data its computer system secure from (a) and unauthorised access. Data Computer system [2] Complete the table by identifying security threats to the data on a computer. (b) two Describe each threat. Give a different prevention method for each threat. Prevention Threat Description method [6] Data is encrypted wh"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 11,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 FILMS Part of the database is shown: ACTOR(ActorID, FirstName, LastName, DateOfBirth) FILM_FACT(FilmID, FilmTitle, ReleaseDate, Category) FILM_ACTOR(ActorID, FilmID) Complete the entity-relationship (E-R) diagram. (a) FILM_FACT ACTOR FILM_ACTOR [2] A composite primary key consists of two or more attributes that together form the primary key. (b) Explain wh"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Describe the operation of a compiler. (a) [2] Describe the operation of an interpreter. (b) [2] Explain how a programmer can make use of a typical Integrated Development Environment (c) (IDE) when writing testing a program. and Writing Testing [4] Complete the truth table for the following logic expression:"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "7 = ( XOR ) AND NOT X A B C A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [2] Describe application of Artificial Intelligence (AI)."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "8 one [3] The following incomplete table contains four network devices and their descriptions."
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 13,
+      "pageEnd": 14,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 (a) Complete the table by writing the missing devices and missing descriptions. Device Description Receives and sends data between two networks operating on the same protocol Wireless Network Interface Card (WNIC) Restores the digital signal so it can be transmitted over greater distances Wireless Access Point (WAP) [4] Describe differences between fibre-o"
+    }
+  ]
+}
+[2026-07-14T16:51:25.079Z] parserVersion=0.4.0
+[2026-07-14T16:51:25.079Z] documentRole=question_paper
+[2026-07-14T16:51:25.079Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:51:25.338Z] stage.exitCode=0
+[2026-07-14T16:51:25.338Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_12.staging.json",
+  "runId": "9618-2022-MJ-12-QP-RUN-5dc285d1b4e2",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 30,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 28,
+        "present": 28,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-MJ-12-Q1-B-II",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-MJ-12-Q1-D",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:51:25.341Z] stagingId=9618-2022-MJ-12-QP-RUN-5dc285d1b4e2
+[2026-07-14T16:51:25.341Z] validationStatus=PASS
+[2026-07-14T16:51:25.341Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:51:25.341Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:51:25.341Z] canonicalPublishable=true
+[2026-07-14T16:51:25.341Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:51:25.341Z] endTime=2026-07-14T16:51:25.341Z
+[2026-07-14T16:51:25.341Z] status=PASS

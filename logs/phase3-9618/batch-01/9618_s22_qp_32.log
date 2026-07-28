@@ -1,0 +1,208 @@
+[2026-07-14T16:51:44.467Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_32.pdf
+[2026-07-14T16:51:44.467Z] startTime=2026-07-14T16:51:44.467Z
+[2026-07-14T16:51:44.467Z] expectedRole=question_paper
+[2026-07-14T16:51:45.758Z] extract.exitCode=0
+[2026-07-14T16:51:45.758Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_32.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_32.pdf",
+  "pageCount": 12,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The data type, is defined in pseudocode as: BuildingRecord TYPE BuildingRecord DECLARE BuildingID : INTEGER DECLARE BuildingGroup : STRING DECLARE OwnerName : STRING DECLARE BuildingAddress : STRING DECLARE DateLastSold : DATE DECLARE PriceLastSold : REAL ENDTYPE A variable, is declared in pseudocode as: BuildingRegister DECLARE BuildingRegister : Building"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 01 teaches(alan, mathematics). 02 teaches(ioana, geography). 03 teaches(nina, history). 04 teaches(alan, statistics). 05 06 studies(ahmed, history). 07 studies(freya, history). 08 studies(kim, history). 09 studies(freya, geography). 10 studies(hua, mathematics). 11 studies(hua, statistics). 12 studies(hua, geography). 13 14 tutors(alan, kim). 15 tutors(ala"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Identify protocols used by this layer. Describe the use of each protocol. (a) two Protocol 1 Description Protocol 2 Description [4] Identify layers of the TCP/IP protocol suite. Describe the function of each layer. (b) two other Layer 1 Description Layer 2 Description [4] The following syntax diagrams show the syntax of:"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 a variable • an unsigned integer • a letter • a digit • an operator • an assignment statement. • variable letter unsigned integer unsigned integer digit digit digit letter 1 X 2 Y 3 Z operator + – * assignment statement = variable variable operator variable The following assignment statements are invalid. State the reason in each case. (a) X1 = Y2 – 12 Rea"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 one architecture. Identify the categories of computer architecture. three other Describe each category that you identify. Architecture 1 Description Architecture 2 Description Architecture 3 Description [6] A logic circuit has two inputs and and two outputs and ."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A B E F A E B F Complete the truth table for this logic circuit. (a) INPUT OUTPUT A B E F 0 0 0 1 1 0 1 1 [2] State the name of this logic circuit. (b) (i) [1] State the purpose of each output and . (ii) E F Purpose of E Purpose of F [2] A digital signature is used to validate the authenticity of an electronic message."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 In order to produce a digital signature, a digital certificate is required. State how a digital certificate is obtained. (a) [3] Explain how a digital signature is produced before the message is sent. (b) (i) [3] Explain how the digital signature can be checked on receipt to ensure that the message (ii) has not been altered during transmission. [4] A binar"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Complete this pseudocode algorithm for a linear search. (a) DECLARE MyList : ARRAY[0:9] OF INTEGER DECLARE MaxIndex : INTEGER DECLARE Index : INTEGER DECLARE Found : BOOLEAN DECLARE ValueToFind : INPUT ValueToFind FALSE Found ← 0 Index ← MaxIndex ← REPEAT IF MyList[Index] = ValueToFind THEN TRUE Found ← ENDIF Index ← UNTIL Found OR Index > MaxIndex IF Foun"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "9 Include an example of an exception in your answer. [4]"
+    }
+  ]
+}
+[2026-07-14T16:51:45.760Z] parserVersion=0.4.0
+[2026-07-14T16:51:45.760Z] documentRole=question_paper
+[2026-07-14T16:51:45.760Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:51:46.018Z] stage.exitCode=0
+[2026-07-14T16:51:46.018Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s22_qp_32.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_32.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_32.staging.json",
+  "runId": "9618-2022-MJ-32-QP-RUN-ddd5b51cf1b2",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s22_qp_32.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 28,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 28,
+        "present": 28,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:51:46.020Z] stagingId=9618-2022-MJ-32-QP-RUN-ddd5b51cf1b2
+[2026-07-14T16:51:46.020Z] validationStatus=PASS
+[2026-07-14T16:51:46.020Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:51:46.020Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:51:46.020Z] canonicalPublishable=true
+[2026-07-14T16:51:46.020Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:51:46.020Z] endTime=2026-07-14T16:51:46.020Z
+[2026-07-14T16:51:46.020Z] status=PASS

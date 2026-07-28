@@ -1,0 +1,73 @@
+{
+  "generatedFor": "Phase-8-D",
+  "status": "PASS",
+  "title": "Validation Intelligence",
+  "checks": {
+    "threeLevels": true,
+    "criticalBlocks": true,
+    "warningDoesNotBypassReview": true,
+    "informationalNonBlocking": true,
+    "arrayIdentifierNotMark": true,
+    "persistedFindingsClassified": true
+  },
+  "details": {
+    "title": "Validation Intelligence",
+    "status": "PASS",
+    "checks": {
+      "threeLevels": true,
+      "criticalBlocks": true,
+      "warningDoesNotBypassReview": true,
+      "informationalNonBlocking": true,
+      "arrayIdentifierNotMark": true,
+      "persistedFindingsClassified": true
+    },
+    "levels": {
+      "critical": {
+        "severity": "P0",
+        "code": "CANONICAL_REQUIRED_MARK_MISSING",
+        "domain": "MARK_ALLOCATION",
+        "level": "Critical",
+        "blocksProduction": true,
+        "requiresReview": true
+      },
+      "warning": {
+        "severity": "P1",
+        "code": "CANONICAL_RESPONSE_AREA_COVERAGE_LOW",
+        "domain": "RESPONSE_AREA",
+        "level": "Warning",
+        "blocksProduction": false,
+        "requiresReview": true
+      },
+      "informational": {
+        "severity": "P2",
+        "code": "SOURCE_PAIR_PENDING_REVIEW",
+        "domain": "SOURCE",
+        "level": "Informational",
+        "blocksProduction": false,
+        "requiresReview": false
+      }
+    },
+    "identifierExample": {
+      "text": "Array[5] contains the value. Award [3].",
+      "parsedMarks": [
+        {
+          "value": 3,
+          "index": 35,
+          "raw": "[3]"
+        }
+      ],
+      "classification": "Array[5] is an identifier; [3] is a mark allocation."
+    },
+    "persistedFindings": {
+      "total": 0,
+      "byLevel": {
+        "Critical": 0,
+        "Warning": 0,
+        "Informational": 0
+      },
+      "byDomain": {},
+      "productionBlocked": false,
+      "findings": []
+    }
+  }
+}

@@ -1,0 +1,240 @@
+[2026-07-14T16:57:14.692Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_32.pdf
+[2026-07-14T16:57:14.692Z] startTime=2026-07-14T16:57:14.692Z
+[2026-07-14T16:57:14.692Z] expectedRole=question_paper
+[2026-07-14T16:57:16.755Z] extract.exitCode=0
+[2026-07-14T16:57:16.755Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_32.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_32.pdf",
+  "pageCount": 12,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) exponent in a floating-point number with a fixed total number of bits. [2] Real numbers are stored in a computer, using floating-point representation with: (b) 12 bits for the mantissa • 4 bits for the exponent • two’s complement form for both the mantissa and exponent. • Calculate the normalised floating-point representation of +54.8125 in this system"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) [2] State the names of different protocols associated with the sending and receiving of (b) two emails between computers. Sending Receiving [2] Explain the meaning of the phrase: (c) BitTorrent protocol provides peer-to-peer file sharing. [3] Explain what is meant by the term and give an example of a"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) non-composite data type non-composite data type. Example [3] Write statements to declare the set data type to hold this set of (b) pseudocode EvenNumbers even numbers between 2 and 12: 2, 4, 6, 8, 10, 12 [4] Sheila has a customer called Fred. Fred wants to send Sheila a confidential document as part of a"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 transaction. Explain how Fred uses asymmetric encryption to send his document securely. [4] Write this infix expression in Reverse Polish Notation (RPN):"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 (a) (7 – 2 + 8) / (9 – 5) [2] Evaluate this RPN expression: (b) a d + a b + c - * when and a = 6 b = 3 c = 7 d = 9 Show the changing contents of the stack as the RPN expression is evaluated. [4] Write this RPN expression in infix form: (c) b a c - + d b + * c / [3] The diagram shows a logic circuit."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 P A S Q Z B T R C Complete the truth table for the given logic circuit. (a) Show your working. A B C P Q R S T Z 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [3] Write the Boolean expression that corresponds to the logic circuit as a sum-of-products. (b) Z = [2] Complete the Karnaugh map (K-map) for this Boolean expression: (c) (i) – – – – – – – – – A ."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 (a) direct access [2] Explain how direct access is used to locate a specific record in sequential files and random (b) files. Sequential files (i) [2] Random files (ii) [2] Complete the pseudocode to find an item in a 1D array of type using a"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 (a) Widgets STRING search. linear DECLARE Widgets : ARRAY[1:50000] OF STRING DECLARE TopOfList : INTEGER DECLARE EndOfList : INTEGER DECLARE Count : INTEGER DECLARE ToFind : STRING DECLARE Found : BOOLEAN DECLARE NotInList : BOOLEAN 1 TopOfList 50000 EndOfList OUTPUT \"Enter the name of the item you wish to find \" INPUT ToFind ………………………………………………………………………………"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 (a) two two Benefit 1 Benefit 2 Limitation 1 Limitation 2 [4] Explain the roles of the host operating system and the guest operating system as used in a (b) computer system running a virtual machine. [3] A programming language is used to allow clients to choose daily activities at the"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 declarative beach. 01 activity(paddleboarding). 02 activity(sailing). 03 activity(rowing). 04 activity(kayaking). 05 activity(jetskiing). 06 client(stevie). 07 client(antonio). 08 client(henry). 09 client(eliza). 10 client(rebeka). 11 client(danny). 12 client(erik). 13 client(simone). 14 client(petra). 15 client(frankie). 16 choice(petra, rowing). 17 choi"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.83
+      },
+      "textPreview": "11 Reinforcement Learning [3]"
+    }
+  ]
+}
+[2026-07-14T16:57:16.757Z] parserVersion=0.4.0
+[2026-07-14T16:57:16.757Z] documentRole=question_paper
+[2026-07-14T16:57:16.757Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:57:17.164Z] stage.exitCode=0
+[2026-07-14T16:57:17.164Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_32.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_32.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_32.staging.json",
+  "runId": "9618-2024-MJ-32-QP-RUN-462c74ad9a5c",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_32.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 27,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 27,
+        "present": 27,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:57:17.167Z] stagingId=9618-2024-MJ-32-QP-RUN-462c74ad9a5c
+[2026-07-14T16:57:17.167Z] validationStatus=PASS
+[2026-07-14T16:57:17.167Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:57:17.167Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:57:17.167Z] canonicalPublishable=true
+[2026-07-14T16:57:17.167Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:57:17.167Z] endTime=2026-07-14T16:57:17.167Z
+[2026-07-14T16:57:17.167Z] status=PASS

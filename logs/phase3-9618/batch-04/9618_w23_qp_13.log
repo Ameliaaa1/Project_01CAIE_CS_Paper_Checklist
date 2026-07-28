@@ -1,0 +1,217 @@
+[2026-07-14T16:55:00.489Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_13.pdf
+[2026-07-14T16:55:00.489Z] startTime=2026-07-14T16:55:00.489Z
+[2026-07-14T16:55:00.489Z] expectedRole=question_paper
+[2026-07-14T16:55:03.060Z] extract.exitCode=0
+[2026-07-14T16:55:03.060Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_13.pdf",
+  "pageCount": 16,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) analogue data [1] Draw line from each term to its most appropriate description. (b) one Term Description the number of samples taken sampling per second taking measurements at regular sampling rate intervals and storing the values the number of bits used to store sampling resolution each sample [2] Describe the impact of increasing the image resolution"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) [2] Calculate the file size of a bitmap image using the following information: (b) image resolution of 2048 pixels wide and 1024 pixels high • bit depth of 16 bits. • Give your answer in kibibytes. Show your working. Working Answer in kibibytes [2] A company sells online Computer Science courses to students in different countries."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 7,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The courses are stored on a public cloud. Explain why the company uses a public cloud to store these courses. (a) (i) [2] Describe disadvantages of storing data on a public cloud compared to storing data (ii) two on a server in a Local Area Network (LAN). 1 2 [4] State how the following security measures can be used to protect computer systems. (iii) Firew"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) = (( AND ) XOR ((NOT ) OR )) AND NOT Y P Q Q R P P Q R Y 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [2] Draw a logic circuit for the logic expression: (b) = (( AND ) XOR ((NOT ) OR )) AND NOT Y P Q Q R P P Y Q R [2] A programmer uses an Integrated Development Environment (IDE) to develop a program that"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 monitors air quality. Describe the following features of a typical IDE. (a) Context‑sensitive prompts Single stepping [4] The program is distributed by downloading the source code and its library files from a web (b) server. Explain the reasons for compressing the files. (i) [2] The program files are stored on a new hard disk after they have been downloade"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "6 (a) two 1 2 [2] Explain why it is important for a programmer to join a professional ethical body. (b) [4] A laptop computer has Static RAM (SRAM)."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A virtual reality headset and a laser printer are connected to the laptop. Explain why Static RAM is used in the laptop instead of Dynamic RAM. (a) [2] Identify reasons for using Electrically Erasable Programmable ROM (EEPROM) in a (b) two virtual reality headset. 1 2 [2] Describe how the laser printer makes use of a buffer. (c) [4] Identify port that coul"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 (a) Describe other method of protecting the integrity of data. one [2] State difference and similarity between pharming and phishing. (b) one one Difference Similarity [2] Explain how the data security risks of malware can be restricted. (c) [3] A computer system is designed using the basic Von Neumann model."
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 13,
+      "pageEnd": 15,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 Registers and buses are components in the Von Neumann model. Identify components in the Von Neumann model of a computer system. (a) (i) three other Do not include registers or buses in your answers. 1 2 3 [3] Identify differences between special purpose registers and general purpose (ii) two registers. 1 2 [2] The following incomplete table contains steps "
+    }
+  ]
+}
+[2026-07-14T16:55:03.062Z] parserVersion=0.4.0
+[2026-07-14T16:55:03.062Z] documentRole=question_paper
+[2026-07-14T16:55:03.062Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:55:03.528Z] stage.exitCode=0
+[2026-07-14T16:55:03.528Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_13.staging.json",
+  "runId": "9618-2023-ON-13-QP-RUN-90c2b773f5d1",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 29,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 28,
+        "present": 28,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-13-Q1-A",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:55:03.532Z] stagingId=9618-2023-ON-13-QP-RUN-90c2b773f5d1
+[2026-07-14T16:55:03.532Z] validationStatus=PASS
+[2026-07-14T16:55:03.532Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:55:03.532Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:55:03.532Z] canonicalPublishable=true
+[2026-07-14T16:55:03.532Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:55:03.532Z] endTime=2026-07-14T16:55:03.532Z
+[2026-07-14T16:55:03.532Z] status=PASS

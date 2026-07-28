@@ -1,0 +1,112 @@
+[2026-07-14T16:57:33.403Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_42.pdf
+[2026-07-14T16:57:33.403Z] startTime=2026-07-14T16:57:33.403Z
+[2026-07-14T16:57:33.403Z] expectedRole=question_paper
+[2026-07-14T16:57:35.911Z] extract.exitCode=0
+[2026-07-14T16:57:35.911Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_42.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_42.pdf",
+  "pageCount": 16,
+  "questionCount": 3,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 6,
+      "marks": 22,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 more letters that can be made from the letters in the main word. These are called the answers. There are 3 files: and . Each file has the main word on the Easy.txt Medium.txt Hard.txt first line. For example, the main word in is house. Easy.txt The answers are stored in the file. Each answer is on a new line after the main word. For example, has 14 answers"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 6,
+      "pageEnd": 10,
+      "marks": 30,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 15 8 19 3 10 A computer program stores integers in a binary tree in ascending order. The program uses Object‑Oriented Programming (OOP). The binary tree is stored as a 1D array of nodes. Each node contains a left pointer, a data value and a right pointer. The class stores the data about a node. Node Node stores the index of the node to the left in the bina"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 10,
+      "pageEnd": 13,
+      "marks": 23,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "3 The array of integers, stores the following data in the order given: (a) NumberArray 100 85 644 22 15 8 1 The array is declared and initialised local to the main program. Write program code to declare and initialise the array. Save your program as . Question3_J24 Copy and paste the program code into part in the evidence document. 3(a) [1] The following rec"
+    }
+  ]
+}
+[2026-07-14T16:57:35.914Z] parserVersion=0.4.0
+[2026-07-14T16:57:35.914Z] documentRole=question_paper
+[2026-07-14T16:57:35.914Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:57:36.306Z] stage.exitCode=0
+[2026-07-14T16:57:36.306Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_42.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_42.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_42.staging.json",
+  "runId": "9618-2024-MJ-42-QP-RUN-a0e625893eec",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_42.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 3,
+      "leafQuestionCount": 26,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:57:36.309Z] stagingId=9618-2024-MJ-42-QP-RUN-a0e625893eec
+[2026-07-14T16:57:36.309Z] validationStatus=PASS
+[2026-07-14T16:57:36.309Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:57:36.309Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:57:36.309Z] canonicalPublishable=true
+[2026-07-14T16:57:36.309Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:57:36.309Z] endTime=2026-07-14T16:57:36.309Z
+[2026-07-14T16:57:36.309Z] status=PASS

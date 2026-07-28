@@ -1,0 +1,160 @@
+[2026-07-13T02:02:08.431Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_11.pdf
+[2026-07-13T02:02:08.431Z] startTime=2026-07-13T02:02:08.431Z
+[2026-07-13T02:02:08.431Z] expectedRole=question_paper
+[2026-07-13T02:02:10.007Z] extract.exitCode=0
+[2026-07-13T02:02:10.007Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_11.pdf",
+  "pageCount": 16,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Some of the images are bitmap images and some are vector graphics. Complete the table by defining the image terms. (a) Term Definition Drawing list Pixel Colour depth [3] The bitmap images are photographs of the holiday locations. (b) Colour depth and image resolution are both included in the file header of a bitmap image. (i) Identify items that could be "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 8,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 The database is managed using a Database Management System (DBMS). (a) State what is meant by a data dictionary give example of an item typically found (i) and one in a data dictionary. Definition Example [2] State what is meant by data integrity give example of how this is implemented (ii) and one in a database. Definition Example [2] The database, stores"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Describe how the Operating System manages the peripheral hardware devices of the (a) computer. [4] Hardware management is one key management task carried out by the Operating System. (b) Identify key management tasks carried out by the Operating System. two other 1 2 [2] The Operating System has utility software including defragmentation software. (c) Expl"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 detect the presence of a person. It then tracks the person and records a video of their movements. Data from the CCTV cameras is transmitted to a central computer. This computer has both Read Only Memory (ROM) and Random Access Memory (RAM). (a) Describe the contents of the ROM in the central computer. (i) [2] The central computer has Dynamic RAM (DRAM). ("
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 (a) = (NOT OR ) XOR ( NAND ) T A B C D A B T C D [2] Describe the function of the NAND and NOR logic gates. (b) NAND NOR [2] An interrupt is generated when a key is pressed on a computer keyboard."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 Explain how the computer handles this interrupt. [5]"
+    }
+  ]
+}
+[2026-07-13T02:02:10.008Z] parserVersion=0.4.0
+[2026-07-13T02:02:10.008Z] documentRole=question_paper
+[2026-07-13T02:02:10.008Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:02:10.287Z] stage.exitCode=0
+[2026-07-13T02:02:10.287Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/9618_s23_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/9618_s23_qp_11.staging.json",
+  "runId": "9618-2023-MJ-11-QP-RUN-547b5fef50d1",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase1/staging/9618_s23_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 29,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 29,
+        "present": 29,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:02:10.289Z] stagingId=9618-2023-MJ-11-QP-RUN-547b5fef50d1
+[2026-07-13T02:02:10.289Z] validationStatus=PASS
+[2026-07-13T02:02:10.289Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:02:10.289Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:02:10.289Z] canonicalPublishable=true
+[2026-07-13T02:02:10.289Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:02:10.289Z] endTime=2026-07-13T02:02:10.289Z
+[2026-07-13T02:02:10.289Z] status=PASS

@@ -1,0 +1,169 @@
+[2026-07-13T02:22:14.264Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_22.pdf
+[2026-07-13T02:22:14.264Z] startTime=2026-07-13T02:22:14.264Z
+[2026-07-13T02:22:14.264Z] expectedRole=question_paper
+[2026-07-13T02:22:15.944Z] extract.exitCode=0
+[2026-07-13T02:22:15.944Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s21_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify and give the data type and use of array that you could have used for . (a) one Task 1 Array Data type Use [3] Describe validation checks that could be used when inputting the number of tickets to (b) two buy for . For each validation check give one example of normal data and one example Task 2 of erroneous data. Validation check 1 Normal data Erro"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) must be less than 1000. Find and output the largest number input, the smallest number input and the range (difference between the largest number and smallest number). [6] Describe how the algorithm could be changed to make testing less time-consuming. (b) [2] Draw the most appropriate flowchart symbol for each pseudocode statement."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) Pseudocode statement Flowchart symbol IF Number = 20 PRINT Number Number Number + 1 ← [3] is totalling. State the type of each pseudocode statement. For example, (b) X + Y X ← IF Number = 20 PRINT Number Number + 1 Number ← [3] This algorithm checks passwords."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Each password must be 8 or more characters in length; the predefined function • Length returns the number of characters. Each password is entered twice, and the two entries must match. • Either or is output. • Accept Reject An input of 999 stops the process. • REPEAT OUTPUT \"Please enter password\" INPUT Password IF Length(Password) >= 8 THEN INPUT Password"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 dataArray[1:20] Write a pseudocode routine that sets each element to zero. Use the most suitable loop (a) structure. [3] Explain why you chose this loop structure. (b) [1] A database table, PLANT, is used to keep a record of plants sold by a nursery. The table has these"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 fields: NAME – name of plant • FLOWER – whether the plant flowers (True) or not (False) • POSITION – shade, partial shade or sun • SIZE – small, medium or large • PRICE – price in $ • NUMBERSOLD – how many sold • A query-by-example grid has been completed to display only the price, name and number sold of small plants that do not flower. NAME PRICE NUMBERS"
+    }
+  ]
+}
+[2026-07-13T02:22:15.946Z] parserVersion=0.4.0
+[2026-07-13T02:22:15.946Z] documentRole=question_paper
+[2026-07-13T02:22:15.946Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:22:16.196Z] stage.exitCode=0
+[2026-07-13T02:22:16.196Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s21_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_22.staging.json",
+  "runId": "0478-2021-MJ-22-QP-RUN-9e98f86dab12",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 13,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 12,
+        "present": 12,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2021-MJ-22-Q1-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:22:16.198Z] stagingId=0478-2021-MJ-22-QP-RUN-9e98f86dab12
+[2026-07-13T02:22:16.198Z] validationStatus=PASS
+[2026-07-13T02:22:16.198Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:22:16.198Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:22:16.198Z] canonicalPublishable=true
+[2026-07-13T02:22:16.198Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:22:16.198Z] endTime=2026-07-13T02:22:16.198Z
+[2026-07-13T02:22:16.198Z] status=PASS

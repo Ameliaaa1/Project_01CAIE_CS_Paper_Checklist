@@ -1,0 +1,240 @@
+[2026-07-15T03:52:32.334Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_12.pdf
+[2026-07-15T03:52:32.334Z] startTime=2026-07-15T03:52:32.334Z
+[2026-07-15T03:52:32.334Z] expectedRole=question_paper
+[2026-07-15T03:52:33.613Z] extract.exitCode=0
+[2026-07-15T03:52:33.613Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w21_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) ✓ Tick ( ) box to show whether denary is a base-2, base-10 or base-16 number system. one Tick ✓ ( ) Base-2 Base-10 Base-16 [1] Hexadecimal values can be used to represent denary values. (b) Convert these hexadecimal values into denary values. four 05 20 1A AB [4] Hexadecimal values can also be converted to binary values. (c) ✓ Tick ( ) box to show the "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 the customer has purchased their tickets, the machine will provide a paper ticket. output device that is used in the ticket machine is a display screen. (a) One Identify other output device that is used in the ticket machine system. one [1] The train company does want users to use a keyboard or a mouse to enter their data, (b) not when buying a ticket. The"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) Six ✓ Tick ( ) to show if each statement applies to serial simplex, parallel simplex, parallel half-duplex or serial duplex data transmission. Some statements may apply to more than one data transmission method. Serial Parallel Parallel Serial Statement simplex simplex half-duplex duplex ✓ ✓ ✓ ✓ ( ) ( ) ( ) ( ) bits are transmitted along a single wire "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 Complete the paragraph using the list of terms. all terms in the list need to be used. Not capacitive • change • circuit • conductive • coordinates • grid • heat • infra-red • insulating • light • manufacture • pressure • resistive • In touch screen technology, an electrostatic field is present on the surface of the touch screen. The properties of a user c"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 data about his customers stored on his laptop. Sammi does connect the laptop to any networks. not Sammi is concerned about his customers’ confidential data being viewed by other people in (a) his office. method he uses to prevent others viewing the data is encryption. One Identify other methods Sammi could use to prevent his customers’ confidential data th"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 computer program. Give similarity between a compiler and an interpreter. (a) one [1] Describe differences between a compiler and an interpreter. (b) two Difference 1 Difference 2 [4] other type of translator. (c) [1] statements are given about devices."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Five ✓ Tick ( ) to show if each statement applies to a 3D scanner, barcode reader or a Quick Response (QR) code reader. Some statements may apply to more than type of device. one 3D Barcode QR code Statement scanner reader reader ✓ ✓ ✓ ( ) ( ) ( ) uses position and alignment markers for orientation when scanning scans the shape and appearance of an object "
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 three The player will see a colour displayed on a screen and has 1 second to hit the mat that matches the colour. If the player hits the correct mat, within 1 second, a counter is incremented. When a player hits an incorrect mat, the game ends. The game uses sensors and a microprocessor to determine if the player hits the correct mat within 1 second. Expla"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 An interrupt is generated to inform the Central Processing Unit (CPU) that the application has been opened. Give other examples of when an interrupt signal could be generated. (a) three 1 2 3 [3] State what would happen if interrupt signals were used in a computer. (b) not [1] Jermain uses the Secure Socket Layer (SSL) protocol for secure transmission when"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 using the internet. Explain how the SSL protocol secures the data for transmission. (a) [2] Identify an alternative protocol that could be used for secure transmission of data using the (b) internet. [1] Give ways that a user can identify if a website uses secure data transmission. (c) two 1 2 [2] Consider the following logic statement:"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "11 = ((( AND ) OR (NOT ( OR ))) NAND ) X A B B C C Draw a logic circuit to represent the given logic statement. (a) Do attempt to simplify the logic statement. All logic gates must have a maximum of not two inputs. A B X C [5] Complete the truth table for the given logic statement. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [4] Identify logi"
+    }
+  ]
+}
+[2026-07-15T03:52:33.614Z] parserVersion=0.4.0
+[2026-07-15T03:52:33.614Z] documentRole=question_paper
+[2026-07-15T03:52:33.614Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:52:33.893Z] stage.exitCode=0
+[2026-07-15T03:52:33.893Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w21_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_12.staging.json",
+  "runId": "0478-2021-ON-12-QP-RUN-500fd11022cd",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 29,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 29,
+        "present": 29,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:52:33.895Z] stagingId=0478-2021-ON-12-QP-RUN-500fd11022cd
+[2026-07-15T03:52:33.895Z] validationStatus=PASS
+[2026-07-15T03:52:33.895Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:52:33.895Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:52:33.895Z] canonicalPublishable=true
+[2026-07-15T03:52:33.895Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:52:33.895Z] endTime=2026-07-15T03:52:33.895Z
+[2026-07-15T03:52:33.895Z] status=PASS

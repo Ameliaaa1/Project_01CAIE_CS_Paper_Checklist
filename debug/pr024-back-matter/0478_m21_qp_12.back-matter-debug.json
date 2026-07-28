@@ -1,0 +1,202 @@
+{
+  "generatedFor": "PR-024_Back_Matter_Detection_Investigation_Solution",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-March/0478_m21_qp_12.pdf",
+  "rootCause": "A legitimate URL in Q2 matched an over-broad staging back-matter regex; page 16 was already correctly excluded from canonical text.",
+  "pageClassification": [
+    {
+      "pageNumber": 1,
+      "pageType": "cover",
+      "containsBackMatter": false,
+      "canonicalText": "™ Cambridge IGCSE * 0 COMPUTER SCIENCE 0478/12 8 0 Paper 1 Theory February/March 2021 3 7 1 hour 45 minutes 2 8 9 You must answer on the question paper. 4 0 * No additional materials are needed. INSTRUCTIONS ● Answer questions. all ● Use a black or dark blue pen. You may use an HB pencil for any diagrams or graphs. ● Write your name, centre number and candidate number in the boxes at the top of the page. ● Write your answer to each question in the space provided. ● Do use an erasable pen or correction fluid. not ● Do write on any bar codes. not ● Calculators must be used in this paper. not INFORMATION ● The total mark for this paper is 75. ● The number of marks for each question or part question is shown in brackets [ ]. ● No marks will be awarded for using brand names of software packages or hardware. This document has pages. Any blank pages are indicated. DC (PQ/SG) 202679/4",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 2,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "A hockey club records the number of people that watch each match. An 8-bit binary register is 1 used to store this value. 46 people watch the first match and 171 people watch the second match. (a) Show how the registers would store these denary values as 8-bit binary. Denary 8-bit binary value 46 171 [2] Working space Give the largest denary value that can be stored in the 8-bit binary register. (b) [1] The hockey club wants to increase the number of people that can watch each match to 2000. (c) The 8-bit binary register may no longer be able to store the value. Give the smallest number of bits that can be used to store the denary value 2000. [1] Working space",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 3,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "Electronic data about the final score for the match is transmitted to a central computer (d) 30 kilometres away, using serial transmission. Explain why serial transmission is more appropriate than parallel transmission in this (i) scenario. [3] The data transmission is also half-duplex. (ii) Describe half-duplex data transmission. [2] The data transmission uses checksums. (iii) Describe how checksums are used to detect errors in data transmission. [3]",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 4,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "Gurdeep takes high definition photographs using a digital camera. She has set up a website where 2 users can view thumbnails of her photographs. A thumbnail is a small version of the high definition photograph. Gurdeep compresses the high definition photographs to create the thumbnails. She uses (a) lossy compression. Describe how lossy compression creates the thumbnails. [3] Gurdeep sets up a web server to host her website. She reads about an Internet Protocol (IP) (b) address, a Media Access Control (MAC) address and a Uniform Resource Locator (URL). Draw a line to connect each term to the correct example. Term Example IP address 192.168.0.255 https:// MAC address www.cambridgeinternational.org URL 00:15:E9:2B:99:3C [2]",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 5,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "Users can buy the high definition photographs from the website. When a user buys a high (c) definition photograph, a Secure Socket Layer (SSL) connection is created. Give benefit of using an SSL connection. (i) one [1] Explain how the SSL connection is created. (ii) [4]",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 6,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "The given table shows the name or description of four devices. The table is incomplete. 3 Complete the missing device names and descriptions. Device name Description Uses either thermal bubble or piezoelectric technology Actuator Uses thousands of tiny mirrors that can move very quickly to create an image Mouse [4]",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 7,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "A supermarket sells many products. Each product has a barcode. 4 Explain how the barcode is read at the supermarket checkout and how the price of the product (a) is found. [6] The supermarket stores data using a Solid State Drive (SSD). (b) Explain how an SSD stores data. (i) [3] One advantage of an SSD rather than a Hard Disk Drive (HDD) is that it has no moving (ii) parts, so it is more durable. State other advantage of the supermarket using SSD rather than HDD. one [1]",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 8,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "Computers use logic gates. 5 State the logic gate that produces each truth table. (a) single Truth table Logic gate A B Output 0 0 1 0 1 1 1 0 1 1 1 0 A B Output 0 0 0 0 1 1 1 0 1 1 1 0 A B Output 0 0 1 0 1 0 1 0 0 1 1 0 [3] An aeroplane has a warning system that monitors the height of the aeroplane above the (b) ground, whether the aeroplane is ascending or descending, and the speed of the aeroplane. Input Binary value Condition 1 Height is less than 500 metres Height (H) 0 Height is greater than or equal to 500 metres Ascending or 1 Aeroplane is ascending or in level flight Descending Aeroplane is descending (A) Speed is less than or equal to knots Speed (S) Speed is greater than knots",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 9,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "The warning system will produce an output of 1 that will sound an alarm (W) when either of these conditions apply: Height is less than 500 metres and the aeroplane is descending or The aeroplane is descending and speed is greater than 470 knots Draw a logic circuit to represent the warning system. H A W S [5]",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 10,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "Hacking is one type of Internet risk used to obtain personal data that is stored on a computer. 6 Explain how a firewall can help prevent hacking. (a) [4] Identify and describe other types of internet risk that are used to obtain personal data. (b) two Internet risk 1 Description Internet risk 2 Description [6]",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 11,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "Adeel has used a high-level language to program a mobile application. 7 Describe what is meant by a high-level language. (a) [2] Adeel uses an interpreter while developing and testing the application. (b) Adeel uses a compiler when the application is ready to be shared with others. Compare the features of interpreters and compilers. [4] Adeel is considering distributing his application as free software or shareware. (c) Explain the difference between free software and shareware. [5]",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 12,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "Adeel is concerned about his application being plagiarised. (d) Define the term plagiarism. [1] Adeel copyrights his application. (e) State why Adeel copyrights his application. [1]",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 13,
+      "pageType": "question_content",
+      "containsBackMatter": false,
+      "canonicalText": "The Von Neumann model, for a computer system, uses the stored program concept. 8 Describe what is meant by the stored program concept. (a) [2] The fetch-execute cycle of a Von Neumann model, for a computer system, uses registers and (b) buses. Describe the role of the Program Counter. (i) [2] Describe the role of the Control Bus. (ii) [2] Computers based on the Von Neumann model, for a computer system, use interrupts. (c) Explain why interrupts are needed. [2]",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 14,
+      "pageType": "blank",
+      "containsBackMatter": false,
+      "canonicalText": "BLANK PAGE",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 15,
+      "pageType": "blank",
+      "containsBackMatter": false,
+      "canonicalText": "BLANK PAGE",
+      "excludedBackMatterSpanCount": 0
+    },
+    {
+      "pageNumber": 16,
+      "pageType": "back_matter",
+      "containsBackMatter": true,
+      "canonicalText": "BLANK PAGE",
+      "excludedBackMatterSpanCount": 127
+    }
+  ],
+  "boundaryOutput": [
+    {
+      "id": "0478-2021-FM-12-Q1",
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 12,
+      "leafQuestionCount": 6
+    },
+    {
+      "id": "0478-2021-FM-12-Q2",
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 10,
+      "leafQuestionCount": 4
+    },
+    {
+      "id": "0478-2021-FM-12-Q3",
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 4,
+      "leafQuestionCount": 1
+    },
+    {
+      "id": "0478-2021-FM-12-Q4",
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 10,
+      "leafQuestionCount": 3
+    },
+    {
+      "id": "0478-2021-FM-12-Q5",
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 8,
+      "leafQuestionCount": 4
+    },
+    {
+      "id": "0478-2021-FM-12-Q6",
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 10,
+      "leafQuestionCount": 2
+    },
+    {
+      "id": "0478-2021-FM-12-Q7",
+      "questionNumber": "7",
+      "pageStart": 11,
+      "pageEnd": 13,
+      "marks": 13,
+      "leafQuestionCount": 5
+    },
+    {
+      "id": "0478-2021-FM-12-Q8",
+      "questionNumber": "8",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "marks": 8,
+      "leafQuestionCount": 4
+    }
+  ],
+  "invariants": {
+    "questionCount": 8,
+    "leafQuestionCount": 29,
+    "totalMarks": 75
+  },
+  "acceptance": {
+    "legitimateQuestionUrlPreserved": true,
+    "finalPageClassifiedAsBackMatter": true,
+    "finalPageCanonicalText": "BLANK PAGE",
+    "backMatterIncludedIssueCount": 0,
+    "fixtureValidationStatus": "PASS",
+    "phase2Status": "PASS",
+    "phase2FailedCount": 0,
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "textQualityRegressions": []
+  }
+}

@@ -1,0 +1,199 @@
+[2026-07-13T02:05:04.055Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_23.pdf
+[2026-07-13T02:05:04.055Z] startTime=2026-07-13T02:05:04.055Z
+[2026-07-13T02:05:04.055Z] expectedRole=question_paper
+[2026-07-13T02:05:07.227Z] extract.exitCode=0
+[2026-07-13T02:05:07.227Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s21_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_23.pdf",
+  "pageCount": 24,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) Complete the following identifier table. Example Explanation Variable name Data type value The preferred name of the member \"Wong\" joining the football club A value to indicate whether an existing member of the club lives at FALSE the same address When the member joined the football 19/02/1983 club The number of points a member has earned. Members of t"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 8,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) A description of the relationship between the modules is summarised as follows: Module name Description Calls either or • UpdateLoan() LoanExtend() LoanReturn() Called with parameters and • LoanID BookID Calls to see whether the book has been • CheckReserve() reserved for another library user LoanExtend() Returns if the loan has been extended, otherwis"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) ticket sales. A number of arrays are used to store data. The computer is switched off overnight and data has to be input again at the start of each day before any tickets can be sold. This process is very time consuming. Explain how the program could use text files to speed up the process. (i) [2] State the characteristic of text files that allow them "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 14,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 10 FUNCTION Convert(Name : STRING) RETURNS STRING 11 12 DECLARE Flag: BOOLEAN 13 DECLARE Index : INTEGER 14 DECLARE ThisChar : CHAR 15 DECLARE NewName : STRING 16 17 CONSTANT SPACECHAR = ' ' 18 TRUE 19 Flag 1 20 Index \"\" // formatted name string 21 NewName 22 23 WHILE Index <= LENGTH(Name) MID(Name, Index, 1) 24 ThisChar 25 IF Flag = TRUE THEN NewName & UC"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 Result INTEGER together with their marks. The array contains 2000 elements, organised as 1000 rows and 2 columns. Column 1 contains the candidate number and column 2 contains the mark for the corresponding candidate. All elements contain valid exam result data. A procedure is needed to sort into ascending order of mark using an efficient Sort() Result bubb"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 16,
+      "pageEnd": 18,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 A C D E Ø The free list is as follows: Ø Explain how a node containing data value B is added to the list in alphabetic sequence. (a) [4] Describe how the linked list in may be implemented using variables and arrays. (b) part (a) [2] A program is needed to take a string containing a full name and produce a new string of initials."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 18,
+      "pageEnd": 21,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 Some words in the full name will be ignored. For example, \"the\", \"and\", \"of\", \"for\" and \"to\" may all be ignored. Each letter of the abbreviated string must be upper case. For example: Full name Initials Integrated Development Environment IDE The American Standard Code for Information Interchange ASCII The programmer has decided to use a global variable of "
+    }
+  ]
+}
+[2026-07-13T02:05:07.230Z] parserVersion=0.4.0
+[2026-07-13T02:05:07.230Z] documentRole=question_paper
+[2026-07-13T02:05:07.230Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:05:07.603Z] stage.exitCode=0
+[2026-07-13T02:05:07.603Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s21_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_23.staging.json",
+  "runId": "9618-2021-MJ-23-QP-RUN-812270480872",
+  "status": "NEEDS_REVIEW",
+  "publishStatus": "BLOCKED",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 20,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 18,
+        "present": 18,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2021-MJ-23-Q3-A-II",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2021-MJ-23-Q6-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 1,
+  "p2": 0,
+  "issues": [
+    [
+      "P1",
+      "SUSPICIOUS_GLYPHS_REMAIN",
+      null
+    ]
+  ]
+}
+[2026-07-13T02:05:07.607Z] stagingId=9618-2021-MJ-23-QP-RUN-812270480872
+[2026-07-13T02:05:07.607Z] validationStatus=WARN
+[2026-07-13T02:05:07.607Z] publishStatus=BLOCKED
+[2026-07-13T02:05:07.607Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:05:07.607Z] canonicalPublishable=true
+[2026-07-13T02:05:07.607Z] issueCounts={"P0":0,"P1":1,"P2":0}
+[2026-07-13T02:05:07.607Z] endTime=2026-07-13T02:05:07.607Z
+[2026-07-13T02:05:07.607Z] status=PASS

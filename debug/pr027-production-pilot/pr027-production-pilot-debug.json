@@ -1,0 +1,124 @@
+{
+  "generatedFor": "PR-027_Production_Pilot_Explanation",
+  "report": {
+    "pilot": "0478-2023-MJ-12",
+    "pilotBatchId": "PR027-0478-2023-MJ-12",
+    "status": "PASS",
+    "productionWrite": true,
+    "storePath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production/production-store.json",
+    "publishGate": "PASS",
+    "qp": {
+      "id": "0478-2023-MJ-12-QP",
+      "status": "PASS",
+      "validation": "PASS",
+      "completeness": "PASS"
+    },
+    "ms": {
+      "id": "0478-2023-MJ-12-MS",
+      "status": "PASS",
+      "validation": "PASS",
+      "completeness": "PASS"
+    },
+    "pairing": {
+      "pairingStatus": "PASS",
+      "pairingKey": "0478-2023-MJ-12",
+      "questionPaperId": "0478-2023-MJ-12-QP",
+      "markSchemeId": "0478-2023-MJ-12-MS"
+    },
+    "productionVerification": {
+      "status": "PASS",
+      "counts": {
+        "paperCount": 2,
+        "questionCount": 10,
+        "leafQuestionCount": 31,
+        "responseAreaCount": 112,
+        "markSchemeEntryCount": 7
+      },
+      "expectedCounts": {
+        "paperCount": 2,
+        "questionCount": 10,
+        "leafQuestionCount": 31,
+        "responseAreaCount": 112,
+        "markSchemeEntryCount": 7
+      },
+      "sourceTraceAvailable": true,
+      "pairingLinked": true
+    },
+    "frontendVerification": {
+      "questionFinder": "PASS",
+      "knowledgeChecklist": "PASS",
+      "markSchemeSearch": "PASS",
+      "aiRetrieval": "PASS",
+      "openOriginalQuestion": "PASS",
+      "qpMsCorrespondence": "PASS"
+    },
+    "issues": []
+  },
+  "productionStore": {
+    "path": "output/production/production-store.json",
+    "batchIds": [
+      "PR027-0478-2023-MJ-12"
+    ],
+    "paperIds": [
+      "0478-2023-MJ-12-QP",
+      "0478-2023-MJ-12-MS"
+    ],
+    "counts": {
+      "batches": 1,
+      "papers": 2,
+      "questions": 10,
+      "leaves": 31,
+      "responseAreas": 112,
+      "markSchemeEntries": 7,
+      "pairings": 1
+    }
+  },
+  "transactionVerification": {
+    "atomicTempWriteAndRename": "PASS",
+    "injectedFailureRestoresPreviousSnapshot": "PASS",
+    "duplicateIdentityBlocked": "PASS",
+    "exactPilotBatchRollback": "PASS",
+    "rollbackCommandTestedBeforeFinalRepublish": true
+  },
+  "frontendHttpSmoke": {
+    "server": "http://127.0.0.1:3210",
+    "health": "PASS",
+    "productionQuestionFinder": {
+      "status": "PASS",
+      "canonicalQuestionId": "0478-2023-MJ-12-Q1"
+    },
+    "productionMarkSchemeRetrieval": {
+      "status": "PASS",
+      "canonicalQuestionId": "0478-2023-MJ-12-Q2"
+    },
+    "questionPaperHttpStatus": 200,
+    "markSchemeHttpStatus": 200
+  },
+  "regression": {
+    "phase1": {
+      "totalFiles": 20,
+      "successCount": 20,
+      "failedCount": 0
+    },
+    "phase2": {
+      "totalFiles": 120,
+      "successCount": 120,
+      "failedCount": 0,
+      "successRate": 1
+    },
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "textQualityRegressions": [],
+    "datasetGaps": [],
+    "npmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "scope": {
+    "fullProduction": false,
+    "supportedSyllabuses": [
+      "0478",
+      "9618"
+    ],
+    "pilotOnly": "0478-2023-MJ-12"
+  }
+}

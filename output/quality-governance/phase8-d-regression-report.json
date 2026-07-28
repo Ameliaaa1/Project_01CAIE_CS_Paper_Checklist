@@ -1,0 +1,13 @@
+{
+  "generatedFor": "Phase-8-D",
+  "status": "PASS",
+  "productionWrite": false,
+  "checks": {
+    "threeLevels": true,
+    "criticalBlocks": true,
+    "warningDoesNotBypassReview": true,
+    "informationalNonBlocking": true,
+    "arrayIdentifierNotMark": true,
+    "persistedFindingsClassified": true
+  }
+}

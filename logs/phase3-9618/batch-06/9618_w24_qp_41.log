@@ -1,0 +1,112 @@
+[2026-07-14T16:59:28.864Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_41.pdf
+[2026-07-14T16:59:28.864Z] startTime=2026-07-14T16:59:28.864Z
+[2026-07-14T16:59:28.864Z] expectedRole=question_paper
+[2026-07-14T16:59:31.456Z] extract.exitCode=0
+[2026-07-14T16:59:31.457Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_41.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_41.pdf",
+  "pageCount": 16,
+  "questionCount": 3,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 6,
+      "marks": 22,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The text file stores string data items. Each data item is on a new line in the text (a) Data.txt file. The function : ReadData() has a local array of strings that can store 45 items • reads each line of data and stores it in the array • returns the array. • Write program code for the function . ReadData() Save your program as . Question1_N24 Copy and paste"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 6,
+      "pageEnd": 12,
+      "marks": 34,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 jump over obstacles called fences. A horse successfully jumps a fence if it does not knock the fence down. The program is written using Object-Oriented Programming (OOP). The class stores data about the horses. Horse Horse stores the name given to the horse Name : STRING stores the maximum height in cm that the horse can MaxFenceHeight : INTEGER jump, for "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 12,
+      "pageEnd": 15,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "3 integer data. The second dimension of the array stores the pointer to the next node in the linked list. A linked list node with no data is initialised with the integer . These nodes are linked together as –1 an empty list. A pointer of identifies that node as the last node. –1 The linked list can store 20 nodes. The global 2D array stores the linked list. "
+    }
+  ]
+}
+[2026-07-14T16:59:31.459Z] parserVersion=0.4.0
+[2026-07-14T16:59:31.459Z] documentRole=question_paper
+[2026-07-14T16:59:31.459Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:59:31.900Z] stage.exitCode=0
+[2026-07-14T16:59:31.900Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_41.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_41.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_41.staging.json",
+  "runId": "9618-2024-ON-41-QP-RUN-2c91c43abd65",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_41.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 3,
+      "leafQuestionCount": 26,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:59:31.905Z] stagingId=9618-2024-ON-41-QP-RUN-2c91c43abd65
+[2026-07-14T16:59:31.905Z] validationStatus=PASS
+[2026-07-14T16:59:31.905Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:59:31.905Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:59:31.905Z] canonicalPublishable=true
+[2026-07-14T16:59:31.905Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:59:31.905Z] endTime=2026-07-14T16:59:31.905Z
+[2026-07-14T16:59:31.905Z] status=PASS

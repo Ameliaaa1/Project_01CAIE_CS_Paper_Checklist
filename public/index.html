@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Manrope:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=practice-modes-6" />
+    <link rel="stylesheet" href="/styles.css?v=practice-modes-22" />
   </head>
   <body>
     <header class="topbar">
@@ -102,8 +102,9 @@
           <p class="eyebrow">CAIE Computer Science revision analyzer</p>
           <h1>Computer Science Web Checklist</h1>
           <p class="hero-text">
-            PaperLens uses a maintained analysis of CAIE IGCSE Computer Science 0478 past papers and mark schemes from
-            2019 to 2025. Pick a paper focus, generate topic priorities, then export a revision checklist.
+            PaperLens helps high-school students turn past-paper practice into a clear study plan. Search real exam
+            questions, spot the skills that keep coming up, and practise answers with mark-scheme feedback before the
+            next test.
           </p>
         </div>
         <figure class="hero-media">
@@ -115,8 +116,8 @@
         <div class="question-finder-topline">
           <div class="section-head question-finder-head">
             <p class="eyebrow">Question finder</p>
-            <h2>Build a focused past-paper set.</h2>
-            <p>Choose one or more syllabuses, search a knowledge point, then preview matching past-paper questions.</p>
+            <h2>Find the right exam question.</h2>
+            <p>Type a topic, pick a past-paper question, then practise your answer with instant feedback.</p>
           </div>
           <div class="question-access-bar" id="questionFinderAccessBar">
             <span class="question-access-indicator" aria-hidden="true"></span>
@@ -138,6 +139,13 @@
                 <span>
                   <strong>Cambridge IGCSE Computer Science</strong>
                   <small>0478 · Paper 1 and Paper 2</small>
+                </span>
+              </label>
+              <label class="syllabus-choice">
+                <input class="question-syllabus-input" type="checkbox" value="caie-as-a-level-9618" checked />
+                <span>
+                  <strong>Cambridge International AS & A Level Computer Science</strong>
+                  <small>9618 · Paper 1 and Paper 2</small>
                 </span>
               </label>
             </fieldset>
@@ -164,7 +172,7 @@
           <div class="question-builder-panel" aria-live="polite">
             <div class="question-builder-summary">
               <div>
-                <span id="questionFinderStatus">Choose a syllabus and enter a knowledge point.</span>
+                <span id="questionFinderStatus">Search a topic to find exam questions.</span>
               </div>
             </div>
             <div class="question-results" id="questionFinderResults"></div>
@@ -220,6 +228,56 @@
             </div>
           </article>
 
+        </div>
+      </section>
+
+      <section class="igcse-hub" id="as-a-level-9618">
+        <div class="section-head">
+          <p class="eyebrow">AS & A Level 9618</p>
+          <h2>AS paper framework.</h2>
+          <p>
+            Paper 1 and Paper 2 follow the same checklist pattern as 0478, with AS-level theory fundamentals and
+            problem-solving content separated into focused boards.
+          </p>
+        </div>
+
+        <div class="syllabus-shell">
+          <section class="empty-board past-paper-board full-past-paper-board archive-after-finder" id="9618-past-paper-archive">
+            <span class="board-label">Past paper archive</span>
+            <div class="past-paper-catalog combined-past-paper-catalog" id="pastPaperArchive9618"></div>
+          </section>
+
+          <article class="paper-group" id="9618-paper-1">
+            <div class="paper-heading">
+              <span class="zone-icon">P1</span>
+              <div>
+                <p class="eyebrow">Paper 1</p>
+                <h3>Theory Fundamentals</h3>
+              </div>
+            </div>
+            <div class="paper-sections">
+              <section class="empty-board checklist-board" id="9618-paper-1-checklist">
+                <span class="board-label">Checklist</span>
+                <div class="syllabus-checklist" id="paper9618Paper1Checklist"></div>
+              </section>
+            </div>
+          </article>
+
+          <article class="paper-group" id="9618-paper-2">
+            <div class="paper-heading">
+              <span class="zone-icon">P2</span>
+              <div>
+                <p class="eyebrow">Paper 2</p>
+                <h3>Fundamental Problem-solving and Programming Skills</h3>
+              </div>
+            </div>
+            <div class="paper-sections">
+              <section class="empty-board checklist-board" id="9618-paper-2-checklist">
+                <span class="board-label">Checklist</span>
+                <div class="syllabus-checklist" id="paper9618Paper2Checklist"></div>
+              </section>
+            </div>
+          </article>
         </div>
       </section>
       </main>
@@ -305,7 +363,7 @@
       </div>
     </div>
 
-    <script src="/assets/paperlens-data.js?v=practice-modes-6"></script>
-    <script src="/app.js?v=practice-modes-6"></script>
+    <script src="/assets/paperlens-data.js?v=practice-modes-22"></script>
+    <script src="/app.js?v=practice-modes-22"></script>
   </body>
 </html>

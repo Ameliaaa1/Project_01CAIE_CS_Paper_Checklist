@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pr069-001",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_41.pdf",
+    "syllabus": "9618",
+    "year": 2022,
+    "session": "May-June",
+    "component": "41",
+    "expectedRole": "question_paper",
+    "phase1Regression": false,
+    "purpose": "PR-069 recovered 9618 QP May/June 2022 component 41 staging generation"
+  },
+  {
+    "id": "pr069-002",
+    "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_ms_41.pdf",
+    "syllabus": "9618",
+    "year": 2022,
+    "session": "May-June",
+    "component": "41",
+    "expectedRole": "mark_scheme",
+    "phase1Regression": false,
+    "purpose": "PR-069 recovered 9618 MS May/June 2022 component 41 staging generation"
+  }
+]

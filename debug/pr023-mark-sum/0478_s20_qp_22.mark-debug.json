@@ -1,0 +1,1440 @@
+{
+  "debugType": "pr023_mark_sum_validation_investigation",
+  "generatedAt": "2026-07-11T08:26:13.639Z",
+  "file": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_22.pdf",
+  "rootCauseSummary": "Remaining MARK_SUM_MISMATCH is caused by pseudocode line numbers being interpreted as question boundaries; defer to a targeted question marker PR.",
+  "validationStatus": "FAIL",
+  "issues": [
+    {
+      "id": "0478-2020-MJ-22-QP-RUN-24c3b268e2dd-ISSUE-001",
+      "ingestion_run_id": "0478-2020-MJ-22-QP-RUN-24c3b268e2dd",
+      "paper_id": "0478-2020-MJ-22-QP",
+      "question_id": "0478-2020-MJ-22-Q18",
+      "page_number": null,
+      "severity": "P0",
+      "code": "MARK_SUM_MISMATCH",
+      "message": "Parent marks do not equal leaf marks.",
+      "observed_json": {
+        "id": "0478-2020-MJ-22-Q18",
+        "ingestion_run_id": "0478-2020-MJ-22-QP-RUN-24c3b268e2dd",
+        "paper_id": "0478-2020-MJ-22-QP",
+        "parent_question_id": null,
+        "question_number": "18",
+        "section_path_json": [
+          "18"
+        ],
+        "depth": 0,
+        "is_leaf": false,
+        "context_text": null,
+        "question_text": "18 OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the (b) number of students with that mark, and output both these values. [6] This flowchart inputs the points won and the points lost when playing a game. The difference 4 between the points won and lost is calculated and depending on the result the player can: move up to the next level, stay at the same level, or move down to the previous level. The flowchart finishes when the input for points won is –1. START INPUT PointsWon, PointsLost IS Yes END = –1 ? PointsWon No Difference PointsWon - PointsLost IS OUTPUT Yes Difference > = \"Well done ? 1000 move up\" No IS Yes OUTPUT Difference < 0 ? \"Sorry move down\" No OUTPUT \"Keep on trying\" Complete a trace table for this set of input data: (a) 5000, 4474, 6055, 2000, 7900, 9800, 3000, 2150, –1, 6700, 7615 OUTPUT PointsWon PointsLost Difference [3] The flowchart needs to be changed. When the difference is more than 5000 the output (b) message is ‘Fantastic leap up two levels’. Describe the changes that will need to be made to the flowchart. [3] Arrays are data structures used in programming. Explain what is meant by the terms dimension 5 and index in an array. Use examples of arrays in your explanations. Dimension Index [3] A database table, JUICE, is used to keep a record of cartons of fresh fruit juice available for sale. 6 Juice code Fruit 1 Fruit 2 Size Volume (ml) Stock level LMO10 Mango Orange Large 1000 18 MOO05 Orange Orange Medium 500 8 SAM02 Apple Mango Small 200 25 SAA02 Apple Apple Small 200 50 SPP02 Pineapple Pineapple Small 200 10 MMM05 Mango Mango Medium 500 12 LMM10 Mango Mango Large 1000 5 MGG05 Guava Guava Medium 500 5 SMO02 Mango Orange Small 200 7 MOP05 Orange Pineapple Medium 500 12 LAA10 Apple Apple Large 1000 32 SGO02 Guava Orange Small 200 10 LPP10 Pineapple Pineapple Large 1000 3 LOO10 Orange Orange Large 1000 25 SOO02 Orange Orange Small 200 40 Identify a suitable field to use as the primary key. State a reason for your choice. (a) Field Reason [2] Complete the query-by-example grid to display only the stock level and size of all cartons (b) containing only apple juice. Field: Table: Sort: Show: Criteria: or: [4]",
+        "display_text": "18 OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the (b) number of students with that mark, and output both these values. [6] This flowchart inputs the points won and the points lost when playing a game. The difference 4 between the points won and lost is calculated and depending on the result the player can: move up to the next level, stay at the same level, or move down to the previous level. The flowchart finishes when the input for points won is –1. START INPUT PointsWon, PointsLost IS Yes END = –1 ? PointsWon No Difference PointsWon - PointsLost IS OUTPUT Yes Difference > = \"Well done ? 1000 move up\" No IS Yes OUTPUT Difference < 0 ? \"Sorry move down\" No OUTPUT \"Keep on trying\" Complete a trace table for this set of input data: (a) 5000, 4474, 6055, 2000, 7900, 9800, 3000, 2150, –1, 6700, 7615 OUTPUT PointsWon PointsLost Difference [3] The flowchart needs to be changed. When the difference is more than 5000 the output (b) message is ‘Fantastic leap up two levels’. Describe the changes that will need to be made to the flowchart. [3] Arrays are data structures used in programming. Explain what is meant by the terms dimension 5 and index in an array. Use examples of arrays in your explanations. Dimension Index [3] A database table, JUICE, is used to keep a record of cartons of fresh fruit juice available for sale. 6 Juice code Fruit 1 Fruit 2 Size Volume (ml) Stock level LMO10 Mango Orange Large 1000 18 MOO05 Orange Orange Medium 500 8 SAM02 Apple Mango Small 200 25 SAA02 Apple Apple Small 200 50 SPP02 Pineapple Pineapple Small 200 10 MMM05 Mango Mango Medium 500 12 LMM10 Mango Mango Large 1000 5 MGG05 Guava Guava Medium 500 5 SMO02 Mango Orange Small 200 7 MOP05 Orange Pineapple Medium 500 12 LAA10 Apple Apple Large 1000 32 SGO02 Guava Orange Small 200 10 LPP10 Pineapple Pineapple Large 1000 3 LOO10 Orange Orange Large 1000 25 SOO02 Orange Orange Small 200 40 Identify a suitable field to use as the primary key. State a reason for your choice. (a) Field Reason [2] Complete the query-by-example grid to display only the stock level and size of all cartons (b) containing only apple juice. Field: Table: Sort: Show: Criteria: or: [4]",
+        "search_text": null,
+        "page_start": 8,
+        "page_end": 13,
+        "marks": 22,
+        "bbox_json": null,
+        "has_visual_content": false,
+        "visual_type": null,
+        "question_image_key": null,
+        "question_image_hash": null,
+        "response_areas_json": [],
+        "response_area_status": "UNKNOWN",
+        "confidence_json": {
+          "marker": 0.98,
+          "boundary": 0.88,
+          "text": 0.96,
+          "marks": 0.35,
+          "layout": 0.92,
+          "structure": 0.35,
+          "overall": 0.69
+        },
+        "review_status": "BLOCKED",
+        "validation_status": "FAIL",
+        "raw_json": {
+          "id": "0478-2020-MJ-22-Q18",
+          "paperId": "0478-2020-MJ-22-QP",
+          "questionNumber": "18",
+          "sectionPath": [
+            "18"
+          ],
+          "depth": 0,
+          "sequence": 15,
+          "pageStart": 8,
+          "pageEnd": 13,
+          "isLeaf": false,
+          "parentQuestionId": null,
+          "marker": {
+            "pageNumber": 8,
+            "x": 50,
+            "y": 476,
+            "globalOrder": 70125
+          },
+          "marks": 22,
+          "markValidation": {
+            "declared": 22,
+            "leafSum": 18,
+            "valid": false
+          },
+          "hasVisualContent": false,
+          "confidence": {
+            "marker": 0.98,
+            "boundary": 0.88,
+            "text": 0.96,
+            "marks": 0.35,
+            "layout": 0.92,
+            "structure": 0.35,
+            "overall": 0.69
+          },
+          "issues": [
+            {
+              "severity": "P0",
+              "code": "MARK_SUM_MISMATCH",
+              "message": "Parent marks do not equal leaf marks."
+            }
+          ],
+          "reviewStatus": "BLOCKED",
+          "leafQuestions": [
+            {
+              "id": "0478-2020-MJ-22-Q18-B",
+              "paperId": "0478-2020-MJ-22-QP",
+              "parentQuestionId": "0478-2020-MJ-22-Q18",
+              "questionNumber": "18(b)",
+              "sectionPath": [
+                "18",
+                "b"
+              ],
+              "depth": 1,
+              "isLeaf": true,
+              "contextText": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the",
+              "questionText": "(b) number of students with that mark, and output both these values. [6] This flowchart inputs the points won and the points lost when playing a game. The difference 4 between the points won and lost is calculated and depending on the result the player can: move up to the next level, stay at the same level, or move down to the previous level. The flowchart finishes when the input for points won is –1. START INPUT PointsWon, PointsLost IS Yes END = –1 ? PointsWon No Difference PointsWon - PointsLost IS OUTPUT Yes Difference > = \"Well done ? 1000 move up\" No IS Yes OUTPUT Difference < 0 ? \"Sorry move down\" No OUTPUT \"Keep on trying\" Complete a trace table for this set of input data:",
+              "displayText": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the\n(b) number of students with that mark, and output both these values. [6] This flowchart inputs the points won and the points lost when playing a game. The difference 4 between the points won and lost is calculated and depending on the result the player can: move up to the next level, stay at the same level, or move down to the previous level. The flowchart finishes when the input for points won is –1. START INPUT PointsWon, PointsLost IS Yes END = –1 ? PointsWon No Difference PointsWon - PointsLost IS OUTPUT Yes Difference > = \"Well done ? 1000 move up\" No IS Yes OUTPUT Difference < 0 ? \"Sorry move down\" No OUTPUT \"Keep on trying\" Complete a trace table for this set of input data:",
+              "searchText": "output there are highestmarkstudents with the highest mark of highestmark give line numbers where the errors are to be found in the pseudocode suggest a four correction for each error error 1 line number correction error 2 line number correction error 3 line number correction error 4 line number correction 4 explain how you could extend the algorithm to also find the lowest mark awarded count the b number of students with that mark and output both these values 6 this flowchart inputs the points won and the points lost when playing a game the difference 4 between the points won and lost is calculated and depending on the result the player can move up to the next level stay at the same level or move down to the previous level the flowchart finishes when the input for points won is -1 start input pointswon pointslost is yes end -1 pointswon no difference pointswon - pointslost is output yes difference well done 1000 move up no is yes output difference 0 sorry move down no output keep on trying complete a trace table for this set of input data",
+              "pageStart": 9,
+              "pageEnd": 11,
+              "marks": 6,
+              "responseAreas": [
+                {
+                  "id": "answer-line-1",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 727,
+                    "xMax": 545,
+                    "yMax": 742
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 3,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-2",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 701,
+                    "xMax": 545,
+                    "yMax": 716
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 4,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-3",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 675,
+                    "xMax": 545,
+                    "yMax": 690
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 5,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-4",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 649,
+                    "xMax": 545,
+                    "yMax": 664
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 6,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-5",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 623,
+                    "xMax": 545,
+                    "yMax": 638
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 7,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-6",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 597,
+                    "xMax": 545,
+                    "yMax": 612
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 8,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-7",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 571,
+                    "xMax": 545,
+                    "yMax": 586
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 9,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-8",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 545,
+                    "xMax": 545,
+                    "yMax": 560
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 10,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-9",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 519,
+                    "xMax": 545,
+                    "yMax": 534
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 11,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-10",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 493,
+                    "xMax": 545,
+                    "yMax": 508
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 12,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-11",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 467,
+                    "xMax": 545,
+                    "yMax": 482
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 13,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-12",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 441,
+                    "xMax": 545,
+                    "yMax": 456
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 14,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-13",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 415,
+                    "xMax": 545,
+                    "yMax": 430
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 15,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-14",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 389,
+                    "xMax": 545,
+                    "yMax": 404
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 16,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-15",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 363,
+                    "xMax": 545,
+                    "yMax": 378
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 17,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-16",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 337,
+                    "xMax": 545,
+                    "yMax": 352
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 18,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-17",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 311,
+                    "xMax": 545,
+                    "yMax": 326
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 19,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-18",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 285,
+                    "xMax": 545,
+                    "yMax": 300
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 20,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-19",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 259,
+                    "xMax": 545,
+                    "yMax": 274
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 21,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-20",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 233,
+                    "xMax": 545,
+                    "yMax": 248
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 22,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-21",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 207,
+                    "xMax": 545,
+                    "yMax": 222
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 23,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-22",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 181,
+                    "xMax": 545,
+                    "yMax": 196
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 24,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-23",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 155,
+                    "xMax": 545,
+                    "yMax": 170
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 25,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-24",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 129,
+                    "xMax": 545,
+                    "yMax": 144
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 26,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-25",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 103,
+                    "xMax": 545,
+                    "yMax": 118
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 27,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-26",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 77,
+                    "xMax": 545,
+                    "yMax": 92
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 28,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-27",
+                  "type": "answer_line",
+                  "marks": 6,
+                  "pageNumber": 9,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 51,
+                    "xMax": 533,
+                    "yMax": 66
+                  },
+                  "source": {
+                    "pageNumber": 9,
+                    "blockIndex": 29,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "............................................................................................................................................."
+                  }
+                }
+              ],
+              "responseAreaStatus": "PRESENT",
+              "hasVisualContent": false,
+              "visualType": null,
+              "questionImagePath": null,
+              "bbox": {
+                "pageStart": 9,
+                "pageEnd": 11,
+                "xMin": 50,
+                "yMin": 51,
+                "xMax": 549,
+                "yMax": 781
+              },
+              "confidence": {
+                "marker": 0.98,
+                "boundary": 0.98,
+                "text": 0.97,
+                "marks": 0.99,
+                "layout": 0.95,
+                "structure": 0.98,
+                "overall": 0.98
+              },
+              "issues": [],
+              "reviewStatus": "AUTO_CANDIDATE"
+            },
+            {
+              "id": "0478-2020-MJ-22-Q18-A",
+              "paperId": "0478-2020-MJ-22-QP",
+              "parentQuestionId": "0478-2020-MJ-22-Q18",
+              "questionNumber": "18(a)",
+              "sectionPath": [
+                "18",
+                "a"
+              ],
+              "depth": 1,
+              "isLeaf": true,
+              "contextText": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the",
+              "questionText": "(a) 5000, 4474, 6055, 2000, 7900, 9800, 3000, 2150, –1, 6700, 7615 OUTPUT PointsWon PointsLost Difference [3] The flowchart needs to be changed. When the difference is more than 5000 the output",
+              "displayText": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the\n(a) 5000, 4474, 6055, 2000, 7900, 9800, 3000, 2150, –1, 6700, 7615 OUTPUT PointsWon PointsLost Difference [3] The flowchart needs to be changed. When the difference is more than 5000 the output",
+              "searchText": "output there are highestmarkstudents with the highest mark of highestmark give line numbers where the errors are to be found in the pseudocode suggest a four correction for each error error 1 line number correction error 2 line number correction error 3 line number correction error 4 line number correction 4 explain how you could extend the algorithm to also find the lowest mark awarded count the a 5000 4474 6055 2000 7900 9800 3000 2150 -1 6700 7615 output pointswon pointslost difference 3 the flowchart needs to be changed when the difference is more than 5000 the output",
+              "pageStart": 11,
+              "pageEnd": 11,
+              "marks": 3,
+              "responseAreas": [
+                {
+                  "id": "inferred-response-1",
+                  "type": "inferred_text_response_area",
+                  "pageNumber": 11,
+                  "marks": 3,
+                  "bbox": {
+                    "xMin": 72,
+                    "yMin": 540,
+                    "xMax": 550,
+                    "yMax": 781
+                  },
+                  "source": {
+                    "detection": "inferred_from_leaf_bounds",
+                    "confidence": "low",
+                    "note": "No explicit answer-line or layout response area was visible in PDF text geometry."
+                  }
+                }
+              ],
+              "responseAreaStatus": "PRESENT",
+              "hasVisualContent": false,
+              "visualType": null,
+              "questionImagePath": null,
+              "bbox": {
+                "pageStart": 11,
+                "pageEnd": 11,
+                "xMin": 72,
+                "yMin": 540,
+                "xMax": 550,
+                "yMax": 781
+              },
+              "confidence": {
+                "marker": 0.98,
+                "boundary": 0.98,
+                "text": 0.97,
+                "marks": 0.99,
+                "layout": 0.95,
+                "structure": 0.98,
+                "overall": 0.98
+              },
+              "issues": [],
+              "reviewStatus": "AUTO_CANDIDATE"
+            },
+            {
+              "id": "0478-2020-MJ-22-Q18-B",
+              "paperId": "0478-2020-MJ-22-QP",
+              "parentQuestionId": "0478-2020-MJ-22-Q18",
+              "questionNumber": "18(b)",
+              "sectionPath": [
+                "18",
+                "b"
+              ],
+              "depth": 1,
+              "isLeaf": true,
+              "contextText": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the",
+              "questionText": "(b) message is ‘Fantastic leap up two levels’. Describe the changes that will need to be made to the flowchart. [3] Arrays are data structures used in programming. Explain what is meant by the terms dimension 5 and index in an array. Use examples of arrays in your explanations. Dimension Index [3] A database table, JUICE, is used to keep a record of cartons of fresh fruit juice available for sale. 6 Juice code Fruit 1 Fruit 2 Size Volume (ml) Stock level LMO10 Mango Orange Large 1000 18 MOO05 Orange Orange Medium 500 8 SAM02 Apple Mango Small 200 25 SAA02 Apple Apple Small 200 50 SPP02 Pineapple Pineapple Small 200 10 MMM05 Mango Mango Medium 500 12 LMM10 Mango Mango Large 1000 5 MGG05 Guava Guava Medium 500 5 SMO02 Mango Orange Small 200 7 MOP05 Orange Pineapple Medium 500 12 LAA10 Apple Apple Large 1000 32 SGO02 Guava Orange Small 200 10 LPP10 Pineapple Pineapple Large 1000 3 LOO10 Orange Orange Large 1000 25 SOO02 Orange Orange Small 200 40 Identify a suitable field to use as the primary key. State a reason for your choice.",
+              "displayText": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the\n(b) message is ‘Fantastic leap up two levels’. Describe the changes that will need to be made to the flowchart. [3] Arrays are data structures used in programming. Explain what is meant by the terms dimension 5 and index in an array. Use examples of arrays in your explanations. Dimension Index [3] A database table, JUICE, is used to keep a record of cartons of fresh fruit juice available for sale. 6 Juice code Fruit 1 Fruit 2 Size Volume (ml) Stock level LMO10 Mango Orange Large 1000 18 MOO05 Orange Orange Medium 500 8 SAM02 Apple Mango Small 200 25 SAA02 Apple Apple Small 200 50 SPP02 Pineapple Pineapple Small 200 10 MMM05 Mango Mango Medium 500 12 LMM10 Mango Mango Large 1000 5 MGG05 Guava Guava Medium 500 5 SMO02 Mango Orange Small 200 7 MOP05 Orange Pineapple Medium 500 12 LAA10 Apple Apple Large 1000 32 SGO02 Guava Orange Small 200 10 LPP10 Pineapple Pineapple Large 1000 3 LOO10 Orange Orange Large 1000 25 SOO02 Orange Orange Small 200 40 Identify a suitable field to use as the primary key. State a reason for your choice.",
+              "searchText": "output there are highestmarkstudents with the highest mark of highestmark give line numbers where the errors are to be found in the pseudocode suggest a four correction for each error error 1 line number correction error 2 line number correction error 3 line number correction error 4 line number correction 4 explain how you could extend the algorithm to also find the lowest mark awarded count the b message is fantastic leap up two levels describe the changes that will need to be made to the flowchart 3 arrays are data structures used in programming explain what is meant by the terms dimension 5 and index in an array use examples of arrays in your explanations dimension index 3 a database table juice is used to keep a record of cartons of fresh fruit juice available for sale 6 juice code fruit 1 fruit 2 size volume ml stock level lmo10 mango orange large 1000 18 moo05 orange orange medium 500 8 sam02 apple mango small 200 25 saa02 apple apple small 200 50 spp02 pineapple pineapple small 200 10 mmm05 mango mango medium 500 12 lmm10 mango mango large 1000 5 mgg05 guava guava medium 500 5 smo02 mango orange small 200 7 mop05 orange pineapple medium 500 12 laa10 apple apple large 1000 32 sgo02 guava orange small 200 10 lpp10 pineapple pineapple large 1000 3 loo10 orange orange large 1000 25 soo02 orange orange small 200 40 identify a suitable field to use as the primary key state a reason for your choice",
+              "pageStart": 11,
+              "pageEnd": 13,
+              "marks": 3,
+              "responseAreas": [
+                {
+                  "id": "answer-line-1",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 11,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 475,
+                    "xMax": 545,
+                    "yMax": 490
+                  },
+                  "source": {
+                    "pageNumber": 11,
+                    "blockIndex": 7,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-2",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 11,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 449,
+                    "xMax": 545,
+                    "yMax": 464
+                  },
+                  "source": {
+                    "pageNumber": 11,
+                    "blockIndex": 8,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-3",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 11,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 423,
+                    "xMax": 545,
+                    "yMax": 438
+                  },
+                  "source": {
+                    "pageNumber": 11,
+                    "blockIndex": 9,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-4",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 11,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 397,
+                    "xMax": 545,
+                    "yMax": 412
+                  },
+                  "source": {
+                    "pageNumber": 11,
+                    "blockIndex": 10,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-5",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 11,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 371,
+                    "xMax": 545,
+                    "yMax": 386
+                  },
+                  "source": {
+                    "pageNumber": 11,
+                    "blockIndex": 11,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-6",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 11,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 345,
+                    "xMax": 545,
+                    "yMax": 360
+                  },
+                  "source": {
+                    "pageNumber": 11,
+                    "blockIndex": 12,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-7",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 11,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 319,
+                    "xMax": 545,
+                    "yMax": 334
+                  },
+                  "source": {
+                    "pageNumber": 11,
+                    "blockIndex": 13,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-8",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 11,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 293,
+                    "xMax": 534,
+                    "yMax": 308
+                  },
+                  "source": {
+                    "pageNumber": 11,
+                    "blockIndex": 14,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "............................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-9",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 12,
+                  "bbox": {
+                    "xMin": 105,
+                    "yMin": 727,
+                    "xMax": 545,
+                    "yMax": 742
+                  },
+                  "source": {
+                    "pageNumber": 12,
+                    "blockIndex": 2,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "........................................................................................................................................"
+                  }
+                },
+                {
+                  "id": "answer-line-10",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 12,
+                  "bbox": {
+                    "xMin": 72,
+                    "yMin": 701,
+                    "xMax": 545,
+                    "yMax": 716
+                  },
+                  "source": {
+                    "pageNumber": 12,
+                    "blockIndex": 3,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": ".........................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-11",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 12,
+                  "bbox": {
+                    "xMin": 72,
+                    "yMin": 675,
+                    "xMax": 545,
+                    "yMax": 690
+                  },
+                  "source": {
+                    "pageNumber": 12,
+                    "blockIndex": 4,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": ".........................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-12",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 12,
+                  "bbox": {
+                    "xMin": 72,
+                    "yMin": 649,
+                    "xMax": 545,
+                    "yMax": 664
+                  },
+                  "source": {
+                    "pageNumber": 12,
+                    "blockIndex": 5,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": ".........................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-13",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 12,
+                  "bbox": {
+                    "xMin": 72,
+                    "yMin": 623,
+                    "xMax": 545,
+                    "yMax": 638
+                  },
+                  "source": {
+                    "pageNumber": 12,
+                    "blockIndex": 6,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": ".........................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-14",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 12,
+                  "bbox": {
+                    "xMin": 91,
+                    "yMin": 597,
+                    "xMax": 545,
+                    "yMax": 612
+                  },
+                  "source": {
+                    "pageNumber": 12,
+                    "blockIndex": 7,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "................................................................................................................................................"
+                  }
+                },
+                {
+                  "id": "answer-line-15",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 12,
+                  "bbox": {
+                    "xMin": 72,
+                    "yMin": 571,
+                    "xMax": 545,
+                    "yMax": 586
+                  },
+                  "source": {
+                    "pageNumber": 12,
+                    "blockIndex": 8,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": ".........................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-16",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 12,
+                  "bbox": {
+                    "xMin": 72,
+                    "yMin": 545,
+                    "xMax": 545,
+                    "yMax": 560
+                  },
+                  "source": {
+                    "pageNumber": 12,
+                    "blockIndex": 9,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": ".........................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-17",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 12,
+                  "bbox": {
+                    "xMin": 72,
+                    "yMin": 519,
+                    "xMax": 545,
+                    "yMax": 534
+                  },
+                  "source": {
+                    "pageNumber": 12,
+                    "blockIndex": 10,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": ".........................................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-18",
+                  "type": "answer_line",
+                  "marks": 3,
+                  "pageNumber": 12,
+                  "bbox": {
+                    "xMin": 72,
+                    "yMin": 493,
+                    "xMax": 545,
+                    "yMax": 508
+                  },
+                  "source": {
+                    "pageNumber": 12,
+                    "blockIndex": 11,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": ".........................................................................................................................................................."
+                  }
+                }
+              ],
+              "responseAreaStatus": "PRESENT",
+              "hasVisualContent": false,
+              "visualType": null,
+              "questionImagePath": null,
+              "bbox": {
+                "pageStart": 11,
+                "pageEnd": 13,
+                "xMin": 50,
+                "yMin": 293,
+                "xMax": 549,
+                "yMax": 781
+              },
+              "confidence": {
+                "marker": 0.98,
+                "boundary": 0.98,
+                "text": 0.97,
+                "marks": 0.99,
+                "layout": 0.95,
+                "structure": 0.98,
+                "overall": 0.98
+              },
+              "issues": [],
+              "reviewStatus": "AUTO_CANDIDATE"
+            },
+            {
+              "id": "0478-2020-MJ-22-Q18-A",
+              "paperId": "0478-2020-MJ-22-QP",
+              "parentQuestionId": "0478-2020-MJ-22-Q18",
+              "questionNumber": "18(a)",
+              "sectionPath": [
+                "18",
+                "a"
+              ],
+              "depth": 1,
+              "isLeaf": true,
+              "contextText": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the",
+              "questionText": "(a) Field Reason [2] Complete the query-by-example grid to display only the stock level and size of all cartons",
+              "displayText": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the\n(a) Field Reason [2] Complete the query-by-example grid to display only the stock level and size of all cartons",
+              "searchText": "output there are highestmarkstudents with the highest mark of highestmark give line numbers where the errors are to be found in the pseudocode suggest a four correction for each error error 1 line number correction error 2 line number correction error 3 line number correction error 4 line number correction 4 explain how you could extend the algorithm to also find the lowest mark awarded count the a field reason 2 complete the query-by-example grid to display only the stock level and size of all cartons",
+              "pageStart": 13,
+              "pageEnd": 13,
+              "marks": 2,
+              "responseAreas": [
+                {
+                  "id": "answer-line-1",
+                  "type": "answer_line",
+                  "marks": 2,
+                  "pageNumber": 13,
+                  "bbox": {
+                    "xMin": 114,
+                    "yMin": 414,
+                    "xMax": 545,
+                    "yMax": 429
+                  },
+                  "source": {
+                    "pageNumber": 13,
+                    "blockIndex": 19,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": ".........................................................................................................................................."
+                  }
+                },
+                {
+                  "id": "answer-line-2",
+                  "type": "answer_line",
+                  "marks": 2,
+                  "pageNumber": 13,
+                  "bbox": {
+                    "xMin": 117,
+                    "yMin": 388,
+                    "xMax": 545,
+                    "yMax": 403
+                  },
+                  "source": {
+                    "pageNumber": 13,
+                    "blockIndex": 20,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "......................................................................................................................................"
+                  }
+                },
+                {
+                  "id": "answer-line-3",
+                  "type": "answer_line",
+                  "marks": 2,
+                  "pageNumber": 13,
+                  "bbox": {
+                    "xMin": 95,
+                    "yMin": 362,
+                    "xMax": 545,
+                    "yMax": 377
+                  },
+                  "source": {
+                    "pageNumber": 13,
+                    "blockIndex": 21,
+                    "lineIndex": 0,
+                    "spanIndex": 0,
+                    "includedText": "..................................................................................................................................................."
+                  }
+                }
+              ],
+              "responseAreaStatus": "PRESENT",
+              "hasVisualContent": false,
+              "visualType": null,
+              "questionImagePath": null,
+              "bbox": {
+                "pageStart": 13,
+                "pageEnd": 13,
+                "xMin": 72,
+                "yMin": 323,
+                "xMax": 549,
+                "yMax": 455
+              },
+              "confidence": {
+                "marker": 0.98,
+                "boundary": 0.98,
+                "text": 0.97,
+                "marks": 0.99,
+                "layout": 0.95,
+                "structure": 0.98,
+                "overall": 0.98
+              },
+              "issues": [],
+              "reviewStatus": "AUTO_CANDIDATE"
+            },
+            {
+              "id": "0478-2020-MJ-22-Q18-B",
+              "paperId": "0478-2020-MJ-22-QP",
+              "parentQuestionId": "0478-2020-MJ-22-Q18",
+              "questionNumber": "18(b)",
+              "sectionPath": [
+                "18",
+                "b"
+              ],
+              "depth": 1,
+              "isLeaf": true,
+              "contextText": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the",
+              "questionText": "(b) containing only apple juice. Field: Table: Sort: Show: Criteria: or: [4]",
+              "displayText": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the\n(b) containing only apple juice. Field: Table: Sort: Show: Criteria: or: [4]",
+              "searchText": "output there are highestmarkstudents with the highest mark of highestmark give line numbers where the errors are to be found in the pseudocode suggest a four correction for each error error 1 line number correction error 2 line number correction error 3 line number correction error 4 line number correction 4 explain how you could extend the algorithm to also find the lowest mark awarded count the b containing only apple juice field table sort show criteria or 4",
+              "pageStart": 13,
+              "pageEnd": 13,
+              "marks": 4,
+              "responseAreas": [
+                {
+                  "id": "table-response-1",
+                  "type": "structured_response_area",
+                  "pageNumber": 13,
+                  "marks": 4,
+                  "bbox": {
+                    "xMin": 52,
+                    "yMin": 158,
+                    "xMax": 546,
+                    "yMax": 338
+                  },
+                  "source": {
+                    "detection": "layout_keyword",
+                    "keywords": [
+                      "table"
+                    ]
+                  }
+                }
+              ],
+              "responseAreaStatus": "PRESENT",
+              "hasVisualContent": false,
+              "visualType": null,
+              "questionImagePath": null,
+              "bbox": {
+                "pageStart": 13,
+                "pageEnd": 13,
+                "xMin": 52,
+                "yMin": 158,
+                "xMax": 546,
+                "yMax": 338
+              },
+              "confidence": {
+                "marker": 0.98,
+                "boundary": 0.98,
+                "text": 0.97,
+                "marks": 0.99,
+                "layout": 0.95,
+                "structure": 0.98,
+                "overall": 0.98
+              },
+              "issues": [],
+              "reviewStatus": "AUTO_CANDIDATE"
+            }
+          ],
+          "text": "18 OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the (b) number of students with that mark, and output both these values. [6] This flowchart inputs the points won and the points lost when playing a game. The difference 4 between the points won and lost is calculated and depending on the result the player can: move up to the next level, stay at the same level, or move down to the previous level. The flowchart finishes when the input for points won is –1. START INPUT PointsWon, PointsLost IS Yes END = –1 ? PointsWon No Difference PointsWon - PointsLost IS OUTPUT Yes Difference > = \"Well done ? 1000 move up\" No IS Yes OUTPUT Difference < 0 ? \"Sorry move down\" No OUTPUT \"Keep on trying\" Complete a trace table for this set of input data: (a) 5000, 4474, 6055, 2000, 7900, 9800, 3000, 2150, –1, 6700, 7615 OUTPUT PointsWon PointsLost Difference [3] The flowchart needs to be changed. When the difference is more than 5000 the output (b) message is ‘Fantastic leap up two levels’. Describe the changes that will need to be made to the flowchart. [3] Arrays are data structures used in programming. Explain what is meant by the terms dimension 5 and index in an array. Use examples of arrays in your explanations. Dimension Index [3] A database table, JUICE, is used to keep a record of cartons of fresh fruit juice available for sale. 6 Juice code Fruit 1 Fruit 2 Size Volume (ml) Stock level LMO10 Mango Orange Large 1000 18 MOO05 Orange Orange Medium 500 8 SAM02 Apple Mango Small 200 25 SAA02 Apple Apple Small 200 50 SPP02 Pineapple Pineapple Small 200 10 MMM05 Mango Mango Medium 500 12 LMM10 Mango Mango Large 1000 5 MGG05 Guava Guava Medium 500 5 SMO02 Mango Orange Small 200 7 MOP05 Orange Pineapple Medium 500 12 LAA10 Apple Apple Large 1000 32 SGO02 Guava Orange Small 200 10 LPP10 Pineapple Pineapple Large 1000 3 LOO10 Orange Orange Large 1000 25 SOO02 Orange Orange Small 200 40 Identify a suitable field to use as the primary key. State a reason for your choice. (a) Field Reason [2] Complete the query-by-example grid to display only the stock level and size of all cartons (b) containing only apple juice. Field: Table: Sort: Show: Criteria: or: [4]",
+          "displayText": "18 OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the (b) number of students with that mark, and output both these values. [6] This flowchart inputs the points won and the points lost when playing a game. The difference 4 between the points won and lost is calculated and depending on the result the player can: move up to the next level, stay at the same level, or move down to the previous level. The flowchart finishes when the input for points won is –1. START INPUT PointsWon, PointsLost IS Yes END = –1 ? PointsWon No Difference PointsWon - PointsLost IS OUTPUT Yes Difference > = \"Well done ? 1000 move up\" No IS Yes OUTPUT Difference < 0 ? \"Sorry move down\" No OUTPUT \"Keep on trying\" Complete a trace table for this set of input data: (a) 5000, 4474, 6055, 2000, 7900, 9800, 3000, 2150, –1, 6700, 7615 OUTPUT PointsWon PointsLost Difference [3] The flowchart needs to be changed. When the difference is more than 5000 the output (b) message is ‘Fantastic leap up two levels’. Describe the changes that will need to be made to the flowchart. [3] Arrays are data structures used in programming. Explain what is meant by the terms dimension 5 and index in an array. Use examples of arrays in your explanations. Dimension Index [3] A database table, JUICE, is used to keep a record of cartons of fresh fruit juice available for sale. 6 Juice code Fruit 1 Fruit 2 Size Volume (ml) Stock level LMO10 Mango Orange Large 1000 18 MOO05 Orange Orange Medium 500 8 SAM02 Apple Mango Small 200 25 SAA02 Apple Apple Small 200 50 SPP02 Pineapple Pineapple Small 200 10 MMM05 Mango Mango Medium 500 12 LMM10 Mango Mango Large 1000 5 MGG05 Guava Guava Medium 500 5 SMO02 Mango Orange Small 200 7 MOP05 Orange Pineapple Medium 500 12 LAA10 Apple Apple Large 1000 32 SGO02 Guava Orange Small 200 10 LPP10 Pineapple Pineapple Large 1000 3 LOO10 Orange Orange Large 1000 25 SOO02 Orange Orange Small 200 40 Identify a suitable field to use as the primary key. State a reason for your choice. (a) Field Reason [2] Complete the query-by-example grid to display only the stock level and size of all cartons (b) containing only apple juice. Field: Table: Sort: Show: Criteria: or: [4]"
+        }
+      },
+      "expected_json": null,
+      "status": "OPEN",
+      "created_at": "2026-07-11T08:26:13.637Z",
+      "resolved_at": null,
+      "resolution_note": null
+    }
+  ],
+  "questionCount": 4,
+  "leafQuestionCount": 15,
+  "parents": [
+    {
+      "questionId": "0478-2020-MJ-22-Q1",
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 7,
+      "parentMarks": 20,
+      "rawMarkValidation": {
+        "declared": 20,
+        "leafSum": 20,
+        "valid": true
+      },
+      "stagingLeafSum": 20,
+      "mismatch": false,
+      "rootCauseCategory": "PASS",
+      "textSample": "1 Identify variables that you could have used for . Give the data type and state the (a) two Task 1 use of each variable. Variable 1 Data type Use Variable 2 Data type Use [4] Data input by a customer for includes the day and the hour of arrival. (b) Task 1 Identify suitable validation check for each input and justify your choice. Your validation one checks must be different. Day of arrival – validation check Justification Hour of arrival – validation check Justification [4] Explain how your pro",
+      "leaves": [
+        {
+          "questionId": "0478-2020-MJ-22-Q1-A",
+          "questionNumber": "1(a)",
+          "marks": 4,
+          "pageStart": 3,
+          "pageEnd": 3,
+          "textSample": "Identify variables that you could have used for . Give the data type and state the\n(a) two Task 1 use of each variable. Variable 1 Data type Use Variable 2 Data type Use [4] Data input by a customer for includes the day "
+        },
+        {
+          "questionId": "0478-2020-MJ-22-Q1-B",
+          "questionNumber": "1(b)",
+          "marks": 4,
+          "pageStart": 3,
+          "pageEnd": 4,
+          "textSample": "Identify variables that you could have used for . Give the data type and state the\n(b) Task 1 Identify suitable validation check for each input and justify your choice. Your validation one checks must be different. Day o"
+        },
+        {
+          "questionId": "0478-2020-MJ-22-Q1-C",
+          "questionNumber": "1(c)",
+          "marks": 4,
+          "pageStart": 4,
+          "pageEnd": 4,
+          "textSample": "Identify variables that you could have used for . Give the data type and state the\n(c) Task 1 the customer had a valid check digit. [4] Write an algorithm for part of that simulates customer payment and calculating total"
+        },
+        {
+          "questionId": "0478-2020-MJ-22-Q1-D",
+          "questionNumber": "1(d)",
+          "marks": 4,
+          "pageStart": 4,
+          "pageEnd": 6,
+          "textSample": "Identify variables that you could have used for . Give the data type and state the\n(d) Task 2 payments using pseudocode, programming statements a flowchart. Assume that either or has been completed. Task 1 [4] Explain ho"
+        },
+        {
+          "questionId": "0478-2020-MJ-22-Q1-E",
+          "questionNumber": "1(e)",
+          "marks": 4,
+          "pageStart": 6,
+          "pageEnd": 7,
+          "textSample": "Identify variables that you could have used for . Give the data type and state the\n(e) Task 3 Task 2 programming statements used in your answer must be fully explained. [4] Section B Most programming languages include ba"
+        }
+      ]
+    },
+    {
+      "questionId": "0478-2020-MJ-22-Q3",
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "parentMarks": 10,
+      "rawMarkValidation": {
+        "declared": 10,
+        "leafSum": 10,
+        "valid": true
+      },
+      "stagingLeafSum": 10,
+      "mismatch": false,
+      "rootCauseCategory": "PASS",
+      "textSample": "3 (a) The algorithm stores the names and marks in two arrays and . The highest Name[ ] Mark[ ] mark awarded is found and the number of students with that mark is counted. Both of these values are output. 100 01 HighestMark ← 0 02 HighestMarkStudents ← 1 TO 35 03 FOR Count ← 04 OUTPUT \"Please enter student name\" 05 INPUT Name[Count] 06 OUTPUT \"Please enter student mark\" 07 INPUT Mark[Counter] 08 IF Mark[Count] = HighestMark 09 THEN HighestMarkStudents – 1 10 HighestMarkStudents ← 11 ENDIF 12 IF M",
+      "leaves": [
+        {
+          "questionId": "0478-2020-MJ-22-Q3-A",
+          "questionNumber": "3(a)",
+          "marks": 4,
+          "pageStart": 8,
+          "pageEnd": 9,
+          "textSample": "(a) The algorithm stores the names and marks in two arrays and . The highest Name[ ] Mark[ ] mark awarded is found and the number of students with that mark is counted. Both of these values are output. 100 01 HighestMark"
+        },
+        {
+          "questionId": "0478-2020-MJ-22-Q3-B",
+          "questionNumber": "3(b)",
+          "marks": 6,
+          "pageStart": 9,
+          "pageEnd": 10,
+          "textSample": "(b) number of students with that mark, and output both these values. [6] This flowchart inputs the points won and the points lost when playing a game. The difference"
+        }
+      ]
+    },
+    {
+      "questionId": "0478-2020-MJ-22-Q4",
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "parentMarks": 6,
+      "rawMarkValidation": {
+        "declared": 6,
+        "leafSum": 6,
+        "valid": true
+      },
+      "stagingLeafSum": 6,
+      "mismatch": false,
+      "rootCauseCategory": "PASS",
+      "textSample": "4 between the points won and lost is calculated and depending on the result the player can: move up to the next level, stay at the same level, or move down to the previous level. The flowchart finishes when the input for points won is –1. START INPUT PointsWon, PointsLost IS Yes END = –1 ? PointsWon No Difference PointsWon - PointsLost IS OUTPUT Yes Difference > = \"Well done ? 1000 move up\" No IS Yes OUTPUT Difference < 0 ? \"Sorry move down\" No OUTPUT \"Keep on trying\" Complete a trace table for ",
+      "leaves": [
+        {
+          "questionId": "0478-2020-MJ-22-Q4-A",
+          "questionNumber": "4(a)",
+          "marks": 3,
+          "pageStart": 11,
+          "pageEnd": 11,
+          "textSample": "between the points won and lost is calculated and depending on the result the player can: move up to the next level, stay at the same level, or move down to the previous level. The flowchart finishes when the input for p"
+        },
+        {
+          "questionId": "0478-2020-MJ-22-Q4-B",
+          "questionNumber": "4(b)",
+          "marks": 3,
+          "pageStart": 11,
+          "pageEnd": 12,
+          "textSample": "between the points won and lost is calculated and depending on the result the player can: move up to the next level, stay at the same level, or move down to the previous level. The flowchart finishes when the input for p"
+        }
+      ]
+    },
+    {
+      "questionId": "0478-2020-MJ-22-Q18",
+      "questionNumber": "18",
+      "pageStart": 8,
+      "pageEnd": 13,
+      "parentMarks": 22,
+      "rawMarkValidation": {
+        "declared": 22,
+        "leafSum": 18,
+        "valid": false
+      },
+      "stagingLeafSum": 6,
+      "mismatch": true,
+      "rootCauseCategory": "Category 1: parser question marker/boundary bug",
+      "textSample": "18 OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Correction Error 2 line number Correction Error 3 line number Correction Error 4 line number Correction [4] Explain how you could extend the algorithm to also find the lowest mark awarded, count the (b) number of students with that mark, and output both these values. [6] This flowc",
+      "leaves": [
+        {
+          "questionId": "0478-2020-MJ-22-Q18-B",
+          "questionNumber": "18(b)",
+          "marks": 4,
+          "pageStart": 13,
+          "pageEnd": 13,
+          "textSample": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Corre"
+        },
+        {
+          "questionId": "0478-2020-MJ-22-Q18-A",
+          "questionNumber": "18(a)",
+          "marks": 2,
+          "pageStart": 13,
+          "pageEnd": 13,
+          "textSample": "OUTPUT \"There are \", HighestMarkStudents,\" with the highest mark of \", HighestMark Give line numbers where the errors are to be found in the pseudocode. Suggest a four correction for each error. Error 1 line number Corre"
+        }
+      ]
+    }
+  ]
+}

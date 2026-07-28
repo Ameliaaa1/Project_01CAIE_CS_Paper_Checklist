@@ -1,0 +1,112 @@
+[2026-07-14T16:59:37.186Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_42.pdf
+[2026-07-14T16:59:37.186Z] startTime=2026-07-14T16:59:37.186Z
+[2026-07-14T16:59:37.186Z] expectedRole=question_paper
+[2026-07-14T16:59:39.744Z] extract.exitCode=0
+[2026-07-14T16:59:39.744Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_42.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_42.pdf",
+  "pageCount": 16,
+  "questionCount": 3,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 8,
+      "marks": 29,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 group of events. Each group has five events. There are four types of event: jump, swim, run, drive. The program is written using object-oriented programming. The class stores data about the events. (a) EventItem EventItem stores the name of the event EventName : STRING stores the type of event, either: jump, swim, run or drive Type : STRING stores the diff"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 12,
+      "marks": 29,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 The record structure has the following fields: Queue a 1D array of up to 100 integer values • QueueArray a variable that stores the index of the first data item in • Headpointer QueueArray a variable that stores the index of the next free location in . • Tailpointer QueueArray Write program code to declare the record structure and its fields. (a) Queue If "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "3 HighScoreTable.txt The data in the file is stored in the order: Player ID Game level Score Each item of data is stored on a new line. For example, the first set of data in the file is: Player ID: GHEH Game level: 3 Score: 10 The data about the players and their scores is stored in a 2D array of strings with the identifier (a) . HighScores The first dimensi"
+    }
+  ]
+}
+[2026-07-14T16:59:39.748Z] parserVersion=0.4.0
+[2026-07-14T16:59:39.748Z] documentRole=question_paper
+[2026-07-14T16:59:39.748Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:59:40.210Z] stage.exitCode=0
+[2026-07-14T16:59:40.210Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_42.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_42.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_42.staging.json",
+  "runId": "9618-2024-ON-42-QP-RUN-714d785ed067",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_42.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 3,
+      "leafQuestionCount": 24,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 24,
+        "present": 24,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:59:40.214Z] stagingId=9618-2024-ON-42-QP-RUN-714d785ed067
+[2026-07-14T16:59:40.214Z] validationStatus=PASS
+[2026-07-14T16:59:40.214Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:59:40.214Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:59:40.214Z] canonicalPublishable=true
+[2026-07-14T16:59:40.214Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:59:40.214Z] endTime=2026-07-14T16:59:40.214Z
+[2026-07-14T16:59:40.214Z] status=PASS

@@ -1,0 +1,112 @@
+[2026-07-14T16:55:35.544Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_41.pdf
+[2026-07-14T16:55:35.544Z] startTime=2026-07-14T16:55:35.544Z
+[2026-07-14T16:55:35.544Z] expectedRole=question_paper
+[2026-07-14T16:55:37.357Z] extract.exitCode=0
+[2026-07-14T16:55:37.357Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_41.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_41.pdf",
+  "pageCount": 12,
+  "questionCount": 3,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 IterativeVowels() parameter and counts the number of lower-case vowels in this string. The vowels are the letters a, e, i, o and u. FUNCTION IterativeVowels(Value : STRING) RETURNS INTEGER DECLARE Total : INTEGER DECLARE LengthString : INTEGER DECLARE FirstCharacter : CHAR 0 Total ← LengthString LENGTH(Value) ← FOR X 0 TO LengthString - 1 ← FirstCharacter "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 8,
+      "marks": 29,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Queue array is 0. Write program code to declare: (a) (i) — a global array with space to store 50 IDs of type string • Queue — a global variable to point to the first element in the queue, • HeadPointer initialised to −1 — a global variable to point to the next available space in the queue, • TailPointer initialised to 0. Save your program as . Question2_N2"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 11,
+      "marks": 30,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "3 The game has multiple characters that can move around the screen. The class stores data about the characters. Each character has a name, a current X Character (horizontal) position and a current Y (vertical) position. Character stores the name of the character as a string Name : STRING stores the X position as an integer XPosition : INTEGER stores the Y po"
+    }
+  ]
+}
+[2026-07-14T16:55:37.360Z] parserVersion=0.4.0
+[2026-07-14T16:55:37.360Z] documentRole=question_paper
+[2026-07-14T16:55:37.360Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:55:37.726Z] stage.exitCode=0
+[2026-07-14T16:55:37.726Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_41.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_41.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_41.staging.json",
+  "runId": "9618-2023-ON-41-QP-RUN-0a4fe7dda180",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_41.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 3,
+      "leafQuestionCount": 26,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:55:37.729Z] stagingId=9618-2023-ON-41-QP-RUN-0a4fe7dda180
+[2026-07-14T16:55:37.729Z] validationStatus=PASS
+[2026-07-14T16:55:37.729Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:55:37.729Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:55:37.729Z] canonicalPublishable=true
+[2026-07-14T16:55:37.729Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:55:37.729Z] endTime=2026-07-14T16:55:37.729Z
+[2026-07-14T16:55:37.729Z] status=PASS

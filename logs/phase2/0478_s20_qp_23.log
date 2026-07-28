@@ -1,0 +1,185 @@
+[2026-07-13T02:03:57.519Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_23.pdf
+[2026-07-13T02:03:57.519Z] startTime=2026-07-13T02:03:57.519Z
+[2026-07-13T02:03:57.519Z] expectedRole=question_paper
+[2026-07-13T02:03:59.020Z] extract.exitCode=0
+[2026-07-13T02:03:59.020Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s20_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-May-June /0478_s20_qp_23.pdf",
+  "pageCount": 12,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify array you could have used for and state its purpose. (a) (i) one Task 1 Array Purpose [2] Identify variable you could have used for and state its purpose. (ii) one Task 2 Variable Purpose [2] Identify constant you could have used for and state its purpose. (iii) one Task 3 Constant Purpose [2] Explain why a student would be advised to store the He"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 Description Pseudocode example Description Pseudocode example A loop that will iterate CASE … OF … OTHERWISE … ENDCASE at least once A loop that will not be executed on the first test Number + 1 Number if the condition is false A conditional statement WHILE … DO … ENDWHILE Totalling Sum Sum + NewValue Counting REPEAT … UNTIL [4] This section of pseudocode "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 between 0 and 499 inclusive is entered. 1 PRINT \"Input a number from 0 to 499 inclusive\" 1 TO 10 2 FOR Number 3 INPUT Number 4 IF Number < 0 AND Number > 499 5 THEN 6 PRINT \"Invalid number, please try again\" 7 ENDIF 8 UNTIL Number = 0 OR Number = 499 9 PRINT Number, \" is within the correct range\" There are lines in this pseudocode that contain errors. In e"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A presence check has already been used to ensure data has been entered. Name other (a) two types of validation check that can be used to test the code is valid. Check 1 Check 2 [2] Give example of invalid test data for each of the validation checks you have named in (b) one and in each case, give a reason why it fails the check. Each example of test data p"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 The pre-defined function gives the value of the result of integer division, DIV gives a value of for example, 9 DIV 4 y 2 y False Flag INPUT Number WHILE Number <> 0 2 Divisor WHILE Divisor <= Number / 2 Number DIV Divisor Value IF Number / Divisor = Value THEN True Flag ENDIF Divisor + 1 Divisor ENDWHILE IF Flag = False THEN OUTPUT Number, \" is prime\" END"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "6 Decision Process Decision Process [2] A convenience store which sells general groceries wants to set up a database table called"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 STOCK. The table will contain fields including a description of the item, the price of the item and the number in stock for each item. The STOCK table also has a fourth field to be used as a primary key. Complete the table to suggest a suitable field name for each of the fields in the table (a) four STOCK. Give the purpose of the data to be stored in each "
+    }
+  ]
+}
+[2026-07-13T02:03:59.021Z] parserVersion=0.4.0
+[2026-07-13T02:03:59.021Z] documentRole=question_paper
+[2026-07-13T02:03:59.021Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:59.328Z] stage.exitCode=0
+[2026-07-13T02:03:59.328Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s20_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_23.staging.json",
+  "runId": "0478-2020-MJ-23-QP-RUN-40fd04dff5c4",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s20_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 15,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 14,
+        "present": 14,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2020-MJ-23-Q4-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:59.330Z] stagingId=0478-2020-MJ-23-QP-RUN-40fd04dff5c4
+[2026-07-13T02:03:59.330Z] validationStatus=PASS
+[2026-07-13T02:03:59.330Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:59.330Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:59.330Z] canonicalPublishable=true
+[2026-07-13T02:03:59.330Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:59.330Z] endTime=2026-07-13T02:03:59.330Z
+[2026-07-13T02:03:59.330Z] status=PASS

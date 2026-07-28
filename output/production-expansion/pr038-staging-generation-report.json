@@ -1,0 +1,46 @@
+{
+  "generatedFor": "PR-038-0478-Missing-Staging-Generation-Batch-01-Implementation-Plan",
+  "status": "PASS",
+  "scope": {
+    "syllabus": "0478",
+    "year": 2021,
+    "session": "M/J",
+    "components": ["13", "21"]
+  },
+  "summary": {
+    "generatedArtifacts": 4,
+    "validationPass": 4,
+    "completenessPass": 4,
+    "publishReady": 4,
+    "eligiblePairs": 2,
+    "failures": 0,
+    "productionWrite": false
+  },
+  "artifacts": [
+    {"id":"0478-2021-MJ-13-QP","role":"question_paper","fileHash":"f30ad6c11d17b6e7a2ef76ea70be5fae74b28050745aabcf11b895efbe048f59","parserVersion":"0.4.0","validationStatus":"PASS","completenessStatus":"PASS","publishStatus":"READY_TO_PUBLISH","questionCount":10,"leafCount":24,"markSchemeEntryCount":0,"responseAreaCoverage":{"required":23,"present":23,"ratio":1},"issueCounts":{"p0":0,"p1":0,"p2":0}},
+    {"id":"0478-2021-MJ-13-MS","role":"mark_scheme","fileHash":"9bd3df639f297e83e18e34f1bfa69dd603bfa7dc0d51846d6a2f8f5c346024b5","parserVersion":"0.4.0","validationStatus":"PASS","completenessStatus":"PASS","publishStatus":"READY_TO_PUBLISH","questionCount":0,"leafCount":0,"markSchemeEntryCount":23,"responseAreaCoverage":{"required":0,"present":0,"ratio":1},"issueCounts":{"p0":0,"p1":0,"p2":0}},
+    {"id":"0478-2021-MJ-21-QP","role":"question_paper","fileHash":"5b5d378fad52ed81b6aeb1bdf45d7874cc3db7df45bae6f9ac7d0f60433cd10c","parserVersion":"0.4.0","validationStatus":"PASS","completenessStatus":"PASS","publishStatus":"READY_TO_PUBLISH","questionCount":6,"leafCount":15,"markSchemeEntryCount":0,"responseAreaCoverage":{"required":15,"present":15,"ratio":1},"issueCounts":{"p0":0,"p1":0,"p2":0}},
+    {"id":"0478-2021-MJ-21-MS","role":"mark_scheme","fileHash":"5dc258067f51466014245237d2feb4e6fd6629ccb3f7c6ca51d3f0e3f7a39514","parserVersion":"0.4.0","validationStatus":"PASS","completenessStatus":"PASS","publishStatus":"READY_TO_PUBLISH","questionCount":0,"leafCount":0,"markSchemeEntryCount":10,"responseAreaCoverage":{"required":0,"present":0,"ratio":1},"issueCounts":{"p0":0,"p1":0,"p2":0}}
+  ],
+  "coverageAfter": {
+    "stagingPairs": 16,
+    "eligibleUnpublishedPairs": 2,
+    "alreadyPublishedPairs": 14,
+    "missingStagingPairs": 8,
+    "nextBatchId": "PR039-0478-2021-MJ-BATCH-02"
+  },
+  "regression": {
+    "phase1": {"success":20,"total":20},
+    "phase2": {"success":120,"total":120},
+    "pr030":"PASS",
+    "pr031":"PASS",
+    "pr032":"PASS",
+    "fullNpmTest":"PASS",
+    "prismaValidate":"PASS"
+  },
+  "productionIntegrity": {
+    "beforeSha256":"3f0b1333d245436a1239e758b72d0e441f7cb02a508d7b76bc09cc575236676a",
+    "afterSha256":"3f0b1333d245436a1239e758b72d0e441f7cb02a508d7b76bc09cc575236676a",
+    "unchanged":true
+  }
+}

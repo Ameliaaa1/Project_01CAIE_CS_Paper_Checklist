@@ -1,0 +1,192 @@
+[2026-07-14T16:56:39.722Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_12.pdf
+[2026-07-14T16:56:39.722Z] startTime=2026-07-14T16:56:39.722Z
+[2026-07-14T16:56:39.722Z] expectedRole=question_paper
+[2026-07-14T16:56:42.254Z] extract.exitCode=0
+[2026-07-14T16:56:42.254Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_12.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) NAND NOR XOR OR [4] Draw a logic circuit for this logic expression: (b) = NOT (( AND ) OR ( AND )) X A B C D A B X C D [2] A computer game is being designed that users will be able to play using a virtual reality (VR)"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 5,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 headset. Complete the description of the principal operation of a VR headset. (a) A headset can have one or two that output the image to the user. The headset has speakers that output surround sound to give a realistic experience. The user’s head movements are detected using a sensor. This sensor is a . The data is transmitted to a microprocessor that anal"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 7,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 markers download the digitised papers to mark. The exam markers then upload the mark for each paper. The assessment board needs to make sure the data stored on the server is secure. (a) Authentication methods can help to protect the server against hackers. (i) Identify security measure that helps to protect the server from hackers. one other Describe how t"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 10,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 . RECORDS Part of the database design includes these two tables: EXAM(ExamID, Subject, Level, TotalMarks) EXAM_QUESTION(ExamQuestionID, ExamID, QuestionNumber, Question, MaxMark) Identify the relationship between and . (a) EXAM EXAM_QUESTION [1] Sample data for the table is shown: (b) EXAM ExamID Subject Level TotalMarks 00956124 Computer Science 2 75 0095"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 13,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 registers: the Accumulator (ACC) and an Index Register (IX) . Instruction Explanation Opcode Operand Immediate addressing. Load the number n to ACC LDM #n Direct addressing. Load the contents of the location at the given LDD <address> address to ACC Indirect addressing. The address to be used is at the given address. LDI <address> Load the contents of this"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 13,
+      "pageEnd": 14,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Memory management and process management are two OS tasks. Explain how memory management process management support multi-tasking. and [4] A computer stores binary data."
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 3 Tick ( ) box only to identify the file size. (a) one largest 3300 kibibytes 0.3 megabytes 3 mebibytes 3300 kilobytes [1] Subtract the denary number 10 from the denary number 100 using binary subtraction. (b) Show your working. Working Answer [3] Convert the hexadecimal number C0F into denary. (c) Show your working. Working Answer [2] A programmer uses an"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 15,
+      "pageEnd": 16,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 The IDE has both a compiler and an interpreter as built-in translators. The programmer decides to use the compiler when testing the final program. (a) Describe the benefits of using the compiler during testing. [2] IDEs have many features other than built-in translators. (b) Complete the table by identifying common IDE feature that can be used for each one"
+    }
+  ]
+}
+[2026-07-14T16:56:42.257Z] parserVersion=0.4.0
+[2026-07-14T16:56:42.257Z] documentRole=question_paper
+[2026-07-14T16:56:42.257Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:56:42.656Z] stage.exitCode=0
+[2026-07-14T16:56:42.656Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_12.staging.json",
+  "runId": "9618-2024-MJ-12-QP-RUN-871b047e73c2",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 26,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:56:42.660Z] stagingId=9618-2024-MJ-12-QP-RUN-871b047e73c2
+[2026-07-14T16:56:42.660Z] validationStatus=PASS
+[2026-07-14T16:56:42.660Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:56:42.660Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:56:42.660Z] canonicalPublishable=true
+[2026-07-14T16:56:42.660Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:56:42.660Z] endTime=2026-07-14T16:56:42.660Z
+[2026-07-14T16:56:42.660Z] status=PASS

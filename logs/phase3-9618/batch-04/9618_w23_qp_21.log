@@ -1,0 +1,225 @@
+[2026-07-14T16:55:05.617Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_21.pdf
+[2026-07-14T16:55:05.617Z] startTime=2026-07-14T16:55:05.617Z
+[2026-07-14T16:55:05.617Z] expectedRole=question_paper
+[2026-07-14T16:55:08.264Z] extract.exitCode=0
+[2026-07-14T16:55:08.264Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_21.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 CASE OF ThisValue \"Low\" // less than 30 < 30 : Level ← 1 Check ← \"Very Low\" // less than 20 < 20 : Level ← ThisValue / 2 Check ← \"Medium\" // between 30 and 40 30 TO 40 : Level ← ThisValue / 3 Check ← Data[ThisValue] + 1 Data[ThisValue] ← \"High\" > 40 : Level ← ENDCASE Complete the table by writing the answer for each row: (a) Answer The value assigned to wh"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) input 100 numbers, one at a time • keep a total of all numbers input that have a value between 30 and 70 inclusive and • output this total after the last number has been input. Outline, using stepwise refinement, the five steps for this algorithm which could be used to produce pseudocode. Do use pseudocode statements in your answer. not Step 1 Step 2 S"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The operation of this stack may be summarised as follows: The pointer points to the last item added to the stack. • TopOfStack The pointer points to the first item on the stack. • BottomOfStack Stack D1 TopOfStack ← D3 D4 D5 D2 BottomOfStack ← The stack is implemented using two variables and a 1D array of 8 elements as shown. (a) The variables are used to "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 DECLARE Data : ARRAY[1:150] OF STRING A function will: TooMany() 1. take two parameters: a string (the search string) • an integer (the maximum value) • 2. count the number of strings in the array that exactly match the search string 3. return if the count is greater than the maximum value, otherwise will return TRUE FALSE Write pseudocode for the function"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 how many numeric values have been input. An example of an input sequence is: 23, AB56, 17, 23ZW, 4, 10, END Numeric input values are all integers and non-numeric input is ignored, except for the string \" \" END which is used to terminate the sequence. The algorithm is expressed in pseudocode as shown: DECLARE NextInput : STRING DECLARE Min, Count, Num : INT"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 OUTPUT A new procedure will take a string and a Boolean parameter. (a) MyOutput() may be called repeatedly and will use concatenation to build a string using a MyOutput() global variable up to a maximum length of 255 characters. MyString will be output in either of these two cases: MyString 1. The Boolean parameter value is TRUE 2. The resulting string (af"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The table shows the inputs, outputs and states for the algorithm: Current state Input Output Next state S1 A1 X1 S2 S2 A3 none S1 S2 A2 X4 S5 S5 A1 X1 S5 S5 A4 X2 S2 S5 A3 none S3 S1 A9 X9 S3 S3 A9 X9 S4 Complete the state-transition diagram to represent the information given in the table. | X1 A1 START S1 A3 [5] A class of students are developing a progra"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 14,
+      "pageEnd": 19,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 are connected together to form a wired network. Serial ports are used to connect one computer to another. Each computer: is assigned a unique three-digit ID • has three ports, each identified by an integer value • is connected to between one and three other computers. • Messages are sent between computers as a string of characters organised into fields as "
+    }
+  ]
+}
+[2026-07-14T16:55:08.267Z] parserVersion=0.4.0
+[2026-07-14T16:55:08.267Z] documentRole=question_paper
+[2026-07-14T16:55:08.267Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:55:08.618Z] stage.exitCode=0
+[2026-07-14T16:55:08.618Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_21.staging.json",
+  "runId": "9618-2023-ON-21-QP-RUN-334b77e01934",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 21,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 17,
+        "present": 17,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-21-Q1-A",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-21-Q3-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-21-Q4-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-21-Q6-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:55:08.623Z] stagingId=9618-2023-ON-21-QP-RUN-334b77e01934
+[2026-07-14T16:55:08.623Z] validationStatus=PASS
+[2026-07-14T16:55:08.623Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:55:08.623Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:55:08.623Z] canonicalPublishable=true
+[2026-07-14T16:55:08.623Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:55:08.623Z] endTime=2026-07-14T16:55:08.623Z
+[2026-07-14T16:55:08.623Z] status=PASS

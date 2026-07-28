@@ -1,0 +1,1769 @@
+{
+  "generatedFor": "PR-060-9618-Blocked-Pair-Investigation-Plan",
+  "status": "PASS",
+  "productionWrite": false,
+  "scope": {
+    "syllabus": "9618",
+    "operation": "Blocked Pair Root Cause Investigation",
+    "pairCount": 9
+  },
+  "investigationPrinciples": {
+    "investigationOnly": true,
+    "mutationApplied": false,
+    "productionWrite": false,
+    "hiddenFixApplied": false,
+    "parserModified": false,
+    "canonicalModelModified": false,
+    "stagingPipelineModified": false,
+    "validationRuleModified": false
+  },
+  "blockedPairsReviewed": {
+    "expected": 9,
+    "actual": 9,
+    "allReviewed": true,
+    "pairingKeys": [
+      "9618-2021-MJ-11",
+      "9618-2021-MJ-13",
+      "9618-2021-MJ-21",
+      "9618-2021-MJ-23",
+      "9618-2021-MJ-31",
+      "9618-2021-MJ-32",
+      "9618-2021-MJ-33",
+      "9618-2021-ON-22",
+      "9618-2024-ON-12"
+    ],
+    "allRemainUnpublished": true
+  },
+  "investigationResults": [
+    {
+      "pairingKey": "9618-2021-MJ-11",
+      "qpStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "validationWarnings": [
+        {
+          "role": "QP",
+          "severity": "P1",
+          "code": "SUSPICIOUS_GLYPHS_REMAIN",
+          "message": "Suspicious glyphs remain after display text normalization.",
+          "observed": {
+            "affectedPages": [
+              2
+            ],
+            "counts": [
+              {
+                "pageNumber": 2,
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "role": "MS",
+          "severity": "P1",
+          "code": "SUSPICIOUS_GLYPHS_REMAIN",
+          "message": "Suspicious glyphs remain after display text normalization.",
+          "observed": {
+            "affectedPages": [
+              3
+            ],
+            "counts": [
+              {
+                "pageNumber": 3,
+                "count": 1
+              }
+            ]
+          }
+        }
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "failedChecks": [
+        {
+          "role": "QP",
+          "check": "CANONICAL_TEXT_CLEAN"
+        },
+        {
+          "role": "MS",
+          "check": "CANONICAL_TEXT_CLEAN"
+        }
+      ],
+      "parserEvidence": [
+        {
+          "role": "QP",
+          "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_11.pdf",
+          "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_11.staging.json",
+          "affectedPages": [
+            2
+          ],
+          "symbols": [
+            "×"
+          ],
+          "sourceTraces": [
+            {
+              "page": 2,
+              "blockIndex": 14,
+              "lineIndex": 2,
+              "spanIndex": 2,
+              "text": "×"
+            }
+          ],
+          "rawTextPreservesSymbols": true,
+          "historicalSnapshotUsed": false,
+          "assessment": "PARSER_OUTPUT_CORRECT"
+        },
+        {
+          "role": "MS",
+          "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_ms_11.pdf",
+          "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_11.staging.json",
+          "affectedPages": [
+            3
+          ],
+          "symbols": [
+            "×"
+          ],
+          "sourceTraces": [
+            {
+              "page": 3,
+              "blockIndex": 8,
+              "lineIndex": 5,
+              "spanIndex": 1,
+              "text": "×"
+            }
+          ],
+          "rawTextPreservesSymbols": true,
+          "historicalSnapshotUsed": false,
+          "assessment": "PARSER_OUTPUT_CORRECT"
+        }
+      ],
+      "canonicalEvidence": [
+        {
+          "role": "QP",
+          "pages": [
+            {
+              "pageNumber": 2,
+              "symbols": [
+                "×"
+              ],
+              "normalizedTextPreservesSymbols": true,
+              "displayTextPreservesSymbols": true,
+              "storedSuspiciousCount": 1,
+              "currentRecomputedSuspiciousCount": 0,
+              "context": "able to describe the two terms about graphics. (i) Term Description Pixel File header [2] × The image is scanned with an image resolution of 1024 512 pixels, and a colour depth (ii) of 8 bits per pixel. Calculate an estimate for the file size, giving your answer in mebi"
+            }
+          ],
+          "completenessChecks": {
+            "questionCoverage": "PASS",
+            "leafCoverage": "PASS",
+            "markCoverage": "PASS",
+            "responseAreaCoverage": "PASS",
+            "sourceTraceCoverage": "PASS",
+            "canonicalStructureCompleteness": "PASS"
+          },
+          "assessment": "CANONICAL_MAPPING_CORRECT"
+        },
+        {
+          "role": "MS",
+          "pages": [
+            {
+              "pageNumber": 3,
+              "symbols": [
+                "×"
+              ],
+              "normalizedTextPreservesSymbols": true,
+              "displayTextPreservesSymbols": true,
+              "storedSuspiciousCount": 1,
+              "currentRecomputedSuspiciousCount": 0,
+              "context": " of colours) 3 1(a)(ii) 1 mark per bullet point for working, 1 mark for answer Working: • × 1024 512 = 524 288 pixels/bytes • 524288 / 1024 / 1024 Answer: 0.50 mebibytes 3 1(b) 1 mark for naming method, 1 mark per description to max 2 • Run-length encoding • Replace seq"
+            }
+          ],
+          "completenessChecks": {
+            "questionCoverage": "PASS",
+            "leafCoverage": "PASS",
+            "markCoverage": "PASS",
+            "responseAreaCoverage": "PASS",
+            "sourceTraceCoverage": "PASS",
+            "canonicalStructureCompleteness": "PASS"
+          },
+          "assessment": "CANONICAL_MAPPING_CORRECT"
+        }
+      ],
+      "issuePersistenceEvidence": [
+        {
+          "role": "QP",
+          "logicalValidationWarnings": 1,
+          "persistedP1Rows": 1,
+          "note": "Severity totals include both the validation issue and its persisted issue row; they are one logical warning."
+        },
+        {
+          "role": "MS",
+          "logicalValidationWarnings": 1,
+          "persistedP1Rows": 1,
+          "note": "Severity totals include both the validation issue and its persisted issue row; they are one logical warning."
+        }
+      ],
+      "rootCauseCategory": {
+        "code": "A",
+        "name": "Validation False Positive",
+        "parserIssue": false,
+        "canonicalMappingIssue": false,
+        "dataQualityIssue": false,
+        "humanReviewRequired": false
+      },
+      "rootCauseSubtypes": [
+        "STALE_LEGAL_MULTIPLICATION_GLYPH_DIAGNOSTIC"
+      ],
+      "p1Assessment": {
+        "userVisibleError": false,
+        "dataIntegrityIssue": false,
+        "qualityRuleFalsePositive": true,
+        "evidence": "The source-backed × multiplication/resolution symbol is preserved correctly, while the current classifier recomputes zero suspicious glyphs."
+      },
+      "recommendedAction": "Create an isolated staging revalidation batch using the current legal-× classifier; no parser or canonical change is indicated."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-13",
+      "qpStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "validationWarnings": [
+        {
+          "role": "QP",
+          "severity": "P1",
+          "code": "SUSPICIOUS_GLYPHS_REMAIN",
+          "message": "Suspicious glyphs remain after display text normalization.",
+          "observed": {
+            "affectedPages": [
+              2
+            ],
+            "counts": [
+              {
+                "pageNumber": 2,
+                "count": 1
+              }
+            ]
+          }
+        },
+        {
+          "role": "MS",
+          "severity": "P1",
+          "code": "SUSPICIOUS_GLYPHS_REMAIN",
+          "message": "Suspicious glyphs remain after display text normalization.",
+          "observed": {
+            "affectedPages": [
+              3
+            ],
+            "counts": [
+              {
+                "pageNumber": 3,
+                "count": 1
+              }
+            ]
+          }
+        }
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "failedChecks": [
+        {
+          "role": "QP",
+          "check": "CANONICAL_TEXT_CLEAN"
+        },
+        {
+          "role": "MS",
+          "check": "CANONICAL_TEXT_CLEAN"
+        }
+      ],
+      "parserEvidence": [
+        {
+          "role": "QP",
+          "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_13.pdf",
+          "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_13.staging.json",
+          "affectedPages": [
+            2
+          ],
+          "symbols": [
+            "×"
+          ],
+          "sourceTraces": [
+            {
+              "page": 2,
+              "blockIndex": 14,
+              "lineIndex": 2,
+              "spanIndex": 2,
+              "text": "×"
+            }
+          ],
+          "rawTextPreservesSymbols": true,
+          "historicalSnapshotUsed": false,
+          "assessment": "PARSER_OUTPUT_CORRECT"
+        },
+        {
+          "role": "MS",
+          "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_ms_13.pdf",
+          "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_13.staging.json",
+          "affectedPages": [
+            3
+          ],
+          "symbols": [
+            "×"
+          ],
+          "sourceTraces": [
+            {
+              "page": 3,
+              "blockIndex": 8,
+              "lineIndex": 5,
+              "spanIndex": 1,
+              "text": "×"
+            }
+          ],
+          "rawTextPreservesSymbols": true,
+          "historicalSnapshotUsed": false,
+          "assessment": "PARSER_OUTPUT_CORRECT"
+        }
+      ],
+      "canonicalEvidence": [
+        {
+          "role": "QP",
+          "pages": [
+            {
+              "pageNumber": 2,
+              "symbols": [
+                "×"
+              ],
+              "normalizedTextPreservesSymbols": true,
+              "displayTextPreservesSymbols": true,
+              "storedSuspiciousCount": 1,
+              "currentRecomputedSuspiciousCount": 0,
+              "context": "able to describe the two terms about graphics. (i) Term Description Pixel File header [2] × The image is scanned with an image resolution of 1024 512 pixels, and a colour depth (ii) of 8 bits per pixel. Calculate an estimate for the file size, giving your answer in mebi"
+            }
+          ],
+          "completenessChecks": {
+            "questionCoverage": "PASS",
+            "leafCoverage": "PASS",
+            "markCoverage": "PASS",
+            "responseAreaCoverage": "PASS",
+            "sourceTraceCoverage": "PASS",
+            "canonicalStructureCompleteness": "PASS"
+          },
+          "assessment": "CANONICAL_MAPPING_CORRECT"
+        },
+        {
+          "role": "MS",
+          "pages": [
+            {
+              "pageNumber": 3,
+              "symbols": [
+                "×"
+              ],
+              "normalizedTextPreservesSymbols": true,
+              "displayTextPreservesSymbols": true,
+              "storedSuspiciousCount": 1,
+              "currentRecomputedSuspiciousCount": 0,
+              "context": " of colours) 3 1(a)(ii) 1 mark per bullet point for working, 1 mark for answer Working: • × 1024 512 = 524 288 pixels/bytes • 524288 / 1024 / 1024 Answer: 0.50 mebibytes 3 1(b) 1 mark for naming method, 1 mark per description to max 2 • Run-length encoding • Replace seq"
+            }
+          ],
+          "completenessChecks": {
+            "questionCoverage": "PASS",
+            "leafCoverage": "PASS",
+            "markCoverage": "PASS",
+            "responseAreaCoverage": "PASS",
+            "sourceTraceCoverage": "PASS",
+            "canonicalStructureCompleteness": "PASS"
+          },
+          "assessment": "CANONICAL_MAPPING_CORRECT"
+        }
+      ],
+      "issuePersistenceEvidence": [
+        {
+          "role": "QP",
+          "logicalValidationWarnings": 1,
+          "persistedP1Rows": 1,
+          "note": "Severity totals include both the validation issue and its persisted issue row; they are one logical warning."
+        },
+        {
+          "role": "MS",
+          "logicalValidationWarnings": 1,
+          "persistedP1Rows": 1,
+          "note": "Severity totals include both the validation issue and its persisted issue row; they are one logical warning."
+        }
+      ],
+      "rootCauseCategory": {
+        "code": "A",
+        "name": "Validation False Positive",
+        "parserIssue": false,
+        "canonicalMappingIssue": false,
+        "dataQualityIssue": false,
+        "humanReviewRequired": false
+      },
+      "rootCauseSubtypes": [
+        "STALE_LEGAL_MULTIPLICATION_GLYPH_DIAGNOSTIC"
+      ],
+      "p1Assessment": {
+        "userVisibleError": false,
+        "dataIntegrityIssue": false,
+        "qualityRuleFalsePositive": true,
+        "evidence": "The source-backed × multiplication/resolution symbol is preserved correctly, while the current classifier recomputes zero suspicious glyphs."
+      },
+      "recommendedAction": "Create an isolated staging revalidation batch using the current legal-× classifier; no parser or canonical change is indicated."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-21",
+      "qpStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "validationWarnings": [
+        {
+          "role": "QP",
+          "severity": "P1",
+          "code": "SUSPICIOUS_GLYPHS_REMAIN",
+          "message": "Suspicious glyphs remain after display text normalization.",
+          "observed": {
+            "affectedPages": [
+              16
+            ],
+            "counts": [
+              {
+                "pageNumber": 16,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "failedChecks": [
+        {
+          "role": "QP",
+          "check": "CANONICAL_TEXT_CLEAN"
+        }
+      ],
+      "parserEvidence": [
+        {
+          "role": "QP",
+          "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_21.pdf",
+          "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_21.staging.json",
+          "affectedPages": [
+            16
+          ],
+          "symbols": [
+            "Ø"
+          ],
+          "sourceTraces": [
+            {
+              "page": 16,
+              "blockIndex": 3,
+              "lineIndex": 3,
+              "spanIndex": 0,
+              "text": "Ø"
+            },
+            {
+              "page": 16,
+              "blockIndex": 5,
+              "lineIndex": 0,
+              "spanIndex": 0,
+              "text": "Ø"
+            }
+          ],
+          "rawTextPreservesSymbols": true,
+          "historicalSnapshotUsed": true,
+          "assessment": "PARSER_OUTPUT_CORRECT"
+        }
+      ],
+      "canonicalEvidence": [
+        {
+          "role": "QP",
+          "pages": [
+            {
+              "pageNumber": 16,
+              "symbols": [
+                "Ø"
+              ],
+              "normalizedTextPreservesSymbols": true,
+              "displayTextPreservesSymbols": true,
+              "storedSuspiciousCount": null,
+              "currentRecomputedSuspiciousCount": 0,
+              "context": "The following diagram represents an Abstract Data Type (ADT) for a linked list. 6 A C D E Ø The free list is as follows: Ø Explain how a node containing data value B is added to the list in alphabetic sequence. (a) [4] Describe how the linked list in may be implemented "
+            }
+          ],
+          "completenessChecks": {
+            "questionCoverage": "PASS",
+            "leafCoverage": "PASS",
+            "markCoverage": "PASS",
+            "responseAreaCoverage": "PASS",
+            "sourceTraceCoverage": "PASS",
+            "canonicalStructureCompleteness": "PASS"
+          },
+          "assessment": "CANONICAL_MAPPING_CORRECT"
+        }
+      ],
+      "issuePersistenceEvidence": [
+        {
+          "role": "QP",
+          "logicalValidationWarnings": 1,
+          "persistedP1Rows": 1,
+          "note": "Severity totals include both the validation issue and its persisted issue row; they are one logical warning."
+        }
+      ],
+      "rootCauseCategory": {
+        "code": "A",
+        "name": "Validation False Positive",
+        "parserIssue": false,
+        "canonicalMappingIssue": false,
+        "dataQualityIssue": false,
+        "humanReviewRequired": false
+      },
+      "rootCauseSubtypes": [
+        "CURRENT_NULL_POINTER_GLYPH_FALSE_POSITIVE"
+      ],
+      "p1Assessment": {
+        "userVisibleError": false,
+        "dataIntegrityIssue": false,
+        "qualityRuleFalsePositive": true,
+        "evidence": "Ø appears twice in the source-backed linked-list diagram as null-pointer notation and is preserved consistently through canonical text."
+      },
+      "recommendedAction": "Create an isolated validation-rule fix for context-valid Ø, add focused fixtures, and regenerate only the two affected QP staging artifacts."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-23",
+      "qpStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "validationWarnings": [
+        {
+          "role": "QP",
+          "severity": "P1",
+          "code": "SUSPICIOUS_GLYPHS_REMAIN",
+          "message": "Suspicious glyphs remain after display text normalization.",
+          "observed": {
+            "affectedPages": [
+              16
+            ],
+            "counts": [
+              {
+                "pageNumber": 16,
+                "count": 2
+              }
+            ]
+          }
+        }
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "failedChecks": [
+        {
+          "role": "QP",
+          "check": "CANONICAL_TEXT_CLEAN"
+        }
+      ],
+      "parserEvidence": [
+        {
+          "role": "QP",
+          "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_qp_23.pdf",
+          "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_qp_23.staging.json",
+          "affectedPages": [
+            16
+          ],
+          "symbols": [
+            "Ø"
+          ],
+          "sourceTraces": [
+            {
+              "page": 16,
+              "blockIndex": 3,
+              "lineIndex": 3,
+              "spanIndex": 0,
+              "text": "Ø"
+            },
+            {
+              "page": 16,
+              "blockIndex": 5,
+              "lineIndex": 0,
+              "spanIndex": 0,
+              "text": "Ø"
+            }
+          ],
+          "rawTextPreservesSymbols": true,
+          "historicalSnapshotUsed": true,
+          "assessment": "PARSER_OUTPUT_CORRECT"
+        }
+      ],
+      "canonicalEvidence": [
+        {
+          "role": "QP",
+          "pages": [
+            {
+              "pageNumber": 16,
+              "symbols": [
+                "Ø"
+              ],
+              "normalizedTextPreservesSymbols": true,
+              "displayTextPreservesSymbols": true,
+              "storedSuspiciousCount": null,
+              "currentRecomputedSuspiciousCount": 0,
+              "context": "The following diagram represents an Abstract Data Type (ADT) for a linked list. 6 A C D E Ø The free list is as follows: Ø Explain how a node containing data value B is added to the list in alphabetic sequence. (a) [4] Describe how the linked list in may be implemented "
+            }
+          ],
+          "completenessChecks": {
+            "questionCoverage": "PASS",
+            "leafCoverage": "PASS",
+            "markCoverage": "PASS",
+            "responseAreaCoverage": "PASS",
+            "sourceTraceCoverage": "PASS",
+            "canonicalStructureCompleteness": "PASS"
+          },
+          "assessment": "CANONICAL_MAPPING_CORRECT"
+        }
+      ],
+      "issuePersistenceEvidence": [
+        {
+          "role": "QP",
+          "logicalValidationWarnings": 1,
+          "persistedP1Rows": 1,
+          "note": "Severity totals include both the validation issue and its persisted issue row; they are one logical warning."
+        }
+      ],
+      "rootCauseCategory": {
+        "code": "A",
+        "name": "Validation False Positive",
+        "parserIssue": false,
+        "canonicalMappingIssue": false,
+        "dataQualityIssue": false,
+        "humanReviewRequired": false
+      },
+      "rootCauseSubtypes": [
+        "CURRENT_NULL_POINTER_GLYPH_FALSE_POSITIVE"
+      ],
+      "p1Assessment": {
+        "userVisibleError": false,
+        "dataIntegrityIssue": false,
+        "qualityRuleFalsePositive": true,
+        "evidence": "Ø appears twice in the source-backed linked-list diagram as null-pointer notation and is preserved consistently through canonical text."
+      },
+      "recommendedAction": "Create an isolated validation-rule fix for context-valid Ø, add focused fixtures, and regenerate only the two affected QP staging artifacts."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-31",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "validationWarnings": [
+        {
+          "role": "MS",
+          "severity": "P1",
+          "code": "SUSPICIOUS_GLYPHS_REMAIN",
+          "message": "Suspicious glyphs remain after display text normalization.",
+          "observed": {
+            "affectedPages": [
+              3
+            ],
+            "counts": [
+              {
+                "pageNumber": 3,
+                "count": 9
+              }
+            ]
+          }
+        }
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "failedChecks": [
+        {
+          "role": "MS",
+          "check": "CANONICAL_TEXT_CLEAN"
+        }
+      ],
+      "parserEvidence": [
+        {
+          "role": "MS",
+          "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_ms_31.pdf",
+          "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_31.staging.json",
+          "affectedPages": [
+            3
+          ],
+          "symbols": [
+            "×"
+          ],
+          "sourceTraces": [
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 1,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 5,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 11,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 17,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 1,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 5,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 11,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 17,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 11,
+              "lineIndex": 7,
+              "spanIndex": 1,
+              "text": "×"
+            }
+          ],
+          "rawTextPreservesSymbols": true,
+          "historicalSnapshotUsed": false,
+          "assessment": "PARSER_OUTPUT_CORRECT"
+        }
+      ],
+      "canonicalEvidence": [
+        {
+          "role": "MS",
+          "pages": [
+            {
+              "pageNumber": 3,
+              "symbols": [
+                "×"
+              ],
+              "normalizedTextPreservesSymbols": true,
+              "displayTextPreservesSymbols": true,
+              "storedSuspiciousCount": 9,
+              "currentRecomputedSuspiciousCount": 0,
+              "context": "tissa and one mark for 3 calculation or use of the exponent Exponent: one from: 3 11 3 11 × × × × = 0.11101 2 // 0.11101 2 // 0.11101 10 // 0.11101 10 3 11 3 11 × × × × = 1.00011 2 // 1.00011 2 // 1.00011 10 // 1.00011 10 = appropriate shifting of binary point for +7.25"
+            }
+          ],
+          "completenessChecks": {
+            "questionCoverage": "PASS",
+            "leafCoverage": "PASS",
+            "markCoverage": "PASS",
+            "responseAreaCoverage": "PASS",
+            "sourceTraceCoverage": "PASS",
+            "canonicalStructureCompleteness": "PASS"
+          },
+          "assessment": "CANONICAL_MAPPING_CORRECT"
+        }
+      ],
+      "issuePersistenceEvidence": [
+        {
+          "role": "MS",
+          "logicalValidationWarnings": 1,
+          "persistedP1Rows": 1,
+          "note": "Severity totals include both the validation issue and its persisted issue row; they are one logical warning."
+        }
+      ],
+      "rootCauseCategory": {
+        "code": "A",
+        "name": "Validation False Positive",
+        "parserIssue": false,
+        "canonicalMappingIssue": false,
+        "dataQualityIssue": false,
+        "humanReviewRequired": false
+      },
+      "rootCauseSubtypes": [
+        "STALE_LEGAL_MULTIPLICATION_GLYPH_DIAGNOSTIC"
+      ],
+      "p1Assessment": {
+        "userVisibleError": false,
+        "dataIntegrityIssue": false,
+        "qualityRuleFalsePositive": true,
+        "evidence": "The source-backed × multiplication/resolution symbol is preserved correctly, while the current classifier recomputes zero suspicious glyphs."
+      },
+      "recommendedAction": "Create an isolated staging revalidation batch using the current legal-× classifier; no parser or canonical change is indicated."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-32",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "validationWarnings": [
+        {
+          "role": "MS",
+          "severity": "P1",
+          "code": "SUSPICIOUS_GLYPHS_REMAIN",
+          "message": "Suspicious glyphs remain after display text normalization.",
+          "observed": {
+            "affectedPages": [
+              3
+            ],
+            "counts": [
+              {
+                "pageNumber": 3,
+                "count": 9
+              }
+            ]
+          }
+        }
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "failedChecks": [
+        {
+          "role": "MS",
+          "check": "CANONICAL_TEXT_CLEAN"
+        }
+      ],
+      "parserEvidence": [
+        {
+          "role": "MS",
+          "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_ms_32.pdf",
+          "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_32.staging.json",
+          "affectedPages": [
+            3
+          ],
+          "symbols": [
+            "×"
+          ],
+          "sourceTraces": [
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 1,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 5,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 11,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 17,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 1,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 5,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 11,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 17,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 11,
+              "lineIndex": 7,
+              "spanIndex": 1,
+              "text": "×"
+            }
+          ],
+          "rawTextPreservesSymbols": true,
+          "historicalSnapshotUsed": false,
+          "assessment": "PARSER_OUTPUT_CORRECT"
+        }
+      ],
+      "canonicalEvidence": [
+        {
+          "role": "MS",
+          "pages": [
+            {
+              "pageNumber": 3,
+              "symbols": [
+                "×"
+              ],
+              "normalizedTextPreservesSymbols": true,
+              "displayTextPreservesSymbols": true,
+              "storedSuspiciousCount": 9,
+              "currentRecomputedSuspiciousCount": 0,
+              "context": "tissa and one mark for 3 calculation or use of the exponent Exponent: one from: 3 11 3 11 × × × × = 0.11101 2 // 0.11101 2 // 0.11101 10 // 0.11101 10 3 11 3 11 × × × × = 1.00011 2 // 1.00011 2 // 1.00011 10 // 1.00011 10 = appropriate shifting of binary point for +7.25"
+            }
+          ],
+          "completenessChecks": {
+            "questionCoverage": "PASS",
+            "leafCoverage": "PASS",
+            "markCoverage": "PASS",
+            "responseAreaCoverage": "PASS",
+            "sourceTraceCoverage": "PASS",
+            "canonicalStructureCompleteness": "PASS"
+          },
+          "assessment": "CANONICAL_MAPPING_CORRECT"
+        }
+      ],
+      "issuePersistenceEvidence": [
+        {
+          "role": "MS",
+          "logicalValidationWarnings": 1,
+          "persistedP1Rows": 1,
+          "note": "Severity totals include both the validation issue and its persisted issue row; they are one logical warning."
+        }
+      ],
+      "rootCauseCategory": {
+        "code": "A",
+        "name": "Validation False Positive",
+        "parserIssue": false,
+        "canonicalMappingIssue": false,
+        "dataQualityIssue": false,
+        "humanReviewRequired": false
+      },
+      "rootCauseSubtypes": [
+        "STALE_LEGAL_MULTIPLICATION_GLYPH_DIAGNOSTIC"
+      ],
+      "p1Assessment": {
+        "userVisibleError": false,
+        "dataIntegrityIssue": false,
+        "qualityRuleFalsePositive": true,
+        "evidence": "The source-backed × multiplication/resolution symbol is preserved correctly, while the current classifier recomputes zero suspicious glyphs."
+      },
+      "recommendedAction": "Create an isolated staging revalidation batch using the current legal-× classifier; no parser or canonical change is indicated."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-33",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "validationWarnings": [
+        {
+          "role": "MS",
+          "severity": "P1",
+          "code": "SUSPICIOUS_GLYPHS_REMAIN",
+          "message": "Suspicious glyphs remain after display text normalization.",
+          "observed": {
+            "affectedPages": [
+              3
+            ],
+            "counts": [
+              {
+                "pageNumber": 3,
+                "count": 9
+              }
+            ]
+          }
+        }
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "failedChecks": [
+        {
+          "role": "MS",
+          "check": "CANONICAL_TEXT_CLEAN"
+        }
+      ],
+      "parserEvidence": [
+        {
+          "role": "MS",
+          "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_ms_33.pdf",
+          "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s21_ms_33.staging.json",
+          "affectedPages": [
+            3
+          ],
+          "symbols": [
+            "×"
+          ],
+          "sourceTraces": [
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 1,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 5,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 11,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 6,
+              "lineIndex": 5,
+              "spanIndex": 17,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 1,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 5,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 11,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 7,
+              "lineIndex": 0,
+              "spanIndex": 17,
+              "text": "×"
+            },
+            {
+              "page": 3,
+              "blockIndex": 11,
+              "lineIndex": 7,
+              "spanIndex": 1,
+              "text": "×"
+            }
+          ],
+          "rawTextPreservesSymbols": true,
+          "historicalSnapshotUsed": false,
+          "assessment": "PARSER_OUTPUT_CORRECT"
+        }
+      ],
+      "canonicalEvidence": [
+        {
+          "role": "MS",
+          "pages": [
+            {
+              "pageNumber": 3,
+              "symbols": [
+                "×"
+              ],
+              "normalizedTextPreservesSymbols": true,
+              "displayTextPreservesSymbols": true,
+              "storedSuspiciousCount": 9,
+              "currentRecomputedSuspiciousCount": 0,
+              "context": "tissa and one mark for 3 calculation or use of the exponent Exponent: one from: 3 11 3 11 × × × × = 0.11101 2 // 0.11101 2 // 0.11101 10 // 0.11101 10 3 11 3 11 × × × × = 1.00011 2 // 1.00011 2 // 1.00011 10 // 1.00011 10 = appropriate shifting of binary point for +7.25"
+            }
+          ],
+          "completenessChecks": {
+            "questionCoverage": "PASS",
+            "leafCoverage": "PASS",
+            "markCoverage": "PASS",
+            "responseAreaCoverage": "PASS",
+            "sourceTraceCoverage": "PASS",
+            "canonicalStructureCompleteness": "PASS"
+          },
+          "assessment": "CANONICAL_MAPPING_CORRECT"
+        }
+      ],
+      "issuePersistenceEvidence": [
+        {
+          "role": "MS",
+          "logicalValidationWarnings": 1,
+          "persistedP1Rows": 1,
+          "note": "Severity totals include both the validation issue and its persisted issue row; they are one logical warning."
+        }
+      ],
+      "rootCauseCategory": {
+        "code": "A",
+        "name": "Validation False Positive",
+        "parserIssue": false,
+        "canonicalMappingIssue": false,
+        "dataQualityIssue": false,
+        "humanReviewRequired": false
+      },
+      "rootCauseSubtypes": [
+        "STALE_LEGAL_MULTIPLICATION_GLYPH_DIAGNOSTIC"
+      ],
+      "p1Assessment": {
+        "userVisibleError": false,
+        "dataIntegrityIssue": false,
+        "qualityRuleFalsePositive": true,
+        "evidence": "The source-backed × multiplication/resolution symbol is preserved correctly, while the current classifier recomputes zero suspicious glyphs."
+      },
+      "recommendedAction": "Create an isolated staging revalidation batch using the current legal-× classifier; no parser or canonical change is indicated."
+    },
+    {
+      "pairingKey": "9618-2021-ON-22",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "validationWarnings": [
+        {
+          "role": "MS",
+          "severity": "P1",
+          "code": "SUSPICIOUS_GLYPHS_REMAIN",
+          "message": "Suspicious glyphs remain after display text normalization.",
+          "observed": {
+            "affectedPages": [
+              9
+            ],
+            "counts": [
+              {
+                "pageNumber": 9,
+                "count": 1
+              }
+            ]
+          }
+        }
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "failedChecks": [
+        {
+          "role": "MS",
+          "check": "CANONICAL_TEXT_CLEAN"
+        }
+      ],
+      "parserEvidence": [
+        {
+          "role": "MS",
+          "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_ms_22.pdf",
+          "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_ms_22.staging.json",
+          "affectedPages": [
+            9
+          ],
+          "symbols": [
+            "×"
+          ],
+          "sourceTraces": [
+            {
+              "page": 9,
+              "blockIndex": 12,
+              "lineIndex": 5,
+              "spanIndex": 0,
+              "text": "×"
+            }
+          ],
+          "rawTextPreservesSymbols": true,
+          "historicalSnapshotUsed": false,
+          "assessment": "PARSER_OUTPUT_CORRECT"
+        }
+      ],
+      "canonicalEvidence": [
+        {
+          "role": "MS",
+          "pages": [
+            {
+              "pageNumber": 9,
+              "symbols": [
+                "×"
+              ],
+              "normalizedTextPreservesSymbols": true,
+              "displayTextPreservesSymbols": true,
+              "storedSuspiciousCount": 1,
+              "currentRecomputedSuspiciousCount": 0,
+              "context": "ETURNS INTEGER 7 6(a) DECLARE Row, Col : INTEGER DECLARE Found : BOOLEAN // array is 1280 × 800 Row 1 ← Found FALSE ← WHILE Row <= 800 AND Found = FALSE // top to bottom Col 1 ← WHILE Col <= 1280 AND Found = FALSE // left to right IF Screen[Row,Col] = 1 THEN Found TRUE "
+            }
+          ],
+          "completenessChecks": {
+            "questionCoverage": "PASS",
+            "leafCoverage": "PASS",
+            "markCoverage": "PASS",
+            "responseAreaCoverage": "PASS",
+            "sourceTraceCoverage": "PASS",
+            "canonicalStructureCompleteness": "PASS"
+          },
+          "assessment": "CANONICAL_MAPPING_CORRECT"
+        }
+      ],
+      "issuePersistenceEvidence": [
+        {
+          "role": "MS",
+          "logicalValidationWarnings": 1,
+          "persistedP1Rows": 1,
+          "note": "Severity totals include both the validation issue and its persisted issue row; they are one logical warning."
+        }
+      ],
+      "rootCauseCategory": {
+        "code": "A",
+        "name": "Validation False Positive",
+        "parserIssue": false,
+        "canonicalMappingIssue": false,
+        "dataQualityIssue": false,
+        "humanReviewRequired": false
+      },
+      "rootCauseSubtypes": [
+        "STALE_LEGAL_MULTIPLICATION_GLYPH_DIAGNOSTIC"
+      ],
+      "p1Assessment": {
+        "userVisibleError": false,
+        "dataIntegrityIssue": false,
+        "qualityRuleFalsePositive": true,
+        "evidence": "The source-backed × multiplication/resolution symbol is preserved correctly, while the current classifier recomputes zero suspicious glyphs."
+      },
+      "recommendedAction": "Create an isolated staging revalidation batch using the current legal-× classifier; no parser or canonical change is indicated."
+    },
+    {
+      "pairingKey": "9618-2024-ON-12",
+      "qpStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "validationWarnings": [
+        {
+          "role": "QP",
+          "severity": "P1",
+          "code": "SUSPICIOUS_GLYPHS_REMAIN",
+          "message": "Suspicious glyphs remain after display text normalization.",
+          "observed": {
+            "affectedPages": [
+              5
+            ],
+            "counts": [
+              {
+                "pageNumber": 5,
+                "count": 1
+              }
+            ]
+          }
+        }
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "failedChecks": [
+        {
+          "role": "QP",
+          "check": "CANONICAL_TEXT_CLEAN"
+        }
+      ],
+      "parserEvidence": [
+        {
+          "role": "QP",
+          "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_12.pdf",
+          "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json",
+          "affectedPages": [
+            5
+          ],
+          "symbols": [
+            "×"
+          ],
+          "sourceTraces": [
+            {
+              "page": 5,
+              "blockIndex": 4,
+              "lineIndex": 0,
+              "spanIndex": 0,
+              "text": "×"
+            }
+          ],
+          "rawTextPreservesSymbols": true,
+          "historicalSnapshotUsed": false,
+          "assessment": "PARSER_OUTPUT_CORRECT"
+        }
+      ],
+      "canonicalEvidence": [
+        {
+          "role": "QP",
+          "pages": [
+            {
+              "pageNumber": 5,
+              "symbols": [
+                "×"
+              ],
+              "normalizedTextPreservesSymbols": true,
+              "displayTextPreservesSymbols": true,
+              "storedSuspiciousCount": 1,
+              "currentRecomputedSuspiciousCount": 0,
+              "context": "e student needs to connect the computer to a monitor that has a screen resolution of 2560 × 1600 pixels. The monitor also has built-in speakers. The computer has a Video Graphics Array (VGA) port and a High Definition Multimedia Interface (HDMI) port. Explain the benefi"
+            }
+          ],
+          "completenessChecks": {
+            "questionCoverage": "PASS",
+            "leafCoverage": "PASS",
+            "markCoverage": "PASS",
+            "responseAreaCoverage": "PASS",
+            "sourceTraceCoverage": "PASS",
+            "canonicalStructureCompleteness": "PASS"
+          },
+          "assessment": "CANONICAL_MAPPING_CORRECT"
+        }
+      ],
+      "issuePersistenceEvidence": [
+        {
+          "role": "QP",
+          "logicalValidationWarnings": 1,
+          "persistedP1Rows": 1,
+          "note": "Severity totals include both the validation issue and its persisted issue row; they are one logical warning."
+        }
+      ],
+      "rootCauseCategory": {
+        "code": "A",
+        "name": "Validation False Positive",
+        "parserIssue": false,
+        "canonicalMappingIssue": false,
+        "dataQualityIssue": false,
+        "humanReviewRequired": false
+      },
+      "rootCauseSubtypes": [
+        "STALE_LEGAL_MULTIPLICATION_GLYPH_DIAGNOSTIC"
+      ],
+      "p1Assessment": {
+        "userVisibleError": false,
+        "dataIntegrityIssue": false,
+        "qualityRuleFalsePositive": true,
+        "evidence": "The source-backed × multiplication/resolution symbol is preserved correctly, while the current classifier recomputes zero suspicious glyphs."
+      },
+      "recommendedAction": "Create an isolated staging revalidation batch using the current legal-× classifier; no parser or canonical change is indicated."
+    }
+  ],
+  "rootCauseSummary": {
+    "reviewedPairs": 9,
+    "affectedRoleDocuments": 11,
+    "logicalP1Warnings": 11,
+    "persistedP1Rows": 11,
+    "categories": {
+      "A_VALIDATION_FALSE_POSITIVE": 9,
+      "B_PARSER_ISSUE": 0,
+      "C_CANONICAL_MAPPING_ISSUE": 0,
+      "D_DATA_QUALITY_ISSUE": 0,
+      "E_HUMAN_REVIEW_REQUIRED": 0
+    },
+    "subtypes": {
+      "STALE_LEGAL_MULTIPLICATION_GLYPH_DIAGNOSTIC": 7,
+      "CURRENT_NULL_POINTER_GLYPH_FALSE_POSITIVE": 2
+    },
+    "sharedFailedCheck": "CANONICAL_TEXT_CLEAN",
+    "sharedIssueCode": "SUSPICIOUS_GLYPHS_REMAIN",
+    "conclusion": "All blocked pairs preserve source-backed legal symbols correctly; the P1 blocks are validation false positives, split into stale × diagnostics and a current Ø null-pointer classification gap."
+  },
+  "recommendedFixPRs": [
+    {
+      "proposedPr": "PR-061",
+      "title": "9618 Legal Null-Pointer Glyph Validation Rule Fix",
+      "rootCauseSubtype": "CURRENT_NULL_POINTER_GLYPH_FALSE_POSITIVE",
+      "pairingKeys": [
+        "9618-2021-MJ-21",
+        "9618-2021-MJ-23"
+      ],
+      "scope": "Make the text-quality validator recognize source-backed Ø null-pointer notation in linked-list context, then regenerate only the affected staging artifacts.",
+      "exclusions": [
+        "Production write",
+        "Question split changes",
+        "Canonical model changes",
+        "Unrelated glyph allowlisting"
+      ]
+    },
+    {
+      "proposedPr": "PR-062",
+      "title": "9618 Stale Multiplication-Glyph Staging Revalidation",
+      "rootCauseSubtype": "STALE_LEGAL_MULTIPLICATION_GLYPH_DIAGNOSTIC",
+      "pairingKeys": [
+        "9618-2021-MJ-11",
+        "9618-2021-MJ-13",
+        "9618-2021-MJ-31",
+        "9618-2021-MJ-32",
+        "9618-2021-MJ-33",
+        "9618-2021-ON-22",
+        "9618-2024-ON-12"
+      ],
+      "scope": "Regenerate and validate only artifacts whose stored × diagnostic disagrees with the current classifier; no parser rule change is indicated.",
+      "exclusions": [
+        "Production write",
+        "Parser modification",
+        "Validation rule broadening",
+        "Other blocked classes"
+      ]
+    }
+  ],
+  "integrity": {
+    "production": {
+      "method": "SHA256_CONTENT",
+      "before": "2553faa90d2ba6a9935f2d5b28114eb65f313aa02a0f6fb5bb230cd4974f18c5",
+      "after": "2553faa90d2ba6a9935f2d5b28114eb65f313aa02a0f6fb5bb230cd4974f18c5",
+      "unchanged": true
+    },
+    "staging": {
+      "method": "SHA256_TREE_CONTENT",
+      "before": "be13390652d785e3ade81d446360b7593458d5c6dcc78310ae2e24d5504af7af",
+      "after": "be13390652d785e3ade81d446360b7593458d5c6dcc78310ae2e24d5504af7af",
+      "unchanged": true
+    },
+    "sourceAssets": {
+      "method": "SHA256_TREE_METADATA",
+      "before": "1fc4965a3c1d44b4325098c1eb762cebdda836acbe05fe455ac5988f1d0905f2",
+      "after": "1fc4965a3c1d44b4325098c1eb762cebdda836acbe05fe455ac5988f1d0905f2",
+      "unchanged": true
+    }
+  },
+  "regression": {
+    "pr030": "PASS",
+    "pr031": "PASS",
+    "pr032": "PASS",
+    "pr048": "PASS",
+    "pr049": "PASS",
+    "pr050": "PASS",
+    "pr051": "PASS",
+    "pr052": "PASS",
+    "pr053": "PASS",
+    "pr054": "PASS",
+    "pr055": "PASS",
+    "pr056": "PASS",
+    "pr057": "PASS",
+    "pr058": "PASS",
+    "pr059": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "phase1": "PASS (20/20)",
+    "phase2": "PASS (120/120)",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  }
+}

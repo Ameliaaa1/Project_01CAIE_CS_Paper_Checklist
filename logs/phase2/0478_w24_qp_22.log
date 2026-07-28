@@ -1,0 +1,256 @@
+[2026-07-13T02:02:34.835Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_22.pdf
+[2026-07-13T02:02:34.835Z] startTime=2026-07-13T02:02:34.835Z
+[2026-07-13T02:02:34.835Z] expectedRole=question_paper
+[2026-07-13T02:02:36.516Z] extract.exitCode=0
+[2026-07-13T02:02:36.516Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 12,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 Tick (✓) one box to complete this sentence. A solution to a problem may be represented using pseudocode, flowcharts or A procedures. B processes. C structure diagrams. D sub-systems. [1]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 Tick (✓) one box to complete this sentence. A pseudocode example of a selection statement is A CALL Sorting(Value1, Value2) B DECLARE Count : INTEGER C IF X = 7 THEN Y 21 ENDIF D WHILE X <> -1 DO [1]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Four flowchart symbols and five purposes are shown. (a) Draw one line to link each flowchart symbol to its correct purpose. Not all purposes will be used. Flowchart symbol Purpose subroutine process flow decision terminator [4] (b) An algorithm needs to total 50 numbers between 1 and 100 inclusive. Draw a flowchart that: uses a count-controlled loop from 1"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 This pseudocode algorithm is intended to sort a pre-populated one-dimensional (1D) array named ItemList into alphabetical order using a bubble sort. 01 DECLARE ItemList : ARRAY[1:100] OF STRING 02 DECLARE Counter : STRING 03 DECLARE Limit : INTEGER 04 DECLARE Pass : INTEGER 05 DECLARE Swapped : BOOLEAN 06 DECLARE Temp : STRING 100 07 Limit 1 08 Pass TRUE 0"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Analysis is one stage in the program development life cycle. (a) State one other stage in the program development life cycle. [1] (b) Describe the analysis stage of the program development life cycle. [3]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "6 Outline one type of verification check that could be used when inputting data. [2]"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 This pseudocode represents an algorithm. An input of –1 will terminate the algorithm. DECLARE Count : INTEGER DECLARE Answer : INTEGER DECLARE Value : INTEGER REPEAT INPUT Value IF Value <> -1 THEN Value Answer Value - 1 TO 1 STEP -1 FOR Count Answer * Count Answer NEXT Count OUTPUT Answer ENDIF UNTIL Value = -1 (a) Complete the trace table for the input d"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 Different types of test data are used during program development to make sure a program works as intended. A program being developed takes as input whole numbers that are not greater than 80. Identify two items of test data to test the whole number limit of 80. Explain the reason for your choice of the data in each case. Test data 1 Reason for choice Test "
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 Consider the logic expression: X = (NOT P OR Q) NAND (Q XOR R) (a) Draw a logic circuit for this logic expression. Each logic gate must have a maximum of two inputs. Do not simplify the logic expression. P Q X R [4] (b) Complete the truth table for the given logic expression. P Q R X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 [4]"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "10 The function LENGTH(X) calculates the length of a string X Write the pseudocode statements to: allow a line of text to be input to an appropriate variable • store this line of text in a text file called Main.txt • calculate the length of the line of text and output the text in lower case along with its length • store the lower-case line of text in a text "
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "11 A database table called Booking28 stores details of hotel rooms and bookings for the week beginning Monday 7 July 2025. RoomNo Type Guests Rate$ Mon Tue Wed Thu Fri Sat Sun 101D Double 2 99.99 T T T T F T T 102D Double 2 99.99 T T T F T T T 103F Family 4 150.00 T T T T T T T 104S Single 1 72.50 F T T F T T T 105S Single 1 72.50 F T T F T T T 106T Twin 2 1"
+    },
+    {
+      "questionNumber": "12",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "12 A one-dimensional (1D) array Rooms[] contains the names of up to 20 rooms in a house. A two-dimensional (2D) array Dimensions[] is used to store the length, width and area of each room. The position of any room’s data is the same in both arrays. For example, the data in index 5 of Dimensions[] belongs to the room in index 5 of Rooms[] The variable Number "
+    }
+  ]
+}
+[2026-07-13T02:02:36.518Z] parserVersion=0.4.0
+[2026-07-13T02:02:36.518Z] documentRole=question_paper
+[2026-07-13T02:02:36.518Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:02:36.770Z] stage.exitCode=0
+[2026-07-13T02:02:36.770Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_22.staging.json",
+  "runId": "0478-2024-ON-22-QP-RUN-d5e2fa597b2f",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 12,
+      "leafQuestionCount": 21,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:02:36.772Z] stagingId=0478-2024-ON-22-QP-RUN-d5e2fa597b2f
+[2026-07-13T02:02:36.772Z] validationStatus=PASS
+[2026-07-13T02:02:36.772Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:02:36.772Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:02:36.772Z] canonicalPublishable=true
+[2026-07-13T02:02:36.772Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:02:36.772Z] endTime=2026-07-13T02:02:36.772Z
+[2026-07-13T02:02:36.772Z] status=PASS

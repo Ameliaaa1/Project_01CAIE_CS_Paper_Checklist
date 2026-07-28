@@ -1,0 +1,240 @@
+[2026-07-15T03:53:45.244Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_12.pdf
+[2026-07-15T03:53:45.244Z] startTime=2026-07-15T03:53:45.244Z
+[2026-07-15T03:53:45.244Z] expectedRole=question_paper
+[2026-07-15T03:53:46.645Z] extract.exitCode=0
+[2026-07-15T03:53:46.645Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Data can be measured in bits. (a) Give the name of the data storage measurement that is equal to 8 bits. [1] (b) State how many bits there are in a kibibyte (KiB). [1] (c) Give the name of the data storage measurement that is equal to 1024 gibibytes (GiB). [1] (d) A 16-bit colour image has a resolution of 512 pixels wide by 512 pixels high. Calculate the f"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Data can be transmitted from one device to another. (a) Tick ( 3 ) one box to show which of the terms is not a method for transmitting data. A serial B simplex C parallel D parity [1] (b) Data is broken down into smaller units to be transmitted from one device to another. Give the name of the unit that data is broken down into. [1] (c) Data is often encryp"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Binary is a base 2 number system. (a) Give the name of the number system that is base 16. [1] (b) Three denary numbers are entered into a computer. The computer converts the numbers and stores them as binary. (i) Give the binary number that would be stored for each of the denary numbers. 10 50 201 [3] (ii) Explain why the data is converted to binary by the"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A student uses both system software and application software on their computer. (a) Give one example of system software. [1] (b) Give two examples of application software. 1 2 [2] (c) Describe the difference between system software and application software. [2]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Instructions are processed by a central processing unit (CPU) in a computer. (a) Complete the paragraph about fetching an instruction into the CPU to be processed. Use the terms from the list. Some of the terms in the list will not be used. You should only use a term once. address arithmetic logic unit (ALU) binary control unit (CU) current instruction reg"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 The table contains statements about error detection methods. Complete the table by giving the correct error detection method for each statement. error detection method statement …………………………………………… An odd or even process can be used. A value is calculated from the data, using an …………………………………………… algorithm. This happens before and after the data is transmitt"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A computer has both a media access control (MAC) address and an internet protocol (IP) address. (a) Tick ( 3 ) one box to show which of the statements is correct about the MAC address. A It is assigned by the manufacturer. B It is assigned by a router. C It can be static or dynamic. D It is made up of three different parts. [1] (b) An IP address can have a"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 A company has a website that is suffering a distributed denial of service (DDoS) attack. (a) Draw and annotate a diagram to show the process of the DDoS. [5] (b) Identify a solution that can be used to help prevent the DDoS attack being successful. [1]"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 A company uses both solid-state and optical secondary storage. (a) Explain why a computer needs secondary storage. [2] (b) Describe three differences between solid-state and optical storage. 1 2 3 [6]"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 A garage uses an expert system to help diagnose any problems with cars that need repair. (a) The expert system is an example of artificial intelligence (AI). Describe what is meant by AI. [2] (b) A car has a problem with its braking system, so it is brought into the garage. Explain how the expert system operates and how it is used to help diagnose the pro"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "11 A company has a website. Users use the internet and the world wide web to access the website. (a) Describe the difference between the internet and the world wide web. [2] (b) The website has a uniform resource locator (URL). The URL has three different parts. Identify the three different parts that are included in the URL. 1 2 3 [3] (c) One function of a "
+    }
+  ]
+}
+[2026-07-15T03:53:46.646Z] parserVersion=0.4.0
+[2026-07-15T03:53:46.646Z] documentRole=question_paper
+[2026-07-15T03:53:46.646Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:46.908Z] stage.exitCode=0
+[2026-07-15T03:53:46.908Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_12.staging.json",
+  "runId": "0478-2024-MJ-12-QP-RUN-24b31b3eaa0c",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 31,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 31,
+        "present": 31,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:46.910Z] stagingId=0478-2024-MJ-12-QP-RUN-24b31b3eaa0c
+[2026-07-15T03:53:46.910Z] validationStatus=PASS
+[2026-07-15T03:53:46.910Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:46.910Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:46.910Z] canonicalPublishable=true
+[2026-07-15T03:53:46.910Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:46.910Z] endTime=2026-07-15T03:53:46.910Z
+[2026-07-15T03:53:46.910Z] status=PASS

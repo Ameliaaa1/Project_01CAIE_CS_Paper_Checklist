@@ -1,0 +1,201 @@
+[2026-07-14T16:53:35.922Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_22.pdf
+[2026-07-14T16:53:35.922Z] startTime=2026-07-14T16:53:35.922Z
+[2026-07-14T16:53:35.922Z] expectedRole=question_paper
+[2026-07-14T16:53:38.436Z] extract.exitCode=0
+[2026-07-14T16:53:38.436Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_22.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Calculations occur at various points in the program and these result in the choice of several possible postal costs. The programmer has built these postal costs into the program. For example, the postal cost of $3.75 is used in the following lines of pseudocode: IF Weight < 250 AND ValidAddress = TRUE THEN 3.75 // set postal cost for item to $3.75 ItemPost"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 MyDOB DATE Write a pseudocode statement, using a function from the to assign the value (a) insert corresponding to 17/11/2007 to . MyDOB [1] has been assigned a valid value representing the user’s date of birth. (b) MyDOB Write a pseudocode statement to calculate the number of months from the month of the user’s birth until the end of the year and to assig"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The diagram below represents an Abstract Data Type (ADT) implementation of the queue. (a) Each data item is stored in a separate location in the data structure. During initial design, the queue is limited to holding a maximum of 10 data items. The operation of this queue may be summarised as follows: The Front of Queue Pointer points to the next data item "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 GetNum() 1. take two parameters: a string and a character 2. count the number of times that the character occurs in the string 3. return the count. Any comparison between characters needs to be case sensitive. For example, character ' ' and a character ' ' are not identical. A Write pseudocode for function . GetNum() [6] A programmer has produced the follo"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 from 1 to 10. Line numbers are for reference only. 10 DECLARE Num : REAL 1.0 11 Num ... 40 REPEAT 41 CALL DisplaySqrt(Num) Num + 1.0 42 Num 43 UNTIL Num > 10 ... 50 PROCEDURE DisplaySqrt(BYREF ThisNum : REAL) 51 OUTPUT ThisNum SQRT(ThisNum) // SQRT returns the square root 52 ThisNum 53 OUTPUT \" has a square root of \", ThisNum 54 ENDPROCEDURE The pseudocode"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 14,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 Square() number square. The boundary of a number square is made up of the character representing the parameter value. The inside of the number square is made up of the asterisk character ( ). * Parameter value ... 1 2 3 4 9 ... 9 99 9 9 99 9 44 4 33 1 22 33 22 ** * 9* * 4* * 3* 444 333 ** *** ** 9** 4** 4444 **** 9*** Output ** * 9* * ** * 9* * *** *** ***"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 include name and address (both postal and email) together with payment details and order history. The system also stores the product categories they are interested in and how they would like to be contacted. The shop wants to add a program module that will generate emails to be sent to customers (a) who may be interested in receiving details of new product"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 16,
+      "pageEnd": 19,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 contains information about each item. Stock.txt Information for each item is stored as a single line in the file in the format: Stock.txt <ItemNum><SupplierCode><Description> Valid item information is as follows: Format Comment unique number for each item in the range 4 numeric characters ItemNum ″0001″ to ″5999″ inclusive 3 alphabetic characters to identi"
+    }
+  ]
+}
+[2026-07-14T16:53:38.438Z] parserVersion=0.4.0
+[2026-07-14T16:53:38.438Z] documentRole=question_paper
+[2026-07-14T16:53:38.438Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:53:38.794Z] stage.exitCode=0
+[2026-07-14T16:53:38.794Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s23_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_22.staging.json",
+  "runId": "9618-2023-MJ-22-QP-RUN-41216c66a226",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s23_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-MJ-22-Q1-A-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:53:38.797Z] stagingId=9618-2023-MJ-22-QP-RUN-41216c66a226
+[2026-07-14T16:53:38.797Z] validationStatus=PASS
+[2026-07-14T16:53:38.797Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:53:38.797Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:53:38.797Z] canonicalPublishable=true
+[2026-07-14T16:53:38.797Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:53:38.797Z] endTime=2026-07-14T16:53:38.797Z
+[2026-07-14T16:53:38.797Z] status=PASS

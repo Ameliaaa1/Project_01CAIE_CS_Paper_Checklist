@@ -1,0 +1,144 @@
+[2026-07-15T03:52:44.562Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_23.pdf
+[2026-07-15T03:52:44.562Z] startTime=2026-07-15T03:52:44.562Z
+[2026-07-15T03:52:44.562Z] expectedRole=question_paper
+[2026-07-15T03:52:46.140Z] extract.exitCode=0
+[2026-07-15T03:52:46.140Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w21_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_23.pdf",
+  "pageCount": 16,
+  "questionCount": 5,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Identify constant that you could have used for . Give the value that would be (a) one Task 1 assigned to this constant. State the use of this constant. Constant Value Use [3] Describe the arrays that you have set up in to record today’s data about the restaurant (b) Task 1 tables. [4] Sometimes the restaurant has fewer tables available for a session. (c) E"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 less than or equal to 100. These numbers are stored in the array NumRand[] The function generates a random integer greater than and less than or equal to RandUp(X,Y) X Y For example, generates or or RandUp(1,4) 2 3 4 0 1 Count 2 WHILE Counter > 50 DO RandUp(1,100) 3 NumRand[Counter] Counter − 2 4 Counter 5 ENDWHILE Find the errors in the pseudocode and wri"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 eight or more characters long and contain at least one special character, for example, Secret!*! State suitable examples of normal and erroneous test data that could be used to test this (a) (i) program. For each example give the reason for your choice of test data. Normal test data example Reason Erroneous test data example Reason [4] Explain why two piec"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 students. A mark of 999 ends the process. If a mark is 40 or over then a pass grade is awarded. The number of pass grades is calculated for the whole class. If this is under 50% of the class, the class is offered extra help. START Counter 0 Pass 0 INPUT Mark IS Yes ? Mark = 999 Help Pass / Counter No IS Yes OUTPUT Counter Counter + 1 ? Help < 0.5 \"Extra He"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "5 The following data is stored for each computer: CATEGORY – desktop, laptop or tablet • WEIGHT – weight in kilograms • MANUFACTURER – ICN, Linoldo, Pear or JoeSing • PRICE – price in $ • CODE – a unique code allocated by the manufacturer, e.g. P771 • STOCK – quantity in stock. • A database management system uses these data types: Text Number Currency Boolea"
+    }
+  ]
+}
+[2026-07-15T03:52:46.141Z] parserVersion=0.4.0
+[2026-07-15T03:52:46.141Z] documentRole=question_paper
+[2026-07-15T03:52:46.141Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:52:46.392Z] stage.exitCode=0
+[2026-07-15T03:52:46.392Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w21_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_23.staging.json",
+  "runId": "0478-2021-ON-23-QP-RUN-f1f682fa7aeb",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 5,
+      "leafQuestionCount": 13,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 13,
+        "present": 13,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:52:46.394Z] stagingId=0478-2021-ON-23-QP-RUN-f1f682fa7aeb
+[2026-07-15T03:52:46.394Z] validationStatus=PASS
+[2026-07-15T03:52:46.394Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:52:46.394Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:52:46.394Z] canonicalPublishable=true
+[2026-07-15T03:52:46.394Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:52:46.394Z] endTime=2026-07-15T03:52:46.394Z
+[2026-07-15T03:52:46.394Z] status=PASS

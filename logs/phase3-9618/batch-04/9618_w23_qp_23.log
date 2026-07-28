@@ -1,0 +1,217 @@
+[2026-07-14T16:55:16.295Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_23.pdf
+[2026-07-14T16:55:16.295Z] startTime=2026-07-14T16:55:16.295Z
+[2026-07-14T16:55:16.295Z] expectedRole=question_paper
+[2026-07-14T16:55:19.079Z] extract.exitCode=0
+[2026-07-14T16:55:19.079Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_qp_23.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 language. The following table shows four valid pseudocode assignment statements. (a) Complete the table by giving the data type that should be used to declare the variable underlined in each assignment statement. Assignment statement Data type MyVar1 Total1 / Total2 ← MyVar2 27/10/2023 ← MyVar3 \"Sum1 / Sum2\" ← MyVar4 Result1 AND Result2 ← [4] Other variabl"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Data An algorithm will output the index of the element with the smallest value. (a) Draw a program flowchart to represent the algorithm. START END [5] The 30 data values could have been stored in separate variables rather than in an array. (b) Explain the benefits of using an array when designing a solution to part . (a) [2] The requirement changes. Array "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The organisation of this queue may be summarised as follows: The pointer points to the next data item to be removed. • FrontOfQueue The pointer points to the last data item added. • EndOfQueue Queue D3 FrontOfQueue ← D4 D1 D2 D5 EndOfQueue ← The queue is implemented using three variables and a 1D array of eight elements as shown. The variable stores the nu"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 RandList() larger than the previous one. Write pseudocode for procedure . (a) RandList() [6] Procedure is modified so that the random numbers are also written into a (b) RandList() 1D array . Result A new module is written to confirm that the numbers in the array are in ascending order. This module contains an statement that performs a comparison between e"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 4 Mix[1] ← 2 Mix[2] ← 3 Mix[3] ← 5 Mix[4] ← A procedure manipulates the values in the array. Process() The procedure is written in pseudocode as follows: PROCEDURE Process(Start : INTEGER) DECLARE Value, Index, Total : INTEGER Start Index ← 0 Total ← WHILE Total < 20 Mix[Index] Value ← Total + Value Total ← IF Index < 4 THEN Mix[Index] + Mix[Index+1] Mix[I"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 TestNum() The function will test whether the string meets certain conditions and will return an integer value as follows: Return value Condition Example 1 The last three digits are the same but non-zero. \"253444\" 2 The last three digits are zero. \"253000\" 3 The first three and last three digits are the same. \"410410\" The function will return the highest po"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Module-A() T1 RA SA RB Sub-Y1() Sub-Y2() Sub-9() Explain the meaning of the curved arrow symbol which begins and ends at Module-A(). (a) [2] The structure chart shows that Sub-9() is a function. (b) A Boolean value is returned by Sub-9() for processing by Module-A(). The original parameter RA is of type integer and RB is of type string. A record type will "
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 16,
+      "pageEnd": 20,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 are connected together to form a wired network. Serial ports are used to connect one computer to another. Each computer: is assigned a unique three-digit ID • has three ports, each identified by an integer value • is connected to between one and three other computers. • Messages are sent between computers as a string of characters organised into fields as "
+    }
+  ]
+}
+[2026-07-14T16:55:19.081Z] parserVersion=0.4.0
+[2026-07-14T16:55:19.081Z] documentRole=question_paper
+[2026-07-14T16:55:19.081Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:55:19.496Z] stage.exitCode=0
+[2026-07-14T16:55:19.496Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w23_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_23.staging.json",
+  "runId": "9618-2023-ON-23-QP-RUN-f458eade7545",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w23_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 20,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 17,
+        "present": 17,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-23-Q2-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-23-Q3-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2023-ON-23-Q8-D",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:55:19.500Z] stagingId=9618-2023-ON-23-QP-RUN-f458eade7545
+[2026-07-14T16:55:19.500Z] validationStatus=PASS
+[2026-07-14T16:55:19.500Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:55:19.500Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:55:19.500Z] canonicalPublishable=true
+[2026-07-14T16:55:19.500Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:55:19.500Z] endTime=2026-07-14T16:55:19.500Z
+[2026-07-14T16:55:19.500Z] status=PASS

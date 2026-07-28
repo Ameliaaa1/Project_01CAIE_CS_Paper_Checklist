@@ -1,0 +1,3468 @@
+{
+  "generatedFor": "PR-059-9618-Production-Coverage-Audit-Plan",
+  "status": "PASS",
+  "productionWrite": false,
+  "scope": {
+    "syllabus": "9618",
+    "operation": "Coverage Audit"
+  },
+  "auditPrinciples": {
+    "auditOnly": true,
+    "productionWrite": false,
+    "parserModified": false,
+    "stagingMutated": false,
+    "assetsMutated": false,
+    "hiddenAutoFix": false
+  },
+  "inventory": {
+    "totalPdfFiles": 266,
+    "totalQpPdfs": 118,
+    "totalMsPdfs": 118,
+    "otherPdfCount": 30,
+    "otherPdfFiles": [
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_in_21.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_in_22.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 May June/9618_s21_in_23.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_in_21.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_in_22.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_in_23.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_in_21.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_in_22.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_in_23.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_in_21.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_in_22.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_in_23.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_in_21.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_in_22.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_in_23.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_in_21.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_in_22.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 Oct Nov/9618_w23_in_23.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_in_21.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_in_22.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_in_23.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_in_21.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_in_22.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_in_23.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_in_21.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_in_22.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_in_23.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_in_21.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_in_22.pdf",
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_in_23.pdf"
+    ],
+    "totalPairs": 118,
+    "completeSourcePairs": 117,
+    "incompleteSourcePairs": 1,
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "sessions": [
+      "M/J",
+      "O/N"
+    ],
+    "components": [
+      "11",
+      "12",
+      "13",
+      "21",
+      "22",
+      "23",
+      "31",
+      "32",
+      "33",
+      "41",
+      "42",
+      "43"
+    ],
+    "missingQpFiles": [],
+    "missingMsFiles": [
+      "9618-2022-MJ-41"
+    ],
+    "orphanQpFiles": [
+      "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_41.pdf"
+    ],
+    "orphanMsFiles": [],
+    "duplicateSources": [
+      {
+        "pairingKey": "9618-2021-ON-41",
+        "qpFiles": [
+          "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_41.pdf"
+        ],
+        "msFiles": [
+          "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_ms_41.pdf",
+          "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_w21_ms_41.pdf"
+        ]
+      }
+    ]
+  },
+  "sourcePairCompleteness": {
+    "complete": [
+      "9618-2021-MJ-11",
+      "9618-2021-MJ-12",
+      "9618-2021-MJ-13",
+      "9618-2021-MJ-21",
+      "9618-2021-MJ-22",
+      "9618-2021-MJ-23",
+      "9618-2021-MJ-31",
+      "9618-2021-MJ-32",
+      "9618-2021-MJ-33",
+      "9618-2021-MJ-41",
+      "9618-2021-MJ-42",
+      "9618-2021-MJ-43",
+      "9618-2021-ON-11",
+      "9618-2021-ON-12",
+      "9618-2021-ON-13",
+      "9618-2021-ON-21",
+      "9618-2021-ON-22",
+      "9618-2021-ON-23",
+      "9618-2021-ON-31",
+      "9618-2021-ON-32",
+      "9618-2021-ON-41",
+      "9618-2021-ON-42",
+      "9618-2022-MJ-11",
+      "9618-2022-MJ-12",
+      "9618-2022-MJ-13",
+      "9618-2022-MJ-21",
+      "9618-2022-MJ-22",
+      "9618-2022-MJ-23",
+      "9618-2022-MJ-31",
+      "9618-2022-MJ-32",
+      "9618-2022-MJ-33",
+      "9618-2022-MJ-42",
+      "9618-2022-MJ-43",
+      "9618-2022-ON-11",
+      "9618-2022-ON-12",
+      "9618-2022-ON-13",
+      "9618-2022-ON-21",
+      "9618-2022-ON-22",
+      "9618-2022-ON-23",
+      "9618-2022-ON-31",
+      "9618-2022-ON-32",
+      "9618-2022-ON-33",
+      "9618-2022-ON-41",
+      "9618-2022-ON-42",
+      "9618-2022-ON-43",
+      "9618-2023-MJ-11",
+      "9618-2023-MJ-12",
+      "9618-2023-MJ-13",
+      "9618-2023-MJ-21",
+      "9618-2023-MJ-22",
+      "9618-2023-MJ-23",
+      "9618-2023-MJ-31",
+      "9618-2023-MJ-32",
+      "9618-2023-MJ-33",
+      "9618-2023-MJ-41",
+      "9618-2023-MJ-42",
+      "9618-2023-MJ-43",
+      "9618-2023-ON-11",
+      "9618-2023-ON-12",
+      "9618-2023-ON-13",
+      "9618-2023-ON-21",
+      "9618-2023-ON-22",
+      "9618-2023-ON-23",
+      "9618-2023-ON-31",
+      "9618-2023-ON-32",
+      "9618-2023-ON-33",
+      "9618-2023-ON-41",
+      "9618-2023-ON-42",
+      "9618-2023-ON-43",
+      "9618-2024-MJ-11",
+      "9618-2024-MJ-12",
+      "9618-2024-MJ-13",
+      "9618-2024-MJ-21",
+      "9618-2024-MJ-22",
+      "9618-2024-MJ-23",
+      "9618-2024-MJ-31",
+      "9618-2024-MJ-32",
+      "9618-2024-MJ-33",
+      "9618-2024-MJ-41",
+      "9618-2024-MJ-42",
+      "9618-2024-MJ-43",
+      "9618-2024-ON-11",
+      "9618-2024-ON-12",
+      "9618-2024-ON-13",
+      "9618-2024-ON-21",
+      "9618-2024-ON-22",
+      "9618-2024-ON-23",
+      "9618-2024-ON-31",
+      "9618-2024-ON-32",
+      "9618-2024-ON-33",
+      "9618-2024-ON-41",
+      "9618-2024-ON-42",
+      "9618-2024-ON-43",
+      "9618-2025-MJ-11",
+      "9618-2025-MJ-12",
+      "9618-2025-MJ-13",
+      "9618-2025-MJ-21",
+      "9618-2025-MJ-22",
+      "9618-2025-MJ-23",
+      "9618-2025-MJ-31",
+      "9618-2025-MJ-32",
+      "9618-2025-MJ-33",
+      "9618-2025-MJ-41",
+      "9618-2025-MJ-42",
+      "9618-2025-MJ-43",
+      "9618-2025-ON-11",
+      "9618-2025-ON-12",
+      "9618-2025-ON-13",
+      "9618-2025-ON-21",
+      "9618-2025-ON-22",
+      "9618-2025-ON-23",
+      "9618-2025-ON-31",
+      "9618-2025-ON-32",
+      "9618-2025-ON-33",
+      "9618-2025-ON-41",
+      "9618-2025-ON-42",
+      "9618-2025-ON-43"
+    ],
+    "incomplete": [
+      "9618-2022-MJ-41"
+    ]
+  },
+  "stagingCoverage": {
+    "complete": [
+      "9618-2021-MJ-11",
+      "9618-2021-MJ-12",
+      "9618-2021-MJ-13",
+      "9618-2021-MJ-21",
+      "9618-2021-MJ-22",
+      "9618-2021-MJ-23",
+      "9618-2021-MJ-31",
+      "9618-2021-MJ-32",
+      "9618-2021-MJ-33",
+      "9618-2021-MJ-41",
+      "9618-2021-MJ-42",
+      "9618-2021-MJ-43",
+      "9618-2021-ON-11",
+      "9618-2021-ON-12",
+      "9618-2021-ON-13",
+      "9618-2021-ON-21",
+      "9618-2021-ON-22",
+      "9618-2021-ON-23",
+      "9618-2021-ON-31",
+      "9618-2021-ON-32",
+      "9618-2021-ON-41",
+      "9618-2023-MJ-11",
+      "9618-2024-ON-12",
+      "9618-2025-MJ-11",
+      "9618-2025-ON-42"
+    ],
+    "partial": [],
+    "missing": [
+      "9618-2021-ON-42",
+      "9618-2022-MJ-11",
+      "9618-2022-MJ-12",
+      "9618-2022-MJ-13",
+      "9618-2022-MJ-21",
+      "9618-2022-MJ-22",
+      "9618-2022-MJ-23",
+      "9618-2022-MJ-31",
+      "9618-2022-MJ-32",
+      "9618-2022-MJ-33",
+      "9618-2022-MJ-41",
+      "9618-2022-MJ-42",
+      "9618-2022-MJ-43",
+      "9618-2022-ON-11",
+      "9618-2022-ON-12",
+      "9618-2022-ON-13",
+      "9618-2022-ON-21",
+      "9618-2022-ON-22",
+      "9618-2022-ON-23",
+      "9618-2022-ON-31",
+      "9618-2022-ON-32",
+      "9618-2022-ON-33",
+      "9618-2022-ON-41",
+      "9618-2022-ON-42",
+      "9618-2022-ON-43",
+      "9618-2023-MJ-12",
+      "9618-2023-MJ-13",
+      "9618-2023-MJ-21",
+      "9618-2023-MJ-22",
+      "9618-2023-MJ-23",
+      "9618-2023-MJ-31",
+      "9618-2023-MJ-32",
+      "9618-2023-MJ-33",
+      "9618-2023-MJ-41",
+      "9618-2023-MJ-42",
+      "9618-2023-MJ-43",
+      "9618-2023-ON-11",
+      "9618-2023-ON-12",
+      "9618-2023-ON-13",
+      "9618-2023-ON-21",
+      "9618-2023-ON-22",
+      "9618-2023-ON-23",
+      "9618-2023-ON-31",
+      "9618-2023-ON-32",
+      "9618-2023-ON-33",
+      "9618-2023-ON-41",
+      "9618-2023-ON-42",
+      "9618-2023-ON-43",
+      "9618-2024-MJ-11",
+      "9618-2024-MJ-12",
+      "9618-2024-MJ-13",
+      "9618-2024-MJ-21",
+      "9618-2024-MJ-22",
+      "9618-2024-MJ-23",
+      "9618-2024-MJ-31",
+      "9618-2024-MJ-32",
+      "9618-2024-MJ-33",
+      "9618-2024-MJ-41",
+      "9618-2024-MJ-42",
+      "9618-2024-MJ-43",
+      "9618-2024-ON-11",
+      "9618-2024-ON-13",
+      "9618-2024-ON-21",
+      "9618-2024-ON-22",
+      "9618-2024-ON-23",
+      "9618-2024-ON-31",
+      "9618-2024-ON-32",
+      "9618-2024-ON-33",
+      "9618-2024-ON-41",
+      "9618-2024-ON-42",
+      "9618-2024-ON-43",
+      "9618-2025-MJ-12",
+      "9618-2025-MJ-13",
+      "9618-2025-MJ-21",
+      "9618-2025-MJ-22",
+      "9618-2025-MJ-23",
+      "9618-2025-MJ-31",
+      "9618-2025-MJ-32",
+      "9618-2025-MJ-33",
+      "9618-2025-MJ-41",
+      "9618-2025-MJ-42",
+      "9618-2025-MJ-43",
+      "9618-2025-ON-11",
+      "9618-2025-ON-12",
+      "9618-2025-ON-13",
+      "9618-2025-ON-21",
+      "9618-2025-ON-22",
+      "9618-2025-ON-23",
+      "9618-2025-ON-31",
+      "9618-2025-ON-32",
+      "9618-2025-ON-33",
+      "9618-2025-ON-41",
+      "9618-2025-ON-43"
+    ]
+  },
+  "coverage": {
+    "sourcePairs": 118,
+    "completeSourcePairs": 117,
+    "stagingPairs": 25,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 93,
+    "publishedPairs": 16,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 92,
+    "blockedPairs": 9,
+    "incompleteSourcePairs": 1,
+    "partialProductionConflicts": 0,
+    "unpublishedPairs": 102
+  },
+  "publishedPairs": [
+    {
+      "pairingKey": "9618-2021-MJ-12",
+      "year": 2021,
+      "session": "M/J",
+      "component": "12",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-MJ-22",
+      "year": 2021,
+      "session": "M/J",
+      "component": "22",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-MJ-41",
+      "year": 2021,
+      "session": "M/J",
+      "component": "41",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-MJ-42",
+      "year": 2021,
+      "session": "M/J",
+      "component": "42",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-MJ-43",
+      "year": 2021,
+      "session": "M/J",
+      "component": "43",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-ON-11",
+      "year": 2021,
+      "session": "O/N",
+      "component": "11",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-ON-12",
+      "year": 2021,
+      "session": "O/N",
+      "component": "12",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-ON-13",
+      "year": 2021,
+      "session": "O/N",
+      "component": "13",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-ON-21",
+      "year": 2021,
+      "session": "O/N",
+      "component": "21",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-ON-23",
+      "year": 2021,
+      "session": "O/N",
+      "component": "23",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-ON-31",
+      "year": 2021,
+      "session": "O/N",
+      "component": "31",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-ON-32",
+      "year": 2021,
+      "session": "O/N",
+      "component": "32",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2021-ON-41",
+      "year": 2021,
+      "session": "O/N",
+      "component": "41",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-11",
+      "year": 2023,
+      "session": "M/J",
+      "component": "11",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-11",
+      "year": 2025,
+      "session": "M/J",
+      "component": "11",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-42",
+      "year": 2025,
+      "session": "O/N",
+      "component": "42",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": true,
+        "msPublished": true,
+        "pairingLinked": true
+      }
+    }
+  ],
+  "eligibleUnpublishedPairs": [],
+  "blockedPairs": [
+    {
+      "pairingKey": "9618-2021-MJ-11",
+      "year": 2021,
+      "session": "M/J",
+      "component": "11",
+      "qpStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": false,
+        "msPublished": false,
+        "pairingLinked": false
+      },
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1"
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "classification": "Blocked != Regression; Blocked != Parser Bug without root-cause evidence."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-13",
+      "year": 2021,
+      "session": "M/J",
+      "component": "13",
+      "qpStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": false,
+        "msPublished": false,
+        "pairingLinked": false
+      },
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1"
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "classification": "Blocked != Regression; Blocked != Parser Bug without root-cause evidence."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-21",
+      "year": 2021,
+      "session": "M/J",
+      "component": "21",
+      "qpStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": false,
+        "msPublished": false,
+        "pairingLinked": false
+      },
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1"
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "classification": "Blocked != Regression; Blocked != Parser Bug without root-cause evidence."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-23",
+      "year": 2021,
+      "session": "M/J",
+      "component": "23",
+      "qpStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": false,
+        "msPublished": false,
+        "pairingLinked": false
+      },
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1"
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "classification": "Blocked != Regression; Blocked != Parser Bug without root-cause evidence."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-31",
+      "year": 2021,
+      "session": "M/J",
+      "component": "31",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": false,
+        "msPublished": false,
+        "pairingLinked": false
+      },
+      "blockers": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1"
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "classification": "Blocked != Regression; Blocked != Parser Bug without root-cause evidence."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-32",
+      "year": 2021,
+      "session": "M/J",
+      "component": "32",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": false,
+        "msPublished": false,
+        "pairingLinked": false
+      },
+      "blockers": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1"
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "classification": "Blocked != Regression; Blocked != Parser Bug without root-cause evidence."
+    },
+    {
+      "pairingKey": "9618-2021-MJ-33",
+      "year": 2021,
+      "session": "M/J",
+      "component": "33",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": false,
+        "msPublished": false,
+        "pairingLinked": false
+      },
+      "blockers": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1"
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "classification": "Blocked != Regression; Blocked != Parser Bug without root-cause evidence."
+    },
+    {
+      "pairingKey": "9618-2021-ON-22",
+      "year": 2021,
+      "session": "O/N",
+      "component": "22",
+      "qpStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": false,
+        "msPublished": false,
+        "pairingLinked": false
+      },
+      "blockers": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1"
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "classification": "Blocked != Regression; Blocked != Parser Bug without root-cause evidence."
+    },
+    {
+      "pairingKey": "9618-2024-ON-12",
+      "year": 2024,
+      "session": "O/N",
+      "component": "12",
+      "qpStatus": {
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "msStatus": {
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "production": {
+        "qpPublished": false,
+        "msPublished": false,
+        "pairingLinked": false
+      },
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1"
+      ],
+      "severityCounts": {
+        "qp": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "ms": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        }
+      },
+      "classification": "Blocked != Regression; Blocked != Parser Bug without root-cause evidence."
+    }
+  ],
+  "incompleteSourcePairs": [
+    {
+      "pairingKey": "9618-2022-MJ-41",
+      "year": 2022,
+      "session": "M/J",
+      "component": "41",
+      "missingQp": false,
+      "missingMs": true,
+      "orphanQp": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_41.pdf"
+      ],
+      "orphanMs": [],
+      "stagingStatus": "STAGING_MISSING"
+    }
+  ],
+  "missingStagingPairs": [
+    {
+      "pairingKey": "9618-2021-ON-42",
+      "year": 2021,
+      "session": "O/N",
+      "component": "42",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-MJ-11",
+      "year": 2022,
+      "session": "M/J",
+      "component": "11",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-MJ-12",
+      "year": 2022,
+      "session": "M/J",
+      "component": "12",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-MJ-13",
+      "year": 2022,
+      "session": "M/J",
+      "component": "13",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-MJ-21",
+      "year": 2022,
+      "session": "M/J",
+      "component": "21",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-MJ-22",
+      "year": 2022,
+      "session": "M/J",
+      "component": "22",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-MJ-23",
+      "year": 2022,
+      "session": "M/J",
+      "component": "23",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-MJ-31",
+      "year": 2022,
+      "session": "M/J",
+      "component": "31",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-MJ-32",
+      "year": 2022,
+      "session": "M/J",
+      "component": "32",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-MJ-33",
+      "year": 2022,
+      "session": "M/J",
+      "component": "33",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-MJ-42",
+      "year": 2022,
+      "session": "M/J",
+      "component": "42",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-MJ-43",
+      "year": 2022,
+      "session": "M/J",
+      "component": "43",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-11",
+      "year": 2022,
+      "session": "O/N",
+      "component": "11",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-12",
+      "year": 2022,
+      "session": "O/N",
+      "component": "12",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-13",
+      "year": 2022,
+      "session": "O/N",
+      "component": "13",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-21",
+      "year": 2022,
+      "session": "O/N",
+      "component": "21",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-22",
+      "year": 2022,
+      "session": "O/N",
+      "component": "22",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-23",
+      "year": 2022,
+      "session": "O/N",
+      "component": "23",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-31",
+      "year": 2022,
+      "session": "O/N",
+      "component": "31",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-32",
+      "year": 2022,
+      "session": "O/N",
+      "component": "32",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-33",
+      "year": 2022,
+      "session": "O/N",
+      "component": "33",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-41",
+      "year": 2022,
+      "session": "O/N",
+      "component": "41",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-42",
+      "year": 2022,
+      "session": "O/N",
+      "component": "42",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2022-ON-43",
+      "year": 2022,
+      "session": "O/N",
+      "component": "43",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-12",
+      "year": 2023,
+      "session": "M/J",
+      "component": "12",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-13",
+      "year": 2023,
+      "session": "M/J",
+      "component": "13",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-21",
+      "year": 2023,
+      "session": "M/J",
+      "component": "21",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-22",
+      "year": 2023,
+      "session": "M/J",
+      "component": "22",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-23",
+      "year": 2023,
+      "session": "M/J",
+      "component": "23",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-31",
+      "year": 2023,
+      "session": "M/J",
+      "component": "31",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-32",
+      "year": 2023,
+      "session": "M/J",
+      "component": "32",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-33",
+      "year": 2023,
+      "session": "M/J",
+      "component": "33",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-41",
+      "year": 2023,
+      "session": "M/J",
+      "component": "41",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-42",
+      "year": 2023,
+      "session": "M/J",
+      "component": "42",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-MJ-43",
+      "year": 2023,
+      "session": "M/J",
+      "component": "43",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-11",
+      "year": 2023,
+      "session": "O/N",
+      "component": "11",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-12",
+      "year": 2023,
+      "session": "O/N",
+      "component": "12",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-13",
+      "year": 2023,
+      "session": "O/N",
+      "component": "13",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-21",
+      "year": 2023,
+      "session": "O/N",
+      "component": "21",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-22",
+      "year": 2023,
+      "session": "O/N",
+      "component": "22",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-23",
+      "year": 2023,
+      "session": "O/N",
+      "component": "23",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-31",
+      "year": 2023,
+      "session": "O/N",
+      "component": "31",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-32",
+      "year": 2023,
+      "session": "O/N",
+      "component": "32",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-33",
+      "year": 2023,
+      "session": "O/N",
+      "component": "33",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-41",
+      "year": 2023,
+      "session": "O/N",
+      "component": "41",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-42",
+      "year": 2023,
+      "session": "O/N",
+      "component": "42",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2023-ON-43",
+      "year": 2023,
+      "session": "O/N",
+      "component": "43",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-11",
+      "year": 2024,
+      "session": "M/J",
+      "component": "11",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-12",
+      "year": 2024,
+      "session": "M/J",
+      "component": "12",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-13",
+      "year": 2024,
+      "session": "M/J",
+      "component": "13",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-21",
+      "year": 2024,
+      "session": "M/J",
+      "component": "21",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-22",
+      "year": 2024,
+      "session": "M/J",
+      "component": "22",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-23",
+      "year": 2024,
+      "session": "M/J",
+      "component": "23",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-31",
+      "year": 2024,
+      "session": "M/J",
+      "component": "31",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-32",
+      "year": 2024,
+      "session": "M/J",
+      "component": "32",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-33",
+      "year": 2024,
+      "session": "M/J",
+      "component": "33",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-41",
+      "year": 2024,
+      "session": "M/J",
+      "component": "41",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-42",
+      "year": 2024,
+      "session": "M/J",
+      "component": "42",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-MJ-43",
+      "year": 2024,
+      "session": "M/J",
+      "component": "43",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-ON-11",
+      "year": 2024,
+      "session": "O/N",
+      "component": "11",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-ON-13",
+      "year": 2024,
+      "session": "O/N",
+      "component": "13",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-ON-21",
+      "year": 2024,
+      "session": "O/N",
+      "component": "21",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-ON-22",
+      "year": 2024,
+      "session": "O/N",
+      "component": "22",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-ON-23",
+      "year": 2024,
+      "session": "O/N",
+      "component": "23",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-ON-31",
+      "year": 2024,
+      "session": "O/N",
+      "component": "31",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-ON-32",
+      "year": 2024,
+      "session": "O/N",
+      "component": "32",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-ON-33",
+      "year": 2024,
+      "session": "O/N",
+      "component": "33",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-ON-41",
+      "year": 2024,
+      "session": "O/N",
+      "component": "41",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-ON-42",
+      "year": 2024,
+      "session": "O/N",
+      "component": "42",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2024-ON-43",
+      "year": 2024,
+      "session": "O/N",
+      "component": "43",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-12",
+      "year": 2025,
+      "session": "M/J",
+      "component": "12",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-13",
+      "year": 2025,
+      "session": "M/J",
+      "component": "13",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-21",
+      "year": 2025,
+      "session": "M/J",
+      "component": "21",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-22",
+      "year": 2025,
+      "session": "M/J",
+      "component": "22",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-23",
+      "year": 2025,
+      "session": "M/J",
+      "component": "23",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-31",
+      "year": 2025,
+      "session": "M/J",
+      "component": "31",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-32",
+      "year": 2025,
+      "session": "M/J",
+      "component": "32",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-33",
+      "year": 2025,
+      "session": "M/J",
+      "component": "33",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-41",
+      "year": 2025,
+      "session": "M/J",
+      "component": "41",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-42",
+      "year": 2025,
+      "session": "M/J",
+      "component": "42",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-MJ-43",
+      "year": 2025,
+      "session": "M/J",
+      "component": "43",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-ON-11",
+      "year": 2025,
+      "session": "O/N",
+      "component": "11",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-ON-12",
+      "year": 2025,
+      "session": "O/N",
+      "component": "12",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-ON-13",
+      "year": 2025,
+      "session": "O/N",
+      "component": "13",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-ON-21",
+      "year": 2025,
+      "session": "O/N",
+      "component": "21",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-ON-22",
+      "year": 2025,
+      "session": "O/N",
+      "component": "22",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-ON-23",
+      "year": 2025,
+      "session": "O/N",
+      "component": "23",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-ON-31",
+      "year": 2025,
+      "session": "O/N",
+      "component": "31",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-ON-32",
+      "year": 2025,
+      "session": "O/N",
+      "component": "32",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-ON-33",
+      "year": 2025,
+      "session": "O/N",
+      "component": "33",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-ON-41",
+      "year": 2025,
+      "session": "O/N",
+      "component": "41",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    },
+    {
+      "pairingKey": "9618-2025-ON-43",
+      "year": 2025,
+      "session": "O/N",
+      "component": "43",
+      "sourcePairStatus": "COMPLETE",
+      "qpStagingAvailable": false,
+      "msStagingAvailable": false,
+      "classification": "NOT_YET_PROCESSED"
+    }
+  ],
+  "missingStagingClassification": {
+    "completeSourceButNoStaging": [
+      "9618-2021-ON-42",
+      "9618-2022-MJ-11",
+      "9618-2022-MJ-12",
+      "9618-2022-MJ-13",
+      "9618-2022-MJ-21",
+      "9618-2022-MJ-22",
+      "9618-2022-MJ-23",
+      "9618-2022-MJ-31",
+      "9618-2022-MJ-32",
+      "9618-2022-MJ-33",
+      "9618-2022-MJ-42",
+      "9618-2022-MJ-43",
+      "9618-2022-ON-11",
+      "9618-2022-ON-12",
+      "9618-2022-ON-13",
+      "9618-2022-ON-21",
+      "9618-2022-ON-22",
+      "9618-2022-ON-23",
+      "9618-2022-ON-31",
+      "9618-2022-ON-32",
+      "9618-2022-ON-33",
+      "9618-2022-ON-41",
+      "9618-2022-ON-42",
+      "9618-2022-ON-43",
+      "9618-2023-MJ-12",
+      "9618-2023-MJ-13",
+      "9618-2023-MJ-21",
+      "9618-2023-MJ-22",
+      "9618-2023-MJ-23",
+      "9618-2023-MJ-31",
+      "9618-2023-MJ-32",
+      "9618-2023-MJ-33",
+      "9618-2023-MJ-41",
+      "9618-2023-MJ-42",
+      "9618-2023-MJ-43",
+      "9618-2023-ON-11",
+      "9618-2023-ON-12",
+      "9618-2023-ON-13",
+      "9618-2023-ON-21",
+      "9618-2023-ON-22",
+      "9618-2023-ON-23",
+      "9618-2023-ON-31",
+      "9618-2023-ON-32",
+      "9618-2023-ON-33",
+      "9618-2023-ON-41",
+      "9618-2023-ON-42",
+      "9618-2023-ON-43",
+      "9618-2024-MJ-11",
+      "9618-2024-MJ-12",
+      "9618-2024-MJ-13",
+      "9618-2024-MJ-21",
+      "9618-2024-MJ-22",
+      "9618-2024-MJ-23",
+      "9618-2024-MJ-31",
+      "9618-2024-MJ-32",
+      "9618-2024-MJ-33",
+      "9618-2024-MJ-41",
+      "9618-2024-MJ-42",
+      "9618-2024-MJ-43",
+      "9618-2024-ON-11",
+      "9618-2024-ON-13",
+      "9618-2024-ON-21",
+      "9618-2024-ON-22",
+      "9618-2024-ON-23",
+      "9618-2024-ON-31",
+      "9618-2024-ON-32",
+      "9618-2024-ON-33",
+      "9618-2024-ON-41",
+      "9618-2024-ON-42",
+      "9618-2024-ON-43",
+      "9618-2025-MJ-12",
+      "9618-2025-MJ-13",
+      "9618-2025-MJ-21",
+      "9618-2025-MJ-22",
+      "9618-2025-MJ-23",
+      "9618-2025-MJ-31",
+      "9618-2025-MJ-32",
+      "9618-2025-MJ-33",
+      "9618-2025-MJ-41",
+      "9618-2025-MJ-42",
+      "9618-2025-MJ-43",
+      "9618-2025-ON-11",
+      "9618-2025-ON-12",
+      "9618-2025-ON-13",
+      "9618-2025-ON-21",
+      "9618-2025-ON-22",
+      "9618-2025-ON-23",
+      "9618-2025-ON-31",
+      "9618-2025-ON-32",
+      "9618-2025-ON-33",
+      "9618-2025-ON-41",
+      "9618-2025-ON-43"
+    ],
+    "incompleteSourceAndNoStaging": [
+      "9618-2022-MJ-41"
+    ],
+    "blockedStaging": [
+      "9618-2021-MJ-11",
+      "9618-2021-MJ-13",
+      "9618-2021-MJ-21",
+      "9618-2021-MJ-23",
+      "9618-2021-MJ-31",
+      "9618-2021-MJ-32",
+      "9618-2021-MJ-33",
+      "9618-2021-ON-22",
+      "9618-2024-ON-12"
+    ],
+    "notYetProcessed": [
+      "9618-2021-ON-42",
+      "9618-2022-MJ-11",
+      "9618-2022-MJ-12",
+      "9618-2022-MJ-13",
+      "9618-2022-MJ-21",
+      "9618-2022-MJ-22",
+      "9618-2022-MJ-23",
+      "9618-2022-MJ-31",
+      "9618-2022-MJ-32",
+      "9618-2022-MJ-33",
+      "9618-2022-MJ-42",
+      "9618-2022-MJ-43",
+      "9618-2022-ON-11",
+      "9618-2022-ON-12",
+      "9618-2022-ON-13",
+      "9618-2022-ON-21",
+      "9618-2022-ON-22",
+      "9618-2022-ON-23",
+      "9618-2022-ON-31",
+      "9618-2022-ON-32",
+      "9618-2022-ON-33",
+      "9618-2022-ON-41",
+      "9618-2022-ON-42",
+      "9618-2022-ON-43",
+      "9618-2023-MJ-12",
+      "9618-2023-MJ-13",
+      "9618-2023-MJ-21",
+      "9618-2023-MJ-22",
+      "9618-2023-MJ-23",
+      "9618-2023-MJ-31",
+      "9618-2023-MJ-32",
+      "9618-2023-MJ-33",
+      "9618-2023-MJ-41",
+      "9618-2023-MJ-42",
+      "9618-2023-MJ-43",
+      "9618-2023-ON-11",
+      "9618-2023-ON-12",
+      "9618-2023-ON-13",
+      "9618-2023-ON-21",
+      "9618-2023-ON-22",
+      "9618-2023-ON-23",
+      "9618-2023-ON-31",
+      "9618-2023-ON-32",
+      "9618-2023-ON-33",
+      "9618-2023-ON-41",
+      "9618-2023-ON-42",
+      "9618-2023-ON-43",
+      "9618-2024-MJ-11",
+      "9618-2024-MJ-12",
+      "9618-2024-MJ-13",
+      "9618-2024-MJ-21",
+      "9618-2024-MJ-22",
+      "9618-2024-MJ-23",
+      "9618-2024-MJ-31",
+      "9618-2024-MJ-32",
+      "9618-2024-MJ-33",
+      "9618-2024-MJ-41",
+      "9618-2024-MJ-42",
+      "9618-2024-MJ-43",
+      "9618-2024-ON-11",
+      "9618-2024-ON-13",
+      "9618-2024-ON-21",
+      "9618-2024-ON-22",
+      "9618-2024-ON-23",
+      "9618-2024-ON-31",
+      "9618-2024-ON-32",
+      "9618-2024-ON-33",
+      "9618-2024-ON-41",
+      "9618-2024-ON-42",
+      "9618-2024-ON-43",
+      "9618-2025-MJ-12",
+      "9618-2025-MJ-13",
+      "9618-2025-MJ-21",
+      "9618-2025-MJ-22",
+      "9618-2025-MJ-23",
+      "9618-2025-MJ-31",
+      "9618-2025-MJ-32",
+      "9618-2025-MJ-33",
+      "9618-2025-MJ-41",
+      "9618-2025-MJ-42",
+      "9618-2025-MJ-43",
+      "9618-2025-ON-11",
+      "9618-2025-ON-12",
+      "9618-2025-ON-13",
+      "9618-2025-ON-21",
+      "9618-2025-ON-22",
+      "9618-2025-ON-23",
+      "9618-2025-ON-31",
+      "9618-2025-ON-32",
+      "9618-2025-ON-33",
+      "9618-2025-ON-41",
+      "9618-2025-ON-43"
+    ]
+  },
+  "duplicateSources": [
+    {
+      "pairingKey": "9618-2021-ON-41",
+      "qpFiles": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_41.pdf"
+      ],
+      "msFiles": [
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_ms_41.pdf",
+        "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_w21_ms_41.pdf"
+      ],
+      "duplicateCount": 1
+    }
+  ],
+  "partialProductionConflicts": [],
+  "productionVerification": {
+    "status": "PASS",
+    "publishedPairCount": 16,
+    "duplicatePaperIds": [],
+    "duplicatePairingKeys": [],
+    "brokenPublishedPairs": []
+  },
+  "classificationSummary": {
+    "counts": {
+      "PUBLISHED": 16,
+      "ELIGIBLE_UNPUBLISHED": 0,
+      "BLOCKED": 9,
+      "INCOMPLETE_SOURCE": 1,
+      "MISSING_STAGING": 92,
+      "PARTIAL_PRODUCTION_CONFLICT": 0,
+      "DUPLICATE_SOURCE": 1
+    },
+    "records": [
+      {
+        "pairingKey": "9618-2021-MJ-11",
+        "primaryClassification": "BLOCKED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-MJ-12",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-MJ-13",
+        "primaryClassification": "BLOCKED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-MJ-21",
+        "primaryClassification": "BLOCKED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-MJ-22",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-MJ-23",
+        "primaryClassification": "BLOCKED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-MJ-31",
+        "primaryClassification": "BLOCKED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-MJ-32",
+        "primaryClassification": "BLOCKED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-MJ-33",
+        "primaryClassification": "BLOCKED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-MJ-41",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-MJ-42",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-MJ-43",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-ON-11",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-ON-12",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-ON-13",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-ON-21",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-ON-22",
+        "primaryClassification": "BLOCKED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-ON-23",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-ON-31",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-ON-32",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2021-ON-41",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": [
+          "DUPLICATE_SOURCE"
+        ]
+      },
+      {
+        "pairingKey": "9618-2021-ON-42",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-11",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-12",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-13",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-21",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-22",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-23",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-31",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-32",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-33",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-41",
+        "primaryClassification": "INCOMPLETE_SOURCE",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-42",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-MJ-43",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-11",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-12",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-13",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-21",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-22",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-23",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-31",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-32",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-33",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-41",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-42",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2022-ON-43",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-MJ-11",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2023-MJ-12",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-MJ-13",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-MJ-21",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-MJ-22",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-MJ-23",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-MJ-31",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-MJ-32",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-MJ-33",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-MJ-41",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-MJ-42",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-MJ-43",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-11",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-12",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-13",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-21",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-22",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-23",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-31",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-32",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-33",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-41",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-42",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2023-ON-43",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-11",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-12",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-13",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-21",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-22",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-23",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-31",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-32",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-33",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-41",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-42",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-MJ-43",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-ON-11",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-ON-12",
+        "primaryClassification": "BLOCKED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2024-ON-13",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-ON-21",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-ON-22",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-ON-23",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-ON-31",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-ON-32",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-ON-33",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-ON-41",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-ON-42",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2024-ON-43",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-MJ-11",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2025-MJ-12",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-MJ-13",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-MJ-21",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-MJ-22",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-MJ-23",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-MJ-31",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-MJ-32",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-MJ-33",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-MJ-41",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-MJ-42",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-MJ-43",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-ON-11",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-ON-12",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-ON-13",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-ON-21",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-ON-22",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-ON-23",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-ON-31",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-ON-32",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-ON-33",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-ON-41",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      },
+      {
+        "pairingKey": "9618-2025-ON-42",
+        "primaryClassification": "PUBLISHED",
+        "secondaryFlags": []
+      },
+      {
+        "pairingKey": "9618-2025-ON-43",
+        "primaryClassification": "MISSING_STAGING",
+        "secondaryFlags": [
+          "STAGING_MISSING"
+        ]
+      }
+    ],
+    "everyPairHasSinglePrimaryClassification": true
+  },
+  "integrity": {
+    "production": {
+      "method": "SHA256_CONTENT",
+      "before": "2553faa90d2ba6a9935f2d5b28114eb65f313aa02a0f6fb5bb230cd4974f18c5",
+      "after": "2553faa90d2ba6a9935f2d5b28114eb65f313aa02a0f6fb5bb230cd4974f18c5",
+      "unchanged": true
+    },
+    "staging": {
+      "method": "SHA256_TREE_CONTENT",
+      "before": "efca9530e5c4a6f031c47e8f214488def3fc6497a9cc8a65c6f09434ea511a4c",
+      "after": "efca9530e5c4a6f031c47e8f214488def3fc6497a9cc8a65c6f09434ea511a4c",
+      "unchanged": true
+    },
+    "sourceAssets": {
+      "method": "SHA256_TREE_METADATA",
+      "before": "1fc4965a3c1d44b4325098c1eb762cebdda836acbe05fe455ac5988f1d0905f2",
+      "after": "1fc4965a3c1d44b4325098c1eb762cebdda836acbe05fe455ac5988f1d0905f2",
+      "unchanged": true
+    }
+  },
+  "strictEligibleProductionExpansion": "COMPLETE",
+  "coverageBaseline": "ESTABLISHED",
+  "remainingWork": "CLASSIFIED",
+  "recommendedNextSteps": [
+    {
+      "type": "Blocked Pair Investigation",
+      "affectedCount": 9,
+      "scope": "One blocker class and one evidenced root cause per isolated PR.",
+      "productionWrite": false,
+      "includedInPr059": false
+    },
+    {
+      "type": "Incomplete Source Cleanup",
+      "affectedCount": 1,
+      "scope": "Confirm missing source assets without guessing or substitution.",
+      "productionWrite": false,
+      "includedInPr059": false
+    },
+    {
+      "type": "Duplicate Source Cleanup",
+      "affectedCount": 1,
+      "scope": "Resolve duplicate assets only after independent hash review.",
+      "productionWrite": false,
+      "includedInPr059": false
+    },
+    {
+      "type": "Missing Staging Expansion",
+      "affectedCount": 92,
+      "scope": "Generate staging for complete source pairs in bounded batches.",
+      "productionWrite": false,
+      "includedInPr059": false
+    },
+    {
+      "type": "Final Production Stability Validation",
+      "affectedCount": 1,
+      "scope": "Run after the planned cleanup streams are complete.",
+      "productionWrite": false,
+      "includedInPr059": false
+    }
+  ],
+  "regression": {
+    "pr030": "PASS",
+    "pr031": "PASS",
+    "pr032": "PASS",
+    "pr048": "PASS",
+    "pr049": "PASS",
+    "pr050": "PASS",
+    "pr051": "PASS",
+    "pr052": "PASS",
+    "pr053": "PASS",
+    "pr054": "PASS",
+    "pr055": "PASS",
+    "pr056": "PASS",
+    "pr057": "PASS",
+    "pr058": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "phase1": "PASS (20/20)",
+    "phase2": "PASS (120/120)",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  }
+}

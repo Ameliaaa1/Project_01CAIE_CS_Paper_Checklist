@@ -1,0 +1,192 @@
+[2026-07-13T02:03:06.257Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_11.pdf
+[2026-07-13T02:03:06.257Z] startTime=2026-07-13T02:03:06.257Z
+[2026-07-13T02:03:06.257Z] expectedRole=question_paper
+[2026-07-13T02:03:07.553Z] extract.exitCode=0
+[2026-07-13T02:03:07.553Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_11.pdf",
+  "pageCount": 12,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Hexadecimal is used for MAC addresses. Part of a MAC address is given: 97 – 5C – E1 Each pair of digits is stored as binary in an 8-bit register. (a) Show what the binary register stores for each pair of the given digits. 97 5C E1 [6] (b) Explain what is meant by a MAC address. [4] (c) Give two other examples where hexadecimal can be used. Example 1 Exampl"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Rajesh creates a logic circuit. He uses three different logic gates in his circuit. Each logic gate has a maximum of two inputs. He describes the logic of each gate. (a) “The only time the output will be 1 is when both inputs are 1.” State the single logic gate Draw the single logic gate: [2] (b) “The only time the output will be 1 is when both inputs are "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Five descriptions of different input or output devices are given in the table. Complete the table by stating the name of each input or output device. Description Name of device This is an input device that works by shining a light onto the surface of a document. The light source is automatically moved across the document and the reflected light is captured"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) Lola is concerned about the risks to her computer when using the Internet. She wants to use some security methods to help protect her computer from the risks. Identify a security method she could use for each of the following risks. Each security method must be different. Describe how each security method will help protect Lola’s computer. (i) Computer"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 The following text is stored as a text file: She sells sea shells on the seashore. The shells that she sells are sea shells I am sure. Explain how lossless compression would compress this file. [5]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A law company holds a lot of sensitive data about its clients. (a) It currently requires employees to enter a username and a password to log-in to an account. Each password must be 8 letters. The company wants to increase the security of the log-in system. Identify two improvements the company could use to make the log-in system more secure. Explain how ea"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "7 Annie writes a paragraph of text as an answer to an examination question about programming languages. Using the list given, complete Annie’s answer by inserting the correct six missing terms. Not all terms will be used. Assembly • Converter • Denary • Hexadecimal • High-level language • Low-level language • Machine Code • Source Code • Syntax • Translator "
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 An art gallery has a website that is used to display and sell art. (a) The gallery uses Secure Socket Layer (SSL) to provide a secure connection when selling art. Describe the process of SSL and how it provides a secure connection. [6] (b) The art gallery also uses a firewall. Six statements are given about firewalls. 3 Tick ( ) to show if the statement is"
+    }
+  ]
+}
+[2026-07-13T02:03:07.554Z] parserVersion=0.4.0
+[2026-07-13T02:03:07.554Z] documentRole=question_paper
+[2026-07-13T02:03:07.554Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:07.808Z] stage.exitCode=0
+[2026-07-13T02:03:07.808Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_11.staging.json",
+  "runId": "0478-2019-MJ-11-QP-RUN-db65ea1db0c8",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 20,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 20,
+        "present": 20,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:07.809Z] stagingId=0478-2019-MJ-11-QP-RUN-db65ea1db0c8
+[2026-07-13T02:03:07.809Z] validationStatus=PASS
+[2026-07-13T02:03:07.809Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:07.809Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:07.809Z] canonicalPublishable=true
+[2026-07-13T02:03:07.809Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:07.809Z] endTime=2026-07-13T02:03:07.809Z
+[2026-07-13T02:03:07.809Z] status=PASS

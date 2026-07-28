@@ -1,0 +1,54 @@
+{
+  "pilot": "0478-2023-MJ-12",
+  "pilotBatchId": "PR027-0478-2023-MJ-12",
+  "status": "PASS",
+  "productionWrite": true,
+  "storePath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production/production-store.json",
+  "publishGate": "PASS",
+  "qp": {
+    "id": "0478-2023-MJ-12-QP",
+    "status": "PASS",
+    "validation": "PASS",
+    "completeness": "PASS"
+  },
+  "ms": {
+    "id": "0478-2023-MJ-12-MS",
+    "status": "PASS",
+    "validation": "PASS",
+    "completeness": "PASS"
+  },
+  "pairing": {
+    "pairingStatus": "PASS",
+    "pairingKey": "0478-2023-MJ-12",
+    "questionPaperId": "0478-2023-MJ-12-QP",
+    "markSchemeId": "0478-2023-MJ-12-MS"
+  },
+  "productionVerification": {
+    "status": "PASS",
+    "counts": {
+      "paperCount": 2,
+      "questionCount": 10,
+      "leafQuestionCount": 31,
+      "responseAreaCount": 112,
+      "markSchemeEntryCount": 7
+    },
+    "expectedCounts": {
+      "paperCount": 2,
+      "questionCount": 10,
+      "leafQuestionCount": 31,
+      "responseAreaCount": 112,
+      "markSchemeEntryCount": 7
+    },
+    "sourceTraceAvailable": true,
+    "pairingLinked": true
+  },
+  "frontendVerification": {
+    "questionFinder": "PASS",
+    "knowledgeChecklist": "PASS",
+    "markSchemeSearch": "PASS",
+    "aiRetrieval": "PASS",
+    "openOriginalQuestion": "PASS",
+    "qpMsCorrespondence": "PASS"
+  },
+  "issues": []
+}

@@ -1,0 +1,192 @@
+[2026-07-15T03:55:13.204Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_22.pdf
+[2026-07-15T03:55:13.204Z] startTime=2026-07-15T03:55:13.204Z
+[2026-07-15T03:55:13.204Z] expectedRole=question_paper
+[2026-07-15T03:55:15.657Z] extract.exitCode=0
+[2026-07-15T03:55:15.657Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w25_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-Oct-Nov/0478_w25_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 Tick (✓) one box to complete this sentence. The result of the arithmetic operation 4 ^ 2 is A 2 B 8 C 16 D 42 [1]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 This pseudocode algorithm is intended to input a first name from a user and search for it in a two‑dimensional (2D) array. If the name is found, the algorithm outputs all the remaining details for that name. The algorithm will continue to allow other names to be entered for searching, until the user input stops it. 01 DECLARE Contacts : ARRAY[1:500, 1:4] O"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A program is written that will only accept values between –99.99 and +99.99, inclusive. The program is to be tested. The table, when completed, shows appropriate test data that matches the type of test data and purpose of the test data. Complete the table by inserting the missing information. Test data Type of test data Purpose of test data 0 boundary to m"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 (a) A length check is a type of validation check. State the purpose of a length check. [1] (b) An email address can be validated by checking that it contains an @ symbol. Write the pseudocode for an algorithm that will allow an email address to be input and check whether or not it contains an @ symbol. Output a suitable message with the result. Use the str"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 9,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 This flowchart represents an algorithm. START INPUT Code OUTPUT \"Length must be 4\" IS No LENGTH(Code) = 4 ? Yes Store FALSE No OUTPUT \"Code Count 1 used before\" Yes IS Store = FALSE ? IS Yes CodeStore[Count] = Code ? No IS No Yes CodeStore[Count] = \"\" ? Store TRUE CodeStore[Count] Code Count Count + 1 No Yes IS Count > 6 ? OUTPUT \"CodeStore full\" STOP DFD "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Consider the logic expression: X = (J XOR NOT K) NAND NOT L (a) Draw a logic circuit for the logic expression. Each logic gate must have a maximum of two inputs. Do not simplify the logic expression. J K X L [4] (b) Complete the truth table for the given logic expression. J K L X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [4] DFD"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A database table WATERFOWL stores some details of a range of birds found in the UK that live on or near water. The length and wingspan dimensions are in centimetres and the typical lifespan is in years. Species Family Length Wingspan CoastalHabitat Lifespan Barnacle goose Goose 63.5 130.0 FALSE 14 Bewick’s swan Swan 120.2 190.5 TRUE 8 Brent goose Goose 58."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 A program is required to test the fairness of the random number generator. The one‑dimensional (1D) array RandomNumber[] is used to store 100 000 random integers. The two‑dimensional (2D) array CountedNumber[] is used to store the integers 1 to 10, inclusive, and the frequency of each integer (the number of times each integer was generated). Write a progra"
+    }
+  ]
+}
+[2026-07-15T03:55:15.660Z] parserVersion=0.4.0
+[2026-07-15T03:55:15.660Z] documentRole=question_paper
+[2026-07-15T03:55:15.660Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:55:16.064Z] stage.exitCode=0
+[2026-07-15T03:55:16.064Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w25_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_22.staging.json",
+  "runId": "0478-2025-ON-22-QP-RUN-c63d3ae7c451",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w25_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 19,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 19,
+        "present": 19,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:55:16.067Z] stagingId=0478-2025-ON-22-QP-RUN-c63d3ae7c451
+[2026-07-15T03:55:16.067Z] validationStatus=PASS
+[2026-07-15T03:55:16.067Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:55:16.067Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:55:16.067Z] canonicalPublishable=true
+[2026-07-15T03:55:16.067Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:55:16.067Z] endTime=2026-07-15T03:55:16.067Z
+[2026-07-15T03:55:16.067Z] status=PASS

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-15T11:59:12.081Z",
+  "status": "PASS",
+  "architecture": "PDF -> Parser Pipeline -> Canonical -> Production -> Website",
+  "dataSource": "PRODUCTION_CANONICAL",
+  "checks": {
+    "questionDisplay": true,
+    "markSchemeDisplay": true,
+    "search": true,
+    "pdfViewer": true,
+    "canonicalIntegrity": true,
+    "noWebsitePdfParsing": true,
+    "syllabusRegression": true,
+    "productionStoreUnchanged": true
+  },
+  "counts": {
+    "questions": 1745,
+    "markSchemeAnswers": 1540,
+    "sourceReferencesChecked": 3490,
+    "missingReferences": 0,
+    "bySyllabus": {
+      "caie-igcse-0478": 808,
+      "caie-as-a-level-9618": 882,
+      "caie-as-a-level-9709": 55
+    },
+    "answersBySyllabus": {
+      "caie-igcse-0478": 637,
+      "caie-as-a-level-9618": 848,
+      "caie-as-a-level-9709": 55
+    }
+  },
+  "rollback": "Restore the previous production API/data adapter only; never restore website PDF parsing."
+}

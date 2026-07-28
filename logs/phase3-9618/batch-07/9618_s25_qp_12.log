@@ -1,0 +1,193 @@
+[2026-07-14T17:00:33.796Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_12.pdf
+[2026-07-14T17:00:33.796Z] startTime=2026-07-14T17:00:33.796Z
+[2026-07-14T17:00:33.796Z] expectedRole=question_paper
+[2026-07-14T17:00:36.488Z] extract.exitCode=0
+[2026-07-14T17:00:36.488Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_12.pdf",
+  "pageCount": 16,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) The table has six statements about the Von Neumann model for a computer system. Three of the statements are incorrect. Statement number Statement The Program Counter (PC) stores the next instruction to be fetched from 1 memory. The Arithmetic and Logic Unit (ALU) performs mathematical and logical 2 operations. 3 The Control Unit (CU) sends signals to o"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) Convert the denary integer 558 into 12-bit binary and hexadecimal. Binary Hexadecimal [2] into denary. (b) (i) Convert the two’s complement binary integer 11100010 [1] (ii) Write the smallest and the largest two’s complement binary integers that can be represented in 8 bits. Smallest Largest [2] (c) Give one application where Binary Coded Decimal (BCD)"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A computer program uses a digital camera to read the words on an item. The program can read the words that are written on the item, translate the words to a chosen language and then output the words as audio. For example, when used in a supermarket, the program can output the words written on the labels on products. The program uses Artificial Intelligence"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) Write the logic expressions for the following logic circuit. R X S T Y U X = Y = [2] (b) Complete the truth table for the logic expression: X = NOT (A AND (B XOR C)) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [2]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 An online game has a database that stores data about users and the characters each user creates in the game. Each user can create multiple characters and purchase multiple items for each character. The normalised database has the following design: USER(Username, Password, DateOfBirth) CHARACTER(CharacterName, CharacterID, Username, Level, Money) ITEM(ItemN"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A company has multiple sites in different cities. The company has drivers who deliver products to customers. Each driver can connect to the company’s WAN (Wide Area Network) whilst out of the office using a smartphone. (a) State two ways that a WAN is different to a LAN (Local Area Network). 1 2 [2] (b) The smartphones use the cell phone network to connect"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 14,
+      "pageEnd": 16,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 (a) The following table shows part of the instruction set for a processor. The processor has one register: the Accumulator (ACC). Instruction Explanation Opcode Operand Direct addressing. Load the contents of the location at the given LDD <address> address to ACC LDM #n Immediate addressing. Load the number n to ACC STO <address> Store the contents of ACC "
+    }
+  ]
+}
+[2026-07-14T17:00:36.492Z] parserVersion=0.4.0
+[2026-07-14T17:00:36.492Z] documentRole=question_paper
+[2026-07-14T17:00:36.492Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:00:36.941Z] stage.exitCode=0
+[2026-07-14T17:00:36.941Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_12.staging.json",
+  "runId": "9618-2025-MJ-12-QP-RUN-607722293452",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 30,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 28,
+        "present": 28,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-MJ-12-Q1-A",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-MJ-12-Q7-A-III",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:00:36.945Z] stagingId=9618-2025-MJ-12-QP-RUN-607722293452
+[2026-07-14T17:00:36.945Z] validationStatus=PASS
+[2026-07-14T17:00:36.945Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:00:36.945Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:00:36.945Z] canonicalPublishable=true
+[2026-07-14T17:00:36.945Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:00:36.945Z] endTime=2026-07-14T17:00:36.945Z
+[2026-07-14T17:00:36.945Z] status=PASS

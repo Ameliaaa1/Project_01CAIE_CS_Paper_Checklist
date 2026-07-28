@@ -1,0 +1,5184 @@
+{
+  "generatedFor": "Phase-3-9618-Missing-Staging-Expansion-by-Batch-Plan",
+  "status": "PASS",
+  "phaseId": "Phase 3",
+  "productionWrite": true,
+  "scope": {
+    "syllabus": "9618",
+    "initialMissingStagingPairCount": 92,
+    "batchCount": 9,
+    "pairingKeys": [
+      "9618-2021-ON-42",
+      "9618-2022-MJ-11",
+      "9618-2022-MJ-12",
+      "9618-2022-MJ-13",
+      "9618-2022-MJ-21",
+      "9618-2022-MJ-22",
+      "9618-2022-MJ-23",
+      "9618-2022-MJ-31",
+      "9618-2022-MJ-32",
+      "9618-2022-MJ-33",
+      "9618-2022-MJ-42",
+      "9618-2022-MJ-43",
+      "9618-2022-ON-11",
+      "9618-2022-ON-12",
+      "9618-2022-ON-13",
+      "9618-2022-ON-21",
+      "9618-2022-ON-22",
+      "9618-2022-ON-23",
+      "9618-2022-ON-31",
+      "9618-2022-ON-32",
+      "9618-2022-ON-33",
+      "9618-2022-ON-41",
+      "9618-2022-ON-42",
+      "9618-2022-ON-43",
+      "9618-2023-MJ-12",
+      "9618-2023-MJ-13",
+      "9618-2023-MJ-21",
+      "9618-2023-MJ-22",
+      "9618-2023-MJ-23",
+      "9618-2023-MJ-31",
+      "9618-2023-MJ-32",
+      "9618-2023-MJ-33",
+      "9618-2023-MJ-41",
+      "9618-2023-MJ-42",
+      "9618-2023-MJ-43",
+      "9618-2023-ON-11",
+      "9618-2023-ON-12",
+      "9618-2023-ON-13",
+      "9618-2023-ON-21",
+      "9618-2023-ON-22",
+      "9618-2023-ON-23",
+      "9618-2023-ON-31",
+      "9618-2023-ON-32",
+      "9618-2023-ON-33",
+      "9618-2023-ON-41",
+      "9618-2023-ON-42",
+      "9618-2023-ON-43",
+      "9618-2024-MJ-11",
+      "9618-2024-MJ-12",
+      "9618-2024-MJ-13",
+      "9618-2024-MJ-21",
+      "9618-2024-MJ-22",
+      "9618-2024-MJ-23",
+      "9618-2024-MJ-31",
+      "9618-2024-MJ-32",
+      "9618-2024-MJ-33",
+      "9618-2024-MJ-41",
+      "9618-2024-MJ-42",
+      "9618-2024-MJ-43",
+      "9618-2024-ON-11",
+      "9618-2024-ON-13",
+      "9618-2024-ON-21",
+      "9618-2024-ON-22",
+      "9618-2024-ON-23",
+      "9618-2024-ON-31",
+      "9618-2024-ON-32",
+      "9618-2024-ON-33",
+      "9618-2024-ON-41",
+      "9618-2024-ON-42",
+      "9618-2024-ON-43",
+      "9618-2025-MJ-12",
+      "9618-2025-MJ-13",
+      "9618-2025-MJ-21",
+      "9618-2025-MJ-22",
+      "9618-2025-MJ-23",
+      "9618-2025-MJ-31",
+      "9618-2025-MJ-32",
+      "9618-2025-MJ-33",
+      "9618-2025-MJ-41",
+      "9618-2025-MJ-42",
+      "9618-2025-MJ-43",
+      "9618-2025-ON-11",
+      "9618-2025-ON-12",
+      "9618-2025-ON-13",
+      "9618-2025-ON-21",
+      "9618-2025-ON-22",
+      "9618-2025-ON-23",
+      "9618-2025-ON-31",
+      "9618-2025-ON-32",
+      "9618-2025-ON-33",
+      "9618-2025-ON-41",
+      "9618-2025-ON-43"
+    ]
+  },
+  "sourcePreconditions": {
+    "status": "PASS",
+    "sourcePairs": 118,
+    "completeSourcePairs": 118,
+    "incompleteSourcePairs": 0,
+    "duplicateSourceCount": 0
+  },
+  "batches": [
+    {
+      "batchId": "PHASE3-9618-BATCH-00",
+      "status": "PASS",
+      "scope": {
+        "syllabus": "9618",
+        "year": 2021,
+        "session": "O/N",
+        "pairCount": 1,
+        "pairingKeys": [
+          "9618-2021-ON-42"
+        ]
+      },
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-00-report.json",
+      "classifications": {
+        "STRICT_ELIGIBLE": 1,
+        "BLOCKED": 0,
+        "NEEDS_INVESTIGATION": 0
+      },
+      "productionWrite": true
+    },
+    {
+      "batchId": "PHASE3-9618-BATCH-01",
+      "status": "PASS",
+      "scope": {
+        "syllabus": "9618",
+        "year": 2022,
+        "session": "M/J",
+        "pairCount": 11,
+        "pairingKeys": [
+          "9618-2022-MJ-11",
+          "9618-2022-MJ-12",
+          "9618-2022-MJ-13",
+          "9618-2022-MJ-21",
+          "9618-2022-MJ-22",
+          "9618-2022-MJ-23",
+          "9618-2022-MJ-31",
+          "9618-2022-MJ-32",
+          "9618-2022-MJ-33",
+          "9618-2022-MJ-42",
+          "9618-2022-MJ-43"
+        ]
+      },
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-01-report.json",
+      "classifications": {
+        "STRICT_ELIGIBLE": 11,
+        "BLOCKED": 0,
+        "NEEDS_INVESTIGATION": 0
+      },
+      "productionWrite": true
+    },
+    {
+      "batchId": "PHASE3-9618-BATCH-02",
+      "status": "PASS",
+      "scope": {
+        "syllabus": "9618",
+        "year": 2022,
+        "session": "O/N",
+        "pairCount": 12,
+        "pairingKeys": [
+          "9618-2022-ON-11",
+          "9618-2022-ON-12",
+          "9618-2022-ON-13",
+          "9618-2022-ON-21",
+          "9618-2022-ON-22",
+          "9618-2022-ON-23",
+          "9618-2022-ON-31",
+          "9618-2022-ON-32",
+          "9618-2022-ON-33",
+          "9618-2022-ON-41",
+          "9618-2022-ON-42",
+          "9618-2022-ON-43"
+        ]
+      },
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-02-report.json",
+      "classifications": {
+        "STRICT_ELIGIBLE": 9,
+        "BLOCKED": 3,
+        "NEEDS_INVESTIGATION": 0
+      },
+      "productionWrite": true
+    },
+    {
+      "batchId": "PHASE3-9618-BATCH-03",
+      "status": "PASS",
+      "scope": {
+        "syllabus": "9618",
+        "year": 2023,
+        "session": "M/J",
+        "pairCount": 11,
+        "pairingKeys": [
+          "9618-2023-MJ-12",
+          "9618-2023-MJ-13",
+          "9618-2023-MJ-21",
+          "9618-2023-MJ-22",
+          "9618-2023-MJ-23",
+          "9618-2023-MJ-31",
+          "9618-2023-MJ-32",
+          "9618-2023-MJ-33",
+          "9618-2023-MJ-41",
+          "9618-2023-MJ-42",
+          "9618-2023-MJ-43"
+        ]
+      },
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-03-report.json",
+      "classifications": {
+        "STRICT_ELIGIBLE": 9,
+        "BLOCKED": 2,
+        "NEEDS_INVESTIGATION": 0
+      },
+      "productionWrite": true
+    },
+    {
+      "batchId": "PHASE3-9618-BATCH-04",
+      "status": "PASS",
+      "scope": {
+        "syllabus": "9618",
+        "year": 2023,
+        "session": "O/N",
+        "pairCount": 12,
+        "pairingKeys": [
+          "9618-2023-ON-11",
+          "9618-2023-ON-12",
+          "9618-2023-ON-13",
+          "9618-2023-ON-21",
+          "9618-2023-ON-22",
+          "9618-2023-ON-23",
+          "9618-2023-ON-31",
+          "9618-2023-ON-32",
+          "9618-2023-ON-33",
+          "9618-2023-ON-41",
+          "9618-2023-ON-42",
+          "9618-2023-ON-43"
+        ]
+      },
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-04-report.json",
+      "classifications": {
+        "STRICT_ELIGIBLE": 11,
+        "BLOCKED": 1,
+        "NEEDS_INVESTIGATION": 0
+      },
+      "productionWrite": true
+    },
+    {
+      "batchId": "PHASE3-9618-BATCH-05",
+      "status": "PASS",
+      "scope": {
+        "syllabus": "9618",
+        "year": 2024,
+        "session": "M/J",
+        "pairCount": 12,
+        "pairingKeys": [
+          "9618-2024-MJ-11",
+          "9618-2024-MJ-12",
+          "9618-2024-MJ-13",
+          "9618-2024-MJ-21",
+          "9618-2024-MJ-22",
+          "9618-2024-MJ-23",
+          "9618-2024-MJ-31",
+          "9618-2024-MJ-32",
+          "9618-2024-MJ-33",
+          "9618-2024-MJ-41",
+          "9618-2024-MJ-42",
+          "9618-2024-MJ-43"
+        ]
+      },
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-05-report.json",
+      "classifications": {
+        "STRICT_ELIGIBLE": 12,
+        "BLOCKED": 0,
+        "NEEDS_INVESTIGATION": 0
+      },
+      "productionWrite": true
+    },
+    {
+      "batchId": "PHASE3-9618-BATCH-06",
+      "status": "PASS",
+      "scope": {
+        "syllabus": "9618",
+        "year": 2024,
+        "session": "O/N",
+        "pairCount": 11,
+        "pairingKeys": [
+          "9618-2024-ON-11",
+          "9618-2024-ON-13",
+          "9618-2024-ON-21",
+          "9618-2024-ON-22",
+          "9618-2024-ON-23",
+          "9618-2024-ON-31",
+          "9618-2024-ON-32",
+          "9618-2024-ON-33",
+          "9618-2024-ON-41",
+          "9618-2024-ON-42",
+          "9618-2024-ON-43"
+        ]
+      },
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-06-report.json",
+      "classifications": {
+        "STRICT_ELIGIBLE": 7,
+        "BLOCKED": 4,
+        "NEEDS_INVESTIGATION": 0
+      },
+      "productionWrite": true
+    },
+    {
+      "batchId": "PHASE3-9618-BATCH-07",
+      "status": "PASS",
+      "scope": {
+        "syllabus": "9618",
+        "year": 2025,
+        "session": "M/J",
+        "pairCount": 11,
+        "pairingKeys": [
+          "9618-2025-MJ-12",
+          "9618-2025-MJ-13",
+          "9618-2025-MJ-21",
+          "9618-2025-MJ-22",
+          "9618-2025-MJ-23",
+          "9618-2025-MJ-31",
+          "9618-2025-MJ-32",
+          "9618-2025-MJ-33",
+          "9618-2025-MJ-41",
+          "9618-2025-MJ-42",
+          "9618-2025-MJ-43"
+        ]
+      },
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-07-report.json",
+      "classifications": {
+        "STRICT_ELIGIBLE": 9,
+        "BLOCKED": 2,
+        "NEEDS_INVESTIGATION": 0
+      },
+      "productionWrite": true
+    },
+    {
+      "batchId": "PHASE3-9618-BATCH-08",
+      "status": "PASS",
+      "scope": {
+        "syllabus": "9618",
+        "year": 2025,
+        "session": "O/N",
+        "pairCount": 11,
+        "pairingKeys": [
+          "9618-2025-ON-11",
+          "9618-2025-ON-12",
+          "9618-2025-ON-13",
+          "9618-2025-ON-21",
+          "9618-2025-ON-22",
+          "9618-2025-ON-23",
+          "9618-2025-ON-31",
+          "9618-2025-ON-32",
+          "9618-2025-ON-33",
+          "9618-2025-ON-41",
+          "9618-2025-ON-43"
+        ]
+      },
+      "reportPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-08-report.json",
+      "classifications": {
+        "STRICT_ELIGIBLE": 10,
+        "BLOCKED": 1,
+        "NEEDS_INVESTIGATION": 0
+      },
+      "productionWrite": true
+    }
+  ],
+  "classifications": [
+    {
+      "pairingKey": "9618-2021-ON-42",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-MJ-11",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-MJ-12",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-MJ-13",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-MJ-21",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-MJ-22",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-MJ-23",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-MJ-31",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-MJ-32",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-MJ-33",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-MJ-42",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-MJ-43",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-11",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-12",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-13",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-21",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-22",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-23",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-31",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-32",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-33",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-41",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-42",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-43",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-12",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-13",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-21",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-22",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-23",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-31",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-32",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-33",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-41",
+      "classification": "BLOCKED",
+      "blockers": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-42",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-43",
+      "classification": "BLOCKED",
+      "blockers": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-11",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-12",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-13",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-21",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-22",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-23",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-31",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-32",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-33",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-41",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-42",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-43",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-11",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-12",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-13",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-21",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-22",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-23",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-31",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-32",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-33",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-41",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-42",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-MJ-43",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-11",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-13",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-21",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-22",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-23",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-31",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-32",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-33",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-41",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-42",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-43",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-12",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-13",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-21",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-22",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-23",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-31",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-32",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-33",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-41",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-42",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-43",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-11",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-12",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-13",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-21",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-22",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-23",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-31",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-32",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-33",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-41",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-43",
+      "classification": "STRICT_ELIGIBLE",
+      "blockers": [],
+      "issueCodes": [],
+      "failedChecks": [],
+      "rootCauseCategory": null,
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    }
+  ],
+  "strictEligiblePairs": [
+    "9618-2021-ON-42",
+    "9618-2022-MJ-11",
+    "9618-2022-MJ-12",
+    "9618-2022-MJ-13",
+    "9618-2022-MJ-21",
+    "9618-2022-MJ-22",
+    "9618-2022-MJ-23",
+    "9618-2022-MJ-31",
+    "9618-2022-MJ-32",
+    "9618-2022-MJ-33",
+    "9618-2022-MJ-42",
+    "9618-2022-MJ-43",
+    "9618-2022-ON-11",
+    "9618-2022-ON-12",
+    "9618-2022-ON-13",
+    "9618-2022-ON-21",
+    "9618-2022-ON-22",
+    "9618-2022-ON-23",
+    "9618-2022-ON-41",
+    "9618-2022-ON-42",
+    "9618-2022-ON-43",
+    "9618-2023-MJ-12",
+    "9618-2023-MJ-13",
+    "9618-2023-MJ-21",
+    "9618-2023-MJ-22",
+    "9618-2023-MJ-23",
+    "9618-2023-MJ-31",
+    "9618-2023-MJ-32",
+    "9618-2023-MJ-33",
+    "9618-2023-MJ-42",
+    "9618-2023-ON-11",
+    "9618-2023-ON-12",
+    "9618-2023-ON-13",
+    "9618-2023-ON-21",
+    "9618-2023-ON-22",
+    "9618-2023-ON-23",
+    "9618-2023-ON-31",
+    "9618-2023-ON-32",
+    "9618-2023-ON-33",
+    "9618-2023-ON-41",
+    "9618-2023-ON-43",
+    "9618-2024-MJ-11",
+    "9618-2024-MJ-12",
+    "9618-2024-MJ-13",
+    "9618-2024-MJ-21",
+    "9618-2024-MJ-22",
+    "9618-2024-MJ-23",
+    "9618-2024-MJ-31",
+    "9618-2024-MJ-32",
+    "9618-2024-MJ-33",
+    "9618-2024-MJ-41",
+    "9618-2024-MJ-42",
+    "9618-2024-MJ-43",
+    "9618-2024-ON-11",
+    "9618-2024-ON-13",
+    "9618-2024-ON-22",
+    "9618-2024-ON-32",
+    "9618-2024-ON-41",
+    "9618-2024-ON-42",
+    "9618-2024-ON-43",
+    "9618-2025-MJ-12",
+    "9618-2025-MJ-22",
+    "9618-2025-MJ-23",
+    "9618-2025-MJ-31",
+    "9618-2025-MJ-32",
+    "9618-2025-MJ-33",
+    "9618-2025-MJ-41",
+    "9618-2025-MJ-42",
+    "9618-2025-MJ-43",
+    "9618-2025-ON-11",
+    "9618-2025-ON-12",
+    "9618-2025-ON-13",
+    "9618-2025-ON-21",
+    "9618-2025-ON-22",
+    "9618-2025-ON-31",
+    "9618-2025-ON-32",
+    "9618-2025-ON-33",
+    "9618-2025-ON-41",
+    "9618-2025-ON-43"
+  ],
+  "blockedPairs": [
+    {
+      "pairingKey": "9618-2022-ON-31",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-32",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2022-ON-33",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-41",
+      "classification": "BLOCKED",
+      "blockers": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      }
+    },
+    {
+      "pairingKey": "9618-2023-MJ-43",
+      "classification": "BLOCKED",
+      "blockers": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "FAIL",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      }
+    },
+    {
+      "pairingKey": "9618-2023-ON-42",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-21",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-23",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-31",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2024-ON-33",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-13",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P1",
+        "MS_VALIDATION_NOT_PASS",
+        "MS_PUBLISH_NOT_READY",
+        "MS_UNRESOLVED_P1",
+        "VALIDATION_NOT_PASS",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P1"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "WARN",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 2,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P1"
+        ]
+      }
+    },
+    {
+      "pairingKey": "9618-2025-MJ-21",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    },
+    {
+      "pairingKey": "9618-2025-ON-23",
+      "classification": "BLOCKED",
+      "blockers": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "issueCodes": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "failedChecks": [
+        "QP_VALIDATION_NOT_PASS",
+        "QP_COMPLETENESS_NOT_PASS",
+        "QP_CANONICAL_NOT_PUBLISHABLE",
+        "QP_PUBLISH_NOT_READY",
+        "QP_UNRESOLVED_P0",
+        "VALIDATION_NOT_PASS",
+        "COMPLETENESS_NOT_PASS",
+        "CANONICAL_NOT_PUBLISHABLE",
+        "PUBLISH_NOT_READY",
+        "UNRESOLVED_P0"
+      ],
+      "rootCauseCategory": "VALIDATION_BLOCKER",
+      "qp": {
+        "documentRole": "question_paper",
+        "validationStatus": "FAIL",
+        "completenessStatus": "FAIL",
+        "canonicalPublishable": false,
+        "publishStatus": "BLOCKED",
+        "severityCounts": {
+          "P0": 2,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": [
+          "VALIDATION_NOT_PASS",
+          "COMPLETENESS_NOT_PASS",
+          "CANONICAL_NOT_PUBLISHABLE",
+          "PUBLISH_NOT_READY",
+          "UNRESOLVED_P0"
+        ]
+      },
+      "ms": {
+        "documentRole": "mark_scheme",
+        "validationStatus": "PASS",
+        "completenessStatus": "PASS",
+        "canonicalPublishable": true,
+        "publishStatus": "READY_TO_PUBLISH",
+        "severityCounts": {
+          "P0": 0,
+          "P1": 0,
+          "P2": 0,
+          "P3": 0
+        },
+        "blockers": []
+      }
+    }
+  ],
+  "needsInvestigationPairs": [],
+  "totals": {
+    "processedPairs": 92,
+    "strictEligiblePairs": 79,
+    "blockedPairs": 13,
+    "needsInvestigationPairs": 0,
+    "stagingArtifactsAdded": 184,
+    "publishedPairs": 79
+  },
+  "productionState": {
+    "papers": 258,
+    "questionRecords": 4016,
+    "topLevelQuestions": 980,
+    "leafQuestions": 3189,
+    "responseAreas": 14186,
+    "markSchemeEntries": 2998,
+    "pairings": 129,
+    "batches": 129,
+    "expansionBatches": 33
+  },
+  "coverageBefore": {
+    "sourcePairs": 118,
+    "completeSourcePairs": 118,
+    "stagingPairs": 26,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 92,
+    "publishedPairs": 26,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 92,
+    "blockedPairs": 0,
+    "incompleteSourcePairs": 0,
+    "partialProductionConflicts": 0
+  },
+  "coverageAfter": {
+    "sourcePairs": 118,
+    "completeSourcePairs": 118,
+    "stagingPairs": 118,
+    "stagingPartialPairs": 0,
+    "stagingMissingPairs": 0,
+    "publishedPairs": 105,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 0,
+    "blockedPairs": 13,
+    "incompleteSourcePairs": 0,
+    "partialProductionConflicts": 0
+  },
+  "integrity": {
+    "sourceAssets": {
+      "beforeSha256": "69fda241de5be51e4061a90decba4d15d9a19e6e85d0c24d5aa5a7d02c10937d",
+      "afterSha256": "69fda241de5be51e4061a90decba4d15d9a19e6e85d0c24d5aa5a7d02c10937d",
+      "unchanged": true
+    },
+    "parser": {
+      "beforeSha256": "29c5cf22b904a40e4160a391d60f00dec84148822110f321f1d46b5c855efae9",
+      "afterSha256": "29c5cf22b904a40e4160a391d60f00dec84148822110f321f1d46b5c855efae9",
+      "unchanged": true
+    },
+    "canonical": {
+      "beforeSha256": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "afterSha256": "7d980254dc12f269d938869bffeb5bb9af2569f71cefb0f363113db3bfeaf2e1",
+      "unchanged": true
+    },
+    "existingProductionRecordsPreservedAcrossBatches": true,
+    "unrelatedStagingPreservedAcrossBatches": true
+  },
+  "stableModules": {
+    "questionSplitModified": false,
+    "stableQuestionIdModified": false,
+    "parentLeafModelModified": false,
+    "marksValidationModified": false,
+    "binaryOperandPreservationModified": false,
+    "negativeNumberPreservationModified": false,
+    "textQualityPipelineModified": false,
+    "responseAreaPipelineModified": false,
+    "documentRoleRouterModified": false,
+    "questionPaperPipelineModified": false,
+    "markSchemePipelineModified": false,
+    "pairingLogicModified": false
+  },
+  "regression": {
+    "phase1ProductionPlan": "PASS",
+    "phase2CleanupPlan": "PASS",
+    "phase1": "PASS (20/20)",
+    "phase2": "PASS (120/120)",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS",
+    "legalMultiplicationResolutionContexts": "PASS",
+    "otherSuspiciousGlyphsRemainDetected": "PASS",
+    "linkedListNullPointerContext": "PASS",
+    "unrelatedNullPointerGlyphRemainsSuspicious": "PASS",
+    "architectureFailures": [],
+    "documentRoleRegressions": []
+  },
+  "next": {
+    "phaseId": "Phase 4",
+    "decision": "Final Coverage Re-Audit + Stability Validation",
+    "productionWrite": false
+  }
+}

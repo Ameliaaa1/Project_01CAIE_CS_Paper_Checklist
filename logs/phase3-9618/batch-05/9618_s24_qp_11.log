@@ -1,0 +1,192 @@
+[2026-07-14T16:56:34.771Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_11.pdf
+[2026-07-14T16:56:34.771Z] startTime=2026-07-14T16:56:34.771Z
+[2026-07-14T16:56:34.771Z] expectedRole=question_paper
+[2026-07-14T16:56:37.419Z] extract.exitCode=0
+[2026-07-14T16:56:37.419Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 May June/9618_s24_qp_11.pdf",
+  "pageCount": 16,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) one A B C X 0 0 0 1 0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 1 0 1 0 1 1 0 1 1 1 1 0 NOT ( AND AND ) A B C ( XOR ) NOR A B C ( OR OR ) NOR A B C C NOT AND NOT AND NOT A B C [1] Draw a logic circuit for the logic expression: (b) = NOT (NOT AND (NOT XOR )) X A B C A X B C [2] A video doorbell is attached to the front door of a house. The doorbell uses a motion se"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 6,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 detect when a visitor walks in front of the door. When the motion sensor is activated: The digital camera in the doorbell starts recording a video. • A message is transmitted to a smartphone so that the person who lives in the house can • watch the video. The doorbell also has a button that can be pressed. When the button is pressed, a message is transmitt"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 The developer uses an interpreter while writing the program code because it is easier for (a) debugging. Explain reason why it is easier to debug the program code using an interpreter instead of one a compiler. [2] The program is ready to be sold to customers. (b) The developer uses a compiler because it creates an executable file. Explain the reasons why "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 11,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 registers: the Accumulator (ACC) and an Index Register (IX) . Instruction Explanation Opcode Operand Immediate addressing. Load the number n to ACC LDM #n Direct addressing. Load the contents of the location at the given LDD <address> address to ACC Indirect addressing. The address to be used is at the given address. LDI <address> Load the contents of this"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 11,
+      "pageEnd": 13,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 onto a device such as a smartphone. The system that allows customers to access their accounts using the application is a (a) client-server model. Describe the roles of the different devices in this model. [4] The bank wants to protect the integrity of its data while transferring the data to other banks. (b) Parity check is one example of data verification."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 13,
+      "pageEnd": 15,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 every day. The data about the users and the quizzes are stored in a database. A user must select a unique username and enter a valid email address to create an account. All users must be over the age of 16. A new quiz is given to the users every day. Each quiz is stored in its own text file. The database stores the filename of each quiz and the date it can"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 15,
+      "pageEnd": 16,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "7 1 0 0 1 1 1 1 0 0 1 1 0 0 0 0 1 + 0 0 0 1 1 0 0 1 [3] A business is creating a local area network (LAN) in its office."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 16,
+      "pageEnd": 16,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 The business is deciding which topology to use. (a) ✓ Tick ( ) boxes in each row to identify the topology, or topologies, each statement one or more describes. Statement Bus Star Mesh all devices connect to one central device all devices connect to a central cable multiple paths for the packets to travel along robust against damage because if any line fail"
+    }
+  ]
+}
+[2026-07-14T16:56:37.422Z] parserVersion=0.4.0
+[2026-07-14T16:56:37.422Z] documentRole=question_paper
+[2026-07-14T16:56:37.422Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:56:37.879Z] stage.exitCode=0
+[2026-07-14T16:56:37.879Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s24_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_11.staging.json",
+  "runId": "9618-2024-MJ-11-QP-RUN-2e39e6c2ee1e",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s24_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 26,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:56:37.883Z] stagingId=9618-2024-MJ-11-QP-RUN-2e39e6c2ee1e
+[2026-07-14T16:56:37.883Z] validationStatus=PASS
+[2026-07-14T16:56:37.883Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:56:37.883Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:56:37.883Z] canonicalPublishable=true
+[2026-07-14T16:56:37.883Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:56:37.883Z] endTime=2026-07-14T16:56:37.883Z
+[2026-07-14T16:56:37.883Z] status=PASS

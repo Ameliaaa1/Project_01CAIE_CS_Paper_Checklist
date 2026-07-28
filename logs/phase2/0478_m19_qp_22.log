@@ -1,0 +1,169 @@
+[2026-07-13T02:03:03.111Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-March/0478_m19_qp_22.pdf
+[2026-07-13T02:03:03.111Z] startTime=2026-07-13T02:03:03.111Z
+[2026-07-13T02:03:03.111Z] expectedRole=question_paper
+[2026-07-13T02:03:04.721Z] extract.exitCode=0
+[2026-07-13T02:03:04.721Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m19_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-March/0478_m19_qp_22.pdf",
+  "pageCount": 16,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) All variables, constants and other identifiers should have meaningful names. State one constant and one variable that you could have used for Task 1 . Give the value that would be assigned to the constant. Give the data type for the variable. Explain what each one could be used for. Constant name Value Use Variable name Data type Use [6] (b) Explain ho"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) An algorithm has been written in pseudocode to input 50 numbers and total only the positive numbers. 1 Count ← Count Total ← REPEAT INPUT Number IF Number <> 0 THEN Total + Count Total ← ENDIF Count + 1 Count ← UNTIL Count < 50 PRINT Total Find the four errors in the pseudocode and suggest a correction for each error. Error 1 Correction Error 2 Correct"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 This flowchart inputs the type of passenger for a survey: S for Senior, A for Adult, C for Child. All other values are ignored, apart from Z which ends the process. START Senior 0 Adult 0 Child 0 INPUT Type Yes Is Type = Senior Senior + 1 ? \"S\" No Yes Is Type = Adult Adult + 1 ? \"A\" No Yes Is Type = Child Child + 1 ? \"C\" No No Is Type = ? \"Z\" Yes OUTPUT \"S"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 For each of the four groups of statements in the table, place a tick in the correct column to show whether it is an example of Selection or Repetition . Statements Selection Repetition 1 TO 10 FOR X ← SUM + 1 SUM ← NEXT X WHILE X > 10 DO SUM SUM + 1 ← X - 1 X ← ENDWHILE IF X > 10 THEN SUM + 1 SUM ← X - 1 X ← ENDIF REPEAT SUM SUM + 1 ← X - 1 X ← UNTIL X > 1"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A programmer restricts input values to less than 90 and greater than 60. (a) State whether this is called validation or verification. Name the check that needs to be used. [2] (b) State three different types of test data the programmer would need to use. Give an example of each type and the reason that the programmer chose that test data. Type 1 Example Re"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 14,
+      "pageEnd": 14,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "6 A database table, BIKETYRES, is used to keep a record of tyres for sale in a cycle shop. Tyres are categorised by width and diameter in millimetres, whether they have an inner tube and the type of terrain for which they are designed. Tyre Code Width Diameter Tube Terrain Stock Level SLTT 23 700 YES Asphalt 18 MLNT 24 700 NO Asphalt 23 LLNT 28 700 NO Asphal"
+    }
+  ]
+}
+[2026-07-13T02:03:04.722Z] parserVersion=0.4.0
+[2026-07-13T02:03:04.722Z] documentRole=question_paper
+[2026-07-13T02:03:04.722Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:04.975Z] stage.exitCode=0
+[2026-07-13T02:03:04.975Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m19_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m19_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m19_qp_22.staging.json",
+  "runId": "0478-2019-FM-22-QP-RUN-cb054e030bb0",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m19_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 12,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 11,
+        "present": 11,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "0478-2019-FM-22-Q1-C-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:04.976Z] stagingId=0478-2019-FM-22-QP-RUN-cb054e030bb0
+[2026-07-13T02:03:04.976Z] validationStatus=PASS
+[2026-07-13T02:03:04.976Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:04.976Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:04.976Z] canonicalPublishable=true
+[2026-07-13T02:03:04.976Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:04.976Z] endTime=2026-07-13T02:03:04.976Z
+[2026-07-13T02:03:04.976Z] status=PASS

@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-07-15T03:11:28.022Z",
+  "startedAt": "2026-07-15T03:11:18.358Z",
+  "completedAt": "2026-07-15T03:11:28.016Z",
+  "productionWrite": false,
+  "manifestPath": "docs/phase5-9618-manifests/phase5-b.json",
+  "totalFiles": 4,
+  "successCount": 4,
+  "failedCount": 0,
+  "skippedCount": 0,
+  "failures": [],
+  "results": [
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_41.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 5-B blocker repair for 9618-2023-MJ-41",
+      "status": "PASS",
+      "startTime": "2026-07-15T03:11:18.359Z",
+      "endTime": "2026-07-15T03:11:19.966Z",
+      "samplePath": "output/ingestion-samples/9618_s23_qp_41.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s23_qp_41.staging.json",
+      "logPath": "logs/phase5-9618/batch-b/9618_s23_qp_41.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2023-MJ-41-QP-RUN-44dd77e6e14a",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 3,
+        "leafQuestionCount": 26,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2023,
+      "session": "May-June",
+      "component": "41",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_ms_41.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 5-B blocker repair for 9618-2023-MJ-41",
+      "status": "PASS",
+      "startTime": "2026-07-15T03:11:19.966Z",
+      "endTime": "2026-07-15T03:11:23.214Z",
+      "samplePath": "output/ingestion-samples/9618_s23_ms_41.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s23_ms_41.staging.json",
+      "logPath": "logs/phase5-9618/batch-b/9618_s23_ms_41.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2023-MJ-41-MS-RUN-3ffc9e38590a",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 38,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 23,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2023,
+      "session": "May-June",
+      "component": "41",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_qp_43.pdf",
+      "expectedRole": "question_paper",
+      "purpose": "Phase 5-B blocker repair for 9618-2023-MJ-43",
+      "status": "PASS",
+      "startTime": "2026-07-15T03:11:23.215Z",
+      "endTime": "2026-07-15T03:11:24.710Z",
+      "samplePath": "output/ingestion-samples/9618_s23_qp_43.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s23_qp_43.staging.json",
+      "logPath": "logs/phase5-9618/batch-b/9618_s23_qp_43.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "question_paper",
+      "parserProfile": "QUESTION_PAPER",
+      "validationProfile": "QUESTION_PAPER",
+      "stagingId": "9618-2023-MJ-43-QP-RUN-609cadb80084",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 12,
+        "questionCount": 3,
+        "leafQuestionCount": 26,
+        "markSchemeEntryCount": 0,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2023,
+      "session": "May-June",
+      "component": "43",
+      "phase1Regression": false
+    },
+    {
+      "file": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2023 May June/9618_s23_ms_43.pdf",
+      "expectedRole": "mark_scheme",
+      "purpose": "Phase 5-B blocker repair for 9618-2023-MJ-43",
+      "status": "PASS",
+      "startTime": "2026-07-15T03:11:24.711Z",
+      "endTime": "2026-07-15T03:11:28.016Z",
+      "samplePath": "output/ingestion-samples/9618_s23_ms_43.sample.json",
+      "stagingPath": "output/phase2/staging/9618_s23_ms_43.staging.json",
+      "logPath": "logs/phase5-9618/batch-b/9618_s23_ms_43.log",
+      "parserVersion": "0.4.0",
+      "documentRole": "mark_scheme",
+      "parserProfile": "MARK_SCHEME",
+      "validationProfile": "MARK_SCHEME",
+      "stagingId": "9618-2023-MJ-43-MS-RUN-31d11e334df2",
+      "validationStatus": "PASS",
+      "canonicalCompletenessStatus": "PASS",
+      "canonicalPublishable": true,
+      "publishStatus": "READY_TO_PUBLISH",
+      "issueCounts": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "stages": [
+        {
+          "stage": "extract",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "stage": "stage",
+          "ok": true,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "stageSummary": {
+        "pageCount": 38,
+        "questionCount": 0,
+        "leafQuestionCount": 0,
+        "markSchemeEntryCount": 23,
+        "issueCount": 0
+      },
+      "failures": [],
+      "syllabus": "9618",
+      "year": 2023,
+      "session": "May-June",
+      "component": "43",
+      "phase1Regression": false
+    }
+  ],
+  "phase": "Phase 2",
+  "groupStats": {
+    "bySyllabus": {
+      "9618": {
+        "total": 4,
+        "success": 4,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "byYear": {
+      "2023": {
+        "total": 4,
+        "success": 4,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "bySession": {
+      "May-June": {
+        "total": 4,
+        "success": 4,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "byDocumentRole": {
+      "question_paper": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "mark_scheme": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "byComponent": {
+      "41": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      },
+      "43": {
+        "total": 2,
+        "success": 2,
+        "failed": 0,
+        "skipped": 0
+      }
+    }
+  },
+  "phase2Analysis": {
+    "successRate": 1,
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "textQualityRegressions": [],
+    "failureCategories": {},
+    "datasetGaps": [],
+    "recommendedFuturePRs": []
+  }
+}

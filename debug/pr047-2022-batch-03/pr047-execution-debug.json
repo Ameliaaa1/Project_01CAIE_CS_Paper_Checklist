@@ -1,0 +1,141 @@
+{
+  "generatedFor": "PR-047-0478-2022-MJ-BATCH-03-Production-Expansion-Plan",
+  "batchId": "PR047-0478-2022-MJ-BATCH-03",
+  "status": "PASS",
+  "scope": {
+    "syllabus": "0478",
+    "year": 2022,
+    "session": "M/J",
+    "components": [
+      "22",
+      "23"
+    ],
+    "artifacts": [
+      "0478_s22_qp_22",
+      "0478_s22_ms_22",
+      "0478_s22_qp_23",
+      "0478_s22_ms_23"
+    ]
+  },
+  "preflight": {
+    "passedArtifacts": 4,
+    "totalArtifacts": 4,
+    "validationStatus": "PASS",
+    "completenessStatus": "PASS",
+    "publishStatus": "READY_TO_PUBLISH",
+    "p0Issues": 0,
+    "p1Issues": 0,
+    "p2Issues": 0,
+    "responseAreaCoverage": {
+      "0478_s22_qp_22": "16/16",
+      "0478_s22_qp_23": "13/13"
+    },
+    "strictBatchPassGate": "PASS"
+  },
+  "aggregationRegression": {
+    "status": "PASS",
+    "0478_s22_qp_23": {
+      "aggregatedQuestionIds": [
+        "0478-2022-MJ-23-Q2",
+        "0478-2022-MJ-23-Q3",
+        "0478-2022-MJ-23-Q5"
+      ],
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "0478-2022-MJ-13-Q8": {
+      "responseAreaStatus": "PRESENT",
+      "mergedResponseAreas": 6,
+      "missingResponseAreasAbsent": true
+    }
+  },
+  "publication": {
+    "productionWrite": true,
+    "deltas": {
+      "papers": 4,
+      "questionRecords": 37,
+      "topLevelQuestions": 11,
+      "leafQuestions": 29,
+      "responseAreas": 227,
+      "markSchemeEntries": 13,
+      "pairings": 2
+    },
+    "pairVerification": {
+      "22": {
+        "paperCount": 2,
+        "questionCount": 5,
+        "leafQuestionCount": 16,
+        "responseAreaCount": 116,
+        "markSchemeEntryCount": 5,
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      },
+      "23": {
+        "paperCount": 2,
+        "questionCount": 6,
+        "leafQuestionCount": 13,
+        "responseAreaCount": 111,
+        "markSchemeEntryCount": 8,
+        "sourceTraceAvailable": true,
+        "pairingLinked": true
+      }
+    },
+    "productionState": {
+      "papers": 48,
+      "questionRecords": 660,
+      "topLevelQuestions": 202,
+      "leafQuestions": 511,
+      "responseAreas": 2921,
+      "markSchemeEntries": 235,
+      "pairings": 24,
+      "batches": 24,
+      "expansionBatches": 10
+    }
+  },
+  "frontendVerification": {
+    "questionFinder": "PASS",
+    "knowledgeChecklist": "PASS",
+    "markSchemeSearch": "PASS",
+    "aiRetrieval": "PASS",
+    "openOriginalQuestion": "PASS",
+    "qpMsCorrespondence": "PASS"
+  },
+  "integrity": {
+    "productionBeforeSha256": "ad07a0de8366627bbd097f13635f1c0a7f945f69e148c1a728b0a67256a18ed8",
+    "productionAfterSha256": "7849c265b1e18f94241fc54f03296acb4af9c9186546dbef9544a20c74820caf",
+    "productionHashChanged": true,
+    "existingRecordsUnchanged": true,
+    "beforeSnapshot": "debug/pr047-2022-batch-03/production-store-before.json",
+    "afterSnapshot": "debug/pr047-2022-batch-03/production-store-after.json",
+    "stagingBeforeHashes": "debug/pr047-2022-batch-03/staging-before.sha256",
+    "stagingAfterHashes": "debug/pr047-2022-batch-03/staging-after.sha256",
+    "stagingArtifactsUnchanged": true
+  },
+  "regression": {
+    "pr030": "PASS",
+    "pr031": "PASS",
+    "pr032": "PASS",
+    "pr038a": "PASS",
+    "pr040": "PASS",
+    "pr042": "PASS",
+    "pr044": "PASS",
+    "pr046": "PASS",
+    "phase1": "PASS (20/20)",
+    "phase2": "PASS (120/120)",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "coverageAfter": {
+    "expectedPairs": 24,
+    "stagingPairs": 24,
+    "publishedPairs": 24,
+    "eligibleUnpublishedPairs": 0,
+    "missingStagingPairs": 0,
+    "yearsComplete": [
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  "next": null
+}

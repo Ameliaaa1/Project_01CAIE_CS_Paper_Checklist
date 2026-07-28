@@ -1,0 +1,208 @@
+[2026-07-14T16:58:46.923Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_13.pdf
+[2026-07-14T16:58:46.923Z] startTime=2026-07-14T16:58:46.923Z
+[2026-07-14T16:58:46.923Z] expectedRole=question_paper
+[2026-07-14T16:58:49.839Z] extract.exitCode=0
+[2026-07-14T16:58:49.839Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_13.pdf",
+  "pageCount": 20,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) Describe the operation of a 2-input XOR gate. [1] (b) Write the logic expression for the following logic circuit. A X B C X = [2] (c) Draw the logic circuit for the logic expression: X = ((NOT A AND (B AND C)) OR (B NAND C)) AND NOT A A B X C [2]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A memory buffer uses Dynamic RAM (DRAM). (a) Identify two differences between DRAM and Static RAM (SRAM). Difference 1 Difference 2 [2] (b) Explain how a memory buffer is used when a computer is transferring data to its magnetic hard disk drive. [4]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A car has an automatic braking system. A sensor is used to measure the distance to objects that are in front of the car. The car automatically brakes if an object is too close to the front of the car or the distance between the car and the object is decreasing too quickly. The closer the object is to the front of the car, the harder the car brakes so that "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 8,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A company makes ice cream and sells it to shops. The ice cream is made in batches: a large quantity of one type and flavour of ice cream that is then split into smaller quantities for sale. The company’s owner has designed a relational database, ICECREAM, to store data about their ice cream and customers. Some of the tables in the database are given. The d"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A computer programmer writes programs that are distributed with a software licence. (a) Complete the table by writing the type of software licence each statement describes. Statement Software licence A fee is charged for the software. The source code cannot be accessed. Users do not get a free trial. Users can try the software before buying it. Users may n"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A computer system stores text, images and sound. (a) A character set is used to represent characters in a computer. Identify and describe one character set. Character set Description [2] (b) The colour of each pixel in a bitmapped image is represented by 8 bits. (i) State the largest number of different colours that can be represented by 8 bits. [1] (ii) S"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The following table shows part of the instruction set for a processor. The processor has two registers, the Accumulator (ACC) and the Index Register (IX) . Instruction Explanation Opcode Operand LDM #n Immediate addressing. Load the number n to ACC Direct addressing. Load the contents of the location at the given LDD <address> address to ACC Indirect addre"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 15,
+      "pageEnd": 15,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 (a) Convert the hexadecimal number 1FAB into denary. Working Denary value [1] (b) Explain how to convert the two’s complement integer 10011111 into denary. Give the denary value after conversion. Explanation Denary value [3] (c) Describe the difference between a right logical binary shift and a right arithmetic binary shift. [2]"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 16,
+      "pageEnd": 17,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 A computer is connected to a Local Area Network (LAN) that connects to a Wide Area Network (WAN). (a) Describe the characteristics of a WAN. [2] (b) Copper cable can be used to transmit data in a network. Complete the table by identifying and describing two other transmission media that can be used to transfer data in the WAN. Transmission medium Descripti"
+    }
+  ]
+}
+[2026-07-14T16:58:49.843Z] parserVersion=0.4.0
+[2026-07-14T16:58:49.843Z] documentRole=question_paper
+[2026-07-14T16:58:49.843Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:58:50.274Z] stage.exitCode=0
+[2026-07-14T16:58:50.274Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_13.staging.json",
+  "runId": "9618-2024-ON-13-QP-RUN-1633471ff692",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 30,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 30,
+        "present": 30,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:58:50.279Z] stagingId=9618-2024-ON-13-QP-RUN-1633471ff692
+[2026-07-14T16:58:50.279Z] validationStatus=PASS
+[2026-07-14T16:58:50.279Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:58:50.279Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:58:50.279Z] canonicalPublishable=true
+[2026-07-14T16:58:50.279Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:58:50.279Z] endTime=2026-07-14T16:58:50.279Z
+[2026-07-14T16:58:50.279Z] status=PASS

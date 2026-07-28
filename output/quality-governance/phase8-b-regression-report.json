@@ -1,0 +1,12 @@
+{
+  "generatedFor": "Phase-8-B",
+  "status": "PASS",
+  "productionWrite": false,
+  "checks": {
+    "goldenFixture": true,
+    "edgeCaseFixture": true,
+    "crossSyllabusFixture": true,
+    "futureFixture": true,
+    "failureClassification": true
+  }
+}

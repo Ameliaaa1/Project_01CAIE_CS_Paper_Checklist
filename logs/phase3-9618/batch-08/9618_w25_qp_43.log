@@ -1,0 +1,112 @@
+[2026-07-14T17:03:46.628Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_43.pdf
+[2026-07-14T17:03:46.628Z] startTime=2026-07-14T17:03:46.628Z
+[2026-07-14T17:03:46.628Z] expectedRole=question_paper
+[2026-07-14T17:03:49.316Z] extract.exitCode=0
+[2026-07-14T17:03:49.316Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_43.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_43.pdf",
+  "pageCount": 16,
+  "questionCount": 3,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 9,
+      "marks": 31,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 has objects that are placed on the board. Each object has a string code (for example ) and an \"A\" integer value (for example, ). 2 The class stores the data about the objects that can be placed on the board: BoardObject BoardObject stores the board object’s code Code : String stores the integer value of the board object Value : Integer initialises the attr"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 9,
+      "pageEnd": 12,
+      "marks": 24,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 The queue is created using the global 1D array . The queue can store up to 100 elements. Queue Each element is initialised to the empty string \"\" The queue has two pointers that are global to the program: that points to the index of the first element in the queue, initialised to • QueueHead –1 that points to the index of the last element in the queue, init"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "3 A 1D array stores 10 integers. (a) A recursive function takes three parameters: (i) RecursiveCount() an array of integers • ArrayCopy the number of elements in the array of integers • NumberElements an integer data to find in the array. • DataToFind The function counts and returns the number of times is in DataToFind ArrayCopy The recursive algorithm: retu"
+    }
+  ]
+}
+[2026-07-14T17:03:49.319Z] parserVersion=0.4.0
+[2026-07-14T17:03:49.319Z] documentRole=question_paper
+[2026-07-14T17:03:49.319Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:03:49.750Z] stage.exitCode=0
+[2026-07-14T17:03:49.750Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_43.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_43.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_43.staging.json",
+  "runId": "9618-2025-ON-43-QP-RUN-58c20a3d8f88",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_43.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 3,
+      "leafQuestionCount": 25,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 25,
+        "present": 25,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:03:49.754Z] stagingId=9618-2025-ON-43-QP-RUN-58c20a3d8f88
+[2026-07-14T17:03:49.754Z] validationStatus=PASS
+[2026-07-14T17:03:49.754Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:03:49.754Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:03:49.754Z] canonicalPublishable=true
+[2026-07-14T17:03:49.754Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:03:49.754Z] endTime=2026-07-14T17:03:49.754Z
+[2026-07-14T17:03:49.754Z] status=PASS

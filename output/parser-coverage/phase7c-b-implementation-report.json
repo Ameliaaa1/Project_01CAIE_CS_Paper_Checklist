@@ -1,0 +1,68 @@
+{
+  "generatedFor": "Phase-7-C-B",
+  "status": "PASS",
+  "title": "Question Parsing Generalization",
+  "checks": {
+    "q1": true,
+    "part": true,
+    "nestedRoman": true,
+    "secondNestedRoman": true,
+    "invalidIdentifierRejected": true
+  },
+  "diagnostics": {
+    "title": "Question Parsing Generalization",
+    "status": "PASS",
+    "checks": {
+      "q1": true,
+      "part": true,
+      "nestedRoman": true,
+      "secondNestedRoman": true,
+      "invalidIdentifierRejected": true
+    },
+    "inputs": [
+      "Q1",
+      "Question 1(a)",
+      "Q1(b)(i)",
+      "Q2(c)(ii)"
+    ],
+    "references": [
+      {
+        "topLevel": 1,
+        "sectionPath": [
+          "1"
+        ],
+        "normalized": "1",
+        "depth": 0
+      },
+      {
+        "topLevel": 1,
+        "sectionPath": [
+          "1",
+          "a"
+        ],
+        "normalized": "1(a)",
+        "depth": 1
+      },
+      {
+        "topLevel": 1,
+        "sectionPath": [
+          "1",
+          "b",
+          "i"
+        ],
+        "normalized": "1(b)(i)",
+        "depth": 2
+      },
+      {
+        "topLevel": 2,
+        "sectionPath": [
+          "2",
+          "c",
+          "ii"
+        ],
+        "normalized": "2(c)(ii)",
+        "depth": 2
+      }
+    ]
+  }
+}

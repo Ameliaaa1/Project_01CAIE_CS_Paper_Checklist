@@ -1,0 +1,225 @@
+[2026-07-14T16:52:27.357Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_21.pdf
+[2026-07-14T16:52:27.357Z] startTime=2026-07-14T16:52:27.357Z
+[2026-07-14T16:52:27.357Z] expectedRole=question_paper
+[2026-07-14T16:52:29.472Z] extract.exitCode=0
+[2026-07-14T16:52:29.472Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_21.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) to implement the algorithm and decides to use library routines to provide part of the solution. State possible benefits of using library routines in the development of the program. three 1 2 3 [3] The following pseudocode is part of a program that stores names and test marks for use in (b) other parts of the program. DECLARE Name1, Name2, Name3 : STRIN"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 number of days. An abstract model needs to be produced. Explain the process of abstraction state items of data that should be stored each (a) and four time a car is hired. Explanation Item 1 Item 2 Item 3 Item 4 [3] Identify operations that would be required to process the car hire data. (b) two Operation 1 Operation 2 [2] A 1D array of type integer contai"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Data An algorithm is required to search for the largest value and output it. Describe the steps that the algorithm should perform. Do include pseudocode statements in your answer. not [5] The following diagram shows an Abstract Data Type (ADT) representation of an ordered"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 (a) linked list. The data item stored in each node is a single character. The data will be accessed in alphabetical order. The symbol Ø represents a null pointer. Start pointer 'C' 'J' 'L' Ø Nodes with data 'A' and 'K' are added to the linked list. Nodes with data 'J' and 'L' are (i) deleted. After the changes, the data items still need to be accessed in a"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 Array1 Array2 contains 200 elements. contains sample values read from a sensor. The sensor always takes three consecutive Array1 samples and all of these values are stored in . Array1 A procedure will calculate the average of three consecutive values from Summarise() Array1 and write the result to . This will be repeated for all values in . Array2 Array1 T"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 FUNCTION IsValid(InString : STRING) RETURNS BOOLEAN DECLARE Index, Dots, Ats, Others : INTEGER DECLARE NextChar : CHAR DECLARE Valid : BOOLEAN 1 Index ← 0 Dots ← 0 Ats ← 0 Others ← TRUE Valid ← REPEAT MID(InString, Index, 1) NextChar ← CASE OF NextChar Dots + 1 '.' : Dots ← Ats + 1 '@' : Ats ← IF Ats > 1 THEN FALSE Valid ← ENDIF Others + 1 OTHERWISE : Othe"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 <Value1><Operator><Value2> An operator character is one of the following: ' + ' ' − ' ' * ' ' / ' Example arithmetic expression strings: \"803+1904\" \"34/7\" A procedure will: (a) Calculate() take an arithmetic expression string as a parameter • evaluate the expression • output the result. • Assume: the string contains only numeric digits and a single operato"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 14,
+      "pageEnd": 17,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 students. Student programs are submitted as text files, which are known as project files. A project file may contain blank lines. The teacher has defined the first program module as follows: Module Description takes the name of an existing project file as a parameter of type • string CheckFile() returns if the file is valid (it contains at least 10 non-bla"
+    }
+  ]
+}
+[2026-07-14T16:52:29.474Z] parserVersion=0.4.0
+[2026-07-14T16:52:29.474Z] documentRole=question_paper
+[2026-07-14T16:52:29.474Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:52:29.826Z] stage.exitCode=0
+[2026-07-14T16:52:29.826Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_21.staging.json",
+  "runId": "9618-2022-ON-21-QP-RUN-6b9620485c70",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 23,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 19,
+        "present": 19,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-ON-21-Q4-A-II",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-ON-21-Q4-A-III",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-ON-21-Q4-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-ON-21-Q6-B-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:52:29.829Z] stagingId=9618-2022-ON-21-QP-RUN-6b9620485c70
+[2026-07-14T16:52:29.829Z] validationStatus=PASS
+[2026-07-14T16:52:29.829Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:52:29.829Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:52:29.829Z] canonicalPublishable=true
+[2026-07-14T16:52:29.829Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:52:29.829Z] endTime=2026-07-14T16:52:29.829Z
+[2026-07-14T16:52:29.829Z] status=PASS

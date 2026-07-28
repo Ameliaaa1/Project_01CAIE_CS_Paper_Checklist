@@ -1,0 +1,176 @@
+[2026-07-15T03:54:10.725Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_13.pdf
+[2026-07-15T03:54:10.725Z] startTime=2026-07-15T03:54:10.725Z
+[2026-07-15T03:54:10.725Z] expectedRole=question_paper
+[2026-07-15T03:54:12.239Z] extract.exitCode=0
+[2026-07-15T03:54:12.239Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_13.pdf",
+  "pageCount": 12,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Data can be measured using different units of storage. (a) Tick (✓) one box to show which of the following is the largest unit of data storage. A tebibyte (TiB) B pebibyte (PiB) C mebibyte (MiB) D gibibyte (GiB) [1] (b) A computer has primary storage. Give one example of primary storage. Explain the purpose of your chosen example. Example Explanation [3] ("
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 24,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 An employee has a report that they need to email to their employer. The employee compresses the report file before emailing it. (a) State the effect the compression has on the report file. [1] (b) Give two benefits of compressing the report file before emailing it. 1 2 [2] (c) The employee decides to use lossless compression to compress the file. Explain w"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 An instruction is fetched from random access memory (RAM) into the memory data register (MDR) to be decoded. (a) Identify two other registers that are used in the fetch stage of the cycle. 1 2 [2] (b) Complete and annotate the diagram to show how the data is decoded once it has been fetched into the MDR. MDR [4]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Complete the table to give the missing term or description for the internet terms. Internet term Description the collection of web pages accessed using the internet the address given to a device when it connects to the internet web browser the hardware that stores a database of matching website and IP addresses a type of hardware that can be used to preven"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A farmer has a plough that is an automated system. The plough is used to dig the ground in a field to prepare it for planting seeds. The plough uses sensors and a microprocessor to maintain a straight line when digging the ground. (a) State what is meant by an automated system. [1] (b) Describe the role of the microprocessor in this process. [3] (c) Give t"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 (a) Complete the statements about cookies. Use only terms from the list. Not all terms need to be used. Some terms may be used more than once. binary close denary expire hexadecimal image malware operating system permanent persistent session sound temporary web browser Cookies are small text files that are stored by a . cookies are text files that are dele"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.9
+      },
+      "textPreview": "7 A computer programmer uses an integrated development environment (IDE) when creating a computer program. Explain the purpose of the IDE. [4]"
+    }
+  ]
+}
+[2026-07-15T03:54:12.241Z] parserVersion=0.4.0
+[2026-07-15T03:54:12.241Z] documentRole=question_paper
+[2026-07-15T03:54:12.241Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:12.552Z] stage.exitCode=0
+[2026-07-15T03:54:12.552Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_13.staging.json",
+  "runId": "0478-2024-ON-13-QP-RUN-85882ff2d1b0",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 30,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 30,
+        "present": 30,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:54:12.555Z] stagingId=0478-2024-ON-13-QP-RUN-85882ff2d1b0
+[2026-07-15T03:54:12.555Z] validationStatus=PASS
+[2026-07-15T03:54:12.555Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:54:12.555Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:12.555Z] canonicalPublishable=true
+[2026-07-15T03:54:12.555Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:54:12.555Z] endTime=2026-07-15T03:54:12.555Z
+[2026-07-15T03:54:12.555Z] status=PASS

@@ -1,0 +1,224 @@
+[2026-07-15T03:53:00.532Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_13.pdf
+[2026-07-15T03:53:00.532Z] startTime=2026-07-15T03:53:00.532Z
+[2026-07-15T03:53:00.532Z] expectedRole=question_paper
+[2026-07-15T03:53:01.852Z] extract.exitCode=0
+[2026-07-15T03:53:01.852Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2022-Oct-Nov/0478_w22_qp_13.pdf",
+  "pageCount": 12,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Five ✓ Tick ( ) to show whether each component is an example of input, output or storage. Input Output Storage Component ✓ ✓ ✓ ( ) ( ) ( ) actuator register sensor mouse Digital Versatile Disc (DVD) [5] Denary values are converted to binary values to be processed by a computer."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) Draw line from each denary value to the correctly converted 8‑bit binary value. one Denary 8-bit binary 11110101 72 01110010 11100101 245 00010101 00001111 15 01001000 [3] Binary values can be converted to hexadecimal values. (b) Give the hexadecimal value for the 16‑bit binary value 0000100110101110 [3] Jessica wants to store a large number of small t"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Each thumbnail image is 16‑bit colour and is 100 pixels wide and 100 pixels high. She has 5 MB of storage space available on her USB flash memory drive. Calculate how many images she can store in the 5 MB of storage space. Show all your working. Number of images [4] A company wants to manufacture a mobile phone."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 The company needs to decide which touch screen technology to use. (a) State type of touch screen technology that you recommend the company use. one Justify your choice. Touch screen type Justification [4] The mobile phone uses Random Access Memory (RAM) and Read Only Memory (ROM). (b) RAM and ROM are both examples of the same type of storage. Identify this"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 = (((( AND ) OR NOT ) NOR ) XOR NOT ) X B C C B A Draw a logic circuit to represent the given logic statement. (a) Do attempt to simplify the logic statement. All logic gates must have a maximum of not two inputs. A X B C [6] Complete the truth table for the given logic statement. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [4] A museum has"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 about items in the museum. The visitor is given a portable device with a display screen, that they can use to read each QR code. Describe how the QR code is read and processed to display the video for the visitor. (a) [4] ✓ Tick ( ) to show whether the videos are MP3 files, MP4 files or MIDI files. (b) ✓ Tick ( ) MP3 files MP4 files MIDI files [1] The vide"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Complete the paragraph using the list of terms. all terms in the list need to be used. Not address bus • Arithmetic Logic Unit (ALU) • calculations • data bus • decoded • execute • fetched • interrupt • Memory Address Register (MAR) • Memory Data Register (MDR) • Program Counter (PC) • protocol • ROM • stored • An instruction is from RAM into the CPU, wher"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 address. Give similarities between a MAC address and an IP address. (a) two Similarity 1 Similarity 2 [2] Give differences between a MAC address and an IP address. (b) two Difference 1 Difference 2 [2] A system uses parity checks and Automatic Repeat reQuests (ARQ) to detect and correct errors"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 in the transmission of data. Describe how parity checks and ARQ operate together to detect and correct errors. [6] Mario has a website that he uses to sell his artwork."
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "10 The website uses HTTPS to transmit data. (a) Describe what is meant by HTTPS. (i) [3] One way a user can check a website uses HTTPS is to check whether the (ii) Uniform Resource Locator (URL) begins with HTTPS. Give other way a user can check if a website uses HTTPS. one [1] There is a risk that people that use the Internet to access websites can have the"
+    }
+  ]
+}
+[2026-07-15T03:53:01.854Z] parserVersion=0.4.0
+[2026-07-15T03:53:01.854Z] documentRole=question_paper
+[2026-07-15T03:53:01.854Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:02.110Z] stage.exitCode=0
+[2026-07-15T03:53:02.110Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w22_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_13.staging.json",
+  "runId": "0478-2022-ON-13-QP-RUN-6c3003d0bf03",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w22_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 22,
+        "present": 22,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:02.111Z] stagingId=0478-2022-ON-13-QP-RUN-6c3003d0bf03
+[2026-07-15T03:53:02.111Z] validationStatus=PASS
+[2026-07-15T03:53:02.111Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:02.111Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:02.111Z] canonicalPublishable=true
+[2026-07-15T03:53:02.111Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:02.111Z] endTime=2026-07-15T03:53:02.111Z
+[2026-07-15T03:53:02.111Z] status=PASS

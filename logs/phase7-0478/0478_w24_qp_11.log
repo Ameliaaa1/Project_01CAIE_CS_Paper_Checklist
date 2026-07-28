@@ -1,0 +1,208 @@
+[2026-07-15T03:54:03.846Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_11.pdf
+[2026-07-15T03:54:03.846Z] startTime=2026-07-15T03:54:03.846Z
+[2026-07-15T03:54:03.846Z] expectedRole=question_paper
+[2026-07-15T03:54:05.247Z] extract.exitCode=0
+[2026-07-15T03:54:05.247Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_11.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_11.pdf",
+  "pageCount": 12,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The size of a file can be measured using different units. (a) Tick (3) one box to show which of these is not a unit of measurement for a file. A bit B bot C nibble D byte [1] (b) The size of a file can be reduced by compressing it. (i) Give two types of compression that can be used to reduce the size of a file. 1 2 [2] (ii) Give three benefits of reducing "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A student has a smartphone. (a) Identify two input devices that can be built into the smartphone. 1 2 [2] (b) Identify two output devices that can be built into the smartphone. 1 2 [2] (c) The smartphone contains secondary storage. (i) Explain the purpose of the secondary storage in the smartphone. [2] (ii) Identify the most suitable type of secondary stor"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A user enters text into a computer system, using a keyboard. An American standard code for information interchange (ASCII) character set is used to convert the text to binary. (a) Identify one other character set that could be used to convert the text to binary. [1] (b) The character ‘A’ is represented by the denary ASCII number 65. The character ‘m’ is re"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A company decides to create a network for its devices. All the company devices are within a single room. The employees will need to use their devices to send data to each other and share files. The company decides to send data across the network using packet switching. (a) An employee sends an email to another employee. The email is broken down into packet"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A central processing unit (CPU) performs the fetch–decode–execute (FDE) cycle. (a) Give the name of two registers that are used in the fetch stage of the cycle. 1 2 [2] (b) Describe what happens at the decode stage of the cycle. [3] (c) Give one register in the CPU that is used in the execute stage of the cycle. [1] (d) Buses are used in the CPU to transmi"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A computer programmer uses assembly language to create a computer program for an embedded system in a washing machine. (a) State what is meant by an embedded system. [1] (b) Give the name of the translator that will be used for the program. [1] (c) The washing machine needs to display error codes on a small screen if there is a problem with the washing mac"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A computer has an operating system. (a) The operating system provides several functions. (i) Tick (3) one box to show which of these is not a function of the operating system. A managing files B providing an interface C handling interrupts D loading the bootstrap [1] (ii) Identify one other function of an operating system. Describe the purpose of this func"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "8 Draw and annotate a diagram to show how a payment transaction is made using digital currency and blockchain. [4]"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 A doctor’s surgery has an expert system that helps diagnose the illnesses of its patients. (a) Complete the paragraph about the operation of the expert system. Use the terms from the list. Some of the terms in the list will not be used. Some terms may be used more than once. artificial binary central processing unit (CPU) data inference engine interface kn"
+    }
+  ]
+}
+[2026-07-15T03:54:05.249Z] parserVersion=0.4.0
+[2026-07-15T03:54:05.249Z] documentRole=question_paper
+[2026-07-15T03:54:05.249Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:05.546Z] stage.exitCode=0
+[2026-07-15T03:54:05.546Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_11.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_11.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_11.staging.json",
+  "runId": "0478-2024-ON-11-QP-RUN-d7b375fff586",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_11.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 34,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 34,
+        "present": 34,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:54:05.548Z] stagingId=0478-2024-ON-11-QP-RUN-d7b375fff586
+[2026-07-15T03:54:05.548Z] validationStatus=PASS
+[2026-07-15T03:54:05.548Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:54:05.548Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:05.548Z] canonicalPublishable=true
+[2026-07-15T03:54:05.548Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:54:05.548Z] endTime=2026-07-15T03:54:05.548Z
+[2026-07-15T03:54:05.548Z] status=PASS

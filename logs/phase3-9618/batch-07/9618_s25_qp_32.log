@@ -1,0 +1,272 @@
+[2026-07-14T17:01:11.531Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_32.pdf
+[2026-07-14T17:01:11.531Z] startTime=2026-07-14T17:01:11.531Z
+[2026-07-14T17:01:11.531Z] expectedRole=question_paper
+[2026-07-14T17:01:14.348Z] extract.exitCode=0
+[2026-07-14T17:01:14.348Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_32.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_32.pdf",
+  "pageCount": 16,
+  "questionCount": 13,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Data types can be defined using pseudocode. The composite record data type, Departure, is used to represent flights from Cambridge Airport and is defined in pseudocode as: TYPE Departure DECLARE FlightNumber : STRING DECLARE Destination : STRING DECLARE FlightDate : DATE DECLARE Gate : STRING DECLARE Airline : STRING ENDTYPE A variable, Flight1, is declare"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Numbers are stored in a computer using binary floating-point representation with: 12 bits for the mantissa • 4 bits for the exponent • two’s complement form for both the mantissa and the exponent. • (a) Calculate the normalised binary floating-point representation of +124.4375 in this system. Show your working. Mantissa Exponent Working [3] (b) Calculate t"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 (a) Identify two different layers of the TCP/IP protocol suite. [1] (b) Describe how the TCP/IP protocol suite is applied when a message is sent through the internet from one host to another. Do not describe the function of individual layers of the TCP/IP protocol suite. [4]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 Circuit switching may be used as a method of data transmission. State two benefits and two drawbacks of circuit switching. Benefit 1 Benefit 2 Drawback Drawback [4]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 The management and scheduling of processes are tasks carried out by an operating system. (a) Identify three process states. 1 2 3 [3] (b) Describe the function of the shortest job first scheduling routine and give a benefit of this routine. Function Benefit [4]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 (a) Describe the structure of a graph as used in an Artificial Intelligence (AI) system. [2] (b) Explain how supervised learning and unsupervised learning differ from each other. [4]"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 The diagram shows a logic circuit. A Q B S P C Z R D (a) Complete the truth table for the given logic circuit. Show your working. A B C D P Q R S Z 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 1 0 1 0 1 1 0 0 1 1 1 1 0 0 0 1 0 0 1 1 0 1 0 [3] (b) Write the Boolean logic expression that corresponds to the given logic circuit as the sum-of-products. Z = [1] (c)"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.84
+      },
+      "textPreview": "8 Explain what is meant by lexical analysis during program compilation. [4]"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 Several syntax diagrams are shown. letter digit A 0 B 1 C 2 D 3 E 4 F 5 G 6 H 7 J 8 K 9 operator + – * / letter variable letter digit ^ (a) State why 9K is not a valid variable for the given syntax diagrams. [1] (b) Complete the Backus-Naur Form (BNF) for <operator>. <operator> ::= [1] (c) An expression is defined as follows: A variable is assigned to a va"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "10 Identify the two main protocols that form Transport Layer Security (TLS) and state the purpose of each. Protocol 1 Purpose Protocol Purpose [4]"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "11 (a) A linked list of nodes is used to store an ordered list of strings. Each node consists of the data, a left pointer and a right pointer. Left pointer Data Right pointer Pp The linked list will be organised as a binary tree. 0 is used to represent a null pointer. Complete the binary tree, including null pointers, to show how the data will be organised a"
+    },
+    {
+      "questionNumber": "12",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "12 (a) A medical clinic uses objects of the class Patient to assign a priority and a doctor to a patient. Some of the attributes required in the class are listed in the table. Attribute Data type Description PatientID STRING Unique identifier of the patient Name STRING Patient’s full name, surname first DoctorID STRING ID of doctor administering treatment Tr"
+    },
+    {
+      "questionNumber": "13",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "13 The pseudocode algorithm below uses random file access to copy 50 records from a live file CurrentResults.dat to a stored file StoredResults.dat one record at a time. It uses the user-defined type StudentResult. TYPE StudentResult DECLARE LastName : STRING DECLARE FirstName : STRING DECLARE ExamGrade : STRING ENDTYPE If any grades are missing in CurrentRe"
+    }
+  ]
+}
+[2026-07-14T17:01:14.351Z] parserVersion=0.4.0
+[2026-07-14T17:01:14.351Z] documentRole=question_paper
+[2026-07-14T17:01:14.351Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:01:14.865Z] stage.exitCode=0
+[2026-07-14T17:01:14.865Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_32.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_32.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_32.staging.json",
+  "runId": "9618-2025-MJ-32-QP-RUN-647369ebfe22",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_32.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 13,
+      "leafQuestionCount": 27,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 27,
+        "present": 27,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:01:14.870Z] stagingId=9618-2025-MJ-32-QP-RUN-647369ebfe22
+[2026-07-14T17:01:14.870Z] validationStatus=PASS
+[2026-07-14T17:01:14.870Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:01:14.870Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:01:14.870Z] canonicalPublishable=true
+[2026-07-14T17:01:14.870Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:01:14.870Z] endTime=2026-07-14T17:01:14.870Z
+[2026-07-14T17:01:14.870Z] status=PASS

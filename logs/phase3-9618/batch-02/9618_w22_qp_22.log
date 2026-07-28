@@ -1,0 +1,185 @@
+[2026-07-14T16:52:31.238Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_22.pdf
+[2026-07-14T16:52:31.238Z] startTime=2026-07-14T16:52:31.238Z
+[2026-07-14T16:52:31.238Z] expectedRole=question_paper
+[2026-07-14T16:52:33.153Z] extract.exitCode=0
+[2026-07-14T16:52:33.153Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_22.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_22.pdf",
+  "pageCount": 20,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) appropriate to implement as a subroutine (a procedure or a function). State reasons why the programmer may decide to use a subroutine. (i) two 1 2 [2] A procedure header is shown in pseudocode: (ii) PROCEDURE MyProc(Count : INTEGER, Message : STRING) Give the correct term for the identifiers and explain their use. and Count Message Term Use [2] The alg"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 5,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 (a) prompt and input the name and test mark for each of the 35 students. The algorithm will add the names of all the students with a test mark of less than 20 to an existing text file which already contains data from other group tests. Support_List.txt Describe the steps that the algorithm should perform. (i) Do include pseudocode statements in your answer"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 8,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A stack is an example of an Abstract Data Type (ADT). (a) Identify example of an ADT describe its main features. one other and Example Features [3] Explain how the stack can be implemented using an array. (b) [5] A second stack is used in the program. The diagram below shows the initial state of this (c) stack. Value X is at the top of the stack and was th"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 START INPUT UserID Set to Average GetAverage(UserID) Set to Total 0 Set to Index 4 Add to 1 Index YES Is ? Index < 7 NO Set to Last SameMonth[Index] NO Is Average Add to Last Total ? > Last YES Add to Average Total Update(UserID, Total) END Write the equivalent pseudocode for the algorithm represented by the flowchart. (a) [6] Give the name of the iterativ"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 IF A = TRUE THEN IF B = TRUE THEN IF C = TRUE THEN CALL Sub1() ELSE CALL Sub2() ENDIF ENDIF ELSE IF B = TRUE THEN IF C = TRUE THEN CALL Sub4() ELSE CALL Sub3() ENDIF ELSE IF C = FALSE THEN CALL Sub3() ELSE CALL Sub4() ENDIF ENDIF ENDIF A programmer wants to re-write the pseudocode as separate four IF...THEN...ENDIF statements, each containing a single stat"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 16,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 (a) to 1. × × × × In general, the factorial of n is n (n−1) ... 2 1 × × × × For example, the factorial of 5 is 5 4 3 2 1 = 120 In this question, n will be referred to as the . BaseNumber A function will: FindBaseNumber() be called with a positive, non-zero integer value as a parameter • return if the parameter value is the factorial of the • BaseNumber Bas"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 16,
+      "pageEnd": 19,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 students. Two global 1D arrays are used to store the syntax error data. Both arrays contain 500 elements. Array contains integer values that represent an error number in the range 1 to 800. • ErrCode Array contains string values that represent an error description. • ErrText The following diagram shows an example of the arrays. Index ErrCode ErrText 1 10 \""
+    }
+  ]
+}
+[2026-07-14T16:52:33.156Z] parserVersion=0.4.0
+[2026-07-14T16:52:33.156Z] documentRole=question_paper
+[2026-07-14T16:52:33.156Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:52:33.466Z] stage.exitCode=0
+[2026-07-14T16:52:33.466Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_22.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_22.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_22.staging.json",
+  "runId": "9618-2022-ON-22-QP-RUN-93bdce2d34e7",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_22.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2022-ON-22-Q1-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:52:33.468Z] stagingId=9618-2022-ON-22-QP-RUN-93bdce2d34e7
+[2026-07-14T16:52:33.468Z] validationStatus=PASS
+[2026-07-14T16:52:33.468Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:52:33.468Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:52:33.468Z] canonicalPublishable=true
+[2026-07-14T16:52:33.468Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:52:33.468Z] endTime=2026-07-14T16:52:33.468Z
+[2026-07-14T16:52:33.468Z] status=PASS

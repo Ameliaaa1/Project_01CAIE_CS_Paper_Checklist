@@ -1,0 +1,192 @@
+[2026-07-14T17:03:00.077Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_21.pdf
+[2026-07-14T17:03:00.077Z] startTime=2026-07-14T17:03:00.077Z
+[2026-07-14T17:03:00.077Z] expectedRole=question_paper
+[2026-07-14T17:03:03.263Z] extract.exitCode=0
+[2026-07-14T17:03:03.263Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_21.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A program is being developed to meet a particular customer requirement. (a) The program contains these variables: Variable Data type MyChar CHAR MyString STRING MyInt INTEGER MyDOB DATE Complete the table by filling in the gaps using functions and/or operators from the insert. Each expression must be valid. Expression MyString 'X' MyString MyChar (\"ABCD\", "
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 Data is a global 1D array containing 30 elements of type STRING An algorithm will output: all non-blank elements (elements that do not contain an empty string) • the final total of the number of elements output. • Complete the program flowchart to represent the algorithm: START END [5] DFD"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A program is needed to manage individual rentals in a car-hire business. The data items for each rental will be held in a record structure of type RentalRecord The programmer has started to define the items that will be needed: Item Example value Comment RentalID \"AB1234\" a unique alpha-numeric value CarID 241 a numeric value used as an array index DisCode"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A program contains a global 1D array Number consisting of 20 elements of type REAL A procedure Store() will input a sequence of up to 20 real values, one value at a time. These values will be assigned to elements of the array using four steps: Step 1: store the first value in the sequence in the first element of the array Step 2: check each subsequent valu"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A program is being designed in pseudocode. The program contains the following declaration for the global array MyData: DECLARE MyData : ARRAY[1:10000] OF STRING A function FindFirst() is written to search the array for a given string and to return the index of the first element where that string is found, or to return –1 if the string is not found. The fun"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Students are learning about a simple check digit method for data validation. In this method, a single check digit is appended to the end of an original number to give a new number. The students are studying a method which: calculates the sum of all the digits in the original number • uses integer division to calculate the remainder when the sum is divided "
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 There are several different ways to express an algorithm during the design of a program. (a) One part of the program contains an algorithm which is represented by a state-transition diagram. The table shows the inputs, outputs and states for the algorithm: Current state Input Output Next state S1 A2 X2 S3 S1 A1 X1 S2 S2 A4 X4 S5 S3 A1 S3 S3 A3 X3 S2 S3 A2 "
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 14,
+      "pageEnd": 17,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 A program is being developed to manage student book loans from a college library. Students may borrow up to five books at a time from the library. The programmer has defined a record type to define each loan. The record data items are: Data item Data type Comment StudentID STRING the unique ID of the student who has borrowed the book BookID STRING the uniq"
+    }
+  ]
+}
+[2026-07-14T17:03:03.267Z] parserVersion=0.4.0
+[2026-07-14T17:03:03.267Z] documentRole=question_paper
+[2026-07-14T17:03:03.267Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:03:03.715Z] stage.exitCode=0
+[2026-07-14T17:03:03.715Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_21.staging.json",
+  "runId": "9618-2025-ON-21-QP-RUN-6b85b8068137",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 22,
+        "present": 22,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:03:03.720Z] stagingId=9618-2025-ON-21-QP-RUN-6b85b8068137
+[2026-07-14T17:03:03.720Z] validationStatus=PASS
+[2026-07-14T17:03:03.720Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:03:03.720Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:03:03.720Z] canonicalPublishable=true
+[2026-07-14T17:03:03.720Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:03:03.720Z] endTime=2026-07-14T17:03:03.720Z
+[2026-07-14T17:03:03.720Z] status=PASS

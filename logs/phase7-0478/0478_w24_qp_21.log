@@ -1,0 +1,246 @@
+[2026-07-15T03:54:13.951Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_21.pdf
+[2026-07-15T03:54:13.951Z] startTime=2026-07-15T03:54:13.951Z
+[2026-07-15T03:54:13.951Z] expectedRole=question_paper
+[2026-07-15T03:54:15.817Z] extract.exitCode=0
+[2026-07-15T03:54:15.817Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-Oct-Nov/0478_w24_qp_21.pdf",
+  "pageCount": 16,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "1 Tick (✓) one box to show which check is used for verification when data is input. A length check B range check C type check D visual check [1]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Tick (✓) one box to identify which option is used to show the inputs and output of a Boolean expression. A flowchart B trace table C truth table D variable [1]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Four operators and three types of operator are shown. Draw one or more lines from each operator to its correct operator type. Operator Operator type >= Boolean AND Arithmetic DIV Logical + [4]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Identify three stages of the program development life cycle from the following list of words. analysis decomposition design input pseudocode testing variable 1 2 3 [3]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 Describe three methods that are used to design and construct a solution to a problem. Method 1 Method 2 Method 3 [6]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 An incomplete algorithm has been written in pseudocode to count the number of zeros stored in an array and total the non-zero values. 01 DECLARE A[1:50] : INTEGER 02 DECLARE C : INTEGER 03 DECLARE I : INTEGER 04 DECLARE T : INTEGER 05 I 0 ← 06 07 FOR C 1 TO 50 ← 08 IF A[C] 09 THEN 10 T T + 1 ← 11 ELSE 12 I I + A[C] ← 13 ENDIF 14 (a) Complete the given pseu"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Consider the logic circuit: X W Y Z (a) Write a logic expression for the given logic circuit. Do not attempt to simplify the logic expression. W = [3] (b) Complete the truth table from the given logic circuit. X Y Z W 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [4]"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 A programmer is designing a program to check the length of a password and to check if the password input is the same as the stored password. The program requirements are: input the password, Password • check if there are at least 8 characters in the password • check that the password is not the same as the stored password OldPass • output ‘accepted’ if bot"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 An algorithm has been written in pseudocode to check if a temperature is in a given range. The temperature values used in the algorithm are correct. 01 REPEAT 02 OUTPUT \"Please enter temperature \" 03 INPUT Temp 04 IF Temperature = 999 05 THEN 06 IF Temperature > 38.0 07 THEN 08 OUTPUT \"Temperature too high\" 09 ENDIF 10 IF Temperature < 35.0 11 THEN 12 OUTP"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "10 A shop that sells cheese has set up a new database table called CheeseStock to store details of the cheeses available for sale. Part of this table is given. ChNo Name InStock SupplierCode PricePerKg WeightKg CH01 American Yes XYZ 4.50 20.0 CH02 Brie Yes XYZ 7.50 21.0 CH03 Burrata No IMP 13.75 0.0 CH04 Camembert No ABC 16.85 0.0 CH05 Cheddar Yes ABC 5.00 5"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 A running club has 200 members who compete in a 1-kilometre running competition every month. Members’ names are stored in the one-dimensional (1D) array MemberName[] Each member’s time, in seconds, for the 1-kilometre run will be stored in another one-dimensional (1D) array MemberTime[] The position of each member’s data in the two arrays is the same. For"
+    }
+  ]
+}
+[2026-07-15T03:54:15.819Z] parserVersion=0.4.0
+[2026-07-15T03:54:15.819Z] documentRole=question_paper
+[2026-07-15T03:54:15.819Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:16.176Z] stage.exitCode=0
+[2026-07-15T03:54:16.176Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w24_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_21.staging.json",
+  "runId": "0478-2024-ON-21-QP-RUN-3acc56ec25f3",
+  "status": "NEEDS_REVIEW",
+  "publishStatus": "BLOCKED",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w24_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 23,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 23,
+        "present": 23,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 1,
+  "p2": 0,
+  "issues": [
+    [
+      "P1",
+      "SUSPICIOUS_GLYPHS_REMAIN",
+      null
+    ]
+  ]
+}
+[2026-07-15T03:54:16.179Z] stagingId=0478-2024-ON-21-QP-RUN-3acc56ec25f3
+[2026-07-15T03:54:16.179Z] validationStatus=WARN
+[2026-07-15T03:54:16.179Z] publishStatus=BLOCKED
+[2026-07-15T03:54:16.179Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:16.179Z] canonicalPublishable=true
+[2026-07-15T03:54:16.179Z] issueCounts={"P0":0,"P1":1,"P2":0}
+[2026-07-15T03:54:16.179Z] endTime=2026-07-15T03:54:16.179Z
+[2026-07-15T03:54:16.179Z] status=FAIL

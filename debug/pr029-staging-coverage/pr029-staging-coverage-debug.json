@@ -1,0 +1,359 @@
+{
+  "generatedFor": "PR-029_Generate_Missing_Production_Expansion_Staging_Coverage_Explanation",
+  "artifactGenerationStatus": "PASS",
+  "acceptanceStatus": "BLOCKED_BY_PARSER_PR_REQUIRED",
+  "productionWrite": false,
+  "generatedArtifactCount": 10,
+  "coverage": {
+    "batchId": "PR028-0478-2023-MJ",
+    "generatedFor": "PR-029_Generate_Missing_Production_Expansion_Staging_Coverage_Explanation",
+    "scope": {
+      "syllabus": "0478",
+      "year": 2023,
+      "session": "M/J",
+      "components": [
+        "11",
+        "13",
+        "21",
+        "22",
+        "23"
+      ]
+    },
+    "components": [
+      {
+        "component": "11",
+        "status": "BLOCKED",
+        "qp": {
+          "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_11.staging.json",
+          "status": "FAIL",
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "FAIL",
+          "completenessPublishable": false,
+          "publishStatus": "BLOCKED",
+          "questionCount": 10,
+          "leafQuestionCount": 32,
+          "markSchemeEntryCount": 0,
+          "responseAreaCoverage": {
+            "required": 32,
+            "present": 31,
+            "ratio": 0.9688
+          },
+          "sourceTraceAvailable": true,
+          "issueCodes": [
+            "RESPONSE_AREA_MAPPING_INCOMPLETE"
+          ],
+          "blockers": [
+            "STAGING_VALIDATION_FAIL",
+            "COMPLETENESS_GATE_FAIL",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_11.staging.json",
+          "status": "PASS",
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "completenessPublishable": true,
+          "publishStatus": "BLOCKED",
+          "questionCount": 0,
+          "leafQuestionCount": 0,
+          "markSchemeEntryCount": 7,
+          "responseAreaCoverage": {
+            "required": 0,
+            "present": 0,
+            "ratio": 1
+          },
+          "sourceTraceAvailable": true,
+          "issueCodes": [],
+          "blockers": []
+        },
+        "blockers": [
+          "QP_STAGING_VALIDATION_FAIL",
+          "QP_COMPLETENESS_GATE_FAIL",
+          "QP_UNRESOLVED_P0"
+        ]
+      },
+      {
+        "component": "13",
+        "status": "READY",
+        "qp": {
+          "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_13.staging.json",
+          "status": "PASS",
+          "documentRole": "question_paper",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "completenessPublishable": true,
+          "publishStatus": "BLOCKED",
+          "questionCount": 11,
+          "leafQuestionCount": 37,
+          "markSchemeEntryCount": 0,
+          "responseAreaCoverage": {
+            "required": 37,
+            "present": 37,
+            "ratio": 1
+          },
+          "sourceTraceAvailable": true,
+          "issueCodes": [],
+          "blockers": []
+        },
+        "ms": {
+          "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_13.staging.json",
+          "status": "PASS",
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "completenessPublishable": true,
+          "publishStatus": "BLOCKED",
+          "questionCount": 0,
+          "leafQuestionCount": 0,
+          "markSchemeEntryCount": 5,
+          "responseAreaCoverage": {
+            "required": 0,
+            "present": 0,
+            "ratio": 1
+          },
+          "sourceTraceAvailable": true,
+          "issueCodes": [],
+          "blockers": []
+        },
+        "blockers": []
+      },
+      {
+        "component": "21",
+        "status": "BLOCKED",
+        "qp": {
+          "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_21.staging.json",
+          "status": "FAIL",
+          "documentRole": "question_paper",
+          "validationStatus": "WARN",
+          "completenessStatus": "PASS",
+          "completenessPublishable": true,
+          "publishStatus": "BLOCKED",
+          "questionCount": 11,
+          "leafQuestionCount": 20,
+          "markSchemeEntryCount": 0,
+          "responseAreaCoverage": {
+            "required": 20,
+            "present": 20,
+            "ratio": 1
+          },
+          "sourceTraceAvailable": true,
+          "issueCodes": [
+            "SUSPICIOUS_GLYPHS_REMAIN"
+          ],
+          "blockers": [
+            "STAGING_VALIDATION_FAIL"
+          ]
+        },
+        "ms": {
+          "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_21.staging.json",
+          "status": "PASS",
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "completenessPublishable": true,
+          "publishStatus": "BLOCKED",
+          "questionCount": 0,
+          "leafQuestionCount": 0,
+          "markSchemeEntryCount": 15,
+          "responseAreaCoverage": {
+            "required": 0,
+            "present": 0,
+            "ratio": 1
+          },
+          "sourceTraceAvailable": true,
+          "issueCodes": [],
+          "blockers": []
+        },
+        "blockers": [
+          "QP_STAGING_VALIDATION_FAIL"
+        ]
+      },
+      {
+        "component": "22",
+        "status": "BLOCKED",
+        "qp": {
+          "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_22.staging.json",
+          "status": "FAIL",
+          "documentRole": "question_paper",
+          "validationStatus": "FAIL",
+          "completenessStatus": "FAIL",
+          "completenessPublishable": false,
+          "publishStatus": "BLOCKED",
+          "questionCount": 12,
+          "leafQuestionCount": 21,
+          "markSchemeEntryCount": 0,
+          "responseAreaCoverage": {
+            "required": 21,
+            "present": 21,
+            "ratio": 1
+          },
+          "sourceTraceAvailable": true,
+          "issueCodes": [
+            "MARK_SUM_MISMATCH"
+          ],
+          "blockers": [
+            "STAGING_VALIDATION_FAIL",
+            "COMPLETENESS_GATE_FAIL",
+            "UNRESOLVED_P0"
+          ]
+        },
+        "ms": {
+          "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_22.staging.json",
+          "status": "PASS",
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "completenessPublishable": true,
+          "publishStatus": "BLOCKED",
+          "questionCount": 0,
+          "leafQuestionCount": 0,
+          "markSchemeEntryCount": 9,
+          "responseAreaCoverage": {
+            "required": 0,
+            "present": 0,
+            "ratio": 1
+          },
+          "sourceTraceAvailable": true,
+          "issueCodes": [],
+          "blockers": []
+        },
+        "blockers": [
+          "QP_STAGING_VALIDATION_FAIL",
+          "QP_COMPLETENESS_GATE_FAIL",
+          "QP_UNRESOLVED_P0"
+        ]
+      },
+      {
+        "component": "23",
+        "status": "READY",
+        "qp": {
+          "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_qp_23.staging.json",
+          "status": "PASS",
+          "documentRole": "question_paper",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "completenessPublishable": true,
+          "publishStatus": "BLOCKED",
+          "questionCount": 11,
+          "leafQuestionCount": 20,
+          "markSchemeEntryCount": 0,
+          "responseAreaCoverage": {
+            "required": 20,
+            "present": 20,
+            "ratio": 1
+          },
+          "sourceTraceAvailable": true,
+          "issueCodes": [],
+          "blockers": []
+        },
+        "ms": {
+          "path": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s23_ms_23.staging.json",
+          "status": "PASS",
+          "documentRole": "mark_scheme",
+          "validationStatus": "PASS",
+          "completenessStatus": "PASS",
+          "completenessPublishable": true,
+          "publishStatus": "BLOCKED",
+          "questionCount": 0,
+          "leafQuestionCount": 0,
+          "markSchemeEntryCount": 11,
+          "responseAreaCoverage": {
+            "required": 0,
+            "present": 0,
+            "ratio": 1
+          },
+          "sourceTraceAvailable": true,
+          "issueCodes": [],
+          "blockers": []
+        },
+        "blockers": []
+      }
+    ],
+    "eligibleCount": 2,
+    "blockedCount": 3,
+    "productionWrite": false
+  },
+  "expansionCandidateSummary": {
+    "ELIGIBLE": 2,
+    "ALREADY_PUBLISHED": 1,
+    "BLOCKED": 3
+  },
+  "readyComponents": [
+    "13",
+    "23"
+  ],
+  "blockedComponents": [
+    {
+      "component": "11",
+      "blockers": [
+        "QP_STAGING_VALIDATION_FAIL",
+        "QP_COMPLETENESS_GATE_FAIL",
+        "QP_UNRESOLVED_P0"
+      ],
+      "qpIssueCodes": [
+        "RESPONSE_AREA_MAPPING_INCOMPLETE"
+      ]
+    },
+    {
+      "component": "21",
+      "blockers": [
+        "QP_STAGING_VALIDATION_FAIL"
+      ],
+      "qpIssueCodes": [
+        "SUSPICIOUS_GLYPHS_REMAIN"
+      ]
+    },
+    {
+      "component": "22",
+      "blockers": [
+        "QP_STAGING_VALIDATION_FAIL",
+        "QP_COMPLETENESS_GATE_FAIL",
+        "QP_UNRESOLVED_P0"
+      ],
+      "qpIssueCodes": [
+        "MARK_SUM_MISMATCH"
+      ]
+    }
+  ],
+  "requiredFollowupParserPRs": [
+    {
+      "component": "11",
+      "issue": "RESPONSE_AREA_MAPPING_INCOMPLETE",
+      "questionId": "0478-2023-MJ-11-Q3-B",
+      "scope": "Response-area mapping fixture and detector investigation."
+    },
+    {
+      "component": "21",
+      "issue": "SUSPICIOUS_GLYPHS_REMAIN",
+      "scope": "Canonical text glyph classification investigation."
+    },
+    {
+      "component": "22",
+      "issue": "MARK_SUM_MISMATCH",
+      "questionId": "0478-2023-MJ-22-Q7",
+      "scope": "Question/leaf mark-boundary investigation."
+    }
+  ],
+  "regression": {
+    "phase1": {
+      "totalFiles": 20,
+      "successCount": 20,
+      "failedCount": 0
+    },
+    "phase2": {
+      "totalFiles": 120,
+      "successCount": 120,
+      "failedCount": 0,
+      "successRate": 1
+    },
+    "architectureFailures": [],
+    "documentRoleRegressions": [],
+    "textQualityRegressions": [],
+    "datasetGaps": [],
+    "npmTest": "PASS",
+    "prismaValidate": "PASS"
+  }
+}

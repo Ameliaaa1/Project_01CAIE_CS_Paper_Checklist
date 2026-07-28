@@ -1,0 +1,224 @@
+[2026-07-15T03:53:51.695Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_21.pdf
+[2026-07-15T03:53:51.695Z] startTime=2026-07-15T03:53:51.695Z
+[2026-07-15T03:53:51.695Z] expectedRole=question_paper
+[2026-07-15T03:53:53.390Z] extract.exitCode=0
+[2026-07-15T03:53:53.390Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_21.pdf",
+  "pageCount": 16,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 1,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 one ✓ A validation check to make sure that an email address contains an ‘@’ sign is a range check. A visual check. B presence check. C format check. D [1] descriptions of programming concepts and programming concepts are shown."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Four five Draw line to link each description to the most appropriate programming concept. (a) one all programming concepts will be used. Not Description Programming concept function a subroutine that may return a value not procedure a value that is declared and used within a specific procedure parameter a value that a procedure expects you to supply when i"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Give an example of each. Integer Example Real Example [4] This pseudocode algorithm is intended to allow, at random, between 1 and 20 values to be entered"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 and totalled. The total and average of the entered values are output at the end of the algorithm. 01 DECLARE Loop : STRING 02 DECLARE Limit : INTEGER 03 DECLARE Value : REAL 04 DECLARE Total : REAL 0 05 Total ROUND(RANDOM() * 19,0) + 1 06 Limit 1 TO Limit 07 IF Loop 08 OUTPUT \"Enter a number\" 09 INPUT Loop Total * Value 10 Total 11 NEXT Loop 12 OUTPUT \"The"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 accept the input of a whole number from 1 to 4 inclusive • use a statement to: • CASE ○ output the number (1 to 4 inclusive) that was entered ○ output the word “ERROR” if a 1 to 4 inclusive number was entered. not [5] The flowchart represents an algorithm."
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 START Result Limit DIV 2 + 1 INPUT Limit OUTPUT Numbers[Result] Count 1 INPUT Numbers[Count] STOP Count Count + 1 No IS Count > Limit? No IS Numbers[Count] > Yes Numbers[Count + 1]? Flag TRUE Yes Swap Numbers[Count] IS Flag = No TRUE? Numbers[Count] Numbers[Count + 1] Yes Flag False Numbers[Count + 1] Swap Count 1 Flag True IS Count > Yes No Limit – 1? Cou"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 (a) [2] The function calculates the length of a string (b) LENGTH(X) X Write the pseudocode statements to: read the contents of the text file into an appropriate string variable that • Quotation.txt has been declared output the string in upper case and the length of the string. • [4] Consider the logic expression:"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 = ( OR NOT ) XOR (NOT AND ) Z R T S T Draw a logic circuit for this logic expression. (a) Each logic gate must have a maximum of inputs. two Do simplify this logic expression. not R S Z T [5] Complete the truth table from the given logic expression. (b) R S T Z 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 [4] A database table called stores details of the soft"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 SoftDrinks Field Example data Cola Name Cambridge Beverages Supplier Can Container 330 SizeCl 30 NumberInStock 15 ReorderLevel Yes Reordered State whether any of the given fields would be suitable as a primary key and give a reason for (a) your answer. [1] Complete the structured query language (SQL) statement to return the number of cans the (b) shop has "
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "10 Clubs[] sports league. The two-dimensional (2D) array is used to store, for each cricket club, the number Statistics[] of: matches won • matches drawn • matches lost. • The 1D array is used to store the total number of points each cricket club has been Points[] awarded. The position of any cricket club’s data is the same in all three arrays. For example, "
+    }
+  ]
+}
+[2026-07-15T03:53:53.391Z] parserVersion=0.4.0
+[2026-07-15T03:53:53.391Z] documentRole=question_paper
+[2026-07-15T03:53:53.391Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:53.736Z] stage.exitCode=0
+[2026-07-15T03:53:53.736Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_21.staging.json",
+  "runId": "0478-2024-MJ-21-QP-RUN-91583435aba4",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 18,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 18,
+        "present": 18,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:53.738Z] stagingId=0478-2024-MJ-21-QP-RUN-91583435aba4
+[2026-07-15T03:53:53.738Z] validationStatus=PASS
+[2026-07-15T03:53:53.738Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:53.738Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:53.738Z] canonicalPublishable=true
+[2026-07-15T03:53:53.738Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:53.738Z] endTime=2026-07-15T03:53:53.738Z
+[2026-07-15T03:53:53.738Z] status=PASS

@@ -1,0 +1,176 @@
+[2026-07-13T02:03:00.239Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-March/0478_m19_qp_12.pdf
+[2026-07-13T02:03:00.239Z] startTime=2026-07-13T02:03:00.239Z
+[2026-07-13T02:03:00.239Z] expectedRole=question_paper
+[2026-07-13T02:03:01.528Z] extract.exitCode=0
+[2026-07-13T02:03:01.528Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m19_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-March/0478_m19_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) Elle has a file stored on her computer that is 20 MB in size. Jordan has a file that is 10 GB in size. 3 Tick ( ) to show which is the larger file. Tick File size 3 ( ) 20 MB 10 GB [1] (b) Bob has a file stored on his computer that is 3500 kB in size. Gerty has a file that is 3 MB in size. 3 Tick ( ) to show which is the larger file. Tick File size 3 ("
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Many computer systems have an input device and an output device. (a) (i) State what is meant by an input device. [1] (ii) Give an example of an input device. [1] (b) (i) State what is meant by an output device. [1] (ii) Give an example of an output device. [1]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 (a) A long distance running race uses an electronic counter that counts each competitor who finishes the race. The count is stored as binary in a 12-bit register. A denary value of the count is displayed on a screen above the finish line. (i) The screen currently displays: 0 0 3 9 State the binary value that is currently stored to display the count shown. "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 5,
+      "pageEnd": 7,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Darius is writing a computer program that allows binary values to be calculated. Darius chooses to write the program in a high-level language rather than a low-level language. (a) Explain why Darius chooses to write the program in a high-level language. [2] (b) Darius will use a translator to translate the program. He could use a compiler or an interpreter"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 Consider the following logic statement: X = 1 if ((A is 1 NAND C is 1) NOR A is NOT 1) OR (B is 1 AND C is NOT 1) (a) Draw a logic circuit that represents the given logic statement. Your logic gates must have a maximum of two inputs. Do not simplify the logic statement. A B X C [6] (b) Complete the truth table for the given logic statement. A B C X 0 0 0 0"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Nadia purchases a printer to print out her homework. She connects the printer to her computer using USB. (a) Explain what is meant by USB. [3] (b) Nadia’s printer uses powdered toner rather than liquid ink. (i) State the type of printer Nadia has purchased. [1] (ii) Give two benefits of using this type of printer. Benefit 1 Benefit 2 [2] (iii) Give one dra"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 Arya regularly uses the Internet as a research tool for her school projects. Identify and describe three risks to Arya’s computer when she is using the Internet for research. Risk 1 Description Risk 2 Description Risk 3 Description [6]"
+    }
+  ]
+}
+[2026-07-13T02:03:01.530Z] parserVersion=0.4.0
+[2026-07-13T02:03:01.530Z] documentRole=question_paper
+[2026-07-13T02:03:01.530Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:01.833Z] stage.exitCode=0
+[2026-07-13T02:03:01.833Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m19_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m19_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m19_qp_12.staging.json",
+  "runId": "0478-2019-FM-12-QP-RUN-be7caf4bdc0e",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m19_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 26,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:01.835Z] stagingId=0478-2019-FM-12-QP-RUN-be7caf4bdc0e
+[2026-07-13T02:03:01.835Z] validationStatus=PASS
+[2026-07-13T02:03:01.835Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:01.835Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:01.835Z] canonicalPublishable=true
+[2026-07-13T02:03:01.835Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:01.835Z] endTime=2026-07-13T02:03:01.835Z
+[2026-07-13T02:03:01.835Z] status=PASS

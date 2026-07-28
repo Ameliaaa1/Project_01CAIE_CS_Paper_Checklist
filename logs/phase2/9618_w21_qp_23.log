@@ -1,0 +1,169 @@
+[2026-07-13T02:06:10.499Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_23.pdf
+[2026-07-13T02:06:10.499Z] startTime=2026-07-13T02:06:10.499Z
+[2026-07-13T02:06:10.499Z] expectedRole=question_paper
+[2026-07-13T02:06:13.213Z] extract.exitCode=0
+[2026-07-13T02:06:13.213Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w21_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2021 Oct Nov/9618_w21_qp_23.pdf",
+  "pageCount": 20,
+  "questionCount": 6,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 5,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 program does not contain any syntax errors. State what her colleague means by “does not contain any syntax errors”. (a) (i) [1] Identify describe other type of error that the program may contain. (ii) and one Type of error Description [2] Complete the following table by giving the appropriate data type in each case. (b) Use of variable Data type The averag"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 5,
+      "pageEnd": 8,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) move the largest value to the end • keep repeating until the array is sorted. • Apply the process of stepwise refinement to this algorithm in order to produce a more detailed description. Write the more detailed description using . Your explanation of the structured English algorithm should not include pseudocode statements. [6] The program flowchart s"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 11,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 (a) of eight items. The operation of this queue may be summarised as follows: The front of queue pointer points to the next item to be removed. • The end of queue pointer points to the last item added. • The queue is circular so that empty storage elements can be reused. • Frog Front of queue pointer 0 Cat 1 Fish 2 Elk End of queue pointer 3 4 5 6 7 Descri"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Part of the program involves reading a value from a sensor. The sensor produces a numeric value that represents the temperature. The value is an integer, which should be in the range 0 to 40 inclusive. A program function has been written to validate the values from the sensor. A test plan is needed to test the function. (a) Complete the table. The first li"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 12,
+      "pageEnd": 14,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 network: Data item Example data Student ID \"CJL404\" Host ID \"Lib01\" Time and date \"08:30, June 01, 2021\" The Student ID is six characters long. The other two data items are of variable length. A single string will be formed by concatenating the three data items. A separator character will need to be inserted between items two and three. For example: \"CJL40"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 14,
+      "pageEnd": 17,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "6 and 1280 columns. The grid is represented by a 2D array of type . An array element will be set to 0 Screen INTEGER unless the user touches that part of the screen. Many array elements are set to 1 by a single touch of a finger or a stylus. The following diagram shows a simplified touchscreen. The dark line represents a touch to the screen. All grid element"
+    }
+  ]
+}
+[2026-07-13T02:06:13.216Z] parserVersion=0.4.0
+[2026-07-13T02:06:13.216Z] documentRole=question_paper
+[2026-07-13T02:06:13.216Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:06:13.591Z] stage.exitCode=0
+[2026-07-13T02:06:13.591Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w21_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_23.staging.json",
+  "runId": "9618-2021-ON-23-QP-RUN-5bdf228513a8",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w21_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 6,
+      "leafQuestionCount": 21,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 20,
+        "present": 20,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2021-ON-23-Q3-B",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:06:13.595Z] stagingId=9618-2021-ON-23-QP-RUN-5bdf228513a8
+[2026-07-13T02:06:13.595Z] validationStatus=PASS
+[2026-07-13T02:06:13.595Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:06:13.595Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:06:13.595Z] canonicalPublishable=true
+[2026-07-13T02:06:13.595Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:06:13.595Z] endTime=2026-07-13T02:06:13.595Z
+[2026-07-13T02:06:13.595Z] status=PASS

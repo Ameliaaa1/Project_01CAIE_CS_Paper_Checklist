@@ -1,0 +1,176 @@
+[2026-07-13T02:03:31.324Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_23.pdf
+[2026-07-13T02:03:31.324Z] startTime=2026-07-13T02:03:31.324Z
+[2026-07-13T02:03:31.324Z] expectedRole=question_paper
+[2026-07-13T02:03:32.651Z] extract.exitCode=0
+[2026-07-13T02:03:32.651Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w19_qp_23.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-Oct-Nov/0478_w19_qp_23.pdf",
+  "pageCount": 12,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 3,
+      "pageEnd": 8,
+      "marks": 20,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) All variables, constants and other identifiers must have meaningful names. Name two arrays you could use for Task 1 . State the data type and purpose of each one. Array 1 Data type 1 Purpose Array 2 Data type 2 Purpose [4] (b) Name a variable that you used for Task 2 . State the data type and purpose of this variable. Explain why you chose to use a var"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.84
+      },
+      "textPreview": "2 Describe the use of a subroutine in a program. [2]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.84
+      },
+      "textPreview": "3 Name the three types of loop structure used in pseudocode. [3]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 The following pseudocode algorithm uses nested IF statements. IF Response = 1 THEN X + Y X ELSE IF Response = 2 THEN X – Y X ELSE IF Response = 3 THEN X * Y X ELSE IF Response = 4 THEN X / Y X ELSE OUTPUT \"No response\" ENDIF ENDIF ENDIF ENDIF (a) Name the type of statement demonstrated by the use of IF … THEN … ELSE … ENDIF [1] (b) Re-write the pseudocode "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 The algorithm performs an operation on the array named MyData means integer division, so only the whole number part of the result is returned DIV e.g. returns a value of 7 DIV 2 3 0 First 16 Last FALSE Found INPUT UserIn WHILE (First <= Last) AND (Found = FALSE) DO (First + Last) DIV 2 Middle IF MyData[Middle] = UserIn THEN TRUE Found ELSE IF UserIn < MyDa"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "6 Draw four different flowchart symbols and describe how they are used in a program flowchart. Flowchart symbol Description of use [4]"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 A teacher has decided to use a database table as her mark book for her Computer Science class, which she has called MARKBOOK. For each student, the following data will be recorded: first name, last name, their year 10 test score and their year 11 test score. The class has 32 students. (a) State the number of fields and records required for this database. N"
+    }
+  ]
+}
+[2026-07-13T02:03:32.653Z] parserVersion=0.4.0
+[2026-07-13T02:03:32.653Z] documentRole=question_paper
+[2026-07-13T02:03:32.653Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:32.913Z] stage.exitCode=0
+[2026-07-13T02:03:32.913Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w19_qp_23.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_23.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_23.staging.json",
+  "runId": "0478-2019-ON-23-QP-RUN-b4bfdd54c854",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w19_qp_23.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 15,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 15,
+        "present": 15,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:32.915Z] stagingId=0478-2019-ON-23-QP-RUN-b4bfdd54c854
+[2026-07-13T02:03:32.915Z] validationStatus=PASS
+[2026-07-13T02:03:32.915Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:32.915Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:32.915Z] canonicalPublishable=true
+[2026-07-13T02:03:32.915Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:32.915Z] endTime=2026-07-13T02:03:32.915Z
+[2026-07-13T02:03:32.915Z] status=PASS

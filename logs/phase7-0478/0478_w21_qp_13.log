@@ -1,0 +1,224 @@
+[2026-07-15T03:52:35.360Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_13.pdf
+[2026-07-15T03:52:35.360Z] startTime=2026-07-15T03:52:35.360Z
+[2026-07-15T03:52:35.360Z] expectedRole=question_paper
+[2026-07-15T03:52:36.647Z] extract.exitCode=0
+[2026-07-15T03:52:36.647Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w21_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-Oct-Nov/0478_w21_qp_13.pdf",
+  "pageCount": 12,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) three 3 Tick ( ) box to show which is the largest file size. one Tick File size ✔ ( ) 999 kB 1 MB 850 000 bytes [1] Denise has files stored on her computer. (b) three 3 Tick ( ) box to show which is the smallest file size. one Tick File size ✔ ( ) 4000 MB 2 GB 2 500 000 kB [1] A sports stadium has an electronic counter that counts each person that ente"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 5,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 The count is stored as binary in a 16-bit register. A denary value of the count is displayed on a screen at the entrance. The screen currently displays: (a) 0 0 7 1 Give the binary value that is stored in the register to display the count shown. Binary value: [2] More people enter the sports stadium and the screen now displays: (b) 0 2 5 7 Give the binary "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Five 3 Tick ( ) to show whether each statement applies to Automatic Repeat reQuest (ARQ), check (a) digit or checksum. Some statements may apply to more than error-checking method. one ARQ Check digit Checksum Statement ✔ ✔ ✔ ( ) ( ) ( ) checks for errors on data entry uses a process of acknowledgement and timeout compares calculated values to see if an tw"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 The printer begins to print the document, but then a message is displayed on Frederick’s computer to say that the paper has jammed. Describe the role of an interrupt in generating a message on the computer that the paper has (a) jammed. [4] Give other examples of when an interrupt signal could be generated. (b) two 1 2 [2] The type of data transmission bet"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 number of different components. The table contains the name of a component or a description of their role in the fetch-execute cycle. Complete the table with the missing component names and descriptions. Component name Description Memory Address Register (MAR) Program Counter (PC) This is a register that is built into the arithmetic logic unit. It temporar"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 Complete the paragraph using the list of terms. all terms in the list need to be used. Not can • cannot • compressed • image • microphone • MIDI • MP3 • MP4 • notes • pixels • speaker • should • uncompressed • files are a multimedia format that stores video and audio. files are only used as a digital recording of sound; they are created using a and recordi"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 house. Julius uploads his application to his website for people to download. Before he uploads the (a) application, he translates the code using a compiler. Explain why Julius uses a compiler, rather than an interpreter, to do this. [4] Julius also creates videos to explain how to use the application that he has created. He (b) reduces the file size of the"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 = ((( OR ) AND (NOT( XOR ))) OR NOT ) X A B B C C Draw a logic circuit to represent the given logic statement. (a) Do attempt to simplify the logic statement. All logic gates must have a maximum of not two inputs. A B X C [6] Complete the truth table for the given logic statement. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 [4] A parity check is used t"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 four All values are transmitted and received correctly. four Identify whether each 8-bit binary value has been sent using odd or even parity by writing odd or even in the type of parity column. Binary value Type of parity 10011001 01111110 11100000 00111001 [4] A denial of service (DoS) attack is a type of Internet security risk."
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "10 (a) State the purpose of a denial of service attack. [1] Phishing and pharming are also types of Internet security risk. They have the same purpose. (b) State the purpose of phishing and pharming. [1] Identify other types of Internet security risk. (c) three 1 2 3 [3]"
+    }
+  ]
+}
+[2026-07-15T03:52:36.649Z] parserVersion=0.4.0
+[2026-07-15T03:52:36.649Z] documentRole=question_paper
+[2026-07-15T03:52:36.649Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:52:36.896Z] stage.exitCode=0
+[2026-07-15T03:52:36.896Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w21_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_13.staging.json",
+  "runId": "0478-2021-ON-13-QP-RUN-4c9694888a65",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w21_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 27,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 27,
+        "present": 27,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:52:36.898Z] stagingId=0478-2021-ON-13-QP-RUN-4c9694888a65
+[2026-07-15T03:52:36.898Z] validationStatus=PASS
+[2026-07-15T03:52:36.898Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:52:36.898Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:52:36.898Z] canonicalPublishable=true
+[2026-07-15T03:52:36.898Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:52:36.898Z] endTime=2026-07-15T03:52:36.898Z
+[2026-07-15T03:52:36.898Z] status=PASS

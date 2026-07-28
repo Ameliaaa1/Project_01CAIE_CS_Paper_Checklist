@@ -1,0 +1,214 @@
+[2026-07-13T02:02:48.163Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_12.pdf
+[2026-07-13T02:02:48.163Z] startTime=2026-07-13T02:02:48.163Z
+[2026-07-13T02:02:48.163Z] expectedRole=question_paper
+[2026-07-13T02:02:49.736Z] extract.exitCode=0
+[2026-07-13T02:02:49.736Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_12.pdf",
+  "pageCount": 16,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) Complete the truth table for the logic expression: X = (A XOR B) NAND (A AND (B XOR C)) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [2] (b) Draw the logic circuit for the logic expression: W = P NAND ((Q OR NOT R) XOR (P XOR Q)) P Q W R [2]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Embedded systems are used in many electronic devices. (a) Describe the drawbacks of embedded systems. [3] (b) An embedded system has Dynamic RAM (DRAM). Identify one benefit of using DRAM instead of Static RAM (SRAM) in an embedded system. [1] (c) Give two differences between Erasable Programmable ROM (EPROM) and Electrically Erasable Programmable ROM (EEP"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 A student has a computer. (a) The computer is designed using the Von Neumann model for a computer system. Complete the table by describing the purpose of each of the given registers. Register Purpose Program Counter (PC) Memory Address Register (MAR) Memory Data Register (MDR) Index Register (IX) [4] (b) The student needs to connect the computer to a monit"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A program is written in a high-level language by a team of three programmers using an Integrated Development Environment (IDE). (a) Describe how the programmers can use the debugging features of a typical IDE during the development of the program. [4] (b) The programmers created a new program library whilst developing the program. Describe the benefits to "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A computer programmer is learning about the importance of acting ethically at work. (a) Explain the reasons why the computer programmer needs to act ethically towards colleagues and the public. Colleagues The public [4] (b) The programmer writes a program to be used in a business. The source code of the program can be modified by the business. The business"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A company uses a relational database to store data about its customers, employees and the individual repair jobs that customers have booked. (a) Explain the benefits of using a relational database instead of a file-based approach. [3] (b) The company decides which employees will work on each repair job. An employee can log into the database to access infor"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A student takes a photograph of a science experiment. (a) The photograph is saved as a bitmapped image. (i) Define the following bitmap terms. Colour depth File header [2] (ii) Explain why changing the image resolution will affect the image quality and file size. Image quality File size [2] (iii) Identify one lossless method of compressing an image. [1] (b"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 12,
+      "pageEnd": 15,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 The following table shows part of the instruction set for a processor. The processor has two registers, the Accumulator (ACC) and the Index Register (IX) . Instruction Explanation Opcode Operand LDM #n Immediate addressing. Load the number n to ACC LDD <address> Direct addressing. Load the contents of the location at the given address to ACC LDI <address> "
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 16,
+      "pageEnd": 16,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 A road bridge has a weight limit and a height limit for vehicles. For example, a vehicle must weigh less than 10 000 kg and must have a height of less than 3 m. The bridge has a warning system. If a vehicle is approaching the bridge and it exceeds one or both limits, a sign displays a warning telling the driver of the vehicle to stop. (a) The bridge warnin"
+    }
+  ]
+}
+[2026-07-13T02:02:49.738Z] parserVersion=0.4.0
+[2026-07-13T02:02:49.738Z] documentRole=question_paper
+[2026-07-13T02:02:49.738Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:02:50.004Z] stage.exitCode=0
+[2026-07-13T02:02:50.004Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json",
+  "runId": "9618-2024-ON-12-QP-RUN-3d754f83188e",
+  "status": "NEEDS_REVIEW",
+  "publishStatus": "BLOCKED",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 26,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 26,
+        "present": 26,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 1,
+  "p2": 0,
+  "issues": [
+    [
+      "P1",
+      "SUSPICIOUS_GLYPHS_REMAIN",
+      null
+    ]
+  ]
+}
+[2026-07-13T02:02:50.007Z] stagingId=9618-2024-ON-12-QP-RUN-3d754f83188e
+[2026-07-13T02:02:50.007Z] validationStatus=WARN
+[2026-07-13T02:02:50.007Z] publishStatus=BLOCKED
+[2026-07-13T02:02:50.007Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:02:50.007Z] canonicalPublishable=true
+[2026-07-13T02:02:50.007Z] issueCounts={"P0":0,"P1":1,"P2":0}
+[2026-07-13T02:02:50.007Z] endTime=2026-07-13T02:02:50.007Z
+[2026-07-13T02:02:50.007Z] status=PASS

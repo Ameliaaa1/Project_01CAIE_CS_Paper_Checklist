@@ -1,0 +1,265 @@
+[2026-07-14T16:59:17.281Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_32.pdf
+[2026-07-14T16:59:17.281Z] startTime=2026-07-14T16:59:17.281Z
+[2026-07-14T16:59:17.281Z] expectedRole=question_paper
+[2026-07-14T16:59:19.759Z] extract.exitCode=0
+[2026-07-14T16:59:19.759Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_32.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_32.pdf",
+  "pageCount": 16,
+  "questionCount": 11,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) Describe how packet switching is used to transmit messages across a network. [3] (b) State two benefits and two drawbacks of packet switching as a method of transmitting messages across a network. Benefit 1 Benefit 2 Drawback 1 Drawback 2 [4]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "2 (a) Describe serial file organisation as a method of storing data records in a file. [2] (b) State one example of a use for serial file organisation. [1]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) Describe the user‑defined data type record. [3] (b) A programmer defines a record, Order, to store the following data: account number • order number • order price • order date. • Write pseudocode statements to define this record. [4]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Numbers are stored in a computer using binary floating‑point representation with: 12 bits for the mantissa • 4 bits for the exponent • two’s complement form for both the mantissa and the exponent. • (a) Calculate the denary value of the given normalised binary floating‑point number. Show your working. Mantissa Exponent 1 0 0 0 1 1 1 0 1 1 1 0 1 1 1 0 Worki"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 (a) Name and describe two protocols used by the Application Layer of the TCP/IP protocol suite. Protocol 1 Description Protocol 2 Description [4] (b) Explain the purpose and function of the Application Layer in the TCP/IP protocol suite. [3]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 The truth table for a logic circuit is shown. INPUT OUTPUT A B C D X 0 0 0 0 0 0 0 0 1 1 0 0 1 0 1 0 0 1 1 0 0 1 0 0 0 0 1 0 1 1 0 1 1 0 1 0 1 1 1 0 1 0 0 0 0 1 0 0 1 1 1 0 1 0 1 1 0 1 1 0 1 1 0 0 0 1 1 0 1 1 1 1 1 0 1 1 1 1 1 0 (a) Write the Boolean logic expression that corresponds to the given truth table as the sum‑of‑products. X = [3] (b) Complete the"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Several syntax diagrams are shown. odd even 1 0 3 2 5 4 7 6 9 8 symbol letter % A £ B # C @ D $ E number odd odd even (a) State why each number is invalid for the given syntax diagrams. 21 Reason 123 Reason [2] (b) Complete the Backus‑Naur Form (BNF) for the given syntax diagrams. <symbol> ::= <number> ::= [2] (c) A new syntax rule, code, is required. It m"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "8 Complex Instruction Set Computer (CISC) is a type of processor. Identify four features of a CISC processor. 1 2 3 4 [4]"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 (a) The kernel is the central component of an Operating System (OS). Outline how the kernel of an OS acts as an interrupt handler. [2] (b) (i) State what is meant by the term multi‑tasking in an Operating System. [1] (ii) Describe how multi‑tasking is implemented in an Operating System. [2]"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 Objects and classes form the basic structure of Object‑Oriented Programming (OOP). (a) Outline the structure of a class. [3] (b) Give three differences between an object and a class. 1 2 3 [3]"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "11 This binary tree shows an ordered list of integers. 25 4 36 1 16 64 9 49 (a) A linked list of nodes is used to store the data. Each node consists of a left pointer, the data and a right pointer. −1 is used to represent a null pointer. Complete this linked list to represent the given binary tree organisation. RootPtr LeftPtr Data RightPtr 25 4 –1 1 –1 [4] "
+    }
+  ]
+}
+[2026-07-14T16:59:19.762Z] parserVersion=0.4.0
+[2026-07-14T16:59:19.762Z] documentRole=question_paper
+[2026-07-14T16:59:19.762Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:59:20.143Z] stage.exitCode=0
+[2026-07-14T16:59:20.143Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_32.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_32.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_32.staging.json",
+  "runId": "9618-2024-ON-32-QP-RUN-94438657867c",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_32.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 11,
+      "leafQuestionCount": 27,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 24,
+        "present": 24,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-ON-32-Q6-D",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-ON-32-Q11-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-ON-32-Q11-C",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:59:20.146Z] stagingId=9618-2024-ON-32-QP-RUN-94438657867c
+[2026-07-14T16:59:20.146Z] validationStatus=PASS
+[2026-07-14T16:59:20.146Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:59:20.146Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:59:20.146Z] canonicalPublishable=true
+[2026-07-14T16:59:20.146Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:59:20.146Z] endTime=2026-07-14T16:59:20.146Z
+[2026-07-14T16:59:20.146Z] status=PASS

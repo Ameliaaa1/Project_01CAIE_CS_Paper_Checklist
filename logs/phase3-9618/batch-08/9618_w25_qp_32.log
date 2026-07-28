@@ -1,0 +1,265 @@
+[2026-07-14T17:03:26.532Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_32.pdf
+[2026-07-14T17:03:26.532Z] startTime=2026-07-14T17:03:26.532Z
+[2026-07-14T17:03:26.532Z] expectedRole=question_paper
+[2026-07-14T17:03:29.256Z] extract.exitCode=0
+[2026-07-14T17:03:29.256Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_32.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_32.pdf",
+  "pageCount": 16,
+  "questionCount": 12,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 The composite data type, Car, is defined in pseudocode as: TYPE Car DECLARE RegNumber : STRING DECLARE Make : STRING DECLARE Model : STRING DECLARE BodyStyle : STRING DECLARE Colour : STRING DECLARE IntoStock : DATE DECLARE Price : REAL ENDTYPE (a) (i) Write the pseudocode statement to set up a variable for one record of the composite data type, Car. [1] ("
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Numbers are stored in a computer system using binary floating-point representation with: 10 bits for the mantissa • 6 bits for the exponent • two’s complement form for both the mantissa and the exponent. • (a) Calculate the denary value of the given normalised binary floating-point number. Show your working. Mantissa Exponent 0 1 1 1 1 0 0 1 0 1 0 0 1 0 1 "
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 (a) HTTP and IMAP are examples of protocols used in the Application Layer of the TCP/IP protocol suite. State the purpose of the HTTP and IMAP protocols. HTTP IMAP [2] (b) Describe how files are shared using the BitTorrent protocol. [4]"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) Identify one benefit of circuit switching and one benefit of packet switching. Circuit switching Packet switching [2] (b) Identify two differences between circuit switching and packet switching. 1 2 [2] DFD"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 (a) Describe how interrupt handling is used in low-level scheduling. [2] (b) In process management, a process can be in one of three process states: running, ready or blocked. Complete the table to identify one reason why a process could be in each of the three states. Process state Reason running ready blocked [3] DFD"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 (a) The diagram shows a logic circuit. A Q S Z P B R C Complete the truth table for the given logic circuit. Show your working. A B C P Q R S Z 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [3] DFD (b) (i) Complete the Karnaugh map (K-map) for the Boolean expression: A.B.C + A.B.C + A.B.C + A.B.C BC A 00 01 11 10 0 1 [2] (ii) Draw loop(s) around appropri"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 (a) Asymmetric encryption is a type of cryptography. Identify one other type of cryptography. [1] (b) An organisation holds two asymmetric encryption keys, which they intend to use to receive secure transmissions. Explain how the organisation makes use of the two keys to receive a secure transmission. [4] DFD"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 (a) State the purpose of the optimisation stage in the compilation of a program. [1] (b) Convert this Reverse Polish Notation (RPN) back to its original infix form: a b - c + c a - * d / [3] (c) The RPN expression: c a / b d – * b + is to be evaluated, where: a = 3, b = 16, c = 9 and d = 6. Show the changing contents of the stack as the RPN expression is e"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "9 (a) Deep Learning is a form of Machine Learning. (i) State one example where Deep Learning is used. [1] (ii) Identify how Deep Learning can be made more effective. [1] (b) Describe the back propagation of errors method in Machine Learning. [4]"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 An exception is an error that may cause a program to halt unexpectedly. (a) Describe how program termination due to an exception can be avoided. [2] (b) Identify two possible causes of exceptions. 1 2 [2] DFD"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 10,
+      "pageEnd": 12,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 The table shows assembly language instructions for a processor that has one register, the Accumulator (ACC). Instruction Label Opcode Operand Explanation LDM #n Load the number n to the ACC Load the contents of the location at the given LDD <address> address to ACC The address to be used is at the given address. LDI <address> Load the contents of this sec"
+    },
+    {
+      "questionNumber": "12",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "12 (a) A stack has been implemented using pseudocode to store a maximum of 100 string items using the global variables in the following table: Initialisation Identifier Data type Description value Base INTEGER 0 pointer for the bottom of the stack Top INTEGER -1 pointer for the top of the stack StackArray STRING [0:99] 1D array to implement the stack Max INT"
+    }
+  ]
+}
+[2026-07-14T17:03:29.259Z] parserVersion=0.4.0
+[2026-07-14T17:03:29.259Z] documentRole=question_paper
+[2026-07-14T17:03:29.259Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:03:29.706Z] stage.exitCode=0
+[2026-07-14T17:03:29.706Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_32.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_32.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_32.staging.json",
+  "runId": "9618-2025-ON-32-QP-RUN-32fa93ce1275",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_32.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 12,
+      "leafQuestionCount": 30,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 29,
+        "present": 29,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-ON-32-Q1-A-II",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:03:29.709Z] stagingId=9618-2025-ON-32-QP-RUN-32fa93ce1275
+[2026-07-14T17:03:29.709Z] validationStatus=PASS
+[2026-07-14T17:03:29.709Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:03:29.709Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:03:29.709Z] canonicalPublishable=true
+[2026-07-14T17:03:29.709Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:03:29.709Z] endTime=2026-07-14T17:03:29.709Z
+[2026-07-14T17:03:29.709Z] status=PASS

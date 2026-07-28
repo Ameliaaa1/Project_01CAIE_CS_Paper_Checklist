@@ -1,0 +1,272 @@
+[2026-07-14T17:03:32.930Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_33.pdf
+[2026-07-14T17:03:32.930Z] startTime=2026-07-14T17:03:32.930Z
+[2026-07-14T17:03:32.930Z] expectedRole=question_paper
+[2026-07-14T17:03:35.192Z] extract.exitCode=0
+[2026-07-14T17:03:35.192Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_33.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 Oct Nov/9618_w25_qp_33.pdf",
+  "pageCount": 12,
+  "questionCount": 13,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (a) An enumerated data type, Spectrum, is required to hold the names of colours. (i) Write the pseudocode statement for the type declaration of Spectrum to hold the names of the colours available: Red, Orange, Yellow, Green, Blue, Indigo, Violet. [2] (ii) Identify two characteristics of the list of values given in an enumerated data type declaration. 1 2 ["
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Numbers are stored in a computer system using binary floating‑point representation with: 12 bits for the mantissa • 4 bits for the exponent • two’s complement form for both the mantissa and the exponent • 2 bytes in total. • (a) Outline the effect of changing the number of bits used to store the mantissa to 10 bits, in this system. [3] (b) Describe one exa"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Describe how packet switching is used to pass messages across a network. Do not include checking for completeness and resending packets in your answer. [4] DFD"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Identify and describe three protocols that are used in the Application Layer of the TCP/IP protocol suite. Protocol 1 Description Protocol 2 Description Protocol 3 Description [6]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "5 (a) State the purpose of multi‑tasking. [1] (b) Explain how an operating system ensures that multi‑tasking operates efficiently. [3] DFD"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 (a) The Karnaugh map (K‑map) represents a logic circuit with four inputs. AB CD 00 01 11 10 00 0 0 0 0 01 1 1 1 0 11 0 1 1 1 10 0 0 1 1 (i) Draw loop(s) around appropriate group(s) in the K‑map to produce an optimal sum‑of‑products. [3] (ii) Write the Boolean expression from your answer to part a(i) as a simplified sum‑of‑products. Do not carry out any fur"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 (a) Outline the process of optimisation during the compilation of a program. [2] (b) Write the Reverse Polish Notation (RPN) for the given infix expression: ((6 + 12) / (16 – 10)) * 18 [3] (c) The RPN expression c a – b d + * b c + / is to be evaluated, where: a = 4, b = 12, c = 24 and d = 6. Show the changing contents of the stack as the RPN expression is"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Calculate the shortest distance between the Start node and each of the nodes in the graph using Dijkstra’s algorithm. Show your working on the graph or in the . Write your answers in the table provided. V 4 9 T X 3 5 W 3 6 10 Y 22 8 Start Z Working Answers: T V W X Y Z [5] DFD"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 A company requires a digital certificate to ensure the authenticity of its online communications. Outline the process followed to acquire a digital certificate. [4]"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 A stack, StackArray, is to be implemented using pseudocode, to store a maximum of 100 string items in an appropriate array. Declarations are required so that the stack has a beginning, an end and a maximum size. An array is also required to store the data. (a) Write pseudocode to declare the variables, constant and array required to implement the stack. ["
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "11 Describe when the use of recursion would be beneficial and give an example. Description Example [3]"
+    },
+    {
+      "questionNumber": "12",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "12 An exception can occur when running a program. (a) Explain what is meant by an exception. [3] (b) Identify one example of an exception and give one reason why the exception may cause a problem. Example Reason [2] DFD"
+    },
+    {
+      "questionNumber": "13",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "13 The table shows assembly language instructions for a processor that has one register, the Accumulator (ACC). Instruction Label Opcode Operand Explanation LDM #n Load the number n to the ACC Load the contents of the location at the given LDD <address> address to the ACC The address to be used is at the given address. LDI <address> Load the contents of this"
+    }
+  ]
+}
+[2026-07-14T17:03:35.196Z] parserVersion=0.4.0
+[2026-07-14T17:03:35.196Z] documentRole=question_paper
+[2026-07-14T17:03:35.196Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:03:35.613Z] stage.exitCode=0
+[2026-07-14T17:03:35.613Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w25_qp_33.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_33.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_33.staging.json",
+  "runId": "9618-2025-ON-33-QP-RUN-d461e7c99847",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w25_qp_33.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 13,
+      "leafQuestionCount": 23,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 23,
+        "present": 23,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:03:35.616Z] stagingId=9618-2025-ON-33-QP-RUN-d461e7c99847
+[2026-07-14T17:03:35.616Z] validationStatus=PASS
+[2026-07-14T17:03:35.616Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:03:35.616Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:03:35.616Z] canonicalPublishable=true
+[2026-07-14T17:03:35.616Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:03:35.616Z] endTime=2026-07-14T17:03:35.616Z
+[2026-07-14T17:03:35.616Z] status=PASS

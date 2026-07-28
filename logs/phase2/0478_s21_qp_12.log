@@ -1,0 +1,192 @@
+[2026-07-13T02:04:36.189Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_12.pdf
+[2026-07-13T02:04:36.189Z] startTime=2026-07-13T02:04:36.189Z
+[2026-07-13T02:04:36.189Z] expectedRole=question_paper
+[2026-07-13T02:04:37.942Z] extract.exitCode=0
+[2026-07-13T02:04:37.942Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s21_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2021-May-June/0478_s21_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Complete the table to show the hexadecimal and 8-bit binary values of the given denary (a) values. Denary Hexadecimal 8-bit binary 49 123 200 [6] Give benefits, to users, of converting binary values to hexadecimal. (b) two Benefit 1 Benefit 2 [2] Hexadecimal is used to represent Hypertext Markup Language (HTML) colour codes in (c) computer science. Identif"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 statements are given about data storage. (a) Six 3 Tick ( ) to show if the statement applies to magnetic, solid state or optical storage. Some statements may apply to more than one type of storage. Magnetic Solid state Optical Statement 3 3 3 ( ) ( ) ( ) no moving parts are used to store data pits and lands are used to store data data is stored on platters"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 = ((((NOT AND ) OR ) AND ) NOR ( OR )) X A B C B B C Draw a logic circuit to represent the given logic statement. (a) Do attempt to simplify the statement. All logic gates must have a maximum of inputs. not two A B X C [6] Consider the completed truth table for the given logic statement. (b) Row A B C X number 1 0 0 0 1 2 0 0 1 1 3 0 1 0 1 4 0 1 1 0 5 1 0 "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 12,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 statements are given about Internet security risks. (a) Six 3 Tick ( ) to show whether the statement applies to virus, spyware or denial of service. Some statements may apply to more than one Internet security risk. Denial of Statement Virus Spyware service 3 3 3 ( ) ( ) ( ) captures all data entered using a keyboard can be installed onto a web server prev"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 movement is detected. The light will stay on for 1 minute before switching off. Sensors and a microprocessor are used to control the security light system. Identify sensors that would be used in the security light system. (a) two Sensor 1 Sensor 2 [2] Describe how the sensors and the microprocessor control the security light system. (b) [8] Cookies can be "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A cookie could be used to automatically enter a user’s payment details when the user makes (a) a purchase online. Describe how cookies can be used to store and automatically enter a user’s payment details. [3] Explain why a user may be concerned about their personal data and online browsing habits (b) being stored in cookies. [4] Jolene uses HTML to create"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Give example of HTML structure. (a) (i) one [1] Give examples of HTML presentation. (ii) two 1 2 [2] Explain why Jolene separates the HTML into structure and presentation. (b) [2] A keyboard is a type of input device that can be used to enter data into a computer."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 Complete the paragraph that describes one method of operation for a keyboard, using the most appropriate terms from the given list. all terms in the list need to be used. Not Binary • Breaks • Calculated • Character • Circuit • Current • Information • Network • Press • Processor • Signal • Switch • A keyboard has a key matrix underneath the keys. When a ke"
+    }
+  ]
+}
+[2026-07-13T02:04:37.943Z] parserVersion=0.4.0
+[2026-07-13T02:04:37.943Z] documentRole=question_paper
+[2026-07-13T02:04:37.943Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:38.267Z] stage.exitCode=0
+[2026-07-13T02:04:38.267Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s21_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_12.staging.json",
+  "runId": "0478-2021-MJ-12-QP-RUN-bd25cef0646c",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s21_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 21,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 21,
+        "present": 21,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:04:38.269Z] stagingId=0478-2021-MJ-12-QP-RUN-bd25cef0646c
+[2026-07-13T02:04:38.269Z] validationStatus=PASS
+[2026-07-13T02:04:38.269Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:04:38.269Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:38.269Z] canonicalPublishable=true
+[2026-07-13T02:04:38.269Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:04:38.269Z] endTime=2026-07-13T02:04:38.269Z
+[2026-07-13T02:04:38.269Z] status=PASS

@@ -1,0 +1,192 @@
+[2026-07-13T02:03:34.209Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-March/0478_m20_qp_12.pdf
+[2026-07-13T02:03:34.209Z] startTime=2026-07-13T02:03:34.209Z
+[2026-07-13T02:03:34.209Z] expectedRole=question_paper
+[2026-07-13T02:03:35.585Z] extract.exitCode=0
+[2026-07-13T02:03:35.585Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m20_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-March/0478_m20_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 in the fetch-execute cycle. Draw a line to connect each component to its correct description. (a) Component Description Increments to point to the address of Control Bus the next instruction to be fetched Holds the result of a calculation. It is Program Counter (PC) located within the Arithmetic Logic Unit (ALU) Memory Data Register Carries signals to sync"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 4,
+      "marks": 16,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Different types and methods of transmission can be used to send data across the network. (a) descriptions about data transmission are given. Three 3 3 Tick ( ) and tick ( ) for each description. one Method one Type Method Type Serial Parallel Simplex Half- Duplex Description 3 3 3 3 ( ) ( ) ( ) duplex ( ) 3 ( ) Data is sent down a single wire in a single d"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "marks": 15,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 Priya has a choice between an internal Hard Disk Drive (HDD) and an internal Solid State (a) Drive (SSD) to store data. Give similarity between an HDD and an SSD. (i) one [1] Explain differences between an HDD and an SSD. (ii) three 1 2 3 [3] Priya needs to transfer files between the school and her home computer. (b) Identify off-line storage device she co"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 3 Tick ( ) to show which statements apply to each translator. Each statement may apply to more than one type of translator. Assembler Compiler Interpreter Statement 3 3 3 ( ) ( ) ( ) Translates low-level language to machine code Translates high-level language to machine code Produces error messages Translates high-level language one line at a time Produces"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 6,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 system using binary. Explain why binary is used to store data in a computer system. (a) [2] Complete the table to show how the denary value would be stored as binary in an 8-bit (b) register. Denary value 8-bit register 129 56 [2] Complete the table to show how the hexadecimal value would be stored as binary in a (c) 3A9 12-bit register. [3] Identify uses "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 8,
+      "pageEnd": 10,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 (a) Do attempt to simplify the logic circuit. not A B X C A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 1 [4] A water control system uses a switch and two pressure sensors. (b) The outputs of the switch and sensors are shown in the table. Sensor or Switch Output of 1 Output of 0 Switch On Off ( ) S1 Pressure Sensor >= 3 < 3 ( ) P1 Pressure Sensor >"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 enters the room and the natural light level in the room is 10 or less. Explain how sensors and a microprocessor are used to control the electric lights in the room. [7] A student website provides research support and software downloads."
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "8 Students use a browser to access the web pages. Explain the role of a browser in this process. (a) [5] The website owners are worried about a denial of service (DoS) attack. (b) Explain the term denial of service attack. [3] The website owners are also concerned about the ethical issues of copyright and plagiarism. (c) State what is meant by the term copyr"
+    }
+  ]
+}
+[2026-07-13T02:03:35.586Z] parserVersion=0.4.0
+[2026-07-13T02:03:35.586Z] documentRole=question_paper
+[2026-07-13T02:03:35.586Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:35.844Z] stage.exitCode=0
+[2026-07-13T02:03:35.844Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m20_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m20_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m20_qp_12.staging.json",
+  "runId": "0478-2020-FM-12-QP-RUN-d328fe47b053",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m20_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 28,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 28,
+        "present": 28,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:35.846Z] stagingId=0478-2020-FM-12-QP-RUN-d328fe47b053
+[2026-07-13T02:03:35.846Z] validationStatus=PASS
+[2026-07-13T02:03:35.846Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:35.846Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:35.846Z] canonicalPublishable=true
+[2026-07-13T02:03:35.846Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:35.846Z] endTime=2026-07-13T02:03:35.846Z
+[2026-07-13T02:03:35.846Z] status=PASS

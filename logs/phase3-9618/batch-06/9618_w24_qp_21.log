@@ -1,0 +1,247 @@
+[2026-07-14T16:58:52.313Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf
+[2026-07-14T16:58:52.313Z] startTime=2026-07-14T16:58:52.313Z
+[2026-07-14T16:58:52.313Z] expectedRole=question_paper
+[2026-07-14T16:58:55.229Z] extract.exitCode=0
+[2026-07-14T16:58:55.229Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_21.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_21.pdf",
+  "pageCount": 20,
+  "questionCount": 8,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A program will calculate the tax payable based on the cost of an item. Calculations will occur at many places in the program and these involve the use of one of three tax rates. Tax rate values represent a percentage. For example, a tax rate value of 5.23 represents 5.23%. In this case, the tax payable on an item costing $100 would be $5.23. Tax rate value"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A program uses three global integer variables HH, MM and SS to represent the current time in hours, minutes and seconds using the 24-hour clock notation. Midnight would be represented as 00:00:00 (HH:MM:SS). If the variables HH, MM and SS contained the values 16, 30 and 10 respectively, then the time would be 16:30:10 or just after 4.30 in the afternoon. A"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 An algorithm will output the last three lines from a text file Result.txt The lines need to be output in the same order as they appear in the file. Assume: Three variables LineX, LineY and LineZ will store the three lines. These are of type string • and all three variables have been initialised to an empty string. The file exists and contains at least thre"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 A program includes the following assignment statement: Result STR_TO_NUM(x) / STR_TO_NUM(y) ← When the program evaluates the expression in the statement, it performs a calculation. Variable Result is of type real and variables x and y are of type string. Two checks are required before the calculation is performed: 1. The two strings represent valid numeric"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A software developer follows a program development life cycle. The life cycle divides the development process into various stages. (a) The following table lists some development activities. Complete the table by writing the name of the life cycle stage for each activity. Activity Name of life cycle stage The walkthrough method is used. An algorithm is impl"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A factory produces food items. The items must be used within a certain number of days after their production date. The number of days is known as the shelf life. It is different for each type of item but is always a whole number in the range 1 to 21 (inclusive). The latest date that an item can be used is called the ‘use-by’ date. A program is needed to pr"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 14,
+      "pageEnd": 14,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 A program contains six modules with headers as follows: Pseudocode module header PROCEDURE Connect() FUNCTION Activate(H1 : STRING, Code : INTEGER) RETURNS BOOLEAN FUNCTION Sync(T1 : BOOLEAN, S2 : REAL) RETURNS INTEGER PROCEDURE Initialise(BYREF ID : INTEGER, BYVAL CC : INTEGER) FUNCTION Reset(RA : STRING) RETURNS INTEGER FUNCTION Enable(SA : INTEGER) RETU"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 16,
+      "pageEnd": 19,
+      "marks": 30,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.35,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "8 An exam paper has a maximum of 75 marks. One of five pass grades (A to E) is assigned, depending on the mark obtained. The lowest mark for a given grade is known as the grade boundary. For example, if the grade boundary for an A grade is 65 marks, then any candidate who achieves a mark of 65 or above will be awarded an A. A grade of U is awarded for marks "
+    }
+  ]
+}
+[2026-07-14T16:58:55.233Z] parserVersion=0.4.0
+[2026-07-14T16:58:55.233Z] documentRole=question_paper
+[2026-07-14T16:58:55.233Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:58:55.644Z] stage.exitCode=0
+[2026-07-14T16:58:55.644Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w24_qp_21.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_21.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_21.staging.json",
+  "runId": "9618-2024-ON-21-QP-RUN-75d0f339acc8",
+  "status": "NEEDS_REVIEW",
+  "publishStatus": "BLOCKED",
+  "canonicalCompleteness": {
+    "status": "FAIL",
+    "publishable": false,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w24_qp_21.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "FAIL",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 8,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 17,
+        "present": 17,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-ON-21-Q1-B-II",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-ON-21-Q3-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-ON-21-Q3-C",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-ON-21-Q7-B",
+        "pageNumber": null
+      },
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2024-ON-21-Q8-C",
+        "pageNumber": null
+      },
+      {
+        "severity": "P0",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Existing parent mark validation is not valid.",
+        "questionId": "9618-2024-ON-21-Q8",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 1,
+  "p1": 0,
+  "p2": 0,
+  "issues": [
+    [
+      "P0",
+      "MARK_SUM_MISMATCH",
+      "9618-2024-ON-21-Q8"
+    ]
+  ]
+}
+[2026-07-14T16:58:55.650Z] stagingId=9618-2024-ON-21-QP-RUN-75d0f339acc8
+[2026-07-14T16:58:55.650Z] validationStatus=FAIL
+[2026-07-14T16:58:55.650Z] publishStatus=BLOCKED
+[2026-07-14T16:58:55.650Z] canonicalCompletenessStatus=FAIL
+[2026-07-14T16:58:55.650Z] canonicalPublishable=false
+[2026-07-14T16:58:55.650Z] issueCounts={"P0":1,"P1":0,"P2":0}
+[2026-07-14T16:58:55.650Z] endTime=2026-07-14T16:58:55.650Z
+[2026-07-14T16:58:55.650Z] status=FAIL

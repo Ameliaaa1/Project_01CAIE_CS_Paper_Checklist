@@ -1,0 +1,208 @@
+[2026-07-15T03:53:48.519Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_13.pdf
+[2026-07-15T03:53:48.519Z] startTime=2026-07-15T03:53:48.519Z
+[2026-07-15T03:53:48.519Z] expectedRole=question_paper
+[2026-07-15T03:53:49.886Z] extract.exitCode=0
+[2026-07-15T03:53:49.886Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2024-May-June/0478_s24_qp_13.pdf",
+  "pageCount": 12,
+  "questionCount": 9,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 State how many bits there are in a byte. (a) [1] State how many kibibytes (KiB) there are in 2 mebibytes (MiB). (b) [1] Identify the unit of data that is equal to 4 bits. (c) [1] × An image has a 16-bit colour depth and a resolution of 1000 1750 pixels."
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 State what is meant by a 16-bit colour depth. (a) [1] × The resolution of the image is changed to 750 1500 pixels. (b) Give the effect this will have on the file size of the image. [1] A programmer is creating a computer game. One character is moving correctly."
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 not The programmer needs to debug the program. To do this they need to look at addresses that are locations in memory. The addresses are displayed as hexadecimal numbers. One address is A2F. (a) Convert the address to binary. (i) [3] Convert the address to denary. (ii) [1] The binary number stored for another address is 000110011011. (b) Convert the binary"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Complete the table by writing the correct type of secondary storage for each statement. type of secondary storage statement Pits and lands are created on a reflective surface. NAND or NOR technology is used. Platters are spun that are divided into tracks and sectors. Electromagnets are used to read and write data. Transistors are used as control gates and "
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 2,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 3 Tick ( ) box to show which statement is correct about RAM. (a) one It is non-volatile storage. A It stores the bootloader. B It stores data that is currently in use. C It is directly accessible by the central processing unit (CPU). D not [1] ROM is a type of primary storage. (b) State the characteristic of ROM that makes it a type of primary storage. [1]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 5,
+      "pageEnd": 7,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Circle other input devices. (a) three touch screen hard disk drive (HDD) headphones speaker microphone actuator universal serial bus (USB) drive printer keyboard [3] Sensors can be used in an automated system. (b) Give benefits of using sensors in this type of system. two 1 2 [2] The table contains different types of sensors and a use for each. (c) Complet"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 7,
+      "pageEnd": 9,
+      "marks": 18,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Data is transmitted across the network using serial half-duplex data transmission. Draw and annotate a diagram to show how the data is transmitted using serial half-duplex (a) data transmission. [4] Give benefits of the company using serial half-duplex data transmission for this purpose. (b) two 1 2 [2] Give drawback of the company using serial half-duplex"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 11,
+      "marks": 13,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Describe the role of the CPU in the computer. (a) [2] The CPU contains registers. (b) State the purpose of a register. (i) [1] Give registers that are built into the CPU. (ii) three 1 2 3 [3] One component in the CPU is the arithmetic logic unit (ALU). (c) Describe the purpose of the ALU. [3] The student wants to replace the CPU to increase the performance"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "9 generated to notify the user that the ink cartridge is empty. Complete the paragraph about the use of an interrupt in this process. (a) Use the terms from the list. Some of the terms in the list will be used. You should only use a term once. not binary clock computer data error fetch–decode–execute cycle hexadecimal higher interrupt queue interrupt service"
+    }
+  ]
+}
+[2026-07-15T03:53:49.887Z] parserVersion=0.4.0
+[2026-07-15T03:53:49.887Z] documentRole=question_paper
+[2026-07-15T03:53:49.887Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:53:50.154Z] stage.exitCode=0
+[2026-07-15T03:53:50.154Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s24_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_13.staging.json",
+  "runId": "0478-2024-MJ-13-QP-RUN-e5eb31603bf8",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s24_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 9,
+      "leafQuestionCount": 31,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 31,
+        "present": 31,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:53:50.156Z] stagingId=0478-2024-MJ-13-QP-RUN-e5eb31603bf8
+[2026-07-15T03:53:50.156Z] validationStatus=PASS
+[2026-07-15T03:53:50.156Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:53:50.156Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:53:50.156Z] canonicalPublishable=true
+[2026-07-15T03:53:50.156Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:53:50.156Z] endTime=2026-07-15T03:53:50.156Z
+[2026-07-15T03:53:50.156Z] status=PASS

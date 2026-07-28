@@ -1,0 +1,176 @@
+[2026-07-15T03:54:22.738Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-March/0478_m25_qp_12.pdf
+[2026-07-15T03:54:22.738Z] startTime=2026-07-15T03:54:22.738Z
+[2026-07-15T03:54:22.738Z] expectedRole=question_paper
+[2026-07-15T03:54:24.374Z] extract.exitCode=0
+[2026-07-15T03:54:24.374Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m25_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-March/0478_m25_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 7,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 11,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "1 (a) Complete the sentences about number systems. Use the items from the list. Some of the items in the list will not be used. You should only use an item once. A B C D E F G H W X Y Z 0 1 2 4 8 10 16 127 128 255 256 The binary number system is base . The smallest denary number that can be represented as an 8-bit binary number is . The largest denary number"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 17,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 An artist creates an image on a computer. (a) State what is meant by the colour depth of an image. [1] (b) Describe the relationship between the resolution of the image and the file size of the image. [2] (c) The artist compresses the image file before uploading it to their website. Users can download the image file from the website to print as a poster. T"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 A computer has a central processing unit (CPU), memory and secondary storage. (a) The computer has a Von Neumann architecture. Circle three registers that are found in the Von Neumann architecture. accumulator arithmetic register binary counter binary register control register current data register current instruction register data counter instruction coun"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 An automated teller machine (ATM) is a device where a person inserts their bank card and can request to withdraw money. The ATM also allows the person to check how much money they have in their bank account. (a) A sensor is used to detect when a person stands within 1 metre of the ATM. When a person is detected, a welcome message is displayed on the screen"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 14,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A computer is connected to a network. (a) The computer has a network interface card (NIC) that has a media access control (MAC) address. (i) One purpose of the NIC is to provide the computer with a MAC address. Describe the other purposes of the NIC. [2] (ii) Identify three characteristics of a MAC address. 1 2 3 [3] (b) The network allocates an internet p"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 A search engine uses artificial intelligence (AI) to identify the most relevant web pages for the user. (a) One characteristic of AI is the ability to learn. Identify three other characteristics of AI. 1 2 3 [3] (b) The search engine uses machine learning. Explain how machine learning is used by the search engine. [3]"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "7 Programs can be written in a high-level language or a low-level language. (a) Machine code is one type of low-level language. Identify one other type of low-level language. Identify the translator that is needed for the type of low-level language you have identified. Type of low-level language Translator [2] (b) A high-level language can be translated into"
+    }
+  ]
+}
+[2026-07-15T03:54:24.376Z] parserVersion=0.4.0
+[2026-07-15T03:54:24.376Z] documentRole=question_paper
+[2026-07-15T03:54:24.376Z] validationProfile=QUESTION_PAPER
+[2026-07-15T03:54:24.696Z] stage.exitCode=0
+[2026-07-15T03:54:24.696Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_m25_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m25_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m25_qp_12.staging.json",
+  "runId": "0478-2025-FM-12-QP-RUN-6ea658aca609",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_m25_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 7,
+      "leafQuestionCount": 30,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 30,
+        "present": 30,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-15T03:54:24.698Z] stagingId=0478-2025-FM-12-QP-RUN-6ea658aca609
+[2026-07-15T03:54:24.698Z] validationStatus=PASS
+[2026-07-15T03:54:24.698Z] publishStatus=READY_TO_PUBLISH
+[2026-07-15T03:54:24.698Z] canonicalCompletenessStatus=PASS
+[2026-07-15T03:54:24.698Z] canonicalPublishable=true
+[2026-07-15T03:54:24.698Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-15T03:54:24.698Z] endTime=2026-07-15T03:54:24.698Z
+[2026-07-15T03:54:24.698Z] status=PASS

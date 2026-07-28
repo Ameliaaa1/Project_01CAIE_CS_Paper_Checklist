@@ -1,0 +1,35 @@
+{
+  "generatedFor": "Phase-7-C-D",
+  "status": "PASS",
+  "title": "Response Area Generalization",
+  "checks": {
+    "explicitAnswerLinePreferred": true,
+    "choiceClassified": true,
+    "tableClassified": true,
+    "visualClassified": true,
+    "structuredClassified": true,
+    "textFallbackClassified": true,
+    "requiredLayoutsClassified": true
+  },
+  "diagnostics": {
+    "title": "Response Area Generalization",
+    "status": "PASS",
+    "checks": {
+      "explicitAnswerLinePreferred": true,
+      "choiceClassified": true,
+      "tableClassified": true,
+      "visualClassified": true,
+      "structuredClassified": true,
+      "textFallbackClassified": true,
+      "requiredLayoutsClassified": true
+    },
+    "layouts": {
+      "answerLine": "answer_line",
+      "choice": "choice_area",
+      "table": "structured_table",
+      "visual": "visual_response_area",
+      "structured": "structured_response_area",
+      "text": "text_response_area"
+    }
+  }
+}

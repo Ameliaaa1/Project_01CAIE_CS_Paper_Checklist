@@ -1,0 +1,79 @@
+{
+  "solution": "PR-032_Mark_Sum_Validation_Investigation",
+  "targetPdf": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_22.pdf",
+  "targetQuestionId": "0478-2023-MJ-22-Q7",
+  "rootCause": {
+    "case": "A_MARK_EXTRACTION_ERROR",
+    "description": "The pseudocode array reference Number[5] was classified as a five-mark label.",
+    "falseMarkToken": "[5]",
+    "sourceExpression": "Number[5]",
+    "sourcePage": 6,
+    "aggregationLogicCorrect": true,
+    "validationRuleCorrect": true
+  },
+  "pdfEvidence": {
+    "question": "Q7",
+    "displayedMarkLabels": [
+      {"question": "Q7(a)", "mark": 3, "sourcePage": 6},
+      {"question": "Q7(b)", "mark": 3, "sourcePage": 6},
+      {"question": "Q7(c)", "mark": 4, "sourcePage": 7}
+    ],
+    "displayedTotalMarks": 10,
+    "nextQuestion": {"question": "Q8", "mark": 4, "sourcePage": 7}
+  },
+  "before": {
+    "q7DeclaredMarks": 15,
+    "q7LeafSum": 10,
+    "paperCalculatedTotalMarks": 80,
+    "markValidationStatus": "FAIL",
+    "issueCodes": ["MARK_SUM_MISMATCH"],
+    "component22Status": "BLOCKED"
+  },
+  "fix": {
+    "description": "Recognize Number[n] as an array index using the existing pseudocode identifier classification rule.",
+    "questionSplitChanged": false,
+    "stableIdsChanged": false,
+    "responseAreaPipelineChanged": false,
+    "validationDisabled": false,
+    "productionExpansionLogicChanged": false
+  },
+  "after": {
+    "q7DeclaredMarks": 10,
+    "q7LeafMarks": [3, 3, 4],
+    "q7LeafSum": 10,
+    "q7Mismatch": false,
+    "q8Marks": 4,
+    "expectedTotalMarks": 75,
+    "calculatedTotalMarks": 75,
+    "markValidationStatus": "PASS",
+    "stagingValidation": "PASS",
+    "canonicalCompleteness": "PASS",
+    "publishable": true,
+    "responseAreaCoverage": {"required": 21, "present": 21, "ratio": 1},
+    "component22Status": "ELIGIBLE"
+  },
+  "productionExpansion": {
+    "eligible": 5,
+    "alreadyPublished": 1,
+    "blocked": 0,
+    "readyToExecute": true,
+    "productionWrite": false
+  },
+  "regression": {
+    "phase1": {"success": 20, "total": 20, "failures": 0},
+    "phase2": {"success": 120, "total": 120, "failures": 0},
+    "pr030ResponseArea": "PASS",
+    "pr031GlyphClassification": "PASS",
+    "productionPilot": "PASS",
+    "targetedTests": "PASS",
+    "fullNpmTest": "PASS",
+    "prismaValidate": "PASS"
+  },
+  "artifacts": {
+    "rawPageSpans": "debug/pr032-mark-sum/page-007-spans.json",
+    "sample": "output/ingestion-samples/0478_s23_qp_22.sample.json",
+    "staging": "output/phase2/staging/0478_s23_qp_22.staging.json",
+    "coverageReport": "output/production-expansion/pr029-staging-coverage-report.json",
+    "expansionReport": "output/production-expansion/pr028-production-expansion-report.json"
+  }
+}

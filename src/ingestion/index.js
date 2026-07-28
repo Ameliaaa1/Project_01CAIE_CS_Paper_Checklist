@@ -1,0 +1,19 @@
+module.exports = {
+  ...require("./paperFilename"),
+  ...require("./hash"),
+  ...require("./scanner"),
+  ...require("./pdfAdapter"),
+  ...require("./pipeline"),
+  ...require("./pdfGeometry"),
+  ...require("./documentProfile"),
+  ...require("./questionSlicer"),
+  ...require("./canonicalCompleteness"),
+  ...require("./productionPilot"),
+  ...require("./productionExpansion"),
+  ...require("./multiYearExpansionPreparation"),
+  ...require("./syllabusExpansionPreparation"),
+  ...require("./stagingCoverage"),
+  ...require("./qualityIntelligence"),
+  ...require("./continuousOperation"),
+  ...require("./staging")
+};

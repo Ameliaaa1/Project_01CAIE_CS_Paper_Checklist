@@ -1,0 +1,272 @@
+[2026-07-13T02:04:08.944Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_13.pdf
+[2026-07-13T02:04:08.944Z] startTime=2026-07-13T02:04:08.944Z
+[2026-07-13T02:04:08.944Z] expectedRole=question_paper
+[2026-07-13T02:04:10.498Z] extract.exitCode=0
+[2026-07-13T02:04:10.498Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_13.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2020-Oct-Nov/0478_w20_qp_13.pdf",
+  "pageCount": 12,
+  "questionCount": 13,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Five 3 Tick ( ) to show if each device is an or device. Input Output Storage Input Output Storage Device 3 3 3 ( ) ( ) ( ) Solid state drive (SSD) Headphones 2D cutter LCD projector Microphone [5] Paige has a computer that has a central processing unit (CPU) based on the Von Neumann model"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 3,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 for a computer system. Identify the component within the CPU that controls the flow of data. (a) [1] Identify the component within the CPU where calculations are carried out. (b) [1] Identify the component within the CPU that stores the address of the next instruction to be (c) processed. [1] Identify the register within the CPU that holds an instruction t"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 (a) Four 3 Tick ( ) to show if each denary to 8-bit binary conversion is or . Correct Incorrect Correct Incorrect Denary Binary Conversion 3 3 ( ) ( ) 145 10010001 179 10110101 11 00010011 100 01100010 [4] Convert the binary number into hexadecimal. (b) 12-bit 1 1 0 0 0 1 0 0 0 0 0 0 [3] Eugene has a web server that stores his online shopping website."
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 Customers access the website using a browser. Describe how the webpages are requested and displayed on the customer’s computer. (a) [4] State online security threats to Eugene’s web server. (b) three Threat Threat Threat [3] Arjun uses a scanner to create digital versions of some printed documents."
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 The scanner is attached to his computer using a USB connection. 3 Tick ( ) to show if the USB connection uses or data transmission. (a) Parallel Serial Describe your chosen method of data transmission. Parallel Serial Description [3] Give benefits of a USB connection. (b) three Benefit 1 Benefit 2 Benefit 3 [3] Arjun uses the Internet to send the digital d"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 5,
+      "pageEnd": 6,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "6 There are several terms missing from the paragraph. Complete the paragraph using the list of given terms. Not all terms may need to be used. Some terms may be used more than once. algorithm • alphanumeric • cookie • cypher • key • padlock • plain • word processed • The data is encrypted using a . This is an that is used to scramble the data. The data befor"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Four to each binary value creating 8-bit binary values. All the binary values have been transmitted correctly. 3 Tick ( ) to show whether an or an parity check has been used for each binary (a) Even Odd value. Even Odd 8-bit binary value 3 3 ( ) ( ) 10000001 10000010 00101001 00101000 [4] A parity check may not always detect errors that have occurred in da"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Explain what is meant by LCD technology. (a) [3] State benefits of LCD technology. (b) three Benefit 1 Benefit 2 Benefit 3 [3] Elle uses both CDs and DVDs to store her school projects."
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 7,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.92
+      },
+      "textPreview": "9 Give similarities between a CD and a DVD. (a) three 1 2 3 [3] State difference between a CD and a DVD. (b) one [1] Consider the following logic statement:"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 = (( AND NOT ) XOR ( OR )) X B A A C Draw a logic circuit to match the given logic statement. (a) All logic gates must have a maximum of inputs. Do attempt to simplify the logic two not statement. A B X C [4] Complete the truth table for the given logic statement. (b) A B C X 0 0 0 0 0 1 0 1 0 0 1 1 1 0 0 1 0 1 1 1 0 [4] A theme park has a game where a pl"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 The system for the game uses sensors and a microprocessor to spray water at a player as they run past each sensor. Describe how the sensors and the microprocessor are used in this system. [6] Warner says that he has a very good Internet Service Provider (ISP) that provides several services."
+    },
+    {
+      "questionNumber": "12",
+      "pageStart": 9,
+      "pageEnd": 10,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "12 statements about ISPs are given. Five 3 Tick ( ) to show if each statement is or . True False True False Statement 3 3 ( ) ( ) Provides access to the Internet for customers Can determine the maximum bandwidth available for customers Monitors the volume of data downloaded by customers Can provide an IP address for the customer Stores the content for all we"
+    },
+    {
+      "questionNumber": "13",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.9
+      },
+      "textPreview": "13 State similarity between phishing and pharming. (a) one [1] Explain differences between phishing and pharming. (b) two Difference 1 Difference 2 [2]"
+    }
+  ]
+}
+[2026-07-13T02:04:10.499Z] parserVersion=0.4.0
+[2026-07-13T02:04:10.499Z] documentRole=question_paper
+[2026-07-13T02:04:10.499Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:04:10.835Z] stage.exitCode=0
+[2026-07-13T02:04:10.835Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_w20_qp_13.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_13.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_13.staging.json",
+  "runId": "0478-2020-ON-13-QP-RUN-8a1c4127cd80",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_w20_qp_13.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 13,
+      "leafQuestionCount": 27,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 27,
+        "present": 27,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:04:10.837Z] stagingId=0478-2020-ON-13-QP-RUN-8a1c4127cd80
+[2026-07-13T02:04:10.837Z] validationStatus=PASS
+[2026-07-13T02:04:10.837Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:04:10.837Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:04:10.837Z] canonicalPublishable=true
+[2026-07-13T02:04:10.837Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:04:10.837Z] endTime=2026-07-13T02:04:10.837Z
+[2026-07-13T02:04:10.837Z] status=PASS

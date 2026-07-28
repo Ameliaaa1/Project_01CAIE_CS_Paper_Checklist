@@ -1,0 +1,281 @@
+[2026-07-14T17:01:17.916Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_33.pdf
+[2026-07-14T17:01:17.916Z] startTime=2026-07-14T17:01:17.916Z
+[2026-07-14T17:01:17.916Z] expectedRole=question_paper
+[2026-07-14T17:01:20.754Z] extract.exitCode=0
+[2026-07-14T17:01:20.754Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_33.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_33.pdf",
+  "pageCount": 16,
+  "questionCount": 13,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 A programmer is writing a program to manage a video library. They require a user-defined data type. (a) Write pseudocode statements to declare the composite data type VideoLibrary to hold data about each video in the collection. This data includes: identity code (any combination of letters and numbers) • title • year released • date purchased • format (for"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 Numbers are stored in a computer using binary floating-point representation with: 8 bits for the mantissa • 8 bits for the exponent • two’s complement form for both the mantissa and the exponent. • (a) Give the largest normalised positive two’s complement binary number that can be stored in this system and state its denary equivalent. The denary answer sho"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 8,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "3 This truth table represents a logic circuit. INPUT OUTPUT A B C D Z 0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 0 1 1 1 0 1 0 0 1 0 1 0 1 0 0 1 1 0 0 0 1 1 1 0 1 0 0 0 0 1 0 0 1 0 1 0 1 0 1 1 0 1 1 1 1 1 0 0 1 1 1 0 1 0 1 1 1 0 0 1 1 1 1 0 (a) Write the Boolean logic expression that corresponds to the given truth table as the sum-of-products. Z = [2] (b) (i) Complete "
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "4 (a) The Internet layer and Link layer are two layers of the TCP/IP protocol suite. Describe the purpose of the Internet layer and the purpose of the Link layer. Purpose of Internet layer Purpose of Link layer [5] (b) Describe the function of a router in packet switching. [4]"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "5 Complete the table by filling in the missing object-oriented programming (OOP) terms and descriptions. OOP term Description A method that accesses the value of a property. A method that changes the value of a property. Object Method [4]"
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 The management and scheduling of processes are tasks carried out by an operating system. (a) Describe one reason why scheduling is necessary in process management. [2] (b) Explain the function of the round robin scheduling routine and give a benefit of this routine. Function Benefit [4]"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 Secure Socket Layer (SSL) and Transport Layer Security (TLS) are two protocols. Explain how SSL/TLS is used when client-server communication is initiated. [4]"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.35,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.84
+      },
+      "textPreview": "8 Explain the process of syntax analysis during program compilation. [4]"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "9 Several syntax diagrams are shown. upper digit J 0 K 1 2 L 3 V 4 X 5 Z lower 6 a 7 e 8 i 9 p u y lower lower passcode upper digit digit digit (a) State why JJ90 is not a valid passcode for the given syntax diagrams. [1] (b) Complete the Backus-Naur Form (BNF) for <upper> and <passcode>. <upper> ::= <passcode> ::= [3] (c) A character can be an upper, a lowe"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 12,
+      "pageEnd": 12,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "10 (a) State the purpose of the A* and Dijkstra’s algorithms. [1] (b) Outline the difference between the A* and Dijkstra’s algorithms. [2] (c) Explain how unsupervised learning takes place in machine learning. [3]"
+    },
+    {
+      "questionNumber": "11",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "11 The pseudocode algorithm below allows a user to input a new stock item. The random file is searched for the next empty location in the file and the new item is inserted there. A suitable message is displayed if the file is full. Complete this pseudocode. DECLARE Location : INTEGER DECLARE NewStock : STRING DECLARE CurrentStock : STRING DECLARE Stored : BO"
+    },
+    {
+      "questionNumber": "12",
+      "pageStart": 14,
+      "pageEnd": 15,
+      "marks": 7,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "12 (a) An array is an Abstract Data Type (ADT). Identify two other ADTs. 1 2 [1] (b) A 1D array DataArray holds up to 1000 elements of type integer and needs to be sorted in ascending order. Write the pseudocode for an insertion sort to sort the array into ascending order. Use the identifiers from the table in your algorithm. You do not need to declare any a"
+    },
+    {
+      "questionNumber": "13",
+      "pageStart": 16,
+      "pageEnd": 16,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "13 The recursive procedure Delete() is defined as follows: PROCEDURE Delete(Index, Target) IF Numbers[Index] > 0 THEN IF Numbers[Index] >= Target THEN Numbers[Index + 1] Numbers[Index] ← ENDIF Index + 1 Index ← CALL Delete(Index, Target) ENDIF ENDPROCEDURE An array Numbers is used to store a sorted data set of non-zero positive integers. Unused cells contain"
+    }
+  ]
+}
+[2026-07-14T17:01:20.757Z] parserVersion=0.4.0
+[2026-07-14T17:01:20.757Z] documentRole=question_paper
+[2026-07-14T17:01:20.757Z] validationProfile=QUESTION_PAPER
+[2026-07-14T17:01:21.207Z] stage.exitCode=0
+[2026-07-14T17:01:21.207Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_s25_qp_33.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_33.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_33.staging.json",
+  "runId": "9618-2025-MJ-33-QP-RUN-137f265e230d",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_s25_qp_33.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 13,
+      "leafQuestionCount": 26,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 25,
+        "present": 25,
+        "ratio": 1
+      }
+    },
+    "issues": [
+      {
+        "severity": "P3",
+        "code": "CANONICAL_MARK_COVERAGE_INCOMPLETE",
+        "check": "markCoverage",
+        "message": "Leaf mark is absent under an existing staging rule that permits null marks.",
+        "questionId": "9618-2025-MJ-33-Q3-B-III",
+        "pageNumber": null
+      }
+    ]
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T17:01:21.211Z] stagingId=9618-2025-MJ-33-QP-RUN-137f265e230d
+[2026-07-14T17:01:21.211Z] validationStatus=PASS
+[2026-07-14T17:01:21.211Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T17:01:21.211Z] canonicalCompletenessStatus=PASS
+[2026-07-14T17:01:21.211Z] canonicalPublishable=true
+[2026-07-14T17:01:21.211Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T17:01:21.211Z] endTime=2026-07-14T17:01:21.211Z
+[2026-07-14T17:01:21.211Z] status=PASS

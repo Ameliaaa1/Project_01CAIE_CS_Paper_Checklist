@@ -1,0 +1,112 @@
+[2026-07-14T16:52:53.187Z] file=public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_42.pdf
+[2026-07-14T16:52:53.187Z] startTime=2026-07-14T16:52:53.187Z
+[2026-07-14T16:52:53.187Z] expectedRole=question_paper
+[2026-07-14T16:52:54.552Z] extract.exitCode=0
+[2026-07-14T16:52:54.552Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_42.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 Oct Nov/9618_w22_qp_42.pdf",
+  "pageCount": 12,
+  "questionCount": 3,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 5,
+      "marks": 23,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 (for example, 123) and a priority from 1 to 10, with 1 being the highest priority and 10 the lowest. The program stores the jobs in a global 2D array. The pseudocode declaration for the array is: DECLARE Jobs : ARRAY[0:99, 0:1] OF INTEGER For example: stores the job number of the first job. • Jobs[0, 0] stores the priority of the first job. • Jobs[0, 1] Th"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 5,
+      "pageEnd": 8,
+      "marks": 31,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 the game. Part of the game is being written using object-oriented programming. The class stores data about the characters. Each character has a name and the x Character coordinate and y coordinate of their current position. Character stores the name of the character Name : STRING stores the x coordinate XCoordinate : INTEGER stores the y coordinate YCoordi"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 8,
+      "pageEnd": 9,
+      "marks": 21,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.95
+      },
+      "textPreview": "3 A 1D array, is used to store the data. The head pointer points to the first number (a) Queue stored in the queue and the tail pointer points to the next free space in the queue. Write program code to: declare the global array • Queue declare the global variable head pointer and assign an appropriate initial value • declare the global variable tail pointer "
+    }
+  ]
+}
+[2026-07-14T16:52:54.554Z] parserVersion=0.4.0
+[2026-07-14T16:52:54.554Z] documentRole=question_paper
+[2026-07-14T16:52:54.554Z] validationProfile=QUESTION_PAPER
+[2026-07-14T16:52:54.834Z] stage.exitCode=0
+[2026-07-14T16:52:54.834Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/9618_w22_qp_42.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_42.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_42.staging.json",
+  "runId": "9618-2022-ON-42-QP-RUN-7ca7d31200f5",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/9618_w22_qp_42.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 3,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 22,
+        "present": 22,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-14T16:52:54.836Z] stagingId=9618-2022-ON-42-QP-RUN-7ca7d31200f5
+[2026-07-14T16:52:54.836Z] validationStatus=PASS
+[2026-07-14T16:52:54.836Z] publishStatus=READY_TO_PUBLISH
+[2026-07-14T16:52:54.836Z] canonicalCompletenessStatus=PASS
+[2026-07-14T16:52:54.836Z] canonicalPublishable=true
+[2026-07-14T16:52:54.836Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-14T16:52:54.836Z] endTime=2026-07-14T16:52:54.836Z
+[2026-07-14T16:52:54.836Z] status=PASS

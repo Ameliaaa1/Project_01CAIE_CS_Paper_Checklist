@@ -1,0 +1,224 @@
+[2026-07-13T02:03:07.809Z] file=public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_12.pdf
+[2026-07-13T02:03:07.809Z] startTime=2026-07-13T02:03:07.809Z
+[2026-07-13T02:03:07.809Z] expectedRole=question_paper
+[2026-07-13T02:03:09.119Z] extract.exitCode=0
+[2026-07-13T02:03:09.119Z] extract.stdout=
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_12.sample.json",
+  "sourceFile": "public/textbook_syllabus/pastpaper/caie-igcse-0478/2019-May-June/0478_s19_qp_12.pdf",
+  "pageCount": 12,
+  "questionCount": 10,
+  "questions": [
+    {
+      "questionNumber": "1",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "1 Input and output devices are often connected to a personal computer. (a) Identify three input devices that can be connected to a personal computer. 1 2 3 [3] (b) Identify three output devices that can be connected to a personal computer. 1 2 3 [3]"
+    },
+    {
+      "questionNumber": "2",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "marks": 5,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "2 A finance company uses off-line storage to archive their accounts. (a) Explain what is meant by off-line storage. [2] (b) The computers in the finance company use both primary and secondary storage. (i) Give one example of primary storage. [1] (ii) Give two examples of secondary storage. 1 2 [2]"
+    },
+    {
+      "questionNumber": "3",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "marks": 6,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "3 Vanessa writes a paragraph as an answer to an examination question about the central processing unit (CPU). Use the list given to complete Vanessa’s answer by inserting the correct six missing terms. Not all terms will be used. • Components • Data • Decoded • Executed • Fetched • Instructions • RAM • ROM • Secondary storage The CPU processes and . An instr"
+    },
+    {
+      "questionNumber": "4",
+      "pageStart": 4,
+      "pageEnd": 5,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "4 (a) Marley wants to store a video he has created for his school project. He considers using a DVD or a Blu-ray to store the video. Explain two differences between a DVD and a Blu-ray. 1 2 [2] (b) (i) Marley also needs to store ten 8-bit colour images in a file for his project. Each image is 500 pixels wide and 300 pixels high. Calculate the total file size"
+    },
+    {
+      "questionNumber": "5",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "5 A music company wants to send a new music file to many radio stations. It will send the music file the day before the release date so that the radio stations can store the file ready for release. The music company does not want the radio stations to be able to open the music file until 09:00 on the release date. Identify two security measures and describe "
+    },
+    {
+      "questionNumber": "6",
+      "pageStart": 6,
+      "pageEnd": 7,
+      "marks": 19,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "6 Priya creates a website to sell her old comic books and superhero figures. (a) She uses HTML to create her website. The HTML she produces has both structure and presentation. Explain what is meant by HTML structure and presentation . Include an example of each. Structure Presentation [4] (b) Priya uses cookies in her website. Five statements are given abou"
+    },
+    {
+      "questionNumber": "7",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "marks": 9,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "7 (a) An office has an automated lighting system. When movement is detected in the office the lights are switched on. If movement is not detected for a period of 2 minutes the lights are switched off. The system uses a sensor and a microprocessor. Describe how the automated lighting system uses a sensor and a microprocessor. [6] (b) A microprocessor uses ROM"
+    },
+    {
+      "questionNumber": "8",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "marks": 10,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.96
+      },
+      "textPreview": "8 Consider the logic statement: X = 1 if ((A is 1 NOR C is 1) AND (B is NOT 1 NOR C is 1)) OR (A is 1 AND B is 1) (a) Draw a logic circuit to match the given logic statement. Each logic gate used must have a maximum of two inputs. Do not attempt to simplify the logic statement. A X B C [6] (b) Complete the truth table for the given logic statement. A B C X 0"
+    },
+    {
+      "questionNumber": "9",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "marks": 3,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.96,
+        "text": 0.96,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.35,
+        "overall": 0.69
+      },
+      "textPreview": "9 The contents of three binary registers have been transmitted from one computer to another. Even parity has been used as an error detection method. The outcome after transmission is: Register A and Register C have been transmitted correctly . Register B has been transmitted incorrectly . Complete the Parity bit for each register to show the given outcome. P"
+    },
+    {
+      "questionNumber": "10",
+      "pageStart": 11,
+      "pageEnd": 11,
+      "marks": 4,
+      "confidence": {
+        "marker": 0.98,
+        "boundary": 0.88,
+        "text": 0.72,
+        "marks": 0.99,
+        "layout": 0.92,
+        "structure": 0.96,
+        "overall": 0.9
+      },
+      "textPreview": "10 Remy has a mobile device that has a capacitive touch screen. Describe how the capacitive touch screen registers Remy’s touch. [4]"
+    }
+  ]
+}
+[2026-07-13T02:03:09.120Z] parserVersion=0.4.0
+[2026-07-13T02:03:09.120Z] documentRole=question_paper
+[2026-07-13T02:03:09.120Z] validationProfile=QUESTION_PAPER
+[2026-07-13T02:03:09.382Z] stage.exitCode=0
+[2026-07-13T02:03:09.382Z] stage.stdout=
+> paperlens-fullstack@1.0.0 pdf:stage-sample
+> node scripts/stage-paper-sample.js --sample=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/ingestion-samples/0478_s19_qp_12.sample.json --output=/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_12.staging.json --approve-golden --human-admin-review --human-reviewer=phase-batch-regression
+
+{
+  "outputPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_12.staging.json",
+  "runId": "0478-2019-MJ-12-QP-RUN-b6c08dc3d901",
+  "status": "READY_TO_PUBLISH",
+  "publishStatus": "READY_TO_PUBLISH",
+  "canonicalCompleteness": {
+    "status": "PASS",
+    "publishable": true,
+    "stagingPath": "/Users/amelia/Desktop/Workspace/workspace/Project_01CAIE_CS_Paper_Checklist/output/phase2/staging/0478_s19_qp_12.staging.json",
+    "documentRole": "question_paper",
+    "checks": {
+      "questionCoverage": "PASS",
+      "leafCoverage": "PASS",
+      "markCoverage": "PASS",
+      "responseAreaCoverage": "PASS",
+      "sourceTraceCoverage": "PASS",
+      "canonicalStructureCompleteness": "PASS"
+    },
+    "summary": {
+      "questionCount": 10,
+      "leafQuestionCount": 22,
+      "markSchemeEntryCount": 0,
+      "responseAreaCoverage": {
+        "required": 22,
+        "present": 22,
+        "ratio": 1
+      }
+    },
+    "issues": []
+  },
+  "p0": 0,
+  "p1": 0,
+  "p2": 0,
+  "issues": []
+}
+[2026-07-13T02:03:09.383Z] stagingId=0478-2019-MJ-12-QP-RUN-b6c08dc3d901
+[2026-07-13T02:03:09.383Z] validationStatus=PASS
+[2026-07-13T02:03:09.383Z] publishStatus=READY_TO_PUBLISH
+[2026-07-13T02:03:09.383Z] canonicalCompletenessStatus=PASS
+[2026-07-13T02:03:09.383Z] canonicalPublishable=true
+[2026-07-13T02:03:09.383Z] issueCounts={"P0":0,"P1":0,"P2":0}
+[2026-07-13T02:03:09.383Z] endTime=2026-07-13T02:03:09.383Z
+[2026-07-13T02:03:09.383Z] status=PASS
