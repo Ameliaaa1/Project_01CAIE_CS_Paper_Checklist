@@ -13,3 +13,19 @@ public/textbook_syllabus/*
 !public/textbook_syllabus/pastpaper/
 !public/textbook_syllabus/pastpaper/**/
 !public/textbook_syllabus/pastpaper/**/*.pdf
+.vercel
+.env*
+
+# PR-00: deprecated 9709 scope must not re-enter the active repository.
+/debug/phase7b-9709/
+/logs/phase7b-9709/
+/output/continuous-operation/snapshots/source-9709-manifest.json
+/output/ingestion-samples/9709_*
+/output/ingestion-samples/rendered/9709-*/
+/public/textbook_syllabus/pastpaper/9709/
+
+# PR-00: generated production snapshots exceed normal GitHub blob limits.
+/debug/**/production-store-before.json
+/debug/**/production-store-after.json
+/output/**/snapshots/production-store-*.json
+/output/production/production-store.json
