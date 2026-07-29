@@ -2,6 +2,19 @@
 
 Status: `CURRENT`
 
+Owner: Repository maintainers
+
+Created at: `2026-07-29T14:50:58Z`
+
+Authoritative scope: Assignment of one authoritative source to each tracked
+documentation subject.
+
+Related documents:
+
+- [Documentation Index](DOCUMENTATION_INDEX.md)
+- [Documentation Standard](DOCUMENTATION_STANDARD.md)
+- [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md)
+
 This map assigns one authoritative source to each information subject. A
 historical or archive document may provide context, but it does not override
 the authority named here.
@@ -16,6 +29,7 @@ the authority named here.
 | Documentation authority ownership | This document | Authority-assignment source |
 | Documentation naming, metadata, linking, and evidence format | [Documentation Standard](DOCUMENTATION_STANDARD.md) | Current policy authority; effective upon merge of GitHub PR #7 |
 | Document lifecycle, status transitions, authority changes, and mutability | [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Current lifecycle authority; effective upon merge of GitHub PR #7 |
+| Documentation validation commands, rule IDs, and baseline governance | [Documentation Validation](DOCUMENTATION_VALIDATION.md) | Proposed operational authority; effective after PR-05 approval and merge |
 | Pushability rescue and public remote backup boundary | [Remote Backup Summary](repository-maintenance/public/REMOTE_BACKUP_SUMMARY.md) | PR-00 summary authority |
 | Repository inventory snapshot and original classifications | [File Inventory Summary](repository-maintenance/public/FILE_INVENTORY_SUMMARY.md) | PR-01 public inventory authority |
 | Applied file decisions and protected/deferred counts | [File Decision Summary](repository-maintenance/public/FILE_DECISION_SUMMARY.md) | PR-01A decision authority |

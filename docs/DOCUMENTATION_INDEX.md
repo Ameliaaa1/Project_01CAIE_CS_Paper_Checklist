@@ -2,6 +2,19 @@
 
 Status: `CURRENT`
 
+Owner: Repository maintainers
+
+Created at: `2026-07-29T14:50:58Z`
+
+Authoritative scope: Primary navigation and classification entry for tracked
+project documentation.
+
+Related documents:
+
+- [Authoritative Document Map](AUTHORITATIVE_DOCUMENT_MAP.md)
+- [Documentation Standard](DOCUMENTATION_STANDARD.md)
+- [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md)
+
 This page is the primary navigation entry for tracked project documentation.
 It classifies documents by their present role; it does not change the status
 or content of any referenced file.
@@ -14,6 +27,7 @@ or content of any referenced file.
 | [Authoritative Document Map](AUTHORITATIVE_DOCUMENT_MAP.md) | Assigns one source of truth to each documentation subject | Authoritative ownership map |
 | [Documentation Standard](DOCUMENTATION_STANDARD.md) | Current naming, metadata, link, and evidence-format standard | Current authority; effective upon merge of GitHub PR #7 |
 | [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Current lifecycle, status, authority-transition, and mutability policy | Current authority; effective upon merge of GitHub PR #7 |
+| [Documentation Validation](DOCUMENTATION_VALIDATION.md) | Repeatable documentation validation commands, rules, and baseline governance | Proposed operational authority; effective after PR-05 approval and merge |
 
 ## Architecture Documentation
 
@@ -47,6 +61,7 @@ records:
 - [PR-02B execution and closure evidence](repository-maintenance/pr-02b/)
 - [PR-03 reconstruction evidence](repository-maintenance/pr-03/)
 - [PR-04 policy-freeze evidence](repository-maintenance/pr-04/)
+- [PR-05 validation-automation evidence](repository-maintenance/pr-05/)
 
 Maintenance evidence describes completed governance work. It does not replace
 the README for current product behavior.
