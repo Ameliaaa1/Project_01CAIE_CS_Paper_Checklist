@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-29T11:42:55.139Z",
+  "generatedAt": "2026-07-29T12:19:59.156Z",
   "sourceHead": "99159cf24a1baa56a9eb964d41daff555f322b87",
-  "status": "PASS_DOCUMENT_ARCHIVE_MOVE_PLAN_READY_FOR_HUMAN_REVIEW",
+  "status": "PASS_DOCUMENT_ARCHIVE_MOVE_PLAN_READY_FOR_EXECUTION",
   "authoritativeInputs": {
     "inventory": {
       "logicalPath": "docs/repository-maintenance/file-inventory.json",
@@ -37,7 +37,7 @@
     "evaluatedDocuments": 113,
     "plannedTrackedMoves": 0,
     "actualMovedFiles": 0,
-    "deferredUntrackedDocuments": 15,
+    "deferredUntrackedDocuments": 0,
     "privateOrLocalOnlyDocuments": 0,
     "protectedCandidateExclusions": 24,
     "protectedInventoryDocuments": 109,
@@ -55,7 +55,11 @@
     "untrackedDocumentsReviewed": 19,
     "noMoveNoReferenceRewrite": 98,
     "unmappedMaterialReviewBuckets": 1,
-    "formalPrNodes": 69
+    "formalPrNodes": 69,
+    "approvedUntrackedMoves": 15,
+    "noMoveItems": 98,
+    "identityReviewsResolvedNoMove": 5,
+    "pendingHumanReviewDecisions": 0
   },
   "records": [
     {
@@ -85,8 +89,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0002",
@@ -106,9 +111,9 @@
       "title": "PR-009 Frontend Migration to Question Rendering Contract",
       "currentRole": "SOLUTION",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-009/PR-009-Frontend-Migration-to-Question-Rendering-Contract-Solution.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -121,8 +126,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0003",
@@ -142,9 +148,9 @@
       "title": "PR-010A Question Text Normalization Contract and Migration",
       "currentRole": "SOLUTION",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010A/PR-010A-Question-Text-Normalization-Contract-and-Migration-Solution.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -157,8 +163,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0004",
@@ -178,9 +185,9 @@
       "title": "PR-010B Investigation Expansion Plan",
       "currentRole": "PLAN",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010B/PR-010B-child-boundary-audit-investigation-plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json",
@@ -193,11 +200,12 @@
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
       ],
-      "referenceRewriteRequired": false,
+      "referenceRewriteRequired": true,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0005",
@@ -217,9 +225,9 @@
       "title": "PR-010B Parent Ownership Repair Solution Plan",
       "currentRole": "SOLUTION",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010B/PR-010B-parent-ownership-repair-solution.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -232,8 +240,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0006",
@@ -253,9 +262,9 @@
       "title": "PR-010C.1 Canonical Question Boundary Contract Completion Plan",
       "currentRole": "PLAN",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010C.1/PR-010C-conditional-pass-completion-plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -268,8 +277,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0007",
@@ -289,9 +299,9 @@
       "title": "PR-010C.2 Validation Evidence Completion Plan",
       "currentRole": "PLAN",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010C.2/PR-010C.2-validation-evidence-completion-plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -304,8 +314,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0008",
@@ -325,9 +336,9 @@
       "title": "PR-010C.3 Actual Validator Issue Evidence Repair Plan",
       "currentRole": "SOLUTION",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010C.3/PR-010C.3-actual-validator-issue-evidence-repair-plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -340,8 +351,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0009",
@@ -361,9 +373,9 @@
       "title": "PR-010C.3A-2 Canonical Ownership Capture and Validator Wiring Plan",
       "currentRole": "PLAN",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010C.3A-2/PR-010C.3A-2-canonical-ownership-capture-and-validator-wiring-plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -376,8 +388,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0010",
@@ -397,9 +410,9 @@
       "title": "PR-010C.3A-2A-0 Single-PDF Ownership Runtime Integration Project Plan",
       "currentRole": "PLAN",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010C.3A-2A-0/PR-010C.3A-2A-0-single-pdf-ownership-runtime-integration-project-plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -412,8 +425,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0011",
@@ -433,9 +447,9 @@
       "title": "PR-010C.3A-2A-0S Ownership Artifact DTO Compaction and Streaming Serialization Plan",
       "currentRole": "PLAN",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010C.3A-2A-0S/PR-010C.3A-2A-0S-ownership-artifact-dto-compaction-and-streaming-serialization-plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -448,8 +462,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0012",
@@ -469,9 +484,9 @@
       "title": "PR-010C.3A-2A-0V Visual-Line Geometry and Vertical-Margin Isolation Repair",
       "currentRole": "SOLUTION",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010C.3A-2A-0V/PR-010C.3A-2A-0V-visual-line-geometry-and-vertical-margin-isolation-repair.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -484,8 +499,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0013",
@@ -505,9 +521,9 @@
       "title": "PR-010C.3A-2A-1 Full-Corpus Ownership Integration and Evidence Capture Project Plan",
       "currentRole": "PLAN",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010C.3A-2A-1/PR-010C.3A-2A-1-full-corpus-ownership-integration-and-evidence-capture-project-plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -520,8 +536,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0014",
@@ -541,9 +558,9 @@
       "title": "PR-010C.3A-2A-1A Three Known-Fixture PDF Ownership Integration Test",
       "currentRole": "SOLUTION",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010C.3A-2A-1A/PR-010C.3A-2A-1A-three-known-fixture-pdf-ownership-integration-test.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -556,8 +573,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0015",
@@ -577,9 +595,9 @@
       "title": "PR-010C.3A-2A-2A Canonical Boundary Validator Wiring and Full-Corpus Contract Validation",
       "currentRole": "DOCUMENT",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010C.3A-2A-2A/PR-010C.3A-2A-2A-canonical-boundary-validator-wiring-and-full-corpus-contract-validation.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -592,8 +610,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0016",
@@ -613,9 +632,9 @@
       "title": "PR-010C.3A-2A Canonical Ownership Model Construction Project Plan",
       "currentRole": "PLAN",
       "protectedRoles": [],
-      "publicPrivateClass": "REVIEW_REQUIRED",
+      "publicPrivateClass": "PUBLIC_SAFE",
       "targetPath": "docs/archive/prs/PR-010C.3A-2A/PR-010C.3A-2A-canonical-ownership-model-construction-project-plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "moveMethod": "MOVE_UNTRACKED_IN_PR02B",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -628,8 +647,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
-      "referenceRewriteAction": "DEFER_WITH_MOVE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "REWRITE_WITH_APPROVED_MOVE_IN_PR02B",
+      "humanReviewDecision": "APPROVED_PUBLIC_SAFE"
     },
     {
       "artifactId": "PR02A-MOVE-0017",
@@ -658,8 +678,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0018",
@@ -688,8 +709,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0019",
@@ -718,8 +740,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0020",
@@ -748,8 +771,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0021",
@@ -778,8 +802,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0022",
@@ -808,8 +833,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0023",
@@ -838,8 +864,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0024",
@@ -874,8 +901,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0025",
@@ -910,8 +938,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0026",
@@ -946,8 +975,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0027",
@@ -982,8 +1012,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0028",
@@ -1012,8 +1043,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0029",
@@ -1042,8 +1074,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0030",
@@ -1072,8 +1105,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0031",
@@ -1108,8 +1142,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0032",
@@ -1144,8 +1179,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0033",
@@ -1180,8 +1216,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0034",
@@ -1216,8 +1253,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0035",
@@ -1252,8 +1290,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0036",
@@ -1282,8 +1321,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0037",
@@ -1318,8 +1358,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0038",
@@ -1354,8 +1395,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0039",
@@ -1390,8 +1432,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0040",
@@ -1426,8 +1469,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0041",
@@ -1462,8 +1506,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0042",
@@ -1498,8 +1543,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0043",
@@ -1534,8 +1580,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0044",
@@ -1570,8 +1617,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0045",
@@ -1606,8 +1654,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0046",
@@ -1642,8 +1691,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0047",
@@ -1678,8 +1728,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0048",
@@ -1714,8 +1765,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0049",
@@ -1750,8 +1802,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0050",
@@ -1786,8 +1839,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0051",
@@ -1822,8 +1876,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0052",
@@ -1858,8 +1913,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0053",
@@ -1894,8 +1950,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0054",
@@ -1930,8 +1987,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0055",
@@ -1966,8 +2024,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0056",
@@ -2002,8 +2061,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0057",
@@ -2038,8 +2098,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0058",
@@ -2068,8 +2129,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0059",
@@ -2098,8 +2160,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0060",
@@ -2128,8 +2191,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0061",
@@ -2158,8 +2222,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0062",
@@ -2194,8 +2259,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0063",
@@ -2224,8 +2290,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0064",
@@ -2254,8 +2321,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0065",
@@ -2284,8 +2352,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0066",
@@ -2314,8 +2383,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0067",
@@ -2344,8 +2414,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0068",
@@ -2374,8 +2445,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0069",
@@ -2404,8 +2476,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0070",
@@ -2440,8 +2513,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0071",
@@ -2476,8 +2550,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0072",
@@ -2512,8 +2587,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0073",
@@ -2548,8 +2624,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0074",
@@ -2584,8 +2661,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0075",
@@ -2620,8 +2698,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0076",
@@ -2659,7 +2738,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0077",
@@ -2694,8 +2774,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_EXISTING_ARCHIVE_COPY_REVIEW_REQUIRED_NO_MOVE",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_KEEP_EXISTING_ARCHIVE_COPY"
     },
     {
       "artifactId": "PR02A-MOVE-0078",
@@ -2730,8 +2811,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_EXISTING_ARCHIVE_COPY_REVIEW_REQUIRED_NO_MOVE",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_KEEP_EXISTING_ARCHIVE_COPY"
     },
     {
       "artifactId": "PR02A-MOVE-0079",
@@ -2769,7 +2851,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0080",
@@ -2807,7 +2890,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0081",
@@ -2845,7 +2929,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0082",
@@ -2880,8 +2965,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_EXISTING_ARCHIVE_COPY_REVIEW_REQUIRED_NO_MOVE",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_KEEP_EXISTING_ARCHIVE_COPY"
     },
     {
       "artifactId": "PR02A-MOVE-0083",
@@ -2919,7 +3005,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0084",
@@ -2957,7 +3044,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0085",
@@ -2995,7 +3083,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0086",
@@ -3033,7 +3122,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0087",
@@ -3071,7 +3161,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0088",
@@ -3109,7 +3200,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0089",
@@ -3147,7 +3239,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0090",
@@ -3185,7 +3278,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0091",
@@ -3223,7 +3317,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0092",
@@ -3258,8 +3353,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_EXISTING_ARCHIVE_COPY_REVIEW_REQUIRED_NO_MOVE",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_KEEP_EXISTING_ARCHIVE_COPY"
     },
     {
       "artifactId": "PR02A-MOVE-0093",
@@ -3297,7 +3393,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0094",
@@ -3335,7 +3432,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0095",
@@ -3373,7 +3471,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0096",
@@ -3411,7 +3510,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0097",
@@ -3449,7 +3549,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0098",
@@ -3487,7 +3588,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0099",
@@ -3525,7 +3627,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0100",
@@ -3563,7 +3666,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0101",
@@ -3601,7 +3705,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0102",
@@ -3639,7 +3744,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0103",
@@ -3677,7 +3783,8 @@
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
       "approvalStatus": "EXCLUDED_PROTECTED",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "EXCLUDED_PROTECTED_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0104",
@@ -3706,8 +3813,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0105",
@@ -3736,8 +3844,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0106",
@@ -3773,8 +3882,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0107",
@@ -3803,8 +3913,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0108",
@@ -3833,8 +3944,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0109",
@@ -3870,8 +3982,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0110",
@@ -3900,8 +4013,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0111",
@@ -3930,8 +4044,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0112",
@@ -3960,8 +4075,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0113",
@@ -3990,8 +4106,9 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
-      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+      "approvalStatus": "APPROVED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE",
+      "humanReviewDecision": "APPROVED_NO_RESTORE_NO_MOVE"
     }
   ],
   "unmappedMaterialReviewBucket": {
@@ -4010,9 +4127,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-009/PR-009-Frontend-Migration-to-Question-Rendering-Contract-Solution.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010A-Question-Text-Normalization-Contract-and-Migration-Solution.md",
@@ -4022,9 +4139,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010A/PR-010A-Question-Text-Normalization-Contract-and-Migration-Solution.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010B-child-boundary-audit-investigation-plan.md",
@@ -4034,9 +4151,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010B/PR-010B-child-boundary-audit-investigation-plan.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010B-parent-ownership-repair-solution.md",
@@ -4046,9 +4163,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010B/PR-010B-parent-ownership-repair-solution.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010C-conditional-pass-completion-plan.md",
@@ -4058,9 +4175,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010C.1/PR-010C-conditional-pass-completion-plan.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010C.2-validation-evidence-completion-plan.md",
@@ -4070,9 +4187,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010C.2/PR-010C.2-validation-evidence-completion-plan.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010C.3-actual-validator-issue-evidence-repair-plan.md",
@@ -4082,9 +4199,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010C.3/PR-010C.3-actual-validator-issue-evidence-repair-plan.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010C.3A-2-canonical-ownership-capture-and-validator-wiring-plan.md",
@@ -4094,9 +4211,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010C.3A-2/PR-010C.3A-2-canonical-ownership-capture-and-validator-wiring-plan.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010C.3A-2A-0-single-pdf-ownership-runtime-integration-project-plan.md",
@@ -4106,9 +4223,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-0/PR-010C.3A-2A-0-single-pdf-ownership-runtime-integration-project-plan.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010C.3A-2A-0S-ownership-artifact-dto-compaction-and-streaming-serialization-plan.md",
@@ -4118,9 +4235,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-0S/PR-010C.3A-2A-0S-ownership-artifact-dto-compaction-and-streaming-serialization-plan.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010C.3A-2A-0V-visual-line-geometry-and-vertical-margin-isolation-repair.md",
@@ -4130,9 +4247,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-0V/PR-010C.3A-2A-0V-visual-line-geometry-and-vertical-margin-isolation-repair.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010C.3A-2A-1-full-corpus-ownership-integration-and-evidence-capture-project-plan.md",
@@ -4142,9 +4259,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-1/PR-010C.3A-2A-1-full-corpus-ownership-integration-and-evidence-capture-project-plan.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010C.3A-2A-1A-three-known-fixture-pdf-ownership-integration-test.md",
@@ -4154,9 +4271,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-1A/PR-010C.3A-2A-1A-three-known-fixture-pdf-ownership-integration-test.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010C.3A-2A-2A-canonical-boundary-validator-wiring-and-full-corpus-contract-validation.md",
@@ -4166,9 +4283,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-2A/PR-010C.3A-2A-2A-canonical-boundary-validator-wiring-and-full-corpus-contract-validation.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/PR-010C.3A-2A-canonical-ownership-model-construction-project-plan.md",
@@ -4178,9 +4295,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedClassification": "APPROVED_PUBLIC_SAFE_ARCHIVE_MOVE",
       "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A/PR-010C.3A-2A-canonical-ownership-model-construction-project-plan.md",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/archive/obsolete-syllabus-scope/PR-029_Generate_Missing_Production_Expansion_Staging_Coverage_Explanation.md",
@@ -4190,9 +4307,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
+      "recommendedClassification": "APPROVED_KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
       "recommendedTarget": "NONE",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/archive/obsolete-syllabus-scope/PR-034-0478-Production-Expansion-Batch-01-Implementation-Plan.md",
@@ -4202,9 +4319,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
+      "recommendedClassification": "APPROVED_KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
       "recommendedTarget": "NONE",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/archive/obsolete-syllabus-scope/PR-038-0478-Missing-Staging-Generation-Batch-01-Implementation-Plan.md",
@@ -4214,9 +4331,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
+      "recommendedClassification": "APPROVED_KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
       "recommendedTarget": "NONE",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     },
     {
       "sourcePath": "docs/archive/obsolete-syllabus-scope/PR-048-9618-Production-Expansion-Preparation-Plan.md",
@@ -4226,9 +4343,9 @@
       "absoluteLocalPathCount": 0,
       "privateUrlCount": 0,
       "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
-      "recommendedClassification": "KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
+      "recommendedClassification": "APPROVED_KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
       "recommendedTarget": "NONE",
-      "decisionStatus": "PENDING"
+      "decisionStatus": "APPROVED"
     }
   ]
 }

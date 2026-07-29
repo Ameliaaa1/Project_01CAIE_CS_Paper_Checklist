@@ -1,6 +1,6 @@
 # Documentation Archive Topology
 
-Status: `FROZEN_FOR_HUMAN_REVIEW`
+Status: `FROZEN_FOR_EXECUTION`
 
 ## Purpose
 

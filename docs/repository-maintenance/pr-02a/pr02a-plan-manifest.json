@@ -1,63 +1,63 @@
 {
-  "schemaVersion": 2,
-  "generatedAt": "2026-07-29T12:05:21.897Z",
+  "schemaVersion": 3,
+  "generatedAt": "2026-07-29T12:20:47.110Z",
   "sourceHead": "99159cf24a1baa56a9eb964d41daff555f322b87",
-  "status": "PASS_DOCUMENT_ARCHIVE_MOVE_PLAN_READY_FOR_HUMAN_REVIEW",
+  "status": "PASS_DOCUMENT_ARCHIVE_MOVE_PLAN_READY_FOR_EXECUTION",
   "files": [
     {
       "path": "docs/repository-maintenance/pr-02a/ARCHIVE_COLLISION_REPORT.md",
-      "sizeBytes": 1230,
-      "sha256": "3bf31887e09a068c2c4daad14b4cdf2f185cf91bdfb34a8c5acd6da610ebf490",
-      "generatedAt": "2026-07-29T12:05:21.897Z",
+      "sizeBytes": 1236,
+      "sha256": "07aa130f7ea9afe0b332a7099c3a902dd398f96f5e597d48f7efca375e43bca8",
+      "generatedAt": "2026-07-29T12:20:47.110Z",
       "sourceHead": "99159cf24a1baa56a9eb964d41daff555f322b87"
     },
     {
       "path": "docs/repository-maintenance/pr-02a/DOCUMENT_ARCHIVE_TOPOLOGY.md",
-      "sizeBytes": 3350,
-      "sha256": "bd83e18f82bf9454a49d6dbbfedcdcfcf4b78f6edecf9a32b32a9033077795bc",
-      "generatedAt": "2026-07-29T12:05:21.897Z",
+      "sizeBytes": 3347,
+      "sha256": "2cecd3e4937c80d8953fc0826881e13f57f47661153c0f230ca0212b4abd0b9b",
+      "generatedAt": "2026-07-29T12:20:47.110Z",
       "sourceHead": "99159cf24a1baa56a9eb964d41daff555f322b87"
     },
     {
       "path": "docs/repository-maintenance/pr-02a/DOCUMENT_MOVE_PLAN.md",
-      "sizeBytes": 30105,
-      "sha256": "c949370f71a15b6cb8f43d538a4f15b103869668c586c2124013ec9664f8a7d4",
-      "generatedAt": "2026-07-29T12:05:21.897Z",
+      "sizeBytes": 27747,
+      "sha256": "2d94a23732fece61a4b43a0b31555160c55902364e4441fefeaf7c1d8231f9b1",
+      "generatedAt": "2026-07-29T12:20:47.110Z",
       "sourceHead": "99159cf24a1baa56a9eb964d41daff555f322b87"
     },
     {
       "path": "docs/repository-maintenance/pr-02a/PR02A_HUMAN_REVIEW.md",
-      "sizeBytes": 10253,
-      "sha256": "1ac3c6c899d0cf53ac2ddc0eef285e776f93af758b5b7f5ffa2cfc43dadef067",
-      "generatedAt": "2026-07-29T12:05:21.897Z",
+      "sizeBytes": 9436,
+      "sha256": "d6fe115867b55d0c6e097fae44313c0ca3b1ce1ee3006aeba377dc71d8d8db74",
+      "generatedAt": "2026-07-29T12:20:47.110Z",
       "sourceHead": "99159cf24a1baa56a9eb964d41daff555f322b87"
     },
     {
       "path": "docs/repository-maintenance/pr-02a/PROTECTED_FILE_EXCLUSION.md",
       "sizeBytes": 18788,
       "sha256": "6dd89f1b53cf938982653e2ed0d514eb6a62d1681774d16bd50ebc36a279c0ce",
-      "generatedAt": "2026-07-29T12:05:21.897Z",
+      "generatedAt": "2026-07-29T12:20:47.110Z",
       "sourceHead": "99159cf24a1baa56a9eb964d41daff555f322b87"
     },
     {
       "path": "docs/repository-maintenance/pr-02a/PR_INDEX_RECONCILIATION.md",
-      "sizeBytes": 47629,
-      "sha256": "65b424ebf5f2b56d3bdc63234a71400bcdc8b839dba0be49af225f173e9c2bba",
-      "generatedAt": "2026-07-29T12:05:21.897Z",
+      "sizeBytes": 47832,
+      "sha256": "ee4bdd39ff2b7727e90b680d61c4c5170d8c107855bacae80a71293b7fcba8f5",
+      "generatedAt": "2026-07-29T12:20:47.110Z",
       "sourceHead": "99159cf24a1baa56a9eb964d41daff555f322b87"
     },
     {
       "path": "docs/repository-maintenance/pr-02a/REFERENCE_REWRITE_PLAN.md",
-      "sizeBytes": 27128,
-      "sha256": "425b2697e89748ce5cad7ec84ac11410f21a703e61e524b9933f3a4c942a0078",
-      "generatedAt": "2026-07-29T12:05:21.897Z",
+      "sizeBytes": 27602,
+      "sha256": "e02955bff2caddb1bc227798473fd73575c040d7f309bfc8a81f6a524b97a5de",
+      "generatedAt": "2026-07-29T12:20:47.110Z",
       "sourceHead": "99159cf24a1baa56a9eb964d41daff555f322b87"
     },
     {
       "path": "docs/repository-maintenance/pr-02a/document-move-plan.json",
-      "sizeBytes": 189280,
-      "sha256": "df05824a20755e88d13259b3a143b650584797ff07ba7b089b6792de1a5bc6e5",
-      "generatedAt": "2026-07-29T12:05:21.897Z",
+      "sizeBytes": 193589,
+      "sha256": "3a1e23e985ebedfb90216d6af179f8b306f265772459491123eb2f60999071ce",
+      "generatedAt": "2026-07-29T12:20:47.110Z",
       "sourceHead": "99159cf24a1baa56a9eb964d41daff555f322b87"
     }
   ],
@@ -66,6 +66,10 @@
     "sourcePathUnique": "PASS",
     "targetPathUnique": "PASS",
     "caseInsensitiveCollisionCount": 0,
+    "noMoveConsistency": "PASS",
+    "referenceRewriteConsistency": "PASS",
+    "approvedUntrackedMoves": 15,
+    "noMoveItems": 98,
     "protectedMoveCount": 0,
     "pdfMoveCount": 0,
     "productionCandidateMoveCount": 0,
@@ -76,8 +80,8 @@
     "formalPrNodes": 69,
     "unmappedMaterialReviewBuckets": 1,
     "reconciledSourceEntries": 70,
-    "untrackedDocumentsReviewed": 19,
-    "humanReviewStatus": "PENDING"
+    "humanReviewStatus": "PASS_DOCUMENT_MOVE_PLAN_HUMAN_REVIEW",
+    "pr02bStarted": false
   },
   "note": "This manifest intentionally excludes its own SHA-256 and was generated after all hashed report files were finalized."
 }

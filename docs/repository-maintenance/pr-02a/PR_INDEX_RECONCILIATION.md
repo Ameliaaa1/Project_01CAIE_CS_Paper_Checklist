@@ -77,6 +77,8 @@ Reconciled source entries: 70 (69 formal PR nodes plus 1 unmapped-material revie
 | PR-075 | REVIEW_REQUIRED | `output/maintenance/remove-unsupported-scope-rollback/stale-active-artifacts/output/parser-maintenance/pr075/bounded-impact-scan.json`<br>`output/maintenance/remove-unsupported-scope-rollback/stale-active-artifacts/output/parser-maintenance/production-refresh/production-store-before-pr075-ae80888692441b8cbfc066fb2ce4c8c8680de201daee6f112026ea413cd891b0.json`<br>`output/parser-maintenance/pr075/0478_w23_qp_13.data-lineage.json`<br>`output/parser-maintenance/pr075/0478_w23_qp_13.staging.json`<br>`output/parser-maintenance/pr075/bounded-impact-scan.json`<br>`output/parser-maintenance/production-refresh/pr075-production-refresh-report.json`<br>`scripts/pr075-cross-page-parent-leaf-diagnostics.js`<br>`scripts/pr075-production-refresh.js`<br>`tests/pr075-cross-page-parent-leaf-ownership.test.js` | Partial/Review | REVIEW_REQUIRED (unmapped material is not a successor PR node) | `scripts/pr075-cross-page-parent-leaf-diagnostics.js` | `docs/archive/prs/PR-075/` |
 
 
+Execution freeze status: `PASS_DOCUMENT_ARCHIVE_MOVE_PLAN_READY_FOR_EXECUTION`. Archive targets remain topology recommendations only; the executable move set is restricted by `document-move-plan.json`.
+
 ## Unmapped material review bucket
 
 ```json
