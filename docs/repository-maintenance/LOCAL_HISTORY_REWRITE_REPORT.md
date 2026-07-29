@@ -77,4 +77,6 @@ Git status categories necessarily changed because 294 deprecated `9709` paths an
 
 ## Status
 
-Remote push and final worktree recovery verification are recorded separately in `REMOTE_BACKUP_VERIFICATION.md`.
+`PASS_REMOTE_BACKUP_RECOVERED`
+
+Remote branch/tag verification and the authentication-path details are recorded in `REMOTE_BACKUP_VERIFICATION.md`. Repository File Organization may resume as a separate task, using the r1 backup references as the rollback boundary.

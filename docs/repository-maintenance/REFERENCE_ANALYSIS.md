@@ -1,0 +1,341 @@
+# Reference Analysis
+
+- Text reference sources scanned: 1083
+- Files with at least one verified direct reference: 11751
+- Verified direct reference edges: 32196
+- Critical-role files without a direct textual reference: 126
+
+References were accepted only when a repository-relative path matched exactly or when a referenced basename was unique. Dynamic path construction and runtime-only references remain `REVIEW_REQUIRED`.
+
+## Critical-role files without direct text references
+
+- `artifacts/db-a1-r1/baseline/schema-and-migration-baseline.json` — humanReview, releaseGate, rollback, postWriteValidation
+- `artifacts/db-a1-r1/classification/production-schema-model-classification.json` — humanReview
+- `artifacts/db-a1-r1/contract/production-data-lifecycle-contract.json` — humanReview
+- `artifacts/db-a1-r1/hitl/production-schema-contract-human-decision.json` — humanReview, releaseGate
+- `artifacts/db-a1-r1/hitl/production-schema-contract-human-review-package.json` — humanReview
+- `artifacts/db-a1-r1/inventory/prisma-model-inventory.json` — humanReview
+- `artifacts/db-a1-r1/proposed/schema-contract-to-current-schema-diff.json` — humanReview, releaseGate
+- `artifacts/db-a1-r1/release/db-a1-final-evidence-manifest.json` — humanReview, manifestOrHash
+- `artifacts/db-a1-r1/release/db-a1-schema-contract-gate.json` — humanReview, releaseGate
+- `artifacts/db-a1-r1/release/production-schema-contract.json` — humanReview
+- `artifacts/db-a1/baseline/schema-and-migration-baseline.json` — humanReview, releaseGate, rollback, postWriteValidation
+- `artifacts/db-a1/classification/production-schema-model-classification.json` — humanReview
+- `artifacts/db-a1/contract/production-data-lifecycle-contract.json` — humanReview
+- `artifacts/db-a1/hitl/production-schema-contract-human-decision.json` — humanReview
+- `artifacts/db-a1/hitl/production-schema-contract-human-review-package.json` — humanReview
+- `artifacts/db-a1/inventory/prisma-model-inventory.json` — humanReview
+- `artifacts/db-a1/proposed/schema-contract-to-current-schema-diff.json` — humanReview, releaseGate
+- `artifacts/db-a1/release/db-a1-final-evidence-manifest.json` — humanReview, manifestOrHash
+- `artifacts/db-a1/release/db-a1-schema-contract-gate.json` — humanReview
+- `artifacts/db-a1/release/production-schema-contract.json` — humanReview
+- `debug/phase-a-execution/phase-a-execution-verification.json` — humanReview, rollback
+- `debug/pr027-production-pilot/pr027-production-pilot-debug.json` — rollback, prDocument
+- `debug/pr028-production-expansion/pr028-production-expansion-debug.json` — rollback, prDocument
+- `debug/pr034-batch-01/pr034-execution-debug.json` — releaseGate, prDocument
+- `debug/pr035-2020-batch-01/pr035-execution-debug.json` — releaseGate, prDocument
+- `debug/pr036-2020-batch-02/pr036-execution-debug.json` — releaseGate, prDocument
+- `debug/pr037-2020-batch-03/pr037-execution-debug.json` — releaseGate, prDocument
+- `debug/pr039-2021-batch-02/pr039-execution-debug.json` — releaseGate, prDocument
+- `debug/pr041-2021-batch-03/pr041-execution-debug.json` — releaseGate, prDocument
+- `debug/pr043-2022-batch-01/pr043-execution-debug.json` — releaseGate, prDocument
+- `debug/pr045-2022-batch-02/pr045-execution-debug.json` — releaseGate, prDocument
+- `debug/pr047-2022-batch-03/pr047-execution-debug.json` — releaseGate, prDocument
+- `docs/CODEX_INSTALL_PDF_SKILLS_AND_MCP.md` — humanReview, rollback
+- `docs/CODEX_PASTPAPER_STAGING_SOLUTION.md` — humanReview, rollback
+- `docs/PR-019_Response_Area_Mapping_Integrity_Solution.md` — humanReview, prDocument
+- `docs/PR-020_Mark_Scheme_Document_Profile_Separation_Solution.md` — humanReview, prDocument
+- `docs/PR-028_Production_Expansion_Phase_A_Execution_Plan.md` — humanReview, rollback, prDocument
+- `docs/PR-033_0478_Multi_Year_Expansion_Preparation_Plan.md` — rollback, prDocument
+- `docs/PR-060-9618-Blocked-Pair-Investigation-Plan.md` — humanReview, prDocument
+- `docs/PR-061-9618-Legal-Null-Pointer-Glyph-Validation-Rule-Fix-Plan.md` — humanReview, prDocument
+- `docs/PR-062-9618-Stale-Multiplication-Glyph-Staging-Revalidation-Plan.md` — humanReview, prDocument
+- `docs/PR-063-9618-2021-MJ-Previously-Blocked-Pair-Production-Expansion-Plan.md` — releaseGate, prDocument
+- `docs/PR-064-9618-2021-ON-Previously-Blocked-Pair-Production-Expansion-Plan.md` — releaseGate, prDocument
+- `docs/PR-065-9618-2024-ON-Previously-Blocked-Pair-Production-Expansion-Plan.md` — releaseGate, prDocument
+- `docs/PR-069-9618-2022-MJ-41-Staging-Generation-and-Validation-Plan.md` — releaseGate, prDocument
+- `docs/PR-Contract-008-Final-Release-Production-Publish-and-Live-Verification-Solution(1).md` — humanReview, rollback
+- `docs/Phase-1-9618-2022-MJ-41-Staging-Validation-Production-Plan.md` — releaseGate
+- `docs/Phase-3-9618-Missing-Staging-Expansion-by-Batch-Plan.md` — releaseGate
+- `docs/Phase-7-Cross-Syllabus-Expansion-Plan.md` — humanReview
+- `docs/phase8-e-design.md` — releaseGate, rollback
+- `docs/repository-maintenance/LOCAL_HISTORY_REWRITE_REPORT.md` — rollback
+- `output/ingestion-samples/0478_s23_ms_12.staging.json` — humanReview
+- `output/phase1/staging/0478_s23_ms_12.staging.json` — humanReview
+- `output/phase2/staging/0478_m19_ms_12.staging.json` — humanReview
+- `output/phase2/staging/0478_m19_ms_22.staging.json` — humanReview
+- `output/phase2/staging/0478_m20_ms_22.staging.json` — humanReview
+- `output/phase2/staging/0478_m22_ms_22.staging.json` — humanReview
+- `output/phase2/staging/0478_s20_ms_11.staging.json` — humanReview
+- `output/phase2/staging/0478_s20_ms_12.staging.json` — humanReview
+- `output/phase2/staging/0478_s20_ms_13.staging.json` — humanReview
+- `output/phase2/staging/0478_s20_ms_21.staging.json` — humanReview
+- `output/phase2/staging/0478_s20_ms_22.staging.json` — humanReview
+- `output/phase2/staging/0478_s20_ms_23.staging.json` — humanReview
+- `output/phase2/staging/0478_s23_ms_12.staging.json` — humanReview
+- `output/phase2/staging/0478_s23_ms_13.staging.json` — humanReview
+- `output/phase2/staging/0478_s24_ms_12.staging.json` — humanReview
+- `output/phase2/staging/0478_s24_ms_13.staging.json` — humanReview
+- `output/phase2/staging/0478_w19_ms_11.staging.json` — humanReview
+- `output/phase2/staging/0478_w19_ms_13.staging.json` — humanReview
+- `output/phase2/staging/0478_w20_ms_11.staging.json` — humanReview
+- `output/phase2/staging/0478_w20_ms_12.staging.json` — humanReview
+- `output/phase2/staging/0478_w20_ms_13.staging.json` — humanReview
+- `output/phase2/staging/0478_w20_ms_23.staging.json` — humanReview
+- `output/phase2/staging/0478_w21_ms_21.staging.json` — humanReview
+- `output/phase2/staging/0478_w21_ms_23.staging.json` — humanReview
+- `output/phase2/staging/9618_s22_ms_32.staging.json` — humanReview
+- `output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-00-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-01-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-02-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-03-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-04-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-05-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-06-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-07-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-9618-missing-staging-batch-08-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-batch-00-publication-raw-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-batch-01-publication-raw-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-batch-02-publication-raw-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-batch-03-publication-raw-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-batch-04-publication-raw-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-batch-05-publication-raw-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-batch-06-publication-raw-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-batch-07-publication-raw-report.json` — releaseGate
+- `output/production-expansion/phase3-9618/phase3-batch-08-publication-raw-report.json` — releaseGate
+- `output/production-expansion/phase5-9618/phase5-a-publication-01-raw-report.json` — releaseGate
+- `output/production-expansion/phase5-9618/phase5-b-publication-01-raw-report.json` — releaseGate
+- `output/production-expansion/phase5-9618/phase5-c-publication-01-raw-report.json` — releaseGate
+- `output/production-expansion/phase5-9618/phase5-c-publication-02-raw-report.json` — releaseGate
+- `output/production-expansion/phase5-9618/phase5-c-publication-03-raw-report.json` — releaseGate
+- `output/production-expansion/phase5-9618/phase5-d-publication-01-raw-report.json` — releaseGate
+- `output/production-expansion/phase5-9618/phase5-d-publication-02-raw-report.json` — releaseGate
+- `output/production-expansion/phase7-0478/pr070-0478-2019-fm-phase7-batch01-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2019-mj-phase7-batch02-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2019-on-phase7-batch01-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2019-on-phase7-batch03-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2020-fm-phase7-batch04-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2020-on-phase7-batch05-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2021-fm-phase7-batch06-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2021-on-phase7-batch07-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2022-fm-phase7-batch08-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2022-on-phase7-batch09-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2023-fm-phase7-batch02-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2023-fm-phase7-batch10-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2023-on-phase7-batch11-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2024-fm-phase7-batch12-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2024-mj-phase7-batch03-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2024-mj-phase7-batch13-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2024-on-phase7-batch04-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2024-on-phase7-batch14-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2025-fm-phase7-batch15-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2025-mj-phase7-batch05-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2025-mj-phase7-batch16-production-report.json` — releaseGate, prDocument
+- `output/production-expansion/phase7-0478/pr070-0478-2025-on-phase7-batch17-production-report.json` — releaseGate, prDocument
+- `output/quality-governance/phase8-e-regression-report.json` — rollback
+- `scripts/db-a1-r1-human-decision-closure.js` — humanReview, releaseGate
+- `src/ingestion/continuousOperation.js` — rollback
+
+
+## Most-referenced files
+
+- `output/production/production-store.json` — 100 direct references
+- `generated/production-question-index.json` — 57 direct references
+- `public/assets/question-index.json` — 57 direct references
+- `output/pr010c3a2a2br13/dry-run/production-store.reconciled-candidate.json` — 48 direct references
+- `public/app.js` — 34 direct references
+- `public/index.html` — 32 direct references
+- `server.js` — 31 direct references
+- `artifacts/r2.6-r2/candidate/production-store-r2.6-r2-candidate.json` — 27 direct references
+- `pr010c3a2a1c-per-paper-index.json` — 24 direct references
+- `.vercel/project.json` — 22 direct references
+- `generated/question-rendering-contract-integrity.json` — 22 direct references
+- `public/styles.css` — 22 direct references
+- `public/textbook_syllabus/pastpaper/caie-igcse-0478/2025-May-June/0478_s25_qp_12.pdf` — 22 direct references
+- `output/pr010c3a2a2br13/backup/production-store-before-r13.json` — 21 direct references
+- `scripts/build-question-index.js` — 21 direct references
+- `pr010c3a2a2b-production-readiness-gate-report.json` — 20 direct references
+- `api/index.js` — 18 direct references
+- `pr010c3a2a2b-manifest-verification-report.json` — 18 direct references
+- `vercel.json` — 18 direct references
+- `package.json` — 17 direct references
+- `output/pr010c3a2a2br1/backup/production-store-before-r1.json` — 16 direct references
+- `public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_qp_41.pdf` — 16 direct references
+- `pr010c3a2a2b-rollback-rehearsal-report.json` — 15 direct references
+- `pr010c3a2a2b-atomic-migration-plan.json` — 14 direct references
+- `pr010c3a2a2b-artifact-manifest.json` — 13 direct references
+- `public/assets/paperlens-data.js` — 13 direct references
+- `src/ingestion/canonicalCompleteness.js` — 13 direct references
+- `artifacts/r2.6-r3-r2-r2/prewrite/controlled-production-write-plan.json` — 12 direct references
+- `artifacts/r2.6-r3-r2-r2/rollback/rollback-preflight.json` — 12 direct references
+- `output/pr010c3a2a2c/backup/production-store-before-2c.json` — 12 direct references
+- `output/pr010c3a2a2dr2/candidate/pr010c3a2a2dr2-production-repair-candidate.json` — 12 direct references
+- `pr010c3a2a2br13-manifest-verification-report.json` — 12 direct references
+- `pr010c3a2a2br13a-cross-package-final-attestation.json` — 12 direct references
+- `pr010c3a2a2dr1-artifact-manifest.json` — 12 direct references
+- `pr010c3a2a2dr2-artifact-manifest.json` — 12 direct references
+- `public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2022 May June/9618_s22_ms_41.pdf` — 12 direct references
+- `artifacts/r2.6-r3-r2-r2/hitl/case-a-runtime-bound-human-decision.json` — 11 direct references
+- `data/users.json` — 11 direct references
+- `output/pr010c3a2a2dr2/backup/production-store-before-r2.json` — 11 direct references
+- `output/pr010c3a2a2dr23/candidate/production-store.semantic-refresh-candidate.json` — 11 direct references
+- `pr010c3a2a1c-artifact-manifest.json` — 11 direct references
+- `pr010c3a2a2d-monitoring-run-index.json` — 11 direct references
+- `src/ingestion/pdfGeometry.js` — 11 direct references
+- `src/server/db.js` — 11 direct references
+- `artifacts/r2.6-r3-r2-r2/hitl/case-a-human-decision-verification.json` — 10 direct references
+- `docs/PR-010C-canonical-question-boundary-contract.md` — 10 direct references
+- `output/pr010c3a2a2dr22/candidate/production-store.semantic-refresh-candidate.json` — 10 direct references
+- `output/pr010c3a2a2dr24/candidate/production-store.semantic-refresh-candidate.json` — 10 direct references
+- `pr010c3a2a1c-0478-2023-ON-12-Q5-boundary-evidence.json` — 10 direct references
+- `pr010c3a2a2a-full-corpus-contract-report.json` — 10 direct references
+- `pr010c3a2a2b-canonical-production-mapping-report.json` — 10 direct references
+- `pr010c3a2a2b-final-closure-report.json` — 10 direct references
+- `pr010c3a2a2b-production-migration-dry-run-report.json` — 10 direct references
+- `pr010c3a2a2b-readiness-issues.json` — 10 direct references
+- `pr010c3a2a2br1-production-only-node-resolution.json` — 10 direct references
+- `pr010c3a2a2c-production-after-state-report.json` — 10 direct references
+- `public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-Oct-Nov/0478_w23_qp_12.pdf` — 10 direct references
+- `schemas/canonical-question-boundary-issue.schema.json` — 10 direct references
+- `src/ingestion/canonicalQuestionBoundaryContract.js` — 10 direct references
+- `artifacts/r2.6-r3-r2-r1-r1/runtime/screenshots/screenshot-provenance.json` — 9 direct references
+- `artifacts/r2.6-r3-r2-r2a-r1/vercel/local-to-project-3-binding-verification.json` — 9 direct references
+- `output/pr010c3a2a2c/after/production-store-after-2c.json` — 9 direct references
+- `output/pr010c3a2a2dr21/backup/production-store-before-r21.json` — 9 direct references
+- `output/pr010c3a2a2dr21/candidate/production-store.semantic-refresh-candidate.json` — 9 direct references
+- `output/pr010c3a2a2dr25/backup/production-store-before-r25.json` — 9 direct references
+- `output/release/pr008-final-release-report.json` — 9 direct references
+- `pr010c-contract-validation-report.json` — 9 direct references
+- `pr010c3a2a2b-execution-report.json` — 9 direct references
+- `pr010c3a2a2b-production-data-source-audit.json` — 9 direct references
+- `pr010c3a2a2b-production-rollback-plan.json` — 9 direct references
+- `pr010c3a2a2b-production-schema-audit.json` — 9 direct references
+- `pr010c3a2a2br13-artifact-manifest.json` — 9 direct references
+- `pr010c3a2a2br13-final-closure-report.json` — 9 direct references
+- `pr010c3a2a2br13-rollback-rehearsal-report.json` — 9 direct references
+- `pr010c3a2a2br13a-response-area-evidence-report.json` — 9 direct references
+- `pr010c3a2a2br13a1-final-candidate-identity-verification-report.json` — 9 direct references
+- `schemas/canonical-question-boundary-contract-input.schema.json` — 9 direct references
+- `schemas/canonical-question-boundary-contract-output.schema.json` — 9 direct references
+- `scripts/pr010c-canonical-boundary-root-fix.js` — 9 direct references
+- `src/ingestion/canonicalOwnership/model.js` — 9 direct references
+- `src/ingestion/questionRenderingContract.js` — 9 direct references
+- `artifacts/r2.6-r2/source-evidence/0478-2019-MJ-21-Q3-span-overlay.json` — 8 direct references
+- `artifacts/r2.6-r3-r2-r1-r1/runtime/public/assets/question-index.json` — 8 direct references
+- `data/checkout-sessions.json` — 8 direct references
+- `output/pr010c3a2a2dr2/after/production-store-after-r2.json` — 8 direct references
+- `output/pr010c3a2a2dr21/canonical-evidence/semantic-evidence-repair.json` — 8 direct references
+- `output/pr010c3a2a2dr25/candidate/production-store.ownership-repaired-candidate.json` — 8 direct references
+- `pr010c3a2a0-smoke-report.json` — 8 direct references
+- `pr010c3a2a1c-corpus-inventory-report.json` — 8 direct references
+- `pr010c3a2a1c-full-corpus-validation-report.json` — 8 direct references
+- `pr010c3a2a1c-manifest-verification-report.json` — 8 direct references
+- `pr010c3a2a2a-artifact-manifest.json` — 8 direct references
+- `pr010c3a2a2b-frontend-data-contract-audit.json` — 8 direct references
+- `pr010c3a2a2b-input-verification-report.json` — 8 direct references
+- `pr010c3a2a2b-production-backup-plan.json` — 8 direct references
+- `pr010c3a2a2b-production-migration-diff.json` — 8 direct references
+- `pr010c3a2a2br1-unmatched-canonical-classification.json` — 8 direct references
+- `pr010c3a2a2br13a-final-attestation-verification-report.json` — 8 direct references
+- `pr010c3a2a2c-artifact-manifest.json` — 8 direct references
+- `pr010c3a2a2c-final-closure-report.json` — 8 direct references
+- `pr010c3a2a2c-manifest-verification-report.json` — 8 direct references
+- `pr010c3a2a2ca-supplemental-closure-report.json` — 8 direct references
+- `pr010c3a2a2dr1-manifest-verification-report.json` — 8 direct references
+- `pr010c3a2a2dr2-production-after-state-report.json` — 8 direct references
+- `pr010c3a2a2dr2-q4-q5-layered-snapshot.json` — 8 direct references
+- `pr010c3a2a2dr2-q5-source-of-truth-diagnosis-report.json` — 8 direct references
+- `pr010c3a2a2dr22-artifact-manifest.json` — 8 direct references
+- `scripts/pr010c-contract-validation.js` — 8 direct references
+- `src/ingestion/questionSlicer.js` — 8 direct references
+- `src/server/runtimeEnvironment.js` — 8 direct references
+- `artifacts/r2.6-r1/candidate/production-store-r2.6-r1-candidate.json` — 7 direct references
+- `artifacts/r2.6-r2/validation/authorized-diff-validation.json` — 7 direct references
+- `artifacts/r2.6-r3-r2-r2a-r1/vercel/deployment-command-readiness.json` — 7 direct references
+- `artifacts/r2.6-r3-r2/release/release-gate.json` — 7 direct references
+- `output/maintenance/child-id-stabilization-migration.json` — 7 direct references
+- `output/maintenance/pr008-parent-contract-gate-resolution-debug.json` — 7 direct references
+- `output/pr010c3a2a1c/evidence/0478-2019-MJ-21-QP/source-spans.json` — 7 direct references
+- `output/pr010c3a2a2dr21/after/production-store-final-after-rollback.json` — 7 direct references
+- `output/pr010c3a2a2dr22/backup/production-store-before-r22.json` — 7 direct references
+- `output/pr010c3a2a2dr23/backup/production-store-before-r23.json` — 7 direct references
+- `output/pr010c3a2a2dr24/backup/production-store-before-r24.json` — 7 direct references
+- `pr010c3a2a0-anchors.json` — 7 direct references
+- `pr010c3a2a0-ownership-assignments.json` — 7 direct references
+- `pr010c3a2a0-source-spans.json` — 7 direct references
+- `pr010c3a2a0-visual-lines.json` — 7 direct references
+- `pr010c3a2a2a-contract-rule-coverage-report.json` — 7 direct references
+- `pr010c3a2a2a-manifest-verification-report.json` — 7 direct references
+- `pr010c3a2a2a-per-paper-contract-index.json` — 7 direct references
+- `pr010c3a2a2a-validator-determinism-report.json` — 7 direct references
+- `pr010c3a2a2a-validator-implementation-audit.json` — 7 direct references
+- `pr010c3a2a2b-frontend-regression-plan.json` — 7 direct references
+- `pr010c3a2a2b-post-write-validation-plan.json` — 7 direct references
+- `pr010c3a2a2b-production-before-state-summary.json` — 7 direct references
+- `pr010c3a2a2b-production-field-mapping.json` — 7 direct references
+- `pr010c3a2a2br1-ambiguous-mapping-resolution.json` — 7 direct references
+- `pr010c3a2a2br1-candidate-validation-report.json` — 7 direct references
+- `pr010c3a2a2br1-canonical-contract-report.json` — 7 direct references
+- `pr010c3a2a2br1-input-verification-report.json` — 7 direct references
+- `pr010c3a2a2br1-known-fixture-regression-report.json` — 7 direct references
+- `pr010c3a2a2br1-reconciliation-dry-run-report.json` — 7 direct references
+- `pr010c3a2a2br1-reconciliation-report.json` — 7 direct references
+- `pr010c3a2a2br1-topology-rollback-rehearsal-report.json` — 7 direct references
+- `pr010c3a2a2br13-child-list-contract-report.json` — 7 direct references
+- `pr010c3a2a2br13-legacy-semantic-audit.json` — 7 direct references
+- `pr010c3a2a2br13-response-area-remap-report.json` — 7 direct references
+- `pr010c3a2a2br13a-backup-identity-verification-report.json` — 7 direct references
+- `pr010c3a2a2br13a-legacy-typed-ownership-evidence.json` — 7 direct references
+- `pr010c3a2a2br13a-response-area-id-repair-diff.json` — 7 direct references
+- `pr010c3a2a2c-rollback-decision-report.json` — 7 direct references
+- `pr010c3a2a2dr1-alias-runtime-regression-report.json` — 7 direct references
+- `pr010c3a2a2dr1-false-roman-runtime-regression-report.json` — 7 direct references
+- `pr010c3a2a2dr1-final-closure-report.json` — 7 direct references
+- `pr010c3a2a2dr2-final-closure-report.json` — 7 direct references
+- `pr010c3a2a2dr2-manifest-verification-report.json` — 7 direct references
+- `pr010c3a2a2dr21-deployment-prerequisite-report.json` — 7 direct references
+- `pr010c3a2a2dr21-postwrite-authoritative-validation-report.json` — 7 direct references
+- `pr010c3a2a2dr21-prewrite-candidate-validation-report.json` — 7 direct references
+- `pr010c3a2a2dr21-production-vs-canonical-semantic-audit.json` — 7 direct references
+- `pr010c3a2a2dr21-rendering-contract-validation-report.json` — 7 direct references
+- `pr010c3a2a2dr22-deployment-preflight-report.json` — 7 direct references
+- `pr010c3a2a2dr22-production-vs-canonical-semantic-audit.json` — 7 direct references
+- `pr010c3a2a2dr22-rendering-exact-text-validation-report.json` — 7 direct references
+- `pr010c3a2a2dr23-deployment-preflight-report.json` — 7 direct references
+- `pr010c3a2a2dr23-full-corpus-contamination-audit.json` — 7 direct references
+- `pr010c3a2a2dr23-source-span-reclassification-audit.json` — 7 direct references
+- `pr010c3a2a2dr23-top-level-fallback-audit.json` — 7 direct references
+- `public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_12.pdf` — 7 direct references
+- `public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2024 Oct Nov/9618_w24_qp_23.pdf` — 7 direct references
+- `public/textbook_syllabus/pastpaper/caie-as-a-level-9618/2025 May June/9618_s25_qp_11.pdf` — 7 direct references
+- `public/textbook_syllabus/pastpaper/caie-igcse-0478/2023-May-June/0478_s23_qp_12.pdf` — 7 direct references
+- `scripts/pr008-production-release.js` — 7 direct references
+- `scripts/pr010c3a2a2d-production-rollback.js` — 7 direct references
+- `tests/browser-data-load.test.js` — 7 direct references
+- `tests/question-search.test.js` — 7 direct references
+- `artifacts/r2.6-r2/hitl/post-repair-review-package/review-package.json` — 6 direct references
+- `artifacts/r2.6-r2/runtime/screenshots/0478-q3-source-evidence.png` — 6 direct references
+- `artifacts/r2.6-r2/runtime/screenshots/9618-q1c-full-question.png` — 6 direct references
+- `artifacts/r2.6-r2/runtime/screenshots/9618-q1c-question-and-response-areas.png` — 6 direct references
+- `artifacts/r2.6-r3-r2-r1/runtime/runtime-rendering-freeze.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r1/runtime/screenshots/9618-q1c-final-screenshot-provenance.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r2/identity/approved-candidate-identity.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r2/identity/runtime-evidence-identity.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r2a-r1/vercel/legacy-project-cleanup-final-verification.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r2a-r3/audit/environment-mode-reference-audit.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r2a-r3/baseline/pre-repair-identity-freeze.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r2a-r3/design/runtime-environment-resolution-contract.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r2a-r3/preflight/post-repair-build-and-test-verification.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r2a-r3/repair/environment-mode-logic-repair-diff-audit.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r2a-r3/tests/configuration-guard-regression-verification.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r2a-r3/tests/pre-repair-failing-test-evidence.json` — 6 direct references
+- `artifacts/r2.6-r3-r2-r2a-r3/tests/runtime-environment-matrix-verification.json` — 6 direct references
+- `artifacts/r2.6-r3-r2/hitl/evidence-reference-validation.json` — 6 direct references
+- `artifacts/r2.6-r3-r2/identity/runtime-identity.json` — 6 direct references
+- `artifacts/r2.6-r3-r2/release/final-report.json` — 6 direct references
+- `artifacts/r2.6-r3-r2/runtime/browser-acceptance.json` — 6 direct references
+- `artifacts/r2.6/candidate/production-store-r2.6-candidate.json` — 6 direct references
+- `output/maintenance/ownership-blocker-closure-and-child-id-stabilization-debug.json` — 6 direct references
+- `output/maintenance/pr010-normalization-diff.json` — 6 direct references
+- `output/maintenance/repaired-child-semantic-completeness-debug.json` — 6 direct references
+- `output/pr010c3a2a2br1/dry-run/production-store.reconciled-candidate.json` — 6 direct references
