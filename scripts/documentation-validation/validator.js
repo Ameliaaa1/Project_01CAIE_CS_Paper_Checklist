@@ -711,6 +711,24 @@ function validateRepository(options = {}) {
     }
   }
 
+  for (const entry of baseline.entries || []) {
+    if (entry.classification !== "LEGACY_BASELINED" || strictPaths.has(entry.path)) continue;
+    const activeRules = new Set(
+      findings.filter((finding) => finding.path === entry.path).map((finding) => finding.ruleId),
+    );
+    for (const ruleId of entry.rules) {
+      if (!activeRules.has(ruleId)) {
+        findings.push(makeFinding(
+          RULES.BASELINE_STALE,
+          entry.path,
+          "A reviewed legacy violation is no longer present but remains in the baseline.",
+          `remove stale ${ruleId} entry through reviewed baseline governance`,
+          "stale baseline rule",
+        ));
+      }
+    }
+  }
+
   applyBaseline(findings, baselineByPath, strictPaths);
   const sorted = sortFindings(findings);
   summary.blockingFindings = sorted.filter((finding) => finding.severity === "ERROR").length;

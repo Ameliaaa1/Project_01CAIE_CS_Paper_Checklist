@@ -92,6 +92,7 @@ test("evidence pair mismatch blocks", () => assertRule("evidence-pair-mismatch",
 test("stale recorded hash blocks", () => assertRule("stale-hash", "DOC-EVIDENCE-004"));
 test("JSON self-hash blocks", () => assertRule("self-hash", "DOC-EVIDENCE-005"));
 test("baseline regression blocks", () => assertRule("baseline-regression", "DOC-META-002"));
+test("fixed violation still in baseline blocks", () => assertRule("baseline-stale", "DOC-BASELINE-005"));
 test("unchanged legacy baseline passes with findings", () => {
   const result = run("legacy-baselined");
   assert.strictEqual(result.exitCode, 0);
@@ -135,5 +136,5 @@ test("forbidden mutation option is rejected", () => {
 });
 
 assert.strictEqual(hashTree(fixturesRoot), fixtureHashBefore, "source fixtures were modified");
-assert.strictEqual(passed, 25);
-process.stdout.write(`PASS documentation-validation tests: ${passed}/25\n`);
+assert.strictEqual(passed, 26);
+process.stdout.write(`PASS documentation-validation tests: ${passed}/26\n`);
