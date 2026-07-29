@@ -49,5 +49,5 @@ the authority named here.
   `package.json` scripts remain authoritative.
 
 These are explicit gaps, not invitations to use archived plans as current
-authority. PR-04 may standardize or introduce dedicated documents without
-changing historical evidence.
+authority. A later reviewed change may introduce dedicated architecture or
+development documentation without changing historical evidence.

@@ -8,7 +8,7 @@ Owner: Repository maintainers
 
 Initial audit generated at: `2026-07-29T15:44:08Z`
 
-Generated at: `2026-07-29T16:09:31Z`
+Generated at: `2026-07-29T16:22:05Z`
 
 Base SHA: `49a4f66307fc5ea51e27481e4d96ab0dcf51cfac`
 
@@ -93,6 +93,21 @@ PR #7 is merged. A final reviewed `CURRENT` status will remain conditionally
 inactive before merge. PR-04 does not alter product, parser, canonical-model,
 Production, or Candidate authority.
 
+## Provenance Text Repair
+
+PR-04-R1A corrected two statements that would otherwise become stale after
+merge:
+
+- `DOCUMENTATION_INDEX.md` now assigns link validation to the PR that
+  introduces or changes each link. It records that PR-04 validated the links
+  added or modified by the policy-freeze boundary.
+- `AUTHORITATIVE_DOCUMENT_MAP.md` no longer suggests that PR-04 may create a
+  dedicated architecture or development guide. Such work remains a possible
+  later reviewed change.
+
+These corrections do not change authority subjects, lifecycle decisions,
+candidate dispositions, or the approved execution-candidate proposal.
+
 ## Evidence Audit
 
 Five Markdown/JSON status pairs agreed. Three existing manifests were
@@ -137,9 +152,9 @@ Files renamed: 0
 
 Files moved: 0
 
-Line additions: `825`
+Line additions: `853`
 
-Line deletions: `4`
+Line deletions: `8`
 
 Archive, code, PDF, Production, Candidate, and safety-backup changes: 0.
 
@@ -158,8 +173,8 @@ Archive, code, PDF, Production, Candidate, and safety-backup changes: 0.
 | Files deleted | `0` |
 | Files renamed | `0` |
 | Files moved | `0` |
-| Line additions | `825` |
-| Line deletions | `4` |
+| Line additions | `853` |
+| Line deletions | `8` |
 | Archive modifications | `0` |
 | Code changes | `0` |
 | PDF changes | `0` |

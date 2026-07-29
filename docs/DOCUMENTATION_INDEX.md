@@ -77,5 +77,7 @@ guidance without independent confirmation.
 
 ## Navigation Integrity
 
-All local links in this index are validated by PR-03. If a target is moved in
-a later approved phase, update the relevant index in the same change.
+All local links in this index must be validated by the PR that introduces or
+changes them. PR-04 validated the links added or modified by its policy-freeze
+boundary. If a target is moved in a later approved phase, update the relevant
+index in the same change.

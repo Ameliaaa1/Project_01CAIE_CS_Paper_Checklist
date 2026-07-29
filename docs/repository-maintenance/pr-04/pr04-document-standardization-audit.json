@@ -5,7 +5,7 @@
   "result": "READY_PR04_R1_FINAL_DIFF_FOR_HUMAN_REVIEW",
   "baseSha": "49a4f66307fc5ea51e27481e4d96ab0dcf51cfac",
   "initialAuditGeneratedAt": "2026-07-29T15:44:08Z",
-  "generatedAt": "2026-07-29T16:09:31Z",
+  "generatedAt": "2026-07-29T16:22:05Z",
   "scope": {
     "documentsScanned": 44,
     "markdownDocuments": 35,
@@ -26,6 +26,13 @@
     "evidenceFormatRulesDefined": true,
     "humanApprovalRequiredForMigration": true,
     "legacyContentRewritten": false
+  },
+  "r1aRepair": {
+    "documentationIndexValidationAttribution": "CORRECTED",
+    "authorityMapFuturePhaseText": "CORRECTED",
+    "authoritySubjectsChanged": 0,
+    "candidateDecisionsChanged": 0,
+    "humanApprovalRecorded": false
   },
   "audit": {
     "lifecycleStatus": {
@@ -144,8 +151,8 @@
     "filesDeleted": 0,
     "filesRenamed": 0,
     "filesMoved": 0,
-    "lineAdditions": 825,
-    "lineDeletions": 4
+    "lineAdditions": 853,
+    "lineDeletions": 8
   },
   "validation": {
     "jsonParse": "PASS",
@@ -161,8 +168,8 @@
     "filesDeleted": 0,
     "filesRenamed": 0,
     "filesMoved": 0,
-    "lineAdditions": 825,
-    "lineDeletions": 4
+    "lineAdditions": 853,
+    "lineDeletions": 8
   },
   "evidenceFiles": [
     {
@@ -177,18 +184,18 @@
     },
     {
       "path": "docs/DOCUMENTATION_INDEX.md",
-      "sizeBytes": 4293,
-      "sha256": "9e8f4baaf4b1647908c7860fa6ef767ed92b1aae48e99025d965e63519b9c46c"
+      "sizeBytes": 4405,
+      "sha256": "c993feeb13409d82f800349b9b3758fdf6d94518c9b863960ff423f015e9827a"
     },
     {
       "path": "docs/AUTHORITATIVE_DOCUMENT_MAP.md",
-      "sizeBytes": 4208,
-      "sha256": "f0a737a0e99569b45ea8a6b4bd8538dc52136d80a847095db382cb26a0365c46"
+      "sizeBytes": 4243,
+      "sha256": "e1f387af961bcd195cbb7e5acb0f95e663df723896b12be00c9cb7d614091400"
     },
     {
       "path": "docs/repository-maintenance/pr-04/PR04_DOCUMENT_STANDARDIZATION_AUDIT.md",
-      "sizeBytes": 7772,
-      "sha256": "db57b90c48a2cab4ab239ba0262b633b7cbb22c6668b2a8a17c4abc2328e0d87"
+      "sizeBytes": 8403,
+      "sha256": "6cb619087fd076f228cab860558b473f4225c1cdc6e6fc9d90cd8913e4fed7d7"
     }
   ],
   "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE",
