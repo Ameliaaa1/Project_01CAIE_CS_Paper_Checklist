@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-29T14:48:16Z",
+  "generatedAt": "2026-07-29T15:12:31Z",
+  "initialAuditGeneratedAt": "2026-07-29T14:48:16Z",
   "status": "PASS_DOCUMENTATION_INDEX_RECONSTRUCTION_READY_FOR_HUMAN_MERGE",
   "baseSha": "72dea261c2e82f2b88c3a4b36ffe2256bc210658",
   "initialAudit": {
@@ -56,8 +57,8 @@
     {
       "path": "docs/repository-maintenance/pr-03/PR03_DOCUMENTATION_INDEX_REPORT.md",
       "role": "PR03_VALIDATION_REPORT",
-      "sizeBytes": 4048,
-      "sha256": "7f27117ed7ec68361a5089d4df3301c24c40023bb5898426d53f2aeda9b9ba43"
+      "sizeBytes": 4100,
+      "sha256": "8bd54a14260f86e3e1a9411f734b181c3686be9cab112505a03755280ba78f41"
     },
     {
       "path": "docs/repository-maintenance/pr-03/pr03-documentation-index-report.json",
