@@ -18,6 +18,12 @@ Primary source directory:
 
 - https://pastpapers.papacambridge.com/papers/caie/igcse-computer-science-0478
 
+## Documentation
+
+See the [Documentation Index](docs/DOCUMENTATION_INDEX.md) for current
+documentation navigation, repository-maintenance history, authoritative
+sources, and archived records.
+
 ## Run
 
 ```bash
