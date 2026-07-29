@@ -14,8 +14,8 @@ the authority named here.
 | Repository-maintenance lifecycle navigation | [PR History Index](PR_HISTORY_INDEX.md) | Completed-phase navigation authority |
 | Archived historical document navigation | [Archive Index](ARCHIVE_INDEX.md) | Archive navigation authority |
 | Documentation authority ownership | This document | Authority-assignment source |
-| Documentation naming, metadata, linking, and evidence format | [Documentation Standard](DOCUMENTATION_STANDARD.md) | Proposed policy authority; effective after PR-04 approval and merge |
-| Document lifecycle, status transitions, authority changes, and mutability | [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Proposed lifecycle authority; effective after PR-04 approval and merge |
+| Documentation naming, metadata, linking, and evidence format | [Documentation Standard](DOCUMENTATION_STANDARD.md) | Candidate policy authority; if approved, effective upon merge of GitHub PR #7 |
+| Document lifecycle, status transitions, authority changes, and mutability | [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Candidate lifecycle authority; if approved, effective upon merge of GitHub PR #7 |
 | Pushability rescue and public remote backup boundary | [Remote Backup Summary](repository-maintenance/public/REMOTE_BACKUP_SUMMARY.md) | PR-00 summary authority |
 | Repository inventory snapshot and original classifications | [File Inventory Summary](repository-maintenance/public/FILE_INVENTORY_SUMMARY.md) | PR-01 public inventory authority |
 | Applied file decisions and protected/deferred counts | [File Decision Summary](repository-maintenance/public/FILE_DECISION_SUMMARY.md) | PR-01A decision authority |
@@ -37,6 +37,9 @@ the authority named here.
 4. Files under `docs/archive/` are immutable historical evidence.
 5. A later PR may change authority only by updating this map and all affected
    navigation in the same reviewed change.
+6. A source marked `CURRENT` with an `Effective upon merge` condition is not
+   active authority until the named PR reaches the merged state on the default
+   branch.
 
 ## Known Documentation Gaps
 

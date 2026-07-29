@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "task": "PR-04",
   "status": "READY_FOR_HUMAN_REVIEW",
-  "result": "PASS_DOCUMENTATION_STANDARDIZATION_POLICY_READY_FOR_HUMAN_REVIEW",
+  "result": "READY_PR04_R1_FINAL_DIFF_FOR_HUMAN_REVIEW",
   "baseSha": "49a4f66307fc5ea51e27481e4d96ab0dcf51cfac",
   "initialAuditGeneratedAt": "2026-07-29T15:44:08Z",
-  "generatedAt": "2026-07-29T15:48:47Z",
+  "generatedAt": "2026-07-29T16:09:31Z",
   "scope": {
     "documentsScanned": 44,
     "markdownDocuments": 35,
@@ -38,11 +38,11 @@
       "archiveLegacyProtected": 15,
       "pr02aLegacyProtected": 7,
       "forbiddenAmbiguousNames": 0,
-      "approvedRenameCandidates": 0,
-      "approvedMoveCandidates": 0
+      "proposedRenameCandidatesForExecution": 0,
+      "proposedMoveCandidatesForExecution": 0
     },
     "authority": {
-      "subjects": 20,
+      "subjects": 18,
       "duplicateSubjects": 0,
       "missingProposedPolicyTargets": 0,
       "archiveAuthorityTargets": 0
@@ -75,14 +75,14 @@
       "scope": "README.md",
       "classification": "METADATA_ONLY",
       "affected": 1,
-      "disposition": "PENDING_HUMAN_REVIEW"
+      "disposition": "PROPOSED_NO_ACTION_EXISTING_ROOT_README_EXCEPTION"
     },
     {
       "id": "PR04-STATUS-002",
       "scope": "docs/ARCHIVE_INDEX.md and docs/PR_HISTORY_INDEX.md",
       "classification": "METADATA_ONLY",
       "affected": 2,
-      "disposition": "PENDING_HUMAN_REVIEW"
+      "disposition": "PROPOSED_DEFERRED_NO_EXECUTION_APPROVED"
     },
     {
       "id": "PR04-ARCHIVE-001",
@@ -103,7 +103,7 @@
       "scope": "completed records using PASS_* as status",
       "classification": "CONTENT_REVIEW",
       "affected": 17,
-      "disposition": "PENDING_SEPARATELY_APPROVED_STRATEGY"
+      "disposition": "PROPOSED_PROTECTED_NO_CHANGE_EVIDENCE_SEMANTICS_PRESERVED"
     },
     {
       "id": "PR04-METADATA-001",
@@ -135,15 +135,17 @@
     }
   ],
   "executionBoundary": {
-    "approvedExecutionCandidates": 0,
-    "renamesExecuted": 0,
-    "movesExecuted": 0,
-    "deletionsExecuted": 0,
+    "proposedApprovedExecutionCandidates": 0,
     "contentRewritesExecuted": 0,
     "newPolicyFiles": 2,
     "newAuditFiles": 2,
     "updatedIndexFiles": 2,
-    "allowedFiles": 6
+    "allowedFiles": 6,
+    "filesDeleted": 0,
+    "filesRenamed": 0,
+    "filesMoved": 0,
+    "lineAdditions": 825,
+    "lineDeletions": 4
   },
   "validation": {
     "jsonParse": "PASS",
@@ -155,41 +157,48 @@
     "protectedManifestHashes": "PASS_27_OF_27",
     "recordedEvidenceHashes": "PASS_5_OF_5",
     "gitDiffCheck": "PASS",
-    "allowedChangedFiles": "PASS_6_OF_6",
-    "deletions": 0,
-    "renames": 0
+    "changedFiles": "PASS_6_OF_6",
+    "filesDeleted": 0,
+    "filesRenamed": 0,
+    "filesMoved": 0,
+    "lineAdditions": 825,
+    "lineDeletions": 4
   },
   "evidenceFiles": [
     {
       "path": "docs/DOCUMENTATION_STANDARD.md",
-      "sizeBytes": 5123,
-      "sha256": "09434aa636755063ec8f80dedf9d28cf838a314504d7601d8484fccf04ca1ed0"
+      "sizeBytes": 5723,
+      "sha256": "ab8a79c8f37234e82a6b0d23d2a5340f2c36564e36c7e6ac2add9e244abdca73"
     },
     {
       "path": "docs/DOCUMENT_LIFECYCLE_POLICY.md",
-      "sizeBytes": 6547,
-      "sha256": "cb0e16235e9e663dd025e2366ec4e22521bbba0bad7946d605547ef6c85905fb"
+      "sizeBytes": 7416,
+      "sha256": "b9550fdc580b65729aa8e8b9fc241a17a5b4864477f81f3d871d650cf7e652bc"
     },
     {
       "path": "docs/DOCUMENTATION_INDEX.md",
-      "sizeBytes": 4234,
-      "sha256": "be8eee93c94de8bb630ee12650eab7152004e5fbc13a4012500c0fb3a50ede30"
+      "sizeBytes": 4293,
+      "sha256": "9e8f4baaf4b1647908c7860fa6ef767ed92b1aae48e99025d965e63519b9c46c"
     },
     {
       "path": "docs/AUTHORITATIVE_DOCUMENT_MAP.md",
-      "sizeBytes": 4021,
-      "sha256": "e2325d4c7abf7903ba3385e33e21a7652fef700879611198937cc7c5b17ab2e8"
+      "sizeBytes": 4208,
+      "sha256": "f0a737a0e99569b45ea8a6b4bd8538dc52136d80a847095db382cb26a0365c46"
     },
     {
       "path": "docs/repository-maintenance/pr-04/PR04_DOCUMENT_STANDARDIZATION_AUDIT.md",
-      "sizeBytes": 6802,
-      "sha256": "df79e8a7edda95b3d157ae41e788684d9ded9fcac41036f96f93d4336688d0f5"
+      "sizeBytes": 7772,
+      "sha256": "db57b90c48a2cab4ab239ba0262b633b7cbb22c6668b2a8a17c4abc2328e0d87"
     }
   ],
   "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE",
   "humanReview": {
     "required": true,
     "decision": "PENDING",
+    "reviewer": null,
+    "reviewedAt": null,
+    "proposedDecision": "APPROVE",
+    "proposedApprovedExecutionCandidates": 0,
     "approvedCandidates": []
   }
 }

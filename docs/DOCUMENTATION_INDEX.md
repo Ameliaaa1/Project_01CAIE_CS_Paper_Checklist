@@ -12,8 +12,8 @@ or content of any referenced file.
 | --- | --- | --- |
 | [Project README](../README.md) | Product overview, local startup, deployment configuration, and project structure | Authoritative current project entry |
 | [Authoritative Document Map](AUTHORITATIVE_DOCUMENT_MAP.md) | Assigns one source of truth to each documentation subject | Authoritative ownership map |
-| [Documentation Standard](DOCUMENTATION_STANDARD.md) | Proposed naming, metadata, link, and evidence-format rules | Becomes authoritative after PR-04 approval and merge |
-| [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Proposed status, transition, authority, and mutability rules | Becomes authoritative after PR-04 approval and merge |
+| [Documentation Standard](DOCUMENTATION_STANDARD.md) | Candidate naming, metadata, link, and evidence-format standard | If approved, becomes current authority upon merge of GitHub PR #7 |
+| [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Candidate lifecycle, status, authority-transition, and mutability policy | If approved, becomes current authority upon merge of GitHub PR #7 |
 
 ## Architecture Documentation
 
@@ -33,8 +33,8 @@ model plans under `docs/archive/` are evidence, not current architecture.
 | [package.json](../package.json) | Executable npm scripts and dependency declarations | Machine-readable script authority |
 
 No separate development guide is currently tracked. The README and
-`package.json` remain authoritative until PR-04 or a later reviewed change
-creates one.
+`package.json` remain authoritative until a later reviewed change creates a
+dedicated development guide.
 
 ## Repository Maintenance
 

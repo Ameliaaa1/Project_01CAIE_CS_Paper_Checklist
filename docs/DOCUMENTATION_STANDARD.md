@@ -7,8 +7,9 @@ Owner: Repository maintainers
 Created at: `2026-07-29T15:44:08Z`
 
 Authoritative scope: Proposed repository-wide naming, metadata, linking, and
-evidence-format standard. It becomes authoritative only after PR-04 human
-approval and merge.
+evidence-format standard. These candidate bytes become authoritative only
+after human approval is recorded in the same bytes and GitHub PR #7 is merged
+into the default branch.
 
 Related documents:
 
@@ -180,6 +181,17 @@ check executes successfully.
 - Local Markdown links and target anchors must be validated before review.
 - Archived documents may be linked for history, never described as current
   implementation authority.
+
+## Conditional Activation
+
+A policy may declare `Status: CURRENT` in its final reviewed PR bytes when the
+same document also declares an `Effective upon merge` condition. The document
+is not authoritative merely because it exists on a feature branch. Authority
+begins only when the named PR is merged into the default branch.
+
+The approval record and activation condition must be present in the same final
+reviewed bytes. A post-merge process must not be required to rewrite
+`READY_FOR_HUMAN_REVIEW` into `CURRENT`.
 
 ## Change Control
 

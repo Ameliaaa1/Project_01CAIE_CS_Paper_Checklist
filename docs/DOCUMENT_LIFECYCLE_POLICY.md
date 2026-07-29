@@ -7,8 +7,9 @@ Owner: Repository maintainers
 Created at: `2026-07-29T15:44:08Z`
 
 Authoritative scope: Proposed repository-wide document lifecycle, status,
-authority-transition, and mutability policy. It becomes authoritative only
-after PR-04 human approval and merge.
+authority-transition, and mutability policy. These candidate bytes become
+authoritative only after human approval is recorded in the same bytes and
+GitHub PR #7 is merged into the default branch.
 
 Related documents:
 
@@ -56,6 +57,16 @@ Not every report becomes `CURRENT`. Completed execution reports commonly move
 from `READY_FOR_HUMAN_REVIEW` or `APPROVED` to `HISTORICAL` or
 `IMMUTABLE_EVIDENCE`.
 
+An atomic activation path is also allowed:
+
+```text
+READY_FOR_HUMAN_REVIEW
+  → human approval recorded
+  → CURRENT effective upon merge
+```
+
+Automation cannot initiate this path or grant its human approval.
+
 ## Transition Authority
 
 | Transition | Who or what authorizes it | Required evidence |
@@ -69,6 +80,23 @@ from `READY_FOR_HUMAN_REVIEW` or `APPROVED` to `HISTORICAL` or
 | Any state → `BLOCKED` | Failed required gate | Explicit blocker and recovery condition |
 
 Automation may validate facts but cannot grant human approval.
+
+## Atomic Approval and Activation
+
+A document may move from `READY_FOR_HUMAN_REVIEW` to a final reviewed
+`CURRENT` state within the same PR when all of the following are recorded in
+the final bytes:
+
+1. the human approval decision;
+2. reviewer identity;
+3. `reviewedAt`;
+4. the exact PR that activates the document;
+5. an explicit statement that authority begins only after merge into the
+   default branch.
+
+Before merge, the feature-branch copy is approved final content but is not the
+repository's active authority. After merge, no follow-up status rewrite is
+required.
 
 ## Required Transition Metadata
 
