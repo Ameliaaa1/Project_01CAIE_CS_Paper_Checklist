@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-29T12:50:53.316Z",
+  "baseSha": "f70320efce833fff843e5994433b23f6be203ec3",
+  "headSha": "2532d1ce08100137d26caa8bf863b07961077c4e",
+  "headShaRole": "evidence content commit before manifest closure",
+  "files": [
+    {
+      "path": "docs/archive/prs/PR-009/PR-009-Frontend-Migration-to-Question-Rendering-Contract-Solution.md",
+      "sizeBytes": 8095,
+      "sha256": "a3ffd31e0f6d11d51727cf584680e4be1382f185d9b6d7a3b4b5f2eafe88e86f"
+    },
+    {
+      "path": "docs/archive/prs/PR-010A/PR-010A-Question-Text-Normalization-Contract-and-Migration-Solution.md",
+      "sizeBytes": 5174,
+      "sha256": "5f16af3055d0d0fd6d957c498ca2c76a4a0b64cd9217abd127ff81fc5bde4353"
+    },
+    {
+      "path": "docs/archive/prs/PR-010B/PR-010B-child-boundary-audit-investigation-plan.md",
+      "sizeBytes": 5274,
+      "sha256": "02f483ff8107dacedaa4ca4aa0d2499c20310d48403428d61955dd2ad1ad6f18"
+    },
+    {
+      "path": "docs/archive/prs/PR-010B/PR-010B-parent-ownership-repair-solution.md",
+      "sizeBytes": 5562,
+      "sha256": "fe8c202b576ffac9adfc6a75b2cc326fcb6c9a705e2729cf847af1dc4e7bce5d"
+    },
+    {
+      "path": "docs/archive/prs/PR-010C.1/PR-010C-conditional-pass-completion-plan.md",
+      "sizeBytes": 17383,
+      "sha256": "5f78aa4ec6a606274daca103505b5b56418e8ef9f7226b59c38c9e188735f8cc"
+    },
+    {
+      "path": "docs/archive/prs/PR-010C.2/PR-010C.2-validation-evidence-completion-plan.md",
+      "sizeBytes": 15049,
+      "sha256": "95d60f803b9897665a922fe2f17fb7966ff6c7f0ed0be50097adcf7f8f514fee"
+    },
+    {
+      "path": "docs/archive/prs/PR-010C.3/PR-010C.3-actual-validator-issue-evidence-repair-plan.md",
+      "sizeBytes": 16816,
+      "sha256": "46904f8f76f2578e025347f776e6f5d553f0dbbc33453c51d65876970ec9df87"
+    },
+    {
+      "path": "docs/archive/prs/PR-010C.3A-2/PR-010C.3A-2-canonical-ownership-capture-and-validator-wiring-plan.md",
+      "sizeBytes": 17591,
+      "sha256": "523e29bf1625738304e8477f6c31e8ebb263da055ea15e44ef4a2118f3197ac1"
+    },
+    {
+      "path": "docs/archive/prs/PR-010C.3A-2A-0/PR-010C.3A-2A-0-single-pdf-ownership-runtime-integration-project-plan.md",
+      "sizeBytes": 12874,
+      "sha256": "6b459f6d572608430152e0e67cd68dd67f85ff7f1dbae5ce703e8c535285a694"
+    },
+    {
+      "path": "docs/archive/prs/PR-010C.3A-2A-0S/PR-010C.3A-2A-0S-ownership-artifact-dto-compaction-and-streaming-serialization-plan.md",
+      "sizeBytes": 15895,
+      "sha256": "59b517d70d1432ae7497b5531b4c65cd58e16fd9851c32a9375ecaea7c197f4c"
+    },
+    {
+      "path": "docs/archive/prs/PR-010C.3A-2A-0V/PR-010C.3A-2A-0V-visual-line-geometry-and-vertical-margin-isolation-repair.md",
+      "sizeBytes": 16688,
+      "sha256": "b143a0c4c9110746e7832fadf86e508bf57e9c71852c154d7cd96248e07f3f2e"
+    },
+    {
+      "path": "docs/archive/prs/PR-010C.3A-2A-1/PR-010C.3A-2A-1-full-corpus-ownership-integration-and-evidence-capture-project-plan.md",
+      "sizeBytes": 18056,
+      "sha256": "56b10322aaa7804b4f60b02958c26e222ae108b60478fe2510ce421281771d29"
+    },
+    {
+      "path": "docs/archive/prs/PR-010C.3A-2A-1A/PR-010C.3A-2A-1A-three-known-fixture-pdf-ownership-integration-test.md",
+      "sizeBytes": 17011,
+      "sha256": "839fa79ecb912109006573cf37775103c8e126cab1c867fabdd5598f8424cd3c"
+    },
+    {
+      "path": "docs/archive/prs/PR-010C.3A-2A-2A/PR-010C.3A-2A-2A-canonical-boundary-validator-wiring-and-full-corpus-contract-validation.md",
+      "sizeBytes": 26361,
+      "sha256": "c2b200122439cb0466e9311db3bdd92aa4019c12cc18095e25679ccce2b01401"
+    },
+    {
+      "path": "docs/archive/prs/PR-010C.3A-2A/PR-010C.3A-2A-canonical-ownership-model-construction-project-plan.md",
+      "sizeBytes": 17410,
+      "sha256": "cad6478afbc9196ee64d223c3f9695e8aed9f787d5844146fe7e5de4a6abfbc1"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-02b/PR02B_EXECUTION_REPORT.md",
+      "sizeBytes": 7315,
+      "sha256": "8fa6728a8e303509445bbfdfe09da619ea4b29f123d022868c18ee637b083b31"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-02b/pr02b-execution-report.json",
+      "sizeBytes": 11517,
+      "sha256": "d92b29882215d9c3a59a4bdbb9e2dfaad74a0e4bfc956b9cb862e2c6492d6f64"
+    }
+  ]
+}
