@@ -1,6 +1,6 @@
 # Authoritative Document Map
 
-Status: `CURRENT_AUTHORITY_MAP`
+Status: `CURRENT`
 
 This map assigns one authoritative source to each information subject. A
 historical or archive document may provide context, but it does not override
@@ -14,6 +14,8 @@ the authority named here.
 | Repository-maintenance lifecycle navigation | [PR History Index](PR_HISTORY_INDEX.md) | Completed-phase navigation authority |
 | Archived historical document navigation | [Archive Index](ARCHIVE_INDEX.md) | Archive navigation authority |
 | Documentation authority ownership | This document | Authority-assignment source |
+| Documentation naming, metadata, linking, and evidence format | [Documentation Standard](DOCUMENTATION_STANDARD.md) | Current policy authority; effective upon merge of GitHub PR #7 |
+| Document lifecycle, status transitions, authority changes, and mutability | [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Current lifecycle authority; effective upon merge of GitHub PR #7 |
 | Pushability rescue and public remote backup boundary | [Remote Backup Summary](repository-maintenance/public/REMOTE_BACKUP_SUMMARY.md) | PR-00 summary authority |
 | Repository inventory snapshot and original classifications | [File Inventory Summary](repository-maintenance/public/FILE_INVENTORY_SUMMARY.md) | PR-01 public inventory authority |
 | Applied file decisions and protected/deferred counts | [File Decision Summary](repository-maintenance/public/FILE_DECISION_SUMMARY.md) | PR-01A decision authority |
@@ -35,6 +37,9 @@ the authority named here.
 4. Files under `docs/archive/` are immutable historical evidence.
 5. A later PR may change authority only by updating this map and all affected
    navigation in the same reviewed change.
+6. A source marked `CURRENT` with an `Effective upon merge` condition is not
+   active authority until the named PR reaches the merged state on the default
+   branch.
 
 ## Known Documentation Gaps
 
@@ -44,5 +49,5 @@ the authority named here.
   `package.json` scripts remain authoritative.
 
 These are explicit gaps, not invitations to use archived plans as current
-authority. PR-04 may standardize or introduce dedicated documents without
-changing historical evidence.
+authority. A later reviewed change may introduce dedicated architecture or
+development documentation without changing historical evidence.

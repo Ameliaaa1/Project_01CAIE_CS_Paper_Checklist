@@ -1,6 +1,6 @@
 # Documentation Index
 
-Status: `CURRENT_NAVIGATION_ENTRY`
+Status: `CURRENT`
 
 This page is the primary navigation entry for tracked project documentation.
 It classifies documents by their present role; it does not change the status
@@ -12,6 +12,8 @@ or content of any referenced file.
 | --- | --- | --- |
 | [Project README](../README.md) | Product overview, local startup, deployment configuration, and project structure | Authoritative current project entry |
 | [Authoritative Document Map](AUTHORITATIVE_DOCUMENT_MAP.md) | Assigns one source of truth to each documentation subject | Authoritative ownership map |
+| [Documentation Standard](DOCUMENTATION_STANDARD.md) | Current naming, metadata, link, and evidence-format standard | Current authority; effective upon merge of GitHub PR #7 |
+| [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Current lifecycle, status, authority-transition, and mutability policy | Current authority; effective upon merge of GitHub PR #7 |
 
 ## Architecture Documentation
 
@@ -31,8 +33,8 @@ model plans under `docs/archive/` are evidence, not current architecture.
 | [package.json](../package.json) | Executable npm scripts and dependency declarations | Machine-readable script authority |
 
 No separate development guide is currently tracked. The README and
-`package.json` remain authoritative until PR-04 or a later reviewed change
-creates one.
+`package.json` remain authoritative until a later reviewed change creates a
+dedicated development guide.
 
 ## Repository Maintenance
 
@@ -44,6 +46,7 @@ records:
 - [PR-02A frozen archive plan](repository-maintenance/pr-02a/)
 - [PR-02B execution and closure evidence](repository-maintenance/pr-02b/)
 - [PR-03 reconstruction evidence](repository-maintenance/pr-03/)
+- [PR-04 policy-freeze evidence](repository-maintenance/pr-04/)
 
 Maintenance evidence describes completed governance work. It does not replace
 the README for current product behavior.
@@ -74,5 +77,7 @@ guidance without independent confirmation.
 
 ## Navigation Integrity
 
-All local links in this index are validated by PR-03. If a target is moved in
-a later approved phase, update the relevant index in the same change.
+All local links in this index must be validated by the PR that introduces or
+changes them. PR-04 validated the links added or modified by its policy-freeze
+boundary. If a target is moved in a later approved phase, update the relevant
+index in the same change.
