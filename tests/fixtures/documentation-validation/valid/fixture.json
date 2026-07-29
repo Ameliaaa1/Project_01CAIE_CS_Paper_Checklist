@@ -1,0 +1,1 @@
+{"files":{"docs/EXAMPLE.md":"# Example\n\nStatus: `VALIDATED`\n\nOwner: Test\n\nCreated at: `2026-01-01T00:00:00Z`\n\nAuthoritative scope: NONE\n\nRelated documents:\n\n- [Target](TARGET.md#target)\n","docs/TARGET.md":"# Target\n\nStatus: `VALIDATED`\n\nOwner: Test\n\nCreated at: `2026-01-01T00:00:00Z`\n\nAuthoritative scope: NONE\n\nRelated documents:\n\n## Target\n"}}
