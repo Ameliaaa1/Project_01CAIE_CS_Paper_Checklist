@@ -14,8 +14,8 @@ the authority named here.
 | Repository-maintenance lifecycle navigation | [PR History Index](PR_HISTORY_INDEX.md) | Completed-phase navigation authority |
 | Archived historical document navigation | [Archive Index](ARCHIVE_INDEX.md) | Archive navigation authority |
 | Documentation authority ownership | This document | Authority-assignment source |
-| Documentation naming, metadata, linking, and evidence format | [Documentation Standard](DOCUMENTATION_STANDARD.md) | Candidate policy authority; if approved, effective upon merge of GitHub PR #7 |
-| Document lifecycle, status transitions, authority changes, and mutability | [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Candidate lifecycle authority; if approved, effective upon merge of GitHub PR #7 |
+| Documentation naming, metadata, linking, and evidence format | [Documentation Standard](DOCUMENTATION_STANDARD.md) | Current policy authority; effective upon merge of GitHub PR #7 |
+| Document lifecycle, status transitions, authority changes, and mutability | [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Current lifecycle authority; effective upon merge of GitHub PR #7 |
 | Pushability rescue and public remote backup boundary | [Remote Backup Summary](repository-maintenance/public/REMOTE_BACKUP_SUMMARY.md) | PR-00 summary authority |
 | Repository inventory snapshot and original classifications | [File Inventory Summary](repository-maintenance/public/FILE_INVENTORY_SUMMARY.md) | PR-01 public inventory authority |
 | Applied file decisions and protected/deferred counts | [File Decision Summary](repository-maintenance/public/FILE_DECISION_SUMMARY.md) | PR-01A decision authority |

@@ -1,15 +1,22 @@
 # Document Lifecycle Policy
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `CURRENT`
+
+Approval: `APPROVED_BY_HUMAN_REVIEW`
+
+Effective upon merge: `GitHub PR #7`
+
+Reviewer: `Amelia Cai`
+
+Reviewed at: `2026-07-29T16:30:48Z`
 
 Owner: Repository maintainers
 
 Created at: `2026-07-29T15:44:08Z`
 
-Authoritative scope: Proposed repository-wide document lifecycle, status,
-authority-transition, and mutability policy. These candidate bytes become
-authoritative only after human approval is recorded in the same bytes and
-GitHub PR #7 is merged into the default branch.
+Authoritative scope: Repository-wide document lifecycle, status,
+authority-transition, and mutability policy. These bytes become authoritative
+only when GitHub PR #7 is merged into the default branch.
 
 Related documents:
 

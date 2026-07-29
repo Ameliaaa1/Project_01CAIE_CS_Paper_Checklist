@@ -12,8 +12,8 @@ or content of any referenced file.
 | --- | --- | --- |
 | [Project README](../README.md) | Product overview, local startup, deployment configuration, and project structure | Authoritative current project entry |
 | [Authoritative Document Map](AUTHORITATIVE_DOCUMENT_MAP.md) | Assigns one source of truth to each documentation subject | Authoritative ownership map |
-| [Documentation Standard](DOCUMENTATION_STANDARD.md) | Candidate naming, metadata, link, and evidence-format standard | If approved, becomes current authority upon merge of GitHub PR #7 |
-| [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Candidate lifecycle, status, authority-transition, and mutability policy | If approved, becomes current authority upon merge of GitHub PR #7 |
+| [Documentation Standard](DOCUMENTATION_STANDARD.md) | Current naming, metadata, link, and evidence-format standard | Current authority; effective upon merge of GitHub PR #7 |
+| [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Current lifecycle, status, authority-transition, and mutability policy | Current authority; effective upon merge of GitHub PR #7 |
 
 ## Architecture Documentation
 

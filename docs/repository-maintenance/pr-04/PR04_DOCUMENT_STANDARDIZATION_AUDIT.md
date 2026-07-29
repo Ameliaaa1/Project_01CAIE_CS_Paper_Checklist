@@ -1,14 +1,14 @@
 # PR-04 Documentation Standardization Audit
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
-Result: `READY_PR04_R1_FINAL_DIFF_FOR_HUMAN_REVIEW`
+Result: `PASS_DOCUMENTATION_STANDARDIZATION_POLICY_APPROVED`
 
 Owner: Repository maintainers
 
 Initial audit generated at: `2026-07-29T15:44:08Z`
 
-Generated at: `2026-07-29T16:22:05Z`
+Generated at: `2026-07-29T16:32:23Z`
 
 Base SHA: `49a4f66307fc5ea51e27481e4d96ab0dcf51cfac`
 
@@ -87,11 +87,11 @@ The authority map contained 18 unique subjects after the two proposed policy
 rows were added. Duplicate authority subjects: 0. Missing proposed policy
 targets: 0. Authority targets under `docs/archive/`: 0.
 
-The new standard and lifecycle policy are explicitly described as candidate
-authorities until human approval is recorded in their final bytes and GitHub
-PR #7 is merged. A final reviewed `CURRENT` status will remain conditionally
-inactive before merge. PR-04 does not alter product, parser, canonical-model,
-Production, or Candidate authority.
+The standard and lifecycle policy are approved final bytes with a `CURRENT`
+status and an explicit `Effective upon merge: GitHub PR #7` condition. They
+remain inactive authority before merge and become active only when PR #7
+enters the default branch. PR-04 does not alter product, parser,
+canonical-model, Production, or Candidate authority.
 
 ## Provenance Text Repair
 
@@ -106,7 +106,7 @@ merge:
   later reviewed change.
 
 These corrections do not change authority subjects, lifecycle decisions,
-candidate dispositions, or the approved execution-candidate proposal.
+candidate dispositions, or the approved execution-candidate decision.
 
 ## Evidence Audit
 
@@ -126,21 +126,19 @@ rewritten.
 | --- | --- | --- | ---: | --- |
 | PR04-INDEX-001 | Documentation Index status and policy navigation | `INDEX_UPDATE` | 1 | Applied within allowed PR-04 boundary |
 | PR04-INDEX-002 | Authority Map status and proposed policy authority | `INDEX_UPDATE` | 1 | Applied within allowed PR-04 boundary |
-| PR04-STATUS-001 | Root README missing lifecycle status | `METADATA_ONLY` | 1 | Proposed: `NO_ACTION_EXISTING_ROOT_README_EXCEPTION`; not changed |
-| PR04-STATUS-002 | Archive and PR-history indexes use role-like status | `METADATA_ONLY` | 2 | Proposed: `DEFERRED_NO_EXECUTION_APPROVED`; not changed |
+| PR04-STATUS-001 | Root README missing lifecycle status | `METADATA_ONLY` | 1 | `NO_ACTION_EXISTING_ROOT_README_EXCEPTION`; not changed |
+| PR04-STATUS-002 | Archive and PR-history indexes use role-like status | `METADATA_ONLY` | 2 | `DEFERRED_NO_EXECUTION_APPROVED`; not changed |
 | PR04-ARCHIVE-001 | Archived documents lack explicit lifecycle metadata or use legacy names | `PROTECTED_NO_CHANGE` | 15 | Preserve bytes and paths |
 | PR04-LEGACY-001 | Frozen PR-02A evidence uses legacy naming | `PROTECTED_NO_CHANGE` | 7 | Preserve bytes and paths |
-| PR04-EVIDENCE-001 | Completed records use `PASS_*` as lifecycle status | `CONTENT_REVIEW` | 17 | Proposed: `PROTECTED_NO_CHANGE_EVIDENCE_SEMANTICS_PRESERVED` |
+| PR04-EVIDENCE-001 | Completed records use `PASS_*` as lifecycle status | `CONTENT_REVIEW` | 17 | `PROTECTED_NO_CHANGE_EVIDENCE_SEMANTICS_PRESERVED` |
 | PR04-METADATA-001 | Additional frozen maintenance records omit lifecycle status | `PROTECTED_NO_CHANGE` | 6 | Preserve until evidence-safe migration is approved |
 | PR04-FROZEN-001 | Topology record uses undefined `FROZEN_FOR_EXECUTION` status | `PROTECTED_NO_CHANGE` | 1 | Preserve frozen evidence |
 | PR04-AUTHORITY-001 | Conflicting authority assignments | `NO_ACTION` | 0 | No conflict found |
 | PR04-EVIDENCE-002 | Pair or manifest hash inconsistency | `NO_ACTION` | 0 | All checked evidence passed |
 
-Candidate counts overlap where one file has multiple findings. The proposed
-human-review decision approves no execution: rename candidates 0, move
-candidates 0, content rewrites 0, and total execution candidates 0. If the
-proposal is approved, PR-04B is skipped. These values are not an approval;
-human review must explicitly confirm them.
+Candidate counts overlap where one file has multiple findings. Human review
+approved no execution: rename candidates 0, move candidates 0, content
+rewrites 0, and total execution candidates 0. PR-04B is therefore skipped.
 
 ## Git Boundary
 
@@ -152,7 +150,7 @@ Files renamed: 0
 
 Files moved: 0
 
-Line additions: `853`
+Line additions: `872`
 
 Line deletions: `8`
 
@@ -173,7 +171,7 @@ Archive, code, PDF, Production, Candidate, and safety-backup changes: 0.
 | Files deleted | `0` |
 | Files renamed | `0` |
 | Files moved | `0` |
-| Line additions | `853` |
+| Line additions | `872` |
 | Line deletions | `8` |
 | Archive modifications | `0` |
 | Code changes | `0` |
@@ -184,17 +182,17 @@ Archive, code, PDF, Production, Candidate, and safety-backup changes: 0.
 The paired JSON evidence is generated last. It excludes its own hash using
 `SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE`.
 
-## Human Review Gate
+## Human Review Decision
 
-GitHub PR #7 currently has no submitted review, approval, or review thread.
-Decision: `PENDING_EXPLICIT_USER_APPROVAL`. Reviewer and `reviewedAt` are
-intentionally absent because those facts do not yet exist.
+Decision: `APPROVE`
 
-Reviewers should decide whether the standard and lifecycle policy are
-acceptable and confirm that approved execution candidates remain zero. This
-report does not record human approval and must not be used as authority to
-activate either policy or to rename, move, or rewrite protected evidence.
+Reviewer: `Amelia Cai`
 
-Only the explicit approval record defined by PR-04-R1 permits the final
-transition to `CURRENT`/`APPROVED`. Until then, the terminal state is
-`READY_PR04_R1_FINAL_DIFF_FOR_HUMAN_REVIEW`.
+Reviewed at: `2026-07-29T16:30:48Z`
+
+Approved execution candidates: 0
+
+The approval applies to the six-file PR-04 boundary and the conditional
+activation semantics recorded in the final bytes. It does not authorize any
+rename, move, deletion, historical evidence rewrite, PR-04B execution, or
+pre-merge activation.

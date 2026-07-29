@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "task": "PR-04",
-  "status": "READY_FOR_HUMAN_REVIEW",
-  "result": "READY_PR04_R1_FINAL_DIFF_FOR_HUMAN_REVIEW",
+  "status": "APPROVED",
+  "result": "PASS_DOCUMENTATION_STANDARDIZATION_POLICY_APPROVED",
   "baseSha": "49a4f66307fc5ea51e27481e4d96ab0dcf51cfac",
   "initialAuditGeneratedAt": "2026-07-29T15:44:08Z",
-  "generatedAt": "2026-07-29T16:22:05Z",
+  "generatedAt": "2026-07-29T16:32:23Z",
   "scope": {
     "documentsScanned": 44,
     "markdownDocuments": 35,
@@ -45,8 +45,8 @@
       "archiveLegacyProtected": 15,
       "pr02aLegacyProtected": 7,
       "forbiddenAmbiguousNames": 0,
-      "proposedRenameCandidatesForExecution": 0,
-      "proposedMoveCandidatesForExecution": 0
+      "approvedRenameCandidates": 0,
+      "approvedMoveCandidates": 0
     },
     "authority": {
       "subjects": 18,
@@ -82,14 +82,14 @@
       "scope": "README.md",
       "classification": "METADATA_ONLY",
       "affected": 1,
-      "disposition": "PROPOSED_NO_ACTION_EXISTING_ROOT_README_EXCEPTION"
+      "disposition": "NO_ACTION_EXISTING_ROOT_README_EXCEPTION"
     },
     {
       "id": "PR04-STATUS-002",
       "scope": "docs/ARCHIVE_INDEX.md and docs/PR_HISTORY_INDEX.md",
       "classification": "METADATA_ONLY",
       "affected": 2,
-      "disposition": "PROPOSED_DEFERRED_NO_EXECUTION_APPROVED"
+      "disposition": "DEFERRED_NO_EXECUTION_APPROVED"
     },
     {
       "id": "PR04-ARCHIVE-001",
@@ -110,7 +110,7 @@
       "scope": "completed records using PASS_* as status",
       "classification": "CONTENT_REVIEW",
       "affected": 17,
-      "disposition": "PROPOSED_PROTECTED_NO_CHANGE_EVIDENCE_SEMANTICS_PRESERVED"
+      "disposition": "PROTECTED_NO_CHANGE_EVIDENCE_SEMANTICS_PRESERVED"
     },
     {
       "id": "PR04-METADATA-001",
@@ -142,7 +142,8 @@
     }
   ],
   "executionBoundary": {
-    "proposedApprovedExecutionCandidates": 0,
+    "approvedExecutionCandidates": 0,
+    "approvedContentRewrites": 0,
     "contentRewritesExecuted": 0,
     "newPolicyFiles": 2,
     "newAuditFiles": 2,
@@ -151,7 +152,7 @@
     "filesDeleted": 0,
     "filesRenamed": 0,
     "filesMoved": 0,
-    "lineAdditions": 853,
+    "lineAdditions": 872,
     "lineDeletions": 8
   },
   "validation": {
@@ -168,44 +169,50 @@
     "filesDeleted": 0,
     "filesRenamed": 0,
     "filesMoved": 0,
-    "lineAdditions": 853,
+    "lineAdditions": 872,
     "lineDeletions": 8
   },
   "evidenceFiles": [
     {
       "path": "docs/DOCUMENTATION_STANDARD.md",
-      "sizeBytes": 5723,
-      "sha256": "ab8a79c8f37234e82a6b0d23d2a5340f2c36564e36c7e6ac2add9e244abdca73"
+      "sizeBytes": 5776,
+      "sha256": "8d0de88ec003f723f8ee13fb483683a059f6fb79dd9d50f00a08ca6757b9f59a"
     },
     {
       "path": "docs/DOCUMENT_LIFECYCLE_POLICY.md",
-      "sizeBytes": 7416,
-      "sha256": "b9550fdc580b65729aa8e8b9fc241a17a5b4864477f81f3d871d650cf7e652bc"
+      "sizeBytes": 7469,
+      "sha256": "251cedda35dd681794ccf2a2c17108a5a107f1de786a3bd835ca87376f7134e2"
     },
     {
       "path": "docs/DOCUMENTATION_INDEX.md",
-      "sizeBytes": 4405,
-      "sha256": "c993feeb13409d82f800349b9b3758fdf6d94518c9b863960ff423f015e9827a"
+      "sizeBytes": 4381,
+      "sha256": "754ceebfc9388517467b9a78fe85dbf39d8af0227e4f982c99cca0f0c68d2c0e"
     },
     {
       "path": "docs/AUTHORITATIVE_DOCUMENT_MAP.md",
-      "sizeBytes": 4243,
-      "sha256": "e1f387af961bcd195cbb7e5acb0f95e663df723896b12be00c9cb7d614091400"
+      "sizeBytes": 4213,
+      "sha256": "93a063789d62355e36055d6778e92321765322c348b1cfea9130eb832797f475"
     },
     {
       "path": "docs/repository-maintenance/pr-04/PR04_DOCUMENT_STANDARDIZATION_AUDIT.md",
-      "sizeBytes": 8403,
-      "sha256": "6cb619087fd076f228cab860558b473f4225c1cdc6e6fc9d90cd8913e4fed7d7"
+      "sizeBytes": 7920,
+      "sha256": "508a2dd9701a52b1960aae6e4b8f02c62a6153b55f3f46cedf9f38b851970f05"
     }
   ],
   "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE",
   "humanReview": {
     "required": true,
-    "decision": "PENDING",
-    "reviewer": null,
-    "reviewedAt": null,
-    "proposedDecision": "APPROVE",
-    "proposedApprovedExecutionCandidates": 0,
-    "approvedCandidates": []
+    "decision": "APPROVE",
+    "reviewer": "Amelia Cai",
+    "reviewedAt": "2026-07-29T16:30:48Z",
+    "approvedCandidates": [],
+    "approvedExecutionCandidates": 0
+  },
+  "activation": {
+    "effectiveUponMerge": true,
+    "pullRequest": 7,
+    "defaultBranch": "main",
+    "preMergeAuthorityActive": false,
+    "postMergeAuthorityActive": true
   }
 }
