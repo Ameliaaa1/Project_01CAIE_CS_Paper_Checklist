@@ -1,6 +1,6 @@
 # PR-03 Documentation Index Report
 
-Status: `PASS_DOCUMENTATION_INDEX_RECONSTRUCTION_COMPLETE`
+Status: `PASS_DOCUMENTATION_INDEX_RECONSTRUCTION_READY_FOR_HUMAN_MERGE`
 
 Generated at: `2026-07-29T14:48:16Z`
 
@@ -23,6 +23,14 @@ The reconstruction therefore treats the README as the current product,
 operation, deployment, and high-level structure authority. It records the
 architecture and development guide gaps instead of promoting historical
 archive plans to current authority.
+
+## Root Navigation Closure
+
+- Root documentation entry: `README.md`
+- Documentation index: `docs/DOCUMENTATION_INDEX.md`
+- Initial README links into `docs/`: `0`
+- Final README links into `docs/`: `1`
+- Root navigation result: `PASS`
 
 ## Created Indexes
 
@@ -60,16 +68,18 @@ Validation covers every local Markdown link introduced by the four new index
 files. External URLs and same-document anchors are outside the filesystem
 existence check.
 
-- Local links checked: 60
+- Local links checked: 61
 - Broken local links: 0
 - Missing linked documents: 0
 - Duplicate authority subjects: 0
 - Archive targets missing from the archive index: 0
+- README to `docs/DOCUMENTATION_INDEX.md`: PASS
 
 ## Git Boundary
 
 The approved PR-03 boundary contains only:
 
+- `README.md`
 - `docs/DOCUMENTATION_INDEX.md`
 - `docs/ARCHIVE_INDEX.md`
 - `docs/PR_HISTORY_INDEX.md`
@@ -79,6 +89,9 @@ The approved PR-03 boundary contains only:
 
 Boundary results:
 
+- Changed files allowed: 7
+- Created files: 6
+- Modified files: 1
 - Files moved: 0
 - Files deleted: 0
 - Files renamed: 0
@@ -97,9 +110,9 @@ a circular self-hash; it records that policy explicitly.
 
 ## Conclusion
 
-`PASS_DOCUMENTATION_INDEX_RECONSTRUCTION_COMPLETE`
+`PASS_DOCUMENTATION_INDEX_RECONSTRUCTION_READY_FOR_HUMAN_MERGE`
 
 The repository now has a current documentation entry, archive navigation, PR
-history navigation, and an explicit one-authority-per-subject map. PR-04 may
-standardize naming and document lifecycle rules after human review and merge
-of PR-03.
+history navigation, an explicit one-authority-per-subject map, and a verified
+root README path into that navigation. PR-04 may standardize naming and
+document lifecycle rules after human review and merge of PR-03.
