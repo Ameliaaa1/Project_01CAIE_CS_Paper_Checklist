@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-29T13:10:59Z",
+  "status": "PASS_DOCUMENT_ARCHIVE_EXECUTION_MERGED_AND_VERIFIED",
+  "prNumber": 4,
+  "prState": "closed",
+  "merged": true,
+  "mergedAt": "2026-07-29T13:05:20Z",
+  "draft": false,
+  "mergeCommit": "c18f74919bd78d38bee0ff2d53ac422a2443da6b",
+  "mergeCommitObservation": {
+    "type": "TWO_PARENT_MERGE_COMMIT",
+    "parents": [
+      "f70320efce833fff843e5994433b23f6be203ec3",
+      "cb3b85220f6446c4e24f7554e5d5a2aca1564f55"
+    ],
+    "squashCommitObserved": false
+  },
+  "originMainSha": "c18f74919bd78d38bee0ff2d53ac422a2443da6b",
+  "mergeBase": "c18f74919bd78d38bee0ff2d53ac422a2443da6b",
+  "ancestorVerification": "PASS",
+  "archiveFilesVerified": 15,
+  "archiveTargetCount": 15,
+  "archiveShaVerification": "PASS",
+  "archiveShaFailures": 0,
+  "evidenceFilesVerified": 3,
+  "sourcePathsAbsentFromOriginMain": 15,
+  "sourcePathsPresentInOriginMain": 0,
+  "trackedDeletedFiles": 0,
+  "nonAddChanges": 0,
+  "noMoveBoundary": {
+    "recordsEvaluated": 98,
+    "recordsChanged": 0,
+    "protectedExclusionsChanged": 0,
+    "existingArchiveCopiesChanged": 0,
+    "result": "PASS"
+  },
+  "scopeRegression": {
+    "pdf": 0,
+    "production": 0,
+    "candidate": 0,
+    "code": 0,
+    "active9709DataPaths": 0,
+    "safetyBackupModified": false
+  },
+  "mergeBoundary": {
+    "baseSha": "f70320efce833fff843e5994433b23f6be203ec3",
+    "changedFiles": 18,
+    "archiveDocumentsAdded": 15,
+    "executionEvidenceFilesAdded": 3,
+    "deletions": 0,
+    "renames": 0,
+    "modifications": 0
+  },
+  "documentationStatus": {
+    "pr02a": "PASS_DOCUMENT_ARCHIVE_MOVE_PLAN_READY_FOR_EXECUTION",
+    "pr02b": "PASS_DOCUMENT_ARCHIVE_EXECUTION_COMPLETE",
+    "pr02bR2": "PASS_DOCUMENT_ARCHIVE_EXECUTION_MERGED_AND_VERIFIED"
+  },
+  "validation": {
+    "gitFetchOriginMainPrune": "PASS",
+    "jsonParse": "PASS",
+    "archiveCount": "PASS",
+    "archiveSha": "PASS",
+    "sourcePaths": "PASS",
+    "noMoveBoundary": "PASS",
+    "scopeRegression": "PASS",
+    "gitDiffCheck": "PASS"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-07-29T13:37:05Z",
+  "baseSha": "c18f74919bd78d38bee0ff2d53ac422a2443da6b",
+  "files": [
+    {
+      "path": "docs/repository-maintenance/pr-02b/PR02B_POST_MERGE_VERIFICATION_REPORT.md",
+      "sizeBytes": 3000,
+      "sha256": "d81d0cbc0e44676b685624f75b431f65eb0f22d4159cc5fa572fbe677a686b5e"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-02b/pr02b-post-merge-verification.json",
+      "sizeBytes": 2038,
+      "sha256": "3c4f9ffcd0f797c75d60d2ec2fc896f5aa6f6d4a7d2e4e952d2365aa9f49c98b"
+    }
+  ]
+}
