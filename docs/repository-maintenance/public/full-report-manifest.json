@@ -1,0 +1,212 @@
+{
+  "generatedAt": "2026-07-29T03:34:13Z",
+  "reports": [
+    {
+      "logicalName": "PDF_DEPLOYMENT_DEPENDENCY",
+      "originalFilename": "docs/repository-maintenance/human-review/PDF_DEPLOYMENT_DEPENDENCY.md",
+      "sizeBytes": 107406,
+      "sha256": "0e7d838c76e9f59d2a40f6a7eb945ef16c2fc359e69b0a2148f79e39b8b5ef58",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:56:53.864Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/PDF_DEPLOYMENT_DEPENDENCY.md"
+    },
+    {
+      "logicalName": "MINIMAL_USER_APPROVAL",
+      "originalFilename": "docs/repository-maintenance/human-review/MINIMAL_USER_APPROVAL.md",
+      "sizeBytes": 1251,
+      "sha256": "32ae2d9b6815f26fb293b7e3db4430789ec973de73c9ac07aa04df85e3e62d6f",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:56:53.864Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/MINIMAL_USER_APPROVAL.md"
+    },
+    {
+      "logicalName": "RECOVERY_INSTRUCTIONS",
+      "originalFilename": "docs/repository-maintenance/RECOVERY_INSTRUCTIONS.md",
+      "sizeBytes": 1609,
+      "sha256": "9380c8e67627bb7dc8a43d8eaed412b830981638a3b1bce14c19321c283658dd",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T21:01:48+08:00",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/RECOVERY_INSTRUCTIONS.md"
+    },
+    {
+      "logicalName": "SENSITIVE_AUTOMATED_REVIEW",
+      "originalFilename": "docs/repository-maintenance/human-review/SENSITIVE_AUTOMATED_REVIEW.md",
+      "sizeBytes": 1770,
+      "sha256": "61ba7a8b555559b62abaf9712388d2e978954b7939589686f016e64af996d309",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:56:53.864Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/SENSITIVE_AUTOMATED_REVIEW.md"
+    },
+    {
+      "logicalName": "REMOTE_BACKUP_VERIFICATION",
+      "originalFilename": "docs/repository-maintenance/REMOTE_BACKUP_VERIFICATION.md",
+      "sizeBytes": 1805,
+      "sha256": "3f814483c15fca1b451bbcc152718116f698f56c8c82555f98e5f8d190d822cc",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T21:01:48+08:00",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/REMOTE_BACKUP_VERIFICATION.md"
+    },
+    {
+      "logicalName": "PRODUCTION_CANDIDATE_PROTECTION",
+      "originalFilename": "docs/repository-maintenance/human-review/PRODUCTION_CANDIDATE_PROTECTION.md",
+      "sizeBytes": 21950,
+      "sha256": "150b5ec0b43167556ea9f0bc061980bfb95cd9a1e26fac979ebaa2d23de66604",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:56:53.864Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/PRODUCTION_CANDIDATE_PROTECTION.md"
+    },
+    {
+      "logicalName": "REFERENCE_ANALYSIS",
+      "originalFilename": "docs/repository-maintenance/REFERENCE_ANALYSIS.md",
+      "sizeBytes": 28779,
+      "sha256": "eb3f75a5a7b76849c5312aef3dd952cf88b3b6bca5cc74945fc9e27111d9b3cf",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:22:11.278Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/REFERENCE_ANALYSIS.md"
+    },
+    {
+      "logicalName": "REVIEW_REQUIRED",
+      "originalFilename": "docs/repository-maintenance/REVIEW_REQUIRED.md",
+      "sizeBytes": 320558,
+      "sha256": "e9b7429eba136f8dee6e8d4ff5f731118828751d579b78f7d3ea2fa3252e4f9c",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:22:11.278Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/REVIEW_REQUIRED.md"
+    },
+    {
+      "logicalName": "LOCAL_HISTORY_REWRITE_REPORT",
+      "originalFilename": "docs/repository-maintenance/LOCAL_HISTORY_REWRITE_REPORT.md",
+      "sizeBytes": 3675,
+      "sha256": "ca732a71ae40232bbb2a07d1edae22df636f6df0abc8e4649551b927af4092ea",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T21:01:48+08:00",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/LOCAL_HISTORY_REWRITE_REPORT.md"
+    },
+    {
+      "logicalName": "LOW_RISK_DELETE_APPROVAL",
+      "originalFilename": "docs/repository-maintenance/human-review/LOW_RISK_DELETE_APPROVAL.md",
+      "sizeBytes": 601,
+      "sha256": "346b8b5575549e3f7d100d8a1c600abc84212b97d2472649023bbb4c2f1652e0",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:56:53.864Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/LOW_RISK_DELETE_APPROVAL.md"
+    },
+    {
+      "logicalName": "RELEASE_ASSET_DEDUP_PLAN",
+      "originalFilename": "docs/repository-maintenance/human-review/RELEASE_ASSET_DEDUP_PLAN.md",
+      "sizeBytes": 6108,
+      "sha256": "3f3bd02c2f0160c1ae0c0899d7618dcc63ba214f7486f6b07b794ccf35e9f883",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:56:53.864Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/RELEASE_ASSET_DEDUP_PLAN.md"
+    },
+    {
+      "logicalName": "REVIEW_DECISION_OVERRIDE",
+      "originalFilename": "docs/repository-maintenance/human-review/REVIEW_DECISION_OVERRIDE.md",
+      "sizeBytes": 65117,
+      "sha256": "6eb9cb2d9653b208c6459720d14cb14937957b52834a72d404b5b4843119e714",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:56:53.864Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/REVIEW_DECISION_OVERRIDE.md"
+    },
+    {
+      "logicalName": "DUPLICATE_FILE_REPORT",
+      "originalFilename": "docs/repository-maintenance/DUPLICATE_FILE_REPORT.md",
+      "sizeBytes": 810646,
+      "sha256": "9cdbc491cf07aa6885ba8ba48313643ab7a4d9807188deadefc62f3bdf795552",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:22:11.278Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/DUPLICATE_FILE_REPORT.md"
+    },
+    {
+      "logicalName": "ARCHIVE_PLAN",
+      "originalFilename": "docs/repository-maintenance/ARCHIVE_PLAN.md",
+      "sizeBytes": 8882,
+      "sha256": "3d4dfd71adf6409fb6492692a37826ce8f5c579dd314dfaf5a3b5af4fffc8196",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:22:11.278Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/ARCHIVE_PLAN.md"
+    },
+    {
+      "logicalName": "HUMAN_FILE_DECISION_REVIEW_TEMPLATE",
+      "originalFilename": "docs/repository-maintenance/HUMAN_FILE_DECISION_REVIEW_TEMPLATE.md",
+      "sizeBytes": 997,
+      "sha256": "3dfc6a0bbbc171a91db10a12954166cc39e8ed16646c58ea3ead0d19d98d1c25",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:22:11.278Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/HUMAN_FILE_DECISION_REVIEW_TEMPLATE.md"
+    },
+    {
+      "logicalName": "FILE_DECISION_LOG",
+      "originalFilename": "docs/repository-maintenance/FILE_DECISION_LOG.md",
+      "sizeBytes": 2180,
+      "sha256": "6a16dc4d30e600e2c149847dec3498688828f412e21ecc464421f8577f57467e",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:22:11.278Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/FILE_DECISION_LOG.md"
+    },
+    {
+      "logicalName": "FILE_INVENTORY",
+      "originalFilename": "docs/repository-maintenance/FILE_INVENTORY.md",
+      "sizeBytes": 4029730,
+      "sha256": "2576cd8db29ae33c938e83b29797b57c699491f1c19337a90f48802889fd1d7a",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:22:11.278Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/FILE_INVENTORY.md"
+    },
+    {
+      "logicalName": "LARGE_OBJECT_INVENTORY",
+      "originalFilename": "docs/repository-maintenance/LARGE_OBJECT_INVENTORY.md",
+      "sizeBytes": 32717,
+      "sha256": "f7f5294e50feae3669924e70eeb20f46a1a5dbd719a440d8a783fe08de5fb720",
+      "sourceHead": "37de7eee98e1a9087f65e3441992a011b45ba339",
+      "generatedAt": "2026-07-28T12:55:18.589Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/LARGE_OBJECT_INVENTORY.md"
+    },
+    {
+      "logicalName": "PRE_REWRITE_WORKTREE_INVENTORY",
+      "originalFilename": "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
+      "sizeBytes": 1865309,
+      "sha256": "3c940f607a3fae27e7fe55bbd8a2765cdab490065a6cb8a6c8113de2df1d852f",
+      "sourceHead": "37de7eee98e1a9087f65e3441992a011b45ba339",
+      "generatedAt": "2026-07-28T12:53:35.103Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/PRE_REWRITE_WORKTREE_INVENTORY.md"
+    },
+    {
+      "logicalName": "FILE_INVENTORY",
+      "originalFilename": "docs/repository-maintenance/file-inventory.json",
+      "sizeBytes": 32945255,
+      "sha256": "16f060cdb5be953385b31fb38f7a06becbc48ec9653f76d716669b5448e93457",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:22:11.278Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/file-inventory.json"
+    },
+    {
+      "logicalName": "REVIEW_DECISION_OVERRIDE",
+      "originalFilename": "docs/repository-maintenance/human-review/review-decision-override.json",
+      "sizeBytes": 3383578,
+      "sha256": "ecc3dd4e96eab0032aaaec854bc26b47fac3bef2e3aa62d546727b5dac9dc807",
+      "sourceHead": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
+      "generatedAt": "2026-07-28T13:56:53.864Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/review-decision-override.json"
+    },
+    {
+      "logicalName": "LARGE_OBJECT_INVENTORY",
+      "originalFilename": "docs/repository-maintenance/large-object-inventory.json",
+      "sizeBytes": 98635,
+      "sha256": "b27d3a0b929ebeef8d45a42c5ebf6b8a06b66698f10736eae0bee05ce5ebb010",
+      "sourceHead": "37de7eee98e1a9087f65e3441992a011b45ba339",
+      "generatedAt": "2026-07-28T12:55:18.589Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/large-object-inventory.json"
+    },
+    {
+      "logicalName": "PRE_REWRITE_WORKTREE_INVENTORY",
+      "originalFilename": "docs/repository-maintenance/pre-rewrite-worktree-inventory.json",
+      "sizeBytes": 3429738,
+      "sha256": "964ecbf4cbee1205f3745d7a9f5c475f1227b90d68f327592c473dd711f2644e",
+      "sourceHead": "37de7eee98e1a9087f65e3441992a011b45ba339",
+      "generatedAt": "2026-07-28T12:53:35.103Z",
+      "plannedPrivateBackupLocation": "github-private-release://PENDING/repository-maintenance-2026-07-29/pre-rewrite-worktree-inventory.json"
+    }
+  ]
+}
