@@ -14,10 +14,6 @@ No move, deletion, compression, Release upload, or bulk project-file commit was 
 - 66 — Authoritative production/runtime index role; no move or deletion is allowed in PR-01.
 - 18 — Runtime/static/generated data path may be consumed by the application; retain until reference checks are reviewed.
 
-## EXPECTED_LOCAL_VERCEL_OIDC_CREDENTIAL (1)
-
-- 1 — Expected ignored, untracked, unstaged, local-only Vercel OIDC development credential with no exposure evidence; never upload.
-
 ## CONSOLIDATE_AND_ARCHIVE (11453)
 
 - 7927 — Historical generated evidence should be indexed before any later archive action.
@@ -32,9 +28,9 @@ No move, deletion, compression, Release upload, or bulk project-file commit was 
 - 52 — Editor/OS/cache/runtime output; backed up and normally regenerable.
 - 6526 — Installed dependency artifact reproducible from package lock; safety backup exists.
 
-## REVIEW_REQUIRED (1134)
+## REVIEW_REQUIRED (1135)
 
-- 23 — Potential credential/private-data signal; retain locally and review before any upload.
+- 24 — Potential credential/private-data signal; retain locally and review before any upload.
 - 135 — Deprecated 9709 scope; keep out of the active repository and require a human archival/deletion decision.
 - 13 — Role or supersession cannot be proven automatically; retain for human review.
 - 475 — Runtime log may contain unique audit evidence or sensitive data; retain until human review proves reproducibility and safe handling.

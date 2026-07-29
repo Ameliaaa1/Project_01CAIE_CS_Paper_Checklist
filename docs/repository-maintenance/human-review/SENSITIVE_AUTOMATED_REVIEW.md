@@ -6,6 +6,9 @@ Status: `PASS_SECRET_REVIEW_LOCAL_ONLY_NO_EXPOSURE_EVIDENCE`
 - Runtime logs scanned: 475
 - Release candidates scanned: 46
 - Expected local Vercel OIDC credential files: 1
+- Original `REVIEW_REQUIRED`: 1135
+- Approved override: 1
+- Effective unresolved `REVIEW_REQUIRED`: 1134
 
 No secret value is included in this report.
 

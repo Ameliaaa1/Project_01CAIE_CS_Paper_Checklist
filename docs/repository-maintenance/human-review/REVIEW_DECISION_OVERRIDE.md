@@ -6,6 +6,15 @@ Secondary repository-organization blocker: `BLOCKED_PRIVATE_REMOTE_REQUIRED`
 
 No file was moved, deleted, compressed, uploaded, or staged in PR-01A-R1.
 
+## Immutable inventory reconciliation
+
+- Original `REVIEW_REQUIRED`: 1135
+- Approved override: 1
+- Effective unresolved `REVIEW_REQUIRED`: 1134
+- `.env.local` override: `EXPECTED_LOCAL_VERCEL_OIDC_CREDENTIAL`
+
+The PR-01 inventory remains immutable. These effective counts are expressed only in the human-review override layer.
+
 ## Verified counts
 
 - Authoritative Production: 70

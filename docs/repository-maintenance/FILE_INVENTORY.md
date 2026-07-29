@@ -18,9 +18,8 @@
 | ARCHIVE_AS_GITHUB_RELEASE_ASSET | 46 |
 | CONSOLIDATE_AND_ARCHIVE | 11453 |
 | DELETE_AFTER_VERIFIED_BACKUP | 6578 |
-| EXPECTED_LOCAL_VERCEL_OIDC_CREDENTIAL | 1 |
 | KEEP_ACTIVE | 1116 |
-| REVIEW_REQUIRED | 1134 |
+| REVIEW_REQUIRED | 1135 |
 
 ## File-level inventory
 
@@ -29,7 +28,7 @@
 | ignored | DELETE_AFTER_VERIFIED_BACKUP | 90116 | `b8fe4b7528a0efa5fabb8041512e0af87c9148b529386e7f404155b4c86fdc65` | GENERAL | 1 | 0 | `.DS_Store` |
 | tracked | KEEP_ACTIVE | 338 | `3599043b14f1821493a53f9a2ca224baa9a26413f8979d36d3f1ce1eabbeae80` | GENERAL | 1 | 1 | `.codex/config.toml` |
 | tracked | REVIEW_REQUIRED | 492 | `629a24ca44a32092fa5dedcc5dc7c7b133059491fd07ee69d26e51a576b50cd3` | GENERAL | 1 | 1 | `.env.example` |
-| ignored | EXPECTED_LOCAL_VERCEL_OIDC_CREDENTIAL | 1416 | `dffab41445b4097ab1eac5ba6cbd432fd9cde9897881e39997e258ad1d2f85ed` | GENERAL | 1 | 3 | `.env.local` |
+| ignored | REVIEW_REQUIRED | 1416 | `dffab41445b4097ab1eac5ba6cbd432fd9cde9897881e39997e258ad1d2f85ed` | GENERAL | 1 | 3 | `.env.local` |
 | tracked | KEEP_ACTIVE | 507 | `3aff27bb77ec9afbc2c6323bc920b8367436ce4c2842ec708f263a4ecb2fe806` | GENERAL | 1 | 2 | `.github/workflows/data-quality.yml` |
 | tracked | REVIEW_REQUIRED | 838 | `54efebe4127b447c25951a5ac6497772ab74f41b69b460845ee94e731fd8c2fb` | 9709 | 1 | 0 | `.gitignore` |
 | ignored | REVIEW_REQUIRED | 520 | `f5d1ed0f5032ae128931f46459b5faa1af6319fc2dfb3e7a5fe54a84bf93dbd6` | GENERAL | 1 | 2 | `.vercel/README.txt` |

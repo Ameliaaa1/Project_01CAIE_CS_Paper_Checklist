@@ -4,6 +4,8 @@ Current secret-review status: `PASS_SECRET_REVIEW_LOCAL_ONLY_NO_EXPOSURE_EVIDENC
 
 Only the following unrelated repository-organization decisions remain. No per-file review is requested.
 
+Immutable inventory reconciliation: original `REVIEW_REQUIRED` 1135; approved override 1; effective unresolved `REVIEW_REQUIRED` 1134. The original PR-01 inventory is not modified by this override.
+
 ## 1. PDF strategy
 
 - [ ] A — Keep all 484 deployment PDFs in GitHub/Vercel indefinitely.

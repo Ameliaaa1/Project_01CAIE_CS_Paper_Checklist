@@ -9,6 +9,12 @@
   "head": "26e6e13e7b911f4e07c8a2bcbb13d713c690a3f6",
   "status": "PASS_SECRET_REVIEW_LOCAL_ONLY_NO_EXPOSURE_EVIDENCE",
   "secondaryBlocker": "BLOCKED_PRIVATE_REMOTE_REQUIRED",
+  "immutableInventoryReconciliation": {
+    "originalReviewRequired": 1135,
+    "approvedOverrides": 1,
+    "effectiveUnresolvedReviewRequired": 1134,
+    "inventoryModifiedByOverride": false
+  },
   "counts": {
     "authoritativeProduction": 70,
     "currentCandidate": 67,
