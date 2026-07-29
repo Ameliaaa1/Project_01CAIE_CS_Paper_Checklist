@@ -37,7 +37,7 @@
     "evaluatedDocuments": 113,
     "plannedTrackedMoves": 0,
     "actualMovedFiles": 0,
-    "deferredUntrackedDocuments": 19,
+    "deferredUntrackedDocuments": 15,
     "privateOrLocalOnlyDocuments": 0,
     "protectedCandidateExclusions": 24,
     "protectedInventoryDocuments": 109,
@@ -51,7 +51,11 @@
     "docsPdfCandidates": 0,
     "docsExcludedJsonRecords": 24,
     "productionCandidatePlannedMoves": 0,
-    "active9709DataPaths": 0
+    "active9709DataPaths": 0,
+    "untrackedDocumentsReviewed": 19,
+    "noMoveNoReferenceRewrite": 98,
+    "unmappedMaterialReviewBuckets": 1,
+    "formalPrNodes": 69
   },
   "records": [
     {
@@ -73,7 +77,7 @@
       "currentRole": "SOLUTION",
       "protectedRoles": [],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -81,7 +85,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY"
+      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0002",
@@ -116,7 +121,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0003",
@@ -151,7 +157,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0004",
@@ -189,7 +196,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0005",
@@ -224,7 +232,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0006",
@@ -259,7 +268,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0007",
@@ -294,7 +304,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0008",
@@ -329,7 +340,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0009",
@@ -364,7 +376,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0010",
@@ -399,7 +412,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0011",
@@ -434,7 +448,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0012",
@@ -469,7 +484,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0013",
@@ -504,7 +520,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0014",
@@ -539,7 +556,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0015",
@@ -574,7 +592,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0016",
@@ -609,7 +628,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION",
+      "referenceRewriteAction": "DEFER_WITH_MOVE"
     },
     {
       "artifactId": "PR02A-MOVE-0017",
@@ -630,7 +650,7 @@
       "currentRole": "SOLUTION",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-018/PR-018_Barcode_Pollution_Metric_Consistency_Solution.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -638,7 +658,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0018",
@@ -659,7 +680,7 @@
       "currentRole": "SOLUTION",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-021/PR-021_Barcode_Region_Classification_Edge_Case_Fix_Solution.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -667,7 +688,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0019",
@@ -688,7 +710,7 @@
       "currentRole": "SOLUTION",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-021/PR-021_Question_Paper_Response_Area_Mapping_Root_Cause_Analysis_Solution.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -696,7 +718,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0020",
@@ -717,7 +740,7 @@
       "currentRole": "SOLUTION",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-022/PR-022_Legacy_Mark_Scheme_Barcode_Region_Classification_Support_Solution.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -725,7 +748,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0021",
@@ -746,7 +770,7 @@
       "currentRole": "SOLUTION",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-023/PR-023_Mark_Sum_Validation_Investigation_Solution.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -754,7 +778,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0022",
@@ -775,7 +800,7 @@
       "currentRole": "SOLUTION",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-024/PR-024_Back_Matter_Detection_Investigation_Solution.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -783,7 +808,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0023",
@@ -804,7 +830,7 @@
       "currentRole": "SOLUTION",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-025/PR-025_Question_Marker_Boundary_Detection_For_Pseudocode_And_Numeric_Content_Solution.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -812,7 +838,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0024",
@@ -833,7 +860,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-026/PR-026_Canonical_Completeness_Gate_Foundation_Explanation.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -847,7 +874,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0025",
@@ -868,7 +896,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-027/PR-027_Production_Pilot_Explanation.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -882,7 +910,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0026",
@@ -903,7 +932,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-028/PR-028_Production_Expansion_Strategy_Explanation.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -917,7 +946,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0027",
@@ -938,7 +968,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-029/PR-029_Generate_Missing_Production_Expansion_Staging_Coverage_Explanation.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -952,7 +982,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0028",
@@ -973,7 +1004,7 @@
       "currentRole": "SOLUTION",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-030/PR-030_Response_Area_Mapping_Fix_0478_s23_qp_11_Solution.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -981,7 +1012,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0029",
@@ -1002,7 +1034,7 @@
       "currentRole": "SOLUTION",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-031/PR-031_Legacy_Text_Glyph_Classification_Investigation_Solution.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -1010,7 +1042,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0030",
@@ -1031,7 +1064,7 @@
       "currentRole": "SOLUTION",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-032/PR-032_Mark_Sum_Validation_Investigation_Solution.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -1039,7 +1072,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0031",
@@ -1060,7 +1094,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-034/PR-034-0478-Production-Expansion-Batch-01-Implementation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1074,7 +1108,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0032",
@@ -1095,7 +1130,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-035/PR-035-0478-2020-MJ-BATCH-01-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1109,7 +1144,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0033",
@@ -1130,7 +1166,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-036/PR-036-0478-2020-MJ-BATCH-02-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1144,7 +1180,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0034",
@@ -1165,7 +1202,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-037/PR-037-0478-2020-MJ-BATCH-03-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1179,7 +1216,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0035",
@@ -1200,7 +1238,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-038/PR-038-0478-Missing-Staging-Generation-Batch-01-Implementation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1214,7 +1252,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0036",
@@ -1235,7 +1274,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-038A/PR-038A-Canonical-Mark-Coverage-Diagnostic-Severity-Alignment-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -1243,7 +1282,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0037",
@@ -1264,7 +1304,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-039/PR-039-0478-2021-MJ-BATCH-02-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1278,7 +1318,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0038",
@@ -1299,7 +1340,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-040/PR-040-0478-Missing-Staging-Generation-Batch-02-Implementation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1313,7 +1354,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0039",
@@ -1334,7 +1376,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-041/PR-041-0478-2021-MJ-BATCH-03-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1348,7 +1390,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0040",
@@ -1369,7 +1412,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-042/PR-042-0478-Missing-Staging-Generation-Batch-03-Implementation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1383,7 +1426,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0041",
@@ -1404,7 +1448,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-043/PR-043-0478-2022-MJ-BATCH-01-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1418,7 +1462,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0042",
@@ -1439,7 +1484,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-044/PR-044-0478-Missing-Staging-Generation-Batch-04-Implementation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1453,7 +1498,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0043",
@@ -1474,7 +1520,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-045/PR-045-0478-2022-MJ-BATCH-02-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1488,7 +1534,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0044",
@@ -1509,7 +1556,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-046/PR-046-0478-Missing-Staging-Generation-Batch-05-Implementation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1523,7 +1570,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0045",
@@ -1544,7 +1592,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-047/PR-047-0478-2022-MJ-BATCH-03-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1558,7 +1606,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0046",
@@ -1579,7 +1628,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-048/PR-048-9618-Production-Expansion-Preparation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1593,7 +1642,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0047",
@@ -1614,7 +1664,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-048A/PR-048A-Recommended-Next-Batch-Production-Write-Semantics-Alignment-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1628,7 +1678,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0048",
@@ -1649,7 +1700,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-049/PR-049-9618-2021-MJ-BATCH-01-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1663,7 +1714,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0049",
@@ -1684,7 +1736,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-050/PR-050-9618-2021-MJ-BATCH-02-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1698,7 +1750,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0050",
@@ -1719,7 +1772,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-051/PR-051-9618-2021-ON-BATCH-03-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1733,7 +1786,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0051",
@@ -1754,7 +1808,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-052/PR-052-9618-2021-ON-BATCH-04-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1768,7 +1822,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0052",
@@ -1789,7 +1844,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-053/PR-053-9618-2021-ON-BATCH-05-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1803,7 +1858,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0053",
@@ -1824,7 +1880,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-054/PR-054-9618-2021-ON-BATCH-06-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1838,7 +1894,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0054",
@@ -1859,7 +1916,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-055/PR-055-9618-2021-MJ-BATCH-07-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1873,7 +1930,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0055",
@@ -1894,7 +1952,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-056/PR-056-9618-2023-MJ-BATCH-08-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1908,7 +1966,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0056",
@@ -1929,7 +1988,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-057/PR-057-9618-2025-MJ-BATCH-09-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1943,7 +2002,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0057",
@@ -1964,7 +2024,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-058/PR-058-9618-2025-ON-BATCH-10-Production-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -1978,7 +2038,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0058",
@@ -1999,7 +2060,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-059/PR-059-9618-Production-Coverage-Audit-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -2007,7 +2068,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0059",
@@ -2028,7 +2090,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-066/PR-066-9618-Production-Coverage-Re-Audit-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -2036,7 +2098,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0060",
@@ -2057,7 +2120,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-067/PR-067-9618-Incomplete-Source-Investigation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -2065,7 +2128,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0061",
@@ -2086,7 +2150,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-068/PR-068-9618-2022-MJ-41-Source-Recovery-Preparation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -2094,7 +2158,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0062",
@@ -2115,7 +2180,7 @@
       "currentRole": "RUNBOOK",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/prs/PR-028/PR028_Production_Expansion_Runbook.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2129,7 +2194,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0063",
@@ -2150,7 +2216,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -2158,7 +2224,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY"
+      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0064",
@@ -2179,7 +2246,7 @@
       "currentRole": "DOCUMENT",
       "protectedRoles": [],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -2187,7 +2254,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY"
+      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0065",
@@ -2208,7 +2276,7 @@
       "currentRole": "DOCUMENT",
       "protectedRoles": [],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -2216,7 +2284,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY"
+      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0066",
@@ -2237,7 +2306,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-2/Phase-2-9618-Duplicate-Source-Investigation-and-Cleanup-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -2245,7 +2314,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0067",
@@ -2266,7 +2336,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-4/Phase-4-9618-Final-Coverage-Re-Audit-and-Stability-Validation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -2274,7 +2344,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0068",
@@ -2295,7 +2366,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-5/Phase-5-9618-Blocked-Pair-Investigation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -2303,7 +2374,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0069",
@@ -2324,7 +2396,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-6/Phase-6-9618-Final-Production-Closure-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -2332,7 +2404,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0070",
@@ -2353,7 +2426,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-7-b/Phase-7B-New-Syllabus-Onboarding-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2367,7 +2440,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0071",
@@ -2388,7 +2462,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-7-c/Phase-7C-Generalized-Parser-Coverage-Expansion-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2402,7 +2476,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0072",
@@ -2423,7 +2498,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-8/Phase-8-Continuous-Operation-Plan.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2437,7 +2512,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0073",
@@ -2458,7 +2534,7 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-8/Phase-8-Long-Term-Data-Quality-Improvement-Plan-v2.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2472,7 +2548,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0074",
@@ -2493,7 +2570,7 @@
       "currentRole": "DOCUMENT",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-1/Phase1_PDF_Batch_Ingestion_Validation.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2507,7 +2584,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0075",
@@ -2528,7 +2606,7 @@
       "currentRole": "DOCUMENT",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-2/Phase2_PDF_Batch_Ingestion_Expansion.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2542,7 +2620,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_NO_RESTORE_AUTHORITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0076",
@@ -2565,7 +2644,7 @@
         "humanReview"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2579,7 +2658,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0077",
@@ -2600,8 +2680,8 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "docs/archive/obsolete-syllabus-scope/PR-029_Generate_Missing_Production_Expansion_Staging_Coverage_Explanation.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "targetPath": "NONE",
+      "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -2614,7 +2694,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_EXISTING_ARCHIVE_COPY_REVIEW_REQUIRED_NO_MOVE",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0078",
@@ -2635,8 +2716,8 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "docs/archive/obsolete-syllabus-scope/PR-034-0478-Production-Expansion-Batch-01-Implementation-Plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "targetPath": "NONE",
+      "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -2649,7 +2730,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_EXISTING_ARCHIVE_COPY_REVIEW_REQUIRED_NO_MOVE",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0079",
@@ -2672,7 +2754,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2686,7 +2768,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0080",
@@ -2709,7 +2792,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2723,7 +2806,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0081",
@@ -2746,7 +2830,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2760,7 +2844,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0082",
@@ -2781,8 +2866,8 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "docs/archive/obsolete-syllabus-scope/PR-038-0478-Missing-Staging-Generation-Batch-01-Implementation-Plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "targetPath": "NONE",
+      "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -2795,7 +2880,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_EXISTING_ARCHIVE_COPY_REVIEW_REQUIRED_NO_MOVE",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0083",
@@ -2818,7 +2904,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2832,7 +2918,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0084",
@@ -2855,7 +2942,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2869,7 +2956,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0085",
@@ -2892,7 +2980,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2906,7 +2994,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0086",
@@ -2929,7 +3018,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2943,7 +3032,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0087",
@@ -2966,7 +3056,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -2980,7 +3070,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0088",
@@ -3003,7 +3094,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3017,7 +3108,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0089",
@@ -3040,7 +3132,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3054,7 +3146,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0090",
@@ -3077,7 +3170,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3091,7 +3184,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0091",
@@ -3114,7 +3208,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3128,7 +3222,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0092",
@@ -3149,8 +3244,8 @@
       "currentRole": "PLAN",
       "protectedRoles": [],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "docs/archive/obsolete-syllabus-scope/PR-048-9618-Production-Expansion-Preparation-Plan.md",
-      "moveMethod": "DEFER_UNTRACKED",
+      "targetPath": "NONE",
+      "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -3163,7 +3258,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "UNTRACKED_REQUIRES_PUBLIC_PRIVATE_DECISION"
+      "approvalStatus": "UNTRACKED_EXISTING_ARCHIVE_COPY_REVIEW_REQUIRED_NO_MOVE",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0093",
@@ -3186,7 +3282,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3200,7 +3296,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0094",
@@ -3223,7 +3320,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3237,7 +3334,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0095",
@@ -3260,7 +3358,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3274,7 +3372,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0096",
@@ -3297,7 +3396,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3311,7 +3410,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0097",
@@ -3334,7 +3434,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3348,7 +3448,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0098",
@@ -3371,7 +3472,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3385,7 +3486,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0099",
@@ -3408,7 +3510,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3422,7 +3524,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0100",
@@ -3445,7 +3548,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3459,7 +3562,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0101",
@@ -3482,7 +3586,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3496,7 +3600,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0102",
@@ -3519,7 +3624,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3533,7 +3638,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0103",
@@ -3556,7 +3662,7 @@
         "releaseGate"
       ],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
@@ -3570,7 +3676,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "EXCLUDED_PROTECTED"
+      "approvalStatus": "EXCLUDED_PROTECTED",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0104",
@@ -3591,7 +3698,7 @@
       "currentRole": "DOCUMENT",
       "protectedRoles": [],
       "publicPrivateClass": "REVIEW_REQUIRED",
-      "targetPath": "",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -3599,7 +3706,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY"
+      "approvalStatus": "REVIEW_REQUIRED_ARCHIVE_IDENTITY",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0105",
@@ -3620,7 +3728,7 @@
       "currentRole": "DESIGN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-7-c-a/phase7c-a-design.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -3628,7 +3736,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0106",
@@ -3649,16 +3758,14 @@
       "currentRole": "DESIGN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-7c-b/phase7c-b-design.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json",
         "scripts/finalize-unsupported-syllabus-cleanup-report.js"
       ],
-      "rewritableReferences": [
-        "scripts/finalize-unsupported-syllabus-cleanup-report.js"
-      ],
+      "rewritableReferences": [],
       "immutableAuditReferences": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -3666,7 +3773,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0107",
@@ -3687,7 +3795,7 @@
       "currentRole": "DESIGN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-7-c-c/phase7c-c-design.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -3695,7 +3803,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0108",
@@ -3716,7 +3825,7 @@
       "currentRole": "DESIGN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-7-c-d/phase7c-d-design.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -3724,7 +3833,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0109",
@@ -3745,16 +3855,14 @@
       "currentRole": "DESIGN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-7c-e/phase7c-e-design.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json",
         "scripts/finalize-unsupported-syllabus-cleanup-report.js"
       ],
-      "rewritableReferences": [
-        "scripts/finalize-unsupported-syllabus-cleanup-report.js"
-      ],
+      "rewritableReferences": [],
       "immutableAuditReferences": [
         "docs/repository-maintenance/PRE_REWRITE_WORKTREE_INVENTORY.md",
         "docs/repository-maintenance/pre-rewrite-worktree-inventory.json"
@@ -3762,7 +3870,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0110",
@@ -3783,7 +3892,7 @@
       "currentRole": "DESIGN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-8-a/phase8-a-design.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -3791,7 +3900,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0111",
@@ -3812,7 +3922,7 @@
       "currentRole": "DESIGN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-8-b/phase8-b-design.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -3820,7 +3930,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0112",
@@ -3841,7 +3952,7 @@
       "currentRole": "DESIGN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-8-c/phase8-c-design.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -3849,7 +3960,8 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
     },
     {
       "artifactId": "PR02A-MOVE-0113",
@@ -3870,7 +3982,7 @@
       "currentRole": "DESIGN",
       "protectedRoles": [],
       "publicPrivateClass": "PUBLIC_SAFE",
-      "targetPath": "docs/archive/phases/phase-8-d/phase8-d-design.md",
+      "targetPath": "NONE",
       "moveMethod": "NO_MOVE",
       "referencedBy": [],
       "rewritableReferences": [],
@@ -3878,7 +3990,245 @@
       "referenceRewriteRequired": false,
       "externalReferenceStatus": "EXTERNAL_REFERENCE_NOT_REWRITABLE",
       "conflicts": [],
-      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN"
+      "approvalStatus": "DEFER_SOURCE_ABSENT_FROM_CURRENT_MAIN",
+      "referenceRewriteAction": "NO_MOVE_NO_REFERENCE_REWRITE"
+    }
+  ],
+  "unmappedMaterialReviewBucket": {
+    "nodeType": "UNMAPPED_MATERIAL_REVIEW_BUCKET",
+    "archiveTarget": "NONE",
+    "status": "REVIEW_REQUIRED_PR_IDENTITY",
+    "formalPrNode": false,
+    "supersessionEligible": false
+  },
+  "untrackedDocumentReview": [
+    {
+      "sourcePath": "docs/PR-009-Frontend-Migration-to-Question-Rendering-Contract-Solution.md",
+      "sha256": "a3ffd31e0f6d11d51727cf584680e4be1382f185d9b6d7a3b4b5f2eafe88e86f",
+      "title": "PR-009 Frontend Migration to Question Rendering Contract",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-009/PR-009-Frontend-Migration-to-Question-Rendering-Contract-Solution.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010A-Question-Text-Normalization-Contract-and-Migration-Solution.md",
+      "sha256": "5f16af3055d0d0fd6d957c498ca2c76a4a0b64cd9217abd127ff81fc5bde4353",
+      "title": "PR-010A Question Text Normalization Contract and Migration",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010A/PR-010A-Question-Text-Normalization-Contract-and-Migration-Solution.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010B-child-boundary-audit-investigation-plan.md",
+      "sha256": "02f483ff8107dacedaa4ca4aa0d2499c20310d48403428d61955dd2ad1ad6f18",
+      "title": "PR-010B Investigation Expansion Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010B/PR-010B-child-boundary-audit-investigation-plan.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010B-parent-ownership-repair-solution.md",
+      "sha256": "fe8c202b576ffac9adfc6a75b2cc326fcb6c9a705e2729cf847af1dc4e7bce5d",
+      "title": "PR-010B Parent Ownership Repair Solution Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010B/PR-010B-parent-ownership-repair-solution.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010C-conditional-pass-completion-plan.md",
+      "sha256": "5f78aa4ec6a606274daca103505b5b56418e8ef9f7226b59c38c9e188735f8cc",
+      "title": "PR-010C.1 Canonical Question Boundary Contract Completion Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010C.1/PR-010C-conditional-pass-completion-plan.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010C.2-validation-evidence-completion-plan.md",
+      "sha256": "95d60f803b9897665a922fe2f17fb7966ff6c7f0ed0be50097adcf7f8f514fee",
+      "title": "PR-010C.2 Validation Evidence Completion Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010C.2/PR-010C.2-validation-evidence-completion-plan.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010C.3-actual-validator-issue-evidence-repair-plan.md",
+      "sha256": "46904f8f76f2578e025347f776e6f5d553f0dbbc33453c51d65876970ec9df87",
+      "title": "PR-010C.3 Actual Validator Issue Evidence Repair Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010C.3/PR-010C.3-actual-validator-issue-evidence-repair-plan.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010C.3A-2-canonical-ownership-capture-and-validator-wiring-plan.md",
+      "sha256": "523e29bf1625738304e8477f6c31e8ebb263da055ea15e44ef4a2118f3197ac1",
+      "title": "PR-010C.3A-2 Canonical Ownership Capture and Validator Wiring Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010C.3A-2/PR-010C.3A-2-canonical-ownership-capture-and-validator-wiring-plan.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010C.3A-2A-0-single-pdf-ownership-runtime-integration-project-plan.md",
+      "sha256": "6b459f6d572608430152e0e67cd68dd67f85ff7f1dbae5ce703e8c535285a694",
+      "title": "PR-010C.3A-2A-0 Single-PDF Ownership Runtime Integration Project Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-0/PR-010C.3A-2A-0-single-pdf-ownership-runtime-integration-project-plan.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010C.3A-2A-0S-ownership-artifact-dto-compaction-and-streaming-serialization-plan.md",
+      "sha256": "59b517d70d1432ae7497b5531b4c65cd58e16fd9851c32a9375ecaea7c197f4c",
+      "title": "PR-010C.3A-2A-0S Ownership Artifact DTO Compaction and Streaming Serialization Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-0S/PR-010C.3A-2A-0S-ownership-artifact-dto-compaction-and-streaming-serialization-plan.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010C.3A-2A-0V-visual-line-geometry-and-vertical-margin-isolation-repair.md",
+      "sha256": "b143a0c4c9110746e7832fadf86e508bf57e9c71852c154d7cd96248e07f3f2e",
+      "title": "PR-010C.3A-2A-0V Visual-Line Geometry and Vertical-Margin Isolation Repair",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-0V/PR-010C.3A-2A-0V-visual-line-geometry-and-vertical-margin-isolation-repair.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010C.3A-2A-1-full-corpus-ownership-integration-and-evidence-capture-project-plan.md",
+      "sha256": "56b10322aaa7804b4f60b02958c26e222ae108b60478fe2510ce421281771d29",
+      "title": "PR-010C.3A-2A-1 Full-Corpus Ownership Integration and Evidence Capture Project Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-1/PR-010C.3A-2A-1-full-corpus-ownership-integration-and-evidence-capture-project-plan.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010C.3A-2A-1A-three-known-fixture-pdf-ownership-integration-test.md",
+      "sha256": "839fa79ecb912109006573cf37775103c8e126cab1c867fabdd5598f8424cd3c",
+      "title": "PR-010C.3A-2A-1A Three Known-Fixture PDF Ownership Integration Test",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-1A/PR-010C.3A-2A-1A-three-known-fixture-pdf-ownership-integration-test.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010C.3A-2A-2A-canonical-boundary-validator-wiring-and-full-corpus-contract-validation.md",
+      "sha256": "c2b200122439cb0466e9311db3bdd92aa4019c12cc18095e25679ccce2b01401",
+      "title": "PR-010C.3A-2A-2A Canonical Boundary Validator Wiring and Full-Corpus Contract Validation",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A-2A/PR-010C.3A-2A-2A-canonical-boundary-validator-wiring-and-full-corpus-contract-validation.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/PR-010C.3A-2A-canonical-ownership-model-construction-project-plan.md",
+      "sha256": "cad6478afbc9196ee64d223c3f9695e8aed9f787d5844146fe7e5de4a6abfbc1",
+      "title": "PR-010C.3A-2A Canonical Ownership Model Construction Project Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "PUBLIC_ARCHIVE_CANDIDATE_REVIEW_REQUIRED",
+      "recommendedTarget": "docs/archive/prs/PR-010C.3A-2A/PR-010C.3A-2A-canonical-ownership-model-construction-project-plan.md",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/archive/obsolete-syllabus-scope/PR-029_Generate_Missing_Production_Expansion_Staging_Coverage_Explanation.md",
+      "sha256": "21d3adf6b0f0447101f8e5d8075ad5c24e77137d5ae4efc1f5f44f0a100a75db",
+      "title": "PR-029_Generate_Missing_Production_Expansion_Staging_Coverage_Explanation",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
+      "recommendedTarget": "NONE",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/archive/obsolete-syllabus-scope/PR-034-0478-Production-Expansion-Batch-01-Implementation-Plan.md",
+      "sha256": "18445939f889cefe0c1c60a287d6e3fb5cb131d71ba9e9874ff8acec07ce73ec",
+      "title": "PR-034 0478 Production Expansion Batch 01 Implementation Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
+      "recommendedTarget": "NONE",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/archive/obsolete-syllabus-scope/PR-038-0478-Missing-Staging-Generation-Batch-01-Implementation-Plan.md",
+      "sha256": "57ea05500d4943506f50c4ecbddc89cccdeec002a4acc1ad68fe0ab54dd1efba",
+      "title": "PR-038 0478 Missing Staging Generation Batch 01 Implementation Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
+      "recommendedTarget": "NONE",
+      "decisionStatus": "PENDING"
+    },
+    {
+      "sourcePath": "docs/archive/obsolete-syllabus-scope/PR-048-9618-Production-Expansion-Preparation-Plan.md",
+      "sha256": "da95b85f1e207bb1d88959892c244491bad930b3c0b57bb4cfacfb3814d28f4f",
+      "title": "PR-048 9618 Production Expansion Preparation Plan",
+      "secretSignalCount": 0,
+      "absoluteLocalPathCount": 0,
+      "privateUrlCount": 0,
+      "currentSupersededEvidence": "CURRENT_ROLE_NOT_PROVEN; SUPERSESSION_NOT_PROVEN",
+      "recommendedClassification": "KEEP_EXISTING_ARCHIVE_COPY_NO_MOVE",
+      "recommendedTarget": "NONE",
+      "decisionStatus": "PENDING"
     }
   ]
 }
