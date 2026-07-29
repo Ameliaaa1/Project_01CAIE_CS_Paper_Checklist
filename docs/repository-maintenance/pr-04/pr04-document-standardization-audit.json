@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "task": "PR-04",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "result": "PASS_DOCUMENTATION_STANDARDIZATION_POLICY_READY_FOR_HUMAN_REVIEW",
+  "baseSha": "49a4f66307fc5ea51e27481e4d96ab0dcf51cfac",
+  "initialAuditGeneratedAt": "2026-07-29T15:44:08Z",
+  "generatedAt": "2026-07-29T15:48:47Z",
+  "scope": {
+    "documentsScanned": 44,
+    "markdownDocuments": 35,
+    "jsonDocuments": 9,
+    "archiveDocuments": 15,
+    "archiveModified": 0,
+    "codeModified": 0,
+    "pdfModified": 0,
+    "productionModified": 0,
+    "candidateModified": 0,
+    "safetyBackupModified": 0
+  },
+  "standardization": {
+    "namingRulesDefined": true,
+    "statusRulesDefined": true,
+    "authorityRulesDefined": true,
+    "lifecycleRulesDefined": true,
+    "evidenceFormatRulesDefined": true,
+    "humanApprovalRequiredForMigration": true,
+    "legacyContentRewritten": false
+  },
+  "audit": {
+    "lifecycleStatus": {
+      "standard": 0,
+      "missing": 22,
+      "phaseResultUsedAsStatus": 17,
+      "undefinedValue": 5
+    },
+    "naming": {
+      "archiveLegacyProtected": 15,
+      "pr02aLegacyProtected": 7,
+      "forbiddenAmbiguousNames": 0,
+      "approvedRenameCandidates": 0,
+      "approvedMoveCandidates": 0
+    },
+    "authority": {
+      "subjects": 20,
+      "duplicateSubjects": 0,
+      "missingProposedPolicyTargets": 0,
+      "archiveAuthorityTargets": 0
+    },
+    "evidence": {
+      "markdownJsonPairsChecked": 5,
+      "markdownJsonPairsPassed": 5,
+      "manifestEntriesChecked": 27,
+      "manifestEntriesPassed": 27,
+      "manifestEntriesFailed": 0
+    }
+  },
+  "candidates": [
+    {
+      "id": "PR04-INDEX-001",
+      "scope": "docs/DOCUMENTATION_INDEX.md",
+      "classification": "INDEX_UPDATE",
+      "affected": 1,
+      "disposition": "APPLIED_WITHIN_PR04_BOUNDARY"
+    },
+    {
+      "id": "PR04-INDEX-002",
+      "scope": "docs/AUTHORITATIVE_DOCUMENT_MAP.md",
+      "classification": "INDEX_UPDATE",
+      "affected": 1,
+      "disposition": "APPLIED_WITHIN_PR04_BOUNDARY"
+    },
+    {
+      "id": "PR04-STATUS-001",
+      "scope": "README.md",
+      "classification": "METADATA_ONLY",
+      "affected": 1,
+      "disposition": "PENDING_HUMAN_REVIEW"
+    },
+    {
+      "id": "PR04-STATUS-002",
+      "scope": "docs/ARCHIVE_INDEX.md and docs/PR_HISTORY_INDEX.md",
+      "classification": "METADATA_ONLY",
+      "affected": 2,
+      "disposition": "PENDING_HUMAN_REVIEW"
+    },
+    {
+      "id": "PR04-ARCHIVE-001",
+      "scope": "docs/archive",
+      "classification": "PROTECTED_NO_CHANGE",
+      "affected": 15,
+      "disposition": "PRESERVE_BYTES_AND_PATHS"
+    },
+    {
+      "id": "PR04-LEGACY-001",
+      "scope": "docs/repository-maintenance/pr-02a legacy names",
+      "classification": "PROTECTED_NO_CHANGE",
+      "affected": 7,
+      "disposition": "PRESERVE_BYTES_AND_PATHS"
+    },
+    {
+      "id": "PR04-EVIDENCE-001",
+      "scope": "completed records using PASS_* as status",
+      "classification": "CONTENT_REVIEW",
+      "affected": 17,
+      "disposition": "PENDING_SEPARATELY_APPROVED_STRATEGY"
+    },
+    {
+      "id": "PR04-METADATA-001",
+      "scope": "additional frozen maintenance records without lifecycle status",
+      "classification": "PROTECTED_NO_CHANGE",
+      "affected": 6,
+      "disposition": "PRESERVE_UNTIL_EVIDENCE_SAFE_MIGRATION"
+    },
+    {
+      "id": "PR04-FROZEN-001",
+      "scope": "docs/repository-maintenance/pr-02a/DOCUMENT_ARCHIVE_TOPOLOGY.md",
+      "classification": "PROTECTED_NO_CHANGE",
+      "affected": 1,
+      "disposition": "PRESERVE_FROZEN_EVIDENCE"
+    },
+    {
+      "id": "PR04-AUTHORITY-001",
+      "scope": "authority assignments",
+      "classification": "NO_ACTION",
+      "affected": 0,
+      "disposition": "NO_CONFLICT_FOUND"
+    },
+    {
+      "id": "PR04-EVIDENCE-002",
+      "scope": "paired reports and manifest hashes",
+      "classification": "NO_ACTION",
+      "affected": 0,
+      "disposition": "ALL_CHECKS_PASSED"
+    }
+  ],
+  "executionBoundary": {
+    "approvedExecutionCandidates": 0,
+    "renamesExecuted": 0,
+    "movesExecuted": 0,
+    "deletionsExecuted": 0,
+    "contentRewritesExecuted": 0,
+    "newPolicyFiles": 2,
+    "newAuditFiles": 2,
+    "updatedIndexFiles": 2,
+    "allowedFiles": 6
+  },
+  "validation": {
+    "jsonParse": "PASS",
+    "changedMarkdownFilesChecked": 5,
+    "localLinksChecked": 45,
+    "brokenLinks": 0,
+    "authorityDuplicateSubjects": 0,
+    "evidencePairs": "PASS_5_OF_5",
+    "protectedManifestHashes": "PASS_27_OF_27",
+    "recordedEvidenceHashes": "PASS_5_OF_5",
+    "gitDiffCheck": "PASS",
+    "allowedChangedFiles": "PASS_6_OF_6",
+    "deletions": 0,
+    "renames": 0
+  },
+  "evidenceFiles": [
+    {
+      "path": "docs/DOCUMENTATION_STANDARD.md",
+      "sizeBytes": 5123,
+      "sha256": "09434aa636755063ec8f80dedf9d28cf838a314504d7601d8484fccf04ca1ed0"
+    },
+    {
+      "path": "docs/DOCUMENT_LIFECYCLE_POLICY.md",
+      "sizeBytes": 6547,
+      "sha256": "cb0e16235e9e663dd025e2366ec4e22521bbba0bad7946d605547ef6c85905fb"
+    },
+    {
+      "path": "docs/DOCUMENTATION_INDEX.md",
+      "sizeBytes": 4234,
+      "sha256": "be8eee93c94de8bb630ee12650eab7152004e5fbc13a4012500c0fb3a50ede30"
+    },
+    {
+      "path": "docs/AUTHORITATIVE_DOCUMENT_MAP.md",
+      "sizeBytes": 4021,
+      "sha256": "e2325d4c7abf7903ba3385e33e21a7652fef700879611198937cc7c5b17ab2e8"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-04/PR04_DOCUMENT_STANDARDIZATION_AUDIT.md",
+      "sizeBytes": 6802,
+      "sha256": "df79e8a7edda95b3d157ae41e788684d9ded9fcac41036f96f93d4336688d0f5"
+    }
+  ],
+  "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE",
+  "humanReview": {
+    "required": true,
+    "decision": "PENDING",
+    "approvedCandidates": []
+  }
+}

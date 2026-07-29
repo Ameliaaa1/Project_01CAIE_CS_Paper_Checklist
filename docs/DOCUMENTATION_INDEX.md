@@ -1,6 +1,6 @@
 # Documentation Index
 
-Status: `CURRENT_NAVIGATION_ENTRY`
+Status: `CURRENT`
 
 This page is the primary navigation entry for tracked project documentation.
 It classifies documents by their present role; it does not change the status
@@ -12,6 +12,8 @@ or content of any referenced file.
 | --- | --- | --- |
 | [Project README](../README.md) | Product overview, local startup, deployment configuration, and project structure | Authoritative current project entry |
 | [Authoritative Document Map](AUTHORITATIVE_DOCUMENT_MAP.md) | Assigns one source of truth to each documentation subject | Authoritative ownership map |
+| [Documentation Standard](DOCUMENTATION_STANDARD.md) | Proposed naming, metadata, link, and evidence-format rules | Becomes authoritative after PR-04 approval and merge |
+| [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Proposed status, transition, authority, and mutability rules | Becomes authoritative after PR-04 approval and merge |
 
 ## Architecture Documentation
 
@@ -44,6 +46,7 @@ records:
 - [PR-02A frozen archive plan](repository-maintenance/pr-02a/)
 - [PR-02B execution and closure evidence](repository-maintenance/pr-02b/)
 - [PR-03 reconstruction evidence](repository-maintenance/pr-03/)
+- [PR-04 policy-freeze evidence](repository-maintenance/pr-04/)
 
 Maintenance evidence describes completed governance work. It does not replace
 the README for current product behavior.

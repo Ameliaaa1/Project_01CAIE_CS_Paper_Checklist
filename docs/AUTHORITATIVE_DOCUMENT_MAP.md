@@ -1,6 +1,6 @@
 # Authoritative Document Map
 
-Status: `CURRENT_AUTHORITY_MAP`
+Status: `CURRENT`
 
 This map assigns one authoritative source to each information subject. A
 historical or archive document may provide context, but it does not override
@@ -14,6 +14,8 @@ the authority named here.
 | Repository-maintenance lifecycle navigation | [PR History Index](PR_HISTORY_INDEX.md) | Completed-phase navigation authority |
 | Archived historical document navigation | [Archive Index](ARCHIVE_INDEX.md) | Archive navigation authority |
 | Documentation authority ownership | This document | Authority-assignment source |
+| Documentation naming, metadata, linking, and evidence format | [Documentation Standard](DOCUMENTATION_STANDARD.md) | Proposed policy authority; effective after PR-04 approval and merge |
+| Document lifecycle, status transitions, authority changes, and mutability | [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Proposed lifecycle authority; effective after PR-04 approval and merge |
 | Pushability rescue and public remote backup boundary | [Remote Backup Summary](repository-maintenance/public/REMOTE_BACKUP_SUMMARY.md) | PR-00 summary authority |
 | Repository inventory snapshot and original classifications | [File Inventory Summary](repository-maintenance/public/FILE_INVENTORY_SUMMARY.md) | PR-01 public inventory authority |
 | Applied file decisions and protected/deferred counts | [File Decision Summary](repository-maintenance/public/FILE_DECISION_SUMMARY.md) | PR-01A decision authority |
