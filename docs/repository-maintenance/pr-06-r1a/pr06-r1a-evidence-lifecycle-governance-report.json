@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "task": "PR-06-R1A",
-  "status": "READY_FOR_HUMAN_REVIEW",
-  "result": "READY_PR06_R1A_FINAL_DIFF_FOR_HUMAN_REVIEW",
+  "status": "APPROVED",
+  "result": "PASS_PR06_R1A_EVIDENCE_LIFECYCLE_GOVERNANCE_HUMAN_REVIEW",
   "baseSha": "11ce82001efb633c1697356c1a510fc0c5034245",
   "validatedImplementationSha": "da851d1ebc7379fa68c5af9a8aac05846ff20de0",
   "finalPrHeadSha": null,
   "initialAuditGeneratedAt": "2026-07-30T09:58:54Z",
-  "generatedAt": "2026-07-30T10:16:05Z",
+  "generatedAt": "2026-07-30T15:35:56Z",
   "markdownReport": "docs/repository-maintenance/pr-06-r1a/PR06_R1A_EVIDENCE_LIFECYCLE_GOVERNANCE_REPORT.md",
   "implementation": {
     "legacyInferenceRestricted": true,
@@ -45,9 +45,9 @@
     "gitDiffCheck": "PASS",
     "readOnlyDefault": "PASS",
     "jsonParse": "PASS",
-    "evidenceHashes": "PASS_11_OF_11",
+    "evidenceHashes": "PASS_12_OF_12",
     "pr05HistoricalHashes": "PASS_2_OF_2",
-    "allowlist": "PASS_25_OF_25"
+    "allowlist": "PASS_27_OF_27"
   },
   "summary": {
     "blockingFindings": 0,
@@ -56,19 +56,21 @@
   "dependency": {
     "target": "Candidate-to-Production Promotion Gate",
     "proposedPr": "PR-06C",
-    "status": "WAITING_FOR_PR06-R1A_HUMAN_REVIEW",
+    "status": "AUTHORIZED_TO_DESIGN_NOT_STARTED",
+    "designAuthorized": true,
+    "implementationAuthorized": false,
     "started": false
   },
   "gitBoundary": {
-    "changedFiles": 25,
+    "changedFiles": 27,
     "filesDeleted": 0,
     "filesRenamed": 0,
     "filesMoved": 0,
-    "lineAdditions": 2066,
+    "lineAdditions": 2306,
     "lineDeletions": 25,
     "validatorImplementationConfigFiles": 3,
     "validatorTestFixtureFiles": 10,
-    "maintenanceEvidenceFiles": 12,
+    "maintenanceEvidenceFiles": 14,
     "workflowChanges": 0,
     "packageJsonChanges": 0,
     "productionChanges": 0,
@@ -89,8 +91,9 @@
     {"path":"docs/repository-maintenance/pr-06-r1/PR06_R1_HUMAN_REVIEW.md","evidenceClass":"historical","sizeBytes":2253,"sha256":"8a69ab8e94d7bcad61f73647cbbe61e0536a2074d83d0a2eceebd89d3c3af0e2"},
     {"path":"docs/repository-maintenance/pr-06-r1/PR06_R1_MIGRATION_MATRIX.md","evidenceClass":"historical","sizeBytes":7174,"sha256":"b9a88fb9777fb111a7110da1ab10986fdab268745bea852d6245634b13046e69"},
     {"path":"docs/repository-maintenance/pr-06-r1/pr06-r1-active-evidence-lifecycle-report.json","evidenceClass":"historical","sizeBytes":6621,"sha256":"04c8e8efc6ca04d1ecdd51fd6344c53d46cb3bbe27be7afd8618e67d752e8bb1"},
-    {"path":"docs/repository-maintenance/pr-06-r1a/PR06_R1A_EVIDENCE_LIFECYCLE_GOVERNANCE_REPORT.md","evidenceClass":"historical","sizeBytes":3297,"sha256":"277563633e93aa869020da98e664f3f38268373a565335a45e463802422cd258"},
-    {"path":"docs/repository-maintenance/pr-06-r1a/PR06_R1A_HUMAN_REVIEW.md","evidenceClass":"historical","sizeBytes":1815,"sha256":"77db83b12f12054d001413939728de8b092d34eb187e4ee562f294f5042b991a"},
+    {"path":"docs/repository-maintenance/pr-06-r1a/PR06_R1A_APPROVAL_REPORT.md","evidenceClass":"historical","sizeBytes":2128,"sha256":"e93453360cd0374fcd5afd21a6ed80e75f8bf6ae6e611848243fe4c55bc83821"},
+    {"path":"docs/repository-maintenance/pr-06-r1a/PR06_R1A_EVIDENCE_LIFECYCLE_GOVERNANCE_REPORT.md","evidenceClass":"historical","sizeBytes":3495,"sha256":"d5df392e6446ae0a86acf96af1ebc21c56656122d0ca11c4a6d99f460a042c94"},
+    {"path":"docs/repository-maintenance/pr-06-r1a/PR06_R1A_HUMAN_REVIEW.md","evidenceClass":"historical","sizeBytes":2291,"sha256":"4c67b6984f8325e8a46c62def87c38b6d7b01c81b1987aeadd989ba3af4eca5d"},
     {"path":"scripts/documentation-validation/constants.js","evidenceClass":"active-authority"},
     {"path":"scripts/documentation-validation/evidence-lifecycle.json","evidenceClass":"active-authority"},
     {"path":"scripts/documentation-validation/validator.js","evidenceClass":"active-authority"},
@@ -108,10 +111,12 @@
   "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE",
   "humanReview": {
     "required": true,
-    "decision": "PENDING",
-    "reviewer": null,
-    "reviewedAt": null,
+    "decision": "APPROVE",
+    "reviewer": "Amelia Cai",
+    "reviewedAt": "2026-07-30T15:35:56Z",
     "approvedFirstImplementationTarget": null,
-    "approvedImplementationPr": null
+    "approvedImplementationPr": null,
+    "authorizedDesignTarget": "Candidate-to-Production Promotion Gate",
+    "authorizedDesignPr": "PR-06C"
   }
 }

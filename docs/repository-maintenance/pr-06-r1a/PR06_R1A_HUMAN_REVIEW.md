@@ -1,6 +1,6 @@
 # PR-06-R1A Human Review
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
 Owner: Repository maintainers
 
@@ -16,29 +16,45 @@ Related documents:
 
 ## Decision
 
-Human review decision: `PENDING`
+Human review decision: `APPROVE`
 
-PR-06C status: `WAITING_FOR_PR06-R1A_HUMAN_REVIEW`
+Reviewer: `Amelia Cai`
+
+Reviewed at: `2026-07-30T15:35:56Z`
+
+Approval result: `PASS_PR06_R1A_EVIDENCE_LIFECYCLE_GOVERNANCE_HUMAN_REVIEW`
+
+Approved first implementation target: `NONE`
+
+Approved implementation PR: `NONE`
+
+Authorized design target: `Candidate-to-Production Promotion Gate`
+
+Authorized design PR: `PR-06C`
+
+PR-06C status: `AUTHORIZED_TO_DESIGN_NOT_STARTED`
+
+PR-06C implementation authorization: `NOT_AUTHORIZED`
 
 ## Required Review
 
-- [ ] Missing `evidenceClass` is inferred only for the five exact registered
+- [x] Missing `evidenceClass` is inferred only for the five exact registered
   legacy sources.
-- [ ] Historical registry entry deletion blocks with `DOC-EVIDENCE-012`.
-- [ ] Historical protection weakening or downgrade blocks with
+- [x] Historical registry entry deletion blocks with `DOC-EVIDENCE-012`.
+- [x] Historical protection weakening or downgrade blocks with
   `DOC-EVIDENCE-013`.
-- [ ] Active path/prefix expansion blocks with `DOC-EVIDENCE-014`.
-- [ ] Legacy source expansion blocks with `DOC-EVIDENCE-015`.
-- [ ] Explicit active-authority entries containing size/hash block with
+- [x] Active path/prefix expansion blocks with `DOC-EVIDENCE-014`.
+- [x] Legacy source expansion blocks with `DOC-EVIDENCE-015`.
+- [x] Explicit active-authority entries containing size/hash block with
   `DOC-EVIDENCE-016`.
-- [ ] The initial registry bootstrap is allowed only because `origin/main` has
+- [x] The initial registry bootstrap is allowed only because `origin/main` has
   no lifecycle registry; subsequent changes are compared to their base.
-- [ ] PR-05 report Markdown and JSON bytes remain unchanged.
-- [ ] Documentation tests pass 90/90 and rule closure passes 49/49.
-- [ ] Full/changed validation and full `npm test` pass.
-- [ ] No workflow, package, Production, Candidate, PDF, parser runtime,
+- [x] PR-05 report Markdown and JSON bytes remain unchanged.
+- [x] Documentation tests pass 90/90 and rule closure passes 49/49.
+- [x] Full/changed validation and full `npm test` pass.
+- [x] No workflow, package, Production, Candidate, PDF, parser runtime,
   question-data, or frontend behavior file changed.
-- [ ] PR-06C has not started.
+- [x] PR-06C has not started.
 
 ## Approval Format
 
@@ -50,5 +66,6 @@ Approved first implementation target: <exact target or NONE>
 Approved implementation PR: <exact PR label or NONE>
 ```
 
-Until the human decision is recorded, PR #9 remains Draft and PR-06C remains
-blocked.
+The human decision is recorded. PR #9 may be marked ready for manual review and
+merge. PR-06C may be designed after post-merge verification, but implementation
+remains unauthorized and has not started.

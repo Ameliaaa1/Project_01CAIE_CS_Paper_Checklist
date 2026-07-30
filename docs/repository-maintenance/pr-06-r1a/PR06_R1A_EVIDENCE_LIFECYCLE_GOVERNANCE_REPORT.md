@@ -2,9 +2,9 @@
 
 Task: `PR-06-R1A`
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
-Result: `READY_PR06_R1A_FINAL_DIFF_FOR_HUMAN_REVIEW`
+Result: `PASS_PR06_R1A_EVIDENCE_LIFECYCLE_GOVERNANCE_HUMAN_REVIEW`
 
 Owner: Repository maintainers
 
@@ -15,7 +15,9 @@ Authoritative scope: NONE
 Related documents:
 
 - [R1A human review](PR06_R1A_HUMAN_REVIEW.md)
+- [R1A approval report](PR06_R1A_APPROVAL_REPORT.md)
 - [Machine-readable R1A report](pr06-r1a-evidence-lifecycle-governance-report.json)
+- [Machine-readable approval closure](pr06-r1a-report.json)
 - [R1 lifecycle report](../pr-06-r1/PR06_R1_ACTIVE_EVIDENCE_LIFECYCLE_REPORT.md)
 - [PR-06 audit](../pr-06/PR06_REPOSITORY_QUALITY_GATE_SCOPE_AUDIT.md)
 
@@ -27,7 +29,7 @@ Final PR head SHA: `PENDING`
 
 Initial audit generated at: `2026-07-30T09:58:54Z`
 
-Generated at: `2026-07-30T10:16:05Z`
+Generated at: `2026-07-30T15:35:56Z`
 
 Tests cases: `90`
 
@@ -39,7 +41,7 @@ Blocking findings: `0`
 
 Baselined findings: `15`
 
-Changed files: `25`
+Changed files: `27`
 
 Files deleted: `0`
 
@@ -47,18 +49,18 @@ Files renamed: `0`
 
 Files moved: `0`
 
-Line additions: `2066`
+Line additions: `2306`
 
 Line deletions: `25`
 
-Human review decision: `PENDING`
+Human review decision: `APPROVE`
 
 ## Result
 
 R1A closes the remaining lifecycle governance bypasses without modifying PR-05
-history. Missing classes can be inferred only for five exact legacy sources.
-All other missing classes block. Changed mode compares the base and current
-registry once a base registry exists.
+history. Human review approved the repair. Missing classes can be inferred only
+for five exact legacy sources. All other missing classes block. Changed mode
+compares the base and current registry once a base registry exists.
 
 ## Governance Rules
 
@@ -109,7 +111,7 @@ Validator implementation/config files: 3
 
 Validator test/fixture files: 10
 
-Maintenance evidence files: 12
+Maintenance evidence files: 14
 
 Workflow changes: 0
 
@@ -123,6 +125,6 @@ PR-05 historical files changed: 0
 
 ## Dependency
 
-Recommended target remains `Candidate-to-Production Promotion Gate`
-(`PR-06C`). Its status is `WAITING_FOR_PR06-R1A_HUMAN_REVIEW`; it has not been
-started or authorized.
+The approved design target is `Candidate-to-Production Promotion Gate`
+(`PR-06C`). Its status is `AUTHORIZED_TO_DESIGN_NOT_STARTED`. This approval
+does not authorize PR-06C implementation, and no PR-06C work has started.
