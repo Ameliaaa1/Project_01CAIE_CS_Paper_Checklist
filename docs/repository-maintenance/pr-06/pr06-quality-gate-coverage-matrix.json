@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "task": "PR-06",
+  "baseSha": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "generatedAt": "2026-07-30T08:03:45Z",
+  "coverageStatuses": ["COVERED_STRICT", "COVERED_PARTIAL", "COVERED_MANUAL", "SCRIPT_EXISTS_NOT_GATED", "HISTORICAL_EVIDENCE_ONLY", "MUTATING_CHECK_NOT_SAFE_FOR_CI", "NO_ACTIVE_GATE", "NOT_APPLICABLE", "BLOCKED_UNKNOWN"],
+  "mutabilityClasses": ["READ_ONLY", "WRITES_GENERATED_ARTIFACT", "WRITES_RUNTIME_DATA", "WRITES_CANDIDATE_DATA", "WRITES_PRODUCTION_DATA", "UNKNOWN_MUTABILITY"],
+  "entries": [
+    {
+      "gateId": "QG-DOC-001", "domain": "Documentation Governance", "subdomain": "full and changed validation", "purpose": "Enforce documentation metadata, links, authority, evidence, protected history, and baseline rules.",
+      "entrypoint": ["scripts/validate-documentation.js", "tests/documentation-validation.test.js", ".github/workflows/documentation-validation.yml"], "command": ["npm run test:documentation-validation", "npm run validate:docs", "npm run validate:docs:changed -- --base <sha>"], "commandSource": ["package.json", ".github/workflows/documentation-validation.yml"],
+      "filesRead": ["README.md", "docs/**/*.md", "docs/**/*.json", ".git"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "COVERED_STRICT", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": true, "changedModeCoverage": true, "deterministicOutput": true, "exitCodeContract": "0 pass, 1 validation block, 2 usage/configuration block", "baselineUsed": true, "humanReviewRequired": false,
+      "execution": "RUN_PASS", "notRunReason": null, "currentEvidence": ["tests/documentation-validation.test.js", "docs/repository-maintenance/pr-05/PR05_DOCUMENTATION_VALIDATION_REPORT.md"], "knownLimitations": "Scope is documentation governance, not product-data integrity.",
+      "riskLevel": "P2", "recommendedNextAction": "Retain the gate and its read-only CI permissions.", "proposedImplementationPR": null, "scopeOwner": "Repository maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-RUNTIME-001", "domain": "Application Runtime Entry", "subdomain": "server import", "purpose": "Verify the server module imports without starting a listener in test mode.",
+      "entrypoint": ["tests/server-entrypoint.test.js", "server.js"], "command": ["npm run test:server-entrypoint"], "commandSource": ["package.json"], "filesRead": ["server.js"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": true, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS", "notRunReason": null,
+      "currentEvidence": ["tests/server-entrypoint.test.js"], "knownLimitations": "Import success does not prove deployed runtime readiness.", "riskLevel": "P2", "recommendedNextAction": "Keep in npm test; consolidate deployment checks only in a bounded deployment PR.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Application maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-RUNTIME-002", "domain": "Application Runtime Entry", "subdomain": "browser data load", "purpose": "Verify browser scripts load in order and expose the expected shared-data global.",
+      "entrypoint": ["tests/browser-data-load.test.js", "public/assets/paperlens-data.js", "public/app.js"], "command": ["npm run test:browser-data-load"], "commandSource": ["package.json"], "filesRead": ["public/assets/paperlens-data.js", "public/app.js"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": true, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS", "notRunReason": null,
+      "currentEvidence": ["tests/browser-data-load.test.js"], "knownLimitations": "VM execution is not a full browser rendering or data-contract corpus test.", "riskLevel": "P1", "recommendedNextAction": "Define the frontend data contract before expanding browser coverage.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Frontend maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-RUNTIME-003", "domain": "Application Runtime Entry", "subdomain": "static access boundary", "purpose": "Verify protected paths are denied while public assets remain accessible.",
+      "entrypoint": ["tests/static-access.test.js", "server.js"], "command": ["npm run test:static-access"], "commandSource": ["package.json"], "filesRead": ["server.js", "public/index.html", "public/assets/paperlens-data.js"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": true, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS", "notRunReason": null,
+      "currentEvidence": ["tests/static-access.test.js"], "knownLimitations": "Local server coverage does not establish hosted platform behavior.", "riskLevel": "P1", "recommendedNextAction": "Include explicit hosted-route assertions in deployment preflight design.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Application maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-DEPLOY-001", "domain": "Deployment and Routing", "subdomain": "Vercel routing configuration", "purpose": "Check static file placement and narrow API rewrite configuration.",
+      "entrypoint": ["tests/vercel-routing.test.js", "vercel.json"], "command": ["npm run test:vercel-routing"], "commandSource": ["package.json"], "filesRead": ["vercel.json", "public/**"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": true, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS", "notRunReason": null,
+      "currentEvidence": ["tests/vercel-routing.test.js", "vercel.json"], "knownLimitations": "Static configuration assertions do not deploy or query Vercel.", "riskLevel": "P1", "recommendedNextAction": "Consolidate without treating static checks as production readiness.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Deployment maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-DEPLOY-002", "domain": "Deployment and Routing", "subdomain": "local deployment smoke", "purpose": "Smoke-test representative public, API, protected, and PDF routes on a local server.",
+      "entrypoint": ["tests/deployment-smoke.test.js", "server.js"], "command": ["npm run test:deployment-smoke"], "commandSource": ["package.json"], "filesRead": ["server.js", "public/**", "generated/question-index.json"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": true, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS", "notRunReason": null,
+      "currentEvidence": ["tests/deployment-smoke.test.js"], "knownLimitations": "Runs locally and samples one PDF; no preview or production endpoint is queried.", "riskLevel": "P1", "recommendedNextAction": "Specify a read-only hosted preflight separately.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Deployment maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-DEPLOY-003", "domain": "Deployment and Routing", "subdomain": "production configuration", "purpose": "Reject missing or weak production secrets and unsafe persistent-storage configuration.",
+      "entrypoint": ["tests/production-config.test.js", "server.js"], "command": ["npm run test:production-config"], "commandSource": ["package.json"], "filesRead": ["server.js"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": true, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS", "notRunReason": null,
+      "currentEvidence": ["tests/production-config.test.js"], "knownLimitations": "Covers selected configuration failures, not provider connectivity or deployed secret values.", "riskLevel": "P1", "recommendedNextAction": "Preserve failure tests and add only non-secret deployment preflight checks.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Deployment maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-AUTH-001", "domain": "Authentication, Session and Billing", "subdomain": "authentication and session", "purpose": "Exercise guest access, signup, signed sessions, forged identity rejection, and logout.",
+      "entrypoint": ["tests/auth-session.test.js", "server.js"], "command": ["npm run test:auth-session"], "commandSource": ["package.json"], "filesRead": ["server.js", "generated/question-index.json"], "filesWritten": ["temporary DATA_DIR users and checkout JSON outside repository"], "mutability": "WRITES_RUNTIME_DATA", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": false, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS_TEMP_ISOLATED", "notRunReason": null,
+      "currentEvidence": ["tests/auth-session.test.js"], "knownLimitations": "Writes only an OS temporary DATA_DIR; provider-backed persistence is not covered.", "riskLevel": "P1", "recommendedNextAction": "Keep temporary-store isolation explicit in any future orchestration.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Application security maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-BILLING-001", "domain": "Authentication, Session and Billing", "subdomain": "billing configuration", "purpose": "Verify checkout fails closed when Stripe configuration is absent.",
+      "entrypoint": ["tests/billing-config.test.js", "server.js"], "command": ["npm run test:billing-config"], "commandSource": ["package.json"], "filesRead": ["server.js"], "filesWritten": ["temporary DATA_DIR users and checkout JSON outside repository"], "mutability": "WRITES_RUNTIME_DATA", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": false, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS_TEMP_ISOLATED", "notRunReason": null,
+      "currentEvidence": ["tests/billing-config.test.js"], "knownLimitations": "Does not contact Stripe or verify deployed configuration.", "riskLevel": "P1", "recommendedNextAction": "Retain fail-closed coverage; keep external-provider tests bounded.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Billing maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-BILLING-002", "domain": "Authentication, Session and Billing", "subdomain": "billing webhook", "purpose": "Exercise mock checkout, invalid signatures, valid webhook completion, and access activation.",
+      "entrypoint": ["tests/billing-webhook.test.js", "server.js"], "command": ["npm run test:billing-webhook"], "commandSource": ["package.json"], "filesRead": ["server.js"], "filesWritten": ["temporary DATA_DIR users and checkout JSON outside repository"], "mutability": "WRITES_RUNTIME_DATA", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": false, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS_TEMP_ISOLATED", "notRunReason": null,
+      "currentEvidence": ["tests/billing-webhook.test.js"], "knownLimitations": "Uses mock checkout and local webhook signing, not live Stripe delivery.", "riskLevel": "P1", "recommendedNextAction": "Keep as unit/integration coverage and document provider-level ownership.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Billing maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-AUTH-002", "domain": "Authentication, Session and Billing", "subdomain": "CSRF and rate limiting", "purpose": "Verify trusted-origin enforcement and authentication endpoint rate limiting.",
+      "entrypoint": ["tests/rate-csrf.test.js", "server.js"], "command": ["npm run test:rate-csrf"], "commandSource": ["package.json"], "filesRead": ["server.js"], "filesWritten": ["temporary DATA_DIR users and checkout JSON outside repository"], "mutability": "WRITES_RUNTIME_DATA", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": false, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS_TEMP_ISOLATED", "notRunReason": null,
+      "currentEvidence": ["tests/rate-csrf.test.js"], "knownLimitations": "Local in-process limits do not prove distributed deployment behavior.", "riskLevel": "P1", "recommendedNextAction": "Retain tests; include deployment assumptions in a focused preflight.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Application security maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-INDEX-001", "domain": "Question Index Build", "subdomain": "generated index build and freshness", "purpose": "Build the question index from tracked PDFs and detect stale generated output.",
+      "entrypoint": ["scripts/build-question-index.js", "generated/question-index.json"], "command": ["npm run build:question-index"], "commandSource": ["package.json"], "filesRead": ["public/textbook_syllabus/pastpaper/**/*.pdf"], "filesWritten": ["generated/question-index.json"], "mutability": "WRITES_GENERATED_ARTIFACT", "currentStatus": "MUTATING_CHECK_NOT_SAFE_FOR_CI", "inPackageScripts": true, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": true, "changedModeCoverage": false, "deterministicOutput": false, "exitCodeContract": "Sets process.exitCode=1 on caught build failure; freshness contract absent", "baselineUsed": false, "humanReviewRequired": true, "execution": "NOT_RUN", "notRunReason": "Plan prohibits mutating build execution; output includes new Date().toISOString().",
+      "currentEvidence": ["scripts/build-question-index.js", "generated/question-index.json"], "knownLimitations": "Writes tracked output, embeds wall-clock time, has no byte comparison or stale-output gate.", "riskLevel": "P1", "recommendedNextAction": "Add a deterministic read-only freshness comparison without rewriting output.", "proposedImplementationPR": "PR-06D", "scopeOwner": "Data index maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-INGEST-001", "domain": "Parser and Ingestion", "subdomain": "PDF-to-question parsing", "purpose": "Protect question splits, stable IDs, ownership, marks, geometry, response areas, source trace, roles, and back matter across the supported corpus.",
+      "entrypoint": ["docs/archive/prs/PR-010C.3A-2A-1/PR-010C.3A-2A-1-full-corpus-ownership-integration-and-evidence-capture-project-plan.md"], "command": [], "commandSource": ["historical archived plan only"], "filesRead": ["historical 0478 and 9618 PDF/canonical paths described by archived evidence"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "HISTORICAL_EVIDENCE_ONLY", "inPackageScripts": false, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": "NOT_ESTABLISHED", "exitCodeContract": null, "baselineUsed": false, "humanReviewRequired": true, "execution": "NOT_RUN", "notRunReason": "No current tracked parser/ingestion entrypoint exists at the audited base; PDF reparse is prohibited.",
+      "currentEvidence": ["docs/archive/prs/PR-010C.3A-2A-1/PR-010C.3A-2A-1-full-corpus-ownership-integration-and-evidence-capture-project-plan.md"], "knownLimitations": "Archived plans do not establish a current executable gate.", "riskLevel": "P0", "recommendedNextAction": "Recover and bound a read-only canonical/staging validation entry without reparsing PDFs.", "proposedImplementationPR": "PR-06B", "scopeOwner": "Parser and canonical maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-CANONICAL-001", "domain": "Canonical Completeness", "subdomain": "identity, topology and trace", "purpose": "Validate canonical presence, unique stable IDs, topology, marks, response ownership, source references, referenced media, and serialization.",
+      "entrypoint": ["docs/archive/prs/PR-010C.3A-2A-2A/PR-010C.3A-2A-2A-canonical-boundary-validator-wiring-and-full-corpus-contract-validation.md"], "command": [], "commandSource": ["historical archived plan only"], "filesRead": ["historical canonical records described by archived evidence"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "HISTORICAL_EVIDENCE_ONLY", "inPackageScripts": false, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": "NOT_ESTABLISHED", "exitCodeContract": null, "baselineUsed": false, "humanReviewRequired": true, "execution": "NOT_RUN", "notRunReason": "No current tracked canonical validator or canonical corpus exists at the audited base.",
+      "currentEvidence": ["docs/archive/prs/PR-010C.3A-2A-2A/PR-010C.3A-2A-2A-canonical-boundary-validator-wiring-and-full-corpus-contract-validation.md"], "knownLimitations": "Historical wiring claims cannot be treated as a current gate.", "riskLevel": "P0", "recommendedNextAction": "Implement one read-only canonical and staging integrity boundary.", "proposedImplementationPR": "PR-06B", "scopeOwner": "Canonical model maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-STAGING-001", "domain": "Staging Boundary", "subdomain": "validation-before-promotion", "purpose": "Prevent staging bypass and require isolation, current manifests, explicit review, and validation before Production.",
+      "entrypoint": ["docs/repository-maintenance/pr-02a/PROTECTED_FILE_EXCLUSION.md"], "command": [], "commandSource": ["no current executable command"], "filesRead": ["historical staging and review paths inventoried by PR-02A"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "NO_ACTIVE_GATE", "inPackageScripts": false, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": "NOT_APPLICABLE", "exitCodeContract": null, "baselineUsed": false, "humanReviewRequired": true, "execution": "NOT_RUN", "notRunReason": "No tracked staging implementation or active validator exists at the audited base.",
+      "currentEvidence": ["docs/repository-maintenance/pr-02a/PROTECTED_FILE_EXCLUSION.md"], "knownLimitations": "PR-02A inventory proves historical material existed, not that a gate is active.", "riskLevel": "P0", "recommendedNextAction": "Define the current staging input and a read-only boundary validator.", "proposedImplementationPR": "PR-06B", "scopeOwner": "Canonical and staging maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-CANDIDATE-001", "domain": "Candidate Integrity", "subdomain": "promotion readiness", "purpose": "Validate schema, counts, IDs, source references, blocker state, review decision, productionWrite, and syllabus scope before promotion.",
+      "entrypoint": ["docs/repository-maintenance/pr-02a/PROTECTED_FILE_EXCLUSION.md"], "command": [], "commandSource": ["no current executable command"], "filesRead": ["historical Candidate and human-review paths inventoried by PR-02A"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "NO_ACTIVE_GATE", "inPackageScripts": false, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": "NOT_APPLICABLE", "exitCodeContract": null, "baselineUsed": false, "humanReviewRequired": true, "execution": "NOT_RUN", "notRunReason": "No tracked Candidate data or current promotion validator exists at the audited base.",
+      "currentEvidence": ["docs/repository-maintenance/pr-02a/PROTECTED_FILE_EXCLUSION.md"], "knownLimitations": "The highest-risk pre-production boundary currently has no active executable gate.", "riskLevel": "P0", "recommendedNextAction": "Implement a read-only Candidate-to-Production promotion gate with explicit inputs.", "proposedImplementationPR": "PR-06C", "scopeOwner": "Candidate and Production maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-PRODUCTION-001", "domain": "Production Integrity", "subdomain": "post-write identity and rollback", "purpose": "Validate production schema, IDs, references, alignment, marks, source trace, frontend shape, release identity, before/after hashes, and rollback evidence.",
+      "entrypoint": ["docs/repository-maintenance/pr-02a/PROTECTED_FILE_EXCLUSION.md"], "command": [], "commandSource": ["no current executable command"], "filesRead": ["historical Production, release, rollback, and post-write evidence paths inventoried by PR-02A"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "NO_ACTIVE_GATE", "inPackageScripts": false, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": "NOT_APPLICABLE", "exitCodeContract": null, "baselineUsed": false, "humanReviewRequired": true, "execution": "NOT_RUN", "notRunReason": "No tracked Production store or current integrity entrypoint exists at the audited base; publishing is prohibited.",
+      "currentEvidence": ["docs/repository-maintenance/pr-02a/PROTECTED_FILE_EXCLUSION.md"], "knownLimitations": "Historical rollback evidence is not continuous verification.", "riskLevel": "P0", "recommendedNextAction": "Make post-write verification a read-only phase of the bounded promotion gate.", "proposedImplementationPR": "PR-06C", "scopeOwner": "Production maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-MARKSCHEME-001", "domain": "Mark Scheme Boundary", "subdomain": "QP-to-MS identity and marks", "purpose": "Verify a separate mark-scheme pipeline aligns to QP stable IDs and marks without conflating historical plans with active coverage.",
+      "entrypoint": ["docs/repository-maintenance/pr-02a/PR_INDEX_RECONCILIATION.md"], "command": [], "commandSource": ["historical reconciliation only"], "filesRead": ["historical mark-scheme evidence paths listed by PR-02A"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "HISTORICAL_EVIDENCE_ONLY", "inPackageScripts": false, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": "NOT_ESTABLISHED", "exitCodeContract": null, "baselineUsed": false, "humanReviewRequired": true, "execution": "NOT_RUN", "notRunReason": "Only historical PR reconciliation references mark-scheme scripts/tests; no current entrypoint is tracked.",
+      "currentEvidence": ["docs/repository-maintenance/pr-02a/PR_INDEX_RECONCILIATION.md"], "knownLimitations": "Current main cannot establish QP/MS coverage or alignment.", "riskLevel": "P1", "recommendedNextAction": "Keep Mark Scheme as a later independent quality domain after promotion protection.", "proposedImplementationPR": "PR-06B", "scopeOwner": "Mark scheme maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-PDF-001", "domain": "PDF and Source Asset Integrity", "subdomain": "tracked PDF inventory", "purpose": "Check existence, hashes, duplicates, corruption, page counts, and referenced crops/images for source PDFs.",
+      "entrypoint": ["public/textbook_syllabus/pastpaper"], "command": [], "commandSource": ["no current executable command"], "filesRead": ["public/textbook_syllabus/pastpaper/**/*.pdf"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "NO_ACTIVE_GATE", "inPackageScripts": false, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": "NOT_APPLICABLE", "exitCodeContract": null, "baselineUsed": false, "humanReviewRequired": true, "execution": "NOT_RUN", "notRunReason": "No PDF integrity validator exists and PR-06 prohibits parsing or OCR; static inventory found 196 tracked PDFs.",
+      "currentEvidence": ["public/textbook_syllabus/pastpaper", "tests/deployment-smoke.test.js"], "knownLimitations": "Deployment smoke samples one PDF and is not a corpus integrity gate.", "riskLevel": "P1", "recommendedNextAction": "Add a metadata/hash-only source-asset gate without OCR.", "proposedImplementationPR": "PR-06E", "scopeOwner": "Source asset maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-FRONTEND-001", "domain": "Frontend Data Contract", "subdomain": "rendering and search contract", "purpose": "Protect API/browser data source compatibility, numbering, child display, PDF access, and search results.",
+      "entrypoint": ["tests/browser-data-load.test.js", "tests/auth-session.test.js", "public/app.js", "server.js"], "command": ["npm run test:browser-data-load", "npm run test:auth-session"], "commandSource": ["package.json"], "filesRead": ["public/app.js", "public/assets/paperlens-data.js", "server.js", "generated/question-index.json"], "filesWritten": ["temporary DATA_DIR outside repository during auth test"], "mutability": "WRITES_RUNTIME_DATA", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": false, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS_TEMP_ISOLATED", "notRunReason": null,
+      "currentEvidence": ["tests/browser-data-load.test.js", "tests/auth-session.test.js"], "knownLimitations": "No explicit schema, complete rendering corpus, child-display, or PDF-modal regression suite.", "riskLevel": "P1", "recommendedNextAction": "Define a stable read-only data contract after Candidate/Production inputs are frozen.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Frontend and API maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-HYGIENE-001", "domain": "Generated and Runtime Data Hygiene", "subdomain": "generated artifact containment", "purpose": "Prevent stale or unexpected generated question-index bytes from entering releases.",
+      "entrypoint": ["scripts/build-question-index.js", "generated/question-index.json", ".gitignore"], "command": ["npm run build:question-index"], "commandSource": ["package.json"], "filesRead": ["public/textbook_syllabus/pastpaper/**/*.pdf", ".gitignore"], "filesWritten": ["generated/question-index.json"], "mutability": "WRITES_GENERATED_ARTIFACT", "currentStatus": "MUTATING_CHECK_NOT_SAFE_FOR_CI", "inPackageScripts": true, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": true, "changedModeCoverage": false, "deterministicOutput": false, "exitCodeContract": "Build failure only; no hygiene/freshness exit contract", "baselineUsed": false, "humanReviewRequired": true, "execution": "NOT_RUN", "notRunReason": "Same prohibited mutating command as QG-INDEX-001; wall-clock output prevents direct byte determinism.",
+      "currentEvidence": ["scripts/build-question-index.js", ".gitignore"], "knownLimitations": "No read-only freshness or unexpected-generated-file check.", "riskLevel": "P1", "recommendedNextAction": "Implement one read-only freshness gate in the generated-index PR.", "proposedImplementationPR": "PR-06D", "scopeOwner": "Data index maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-HYGIENE-002", "domain": "Generated and Runtime Data Hygiene", "subdomain": "runtime and secret containment", "purpose": "Keep users, checkout sessions, environment files, node_modules, temporary papers, and local paths out of tracked repository data.",
+      "entrypoint": [".gitignore", "tests/auth-session.test.js", "server.js"], "command": ["git status --short --ignored"], "commandSource": ["manual repository audit procedure"], "filesRead": [".gitignore", "server.js", "working tree metadata"], "filesWritten": ["server runtime data when invoked outside isolated tests"], "mutability": "WRITES_RUNTIME_DATA", "currentStatus": "COVERED_MANUAL", "inPackageScripts": false, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": true, "exitCodeContract": "git status only reports; human interpretation required", "baselineUsed": false, "humanReviewRequired": true, "execution": "RUN_STATIC_ONLY", "notRunReason": "Server runtime execution was not used as a quality gate; test writes were isolated under temporary DATA_DIR paths.",
+      "currentEvidence": [".gitignore", "server.js", "tests/auth-session.test.js"], "knownLimitations": "Ignore rules and temporary tests do not constitute secret scanning or tracked-content enforcement.", "riskLevel": "P0", "recommendedNextAction": "Add a read-only repository safety check for forbidden tracked runtime/secret paths.", "proposedImplementationPR": "PR-06A", "scopeOwner": "Repository maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-SAFETY-001", "domain": "Repository Safety Boundary", "subdomain": "backup and change governance", "purpose": "Preserve backup boundaries, protected evidence, one-goal PR scope, branch review, and disabled auto-merge.",
+      "entrypoint": ["docs/repository-maintenance/public/PRIVATE_BACKUP_VERIFICATION.md", "docs/DOCUMENT_LIFECYCLE_POLICY.md", ".github/workflows/documentation-validation.yml"], "command": ["git diff --check", "git diff --name-status origin/main...HEAD"], "commandSource": ["documented repository-maintenance procedure"], "filesRead": ["Git index and history", "docs/documentation-validation-baseline.json"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "COVERED_MANUAL", "inPackageScripts": false, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": true, "changedModeCoverage": true, "deterministicOutput": true, "exitCodeContract": "git diff --check is blocking; remaining boundary facts require review", "baselineUsed": true, "humanReviewRequired": true, "execution": "RUN_PASS", "notRunReason": null,
+      "currentEvidence": ["docs/repository-maintenance/public/PRIVATE_BACKUP_VERIFICATION.md", "docs/DOCUMENT_LIFECYCLE_POLICY.md"], "knownLimitations": "Branch protection and auto-merge state are external GitHub settings, not fully enforced by repository code.", "riskLevel": "P2", "recommendedNextAction": "Keep PR-06 human review mandatory; evaluate orchestration only after a P0 data gate.", "proposedImplementationPR": "PR-06A", "scopeOwner": "Repository maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-SYLLABUS-001", "domain": "Repository Safety Boundary", "subdomain": "supported syllabus boundary", "purpose": "Allow active 0478 and 9618 data only and prevent deprecated/non-target 9709 from returning.",
+      "entrypoint": ["docs/repository-maintenance/pr-02a/DOCUMENT_ARCHIVE_TOPOLOGY.md", "docs/repository-maintenance/pr-02a/PROTECTED_FILE_EXCLUSION.md"], "command": [], "commandSource": ["historical maintenance evidence only"], "filesRead": ["historical active-scope inventory"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "HISTORICAL_EVIDENCE_ONLY", "inPackageScripts": false, "inNpmTest": false, "inGitHubActions": false,
+      "failurePathTested": false, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": "NOT_ESTABLISHED", "exitCodeContract": null, "baselineUsed": false, "humanReviewRequired": true, "execution": "NOT_RUN", "notRunReason": "Current active automated syllabus-boundary gate is absent; historical evidence records active 9709 paths as zero.",
+      "currentEvidence": ["docs/repository-maintenance/pr-02a/DOCUMENT_ARCHIVE_TOPOLOGY.md", "docs/repository-maintenance/pr-02a/PROTECTED_FILE_EXCLUSION.md"], "knownLimitations": "Historical zero does not prevent future 9709 re-entry, and current runtime data is visibly 0478-centric rather than proof of the formal 0478/9618 boundary.", "riskLevel": "P0", "recommendedNextAction": "Enforce allowed active syllabus values 0478 and 9618 and reject 9709 in the first promotion gate.", "proposedImplementationPR": "PR-06C", "scopeOwner": "Candidate and Production maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-ENTRYPOINT-001", "domain": "Application Runtime Entry", "subdomain": "serverless API entry", "purpose": "Verify the serverless API adapter exports the application server without broad routing side effects.",
+      "entrypoint": ["api/index.js", "tests/server-entrypoint.test.js", "tests/vercel-routing.test.js"], "command": ["npm run test:server-entrypoint", "npm run test:vercel-routing"], "commandSource": ["package.json"], "filesRead": ["api/index.js", "server.js", "vercel.json"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "COVERED_PARTIAL", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": false, "changedModeCoverage": false, "deterministicOutput": true, "exitCodeContract": "Node assertion exit status", "baselineUsed": false, "humanReviewRequired": false, "execution": "RUN_PASS", "notRunReason": null,
+      "currentEvidence": ["api/index.js", "tests/server-entrypoint.test.js", "tests/vercel-routing.test.js"], "knownLimitations": "No direct hosted invocation of api/index.js is performed.", "riskLevel": "P1", "recommendedNextAction": "Include an adapter-specific assertion in deployment preflight if justified.", "proposedImplementationPR": "PR-06F", "scopeOwner": "Application maintainers", "reviewStatus": "PENDING"
+    }
+  ],
+  "summary": {
+    "requiredDomains": 15,
+    "domainsCovered": 15,
+    "discovered": 25,
+    "classified": 25,
+    "unclassified": 0,
+    "coveredStrict": 1,
+    "coveredPartial": 12,
+    "coveredManual": 2,
+    "scriptExistsNotGated": 0,
+    "historicalEvidenceOnly": 4,
+    "mutatingNotSafeForCi": 2,
+    "noActiveGate": 4,
+    "notApplicable": 0,
+    "blockedUnknown": 0,
+    "p0": 7,
+    "p1": 15,
+    "p2": 3,
+    "p3": 0,
+    "readOnlyEntries": 17,
+    "runtimeWritingEntries": 6,
+    "generatedWritingEntries": 2,
+    "notRunEntries": 10,
+    "recommendedFirstImplementationTarget": "Candidate-to-Production Promotion Gate",
+    "recommendedFirstImplementationPr": "PR-06C"
+  }
+}
