@@ -14,6 +14,7 @@ Related documents:
 - [Quality gate coverage matrix](PR06_QUALITY_GATE_COVERAGE_MATRIX.md)
 - [Machine-readable matrix](pr06-quality-gate-coverage-matrix.json)
 - [Machine-readable audit](pr06-repository-quality-gate-scope-audit.json)
+- [PR-06-R1 lifecycle repair review](../pr-06-r1/PR06_R1_HUMAN_REVIEW.md)
 
 ## Decision
 
@@ -63,8 +64,9 @@ the repository bytes.
 | `QG-SYLLABUS-001` | No active 0478/9618/9709 boundary gate | Candidate and Production maintainers | PR-06C | `PENDING` |
 
 The matrix recommends PR-06C first because it protects the pre-promotion
-boundary without requiring parser changes or PDF reprocessing. Human review
-may approve exactly one first target or `NONE`.
+boundary without requiring parser changes or PDF reprocessing. Its dependency
+status is `WAITING_FOR_PR06-R1_HUMAN_REVIEW`. Human review may approve exactly
+one first target or `NONE` only after the R1 lifecycle repair is approved.
 
 ## Reviewer Checklist
 

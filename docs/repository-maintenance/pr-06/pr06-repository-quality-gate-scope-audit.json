@@ -7,7 +7,7 @@
   "validatedImplementationSha": "11ce82001efb633c1697356c1a510fc0c5034245",
   "finalPrHeadSha": null,
   "initialAuditGeneratedAt": "2026-07-30T07:09:43Z",
-  "generatedAt": "2026-07-30T08:03:45Z",
+  "generatedAt": "2026-07-30T09:17:40Z",
   "markdownReport": "docs/repository-maintenance/pr-06/PR06_REPOSITORY_QUALITY_GATE_SCOPE_AUDIT.md",
   "inventory": {
     "trackedFiles": 307,
@@ -18,12 +18,12 @@
     "trackedPdfs": 196,
     "requiredDomains": 15,
     "domainsCovered": 15,
-    "discoveredEntrypoints": 25,
-    "classifiedEntrypoints": 25,
+    "discoveredEntrypoints": 26,
+    "classifiedEntrypoints": 26,
     "unclassifiedEntrypoints": 0
   },
   "coverage": {
-    "coveredStrict": 1,
+    "coveredStrict": 2,
     "coveredPartial": 12,
     "coveredManual": 2,
     "scriptExistsNotGated": 0,
@@ -36,13 +36,13 @@
   "risk": {
     "p0": 7,
     "p1": 15,
-    "p2": 3,
+    "p2": 4,
     "p3": 0,
     "p0WithoutOwner": 0,
     "p0WithoutOnePrBoundary": 0
   },
   "mutability": {
-    "readOnly": 17,
+    "readOnly": 18,
     "writesRuntimeData": 6,
     "writesGeneratedArtifact": 2,
     "writesCandidateData": 0,
@@ -65,13 +65,14 @@
   "recommendedFirstImplementation": {
     "target": "Candidate-to-Production Promotion Gate",
     "proposedPr": "PR-06C",
+    "dependencyStatus": "WAITING_FOR_PR06-R1_HUMAN_REVIEW",
     "humanApprovalRequired": true,
     "authorized": false
   },
   "tests": {
     "command": "npm run test:documentation-validation",
-    "cases": 79,
-    "passed": 79,
+    "cases": 84,
+    "passed": 84,
     "failed": 0,
     "projectTestCommand": "npm test",
     "initialProjectTestResult": "ENVIRONMENT_PREREQUISITE_MISSING_PDF_LIB",
@@ -90,11 +91,11 @@
     "gitDiffCheck": "PASS",
     "readOnlyDefault": "PASS",
     "jsonParse": "PASS",
-    "matrixConsistency": "PASS_25_OF_25",
-    "uniqueGateIds": "PASS_25_OF_25",
+    "matrixConsistency": "PASS_26_OF_26",
+    "uniqueGateIds": "PASS_26_OF_26",
     "requiredDomains": "PASS_15_OF_15",
     "entrypointPaths": "PASS_ALL",
-    "strictGateContracts": "PASS_1_OF_1",
+    "strictGateContracts": "PASS_2_OF_2",
     "mutatingFilesWritten": "PASS_8_OF_8",
     "p0Boundaries": "PASS_7_OF_7",
     "historicalEvidence": "PASS_4_OF_4",
@@ -104,12 +105,12 @@
   "summary": {
     "blockingFindings": 0,
     "baselinedFindings": 15,
-    "classified": 25,
+    "classified": 26,
     "unclassified": 0
   },
   "scope": {
-    "codeChanges": 0,
-    "testChanges": 0,
+    "codeChanges": 3,
+    "testChanges": 8,
     "workflowChanges": 0,
     "packageJsonChanges": 0,
     "archiveChanges": 0,
@@ -118,14 +119,14 @@
     "pdfChanges": 0
   },
   "gitBoundary": {
-    "changedFiles": 5,
+    "changedFiles": 20,
     "filesDeleted": 0,
     "filesRenamed": 0,
     "filesMoved": 0,
-    "lineAdditions": 900,
-    "lineDeletions": 0,
-    "codeChanges": 0,
-    "testChanges": 0,
+    "lineAdditions": 1565,
+    "lineDeletions": 24,
+    "codeChanges": 3,
+    "testChanges": 8,
     "workflowChanges": 0,
     "packageJsonChanges": 0,
     "archiveChanges": 0,
@@ -135,10 +136,10 @@
     "safetyBackupModified": false
   },
   "evidenceFiles": [
-    {"path":"docs/repository-maintenance/pr-06/PR06_HUMAN_REVIEW.md","sizeBytes":4147,"sha256":"f32350f710223ff63492bdedf6fe7790e306d2a6423fd3c33cac3eb791e88844"},
-    {"path":"docs/repository-maintenance/pr-06/PR06_QUALITY_GATE_COVERAGE_MATRIX.md","sizeBytes":12406,"sha256":"0a7269937f08aff209b4c9bd557ec304a093ae4c47e6a2cfa590e8ec297d825d"},
-    {"path":"docs/repository-maintenance/pr-06/PR06_REPOSITORY_QUALITY_GATE_SCOPE_AUDIT.md","sizeBytes":8684,"sha256":"39a69453d3aa1d822557fc925d6576fd5979dd0e94547f2a25117a71a4b2b745"},
-    {"path":"docs/repository-maintenance/pr-06/pr06-quality-gate-coverage-matrix.json","sizeBytes":36416,"sha256":"c9f4725a410a16f6c83e800ec262789db53f28def67448953fdc4899094f8b35"}
+    {"path":"docs/repository-maintenance/pr-06/PR06_HUMAN_REVIEW.md","evidenceClass":"historical","sizeBytes":4329,"sha256":"f7c7927205766fe1783eb7b2ee37a7bbb18eebb71e8fc3896cebff3e8d24623b"},
+    {"path":"docs/repository-maintenance/pr-06/PR06_QUALITY_GATE_COVERAGE_MATRIX.md","evidenceClass":"historical","sizeBytes":12902,"sha256":"cdd1e892d2efc07a76b859628331987336db43885d519c14be5dd5b8b408e2f2"},
+    {"path":"docs/repository-maintenance/pr-06/PR06_REPOSITORY_QUALITY_GATE_SCOPE_AUDIT.md","evidenceClass":"historical","sizeBytes":9673,"sha256":"e617ca7ebcba395abb7d18eab4aac82db4c0a79bd06c76faea8507676252a546"},
+    {"path":"docs/repository-maintenance/pr-06/pr06-quality-gate-coverage-matrix.json","evidenceClass":"historical","sizeBytes":38334,"sha256":"c6219301fe2bcbecfc7c96eb24861c47cd8465244d5d9f584be5cb334815fcab"}
   ],
   "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE",
   "humanReview": {

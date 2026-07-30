@@ -28,11 +28,11 @@ Final PR head SHA: `PENDING`
 
 Initial audit generated at: `2026-07-30T07:09:43Z`
 
-Generated at: `2026-07-30T08:03:45Z`
+Generated at: `2026-07-30T09:17:40Z`
 
-Tests cases: `79`
+Tests cases: `84`
 
-Tests passed: `79`
+Tests passed: `84`
 
 Tests failed: `0`
 
@@ -40,7 +40,7 @@ Blocking findings: `0`
 
 Baselined findings: `15`
 
-Changed files: `5`
+Changed files: `20`
 
 Files deleted: `0`
 
@@ -48,20 +48,21 @@ Files renamed: `0`
 
 Files moved: `0`
 
-Line additions: `900`
+Line additions: `1565`
 
-Line deletions: `0`
+Line deletions: `24`
 
 Human review decision: `PENDING`
 
 ## Outcome
 
-PR-06 classifies 25 discovered gate entrypoints across all 15 required quality
-domains. All 25 are classified, mutability is resolved, and no entrypoint is
+PR-06-R1 classifies 26 discovered gate entrypoints across all 15 required
+quality domains. All 26 are classified, mutability is resolved, and no entrypoint is
 left unknown. The audit changes documentation evidence only; it does not add,
 change, execute, or activate a product-data quality gate.
 
-The sole `COVERED_STRICT` entry is documentation governance. Twelve local or
+The two `COVERED_STRICT` entries cover documentation governance and explicit
+evidence lifecycle semantics. Twelve local or
 mocked product checks are `COVERED_PARTIAL`, two repository processes are
 `COVERED_MANUAL`, four entries rely only on historical evidence, two generated
 index entries are mutating and not safe as current CI checks, and four required
@@ -80,8 +81,8 @@ boundaries have no active gate.
 | GitHub Actions workflows | 1 |
 | Tracked PDFs | 196 |
 | Current tracked parser/canonical/staging/Candidate/Production trees | 0 |
-| Discovered entrypoints | 25 |
-| Classified entrypoints | 25 |
+| Discovered entrypoints | 26 |
+| Classified entrypoints | 26 |
 | Unclassified entrypoints | 0 |
 
 The dirty primary workspace was not used. Discovery and validation occurred in
@@ -92,7 +93,7 @@ the isolated worktree on branch
 
 | Coverage status | Count |
 | --- | ---: |
-| `COVERED_STRICT` | 1 |
+| `COVERED_STRICT` | 2 |
 | `COVERED_PARTIAL` | 12 |
 | `COVERED_MANUAL` | 2 |
 | `SCRIPT_EXISTS_NOT_GATED` | 0 |
@@ -101,26 +102,26 @@ the isolated worktree on branch
 | `NO_ACTIVE_GATE` | 4 |
 | `NOT_APPLICABLE` | 0 |
 | `BLOCKED_UNKNOWN` | 0 |
-| **Classified** | **25** |
+| **Classified** | **26** |
 
 | Risk level | Count |
 | --- | ---: |
 | P0 | 7 |
 | P1 | 15 |
-| P2 | 3 |
+| P2 | 4 |
 | P3 | 0 |
-| **Classified** | **25** |
+| **Classified** | **26** |
 
 | Mutability | Count |
 | --- | ---: |
-| `READ_ONLY` | 17 |
+| `READ_ONLY` | 18 |
 | `WRITES_RUNTIME_DATA` | 6 |
 | `WRITES_GENERATED_ARTIFACT` | 2 |
 | `WRITES_CANDIDATE_DATA` | 0 |
 | `WRITES_PRODUCTION_DATA` | 0 |
 | `UNKNOWN_MUTABILITY` | 0 |
 
-Read-only entries: `17`
+Read-only entries: `18`
 
 Mutating entries: `8`
 
@@ -152,7 +153,7 @@ vulnerabilities and no tracked changes. The repeat then passed.
 | Command | Mutability | Result |
 | --- | --- | --- |
 | `npm ci` | ignored dependency directory | `PASS`; prerequisite setup |
-| `npm run test:documentation-validation` | temp fixtures outside worktree | `PASS_79_OF_79` |
+| `npm run test:documentation-validation` | temp fixtures outside worktree | `PASS_84_OF_84` |
 | `npm run validate:docs` | read-only | `PASS` |
 | `npm test` | temp runtime stores outside worktree | `PASS` after `npm ci` |
 | `git diff --check` | read-only | `PASS` |
@@ -188,24 +189,26 @@ the boundary. `QG-SYLLABUS-001` is therefore
 Recommended first target:
 `Candidate-to-Production Promotion Gate` (`PR-06C`).
 
+Dependency status: `WAITING_FOR_PR06-R1_HUMAN_REVIEW`.
+
 The matrix supports the pre-audit hypothesis. PR-06C can protect Candidate,
 Production, and syllabus P0 facts before promotion, remain read-only, avoid
 parser changes and PDF reprocessing, and block unresolved review or scope
-violations. Human review must approve exactly one target before any follow-up
-work starts.
+violations. PR-06C must not start until R1 human review completes and then the
+PR-06 reviewer approves exactly one first target.
 
 ## Consistency Checks
 
 | Check | Result |
 | --- | --- |
-| Discovered equals classified plus unclassified | `PASS_25_EQUALS_25_PLUS_0` |
-| Coverage-status sum equals classified | `PASS_25_OF_25` |
-| Risk sum equals classified | `PASS_25_OF_25` |
-| Unique gate IDs | `PASS_25_OF_25` |
+| Discovered equals classified plus unclassified | `PASS_26_EQUALS_26_PLUS_0` |
+| Coverage-status sum equals classified | `PASS_26_OF_26` |
+| Risk sum equals classified | `PASS_26_OF_26` |
+| Unique gate IDs | `PASS_26_OF_26` |
 | Required domains represented | `PASS_15_OF_15` |
 | Entrypoint paths exist | `PASS_ALL` |
 | Commands have source evidence | `PASS_ALL` |
-| Strict gates have failure tests and exit contracts | `PASS_1_OF_1` |
+| Strict gates have failure tests and exit contracts | `PASS_2_OF_2` |
 | Mutating entries identify written files | `PASS_8_OF_8` |
 | P0 entries have owner and proposed PR | `PASS_7_OF_7` |
 | Historical-only entries cite evidence | `PASS_4_OF_4` |
@@ -215,11 +218,11 @@ work starts.
 
 ## Git Boundary
 
-Changed files: 5
+Changed files: 20
 
-Code changes: 0
+Documentation-validator implementation/config files: 3
 
-Test changes: 0
+Documentation-validator test/fixture files: 8
 
 Workflow changes: 0
 
@@ -235,9 +238,24 @@ PDF changes: 0
 
 Files deleted, renamed, or moved: 0
 
-All five changed files are new PR-06 maintenance evidence. The optional
-`docs/DOCUMENTATION_INDEX.md` update was intentionally omitted because changing
-it would invalidate the immutable PR-05 evidence hash for that active index.
+The PR contains the five original PR-06 evidence files, four R1 review/evidence
+files, three validator implementation/config files, and eight validator
+test/fixture files. `docs/DOCUMENTATION_INDEX.md` remains unchanged. PR-05
+historical report bytes remain unchanged while its active-authority targets are
+no longer treated as permanently frozen snapshots.
+
+## R1 Evidence Lifecycle Repair
+
+`evidenceClass` accepts exactly `historical` or `active-authority`.
+Historical entries require path, size, and SHA-256 and block on byte changes.
+Active-authority entries require an explicitly registered active path and are
+validated by current schema, links, rules, tests, and CI rather than stale
+snapshot hashes. New entries without a class block. Only protected legacy
+manifests and the explicitly registered PR-05 mixed-evidence source may infer a
+migration class.
+
+PR-05 report Markdown and JSON are registered as historical evidence with
+their original sizes and hashes. Neither file is modified by R1.
 
 ## Evidence Generation
 

@@ -2,17 +2,25 @@
   "schemaVersion": 1,
   "task": "PR-06",
   "baseSha": "11ce82001efb633c1697356c1a510fc0c5034245",
-  "generatedAt": "2026-07-30T08:03:45Z",
+  "generatedAt": "2026-07-30T09:17:40Z",
   "coverageStatuses": ["COVERED_STRICT", "COVERED_PARTIAL", "COVERED_MANUAL", "SCRIPT_EXISTS_NOT_GATED", "HISTORICAL_EVIDENCE_ONLY", "MUTATING_CHECK_NOT_SAFE_FOR_CI", "NO_ACTIVE_GATE", "NOT_APPLICABLE", "BLOCKED_UNKNOWN"],
   "mutabilityClasses": ["READ_ONLY", "WRITES_GENERATED_ARTIFACT", "WRITES_RUNTIME_DATA", "WRITES_CANDIDATE_DATA", "WRITES_PRODUCTION_DATA", "UNKNOWN_MUTABILITY"],
   "entries": [
     {
       "gateId": "QG-DOC-001", "domain": "Documentation Governance", "subdomain": "full and changed validation", "purpose": "Enforce documentation metadata, links, authority, evidence, protected history, and baseline rules.",
-      "entrypoint": ["scripts/validate-documentation.js", "tests/documentation-validation.test.js", ".github/workflows/documentation-validation.yml"], "command": ["npm run test:documentation-validation", "npm run validate:docs", "npm run validate:docs:changed -- --base <sha>"], "commandSource": ["package.json", ".github/workflows/documentation-validation.yml"],
+      "entrypoint": ["scripts/validate-documentation.js", "scripts/documentation-validation/evidence-lifecycle.json", "tests/documentation-validation.test.js", ".github/workflows/documentation-validation.yml"], "command": ["npm run test:documentation-validation", "npm run validate:docs", "npm run validate:docs:changed -- --base <sha>"], "commandSource": ["package.json", ".github/workflows/documentation-validation.yml"],
       "filesRead": ["README.md", "docs/**/*.md", "docs/**/*.json", ".git"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "COVERED_STRICT", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
       "failurePathTested": true, "fullCorpusCoverage": true, "changedModeCoverage": true, "deterministicOutput": true, "exitCodeContract": "0 pass, 1 validation block, 2 usage/configuration block", "baselineUsed": true, "humanReviewRequired": false,
       "execution": "RUN_PASS", "notRunReason": null, "currentEvidence": ["tests/documentation-validation.test.js", "docs/repository-maintenance/pr-05/PR05_DOCUMENTATION_VALIDATION_REPORT.md"], "knownLimitations": "Scope is documentation governance, not product-data integrity.",
       "riskLevel": "P2", "recommendedNextAction": "Retain the gate and its read-only CI permissions.", "proposedImplementationPR": null, "scopeOwner": "Repository maintainers", "reviewStatus": "PENDING"
+    },
+    {
+      "gateId": "QG-DOC-002", "domain": "Documentation Governance", "subdomain": "evidence lifecycle", "purpose": "Keep historical evidence byte-immutable while allowing active authority sources to evolve under current validation and CI.",
+      "entrypoint": ["scripts/documentation-validation/evidence-lifecycle.json", "scripts/documentation-validation/validator.js", "tests/documentation-validation.test.js"], "command": ["npm run test:documentation-validation", "npm run validate:docs", "npm run validate:docs:changed -- --base <sha>"], "commandSource": ["package.json", ".github/workflows/documentation-validation.yml"],
+      "filesRead": ["scripts/documentation-validation/evidence-lifecycle.json", "docs/**/*.json", "active authority paths", "historical evidence bytes"], "filesWritten": [], "mutability": "READ_ONLY", "currentStatus": "COVERED_STRICT", "inPackageScripts": true, "inNpmTest": true, "inGitHubActions": true,
+      "failurePathTested": true, "fullCorpusCoverage": true, "changedModeCoverage": true, "deterministicOutput": true, "exitCodeContract": "0 pass, 1 lifecycle/schema/hash block, 2 configuration block", "baselineUsed": true, "humanReviewRequired": false,
+      "execution": "RUN_PASS", "notRunReason": null, "currentEvidence": ["tests/documentation-validation.test.js", "docs/repository-maintenance/pr-06-r1/PR06_R1_ACTIVE_EVIDENCE_LIFECYCLE_REPORT.md"], "knownLimitations": "Legacy inference is restricted to explicitly registered mixed-evidence sources; future evidence entries must declare evidenceClass.",
+      "riskLevel": "P2", "recommendedNextAction": "Complete human review before allowing PR-06C implementation to begin.", "proposedImplementationPR": null, "scopeOwner": "Repository maintainers", "reviewStatus": "PENDING"
     },
     {
       "gateId": "QG-RUNTIME-001", "domain": "Application Runtime Entry", "subdomain": "server import", "purpose": "Verify the server module imports without starting a listener in test mode.",
@@ -162,10 +170,10 @@
   "summary": {
     "requiredDomains": 15,
     "domainsCovered": 15,
-    "discovered": 25,
-    "classified": 25,
+    "discovered": 26,
+    "classified": 26,
     "unclassified": 0,
-    "coveredStrict": 1,
+    "coveredStrict": 2,
     "coveredPartial": 12,
     "coveredManual": 2,
     "scriptExistsNotGated": 0,
@@ -176,13 +184,14 @@
     "blockedUnknown": 0,
     "p0": 7,
     "p1": 15,
-    "p2": 3,
+    "p2": 4,
     "p3": 0,
-    "readOnlyEntries": 17,
+    "readOnlyEntries": 18,
     "runtimeWritingEntries": 6,
     "generatedWritingEntries": 2,
     "notRunEntries": 10,
     "recommendedFirstImplementationTarget": "Candidate-to-Production Promotion Gate",
-    "recommendedFirstImplementationPr": "PR-06C"
+    "recommendedFirstImplementationPr": "PR-06C",
+    "recommendedFirstImplementationStatus": "WAITING_FOR_PR06-R1_HUMAN_REVIEW"
   }
 }

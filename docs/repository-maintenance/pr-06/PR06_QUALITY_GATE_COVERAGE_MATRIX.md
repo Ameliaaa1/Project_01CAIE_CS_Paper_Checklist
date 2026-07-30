@@ -23,9 +23,9 @@ modify an audited implementation, or treat archived evidence as a current
 control. The machine-readable matrix is the complete per-entry record; the
 tables below present the same decision facts for human review.
 
-Discovered entrypoints: `25`
+Discovered entrypoints: `26`
 
-Classified entrypoints: `25`
+Classified entrypoints: `26`
 
 Unclassified entrypoints: `0`
 
@@ -37,7 +37,7 @@ Domains covered: `15`
 
 | Current status | Count |
 | --- | ---: |
-| `COVERED_STRICT` | 1 |
+| `COVERED_STRICT` | 2 |
 | `COVERED_PARTIAL` | 12 |
 | `COVERED_MANUAL` | 2 |
 | `SCRIPT_EXISTS_NOT_GATED` | 0 |
@@ -46,21 +46,22 @@ Domains covered: `15`
 | `NO_ACTIVE_GATE` | 4 |
 | `NOT_APPLICABLE` | 0 |
 | `BLOCKED_UNKNOWN` | 0 |
-| **Total** | **25** |
+| **Total** | **26** |
 
 | Risk | Count |
 | --- | ---: |
 | `P0` | 7 |
 | `P1` | 15 |
-| `P2` | 3 |
+| `P2` | 4 |
 | `P3` | 0 |
-| **Total** | **25** |
+| **Total** | **26** |
 
 ## Decision Matrix
 
 | Gate ID | Domain / subdomain | Purpose | Current status | Risk | Proposed PR |
 | --- | --- | --- | --- | --- | --- |
 | `QG-DOC-001` | Documentation Governance / full and changed validation | Metadata, links, authority, evidence, protected history, and baseline rules | `COVERED_STRICT` | P2 | None; retain |
+| `QG-DOC-002` | Documentation Governance / evidence lifecycle | Immutable historical bytes and evolvable active authority | `COVERED_STRICT` | P2 | None; complete R1 review |
 | `QG-RUNTIME-001` | Application Runtime Entry / server import | Server module import without listener startup | `COVERED_PARTIAL` | P2 | PR-06F |
 | `QG-RUNTIME-002` | Application Runtime Entry / browser data load | Browser script order and shared-data global | `COVERED_PARTIAL` | P1 | PR-06F |
 | `QG-RUNTIME-003` | Application Runtime Entry / static access | Protected-path denial and public asset access | `COVERED_PARTIAL` | P1 | PR-06F |
@@ -91,6 +92,7 @@ Domains covered: `15`
 | Gate ID | Entrypoint | Command | Files read | Files written | Mutability |
 | --- | --- | --- | --- | --- | --- |
 | `QG-DOC-001` | validator, its tests, documentation workflow | `test:documentation-validation`; full/changed validation | README, docs, Git metadata | None | `READ_ONLY` |
+| `QG-DOC-002` | lifecycle registry, validator, lifecycle tests | documentation tests and full/changed validation | lifecycle classes, historical bytes, active paths | None | `READ_ONLY` |
 | `QG-RUNTIME-001` | server-entrypoint test; server | `test:server-entrypoint` | server | None | `READ_ONLY` |
 | `QG-RUNTIME-002` | browser-data test; browser scripts | `test:browser-data-load` | browser data and app scripts | None | `READ_ONLY` |
 | `QG-RUNTIME-003` | static-access test; server | `test:static-access` | server and public assets | None | `READ_ONLY` |
@@ -123,9 +125,9 @@ machine-readable matrix.
 
 ## Wiring and Contract Facts
 
-`QG-DOC-001` is in package scripts, `npm test`, and GitHub Actions; it has
-failure-path tests, full and changed modes, deterministic read-only output, a
-baseline, and explicit exit codes.
+`QG-DOC-001` and `QG-DOC-002` are in package scripts, `npm test`, and GitHub
+Actions; they have failure-path tests, full and changed modes, deterministic
+read-only output, a baseline or lifecycle registry, and explicit exit codes.
 
 The 12 `COVERED_PARTIAL` rows are in package scripts and `npm test`, and are
 therefore invoked by the current workflow. They do not have full-corpus or
@@ -144,7 +146,8 @@ not executed during PR-06, so determinism and freshness are not claimed.
 
 ## Evidence and Limitations
 
-- Documentation: current validator, 79-test suite, workflow, and PR-05 report.
+- Documentation: current validator, 84-test suite, lifecycle registry,
+  workflow, and unchanged PR-05 report.
 - Runtime/deployment/security: 10 focused test files plus the serverless entry
   adapter. These are local or mocked checks, not deployed-environment proof.
 - Parser/Canonical: immutable archived plans describe intended and historical
@@ -174,6 +177,8 @@ command not run.
 
 Recommended first implementation target:
 `Candidate-to-Production Promotion Gate` (`PR-06C`).
+
+Dependency status: `WAITING_FOR_PR06-R1_HUMAN_REVIEW`.
 
 It addresses Candidate, Production, and syllabus P0 gaps at the required
 pre-promotion boundary. The implementation must remain one bounded,
