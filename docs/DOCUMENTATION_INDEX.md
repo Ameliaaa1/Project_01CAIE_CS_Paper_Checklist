@@ -27,7 +27,7 @@ or content of any referenced file.
 | [Authoritative Document Map](AUTHORITATIVE_DOCUMENT_MAP.md) | Assigns one source of truth to each documentation subject | Authoritative ownership map |
 | [Documentation Standard](DOCUMENTATION_STANDARD.md) | Current naming, metadata, link, and evidence-format standard | Current authority; effective upon merge of GitHub PR #7 |
 | [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Current lifecycle, status, authority-transition, and mutability policy | Current authority; effective upon merge of GitHub PR #7 |
-| [Documentation Validation](DOCUMENTATION_VALIDATION.md) | Repeatable documentation validation commands, rules, and baseline governance | Proposed operational authority; effective after PR-05 approval and merge |
+| [Documentation Validation](DOCUMENTATION_VALIDATION.md) | Repeatable documentation validation commands, rules, and baseline governance | Approved operational authority; effective when GitHub PR #8 merges |
 
 ## Architecture Documentation
 

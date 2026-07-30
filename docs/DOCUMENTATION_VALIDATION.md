@@ -1,14 +1,22 @@
 # Documentation Validation
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `CURRENT`
+
+Approval: `APPROVED_BY_HUMAN_REVIEW`
+
+Effective upon merge: `GitHub PR #8`
+
+Reviewer: `Amelia Cai`
+
+Reviewed at: `2026-07-30T05:43:42Z`
 
 Owner: Repository maintainers
 
 Created at: `2026-07-29T16:58:45Z`
 
-Authoritative scope: Proposed operational authority for repository
-documentation validation. It becomes current only after PR-05 human approval
-and merge.
+Authoritative scope: Operational authority for repository documentation
+validation. These approved bytes become active only when GitHub PR #8 is
+merged into the default branch.
 
 Related documents:
 
@@ -97,7 +105,7 @@ An absent or invalid base returns exit code 2 and
 Every finding includes a stable rule ID, severity, path, location, expected
 value, actual value, and baseline status.
 
-The rule registry contains 41 defined rules. PR-05-R1 requires all 41 to have
+The rule registry contains 41 defined rules. PR-05-R1 establishes all 41 with
 an explicit implementation path and a targeted blocking test. Reserved rules
 are not permitted: `rulesDefined = rulesImplemented = rulesTested = 41`.
 
