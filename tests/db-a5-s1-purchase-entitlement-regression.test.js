@@ -1,16 +1,13 @@
 const assert = require("node:assert/strict");
+const {
+  requireEphemeralDatabaseTarget
+} = require("./helpers/ephemeral-database-target");
 
 process.env.NODE_ENV = "test";
 process.env.BILLING_PROVIDER_ENABLED = "false";
 process.env.SESSION_SECRET = "db-a5-s1-rehearsal-session-secret";
 
-const databaseUrl = String(process.env.DATABASE_URL || "");
-assert(databaseUrl, "DATABASE_URL is required for the isolated rehearsal.");
-const parsedDatabaseUrl = new URL(databaseUrl);
-assert(
-  parsedDatabaseUrl.hostname.startsWith("ep-orange-frost-avnvjdkd."),
-  "Purchase entitlement regression must use the isolated rehearsal endpoint."
-);
+requireEphemeralDatabaseTarget();
 
 const handleRequest = require("../server");
 const db = require("../src/server/db");

@@ -5,18 +5,11 @@ const {
   createBillingProviderEvent,
   updateBillingEventProcessing
 } = require("../src/server/billingEvents");
+const {
+  requireEphemeralDatabaseTarget
+} = require("./helpers/ephemeral-database-target");
 
-const databaseUrl = String(process.env.DATABASE_URL || "");
-assert(databaseUrl, "DATABASE_URL is required for the isolated DB-A5-S1 rehearsal.");
-const parsedDatabaseUrl = new URL(databaseUrl);
-assert(
-  parsedDatabaseUrl.hostname.startsWith("ep-orange-frost-avnvjdkd."),
-  "DB-A5-S1 test must target the approved isolated rehearsal endpoint."
-);
-assert(
-  !parsedDatabaseUrl.hostname.startsWith("ep-small-dew-avh8e0sc."),
-  "Production endpoint is forbidden."
-);
+const { identity: databaseIdentity } = requireEphemeralDatabaseTarget();
 
 const prisma = new PrismaClient();
 const runId = crypto.randomUUID().replaceAll("-", "");
@@ -31,15 +24,7 @@ const paidAt = new Date(now.getTime() - 30_000);
 const refundedAt = new Date(now.getTime() - 10_000);
 const results = {
   runId,
-  databaseIdentity: {
-    provider: "NEON",
-    projectId: "lucky-river-45336837",
-    branchId: "br-broad-waterfall-avcm3qla",
-    endpointId: "ep-orange-frost-avnvjdkd",
-    productionBranchId: "br-silent-fog-avglbx9u",
-    productionEndpointId: "ep-small-dew-avh8e0sc",
-    isolatedRehearsal: true
-  },
+  databaseIdentity,
   crud: {},
   idempotency: {},
   refund: {},

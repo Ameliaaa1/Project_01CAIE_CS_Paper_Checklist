@@ -28,6 +28,7 @@
     "test:billing-schema-extension": "node tests/billing-schema-extension.test.js",
     "test:db-a5-s1-purchase-entitlement": "node tests/db-a5-s1-purchase-entitlement-regression.test.js",
     "test:runtime-environment-resolution": "node tests/runtime-environment-resolution.test.js",
+    "test:ephemeral-database-target": "node tests/ephemeral-database-target.test.js",
     "test:rate-csrf": "node tests/rate-csrf.test.js",
     "test:production-config": "node tests/production-config.test.js",
     "test:documentation-validation": "node tests/documentation-validation.test.js",
