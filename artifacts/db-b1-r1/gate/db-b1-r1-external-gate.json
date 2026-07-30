@@ -1,0 +1,49 @@
+{
+  "stage": "DB-B1-R1_CANDIDATE_CORRECTION_COMBINED_HUMAN_REVIEW_MAIN_MERGE_AND_FINAL_CLOSURE",
+  "evaluatedAt": "2026-07-30T16:21:23.287Z",
+  "candidateCommit": "674eb5044f3eeb5ee7dcd45403c3bb97f29a1fde",
+  "originMain": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "checks": {
+    "candidateBaseline": "PASS_CANDIDATE_BASELINE",
+    "remoteMainFreshness": "PASS",
+    "buildReproducibility": "PASS",
+    "databaseTestEquivalence": "REUSED_BY_EXACT_CONTENT_IDENTITY",
+    "readmeCleanup": "PASS",
+    "finalTechnicalValidation": "PASS_TECHNICAL_VALIDATION",
+    "dbB0R1HumanDecision": "PENDING_HUMAN_REVIEW",
+    "dbB1HumanDecision": "PENDING_HUMAN_REVIEW",
+    "mainMerge": "NOT_EXECUTED_MISSING_HUMAN_APPROVAL",
+    "postMergeVerification": "NOT_EXECUTED_MERGE_NOT_AUTHORIZED",
+    "manifestVerification": "PASS",
+    "zipVerification": "PASS"
+  },
+  "evidenceBinding": {
+    "manifestSha256": "b2217a3128f96f6fe686e41faa26e82794acd66bc0c56e7b610a0ae7fc5750b6",
+    "manifestVerificationSha256": "7d24ca6592dc723e645780fb7c62d126304c5f14343cd3ca355206f401128413",
+    "debugZipSha256": "5551a2275acc7af9927932aaac1e5144a3b1a5608d8a19955af1db6ff4119e3d",
+    "completeZipSha256": "afb5e170bc033840e7ad2ffe30b307c5aad30a4b1d539beb95d0653421ac723e",
+    "zipVerificationSha256": "85f0b23a6b52de241d50bc0923942fc8f3e4a78b9cf28c3a3e0b580d6cde0e16",
+    "deliveryReportSha256": "fb81430a729c029b1ad17c56cc6e4b8f110bc1a56e45d558c080351a680f1751"
+  },
+  "schemaIntegratedIntoCandidate": true,
+  "migrationIntegratedIntoCandidate": true,
+  "buildReproducible": true,
+  "testsPassed": true,
+  "humanDecisionVerified": false,
+  "actualMainUpdated": false,
+  "blockerCount": 2,
+  "blockers": [
+    "DB_B0_R1_HUMAN_DECISION_REQUIRED",
+    "DB_B1_MAINLINE_INTEGRATION_HUMAN_DECISION_REQUIRED"
+  ],
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false,
+  "status": "BLOCKED_PENDING_COMBINED_HUMAN_REVIEW"
+}

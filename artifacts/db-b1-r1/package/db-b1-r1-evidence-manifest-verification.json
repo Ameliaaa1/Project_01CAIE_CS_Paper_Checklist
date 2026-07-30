@@ -1,0 +1,22 @@
+{
+  "stage": "DB-B1-R1_CANDIDATE_CORRECTION_COMBINED_HUMAN_REVIEW_MAIN_MERGE_AND_FINAL_CLOSURE",
+  "verifiedAt": "2026-07-30T16:21:23.270Z",
+  "manifestPath": "package/db-b1-r1-evidence-manifest.json",
+  "manifestSha256": "b2217a3128f96f6fe686e41faa26e82794acd66bc0c56e7b610a0ae7fc5750b6",
+  "checkedArtifactCount": 12,
+  "mismatches": [],
+  "mismatchCount": 0,
+  "forbiddenArtifacts": [],
+  "forbiddenArtifactCount": 0,
+  "dsStoreArtifactCount": 0,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false,
+  "status": "PASS"
+}

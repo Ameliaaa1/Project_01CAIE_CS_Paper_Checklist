@@ -1,0 +1,48 @@
+{
+  "stage": "DB-B1-R1_CANDIDATE_CORRECTION_COMBINED_HUMAN_REVIEW_MAIN_MERGE_AND_FINAL_CLOSURE",
+  "generatedAt": "2026-07-30T16:20:59.140Z",
+  "candidateCommit": "674eb5044f3eeb5ee7dcd45403c3bb97f29a1fde",
+  "productionSourceOfTruth": "generated/production-question-index.json",
+  "browserMirror": "public/assets/question-index.json",
+  "legacyBuilderRemoved": true,
+  "legacyGeneratedIndexPresent": false,
+  "legacyGeneratedIndexExpected": false,
+  "semanticMirrorEqual": true,
+  "canonicalIndex": {
+    "sha256Before": "a95f5c5f5ff6b0bd5d54eadca275873c58947dca1705d75aeaf307d2eb130632",
+    "sha256AfterFirstBuild": "a95f5c5f5ff6b0bd5d54eadca275873c58947dca1705d75aeaf307d2eb130632",
+    "sha256AfterSecondBuild": "a95f5c5f5ff6b0bd5d54eadca275873c58947dca1705d75aeaf307d2eb130632"
+  },
+  "browserIndex": {
+    "sha256Before": "cf6193c7872d81c3b061fd6f30eb5f27070c7ecbd202eb4926f79026103e91ab",
+    "sha256AfterFirstBuild": "cf6193c7872d81c3b061fd6f30eb5f27070c7ecbd202eb4926f79026103e91ab",
+    "sha256AfterSecondBuild": "cf6193c7872d81c3b061fd6f30eb5f27070c7ecbd202eb4926f79026103e91ab"
+  },
+  "firstBuild": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "signal": null,
+    "status": "PASS"
+  },
+  "secondBuild": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "signal": null,
+    "status": "PASS"
+  },
+  "paperCount": 432,
+  "questionCount": 1690,
+  "buildDeterministic": true,
+  "unexpectedGeneratedDiff": false,
+  "writeToCanonicalIndexPerformed": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false,
+  "status": "PASS"
+}

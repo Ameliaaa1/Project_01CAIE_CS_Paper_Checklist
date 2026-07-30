@@ -1,0 +1,30 @@
+{
+  "stage": "DB-B1-R1_CANDIDATE_CORRECTION_COMBINED_HUMAN_REVIEW_MAIN_MERGE_AND_FINAL_CLOSURE",
+  "generatedAt": "2026-07-30T16:20:59.140Z",
+  "mergeExecuted": false,
+  "mergeCommit": null,
+  "parentCandidateCommit": "674eb5044f3eeb5ee7dcd45403c3bb97f29a1fde",
+  "targetBranch": "main",
+  "targetBeforeMerge": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "targetAfterMerge": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "schemaHash": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+  "migrationHashes": [
+    "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+    "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd"
+  ],
+  "workingTreeCleanBeforeEvidenceGeneration": true,
+  "failedPhase": "COMBINED_HUMAN_REVIEW",
+  "blocker": "DB_B0_R1_AND_DB_B1_MAINLINE_INTEGRATION_HUMAN_DECISIONS_REQUIRED",
+  "directMainMutationPerformed": false,
+  "forcePushPerformed": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false,
+  "status": "NOT_EXECUTED_MISSING_HUMAN_APPROVAL"
+}
