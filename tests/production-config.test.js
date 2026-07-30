@@ -4,20 +4,31 @@ const assert = require("node:assert/strict");
 const productionEnv = {
   ...process.env,
   NODE_ENV: "production",
+  DATABASE_URL: "",
   SESSION_SECRET: "",
-  STRIPE_SECRET_KEY: "",
-  STRIPE_PRICE_ID: "",
-  STRIPE_WEBHOOK_SECRET: "",
-  STRIPE_CHECKOUT_MOCK: "",
+  BILLING_PROVIDER_ENABLED: "false",
+  BILLING_ENVIRONMENT: "DISABLED",
   KV_REST_API_URL: "",
   KV_REST_API_TOKEN: "",
   UPSTASH_REDIS_REST_URL: "",
   UPSTASH_REDIS_REST_TOKEN: ""
 };
 
-const missingSession = spawnSync(process.execPath, ["-e", "require('./server')"], {
+const missingDatabase = spawnSync(process.execPath, ["-e", "require('./server')"], {
   cwd: process.cwd(),
   env: productionEnv,
+  encoding: "utf8"
+});
+
+assert.notEqual(missingDatabase.status, 0, "production startup should fail when DATABASE_URL is missing");
+assert.match(`${missingDatabase.stderr}${missingDatabase.stdout}`, /DATABASE_URL/);
+
+const missingSession = spawnSync(process.execPath, ["-e", "require('./server')"], {
+  cwd: process.cwd(),
+  env: {
+    ...productionEnv,
+    DATABASE_URL: "postgres://paperlens:paperlens@localhost:5432/paperlens"
+  },
   encoding: "utf8"
 });
 
@@ -28,6 +39,7 @@ const shortSession = spawnSync(process.execPath, ["-e", "require('./server')"], 
   cwd: process.cwd(),
   env: {
     ...productionEnv,
+    DATABASE_URL: "postgres://paperlens:paperlens@localhost:5432/paperlens",
     SESSION_SECRET: "too-short"
   },
   encoding: "utf8"
@@ -54,21 +66,12 @@ const previewBoot = spawnSync(
           const home = await fetch(baseUrl + "/");
           assert.equal(home.status, 200);
 
-          const storage = await fetch(baseUrl + "/api/auth/check-email", {
+          const paymentEndpoint = await fetch(baseUrl + "/api/billing/provider-callback", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email: "preview@example.com" })
+            body: JSON.stringify({})
           });
-          assert.equal(storage.status, 503);
-          assert.match((await storage.json()).error, /Persistent storage is not configured/);
-
-          const webhook = await fetch(baseUrl + "/api/billing/stripe-webhook", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ id: "evt_preview", type: "checkout.session.completed", data: { object: {} } })
-          });
-          assert.equal(webhook.status, 503);
-          assert.match((await webhook.json()).error, /Stripe webhook secret is not configured/);
+          assert.equal(paymentEndpoint.status, 404);
         } finally {
           server.close();
         }
@@ -83,6 +86,7 @@ const previewBoot = spawnSync(
     cwd: process.cwd(),
     env: {
       ...productionEnv,
+      DATABASE_URL: "postgres://paperlens:paperlens@localhost:5432/paperlens",
       SESSION_SECRET: "preview-session-secret-32-characters"
     },
     encoding: "utf8"
