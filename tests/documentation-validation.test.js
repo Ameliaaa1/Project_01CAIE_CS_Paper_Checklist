@@ -255,6 +255,16 @@ register("malformed JSON blocks", "regression", () => assertFixtureRule("malform
 register("evidence pair mismatch blocks", "evidence", () => assertFixtureRule("evidence-pair-mismatch", RULES.EVIDENCE_PAIR_MISMATCH));
 register("stale recorded hash blocks", "evidence", () => assertFixtureRule("stale-hash", RULES.EVIDENCE_HASH));
 register("JSON self-hash blocks", "evidence", () => assertFixtureRule("self-hash", RULES.EVIDENCE_SELF_HASH));
+register("modified historical evidence blocks", "evidence-lifecycle", () =>
+  assertFixtureRule("historical-evidence-modified", RULES.EVIDENCE_HASH));
+register("modified active authority passes when current validation passes", "evidence-lifecycle", () =>
+  assertResult(runFixture("active-authority-modified"), 0, "PASS_DOCUMENTATION_VALIDATION"));
+register("missing evidenceClass blocks", "evidence-lifecycle", () =>
+  assertFixtureRule("missing-evidence-class", RULES.EVIDENCE_CLASS_MISSING));
+register("invalid evidenceClass blocks", "evidence-lifecycle", () =>
+  assertFixtureRule("invalid-evidence-class", RULES.EVIDENCE_CLASS_INVALID));
+register("active authority marked historical blocks", "evidence-lifecycle", () =>
+  assertFixtureRule("active-marked-historical", RULES.EVIDENCE_CLASS_CONFLICT));
 register("baseline regression blocks", "baseline", () => assertFixtureRule("baseline-regression", RULES.META_OWNER));
 register("fixed violation still in baseline blocks", "baseline", () => assertFixtureRule("baseline-stale", RULES.BASELINE_STALE));
 register("unchanged legacy baseline passes with findings", "baseline", () => {
@@ -316,19 +326,19 @@ register("authority target state blocks", "rule-closure", () => assertFinding(ru
   "docs/DRAFT.md": validDocument("Draft", "DRAFT"),
 }), RULES.AUTH_TARGET_STATE));
 register("missing evidence target blocks", "evidence", () => assertFinding(runFiles({
-  "docs/missing-target.json": `${JSON.stringify({ files: [{ path: "docs/MISSING.md", sizeBytes: 1, sha256: "0".repeat(64) }] })}\n`,
+  "docs/missing-target.json": `${JSON.stringify({ files: [{ path: "docs/MISSING.md", evidenceClass: "historical", sizeBytes: 1, sha256: "0".repeat(64) }] })}\n`,
 }), RULES.EVIDENCE_PAIR_MISSING));
 register("evidence size mismatch blocks", "evidence", () => assertFinding(runFiles({
   "docs/TARGET.md": "x",
-  "docs/size.json": `${JSON.stringify({ files: [{ path: "docs/TARGET.md", sizeBytes: 2, sha256: crypto.createHash("sha256").update("x").digest("hex") }] })}\n`,
+  "docs/size.json": `${JSON.stringify({ files: [{ path: "docs/TARGET.md", evidenceClass: "historical", sizeBytes: 2, sha256: crypto.createHash("sha256").update("x").digest("hex") }] })}\n`,
 }), RULES.EVIDENCE_SIZE));
 
 for (const [name, entry] of [
-  ["evidence-entry-missing-path", { sizeBytes: 0, sha256: "0".repeat(64) }],
-  ["evidence-entry-missing-size", { path: "docs/X.md", sha256: "0".repeat(64) }],
-  ["evidence-entry-missing-sha", { path: "docs/X.md", sizeBytes: 0 }],
-  ["evidence-entry-invalid-size", { path: "docs/X.md", sizeBytes: "0", sha256: "0".repeat(64) }],
-  ["evidence-entry-invalid-sha", { path: "docs/X.md", sizeBytes: 0, sha256: "INVALID" }],
+  ["evidence-entry-missing-path", { evidenceClass: "historical", sizeBytes: 0, sha256: "0".repeat(64) }],
+  ["evidence-entry-missing-size", { path: "docs/X.md", evidenceClass: "historical", sha256: "0".repeat(64) }],
+  ["evidence-entry-missing-sha", { path: "docs/X.md", evidenceClass: "historical", sizeBytes: 0 }],
+  ["evidence-entry-invalid-size", { path: "docs/X.md", evidenceClass: "historical", sizeBytes: "0", sha256: "0".repeat(64) }],
+  ["evidence-entry-invalid-sha", { path: "docs/X.md", evidenceClass: "historical", sizeBytes: 0, sha256: "INVALID" }],
 ]) register(name, "evidence", () => assertFinding(runFiles({
   [`docs/${name}.json`]: `${JSON.stringify({ files: [entry] })}\n`,
 }), RULES.EVIDENCE_ENTRY_MALFORMED));

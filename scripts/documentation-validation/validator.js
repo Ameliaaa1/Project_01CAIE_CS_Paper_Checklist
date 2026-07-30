@@ -7,6 +7,7 @@ const { execFileSync } = require("child_process");
 const {
   ALLOWED_STATUSES,
   BASELINE_CLASSIFICATIONS,
+  EVIDENCE_CLASSES,
   IMPLEMENTED_RULES,
   RULES,
 } = require("./constants");
@@ -136,6 +137,7 @@ function emptySummary() {
     linksChecked: 0,
     evidencePairsChecked: 0,
     evidenceHashesChecked: 0,
+    activeAuthorityEvidenceChecked: 0,
     protectedHashesChecked: 0,
     blockingFindings: 0,
     baselinedFindings: 0,
@@ -179,6 +181,65 @@ function baselineConfigurationError(root, baseline) {
     return { code: "BASELINE_ENTRIES_INVALID", message: "Baseline entries must be an array." };
   }
   return null;
+}
+
+function readEvidenceLifecycle(root) {
+  const lifecyclePath = "scripts/documentation-validation/evidence-lifecycle.json";
+  const absolute = path.join(root, lifecyclePath);
+  if (!fs.existsSync(absolute)) {
+    return {
+      path: lifecyclePath,
+      schemaVersion: 1,
+      legacyMixedEvidenceSources: [],
+      activeAuthorityPaths: [],
+      activeAuthorityPrefixes: [],
+      historicalEvidence: [],
+    };
+  }
+  try {
+    return { path: lifecyclePath, ...JSON.parse(fs.readFileSync(absolute, "utf8")) };
+  } catch (cause) {
+    const error = new Error("Evidence lifecycle configuration is not valid JSON.");
+    error.code = "EVIDENCE_LIFECYCLE_JSON_INVALID";
+    error.path = lifecyclePath;
+    error.cause = cause;
+    throw error;
+  }
+}
+
+function evidenceLifecycleConfigurationError(lifecycle) {
+  if (lifecycle.schemaVersion !== 1) return "schemaVersion must equal 1";
+  for (const key of [
+    "legacyMixedEvidenceSources", "activeAuthorityPaths", "activeAuthorityPrefixes", "historicalEvidence",
+  ]) {
+    if (!Array.isArray(lifecycle[key])) return `${key} must be an array`;
+  }
+  const strings = [
+    ...lifecycle.legacyMixedEvidenceSources,
+    ...lifecycle.activeAuthorityPaths,
+    ...lifecycle.activeAuthorityPrefixes,
+  ];
+  if (strings.some((value) => typeof value !== "string" || !value || path.isAbsolute(value))) {
+    return "configured paths and prefixes must be non-empty repository-relative strings";
+  }
+  if (new Set(lifecycle.legacyMixedEvidenceSources).size !== lifecycle.legacyMixedEvidenceSources.length
+    || new Set(lifecycle.activeAuthorityPaths).size !== lifecycle.activeAuthorityPaths.length
+    || new Set(lifecycle.activeAuthorityPrefixes).size !== lifecycle.activeAuthorityPrefixes.length) {
+    return "configured paths and prefixes must be unique";
+  }
+  for (const entry of lifecycle.historicalEvidence) {
+    if (!entry || entry.evidenceClass !== "historical" || typeof entry.path !== "string"
+      || !Number.isInteger(entry.sizeBytes) || entry.sizeBytes < 0
+      || typeof entry.sha256 !== "string" || !/^[0-9a-f]{64}$/.test(entry.sha256)) {
+      return "historicalEvidence entries require path, historical class, sizeBytes, and lowercase SHA-256";
+    }
+  }
+  return null;
+}
+
+function isActiveAuthorityPath(lifecycle, file) {
+  return lifecycle.activeAuthorityPaths.includes(file)
+    || lifecycle.activeAuthorityPrefixes.some((prefix) => file.startsWith(prefix));
 }
 
 function validateBaseline({
@@ -679,23 +740,73 @@ function validateLifecycleNavigation({ root, fileSet, metadataByFile, findings }
   }
 }
 
-function evidenceEntryValid(entry) {
-  return entry && typeof entry === "object" && !Array.isArray(entry)
-    && typeof entry.path === "string" && entry.path.length > 0
+function evidenceEntryValid(entry, evidenceClass = entry && entry.evidenceClass) {
+  if (!entry || typeof entry !== "object" || Array.isArray(entry)
+    || typeof entry.path !== "string" || entry.path.length === 0) return false;
+  if (evidenceClass === "active-authority") return true;
+  return evidenceClass === "historical"
     && Number.isInteger(entry.sizeBytes) && entry.sizeBytes >= 0
     && typeof entry.sha256 === "string" && /^[0-9a-f]{64}$/.test(entry.sha256);
 }
 
-function validateEvidenceEntries({ root, file, list, pointer, fileSet, findings, summary, protectedList }) {
+function validateEvidenceEntries({
+  root, file, list, pointer, fileSet, findings, summary, protectedList, lifecycle,
+  allowLegacyClassInference = false,
+}) {
+  const legacySource = allowLegacyClassInference
+    || lifecycle.legacyMixedEvidenceSources.includes(file);
   for (const [index, entry] of list.entries()) {
-    if (!evidenceEntryValid(entry)) {
+    const entryPointer = `${pointer}/${index}`;
+    let evidenceClass = entry && entry.evidenceClass;
+    if (evidenceClass === undefined && legacySource && entry && typeof entry.path === "string") {
+      evidenceClass = isActiveAuthorityPath(lifecycle, entry.path) ? "active-authority" : "historical";
+    } else if (evidenceClass === undefined) {
+      findings.push(makeFinding(
+        RULES.EVIDENCE_CLASS_MISSING,
+        file,
+        "Evidence entry is missing evidenceClass.",
+        "historical or active-authority",
+        "missing",
+        { pointer: entryPointer },
+      ));
+      continue;
+    }
+    if (!EVIDENCE_CLASSES.has(evidenceClass)) {
+      findings.push(makeFinding(
+        RULES.EVIDENCE_CLASS_INVALID,
+        file,
+        "Evidence entry has an invalid evidenceClass.",
+        "historical or active-authority",
+        evidenceClass,
+        { pointer: entryPointer },
+      ));
+      continue;
+    }
+    if (entry && typeof entry.path === "string") {
+      const activePath = isActiveAuthorityPath(lifecycle, entry.path);
+      if ((evidenceClass === "historical" && activePath)
+        || (evidenceClass === "active-authority" && !activePath)) {
+        findings.push(makeFinding(
+          RULES.EVIDENCE_CLASS_CONFLICT,
+          file,
+          "Evidence class conflicts with the active-authority lifecycle registry.",
+          activePath ? "active-authority" : "historical",
+          evidenceClass,
+          { pointer: entryPointer },
+        ));
+        continue;
+      }
+    }
+    if (!evidenceEntryValid(entry, evidenceClass)) {
       findings.push(makeFinding(
         RULES.EVIDENCE_ENTRY_MALFORMED,
         file,
-        "Evidence entry does not match the required schema.",
-        "object with non-empty path, non-negative integer sizeBytes, and lowercase SHA-256",
+        "Evidence entry does not match the schema for its evidenceClass.",
+        evidenceClass === "historical"
+          ? "historical entry with path, sizeBytes, and lowercase SHA-256"
+          : "active-authority entry with path",
         JSON.stringify(entry),
-        { pointer: `${pointer}/${index}` },
+        { pointer: entryPointer },
       ));
       continue;
     }
@@ -706,7 +817,7 @@ function validateEvidenceEntries({ root, file, list, pointer, fileSet, findings,
         "Evidence JSON must not hash itself (SELF_HASH_ENTRY_PRESENT).",
         "self hash excluded",
         entry.path,
-        { pointer: `${pointer}/${index}` },
+        { pointer: entryPointer },
       ));
       continue;
     }
@@ -717,8 +828,12 @@ function validateEvidenceEntries({ root, file, list, pointer, fileSet, findings,
         protectedList ? "Manifest-protected file is missing." : "Evidence file is missing.",
         entry.path,
         "missing",
-        { pointer: `${pointer}/${index}` },
+        { pointer: entryPointer },
       ));
+      continue;
+    }
+    if (evidenceClass === "active-authority") {
+      summary.activeAuthorityEvidenceChecked += 1;
       continue;
     }
     if (protectedList) summary.protectedHashesChecked += 1;
@@ -830,7 +945,9 @@ function validateHumanReviewState(file, json, findings) {
   }
 }
 
-function validateEvidenceJson({ root, file, json, fileSet, metadataByFile, findings, summary, historical = false }) {
+function validateEvidenceJson({
+  root, file, json, fileSet, metadataByFile, findings, summary, lifecycle, historical = false,
+}) {
   if (Object.hasOwn(json, "files")) {
     if (!Array.isArray(json.files)) {
       findings.push(makeFinding(
@@ -840,7 +957,8 @@ function validateEvidenceJson({ root, file, json, fileSet, metadataByFile, findi
       ));
     } else {
       validateEvidenceEntries({
-        root, file, list: json.files, pointer: "/files", fileSet, findings, summary, protectedList: true,
+        root, file, list: json.files, pointer: "/files", fileSet, findings, summary, protectedList: true, lifecycle,
+        allowLegacyClassInference: historical,
       });
     }
   }
@@ -863,7 +981,8 @@ function validateEvidenceJson({ root, file, json, fileSet, metadataByFile, findi
         ));
       }
       validateEvidenceEntries({
-        root, file, list: json.evidenceFiles, pointer: "/evidenceFiles", fileSet, findings, summary, protectedList: false,
+        root, file, list: json.evidenceFiles, pointer: "/evidenceFiles", fileSet, findings, summary, protectedList: false, lifecycle,
+        allowLegacyClassInference: historical,
       });
     }
   }
@@ -937,8 +1056,10 @@ function validateRepositoryUnsafe(options = {}) {
 
   let baseline;
   let baseBaseline = null;
+  let lifecycle;
   try {
     baseline = readBaseline(root, baselinePath);
+    lifecycle = readEvidenceLifecycle(root);
     if (mode === "changed") baseBaseline = readBaselineAtRef(root, options.base, baselinePath);
   } catch (error) {
     return blockedResult(
@@ -957,6 +1078,16 @@ function validateRepositoryUnsafe(options = {}) {
       baselineError.code,
       baselinePath,
       baselineError.message,
+    );
+  }
+  const lifecycleError = evidenceLifecycleConfigurationError(lifecycle);
+  if (lifecycleError) {
+    return blockedResult(
+      mode,
+      "BLOCKED_DOCUMENTATION_VALIDATION_CONFIGURATION",
+      "EVIDENCE_LIFECYCLE_INVALID",
+      lifecycle.path,
+      lifecycleError,
     );
   }
 
@@ -997,6 +1128,7 @@ function validateRepositoryUnsafe(options = {}) {
     linksChecked: 0,
     evidencePairsChecked: 0,
     evidenceHashesChecked: 0,
+    activeAuthorityEvidenceChecked: 0,
     protectedHashesChecked: 0,
     rulesDefined: Object.values(RULES).length,
     rulesImplemented: IMPLEMENTED_RULES.size,
@@ -1011,6 +1143,17 @@ function validateRepositoryUnsafe(options = {}) {
       changed,
       changedPathSet,
       findings,
+    });
+    validateEvidenceEntries({
+      root,
+      file: lifecycle.path,
+      list: lifecycle.historicalEvidence,
+      pointer: "/historicalEvidence",
+      fileSet,
+      findings,
+      summary,
+      protectedList: true,
+      lifecycle,
     });
   } catch (error) {
     return blockedResult(
@@ -1033,7 +1176,7 @@ function validateRepositoryUnsafe(options = {}) {
           const json = JSON.parse(fs.readFileSync(absolute, "utf8"));
           if (Array.isArray(json.files)) {
             validateEvidenceJson({
-              root, file, json, fileSet, metadataByFile, findings, summary, historical: true,
+              root, file, json, fileSet, metadataByFile, findings, summary, lifecycle, historical: true,
             });
           }
         } catch (error) {
@@ -1070,7 +1213,7 @@ function validateRepositoryUnsafe(options = {}) {
         ));
         continue;
       }
-      validateEvidenceJson({ root, file, json, fileSet, metadataByFile, findings, summary });
+      validateEvidenceJson({ root, file, json, fileSet, metadataByFile, findings, summary, lifecycle });
     }
   }
 

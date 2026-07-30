@@ -1,1 +1,1 @@
-{"files":{"docs/self.json":"{\"evidenceFiles\":[{\"path\":\"docs/self.json\",\"sizeBytes\":1,\"sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\"}],\"selfHash\":\"SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE\"}"}}
+{"files":{"docs/self.json":"{\"evidenceFiles\":[{\"path\":\"docs/self.json\",\"evidenceClass\":\"historical\",\"sizeBytes\":1,\"sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\"}],\"selfHash\":\"SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE\"}"}}
