@@ -1,0 +1,84 @@
+{
+  "stage": "DB-B0-R1_EPHEMERAL_POSTGRESQL_TEST_EXECUTION_AND_HUMAN_REVIEW_CLOSURE",
+  "completedAt": "2026-07-30T08:41:53.000Z",
+  "implementationCommit": "648746c166afec523bae559a976e12b6dc2c7359",
+  "testBindingCommit": "9440d9127703a02af90c9329c52d7a5e77ec1e1c",
+  "executionHead": "9440d9127703a02af90c9329c52d7a5e77ec1e1c",
+  "databaseBranch": {
+    "provider": "NEON",
+    "projectId": "lucky-river-45336837",
+    "branchName": "db-b0-r1-test-20260730",
+    "branchId": "br-aged-rain-avjrnfaz",
+    "parentBranchId": "br-silent-fog-avglbx9u",
+    "endpointId": "ep-lucky-river-avf6uw0x",
+    "productionEndpointId": "ep-small-dew-avh8e0sc"
+  },
+  "schemaSha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+  "migrationHashes": [
+    "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+    "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd"
+  ],
+  "tests": [
+    {
+      "testName": "EPHEMERAL_DATABASE_TARGET_GUARD",
+      "command": "npm run test:ephemeral-database-target",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "testName": "BILLING_SCHEMA_EXTENSION",
+      "command": "npm run test:billing-schema-extension",
+      "exitCode": 0,
+      "runId": "57577df7cc184e68a60f1cd61d7daf92",
+      "checks": {
+        "crud": "PASS",
+        "idempotency": "PASS",
+        "refund": "PASS",
+        "eventOrderingSchemaSupport": "PASS",
+        "schemaStructure": "PASS",
+        "syntheticDataCleanup": "PASS",
+        "remainingSyntheticUserCount": 0,
+        "remainingSyntheticPurchaseCount": 0,
+        "remainingSyntheticBillingEventCount": 0
+      },
+      "result": "PASS"
+    },
+    {
+      "testName": "PURCHASE_ENTITLEMENT_REGRESSION",
+      "command": "npm run test:db-a5-s1-purchase-entitlement",
+      "exitCode": 0,
+      "checks": {
+        "accessAfterRefundHasPaidEntitlement": false,
+        "trialUsedAfterRefund": 1,
+        "trialRemainingAfterRefund": 1,
+        "trialSearchCount": 2,
+        "paidSearchCount": 10
+      },
+      "result": "PASS"
+    },
+    {
+      "testName": "FULL_NON_DATABASE_SUITE",
+      "command": "npm test",
+      "exitCode": 0,
+      "result": "PASS",
+      "documentationValidationPassed": 79,
+      "documentationValidationFailed": 0
+    }
+  ],
+  "passCount": 4,
+  "failureCount": 0,
+  "blockedCount": 0,
+  "productionEndpointUsed": false,
+  "paymentProviderCalled": false,
+  "status": "PASS",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

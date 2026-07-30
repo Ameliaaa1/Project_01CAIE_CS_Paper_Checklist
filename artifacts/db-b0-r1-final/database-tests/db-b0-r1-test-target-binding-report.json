@@ -1,0 +1,41 @@
+{
+  "stage": "DB-B0-R1_EPHEMERAL_POSTGRESQL_TEST_EXECUTION_AND_HUMAN_REVIEW_CLOSURE",
+  "implementationCommit": "648746c166afec523bae559a976e12b6dc2c7359",
+  "testBindingCommit": "9440d9127703a02af90c9329c52d7a5e77ec1e1c",
+  "executionHead": "9440d9127703a02af90c9329c52d7a5e77ec1e1c",
+  "reason": "Previously endpoint-bound rehearsal tests referenced a destroyed DB-A5-S1 branch. A shared fail-closed identity guard now binds execution to the newly authorized DB-B0-R1 ephemeral branch.",
+  "changedFiles": [
+    "tests/helpers/ephemeral-database-target.js",
+    "tests/ephemeral-database-target.test.js",
+    "tests/billing-schema-extension.test.js",
+    "tests/db-a5-s1-purchase-entitlement-regression.test.js",
+    "package.json"
+  ],
+  "guardRequirements": {
+    "exactNeonProjectId": "lucky-river-45336837",
+    "nonProductionBranchId": "br-aged-rain-avjrnfaz",
+    "branchNamePattern": "^db-b0-r1-test-[0-9]{8}",
+    "nonProductionEndpointId": "ep-lucky-river-avf6uw0x",
+    "exactParentProductionBranchId": "br-silent-fog-avglbx9u",
+    "databaseUrlScope": "EPHEMERAL_ONLY",
+    "databaseUrlHostMustMatchDeclaredEndpoint": true,
+    "explicitProductionBranchRejection": true,
+    "explicitProductionEndpointRejection": true
+  },
+  "regressionCommand": "npm run test:ephemeral-database-target",
+  "exitCode": 0,
+  "status": "PASS",
+  "runtimeSemanticsChanged": false,
+  "schemaChanged": false,
+  "migrationChanged": false,
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

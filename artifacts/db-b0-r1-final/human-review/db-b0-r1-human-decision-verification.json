@@ -1,0 +1,23 @@
+{
+  "stage": "DB-B0-R1_EPHEMERAL_POSTGRESQL_TEST_EXECUTION_AND_HUMAN_REVIEW_CLOSURE",
+  "decisionPath": "human-review/db-b0-r1-human-decision.json",
+  "decisionSha256": "60082e9e42c794505ef788a1b0b9fc0afa52aa7d89411c743c7ab31e4946bdb7",
+  "expectedDecision": "APPROVE_DB_B0_R1_CLOSURE",
+  "actualDecision": "PENDING_HUMAN_REVIEW",
+  "reviewerPresent": false,
+  "reviewedAtPresent": false,
+  "evidenceBindingMatches": true,
+  "humanDecisionVerified": false,
+  "codexDidNotAuthorApproval": true,
+  "status": "BLOCKED_PENDING_DB_B0_R1_HUMAN_DECISION",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

@@ -1,0 +1,106 @@
+{
+  "stage": "DB-B0-R1_EPHEMERAL_POSTGRESQL_TEST_EXECUTION_AND_HUMAN_REVIEW_CLOSURE",
+  "generatedAt": "2026-07-30T09:22:32.918Z",
+  "implementationCommit": "648746c166afec523bae559a976e12b6dc2c7359",
+  "testBindingCommit": "9440d9127703a02af90c9329c52d7a5e77ec1e1c",
+  "executionHead": "9440d9127703a02af90c9329c52d7a5e77ec1e1c",
+  "artifactCount": 12,
+  "artifacts": {
+    "cleanup/db-b0-r1-ephemeral-cleanup-verification.json": {
+      "sizeBytes": 1197,
+      "sha256": "b5791749cc8a6956883b95c3182b99ffdf284ca6433a346b4ea954886c13d3c4",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "conclusion/db-b0-r1-blocker-register.json": {
+      "sizeBytes": 1420,
+      "sha256": "ea7efc857d2df53c2ec4b9a47dcc55843c73374098e53efab4e69af3420f97cd",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "conclusion/db-b0-r1-execution-report.md": {
+      "sizeBytes": 552,
+      "sha256": "e0112174b5596fe4eeaf6412fc39d94dd15f39c71755bb7a007f02a0a1ddd8c1",
+      "mimeType": "text/markdown",
+      "parseStatus": "NOT_APPLICABLE",
+      "jsonValid": null
+    },
+    "database-tests/db-b0-r1-database-test-execution-report.json": {
+      "sizeBytes": 2784,
+      "sha256": "06d14089c9b2c0753d7c910c4ddc6a85a8bfd3515e958e4b5aaf32f369db2c01",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "database-tests/db-b0-r1-ephemeral-migration-report.json": {
+      "sizeBytes": 2109,
+      "sha256": "3f0d942ef81d3791311c23d07892108d9ef29e4dce49be7674caf90ba437b369",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "database-tests/db-b0-r1-test-target-binding-report.json": {
+      "sizeBytes": 1785,
+      "sha256": "ca148f8d4faff8ef28403ff35cf87175943f708fc241189f2344645c0ffe2eff",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "human-review/db-b0-r1-final-human-review-package.json": {
+      "sizeBytes": 3296,
+      "sha256": "0a3237bc84eaef53aa284b412d1a889172ed75fec576aac1fd84986ba86eb3ff",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "human-review/db-b0-r1-human-decision-verification.json": {
+      "sizeBytes": 904,
+      "sha256": "9b7adbf5f26fe7a232531f735d15d279036907e170186d7a65c7cb619e59dfb8",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "human-review/db-b0-r1-human-decision.json": {
+      "sizeBytes": 2333,
+      "sha256": "60082e9e42c794505ef788a1b0b9fc0afa52aa7d89411c743c7ab31e4946bdb7",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "isolation/db-b0-r1-database-isolation-verification.json": {
+      "sizeBytes": 1216,
+      "sha256": "e9b1630b6113384a1efe2de3d7221f495334e22cac317a482a8134bfd8265ab1",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "isolation/db-b0-r1-ephemeral-database-creation.json": {
+      "sizeBytes": 1077,
+      "sha256": "5fb9a5d93697e18aeb32f0a098e20aa54050ef3c6007ea1a87ae6edeea9ba798",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "security/db-b0-r1-secret-and-package-hygiene-audit.json": {
+      "sizeBytes": 1500,
+      "sha256": "bba340bde9086f8e14ff09368218e955bd52635912839cfd5ff9b4efe0bc473e",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    }
+  },
+  "status": "PRE_HUMAN_REVIEW_FROZEN",
+  "blocker": "DB_B0_R1_HUMAN_DECISION_REQUIRED",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}
