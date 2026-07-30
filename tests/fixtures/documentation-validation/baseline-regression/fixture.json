@@ -1,0 +1,1 @@
+{"files":{"README.md":"# Legacy\n","docs/documentation-validation-baseline.json":"{\"schemaVersion\":1,\"authority\":{\"approvedBy\":\"fixture\",\"baseCommit\":\"fixture\"},\"entries\":[{\"path\":\"README.md\",\"classification\":\"LEGACY_BASELINED\",\"rules\":[\"DOC-META-001\"],\"reason\":\"Fixture\",\"sourceFinding\":\"FIXTURE\"}]}"}}

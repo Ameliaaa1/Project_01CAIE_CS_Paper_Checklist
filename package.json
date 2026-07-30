@@ -9,7 +9,7 @@
     "dev": "node server.js",
     "build": "npm run build:question-index",
     "build:question-index": "node scripts/build-question-index.js",
-    "test": "npm run test:server-entrypoint && npm run test:browser-data-load && npm run test:vercel-routing && npm run test:static-access && npm run test:deployment-smoke && npm run test:auth-session && npm run test:billing-config && npm run test:billing-webhook && npm run test:rate-csrf && npm run test:production-config",
+    "test": "npm run test:server-entrypoint && npm run test:browser-data-load && npm run test:vercel-routing && npm run test:static-access && npm run test:deployment-smoke && npm run test:auth-session && npm run test:billing-config && npm run test:billing-webhook && npm run test:rate-csrf && npm run test:production-config && npm run test:documentation-validation",
     "test:server-entrypoint": "node tests/server-entrypoint.test.js",
     "test:browser-data-load": "node tests/browser-data-load.test.js",
     "test:vercel-routing": "node tests/vercel-routing.test.js",
@@ -19,7 +19,10 @@
     "test:billing-config": "node tests/billing-config.test.js",
     "test:billing-webhook": "node tests/billing-webhook.test.js",
     "test:rate-csrf": "node tests/rate-csrf.test.js",
-    "test:production-config": "node tests/production-config.test.js"
+    "test:production-config": "node tests/production-config.test.js",
+    "test:documentation-validation": "node tests/documentation-validation.test.js",
+    "validate:docs": "node scripts/validate-documentation.js --mode full",
+    "validate:docs:changed": "node scripts/validate-documentation.js --mode changed"
   },
   "engines": {
     "node": ">=18"
