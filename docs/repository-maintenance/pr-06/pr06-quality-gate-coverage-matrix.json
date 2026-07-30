@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "task": "PR-06",
   "baseSha": "11ce82001efb633c1697356c1a510fc0c5034245",
-  "generatedAt": "2026-07-30T09:17:40Z",
+  "generatedAt": "2026-07-30T10:16:05Z",
   "coverageStatuses": ["COVERED_STRICT", "COVERED_PARTIAL", "COVERED_MANUAL", "SCRIPT_EXISTS_NOT_GATED", "HISTORICAL_EVIDENCE_ONLY", "MUTATING_CHECK_NOT_SAFE_FOR_CI", "NO_ACTIVE_GATE", "NOT_APPLICABLE", "BLOCKED_UNKNOWN"],
   "mutabilityClasses": ["READ_ONLY", "WRITES_GENERATED_ARTIFACT", "WRITES_RUNTIME_DATA", "WRITES_CANDIDATE_DATA", "WRITES_PRODUCTION_DATA", "UNKNOWN_MUTABILITY"],
   "entries": [
@@ -192,6 +192,6 @@
     "notRunEntries": 10,
     "recommendedFirstImplementationTarget": "Candidate-to-Production Promotion Gate",
     "recommendedFirstImplementationPr": "PR-06C",
-    "recommendedFirstImplementationStatus": "WAITING_FOR_PR06-R1_HUMAN_REVIEW"
+    "recommendedFirstImplementationStatus": "WAITING_FOR_PR06-R1A_HUMAN_REVIEW"
   }
 }

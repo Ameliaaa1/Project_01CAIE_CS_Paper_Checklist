@@ -34,7 +34,7 @@ evidence entries must contain `evidenceClass` explicitly.
 | `scripts/documentation-validation/constants.js` | unclassified hash snapshot | `active-authority` | Current validator rule registry | Rule closure tests and CI |
 | `scripts/documentation-validation/format-results.js` | unclassified hash snapshot | `active-authority` | Current validator formatter | Tests and CI |
 | `scripts/documentation-validation/markdown.js` | unclassified hash snapshot | `active-authority` | Current Markdown parser | Tests and CI |
-| `scripts/documentation-validation/validator.js` | unclassified hash snapshot | `active-authority` | Current validator implementation | 84 tests, full/changed validation, CI |
+| `scripts/documentation-validation/validator.js` | unclassified hash snapshot | `active-authority` | Current validator implementation | 90 tests, full/changed validation, CI |
 | `scripts/validate-documentation.js` | unclassified hash snapshot | `active-authority` | Current CLI entrypoint | CLI error tests, full/changed validation, CI |
 | `tests/documentation-validation.test.js` | unclassified hash snapshot | `active-authority` | Current regression suite | Test execution and rule closure |
 | `tests/fixtures/documentation-validation/absolute-local-path/fixture.json` | unclassified hash snapshot | `active-authority` | Current regression fixture | Fixture test and read-only hash guard |

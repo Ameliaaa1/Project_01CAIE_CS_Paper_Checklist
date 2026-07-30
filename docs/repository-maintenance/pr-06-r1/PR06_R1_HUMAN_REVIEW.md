@@ -13,6 +13,7 @@ Related documents:
 - [R1 lifecycle report](PR06_R1_ACTIVE_EVIDENCE_LIFECYCLE_REPORT.md)
 - [R1 migration matrix](PR06_R1_MIGRATION_MATRIX.md)
 - [Machine-readable R1 report](pr06-r1-active-evidence-lifecycle-report.json)
+- [R1A human review](../pr-06-r1a/PR06_R1A_HUMAN_REVIEW.md)
 
 ## Decision
 
@@ -22,7 +23,7 @@ Approved first implementation target: `PENDING`
 
 Approved implementation PR: `PENDING`
 
-PR-06C status: `WAITING_FOR_PR06-R1_HUMAN_REVIEW`
+PR-06C status: `WAITING_FOR_PR06-R1A_HUMAN_REVIEW`
 
 ## Required Review
 
@@ -33,7 +34,7 @@ PR-06C status: `WAITING_FOR_PR06-R1_HUMAN_REVIEW`
 - [ ] New missing and invalid `evidenceClass` values block.
 - [ ] Active authority marked `historical` blocks.
 - [ ] The migration matrix covers all 33 PR-05 evidence entries.
-- [ ] Validator tests pass 84/84 and rule closure passes 44/44.
+- [ ] Validator tests pass 90/90 and rule closure passes 49/49.
 - [ ] Full and changed documentation validation pass.
 - [ ] No Production, Candidate, PDF, parser runtime, question-data, frontend,
   package, workflow, or PR-05 historical file changed.

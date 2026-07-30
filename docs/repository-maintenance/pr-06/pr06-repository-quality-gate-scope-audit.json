@@ -7,7 +7,7 @@
   "validatedImplementationSha": "11ce82001efb633c1697356c1a510fc0c5034245",
   "finalPrHeadSha": null,
   "initialAuditGeneratedAt": "2026-07-30T07:09:43Z",
-  "generatedAt": "2026-07-30T09:17:40Z",
+  "generatedAt": "2026-07-30T10:16:05Z",
   "markdownReport": "docs/repository-maintenance/pr-06/PR06_REPOSITORY_QUALITY_GATE_SCOPE_AUDIT.md",
   "inventory": {
     "trackedFiles": 307,
@@ -65,14 +65,14 @@
   "recommendedFirstImplementation": {
     "target": "Candidate-to-Production Promotion Gate",
     "proposedPr": "PR-06C",
-    "dependencyStatus": "WAITING_FOR_PR06-R1_HUMAN_REVIEW",
+    "dependencyStatus": "WAITING_FOR_PR06-R1A_HUMAN_REVIEW",
     "humanApprovalRequired": true,
     "authorized": false
   },
   "tests": {
     "command": "npm run test:documentation-validation",
-    "cases": 84,
-    "passed": 84,
+    "cases": 90,
+    "passed": 90,
     "failed": 0,
     "projectTestCommand": "npm test",
     "initialProjectTestResult": "ENVIRONMENT_PREREQUISITE_MISSING_PDF_LIB",
@@ -110,7 +110,7 @@
   },
   "scope": {
     "codeChanges": 3,
-    "testChanges": 8,
+    "testChanges": 10,
     "workflowChanges": 0,
     "packageJsonChanges": 0,
     "archiveChanges": 0,
@@ -119,14 +119,14 @@
     "pdfChanges": 0
   },
   "gitBoundary": {
-    "changedFiles": 20,
+    "changedFiles": 25,
     "filesDeleted": 0,
     "filesRenamed": 0,
     "filesMoved": 0,
-    "lineAdditions": 1565,
-    "lineDeletions": 24,
+    "lineAdditions": 2066,
+    "lineDeletions": 25,
     "codeChanges": 3,
-    "testChanges": 8,
+    "testChanges": 10,
     "workflowChanges": 0,
     "packageJsonChanges": 0,
     "archiveChanges": 0,
@@ -136,10 +136,10 @@
     "safetyBackupModified": false
   },
   "evidenceFiles": [
-    {"path":"docs/repository-maintenance/pr-06/PR06_HUMAN_REVIEW.md","evidenceClass":"historical","sizeBytes":4329,"sha256":"f7c7927205766fe1783eb7b2ee37a7bbb18eebb71e8fc3896cebff3e8d24623b"},
-    {"path":"docs/repository-maintenance/pr-06/PR06_QUALITY_GATE_COVERAGE_MATRIX.md","evidenceClass":"historical","sizeBytes":12902,"sha256":"cdd1e892d2efc07a76b859628331987336db43885d519c14be5dd5b8b408e2f2"},
-    {"path":"docs/repository-maintenance/pr-06/PR06_REPOSITORY_QUALITY_GATE_SCOPE_AUDIT.md","evidenceClass":"historical","sizeBytes":9673,"sha256":"e617ca7ebcba395abb7d18eab4aac82db4c0a79bd06c76faea8507676252a546"},
-    {"path":"docs/repository-maintenance/pr-06/pr06-quality-gate-coverage-matrix.json","evidenceClass":"historical","sizeBytes":38334,"sha256":"c6219301fe2bcbecfc7c96eb24861c47cd8465244d5d9f584be5cb334815fcab"}
+    {"path":"docs/repository-maintenance/pr-06/PR06_HUMAN_REVIEW.md","evidenceClass":"historical","sizeBytes":4416,"sha256":"e320b1f0d598a03591eb71c706b1e44c704def47950295b30c274919b8370e73"},
+    {"path":"docs/repository-maintenance/pr-06/PR06_QUALITY_GATE_COVERAGE_MATRIX.md","evidenceClass":"historical","sizeBytes":12912,"sha256":"ea49d411a02942524337b509d36df3ca9ae5afbfd0b6747f3eb4232f8803581d"},
+    {"path":"docs/repository-maintenance/pr-06/PR06_REPOSITORY_QUALITY_GATE_SCOPE_AUDIT.md","evidenceClass":"historical","sizeBytes":10029,"sha256":"8ebf6329e5ae252b53658b26d635e8443015d2eccab34fa0c088aebb950c4366"},
+    {"path":"docs/repository-maintenance/pr-06/pr06-quality-gate-coverage-matrix.json","evidenceClass":"historical","sizeBytes":38335,"sha256":"fe5b5b623f7db80f17a809947a6d9aacd15b1de5d9f441dc1a3a7b5d355ae9f6"}
   ],
   "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE",
   "humanReview": {

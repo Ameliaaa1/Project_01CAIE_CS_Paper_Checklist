@@ -28,11 +28,11 @@ Final PR head SHA: `PENDING`
 
 Initial audit generated at: `2026-07-30T07:09:43Z`
 
-Generated at: `2026-07-30T09:17:40Z`
+Generated at: `2026-07-30T10:16:05Z`
 
-Tests cases: `84`
+Tests cases: `90`
 
-Tests passed: `84`
+Tests passed: `90`
 
 Tests failed: `0`
 
@@ -40,7 +40,7 @@ Blocking findings: `0`
 
 Baselined findings: `15`
 
-Changed files: `20`
+Changed files: `25`
 
 Files deleted: `0`
 
@@ -48,9 +48,9 @@ Files renamed: `0`
 
 Files moved: `0`
 
-Line additions: `1565`
+Line additions: `2066`
 
-Line deletions: `24`
+Line deletions: `25`
 
 Human review decision: `PENDING`
 
@@ -153,7 +153,7 @@ vulnerabilities and no tracked changes. The repeat then passed.
 | Command | Mutability | Result |
 | --- | --- | --- |
 | `npm ci` | ignored dependency directory | `PASS`; prerequisite setup |
-| `npm run test:documentation-validation` | temp fixtures outside worktree | `PASS_84_OF_84` |
+| `npm run test:documentation-validation` | temp fixtures outside worktree | `PASS_90_OF_90` |
 | `npm run validate:docs` | read-only | `PASS` |
 | `npm test` | temp runtime stores outside worktree | `PASS` after `npm ci` |
 | `git diff --check` | read-only | `PASS` |
@@ -189,7 +189,7 @@ the boundary. `QG-SYLLABUS-001` is therefore
 Recommended first target:
 `Candidate-to-Production Promotion Gate` (`PR-06C`).
 
-Dependency status: `WAITING_FOR_PR06-R1_HUMAN_REVIEW`.
+Dependency status: `WAITING_FOR_PR06-R1A_HUMAN_REVIEW`.
 
 The matrix supports the pre-audit hypothesis. PR-06C can protect Candidate,
 Production, and syllabus P0 facts before promotion, remain read-only, avoid
@@ -218,11 +218,11 @@ PR-06 reviewer approves exactly one first target.
 
 ## Git Boundary
 
-Changed files: 20
+Changed files: 25
 
 Documentation-validator implementation/config files: 3
 
-Documentation-validator test/fixture files: 8
+Documentation-validator test/fixture files: 10
 
 Workflow changes: 0
 
@@ -238,9 +238,9 @@ PDF changes: 0
 
 Files deleted, renamed, or moved: 0
 
-The PR contains the five original PR-06 evidence files, four R1 review/evidence
-files, three validator implementation/config files, and eight validator
-test/fixture files. `docs/DOCUMENTATION_INDEX.md` remains unchanged. PR-05
+The PR contains the five original PR-06 evidence files, four R1 files, three
+R1A review/evidence files, three validator implementation/config files, and ten
+validator test/fixture files. `docs/DOCUMENTATION_INDEX.md` remains unchanged. PR-05
 historical report bytes remain unchanged while its active-authority targets are
 no longer treated as permanently frozen snapshots.
 
@@ -256,6 +256,12 @@ migration class.
 
 PR-05 report Markdown and JSON are registered as historical evidence with
 their original sizes and hashes. Neither file is modified by R1.
+
+R1A removes the generic protected-manifest inference bypass. Five exact legacy
+sources are registered. Changed mode compares the base and current registry and
+blocks historical removal or weakening, active boundary expansion, and legacy
+source expansion. Explicit active-authority entries containing size/hash
+snapshot fields also block.
 
 ## Evidence Generation
 

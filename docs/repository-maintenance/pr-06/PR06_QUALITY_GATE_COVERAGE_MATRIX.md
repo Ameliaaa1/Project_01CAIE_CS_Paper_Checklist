@@ -146,7 +146,7 @@ not executed during PR-06, so determinism and freshness are not claimed.
 
 ## Evidence and Limitations
 
-- Documentation: current validator, 84-test suite, lifecycle registry,
+- Documentation: current validator, 90-test suite, hardened lifecycle registry,
   workflow, and unchanged PR-05 report.
 - Runtime/deployment/security: 10 focused test files plus the serverless entry
   adapter. These are local or mocked checks, not deployed-environment proof.
@@ -178,7 +178,7 @@ command not run.
 Recommended first implementation target:
 `Candidate-to-Production Promotion Gate` (`PR-06C`).
 
-Dependency status: `WAITING_FOR_PR06-R1_HUMAN_REVIEW`.
+Dependency status: `WAITING_FOR_PR06-R1A_HUMAN_REVIEW`.
 
 It addresses Candidate, Production, and syllabus P0 gaps at the required
 pre-promotion boundary. The implementation must remain one bounded,

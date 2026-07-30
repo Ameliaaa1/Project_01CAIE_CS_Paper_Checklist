@@ -16,6 +16,7 @@ Related documents:
 
 - [Migration matrix](PR06_R1_MIGRATION_MATRIX.md)
 - [Human review](PR06_R1_HUMAN_REVIEW.md)
+- [R1A governance hardening](../pr-06-r1a/PR06_R1A_EVIDENCE_LIFECYCLE_GOVERNANCE_REPORT.md)
 - [Machine-readable report](pr06-r1-active-evidence-lifecycle-report.json)
 - [PR-06 audit](../pr-06/PR06_REPOSITORY_QUALITY_GATE_SCOPE_AUDIT.md)
 
@@ -27,11 +28,11 @@ Final PR head SHA: `PENDING`
 
 Initial audit generated at: `2026-07-30T08:38:25Z`
 
-Generated at: `2026-07-30T09:17:40Z`
+Generated at: `2026-07-30T10:16:05Z`
 
-Tests cases: `84`
+Tests cases: `90`
 
-Tests passed: `84`
+Tests passed: `90`
 
 Tests failed: `0`
 
@@ -39,7 +40,7 @@ Blocking findings: `0`
 
 Baselined findings: `15`
 
-Changed files: `20`
+Changed files: `25`
 
 Files deleted: `0`
 
@@ -47,9 +48,9 @@ Files renamed: `0`
 
 Files moved: `0`
 
-Line additions: `1565`
+Line additions: `2066`
 
-Line deletions: `24`
+Line deletions: `25`
 
 Human review decision: `PENDING`
 
@@ -82,8 +83,8 @@ snapshot hash.
 | Missing `evidenceClass` | `PASS_BLOCKED_DOC_EVIDENCE_009` |
 | Invalid `evidenceClass` | `PASS_BLOCKED_DOC_EVIDENCE_010` |
 | Active file marked historical | `PASS_BLOCKED_DOC_EVIDENCE_011` |
-| Full suite | `PASS_84_OF_84` |
-| Rule registry closure | `PASS_44_OF_44` |
+| Full suite | `PASS_90_OF_90` |
+| Rule registry closure | `PASS_49_OF_49` |
 
 ## Migration
 
@@ -109,15 +110,19 @@ every entry.
 | P0 / P1 / P2 / P3 | 7 / 15 / 4 / 0 |
 
 The recommended first implementation remains PR-06C, but its status is
-`WAITING_FOR_PR06-R1_HUMAN_REVIEW`.
+`WAITING_FOR_PR06-R1A_HUMAN_REVIEW`.
+
+R1A removes unrestricted protected-manifest inference, registers five exact
+legacy sources, compares lifecycle registries in changed mode, and rejects
+snapshot fields on explicit active-authority entries.
 
 ## Scope Boundary
 
 Allowed validator implementation/config files: 3
 
-Allowed validator test/fixture files: 8
+Allowed validator test/fixture files: 10
 
-Original and R1 maintenance evidence files: 9
+PR-06, R1, and R1A maintenance evidence files: 12
 
 Workflow changes: 0
 
