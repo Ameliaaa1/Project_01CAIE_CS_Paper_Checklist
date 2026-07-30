@@ -45,6 +45,7 @@ const RULES = Object.freeze({
   EVIDENCE_SELF_HASH: "DOC-EVIDENCE-005",
   EVIDENCE_JSON_PARSE: "DOC-EVIDENCE-006",
   EVIDENCE_FALSE_PASS: "DOC-EVIDENCE-007",
+  EVIDENCE_ENTRY_MALFORMED: "DOC-EVIDENCE-008",
   PROTECTED_PATH: "DOC-PROTECTED-001",
   PROTECTED_HASH: "DOC-PROTECTED-002",
   PROTECTED_ARCHIVE_CHANGE: "DOC-PROTECTED-003",
@@ -56,6 +57,10 @@ const RULES = Object.freeze({
   BASELINE_STALE: "DOC-BASELINE-005",
 });
 
+// This registry is intentionally explicit: a defined rule is not considered
+// implemented until the validator registers an execution path for it.
+const IMPLEMENTED_RULES = new Set(Object.values(RULES));
+
 const BASELINE_CLASSIFICATIONS = new Set([
   "LEGACY_BASELINED",
   "PROTECTED_IMMUTABLE",
@@ -65,5 +70,6 @@ const BASELINE_CLASSIFICATIONS = new Set([
 module.exports = {
   ALLOWED_STATUSES,
   BASELINE_CLASSIFICATIONS,
+  IMPLEMENTED_RULES,
   RULES,
 };

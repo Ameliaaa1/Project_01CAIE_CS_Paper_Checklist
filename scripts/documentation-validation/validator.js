@@ -4,7 +4,12 @@ const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 const { execFileSync } = require("child_process");
-const { ALLOWED_STATUSES, BASELINE_CLASSIFICATIONS, RULES } = require("./constants");
+const {
+  ALLOWED_STATUSES,
+  BASELINE_CLASSIFICATIONS,
+  IMPLEMENTED_RULES,
+  RULES,
+} = require("./constants");
 const { parseHeadings, parseLinks, parseMetadata } = require("./markdown");
 const { sortFindings } = require("./format-results");
 
@@ -43,8 +48,41 @@ function discoverFiles(root) {
 
 function readBaseline(root, baselinePath) {
   const absolute = path.join(root, baselinePath);
-  if (!fs.existsSync(absolute)) return { schemaVersion: 1, authority: {}, entries: [] };
-  return JSON.parse(fs.readFileSync(absolute, "utf8"));
+  if (!fs.existsSync(absolute)) return { schemaVersion: 1, authority: null, entries: [] };
+  try {
+    return JSON.parse(fs.readFileSync(absolute, "utf8"));
+  } catch (cause) {
+    const error = new Error("Documentation baseline is not valid JSON.");
+    error.code = "BASELINE_JSON_INVALID";
+    error.path = baselinePath;
+    error.cause = cause;
+    throw error;
+  }
+}
+
+function readBaselineAtRef(root, ref, baselinePath) {
+  try {
+    runGit(root, ["cat-file", "-e", `${ref}:${baselinePath}`]);
+  } catch {
+    try {
+      runGit(root, ["cat-file", "-e", `${ref}^{commit}`]);
+      return null;
+    } catch {
+      const error = new Error(`Unable to resolve the baseline base ref: ${ref}.`);
+      error.code = "BASELINE_BASE_READ_FAILED";
+      error.path = baselinePath;
+      throw error;
+    }
+  }
+  try {
+    return JSON.parse(runGit(root, ["show", `${ref}:${baselinePath}`]));
+  } catch (cause) {
+    const error = new Error(`Unable to read the baseline at ${ref}.`);
+    error.code = "BASELINE_BASE_READ_FAILED";
+    error.path = baselinePath;
+    error.cause = cause;
+    throw error;
+  }
 }
 
 function parseChangedFiles(root, base) {
@@ -60,7 +98,7 @@ function parseChangedFiles(root, base) {
     error.code = "BASE_UNRESOLVED";
     throw error;
   }
-  const output = runGit(root, ["diff", "--name-status", `${base}...HEAD`]);
+  const output = runGit(root, ["diff", "--find-renames", "--name-status", `${base}...HEAD`]);
   if (!output) return [];
   return output.split("\n").map((line) => {
     const parts = line.split("\t");
@@ -89,55 +127,171 @@ function isProtected(entry) {
   return entry && (entry.classification === "PROTECTED_IMMUTABLE" || entry.classification === "ARCHIVED");
 }
 
-function validateBaseline({ root, baseline, fileSet, changedPathSet, findings }) {
-  for (const entry of baseline.entries || []) {
+function emptySummary() {
+  return {
+    documents: 0,
+    strictDocuments: 0,
+    baselineEntries: 0,
+    protectedEntries: 0,
+    linksChecked: 0,
+    evidencePairsChecked: 0,
+    evidenceHashesChecked: 0,
+    protectedHashesChecked: 0,
+    blockingFindings: 0,
+    baselinedFindings: 0,
+  };
+}
+
+function blockedResult(mode, result, errorCode, errorPath, message) {
+  return {
+    schemaVersion: 1,
+    mode,
+    result,
+    exitCode: 2,
+    errorCode,
+    error: { path: errorPath || null, message },
+    summary: emptySummary(),
+    findings: [],
+  };
+}
+
+function baselineConfigurationError(root, baseline) {
+  if (baseline.authority === null && Array.isArray(baseline.entries) && baseline.entries.length === 0) {
+    return null;
+  }
+  if (baseline.schemaVersion !== 1) {
+    return { code: "BASELINE_SCHEMA_INVALID", message: "Baseline schemaVersion must equal 1." };
+  }
+  if (!baseline.authority || typeof baseline.authority !== "object"
+    || typeof baseline.authority.approvedBy !== "string" || !baseline.authority.approvedBy.trim()) {
+    return { code: "BASELINE_AUTHORITY_INVALID", message: "Baseline authority.approvedBy is required." };
+  }
+  const baseCommit = baseline.authority.baseCommit;
+  if (typeof baseCommit !== "string" || !/^[0-9a-f]{40}$/.test(baseCommit)) {
+    return { code: "BASELINE_BASE_COMMIT_INVALID", message: "Baseline authority.baseCommit must be a 40-character lowercase commit SHA." };
+  }
+  try {
+    runGit(root, ["rev-parse", "--verify", `${baseCommit}^{commit}`]);
+  } catch {
+    return { code: "BASELINE_BASE_COMMIT_UNRESOLVED", message: `Baseline authority.baseCommit cannot be resolved: ${baseCommit}` };
+  }
+  if (!Array.isArray(baseline.entries)) {
+    return { code: "BASELINE_ENTRIES_INVALID", message: "Baseline entries must be an array." };
+  }
+  return null;
+}
+
+function validateBaseline({
+  root, baseline, baseBaseline, baselinePath, fileSet, changed, changedPathSet, findings,
+}) {
+  const entries = baseline.entries || [];
+  const seenPaths = new Set();
+  const knownRules = new Set(Object.values(RULES));
+
+  if (baseBaseline && changedPathSet.has(baselinePath)) {
+    findings.push(makeFinding(
+      RULES.PROTECTED_BASELINE,
+      baselinePath,
+      "The reviewed baseline cannot change in ordinary documentation validation.",
+      "separately authorized baseline-governance change",
+      "baseline file changed",
+    ));
+  }
+  for (const legacyPath of (baseline.authority && baseline.authority.legacyPaths) || []) {
+    if (!entries.some((entry) => entry.path === legacyPath)) {
+      findings.push(makeFinding(
+        RULES.BASELINE_NEW,
+        legacyPath,
+        "Declared legacy inventory path has no exact reviewed baseline entry.",
+        "exact baseline entry",
+        "missing",
+      ));
+    }
+  }
+
+  for (const entry of entries) {
+    if (!entry || typeof entry.path !== "string" || !entry.path) {
+      findings.push(makeFinding(
+        RULES.PROTECTED_BASELINE, baselinePath,
+        "Baseline entry path must be a non-empty string.",
+        "exact repository-relative path", "invalid path",
+      ));
+      continue;
+    }
+    if (seenPaths.has(entry.path)) {
+      findings.push(makeFinding(
+        RULES.PROTECTED_BASELINE, entry.path,
+        "Baseline contains a duplicate path.", "one entry per exact path", entry.path,
+      ));
+    }
+    seenPaths.add(entry.path);
     if (/[?*[\]{}]/.test(entry.path) || entry.path.endsWith("/")) {
       findings.push(makeFinding(
-        RULES.BASELINE_GLOB,
-        entry.path,
+        RULES.BASELINE_GLOB, entry.path,
         "Baseline entries must use exact file paths.",
-        "exact repository-relative file path",
-        entry.path,
+        "exact repository-relative file path", entry.path,
       ));
       continue;
     }
     if (!BASELINE_CLASSIFICATIONS.has(entry.classification)) {
       findings.push(makeFinding(
-        RULES.PROTECTED_BASELINE,
-        entry.path,
+        RULES.PROTECTED_BASELINE, entry.path,
         "Baseline classification is not recognized.",
-        [...BASELINE_CLASSIFICATIONS].join(", "),
-        entry.classification,
+        [...BASELINE_CLASSIFICATIONS].join(", "), entry.classification,
       ));
     }
-    if (!fileSet.has(entry.path)) {
+    if (!Array.isArray(entry.rules)) {
       findings.push(makeFinding(
-        RULES.BASELINE_PATH,
-        entry.path,
+        RULES.PROTECTED_BASELINE, entry.path,
+        "Baseline entry rules must be an array.",
+        "array of known unique rule IDs", typeof entry.rules,
+      ));
+    } else {
+      const seenRules = new Set();
+      for (const ruleId of entry.rules) {
+        if (!knownRules.has(ruleId) || seenRules.has(ruleId)) {
+          findings.push(makeFinding(
+            RULES.PROTECTED_BASELINE, entry.path,
+            !knownRules.has(ruleId)
+              ? "Baseline entry references an unknown rule ID."
+              : "Baseline entry repeats a rule ID.",
+            "known unique rule IDs", ruleId,
+          ));
+        }
+        seenRules.add(ruleId);
+      }
+    }
+    if (!fileSet.has(entry.path)) {
+      if (isProtected(entry)) {
+        findings.push(makeFinding(
+          RULES.PROTECTED_PATH, entry.path,
+          "Protected baseline path is missing, deleted, or moved.",
+          "unchanged protected path", "missing",
+        ));
+      }
+      findings.push(makeFinding(
+        RULES.BASELINE_PATH, entry.path,
         "Baseline entry points to a missing path.",
-        "existing tracked document",
-        "missing",
+        "existing tracked document", "missing",
       ));
       continue;
     }
     if (!entry.reason || !entry.sourceFinding || !Array.isArray(entry.rules)) {
       findings.push(makeFinding(
-        RULES.PROTECTED_BASELINE,
-        entry.path,
+        RULES.PROTECTED_BASELINE, entry.path,
         "Baseline entry lacks required review provenance.",
-        "reason, sourceFinding, and rules",
-        "incomplete entry",
+        "reason, sourceFinding, and rules", "incomplete entry",
       ));
     }
     if (isProtected(entry)) {
       const bytes = fs.readFileSync(path.join(root, entry.path));
-      if (bytes.length !== entry.sizeBytes || sha256(bytes) !== entry.sha256) {
+      const digest = sha256(bytes);
+      if (bytes.length !== entry.sizeBytes || digest !== entry.sha256) {
         findings.push(makeFinding(
-          RULES.PROTECTED_HASH,
-          entry.path,
+          RULES.PROTECTED_HASH, entry.path,
           "Protected document bytes differ from the reviewed baseline.",
           `${entry.sizeBytes} bytes / ${entry.sha256}`,
-          `${bytes.length} bytes / ${sha256(bytes)}`,
+          `${bytes.length} bytes / ${digest}`,
         ));
       }
       if (changedPathSet.has(entry.path)) {
@@ -145,10 +299,60 @@ function validateBaseline({ root, baseline, fileSet, changedPathSet, findings })
           entry.classification === "ARCHIVED" ? RULES.PROTECTED_ARCHIVE_CHANGE : RULES.PROTECTED_HASH,
           entry.path,
           "Protected or archived evidence changed in the current diff.",
-          "unchanged protected bytes",
-          "changed",
+          "unchanged protected bytes", "changed",
         ));
       }
+    }
+  }
+
+  if (!baseBaseline) return;
+  const currentByPath = new Map(entries.map((entry) => [entry.path, entry]));
+  const baseEntries = baseBaseline.entries || [];
+  const baseByPath = new Map(baseEntries.map((entry) => [entry.path, entry]));
+  for (const baseEntry of baseEntries) {
+    const current = currentByPath.get(baseEntry.path);
+    if (!current && isProtected(baseEntry)) {
+      findings.push(makeFinding(
+        RULES.PROTECTED_PATH, baseEntry.path,
+        "Protected baseline entry was removed.", baseEntry.classification, "entry removed",
+      ));
+    }
+    if (current && isProtected(baseEntry) && !isProtected(current)) {
+      findings.push(makeFinding(
+        RULES.BASELINE_REGRESSION, baseEntry.path,
+        "Protected classification was weakened.", baseEntry.classification, current.classification,
+      ));
+    }
+    if (current && Array.isArray(baseEntry.rules) && Array.isArray(current.rules)) {
+      const addedRules = current.rules.filter((ruleId) => !baseEntry.rules.includes(ruleId));
+      if (addedRules.length) {
+        findings.push(makeFinding(
+          RULES.BASELINE_REGRESSION, baseEntry.path,
+          "Baseline rule exemptions increased.", "no new rule exemptions", addedRules.join(", "),
+        ));
+      }
+    }
+  }
+  for (const current of entries) {
+    if (!baseByPath.has(current.path)) {
+      findings.push(makeFinding(
+        RULES.BASELINE_REGRESSION, current.path,
+        "Baseline entry count increased in ordinary changed mode.",
+        "no new baseline entries", "entry added",
+      ));
+    }
+  }
+  for (const diff of changed) {
+    const oldEntry = diff.oldPath ? baseByPath.get(diff.oldPath) : baseByPath.get(diff.path);
+    const newEntry = currentByPath.get(diff.path);
+    if (((oldEntry && isProtected(oldEntry)) || (newEntry && isProtected(newEntry)))
+      && (diff.status === "D" || diff.status.startsWith("R") || diff.status.startsWith("C"))) {
+      findings.push(makeFinding(
+        RULES.PROTECTED_PATH, (oldEntry && oldEntry.path) || diff.oldPath || diff.path,
+        "Protected path was deleted, renamed, moved, or copied.",
+        "unchanged protected path",
+        `status=${diff.status}; oldPath=${diff.oldPath || diff.path}; newPath=${diff.path || "deleted"}`,
+      ));
     }
   }
 }
@@ -328,7 +532,32 @@ function validateLinks({ root, file, text, fileSet, headingsByFile, findings, su
       ));
       continue;
     }
-    const { target, anchor } = resolveLink(file, destination);
+    let resolved;
+    try {
+      resolved = resolveLink(file, destination);
+    } catch {
+      findings.push(makeFinding(
+        RULES.LINK_MISSING,
+        file,
+        "Documentation link contains invalid percent encoding.",
+        "valid URL encoding",
+        destination,
+        { line: link.line },
+      ));
+      continue;
+    }
+    const { target, anchor } = resolved;
+    if (target.startsWith("docs/archive/")
+      && /(?:current\s+authority|authoritative)/i.test(link.label)) {
+      findings.push(makeFinding(
+        RULES.LINK_ARCHIVE_CURRENT,
+        file,
+        "A current-authority link cannot target archived documentation.",
+        "active non-archive authority target",
+        target,
+        { line: link.line },
+      ));
+    }
     const targetExists = fileSet.has(target)
       || fs.existsSync(path.join(root, target));
     if (!targetExists) {
@@ -383,7 +612,17 @@ function validateAuthority({ root, fileSet, metadataByFile, findings }) {
     subjects.set(subject, index + 1);
     const match = cells[1].match(/\[[^\]]+\]\(([^)#]+)(?:#[^)]+)?\)/);
     if (!match) continue;
-    const target = path.posix.normalize(path.posix.join(path.posix.dirname(file), decodeURIComponent(match[1])));
+    let target;
+    try {
+      target = path.posix.normalize(path.posix.join(path.posix.dirname(file), decodeURIComponent(match[1])));
+    } catch {
+      findings.push(makeFinding(
+        RULES.LINK_MISSING, file,
+        "Authority-map link contains invalid percent encoding.",
+        "valid URL encoding", match[1], { line: index + 1 },
+      ));
+      continue;
+    }
     if (!fileSet.has(target)) {
       findings.push(makeFinding(
         RULES.AUTH_TARGET_MISSING,
@@ -418,136 +657,245 @@ function validateAuthority({ root, fileSet, metadataByFile, findings }) {
   }
 }
 
-function validateEvidenceJson({ root, file, json, fileSet, metadataByFile, findings, summary }) {
-  if (Array.isArray(json.files)) {
-    for (const entry of json.files) {
-      if (!entry || typeof entry.path !== "string" || !entry.sha256) continue;
-      summary.protectedHashesChecked += 1;
-      if (!fileSet.has(entry.path)) {
-        findings.push(makeFinding(
-          RULES.EVIDENCE_PAIR_MISSING,
-          file,
-          "Manifest-protected file is missing.",
-          entry.path,
-          "missing",
-          { pointer: "/files" },
-        ));
-        continue;
-      }
-      const bytes = fs.readFileSync(path.join(root, entry.path));
-      if (bytes.length !== entry.sizeBytes) {
-        findings.push(makeFinding(
-          RULES.EVIDENCE_SIZE,
-          entry.path,
-          "Recorded sizeBytes does not match actual bytes.",
-          entry.sizeBytes,
-          bytes.length,
-        ));
-      }
-      if (sha256(bytes) !== entry.sha256) {
-        findings.push(makeFinding(
-          RULES.EVIDENCE_HASH,
-          entry.path,
-          "Recorded SHA-256 does not match actual bytes.",
-          entry.sha256,
-          sha256(bytes),
-        ));
-      }
+function validateLifecycleNavigation({ root, fileSet, metadataByFile, findings }) {
+  const navigationPaths = ["docs/DOCUMENTATION_INDEX.md", "docs/AUTHORITATIVE_DOCUMENT_MAP.md"];
+  if (!navigationPaths.every((file) => fileSet.has(file))) return;
+  const navigationText = navigationPaths.map((file) => fs.readFileSync(path.join(root, file), "utf8"));
+  for (const [file, metadata] of metadataByFile.entries()) {
+    if (navigationPaths.includes(file)) continue;
+    const status = metadata.Status && metadata.Status.value;
+    const scope = metadata["Authoritative scope"] && metadata["Authoritative scope"].value;
+    if (status !== "CURRENT" || !scope || scope === "NONE") continue;
+    const relativeFromDocs = file.startsWith("docs/") ? file.slice("docs/".length) : file;
+    if (!navigationText.every((text) => text.includes(relativeFromDocs) || text.includes(file))) {
+      findings.push(makeFinding(
+        RULES.LIFECYCLE_AUTHORITY_SYNC,
+        file,
+        "CURRENT authoritative documentation is not synchronized across root navigation and authority map.",
+        "listed in DOCUMENTATION_INDEX.md and AUTHORITATIVE_DOCUMENT_MAP.md",
+        "navigation declaration missing",
+      ));
     }
   }
-  if (Array.isArray(json.evidenceFiles)) {
-    for (const entry of json.evidenceFiles) {
-      if (entry.path === file) {
+}
+
+function evidenceEntryValid(entry) {
+  return entry && typeof entry === "object" && !Array.isArray(entry)
+    && typeof entry.path === "string" && entry.path.length > 0
+    && Number.isInteger(entry.sizeBytes) && entry.sizeBytes >= 0
+    && typeof entry.sha256 === "string" && /^[0-9a-f]{64}$/.test(entry.sha256);
+}
+
+function validateEvidenceEntries({ root, file, list, pointer, fileSet, findings, summary, protectedList }) {
+  for (const [index, entry] of list.entries()) {
+    if (!evidenceEntryValid(entry)) {
+      findings.push(makeFinding(
+        RULES.EVIDENCE_ENTRY_MALFORMED,
+        file,
+        "Evidence entry does not match the required schema.",
+        "object with non-empty path, non-negative integer sizeBytes, and lowercase SHA-256",
+        JSON.stringify(entry),
+        { pointer: `${pointer}/${index}` },
+      ));
+      continue;
+    }
+    if (entry.path === file) {
+      findings.push(makeFinding(
+        RULES.EVIDENCE_SELF_HASH,
+        file,
+        "Evidence JSON must not hash itself (SELF_HASH_ENTRY_PRESENT).",
+        "self hash excluded",
+        entry.path,
+        { pointer: `${pointer}/${index}` },
+      ));
+      continue;
+    }
+    if (!fileSet.has(entry.path)) {
+      findings.push(makeFinding(
+        RULES.EVIDENCE_PAIR_MISSING,
+        file,
+        protectedList ? "Manifest-protected file is missing." : "Evidence file is missing.",
+        entry.path,
+        "missing",
+        { pointer: `${pointer}/${index}` },
+      ));
+      continue;
+    }
+    if (protectedList) summary.protectedHashesChecked += 1;
+    else summary.evidenceHashesChecked += 1;
+    const bytes = fs.readFileSync(path.join(root, entry.path));
+    const digest = sha256(bytes);
+    if (bytes.length !== entry.sizeBytes) {
+      findings.push(makeFinding(
+        RULES.EVIDENCE_SIZE,
+        entry.path,
+        "Recorded evidence size does not match actual bytes.",
+        entry.sizeBytes,
+        bytes.length,
+      ));
+    }
+    if (digest !== entry.sha256) {
+      findings.push(makeFinding(
+        RULES.EVIDENCE_HASH,
+        entry.path,
+        "Recorded evidence SHA-256 does not match actual bytes.",
+        entry.sha256,
+        digest,
+      ));
+    }
+  }
+}
+
+function evidencePairComparisons(json) {
+  const finalHead = json.finalPrHeadSha === null ? "PENDING" : json.finalPrHeadSha;
+  return [
+    ["Task", json.task],
+    ["Status", json.status],
+    ["Result", json.result],
+    ["Base SHA", json.baseSha],
+    ["Validated implementation SHA", json.validatedImplementationSha],
+    ["Final PR head SHA", finalHead],
+    ["Generated at", json.generatedAt],
+    ["Tests cases", json.tests && json.tests.cases],
+    ["Tests passed", json.tests && json.tests.passed],
+    ["Tests failed", json.tests && json.tests.failed],
+    ["Blocking findings", json.summary && json.summary.blockingFindings],
+    ["Baselined findings", json.summary && json.summary.baselinedFindings],
+    ["Changed files", json.gitBoundary && json.gitBoundary.changedFiles],
+    ["Files deleted", json.gitBoundary && json.gitBoundary.filesDeleted],
+    ["Files renamed", json.gitBoundary && json.gitBoundary.filesRenamed],
+    ["Files moved", json.gitBoundary && json.gitBoundary.filesMoved],
+    ["Line additions", json.gitBoundary && json.gitBoundary.lineAdditions],
+    ["Line deletions", json.gitBoundary && json.gitBoundary.lineDeletions],
+    ["Human review decision", json.humanReview && json.humanReview.decision],
+  ];
+}
+
+function validateSuccessEvidence(file, json, findings) {
+  const fail = (pointer, message, expected, actual) => findings.push(makeFinding(
+    RULES.EVIDENCE_FALSE_PASS, file, message, expected, actual, { pointer },
+  ));
+  const requiredObjects = ["validation", "tests", "gitBoundary", "humanReview"];
+  for (const key of requiredObjects) {
+    if (!json[key] || typeof json[key] !== "object" || Array.isArray(json[key])) {
+      fail(`/${key}`, "Successful evidence lacks a required gate object.", "object", "missing or invalid");
+    }
+  }
+  if (!json.validation || !json.tests || !json.gitBoundary || !json.humanReview) return;
+  if (!Number.isInteger(json.tests.cases) || json.tests.failed !== 0
+    || json.tests.passed !== json.tests.cases) {
+    fail("/tests", "Successful evidence contains failed or incomplete tests.",
+      "failed=0 and passed=cases", JSON.stringify(json.tests));
+  }
+  const requiredGates = [
+    "fullMode", "changedMode", "links", "authority", "evidencePairs",
+    "protectedEvidence", "baseline", "gitDiffCheck", "readOnlyDefault",
+  ];
+  for (const gate of requiredGates) {
+    if (json.validation[gate] !== "PASS") {
+      fail(`/validation/${gate}`, "Successful evidence gate is missing or not PASS.", "PASS", json.validation[gate]);
+    }
+  }
+  for (const key of ["filesDeleted", "filesRenamed", "filesMoved"]) {
+    if (json.gitBoundary[key] !== 0) {
+      fail(`/gitBoundary/${key}`, "Successful evidence exceeds its declared Git boundary.", 0, json.gitBoundary[key]);
+    }
+  }
+  const serialized = JSON.stringify(json.validation);
+  if (serialized.includes("NOT_RUN") || serialized.includes("BLOCKED")) {
+    fail("/validation", "Successful evidence contains an unexecuted or blocked validation.",
+      "all required validation facts executed", "NOT_RUN or BLOCKED");
+  }
+}
+
+function validateHumanReviewState(file, json, findings) {
+  if (!json.status || !json.humanReview) return;
+  const review = json.humanReview;
+  let valid = true;
+  if (json.status === "READY_FOR_HUMAN_REVIEW") {
+    valid = review.decision === "PENDING" && !review.reviewer && !review.reviewedAt;
+  } else if (["APPROVED", "CURRENT"].includes(json.status)) {
+    valid = review.decision === "APPROVE" && typeof review.reviewer === "string"
+      && review.reviewer.length > 0 && utcIso(review.reviewedAt);
+  }
+  if (!valid) {
+    findings.push(makeFinding(
+      RULES.EVIDENCE_FALSE_PASS,
+      file,
+      "Evidence lifecycle status conflicts with human-review metadata.",
+      "review state consistent with status",
+      JSON.stringify(review),
+      { pointer: "/humanReview" },
+    ));
+  }
+}
+
+function validateEvidenceJson({ root, file, json, fileSet, metadataByFile, findings, summary, historical = false }) {
+  if (Object.hasOwn(json, "files")) {
+    if (!Array.isArray(json.files)) {
+      findings.push(makeFinding(
+        RULES.EVIDENCE_ENTRY_MALFORMED, file,
+        "Evidence files field must be an array.", "array", typeof json.files,
+        { pointer: "/files" },
+      ));
+    } else {
+      validateEvidenceEntries({
+        root, file, list: json.files, pointer: "/files", fileSet, findings, summary, protectedList: true,
+      });
+    }
+  }
+  if (Object.hasOwn(json, "evidenceFiles")) {
+    if (!Array.isArray(json.evidenceFiles)) {
+      findings.push(makeFinding(
+        RULES.EVIDENCE_ENTRY_MALFORMED, file,
+        "Evidence files field must be an array.", "array", typeof json.evidenceFiles,
+        { pointer: "/evidenceFiles" },
+      ));
+    } else {
+      if (json.selfHash !== "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE") {
         findings.push(makeFinding(
-          RULES.EVIDENCE_SELF_HASH,
-          file,
-          "Evidence JSON must not hash itself.",
+          RULES.EVIDENCE_SELF_HASH, file,
+          json.selfHash === undefined ? "Evidence selfHash marker is missing (SELF_HASH_MARKER_MISSING)."
+            : "Evidence selfHash marker is invalid (SELF_HASH_MARKER_INVALID).",
           "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE",
-          file,
-          { pointer: "/evidenceFiles" },
-        ));
-        continue;
-      }
-      if (!fileSet.has(entry.path)) {
-        findings.push(makeFinding(
-          RULES.EVIDENCE_PAIR_MISSING,
-          file,
-          "Evidence file is missing.",
-          entry.path,
-          "missing",
-          { pointer: "/evidenceFiles" },
-        ));
-        continue;
-      }
-      summary.evidenceHashesChecked += 1;
-      const bytes = fs.readFileSync(path.join(root, entry.path));
-      if (bytes.length !== entry.sizeBytes) {
-        findings.push(makeFinding(
-          RULES.EVIDENCE_SIZE,
-          entry.path,
-          "Recorded evidence size does not match actual bytes.",
-          entry.sizeBytes,
-          bytes.length,
+          json.selfHash,
+          { pointer: "/selfHash" },
         ));
       }
-      if (sha256(bytes) !== entry.sha256) {
-        findings.push(makeFinding(
-          RULES.EVIDENCE_HASH,
-          entry.path,
-          "Recorded evidence SHA-256 does not match actual bytes.",
-          entry.sha256,
-          sha256(bytes),
-        ));
-      }
+      validateEvidenceEntries({
+        root, file, list: json.evidenceFiles, pointer: "/evidenceFiles", fileSet, findings, summary, protectedList: false,
+      });
     }
   }
+  if (historical) return;
   if (json.markdownReport) {
     summary.evidencePairsChecked += 1;
     if (!fileSet.has(json.markdownReport)) {
       findings.push(makeFinding(
-        RULES.EVIDENCE_PAIR_MISSING,
-        file,
-        "Declared Markdown evidence report is missing.",
-        json.markdownReport,
-        "missing",
+        RULES.EVIDENCE_PAIR_MISSING, file,
+        "Declared Markdown evidence report is missing.", json.markdownReport, "missing",
         { pointer: "/markdownReport" },
       ));
-      return;
-    }
-    const md = metadataByFile.get(json.markdownReport)
-      || parseMetadata(fs.readFileSync(path.join(root, json.markdownReport), "utf8"));
-    const comparisons = [
-      ["Task", json.task],
-      ["Status", json.status],
-      ["Result", json.result],
-      ["Base SHA", json.baseSha],
-      ["Generated at", json.generatedAt],
-    ];
-    const mismatches = comparisons.filter(([key, value]) => !md[key] || md[key].value !== value);
-    if (mismatches.length) {
-      findings.push(makeFinding(
-        RULES.EVIDENCE_PAIR_MISMATCH,
-        file,
-        "Markdown and JSON evidence fields differ.",
-        "task/status/result/baseSha/generatedAt match",
-        mismatches.map(([key]) => key).join(", "),
-        { pointer: "/" },
-      ));
+    } else {
+      const md = metadataByFile.get(json.markdownReport)
+        || parseMetadata(fs.readFileSync(path.join(root, json.markdownReport), "utf8"));
+      const mismatches = evidencePairComparisons(json).filter(([key, value]) =>
+        value === undefined || !md[key] || md[key].value !== String(value));
+      if (mismatches.length) {
+        findings.push(makeFinding(
+          RULES.EVIDENCE_PAIR_MISMATCH, file,
+          "Markdown and JSON evidence fields differ or are missing.",
+          "identity, SHA, test, summary, Git-boundary, and review fields match",
+          mismatches.map(([key]) => key).join(", "),
+          { pointer: "/" },
+        ));
+      }
     }
   }
-  if (json.result && json.result.startsWith("PASS_")) {
-    const serialized = JSON.stringify(json.validation || {});
-    if (serialized.includes("NOT_RUN") || serialized.includes("BLOCKED")) {
-      findings.push(makeFinding(
-        RULES.EVIDENCE_FALSE_PASS,
-        file,
-        "PASS result contains an unexecuted or blocked validation.",
-        "all required validation facts executed",
-        "NOT_RUN or BLOCKED",
-        { pointer: "/validation" },
-      ));
-    }
-  }
+  const successful = typeof json.result === "string"
+    && (json.result.startsWith("PASS_") || json.result.startsWith("READY_"));
+  if (successful) validateSuccessEvidence(file, json, findings);
+  validateHumanReviewState(file, json, findings);
 }
 
 function applyBaseline(findings, baselineByPath, strictPaths) {
@@ -561,39 +909,72 @@ function applyBaseline(findings, baselineByPath, strictPaths) {
   }
 }
 
-function validateRepository(options = {}) {
+function validateRepositoryUnsafe(options = {}) {
   const root = path.resolve(options.root || process.cwd());
   const mode = options.mode || "full";
   const baselinePath = options.baselinePath || "docs/documentation-validation-baseline.json";
+  if (!["full", "changed"].includes(mode)) {
+    return blockedResult(
+      mode,
+      "BLOCKED_DOCUMENTATION_VALIDATION_USAGE",
+      "UNSUPPORTED_MODE",
+      null,
+      `Unsupported mode: ${mode}`,
+    );
+  }
   let changed = [];
   try {
     if (mode === "changed") changed = parseChangedFiles(root, options.base);
   } catch (error) {
-    return {
+    return blockedResult(
       mode,
-      result: "BLOCKED_DOCUMENTATION_VALIDATION_BASE_UNRESOLVED",
-      exitCode: 2,
-      findings: [],
-      summary: { documents: 0, linksChecked: 0, blockingFindings: 0, baselinedFindings: 0 },
-      error: error.message,
-    };
-  }
-  if (!["full", "changed"].includes(mode)) {
-    return {
-      mode,
-      result: "BLOCKED_DOCUMENTATION_VALIDATION_USAGE",
-      exitCode: 2,
-      findings: [],
-      summary: { documents: 0, linksChecked: 0, blockingFindings: 0, baselinedFindings: 0 },
-      error: `Unsupported mode: ${mode}`,
-    };
+      "BLOCKED_DOCUMENTATION_VALIDATION_BASE_UNRESOLVED",
+      error.code || "BASE_UNRESOLVED",
+      null,
+      error.message,
+    );
   }
 
-  const allFiles = discoverFiles(root);
+  let baseline;
+  let baseBaseline = null;
+  try {
+    baseline = readBaseline(root, baselinePath);
+    if (mode === "changed") baseBaseline = readBaselineAtRef(root, options.base, baselinePath);
+  } catch (error) {
+    return blockedResult(
+      mode,
+      "BLOCKED_DOCUMENTATION_VALIDATION_CONFIGURATION",
+      error.code || "BASELINE_READ_FAILED",
+      error.path || baselinePath,
+      error.message,
+    );
+  }
+  const baselineError = baselineConfigurationError(root, baseline);
+  if (baselineError) {
+    return blockedResult(
+      mode,
+      "BLOCKED_DOCUMENTATION_VALIDATION_CONFIGURATION",
+      baselineError.code,
+      baselinePath,
+      baselineError.message,
+    );
+  }
+
+  let allFiles;
+  try {
+    allFiles = discoverFiles(root);
+  } catch (error) {
+    return blockedResult(
+      mode,
+      "BLOCKED_DOCUMENTATION_VALIDATION_IO",
+      "FILE_DISCOVERY_FAILED",
+      null,
+      error.message,
+    );
+  }
   const documentFiles = allFiles.filter((file) => file === "README.md"
     || (file.startsWith("docs/") && /\.(md|json)$/.test(file)));
   const fileSet = new Set(allFiles);
-  const baseline = readBaseline(root, baselinePath);
   const baselineByPath = new Map((baseline.entries || []).map((entry) => [entry.path, entry]));
   const changedPathSet = new Set();
   for (const entry of changed) {
@@ -617,8 +998,29 @@ function validateRepository(options = {}) {
     evidencePairsChecked: 0,
     evidenceHashesChecked: 0,
     protectedHashesChecked: 0,
+    rulesDefined: Object.values(RULES).length,
+    rulesImplemented: IMPLEMENTED_RULES.size,
   };
-  validateBaseline({ root, baseline, fileSet, changedPathSet, findings });
+  try {
+    validateBaseline({
+      root,
+      baseline,
+      baseBaseline,
+      baselinePath,
+      fileSet,
+      changed,
+      changedPathSet,
+      findings,
+    });
+  } catch (error) {
+    return blockedResult(
+      mode,
+      "BLOCKED_DOCUMENTATION_VALIDATION_IO",
+      "PROTECTED_FILE_READ_FAILED",
+      null,
+      error.message,
+    );
+  }
   const metadataByFile = new Map();
   const headingsByFile = new Map();
 
@@ -630,7 +1032,9 @@ function validateRepository(options = {}) {
         try {
           const json = JSON.parse(fs.readFileSync(absolute, "utf8"));
           if (Array.isArray(json.files)) {
-            validateEvidenceJson({ root, file, json, fileSet, metadataByFile, findings, summary });
+            validateEvidenceJson({
+              root, file, json, fileSet, metadataByFile, findings, summary, historical: true,
+            });
           }
         } catch (error) {
           findings.push(makeFinding(
@@ -671,6 +1075,7 @@ function validateRepository(options = {}) {
   }
 
   validateAuthority({ root, fileSet, metadataByFile, findings });
+  validateLifecycleNavigation({ root, fileSet, metadataByFile, findings });
   if (mode === "changed") {
     for (const entry of changed) {
       if (entry.status === "D") {
@@ -678,7 +1083,12 @@ function validateRepository(options = {}) {
           const text = fs.readFileSync(path.join(root, file), "utf8");
           for (const link of parseLinks(text)) {
             if (/^(https?:|mailto:)/i.test(link.destination)) continue;
-            const target = resolveLink(file, link.destination).target;
+            let target;
+            try {
+              target = resolveLink(file, link.destination).target;
+            } catch {
+              continue;
+            }
             if (target === entry.path) {
               findings.push(makeFinding(
                 RULES.LINK_DELETED_TARGET,
@@ -744,8 +1154,30 @@ function validateRepository(options = {}) {
   };
 }
 
+function validateRepository(options = {}) {
+  const root = path.resolve(options.root || process.cwd());
+  const mode = options.mode || "full";
+  try {
+    return validateRepositoryUnsafe(options);
+  } catch (error) {
+    let errorPath = null;
+    if (typeof error.path === "string") {
+      const relative = path.relative(root, error.path);
+      if (relative && !relative.startsWith("..") && !path.isAbsolute(relative)) errorPath = toPosix(relative);
+    }
+    return blockedResult(
+      mode,
+      "BLOCKED_DOCUMENTATION_VALIDATION_INTERNAL_ERROR",
+      "DOCUMENTATION_VALIDATOR_INTERNAL_ERROR",
+      errorPath,
+      error.message || String(error),
+    );
+  }
+}
+
 module.exports = {
   discoverFiles,
+  evidenceEntryValid,
   sha256,
   validateRepository,
 };

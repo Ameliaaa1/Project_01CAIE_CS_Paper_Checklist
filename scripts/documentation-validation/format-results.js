@@ -21,6 +21,11 @@ function formatText(result) {
     `Links: ${result.summary.linksChecked}`,
     `Findings: ${result.summary.blockingFindings} blocking, ${result.summary.baselinedFindings} baselined`,
   ];
+  if (result.errorCode) lines.push(`Error code: ${result.errorCode}`);
+  if (result.error) {
+    if (result.error.path) lines.push(`Error path: ${result.error.path}`);
+    lines.push(`Error: ${result.error.message}`);
+  }
   for (const finding of result.findings) {
     const location = finding.line ? `:${finding.line}` : finding.pointer ? `:${finding.pointer}` : "";
     lines.push(

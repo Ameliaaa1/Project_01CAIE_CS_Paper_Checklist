@@ -63,9 +63,12 @@ Full mode validates:
 ### Changed
 
 Changed mode requires a resolvable `--base` and reads
-`git diff --name-status <base>...HEAD`. New or modified documents are strict,
+`git diff --find-renames --name-status <base>...HEAD`. New or modified documents are strict,
 even when their previous form had a legacy baseline entry. Protected or
-archived changes block the run.
+archived modifications, deletions, renames, moves, and copies block the run.
+The test suite exercises these paths in real temporary Git repositories with
+local test-only identity configuration and actual base commits; it does not
+mock Git diff output.
 
 An absent or invalid base returns exit code 2 and
 `BLOCKED_DOCUMENTATION_VALIDATION_BASE_UNRESOLVED`.
@@ -94,6 +97,10 @@ An absent or invalid base returns exit code 2 and
 Every finding includes a stable rule ID, severity, path, location, expected
 value, actual value, and baseline status.
 
+The rule registry contains 41 defined rules. PR-05-R1 requires all 41 to have
+an explicit implementation path and a targeted blocking test. Reserved rules
+are not permitted: `rulesDefined = rulesImplemented = rulesTested = 41`.
+
 ## Baseline Governance
 
 The baseline is [documentation-validation-baseline.json](documentation-validation-baseline.json).
@@ -109,6 +116,14 @@ Directory globs and wildcard exemptions are forbidden. A changed document
 cannot use its legacy entry to bypass strict validation. The validator never
 adds, removes, or updates baseline entries.
 
+The baseline is itself governed configuration. It must use schema version 1,
+provide a non-empty approval authority and a resolvable 40-character base
+commit, contain unique exact paths and known unique rule IDs, and preserve all
+protected classifications. Any ordinary changed-mode modification to the
+baseline blocks. Entry additions, exemption growth, protected-entry removal,
+and classification weakening also block. There is deliberately no automatic
+authorization channel for baseline changes.
+
 Baseline changes require an independently reviewed governance decision. A
 fixed legacy violation should be removed explicitly rather than silently
 retained.
@@ -119,6 +134,8 @@ The parser supports ATX headings, inline links, reference-style links, URL
 encoding, relative paths, duplicate heading slugs, and repository anchors.
 Fenced code blocks are excluded from link parsing. HTTP and HTTPS links are
 not fetched; CI has no network-validation dependency.
+Malformed percent encoding becomes a path-and-line-specific `DOC-LINK-001`
+finding rather than an uncaught exception.
 
 ## Evidence and Hash Rules
 
@@ -129,7 +146,25 @@ must not hash itself and must use
 
 Historical pairs are preserved by their reviewed bytes and manifests. New
 pairs declare their Markdown report explicitly and must agree on task,
-status, result, base SHA, and generated time.
+status, result, base SHA, validated implementation SHA, final PR head state,
+generated time, test totals, finding totals, Git boundary, and human-review
+decision.
+
+Every `files` or `evidenceFiles` entry must be an object with a non-empty path,
+a non-negative integer `sizeBytes`, and a 64-character lowercase hexadecimal
+`sha256`. Malformed entries block as `DOC-EVIDENCE-008`; none are silently
+ignored. Evidence containing `evidenceFiles` must include exactly:
+
+```text
+selfHash = SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE
+```
+
+Successful evidence requires validation, tests, Git-boundary, and human-review
+objects; zero failed tests; `passed = cases`; every required validation gate
+equal to `PASS`; zero deleted, renamed, or moved files; and a review decision
+consistent with lifecycle status. `READY_FOR_HUMAN_REVIEW` requires `PENDING`
+without reviewer timestamps. Approval evidence requires a named reviewer and a
+valid UTC reviewed time.
 
 ## CI Behavior
 
@@ -150,6 +185,13 @@ Use the rule ID and path in the finding to correct the source. Do not weaken a
 rule, broaden the baseline, edit archive evidence, or change a PASS field to
 hide a failure. If a historical exception genuinely requires revision, stop
 and obtain an explicit baseline-governance review.
+
+Configuration, base-resolution, I/O, and unexpected execution failures use a
+structured exit-code-2 result with `errorCode`, repository-relative `path`
+when available, and `message`. Invalid baseline JSON is reported as
+`BASELINE_JSON_INVALID`. The CLI has a final structured internal-error guard
+and does not intentionally expose a stack trace. Text and JSON formats express
+the same error facts.
 
 Automation reports validation facts only. It cannot grant human approval or
 write Reviewer or reviewedAt metadata.

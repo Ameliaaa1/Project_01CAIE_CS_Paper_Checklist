@@ -60,18 +60,35 @@ function main() {
     process.stdout.write(`${usage()}\n`);
     return;
   }
-  const result = validateRepository({
-    root: process.cwd(),
-    mode: options.mode,
-    base: options.base,
-  });
-  const json = `${JSON.stringify(result, null, 2)}\n`;
-  process.stdout.write(options.format === "json" ? json : formatText(result));
-  if (options.jsonOutput) {
-    const output = path.resolve(options.jsonOutput);
-    fs.writeFileSync(output, json, "utf8");
+  try {
+    const result = validateRepository({
+      root: process.cwd(),
+      mode: options.mode,
+      base: options.base,
+    });
+    const json = `${JSON.stringify(result, null, 2)}\n`;
+    process.stdout.write(options.format === "json" ? json : formatText(result));
+    if (options.jsonOutput) {
+      const output = path.resolve(options.jsonOutput);
+      fs.writeFileSync(output, json, "utf8");
+    }
+    process.exitCode = result.exitCode;
+  } catch (error) {
+    const result = {
+      schemaVersion: 1,
+      mode: options.mode,
+      result: "BLOCKED_DOCUMENTATION_VALIDATION_INTERNAL_ERROR",
+      exitCode: 2,
+      errorCode: "CLI_INTERNAL_ERROR",
+      error: { path: null, message: error.message || String(error) },
+      summary: { documents: 0, linksChecked: 0, blockingFindings: 0, baselinedFindings: 0 },
+      findings: [],
+    };
+    process.stderr.write(options.format === "json"
+      ? `${JSON.stringify(result, null, 2)}\n`
+      : formatText(result));
+    process.exitCode = 2;
   }
-  process.exitCode = result.exitCode;
 }
 
 if (require.main === module) main();

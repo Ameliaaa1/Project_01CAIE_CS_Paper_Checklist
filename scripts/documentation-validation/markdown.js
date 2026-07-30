@@ -26,7 +26,7 @@ function parseMetadata(text) {
   const lines = text.split(/\r?\n/).slice(0, 60);
   for (let index = 0; index < lines.length; index += 1) {
     const match = lines[index].match(
-      /^(Status|Result|Task|Owner|Created at|Authoritative scope|Related documents|Approval|Effective upon merge|Reviewer|Reviewed at|Superseded by|Superseded at|Replacement commit or PR|Base SHA|Head SHA|Initial audit generated at|Generated at):\s*(.*)$/,
+      /^(Status|Result|Task|Owner|Created at|Authoritative scope|Related documents|Approval|Effective upon merge|Reviewer|Reviewed at|Superseded by|Superseded at|Replacement commit or PR|Base SHA|Head SHA|Validated implementation SHA|Final PR head SHA|Initial audit generated at|Generated at|Tests cases|Tests passed|Tests failed|Blocking findings|Baselined findings|Changed files|Files deleted|Files renamed|Files moved|Line additions|Line deletions|Human review decision):\s*(.*)$/,
     );
     if (!match) continue;
     const key = match[1];
