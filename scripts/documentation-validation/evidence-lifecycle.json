@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "legacyMixedEvidenceSources": [
+    "docs/repository-maintenance/pr-02a/pr02a-plan-manifest.json",
+    "docs/repository-maintenance/pr-02b/pr02b-execution-manifest.json",
+    "docs/repository-maintenance/pr-02b/pr02b-post-merge-verification-manifest.json",
+    "docs/repository-maintenance/pr-04/pr04-document-standardization-audit.json",
+    "docs/repository-maintenance/pr-05/pr05-documentation-validation-report.json"
+  ],
+  "activeAuthorityPaths": [
+    ".github/workflows/documentation-validation.yml",
+    "docs/AUTHORITATIVE_DOCUMENT_MAP.md",
+    "docs/DOCUMENTATION_INDEX.md",
+    "docs/DOCUMENTATION_VALIDATION.md",
+    "docs/documentation-validation-baseline.json",
+    "package.json",
+    "scripts/validate-documentation.js",
+    "tests/documentation-validation.test.js"
+  ],
+  "activeAuthorityPrefixes": [
+    "scripts/documentation-validation/",
+    "tests/fixtures/documentation-validation/"
+  ],
+  "historicalEvidence": [
+    {
+      "path": "docs/repository-maintenance/pr-05/PR05_DOCUMENTATION_VALIDATION_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 6570,
+      "sha256": "6c5b9d19c731d638bb6c111ccf553553b3937305338334994fefc14c0067b1a6"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-05/pr05-documentation-validation-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 9029,
+      "sha256": "e2d59e453e6c05abb2a4b83267614af3dc80e5fd446399625ed90eaa5dfad0f0"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06-r1a/PR06_R1A_APPROVAL_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2128,
+      "sha256": "e93453360cd0374fcd5afd21a6ed80e75f8bf6ae6e611848243fe4c55bc83821"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06-r1a/PR06_R1A_EVIDENCE_LIFECYCLE_GOVERNANCE_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 3495,
+      "sha256": "d5df392e6446ae0a86acf96af1ebc21c56656122d0ca11c4a6d99f460a042c94"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06-r1a/PR06_R1A_HUMAN_REVIEW.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2291,
+      "sha256": "4c67b6984f8325e8a46c62def87c38b6d7b01c81b1987aeadd989ba3af4eca5d"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06-r1a/pr06-r1a-evidence-lifecycle-governance-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 7018,
+      "sha256": "1e7ca02bc90cecd0bae7b3e2c64d4ce620709d8de147c59209cfe37559aed984"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06-r1a/pr06-r1a-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 3294,
+      "sha256": "e5a2638aec0c0b67cbaf6029ea6d7a5916b51f80cbdee6e84f99c320c7b8c967"
+    }
+  ]
+}

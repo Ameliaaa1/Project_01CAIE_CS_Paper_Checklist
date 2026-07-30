@@ -158,6 +158,27 @@ function baseline(anchor, entries = [], authority = {}) {
   })}\n`;
 }
 
+function evidenceLifecycle(overrides = {}) {
+  return `${JSON.stringify({
+    schemaVersion: 1,
+    legacyMixedEvidenceSources: [],
+    activeAuthorityPaths: [],
+    activeAuthorityPrefixes: [],
+    historicalEvidence: [],
+    ...overrides,
+  })}\n`;
+}
+
+function historicalLifecycleEntry(file, content) {
+  const bytes = Buffer.from(content);
+  return {
+    path: file,
+    evidenceClass: "historical",
+    sizeBytes: bytes.length,
+    sha256: crypto.createHash("sha256").update(bytes).digest("hex"),
+  };
+}
+
 function legacyEntry(file = "README.md", rules = ["DOC-META-001"]) {
   return {
     path: file,
@@ -255,6 +276,65 @@ register("malformed JSON blocks", "regression", () => assertFixtureRule("malform
 register("evidence pair mismatch blocks", "evidence", () => assertFixtureRule("evidence-pair-mismatch", RULES.EVIDENCE_PAIR_MISMATCH));
 register("stale recorded hash blocks", "evidence", () => assertFixtureRule("stale-hash", RULES.EVIDENCE_HASH));
 register("JSON self-hash blocks", "evidence", () => assertFixtureRule("self-hash", RULES.EVIDENCE_SELF_HASH));
+register("modified historical evidence blocks", "evidence-lifecycle", () =>
+  assertFixtureRule("historical-evidence-modified", RULES.EVIDENCE_HASH));
+register("modified active authority passes when current validation passes", "evidence-lifecycle", () =>
+  assertResult(runFixture("active-authority-modified"), 0, "PASS_DOCUMENTATION_VALIDATION"));
+register("missing evidenceClass blocks", "evidence-lifecycle", () =>
+  assertFixtureRule("missing-evidence-class", RULES.EVIDENCE_CLASS_MISSING));
+register("invalid evidenceClass blocks", "evidence-lifecycle", () =>
+  assertFixtureRule("invalid-evidence-class", RULES.EVIDENCE_CLASS_INVALID));
+register("active authority marked historical blocks", "evidence-lifecycle", () =>
+  assertFixtureRule("active-marked-historical", RULES.EVIDENCE_CLASS_CONFLICT));
+register("registered legacy source inference passes", "evidence-lifecycle-governance", () =>
+  assertResult(runFixture("registered-legacy-inference"), 0, "PASS_DOCUMENTATION_VALIDATION"));
+register("historical lifecycle entry deletion blocks", "evidence-lifecycle-governance", () => {
+  const content = "frozen\n";
+  const result = runChanged({
+    "docs/HISTORICAL.txt": content,
+    "scripts/documentation-validation/evidence-lifecycle.json": evidenceLifecycle({
+      historicalEvidence: [historicalLifecycleEntry("docs/HISTORICAL.txt", content)],
+    }),
+  }, (root) => fs.writeFileSync(
+    path.join(root, "scripts/documentation-validation/evidence-lifecycle.json"),
+    evidenceLifecycle(),
+  ));
+  assertFinding(result, RULES.EVIDENCE_HISTORICAL_REMOVED);
+});
+register("historical classification downgrade blocks", "evidence-lifecycle-governance", () => {
+  const content = "frozen\n";
+  const target = "docs/HISTORICAL.txt";
+  const result = runChanged({
+    [target]: content,
+    "scripts/documentation-validation/evidence-lifecycle.json": evidenceLifecycle({
+      historicalEvidence: [historicalLifecycleEntry(target, content)],
+    }),
+  }, (root) => fs.writeFileSync(
+    path.join(root, "scripts/documentation-validation/evidence-lifecycle.json"),
+    evidenceLifecycle({ activeAuthorityPaths: [target] }),
+  ));
+  assertFinding(result, RULES.EVIDENCE_HISTORICAL_WEAKENED);
+});
+register("active authority prefix expansion blocks", "evidence-lifecycle-governance", () => {
+  const result = runChanged({
+    "scripts/documentation-validation/evidence-lifecycle.json": evidenceLifecycle(),
+  }, (root) => fs.writeFileSync(
+    path.join(root, "scripts/documentation-validation/evidence-lifecycle.json"),
+    evidenceLifecycle({ activeAuthorityPrefixes: ["scripts/new-authority/"] }),
+  ));
+  assertFinding(result, RULES.EVIDENCE_ACTIVE_BOUNDARY_BROADENED);
+});
+register("legacy inference source expansion blocks", "evidence-lifecycle-governance", () => {
+  const result = runChanged({
+    "scripts/documentation-validation/evidence-lifecycle.json": evidenceLifecycle(),
+  }, (root) => fs.writeFileSync(
+    path.join(root, "scripts/documentation-validation/evidence-lifecycle.json"),
+    evidenceLifecycle({ legacyMixedEvidenceSources: ["docs/new-legacy.json"] }),
+  ));
+  assertFinding(result, RULES.EVIDENCE_LEGACY_SOURCE_EXPANDED);
+});
+register("active authority immutable snapshot fields block", "evidence-lifecycle-governance", () =>
+  assertFixtureRule("active-authority-snapshot-fields", RULES.EVIDENCE_ACTIVE_SNAPSHOT_FIELDS));
 register("baseline regression blocks", "baseline", () => assertFixtureRule("baseline-regression", RULES.META_OWNER));
 register("fixed violation still in baseline blocks", "baseline", () => assertFixtureRule("baseline-stale", RULES.BASELINE_STALE));
 register("unchanged legacy baseline passes with findings", "baseline", () => {
@@ -316,19 +396,19 @@ register("authority target state blocks", "rule-closure", () => assertFinding(ru
   "docs/DRAFT.md": validDocument("Draft", "DRAFT"),
 }), RULES.AUTH_TARGET_STATE));
 register("missing evidence target blocks", "evidence", () => assertFinding(runFiles({
-  "docs/missing-target.json": `${JSON.stringify({ files: [{ path: "docs/MISSING.md", sizeBytes: 1, sha256: "0".repeat(64) }] })}\n`,
+  "docs/missing-target.json": `${JSON.stringify({ files: [{ path: "docs/MISSING.md", evidenceClass: "historical", sizeBytes: 1, sha256: "0".repeat(64) }] })}\n`,
 }), RULES.EVIDENCE_PAIR_MISSING));
 register("evidence size mismatch blocks", "evidence", () => assertFinding(runFiles({
   "docs/TARGET.md": "x",
-  "docs/size.json": `${JSON.stringify({ files: [{ path: "docs/TARGET.md", sizeBytes: 2, sha256: crypto.createHash("sha256").update("x").digest("hex") }] })}\n`,
+  "docs/size.json": `${JSON.stringify({ files: [{ path: "docs/TARGET.md", evidenceClass: "historical", sizeBytes: 2, sha256: crypto.createHash("sha256").update("x").digest("hex") }] })}\n`,
 }), RULES.EVIDENCE_SIZE));
 
 for (const [name, entry] of [
-  ["evidence-entry-missing-path", { sizeBytes: 0, sha256: "0".repeat(64) }],
-  ["evidence-entry-missing-size", { path: "docs/X.md", sha256: "0".repeat(64) }],
-  ["evidence-entry-missing-sha", { path: "docs/X.md", sizeBytes: 0 }],
-  ["evidence-entry-invalid-size", { path: "docs/X.md", sizeBytes: "0", sha256: "0".repeat(64) }],
-  ["evidence-entry-invalid-sha", { path: "docs/X.md", sizeBytes: 0, sha256: "INVALID" }],
+  ["evidence-entry-missing-path", { evidenceClass: "historical", sizeBytes: 0, sha256: "0".repeat(64) }],
+  ["evidence-entry-missing-size", { path: "docs/X.md", evidenceClass: "historical", sha256: "0".repeat(64) }],
+  ["evidence-entry-missing-sha", { path: "docs/X.md", evidenceClass: "historical", sizeBytes: 0 }],
+  ["evidence-entry-invalid-size", { path: "docs/X.md", evidenceClass: "historical", sizeBytes: "0", sha256: "0".repeat(64) }],
+  ["evidence-entry-invalid-sha", { path: "docs/X.md", evidenceClass: "historical", sizeBytes: 0, sha256: "INVALID" }],
 ]) register(name, "evidence", () => assertFinding(runFiles({
   [`docs/${name}.json`]: `${JSON.stringify({ files: [entry] })}\n`,
 }), RULES.EVIDENCE_ENTRY_MALFORMED));

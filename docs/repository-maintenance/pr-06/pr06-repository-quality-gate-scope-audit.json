@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "task": "PR-06",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "result": "READY_PR06_REPOSITORY_QUALITY_GATE_SCOPE_AUDIT_FOR_HUMAN_REVIEW",
+  "baseSha": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "validatedImplementationSha": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "finalPrHeadSha": null,
+  "initialAuditGeneratedAt": "2026-07-30T07:09:43Z",
+  "generatedAt": "2026-07-30T10:16:05Z",
+  "markdownReport": "docs/repository-maintenance/pr-06/PR06_REPOSITORY_QUALITY_GATE_SCOPE_AUDIT.md",
+  "inventory": {
+    "trackedFiles": 307,
+    "packageScripts": 18,
+    "npmTestEntrypoints": 11,
+    "trackedScripts": 6,
+    "githubActionsWorkflows": 1,
+    "trackedPdfs": 196,
+    "requiredDomains": 15,
+    "domainsCovered": 15,
+    "discoveredEntrypoints": 26,
+    "classifiedEntrypoints": 26,
+    "unclassifiedEntrypoints": 0
+  },
+  "coverage": {
+    "coveredStrict": 2,
+    "coveredPartial": 12,
+    "coveredManual": 2,
+    "scriptExistsNotGated": 0,
+    "historicalEvidenceOnly": 4,
+    "mutatingNotSafeForCi": 2,
+    "noActiveGate": 4,
+    "notApplicable": 0,
+    "blockedUnknown": 0
+  },
+  "risk": {
+    "p0": 7,
+    "p1": 15,
+    "p2": 4,
+    "p3": 0,
+    "p0WithoutOwner": 0,
+    "p0WithoutOnePrBoundary": 0
+  },
+  "mutability": {
+    "readOnly": 18,
+    "writesRuntimeData": 6,
+    "writesGeneratedArtifact": 2,
+    "writesCandidateData": 0,
+    "writesProductionData": 0,
+    "unknownMutability": 0,
+    "notRunEntries": 10
+  },
+  "currentCi": {
+    "workflow": ".github/workflows/documentation-validation.yml",
+    "permissions": "contents: read",
+    "documentationFullMode": true,
+    "documentationChangedModeOnPullRequests": true,
+    "projectNpmTest": true,
+    "candidateGate": false,
+    "productionGate": false,
+    "syllabusBoundaryGate": false,
+    "pdfIntegrityGate": false,
+    "generatedIndexFreshnessGate": false
+  },
+  "recommendedFirstImplementation": {
+    "target": "Candidate-to-Production Promotion Gate",
+    "proposedPr": "PR-06C",
+    "dependencyStatus": "WAITING_FOR_PR06-R1A_HUMAN_REVIEW",
+    "humanApprovalRequired": true,
+    "authorized": false
+  },
+  "tests": {
+    "command": "npm run test:documentation-validation",
+    "cases": 90,
+    "passed": 90,
+    "failed": 0,
+    "projectTestCommand": "npm test",
+    "initialProjectTestResult": "ENVIRONMENT_PREREQUISITE_MISSING_PDF_LIB",
+    "dependencyInstallCommand": "npm ci",
+    "dependencyInstallResult": "PASS_13_PACKAGES_0_VULNERABILITIES",
+    "projectTestResultAfterInstall": "PASS"
+  },
+  "validation": {
+    "fullMode": "PASS",
+    "changedMode": "PASS",
+    "links": "PASS",
+    "authority": "PASS",
+    "evidencePairs": "PASS",
+    "protectedEvidence": "PASS",
+    "baseline": "PASS",
+    "gitDiffCheck": "PASS",
+    "readOnlyDefault": "PASS",
+    "jsonParse": "PASS",
+    "matrixConsistency": "PASS_26_OF_26",
+    "uniqueGateIds": "PASS_26_OF_26",
+    "requiredDomains": "PASS_15_OF_15",
+    "entrypointPaths": "PASS_ALL",
+    "strictGateContracts": "PASS_2_OF_2",
+    "mutatingFilesWritten": "PASS_8_OF_8",
+    "p0Boundaries": "PASS_7_OF_7",
+    "historicalEvidence": "PASS_4_OF_4",
+    "notRunReasons": "PASS_10_OF_10",
+    "evidenceHashes": "PASS_4_OF_4"
+  },
+  "summary": {
+    "blockingFindings": 0,
+    "baselinedFindings": 15,
+    "classified": 26,
+    "unclassified": 0
+  },
+  "scope": {
+    "codeChanges": 3,
+    "testChanges": 10,
+    "workflowChanges": 0,
+    "packageJsonChanges": 0,
+    "archiveChanges": 0,
+    "productionChanges": 0,
+    "candidateChanges": 0,
+    "pdfChanges": 0
+  },
+  "gitBoundary": {
+    "changedFiles": 25,
+    "filesDeleted": 0,
+    "filesRenamed": 0,
+    "filesMoved": 0,
+    "lineAdditions": 2066,
+    "lineDeletions": 25,
+    "codeChanges": 3,
+    "testChanges": 10,
+    "workflowChanges": 0,
+    "packageJsonChanges": 0,
+    "archiveChanges": 0,
+    "productionChanges": 0,
+    "candidateChanges": 0,
+    "pdfChanges": 0,
+    "safetyBackupModified": false
+  },
+  "evidenceFiles": [
+    {"path":"docs/repository-maintenance/pr-06/PR06_HUMAN_REVIEW.md","evidenceClass":"historical","sizeBytes":4416,"sha256":"e320b1f0d598a03591eb71c706b1e44c704def47950295b30c274919b8370e73"},
+    {"path":"docs/repository-maintenance/pr-06/PR06_QUALITY_GATE_COVERAGE_MATRIX.md","evidenceClass":"historical","sizeBytes":12912,"sha256":"ea49d411a02942524337b509d36df3ca9ae5afbfd0b6747f3eb4232f8803581d"},
+    {"path":"docs/repository-maintenance/pr-06/PR06_REPOSITORY_QUALITY_GATE_SCOPE_AUDIT.md","evidenceClass":"historical","sizeBytes":10029,"sha256":"8ebf6329e5ae252b53658b26d635e8443015d2eccab34fa0c088aebb950c4366"},
+    {"path":"docs/repository-maintenance/pr-06/pr06-quality-gate-coverage-matrix.json","evidenceClass":"historical","sizeBytes":38335,"sha256":"fe5b5b623f7db80f17a809947a6d9aacd15b1de5d9f441dc1a3a7b5d355ae9f6"}
+  ],
+  "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE",
+  "humanReview": {
+    "required": true,
+    "decision": "PENDING",
+    "reviewer": null,
+    "reviewedAt": null,
+    "approvedFirstImplementationTarget": null,
+    "approvedImplementationPr": null
+  }
+}
