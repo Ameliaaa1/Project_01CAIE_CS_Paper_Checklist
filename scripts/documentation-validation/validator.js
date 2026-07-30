@@ -207,6 +207,24 @@ function readEvidenceLifecycle(root) {
   }
 }
 
+function readEvidenceLifecycleAtRef(root, ref) {
+  const lifecyclePath = "scripts/documentation-validation/evidence-lifecycle.json";
+  try {
+    runGit(root, ["cat-file", "-e", `${ref}:${lifecyclePath}`]);
+  } catch {
+    return null;
+  }
+  try {
+    return { path: lifecyclePath, ...JSON.parse(runGit(root, ["show", `${ref}:${lifecyclePath}`])) };
+  } catch (cause) {
+    const error = new Error(`Unable to read the evidence lifecycle registry at ${ref}.`);
+    error.code = "EVIDENCE_LIFECYCLE_BASE_READ_FAILED";
+    error.path = lifecyclePath;
+    error.cause = cause;
+    throw error;
+  }
+}
+
 function evidenceLifecycleConfigurationError(lifecycle) {
   if (lifecycle.schemaVersion !== 1) return "schemaVersion must equal 1";
   for (const key of [
@@ -240,6 +258,66 @@ function evidenceLifecycleConfigurationError(lifecycle) {
 function isActiveAuthorityPath(lifecycle, file) {
   return lifecycle.activeAuthorityPaths.includes(file)
     || lifecycle.activeAuthorityPrefixes.some((prefix) => file.startsWith(prefix));
+}
+
+function compareEvidenceLifecycle(base, current, findings) {
+  if (!base) return;
+  const baseHistorical = new Map(base.historicalEvidence.map((entry) => [entry.path, entry]));
+  const currentHistorical = new Map(current.historicalEvidence.map((entry) => [entry.path, entry]));
+  for (const [file, before] of baseHistorical) {
+    const after = currentHistorical.get(file);
+    if (!after) {
+      const weakened = isActiveAuthorityPath(current, file);
+      findings.push(makeFinding(
+        weakened ? RULES.EVIDENCE_HISTORICAL_WEAKENED : RULES.EVIDENCE_HISTORICAL_REMOVED,
+        current.path,
+        weakened
+          ? "Historical evidence was downgraded into the active-authority boundary."
+          : "Historical evidence protection was removed from the lifecycle registry.",
+        "historical entry retained with identical size and SHA-256",
+        weakened ? "active-authority" : "removed",
+        { pointer: "/historicalEvidence" },
+      ));
+      continue;
+    }
+    if (before.evidenceClass !== after.evidenceClass || before.sizeBytes !== after.sizeBytes
+      || before.sha256 !== after.sha256) {
+      findings.push(makeFinding(
+        RULES.EVIDENCE_HISTORICAL_WEAKENED,
+        current.path,
+        "Historical evidence protection was weakened.",
+        JSON.stringify(before),
+        JSON.stringify(after),
+        { pointer: "/historicalEvidence" },
+      ));
+    }
+  }
+  const addedPaths = current.activeAuthorityPaths
+    .filter((entry) => !base.activeAuthorityPaths.includes(entry));
+  const addedPrefixes = current.activeAuthorityPrefixes
+    .filter((entry) => !base.activeAuthorityPrefixes.includes(entry));
+  if (addedPaths.length || addedPrefixes.length) {
+    findings.push(makeFinding(
+      RULES.EVIDENCE_ACTIVE_BOUNDARY_BROADENED,
+      current.path,
+      "The active-authority boundary was broadened relative to the base registry.",
+      "no unreviewed active path or prefix additions",
+      JSON.stringify({ paths: addedPaths, prefixes: addedPrefixes }),
+      { pointer: "/activeAuthorityPaths" },
+    ));
+  }
+  const addedLegacySources = current.legacyMixedEvidenceSources
+    .filter((entry) => !base.legacyMixedEvidenceSources.includes(entry));
+  if (addedLegacySources.length) {
+    findings.push(makeFinding(
+      RULES.EVIDENCE_LEGACY_SOURCE_EXPANDED,
+      current.path,
+      "The legacy inference source list was expanded relative to the base registry.",
+      "no unreviewed legacy source additions",
+      JSON.stringify(addedLegacySources),
+      { pointer: "/legacyMixedEvidenceSources" },
+    ));
+  }
 }
 
 function validateBaseline({
@@ -751,15 +829,15 @@ function evidenceEntryValid(entry, evidenceClass = entry && entry.evidenceClass)
 
 function validateEvidenceEntries({
   root, file, list, pointer, fileSet, findings, summary, protectedList, lifecycle,
-  allowLegacyClassInference = false,
 }) {
-  const legacySource = allowLegacyClassInference
-    || lifecycle.legacyMixedEvidenceSources.includes(file);
+  const legacySource = lifecycle.legacyMixedEvidenceSources.includes(file);
   for (const [index, entry] of list.entries()) {
     const entryPointer = `${pointer}/${index}`;
     let evidenceClass = entry && entry.evidenceClass;
+    let inferredClass = false;
     if (evidenceClass === undefined && legacySource && entry && typeof entry.path === "string") {
       evidenceClass = isActiveAuthorityPath(lifecycle, entry.path) ? "active-authority" : "historical";
+      inferredClass = true;
     } else if (evidenceClass === undefined) {
       findings.push(makeFinding(
         RULES.EVIDENCE_CLASS_MISSING,
@@ -778,6 +856,18 @@ function validateEvidenceEntries({
         "Evidence entry has an invalid evidenceClass.",
         "historical or active-authority",
         evidenceClass,
+        { pointer: entryPointer },
+      ));
+      continue;
+    }
+    if (evidenceClass === "active-authority" && !inferredClass
+      && (Object.hasOwn(entry, "sizeBytes") || Object.hasOwn(entry, "sha256"))) {
+      findings.push(makeFinding(
+        RULES.EVIDENCE_ACTIVE_SNAPSHOT_FIELDS,
+        file,
+        "Active-authority evidence must not contain immutable snapshot fields.",
+        "path and evidenceClass only",
+        JSON.stringify(entry),
         { pointer: entryPointer },
       ));
       continue;
@@ -958,7 +1048,6 @@ function validateEvidenceJson({
     } else {
       validateEvidenceEntries({
         root, file, list: json.files, pointer: "/files", fileSet, findings, summary, protectedList: true, lifecycle,
-        allowLegacyClassInference: historical,
       });
     }
   }
@@ -982,7 +1071,6 @@ function validateEvidenceJson({
       }
       validateEvidenceEntries({
         root, file, list: json.evidenceFiles, pointer: "/evidenceFiles", fileSet, findings, summary, protectedList: false, lifecycle,
-        allowLegacyClassInference: historical,
       });
     }
   }
@@ -1057,10 +1145,14 @@ function validateRepositoryUnsafe(options = {}) {
   let baseline;
   let baseBaseline = null;
   let lifecycle;
+  let baseLifecycle = null;
   try {
     baseline = readBaseline(root, baselinePath);
     lifecycle = readEvidenceLifecycle(root);
-    if (mode === "changed") baseBaseline = readBaselineAtRef(root, options.base, baselinePath);
+    if (mode === "changed") {
+      baseBaseline = readBaselineAtRef(root, options.base, baselinePath);
+      baseLifecycle = readEvidenceLifecycleAtRef(root, options.base);
+    }
   } catch (error) {
     return blockedResult(
       mode,
@@ -1088,6 +1180,16 @@ function validateRepositoryUnsafe(options = {}) {
       "EVIDENCE_LIFECYCLE_INVALID",
       lifecycle.path,
       lifecycleError,
+    );
+  }
+  const baseLifecycleError = baseLifecycle && evidenceLifecycleConfigurationError(baseLifecycle);
+  if (baseLifecycleError) {
+    return blockedResult(
+      mode,
+      "BLOCKED_DOCUMENTATION_VALIDATION_CONFIGURATION",
+      "EVIDENCE_LIFECYCLE_BASE_INVALID",
+      baseLifecycle.path,
+      baseLifecycleError,
     );
   }
 
@@ -1134,6 +1236,7 @@ function validateRepositoryUnsafe(options = {}) {
     rulesImplemented: IMPLEMENTED_RULES.size,
   };
   try {
+    compareEvidenceLifecycle(baseLifecycle, lifecycle, findings);
     validateBaseline({
       root,
       baseline,

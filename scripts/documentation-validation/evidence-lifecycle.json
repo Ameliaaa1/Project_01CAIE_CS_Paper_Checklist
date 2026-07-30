@@ -1,6 +1,10 @@
 {
   "schemaVersion": 1,
   "legacyMixedEvidenceSources": [
+    "docs/repository-maintenance/pr-02a/pr02a-plan-manifest.json",
+    "docs/repository-maintenance/pr-02b/pr02b-execution-manifest.json",
+    "docs/repository-maintenance/pr-02b/pr02b-post-merge-verification-manifest.json",
+    "docs/repository-maintenance/pr-04/pr04-document-standardization-audit.json",
     "docs/repository-maintenance/pr-05/pr05-documentation-validation-report.json"
   ],
   "activeAuthorityPaths": [

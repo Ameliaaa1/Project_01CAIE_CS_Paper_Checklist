@@ -158,6 +158,27 @@ function baseline(anchor, entries = [], authority = {}) {
   })}\n`;
 }
 
+function evidenceLifecycle(overrides = {}) {
+  return `${JSON.stringify({
+    schemaVersion: 1,
+    legacyMixedEvidenceSources: [],
+    activeAuthorityPaths: [],
+    activeAuthorityPrefixes: [],
+    historicalEvidence: [],
+    ...overrides,
+  })}\n`;
+}
+
+function historicalLifecycleEntry(file, content) {
+  const bytes = Buffer.from(content);
+  return {
+    path: file,
+    evidenceClass: "historical",
+    sizeBytes: bytes.length,
+    sha256: crypto.createHash("sha256").update(bytes).digest("hex"),
+  };
+}
+
 function legacyEntry(file = "README.md", rules = ["DOC-META-001"]) {
   return {
     path: file,
@@ -265,6 +286,55 @@ register("invalid evidenceClass blocks", "evidence-lifecycle", () =>
   assertFixtureRule("invalid-evidence-class", RULES.EVIDENCE_CLASS_INVALID));
 register("active authority marked historical blocks", "evidence-lifecycle", () =>
   assertFixtureRule("active-marked-historical", RULES.EVIDENCE_CLASS_CONFLICT));
+register("registered legacy source inference passes", "evidence-lifecycle-governance", () =>
+  assertResult(runFixture("registered-legacy-inference"), 0, "PASS_DOCUMENTATION_VALIDATION"));
+register("historical lifecycle entry deletion blocks", "evidence-lifecycle-governance", () => {
+  const content = "frozen\n";
+  const result = runChanged({
+    "docs/HISTORICAL.txt": content,
+    "scripts/documentation-validation/evidence-lifecycle.json": evidenceLifecycle({
+      historicalEvidence: [historicalLifecycleEntry("docs/HISTORICAL.txt", content)],
+    }),
+  }, (root) => fs.writeFileSync(
+    path.join(root, "scripts/documentation-validation/evidence-lifecycle.json"),
+    evidenceLifecycle(),
+  ));
+  assertFinding(result, RULES.EVIDENCE_HISTORICAL_REMOVED);
+});
+register("historical classification downgrade blocks", "evidence-lifecycle-governance", () => {
+  const content = "frozen\n";
+  const target = "docs/HISTORICAL.txt";
+  const result = runChanged({
+    [target]: content,
+    "scripts/documentation-validation/evidence-lifecycle.json": evidenceLifecycle({
+      historicalEvidence: [historicalLifecycleEntry(target, content)],
+    }),
+  }, (root) => fs.writeFileSync(
+    path.join(root, "scripts/documentation-validation/evidence-lifecycle.json"),
+    evidenceLifecycle({ activeAuthorityPaths: [target] }),
+  ));
+  assertFinding(result, RULES.EVIDENCE_HISTORICAL_WEAKENED);
+});
+register("active authority prefix expansion blocks", "evidence-lifecycle-governance", () => {
+  const result = runChanged({
+    "scripts/documentation-validation/evidence-lifecycle.json": evidenceLifecycle(),
+  }, (root) => fs.writeFileSync(
+    path.join(root, "scripts/documentation-validation/evidence-lifecycle.json"),
+    evidenceLifecycle({ activeAuthorityPrefixes: ["scripts/new-authority/"] }),
+  ));
+  assertFinding(result, RULES.EVIDENCE_ACTIVE_BOUNDARY_BROADENED);
+});
+register("legacy inference source expansion blocks", "evidence-lifecycle-governance", () => {
+  const result = runChanged({
+    "scripts/documentation-validation/evidence-lifecycle.json": evidenceLifecycle(),
+  }, (root) => fs.writeFileSync(
+    path.join(root, "scripts/documentation-validation/evidence-lifecycle.json"),
+    evidenceLifecycle({ legacyMixedEvidenceSources: ["docs/new-legacy.json"] }),
+  ));
+  assertFinding(result, RULES.EVIDENCE_LEGACY_SOURCE_EXPANDED);
+});
+register("active authority immutable snapshot fields block", "evidence-lifecycle-governance", () =>
+  assertFixtureRule("active-authority-snapshot-fields", RULES.EVIDENCE_ACTIVE_SNAPSHOT_FIELDS));
 register("baseline regression blocks", "baseline", () => assertFixtureRule("baseline-regression", RULES.META_OWNER));
 register("fixed violation still in baseline blocks", "baseline", () => assertFixtureRule("baseline-stale", RULES.BASELINE_STALE));
 register("unchanged legacy baseline passes with findings", "baseline", () => {
