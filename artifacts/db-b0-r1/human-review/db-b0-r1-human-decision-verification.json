@@ -1,0 +1,17 @@
+{
+  "stage": "DB-B0-R1_CLEAN_GIT_INTEGRATION_SOURCE_AND_EVIDENCE_CLOSURE",
+  "decisionPath": "human-review/db-b0-r1-human-decision.json",
+  "decision": "PENDING_HUMAN_REVIEW",
+  "bindingFieldsPresent": true,
+  "approvalPresent": false,
+  "status": "BLOCKED_HUMAN_DECISION_REQUIRED",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

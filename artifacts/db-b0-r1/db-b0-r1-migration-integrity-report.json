@@ -1,0 +1,65 @@
+{
+  "stage": "DB-B0-R1_CLEAN_GIT_INTEGRATION_SOURCE_AND_EVIDENCE_CLOSURE",
+  "executionCommit": "648746c166afec523bae559a976e12b6dc2c7359",
+  "schema": {
+    "path": "prisma/schema.prisma",
+    "exists": true,
+    "isFile": true,
+    "sizeBytes": 4241,
+    "sha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+    "gitTracked": true,
+    "presentInExecutionCommit": true,
+    "expectedSha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+    "approvedIdentityMatch": true
+  },
+  "migrationsInOrder": [
+    {
+      "path": "prisma/migrations/20260728133000_production_baseline/migration.sql",
+      "exists": true,
+      "isFile": true,
+      "sizeBytes": 4822,
+      "sha256": "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+      "gitTracked": true,
+      "presentInExecutionCommit": true,
+      "expectedSha256": "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+      "approvedIdentityMatch": true
+    },
+    {
+      "path": "prisma/migrations/20260729152000_billing_event_ledger_extension/migration.sql",
+      "exists": true,
+      "isFile": true,
+      "sizeBytes": 1746,
+      "sha256": "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd",
+      "gitTracked": true,
+      "presentInExecutionCommit": true,
+      "expectedSha256": "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd",
+      "approvedIdentityMatch": true
+    }
+  ],
+  "migrationLock": {
+    "path": "prisma/migrations/migration_lock.toml",
+    "exists": true,
+    "isFile": true,
+    "sizeBytes": 64,
+    "sha256": "162ff5818ed32b5113b4fb76482715281a9f8809c6ebd1b72dd604de469f1746",
+    "gitTracked": true,
+    "presentInExecutionCommit": true,
+    "expectedSha256": null,
+    "approvedIdentityMatch": null
+  },
+  "frozenMigrationModified": false,
+  "migrationReordered": false,
+  "migrationRegenerated": false,
+  "dbPushUsed": false,
+  "migrationMismatchCount": 0,
+  "status": "PASS",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}
