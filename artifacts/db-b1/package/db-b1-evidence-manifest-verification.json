@@ -1,0 +1,22 @@
+{
+  "stage": "DB-B1_MAINLINE_DATABASE_INTEGRATION_AND_LOCAL_VALIDATION",
+  "verifiedAt": "2026-07-30T10:16:26.128Z",
+  "manifestPath": "package/db-b1-evidence-manifest.json",
+  "manifestSha256": "bb4bf53e63644ae3a4dda44fb8dcff9149f84acc4795a800bff2573ae26d5b45",
+  "checkedArtifactCount": 14,
+  "mismatches": [],
+  "mismatchCount": 0,
+  "forbiddenArtifacts": [],
+  "forbiddenArtifactCount": 0,
+  "dsStoreArtifactCount": 0,
+  "status": "PASS",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

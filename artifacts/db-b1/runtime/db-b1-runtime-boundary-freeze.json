@@ -1,0 +1,109 @@
+{
+  "stage": "DB-B1_MAINLINE_DATABASE_INTEGRATION_AND_LOCAL_VALIDATION",
+  "generatedAt": "2026-07-30T10:16:26.128Z",
+  "integrationCandidateCommit": "cdc75e55e07b491dc49af29adef9876aef4246c2",
+  "postgresqlDynamicRuntime": [
+    "User",
+    "UserCredential",
+    "Session",
+    "Purchase",
+    "QuestionSearch"
+  ],
+  "runtimeModules": [
+    {
+      "path": "src/server/db.js",
+      "exists": true,
+      "isFile": true,
+      "sizeBytes": 1593,
+      "sha256": "4d90f4fa05b4fc5e713c9edc7758bc21f4e0004ccce12d20747bc62fc32bd45e",
+      "expectedSha256": null,
+      "identityMatches": null
+    },
+    {
+      "path": "src/server/users.js",
+      "exists": true,
+      "isFile": true,
+      "sizeBytes": 5356,
+      "sha256": "9e92e30f0edb8b8aae5d651bdecb0d9698ad2b36e83ead3f024e1c2cac472c88",
+      "expectedSha256": null,
+      "identityMatches": null
+    },
+    {
+      "path": "src/server/sessions.js",
+      "exists": true,
+      "isFile": true,
+      "sizeBytes": 3215,
+      "sha256": "85cd9a0584b7c81f593a6ef5114c3dd7ee9f71cdc534fa8104bc30e5868f9645",
+      "expectedSha256": null,
+      "identityMatches": null
+    },
+    {
+      "path": "src/server/questionSearches.js",
+      "exists": true,
+      "isFile": true,
+      "sizeBytes": 10870,
+      "sha256": "fc39fb6b40d13689cbf015a464ee7afe8b3bc5e218aa81889721c3614e87a700",
+      "expectedSha256": null,
+      "identityMatches": null
+    },
+    {
+      "path": "src/server/purchases.js",
+      "exists": true,
+      "isFile": true,
+      "sizeBytes": 3667,
+      "sha256": "160f487d487682090451aa717f9e5d797368a84654a5847ea09fcc1ca383662c",
+      "expectedSha256": null,
+      "identityMatches": null
+    },
+    {
+      "path": "src/server/billingEvents.js",
+      "exists": true,
+      "isFile": true,
+      "sizeBytes": 3616,
+      "sha256": "cd777fa7348e889cca215e742d5cce162b47a23543fd13c6b20c4f158deb2428",
+      "expectedSha256": null,
+      "identityMatches": null
+    },
+    {
+      "path": "src/server/runtimeEnvironment.js",
+      "exists": true,
+      "isFile": true,
+      "sizeBytes": 1812,
+      "sha256": "6658ce61e3d30f65f4ebb27fe82d1b027c28db5575f83cc898da5e4e87c58348",
+      "expectedSha256": null,
+      "identityMatches": null
+    }
+  ],
+  "allRuntimeModulesPresent": true,
+  "staticContentBoundary": [
+    "Question JSON",
+    "PDF",
+    "Page Image",
+    "Question Crop",
+    "Response Area",
+    "Search Index",
+    "Mark Scheme Assets"
+  ],
+  "staticContentMigratedToPostgresql": false,
+  "billing": {
+    "schemaExists": true,
+    "billingEventModuleExists": true,
+    "activeProviderRuntime": false,
+    "billingProviderEnabledDefault": false,
+    "billingEnvironmentDefault": "DISABLED"
+  },
+  "activeStripeRuntimeMatches": [],
+  "activeStripeRuntimeMatchCount": 0,
+  "runtimeBoundaryFrozenInCandidate": true,
+  "runtimeBoundaryFrozenInActualMain": false,
+  "status": "PASS_CANDIDATE_BOUNDARY",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

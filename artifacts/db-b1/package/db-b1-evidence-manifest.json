@@ -1,0 +1,116 @@
+{
+  "stage": "DB-B1_MAINLINE_DATABASE_INTEGRATION_AND_LOCAL_VALIDATION",
+  "generatedAt": "2026-07-30T10:16:26.128Z",
+  "integrationCandidateCommit": "cdc75e55e07b491dc49af29adef9876aef4246c2",
+  "artifactCount": 14,
+  "artifacts": {
+    "baseline/db-b1-integration-baseline.json": {
+      "sizeBytes": 1234,
+      "sha256": "e53be4b1e9c0ed3fed5cdb70caf2afcfc05da9e0a9a09778f94e48eec7b64f4e",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "baseline/db-b1-main-integration-diff.json": {
+      "sizeBytes": 11727,
+      "sha256": "96e98356c702d338fabf9cf74da57321d73698cd7cecfa08a0f1f3fd58cf5893",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "gate/db-b1-blocker-register.json": {
+      "sizeBytes": 1416,
+      "sha256": "d8c130725910593cb92c7b49e64d461a7720f2e73e094b9ab5d7839e6708e5e9",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "legacy-audit/db-b1-legacy-runtime-inventory.json": {
+      "sizeBytes": 2158,
+      "sha256": "37ba77caaad7b72edfa1538ecfe984a9a8ee182b8c1a00b1c4a0a749469ceed3",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "migration/db-b1-migration-verification.json": {
+      "sizeBytes": 2081,
+      "sha256": "b7f7179bc58e5614e7866772a8d14e9bf98320b8e0b585ec8c3d1890e8b160c1",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "package/db-b1-execution-report.md": {
+      "sizeBytes": 584,
+      "sha256": "2f91d93bbb3bdf3e2822aa423332936ca10c99f518b2c326abfbf7007d237697",
+      "mimeType": "text/markdown",
+      "parseStatus": "NOT_APPLICABLE",
+      "jsonValid": null
+    },
+    "package/db-b1-human-decision-verification.json": {
+      "sizeBytes": 751,
+      "sha256": "5884faaf16ce1b0ddc44ab77f5edb473f97765efa6d44da55505bb16b9920e4f",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "package/db-b1-human-decision.json": {
+      "sizeBytes": 2199,
+      "sha256": "1860be0ddfb63d1056c0ce3d6274285299d91ddbc78fec74b50674f16b055398",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "package/db-b1-human-review-package.json": {
+      "sizeBytes": 2449,
+      "sha256": "34b120e62b4aa9ebe354dec93a7d1f1fcf2cebfbc94927aa9ace4591b283d8a0",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "runtime/db-b1-payment-disabled-verification.json": {
+      "sizeBytes": 1211,
+      "sha256": "c049490c983f923ebe253d439029de14041890854b851e5384011610d169b862",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "runtime/db-b1-runtime-boundary-freeze.json": {
+      "sizeBytes": 3195,
+      "sha256": "6e67a3494415fddbcbc0dfadc7a1bb305c3c70ad1f729e9644cd15a3299dd9bc",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "schema/db-b1-schema-verification.json": {
+      "sizeBytes": 1561,
+      "sha256": "4df13564cf3d189a4cd0e648a3cc5ab649dd1fc606b38b1c4483cd564212aa7d",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "security/db-b1-secret-and-package-hygiene-audit.json": {
+      "sizeBytes": 773,
+      "sha256": "bd1a9465b55b6368f81766f92453712f1274dc45d3cd022e7c41eebd28733d61",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "tests/db-b1-local-test-execution-report.json": {
+      "sizeBytes": 3536,
+      "sha256": "b10b9790ba093e0e308e03b42579aee8a380b26ab08ef046a1121ed9eaa93506",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    }
+  },
+  "status": "PRE_HUMAN_REVIEW_FROZEN",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}
