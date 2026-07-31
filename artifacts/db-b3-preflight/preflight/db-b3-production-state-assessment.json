@@ -1,0 +1,41 @@
+{
+  "stage": "DB-B3_PRODUCTION_DATABASE_ESTABLISHMENT_AND_MIGRATION",
+  "generatedAt": "2026-07-31T12:12:55.016Z",
+  "status": "BLOCKED_SQL_STATE_UNVERIFIED",
+  "managementMetadata": {
+    "branchExists": true,
+    "endpointExists": true,
+    "databaseExists": true,
+    "roleExists": true,
+    "projectWrittenDataBytes": 0,
+    "branchWrittenDataBytes": 0
+  },
+  "sqlState": {
+    "connectionAttempted": false,
+    "migrationHistory": "UNVERIFIED",
+    "tableInventory": "UNVERIFIED",
+    "schemaInventory": "UNVERIFIED",
+    "unexpectedObjectCount": null,
+    "businessRecordCounts": {
+      "User": null,
+      "UserCredential": null,
+      "Session": null,
+      "Purchase": null,
+      "BillingProviderEvent": null,
+      "QuestionSearch": null
+    },
+    "authorizedEmptyBaselineConfirmed": false
+  },
+  "inferenceProhibited": "Management metadata and written_data_bytes are not sufficient proof that no SQL schema or rows exist.",
+  "blocker": "PRELIMINARY_READONLY_PRODUCTION_SQL_INSPECTION_AUTHORIZATION_REQUIRED",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionMigration": false,
+  "productionWrite": false,
+  "productionRuntimeCutover": false,
+  "legacyDynamicStoreRetired": false,
+  "liveBusinessTrafficEnabled": false,
+  "vercelProductionDeployment": false,
+  "paymentProviderRuntimeEnabled": false
+}

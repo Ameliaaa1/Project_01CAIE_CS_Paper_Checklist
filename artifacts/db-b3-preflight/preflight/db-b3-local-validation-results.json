@@ -1,0 +1,31 @@
+{
+  "stage": "DB-B3_PRODUCTION_DATABASE_ESTABLISHMENT_AND_MIGRATION",
+  "generatedAt": "2026-07-31T12:12:55.016Z",
+  "status": "PASS",
+  "prismaValidate": "PASS",
+  "prismaFormatIdempotent": true,
+  "migrationDestructiveStatementCount": 0,
+  "firstRuntimeTestAttempt": {
+    "status": "FAIL_TEST_CONFIGURATION_ERROR",
+    "cause": "Offline Prisma placeholder DATABASE_URL was inherited by runtime tests and caused local signup to target an invalid endpoint.",
+    "productionEndpointTargeted": false,
+    "productionConnectionAttempted": false
+  },
+  "correctedRuntimeTestAttempt": {
+    "databaseEnvironmentVariablesUnset": true,
+    "status": "PASS",
+    "fullNpmTest": "PASS",
+    "documentationValidationPassed": 90,
+    "documentationValidationFailed": 0
+  },
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionMigration": false,
+  "productionWrite": false,
+  "productionRuntimeCutover": false,
+  "legacyDynamicStoreRetired": false,
+  "liveBusinessTrafficEnabled": false,
+  "vercelProductionDeployment": false,
+  "paymentProviderRuntimeEnabled": false
+}

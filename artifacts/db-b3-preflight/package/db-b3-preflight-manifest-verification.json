@@ -1,0 +1,32 @@
+{
+  "stage": "DB-B3_PRODUCTION_DATABASE_ESTABLISHMENT_AND_MIGRATION",
+  "generatedAt": "2026-07-31T12:13:47.444Z",
+  "status": "PASS",
+  "manifest": {
+    "path": "package/db-b3-preflight-manifest.json",
+    "sizeBytes": 4085,
+    "sha256": "f6e6b5cd5d282d93f5ccb312ee15dc89a0204e72d41556b87d79f1f8017529af",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "artifactCount": 11,
+  "checkedArtifactCount": 11,
+  "mismatches": [],
+  "mismatchCount": 0,
+  "forbiddenArtifactCount": 0,
+  "unexpectedArtifactCount": 0,
+  "unregisteredArtifactCount": 0,
+  "dsStoreArtifactCount": 0,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionMigration": false,
+  "productionWrite": false,
+  "productionRuntimeCutover": false,
+  "legacyDynamicStoreRetired": false,
+  "liveBusinessTrafficEnabled": false,
+  "vercelProductionDeployment": false,
+  "paymentProviderRuntimeEnabled": false
+}

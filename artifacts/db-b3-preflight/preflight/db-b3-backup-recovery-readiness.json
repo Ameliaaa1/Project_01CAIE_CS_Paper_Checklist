@@ -1,0 +1,36 @@
+{
+  "stage": "DB-B3_PRODUCTION_DATABASE_ESTABLISHMENT_AND_MIGRATION",
+  "generatedAt": "2026-07-31T12:12:55.016Z",
+  "status": "BLOCKED_BACKUP_NOT_CREATED",
+  "existingSnapshotCount": 0,
+  "historyRetentionSeconds": 21600,
+  "proposedMechanism": {
+    "provider": "NEON",
+    "action": "CREATE_NAMED_SNAPSHOT_FROM_PRODUCTION_BRANCH_IMMEDIATELY_BEFORE_MIGRATION",
+    "sourceBranchId": "br-silent-fog-avglbx9u",
+    "proposedNamePrefix": "db-b3-pre-migration",
+    "restoreMethod": "RESTORE_SNAPSHOT_TO_PREVIEW_BRANCH_VALIDATE_IDENTITY_THEN_FINALIZE_ONLY_UNDER_SEPARATE_RECOVERY_AUTHORIZATION"
+  },
+  "snapshotCreationAuthorized": false,
+  "snapshotCreated": false,
+  "restoreRehearsalAgainstProductionSnapshotCompleted": false,
+  "responsibleReviewer": "Amelia Cai",
+  "stopConditions": [
+    "snapshot creation fails",
+    "target identity mismatch",
+    "snapshot source is not Production branch",
+    "restore preview validation fails",
+    "credential exposure"
+  ],
+  "blocker": "PRODUCTION_BACKUP_CREATION_AUTHORIZATION_REQUIRED",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionMigration": false,
+  "productionWrite": false,
+  "productionRuntimeCutover": false,
+  "legacyDynamicStoreRetired": false,
+  "liveBusinessTrafficEnabled": false,
+  "vercelProductionDeployment": false,
+  "paymentProviderRuntimeEnabled": false
+}
