@@ -63,6 +63,48 @@
       "evidenceClass": "historical",
       "sizeBytes": 3294,
       "sha256": "e5a2638aec0c0b67cbaf6029ea6d7a5916b51f80cbdee6e84f99c320c7b8c967"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c/PR06C_AUTHORITY_CLASSIFICATION.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 6186,
+      "sha256": "bb1d8ff01fe0effc8651abfa0f70c6422fe4fccf97cf42a80c60b6ef9e989cd8"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c/PR06C_HUMAN_REVIEW.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2829,
+      "sha256": "79e67f5496f770c2c8480f661a8ff52e5f2a8033d5b0b046f7b1f6d164645a2e"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c/PR06C_PROMOTION_CONTRACT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 6111,
+      "sha256": "dc57b8d5e05348e4bccc11352b1fcf5d263eb0aa37c74e8c4afe10719395c240"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c/PR06C_RISK_ASSESSMENT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 3028,
+      "sha256": "9f56f57f08046e3bc7402bc23ef90d89f4179d9679853eee6e7c991c446b1748"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_AUDIT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 5093,
+      "sha256": "5fb3c41df74f8c69a57d89bc3e800ef665e7783d3b5c0944e480590aac15f778"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_SCHEMA_PROPOSAL.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 8602,
+      "sha256": "c182ec0af607186d4b4cd4795553b8d0fceaab880fd65c7d83ea4ca6a833ac95"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c/pr06c-source-of-truth-contract-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 5452,
+      "sha256": "1eb64bff244ac73096df8c2294a5aa2a6e2227ca9c2b363f9adab5a2b027c662"
     }
   ]
 }
