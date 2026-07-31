@@ -1,0 +1,53 @@
+{
+  "stage": "DB-B1-R3_HUMAN_DECISION_VERIFICATION_MAIN_MERGE_AND_POST_MERGE_VERIFICATION",
+  "mergedAt": "2026-07-31T09:33:22.904Z",
+  "sourceBranch": "codex/db-b1-mainline-integration",
+  "sourceCommit": "c39e29f79e0b2bba8ed9946a7db0873aeb34ce5f",
+  "reviewedCandidateCommit": "48ac1d274112b5ce5a268e0b9689eebc7bbced28",
+  "targetBranch": "main",
+  "targetBeforeMerge": "bcb0c5a4ec112dcacf82ae9338d6f81f3f952584",
+  "mergeCommit": "38c3f420a112cacf393c56e1b9518ce02602d596",
+  "mergeParentCount": 2,
+  "reviewedCandidateIsAncestorOfSource": true,
+  "reviewedCandidateToSourceChanges": [
+    "artifacts/db-b1-r3/human-review/db-b1-r3-combined-human-decision.json",
+    "artifacts/db-b1-r3/human-review/db-b1-r3-human-decision-verification.json",
+    "scripts/finalize-db-b1-r3-main-merge.js"
+  ],
+  "reviewedCandidateToSourceChangeCount": 3,
+  "reviewedCandidateToSourceChangesAuthorized": true,
+  "postReviewMainDriftFiles": [
+    "docs/repository-maintenance/pr-06c/PR06C_AUTHORITY_CLASSIFICATION.md",
+    "docs/repository-maintenance/pr-06c/PR06C_HUMAN_REVIEW.md",
+    "docs/repository-maintenance/pr-06c/PR06C_PROMOTION_CONTRACT.md",
+    "docs/repository-maintenance/pr-06c/PR06C_RISK_ASSESSMENT.md",
+    "docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_AUDIT.md",
+    "docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_SCHEMA_PROPOSAL.md",
+    "docs/repository-maintenance/pr-06c/pr06c-source-of-truth-contract-report.json",
+    "scripts/documentation-validation/evidence-lifecycle.json"
+  ],
+  "postReviewMainDriftFileCount": 8,
+  "postReviewMainDriftDatabaseCriticalFiles": [],
+  "postReviewMainDriftDatabaseCriticalFileCount": 0,
+  "mergeConflictCount": 0,
+  "forcePushPerformed": false,
+  "historyRewritePerformed": false,
+  "schemaSha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+  "migrationSha256": [
+    "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+    "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd"
+  ],
+  "schemaIdentityMatches": true,
+  "migrationIdentitiesMatch": true,
+  "workingTreeCleanBeforeFinalEvidence": true,
+  "humanDecisionVerified": true,
+  "actualMainUpdated": true,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "PASS"
+}

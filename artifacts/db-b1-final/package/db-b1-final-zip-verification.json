@@ -1,0 +1,57 @@
+{
+  "stage": "DB-B1-R3_HUMAN_DECISION_VERIFICATION_MAIN_MERGE_AND_POST_MERGE_VERIFICATION",
+  "verifiedAt": "2026-07-31T09:33:51.693Z",
+  "debugZip": {
+    "path": "package/db-b1-final-debug-json.zip",
+    "sizeBytes": 6411,
+    "sha256": "b3ea03cc052fc310e32b250f5a976e1a3eb51df97dd575cfe10392294f6d0f7f",
+    "entryCount": 8,
+    "entries": [
+      "human-review/db-b1-final-human-decision-verification.json",
+      "merge/db-b1-main-merge-verification.json",
+      "merge/db-b1-post-merge-verification.json",
+      "package/db-b1-final-evidence-manifest-verification.json",
+      "package/db-b1-final-evidence-manifest.json",
+      "safety/db-b1-final-production-safety-verification.json",
+      "schema/db-b1-final-schema-and-migration-verification.json",
+      "tests/db-b1-final-test-execution-report.json"
+    ],
+    "crcValid": true,
+    "forbiddenArtifacts": [],
+    "forbiddenArtifactCount": 0
+  },
+  "completeZip": {
+    "path": "package/db-b1-final-complete-evidence.zip",
+    "sizeBytes": 6780,
+    "sha256": "4dd98f1beee9a8e90c0f25be24aff3695db3e287b04efebfff5b56d16fdb853f",
+    "entryCount": 9,
+    "entries": [
+      "human-review/db-b1-final-human-decision-verification.json",
+      "merge/db-b1-main-merge-verification.json",
+      "merge/db-b1-post-merge-verification.json",
+      "package/db-b1-final-evidence-manifest-verification.json",
+      "package/db-b1-final-evidence-manifest.json",
+      "package/db-b1-final-execution-report.md",
+      "safety/db-b1-final-production-safety-verification.json",
+      "schema/db-b1-final-schema-and-migration-verification.json",
+      "tests/db-b1-final-test-execution-report.json"
+    ],
+    "crcValid": true,
+    "forbiddenArtifacts": [],
+    "forbiddenArtifactCount": 0
+  },
+  "expectedDebugEntryCount": 8,
+  "expectedCompleteEntryCount": 9,
+  "debugEntryCountMatches": true,
+  "completeEntryCountMatches": true,
+  "forbiddenArtifactCount": 0,
+  "zipCrcFailureCount": 0,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "PASS"
+}

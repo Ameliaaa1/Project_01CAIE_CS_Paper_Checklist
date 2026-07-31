@@ -1,0 +1,66 @@
+{
+  "stage": "DB-B1-R3_HUMAN_DECISION_VERIFICATION_MAIN_MERGE_AND_POST_MERGE_VERIFICATION",
+  "generatedAt": "2026-07-31T09:33:22.904Z",
+  "mergeCommit": "38c3f420a112cacf393c56e1b9518ce02602d596",
+  "sourceCommit": "c39e29f79e0b2bba8ed9946a7db0873aeb34ce5f",
+  "artifactCount": 7,
+  "artifacts": {
+    "human-review/db-b1-final-human-decision-verification.json": {
+      "sizeBytes": 1158,
+      "sha256": "0307b2c8ad52112dcfc6e684bf8f239f048398d774da1f2436f0bc0d434893b6",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "merge/db-b1-main-merge-verification.json": {
+      "sizeBytes": 2453,
+      "sha256": "f49754f4d01e55881fe240449aaff891f7787cbba90fda32a7c430d24ba53d82",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "merge/db-b1-post-merge-verification.json": {
+      "sizeBytes": 804,
+      "sha256": "e338b4c2dec150db458223f7fa6e00d37bd75edcf65c3bf13f7200683bd85cb2",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "package/db-b1-final-execution-report.md": {
+      "sizeBytes": 294,
+      "sha256": "fad1fbe4a8432ce5b82124b0937fa13334df198902037b09004a156c2a55ba7d",
+      "mimeType": "text/markdown",
+      "parseStatus": "NOT_APPLICABLE",
+      "jsonValid": null
+    },
+    "safety/db-b1-final-production-safety-verification.json": {
+      "sizeBytes": 845,
+      "sha256": "b638f8213365f93afe626d87d78e73ba0d86435e9ee82c990c17ad7f7ba0d51d",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "schema/db-b1-final-schema-and-migration-verification.json": {
+      "sizeBytes": 1413,
+      "sha256": "79b039a320584c602822add930bcab7aa8299ef64c5362c3801764bd40d0f571",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "tests/db-b1-final-test-execution-report.json": {
+      "sizeBytes": 2558,
+      "sha256": "8d24680122fee0feb69103eeded287435e37ce81063477cc106402c2fb0eb2a3",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    }
+  },
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "FINAL_POST_MERGE_FROZEN"
+}

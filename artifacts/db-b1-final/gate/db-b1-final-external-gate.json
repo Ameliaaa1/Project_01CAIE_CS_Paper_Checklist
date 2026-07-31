@@ -1,0 +1,38 @@
+{
+  "stage": "DB-B1-R3_HUMAN_DECISION_VERIFICATION_MAIN_MERGE_AND_POST_MERGE_VERIFICATION",
+  "evaluatedAt": "2026-07-31T09:33:51.693Z",
+  "mergeCommit": "38c3f420a112cacf393c56e1b9518ce02602d596",
+  "sourceCommit": "c39e29f79e0b2bba8ed9946a7db0873aeb34ce5f",
+  "checks": {
+    "humanDecisionVerification": "PASS",
+    "mainMerge": "PASS",
+    "postMergeVerification": "PASS",
+    "schemaAndMigrationIdentity": "PASS",
+    "tests": "PASS",
+    "productionSafety": "PASS",
+    "manifestVerification": "PASS",
+    "zipVerification": "PASS"
+  },
+  "evidenceBinding": {
+    "manifestSha256": "0317d822cbc170b48640d485ee7245c3965700f4ba0c5f3b3c7209926318607f",
+    "manifestVerificationSha256": "cb92f45105e6a037989526c064f9ef3873e1dc8370273b76d4704d510184a70b",
+    "debugZipSha256": "b3ea03cc052fc310e32b250f5a976e1a3eb51df97dd575cfe10392294f6d0f7f",
+    "completeZipSha256": "4dd98f1beee9a8e90c0f25be24aff3695db3e287b04efebfff5b56d16fdb853f",
+    "zipVerificationSha256": "421c9bbb213e7148d1d35f769f0ddbb30e774dc5d17d6d54206610fdd31a4523",
+    "deliveryReportSha256": "afcbf0b8391548d3ea859e0dfd338b7ef4b0254636ca6a40275a362a31b2886c"
+  },
+  "humanDecisionVerified": true,
+  "actualMainUpdated": true,
+  "mainMerge": "PASS",
+  "postMergeVerification": "PASS",
+  "blockerCount": 0,
+  "blockers": [],
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "PASS_MAINLINE_DATABASE_INTEGRATION"
+}
