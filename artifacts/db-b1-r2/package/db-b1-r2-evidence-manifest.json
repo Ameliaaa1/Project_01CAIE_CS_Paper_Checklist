@@ -1,0 +1,79 @@
+{
+  "stage": "DB-B1-R2_AUTOMATED_VERIFICATION_ENHANCEMENT_AND_COMBINED_HUMAN_REVIEW_PREPARATION",
+  "generatedAt": "2026-07-31T08:36:23.395Z",
+  "evidenceCommit": "0b16ea780ccef35a9fc44c86ca268c1cca315129",
+  "technicalCandidateCommit": "674eb5044f3eeb5ee7dcd45403c3bb97f29a1fde",
+  "artifactCount": 9,
+  "artifacts": {
+    "baseline/db-b1-r2-baseline-verification.json": {
+      "sizeBytes": 1730,
+      "sha256": "53237eccaa21ee89b841b521a6ecce49462bcfd5207d7dee8702a59539ec18d7",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "human-review/db-b1-r2-combined-human-decision.json": {
+      "sizeBytes": 1692,
+      "sha256": "b3348ee0738bb1e98853f30fccbad9821579432f1d0cdd1b81a817ce625bef6e",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "human-review/db-b1-r2-combined-human-review-package.json": {
+      "sizeBytes": 2007,
+      "sha256": "595ad7092c033bbf0c387dc4ab3f840af0f4165eb10b59c7094d803042202023",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "human-review/db-b1-r2-human-review-summary.json": {
+      "sizeBytes": 3176,
+      "sha256": "0a4cb32e3c0b1c3fe8fe5bfd2efa13745288dd77dd56412c1684b6317642771c",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "index/db-b1-r2-index-count-semantics-report.json": {
+      "sizeBytes": 1917,
+      "sha256": "b489a78870479760b1d8b92a699ffc1378812dd7835cd2a0ed72cf58079d638c",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "package/db-b1-r2-execution-report.md": {
+      "sizeBytes": 393,
+      "sha256": "a3c3d22db98ec8e28b1f4923ffb4519f80c1bd5e6b902ea65d34337c423e81a4",
+      "mimeType": "text/markdown",
+      "parseStatus": "NOT_APPLICABLE",
+      "jsonValid": null
+    },
+    "safety/db-b1-r2-production-safety-verification.json": {
+      "sizeBytes": 1469,
+      "sha256": "f59d8f14dfdd01ba7e549e90c3d1cc73f30f850cb15c28813505c4494858caad",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "tests/db-b1-r2-test-output-analysis.json": {
+      "sizeBytes": 2456,
+      "sha256": "c6067741177ae53e44a1fc735b5acd7de7f8e1d5f5bbca8cadb620dc70ce97b4",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "verification/db-b1-r2-automated-verification-report.json": {
+      "sizeBytes": 1246,
+      "sha256": "a3643165f13577722b5b244c0f04a10a2f3048f533dfd7881413e2db74ffe97c",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    }
+  },
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "PRE_HUMAN_REVIEW_FROZEN"
+}

@@ -1,0 +1,42 @@
+{
+  "stage": "DB-B1-R2_AUTOMATED_VERIFICATION_ENHANCEMENT_AND_COMBINED_HUMAN_REVIEW_PREPARATION",
+  "generatedAt": "2026-07-31T08:36:23.395Z",
+  "branch": "codex/db-b1-mainline-integration",
+  "evidenceCommit": "0b16ea780ccef35a9fc44c86ca268c1cca315129",
+  "technicalCandidateCommit": "674eb5044f3eeb5ee7dcd45403c3bb97f29a1fde",
+  "originMain": "12f10e88842ba736888db5f00ed6ae5334874d4d",
+  "workingTreeStatusBeforeEvidenceGeneration": "",
+  "workingTreeClean": true,
+  "r1Evidence": {
+    "gate": {
+      "path": "artifacts/db-b1-r1/gate/db-b1-r1-external-gate.json",
+      "sha256": "4fa95b39fe895b367d14cf684ad545c91cfddef91233a0a53fe8bac6b78acd94",
+      "status": "BLOCKED_PENDING_COMBINED_HUMAN_REVIEW"
+    },
+    "manifest": {
+      "path": "artifacts/db-b1-r1/package/db-b1-r1-evidence-manifest.json",
+      "sha256": "b2217a3128f96f6fe686e41faa26e82794acd66bc0c56e7b610a0ae7fc5750b6"
+    },
+    "manifestVerification": {
+      "path": "artifacts/db-b1-r1/package/db-b1-r1-evidence-manifest-verification.json",
+      "sha256": "7d24ca6592dc723e645780fb7c62d126304c5f14343cd3ca355206f401128413",
+      "status": "PASS"
+    },
+    "zipVerification": {
+      "path": "artifacts/db-b1-r1/package/db-b1-r1-zip-verification.json",
+      "sha256": "85f0b23a6b52de241d50bc0923942fc8f3e4a78b9cf28c3a3e0b580d6cde0e16",
+      "status": "PASS"
+    }
+  },
+  "r1ManifestRecheckMismatchCount": 0,
+  "candidateIdentityVerified": true,
+  "evidenceIdentityVerified": true,
+  "actualMainUpdated": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "PASS"
+}

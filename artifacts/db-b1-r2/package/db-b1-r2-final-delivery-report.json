@@ -1,0 +1,82 @@
+{
+  "stage": "DB-B1-R2_AUTOMATED_VERIFICATION_ENHANCEMENT_AND_COMBINED_HUMAN_REVIEW_PREPARATION",
+  "deliveredAt": "2026-07-31T08:36:39.031Z",
+  "technicalVerificationStatus": "PASS",
+  "humanReviewPackageReady": true,
+  "combinedHumanReviewRequired": true,
+  "mainMergeAuthorized": false,
+  "manifest": {
+    "path": "package/db-b1-r2-evidence-manifest.json",
+    "sizeBytes": 2967,
+    "sha256": "fb5bdb4ee66ac04f8e0d27a31f7374ba87e2dccebfa85ad19d0729ac7ee2b8c3",
+    "mimeType": "application/json",
+    "parseStatus": "PASS",
+    "jsonValid": true
+  },
+  "manifestVerification": {
+    "path": "package/db-b1-r2-evidence-manifest-verification.json",
+    "sizeBytes": 687,
+    "sha256": "8a84522577cb196fbf4b2a8d4916b11822d74702904a337c5a58a06fb0dd3f22",
+    "mimeType": "application/json",
+    "parseStatus": "PASS",
+    "jsonValid": true
+  },
+  "debugZip": {
+    "path": "package/db-b1-r2-debug-json.zip",
+    "sizeBytes": 9706,
+    "sha256": "6dc1c246e0c4269d6263b957a480677fa61c27c4b5c52d2174419e2fda127a5d",
+    "entryCount": 10,
+    "entries": [
+      "baseline/db-b1-r2-baseline-verification.json",
+      "human-review/db-b1-r2-combined-human-decision.json",
+      "human-review/db-b1-r2-combined-human-review-package.json",
+      "human-review/db-b1-r2-human-review-summary.json",
+      "index/db-b1-r2-index-count-semantics-report.json",
+      "package/db-b1-r2-evidence-manifest-verification.json",
+      "package/db-b1-r2-evidence-manifest.json",
+      "safety/db-b1-r2-production-safety-verification.json",
+      "tests/db-b1-r2-test-output-analysis.json",
+      "verification/db-b1-r2-automated-verification-report.json"
+    ],
+    "crcValid": true,
+    "forbiddenArtifacts": [],
+    "forbiddenArtifactCount": 0
+  },
+  "completeZip": {
+    "path": "package/db-b1-r2-complete-evidence.zip",
+    "sizeBytes": 10115,
+    "sha256": "2d3cf3b32885c4e6bef0d0694ac7ada4dd5522043934c7efdfcd83f4a37eeafb",
+    "entryCount": 11,
+    "entries": [
+      "baseline/db-b1-r2-baseline-verification.json",
+      "human-review/db-b1-r2-combined-human-decision.json",
+      "human-review/db-b1-r2-combined-human-review-package.json",
+      "human-review/db-b1-r2-human-review-summary.json",
+      "index/db-b1-r2-index-count-semantics-report.json",
+      "package/db-b1-r2-evidence-manifest-verification.json",
+      "package/db-b1-r2-evidence-manifest.json",
+      "package/db-b1-r2-execution-report.md",
+      "safety/db-b1-r2-production-safety-verification.json",
+      "tests/db-b1-r2-test-output-analysis.json",
+      "verification/db-b1-r2-automated-verification-report.json"
+    ],
+    "crcValid": true,
+    "forbiddenArtifacts": [],
+    "forbiddenArtifactCount": 0
+  },
+  "zipVerification": {
+    "path": "package/db-b1-r2-zip-verification.json",
+    "sizeBytes": 2404,
+    "sha256": "f7a26666801b9a9e79805f3e297860fdff202e85eea1ecb4b5b2dce3851a1c92",
+    "mimeType": "application/json",
+    "parseStatus": "PASS",
+    "jsonValid": true
+  },
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "READY_FOR_COMBINED_HUMAN_REVIEW"
+}

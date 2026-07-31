@@ -1,0 +1,19 @@
+{
+  "stage": "DB-B1-R2_AUTOMATED_VERIFICATION_ENHANCEMENT_AND_COMBINED_HUMAN_REVIEW_PREPARATION",
+  "verifiedAt": "2026-07-31T08:36:39.015Z",
+  "manifestPath": "package/db-b1-r2-evidence-manifest.json",
+  "manifestSha256": "fb5bdb4ee66ac04f8e0d27a31f7374ba87e2dccebfa85ad19d0729ac7ee2b8c3",
+  "checkedArtifactCount": 9,
+  "mismatches": [],
+  "mismatchCount": 0,
+  "forbiddenArtifacts": [],
+  "forbiddenArtifactCount": 0,
+  "dsStoreArtifactCount": 0,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "PASS"
+}
