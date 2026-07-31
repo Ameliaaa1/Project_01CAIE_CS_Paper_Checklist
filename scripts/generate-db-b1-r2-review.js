@@ -252,7 +252,11 @@ const browser = JSON.parse(fs.readFileSync(browserFile, "utf8"));
 const uniqueQuestionPapers = new Set(canonical.entries.map((entry) => entry.sourceReferences?.questionPaper?.paperId).filter(Boolean));
 const uniqueMarkSchemes = new Set(canonical.entries.map((entry) => entry.sourceReferences?.markScheme?.paperId).filter(Boolean));
 const uniquePaperCodes = new Set(canonical.entries.map((entry) => entry.paper).filter(Boolean));
-const legacyBytes = execFileSync("git", ["show", "68969f54b1afe00c5ba6552787bd237dbc8a27cf:generated/question-index.json"], { cwd: root });
+const legacyBytes = execFileSync(
+  "git",
+  ["show", "68969f54b1afe00c5ba6552787bd237dbc8a27cf:generated/question-index.json"],
+  { cwd: root, maxBuffer: 8 * 1024 * 1024 }
+);
 const legacy = JSON.parse(legacyBytes.toString("utf8"));
 const indexReport = writeJson("index/db-b1-r2-index-count-semantics-report.json", {
   stage,
