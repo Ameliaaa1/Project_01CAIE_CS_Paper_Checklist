@@ -208,8 +208,10 @@ const indexTest = run("npm", ["run", "test:question-index-build"], cleanEnvironm
 
 const expectedBrowserWarning = /Production question index could not be loaded[\s\S]*HTTP undefined/.test(browserNegativePath.stderr)
   && /Production question index could not be loaded[\s\S]*HTTP undefined/.test(fullSuite.stderr);
+const expectedPrismaUpdateNotice = /Update available 6\.19\.3 -> 7\.9\.1/.test(prismaValidate.stderr)
+  && /major-version-upgrade/.test(prismaValidate.stderr);
 const unexpectedStderr = [
-  { id: "PRISMA_VALIDATE", stderr: prismaValidate.stderr },
+  { id: "PRISMA_VALIDATE", stderr: prismaValidate.stderr, expected: expectedPrismaUpdateNotice },
   { id: "BROWSER_NEGATIVE_PATH", stderr: browserNegativePath.stderr, expected: expectedBrowserWarning },
   { id: "FULL_LOCAL_SUITE", stderr: fullSuite.stderr, expected: expectedBrowserWarning },
   { id: "INDEX_BUILD", stderr: indexBuild.stderr },
@@ -236,8 +238,17 @@ const testAnalysis = writeJson("tests/db-b1-r2-test-output-analysis.json", {
     runtimeImpact: "NONE; the isolated VM test verifies app startup while the browser index is unavailable.",
     exitCode: browserNegativePath.exitCode,
     explained: expectedBrowserWarning,
+  }, {
+    output: prismaValidate.stderr.trim(),
+    sourceLocation: "Prisma CLI update notifier",
+    triggeringTest: "npx prisma validate",
+    trigger: "The installed Prisma CLI reports that a newer major version is available.",
+    classification: "EXPECTED_NON_RUNTIME_TOOLING_NOTICE",
+    runtimeImpact: "NONE; no dependency update was requested or performed and schema validation exited 0.",
+    exitCode: prismaValidate.exitCode,
+    explained: expectedPrismaUpdateNotice,
   }],
-  nonEmptyStderrCount: [browserNegativePath.stderr, fullSuite.stderr].filter((value) => value.trim()).length,
+  nonEmptyStderrCount: [prismaValidate.stderr, browserNegativePath.stderr, fullSuite.stderr].filter((value) => value.trim()).length,
   unexplainedOutputCount: unexpectedStderr.length,
   unexplainedOutputs: unexpectedStderr,
   allCommandsPassed: [prismaValidate, browserNegativePath, fullSuite, indexBuild, indexTest].every(({ exitCode }) => exitCode === 0),
