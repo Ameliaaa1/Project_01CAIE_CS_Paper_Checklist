@@ -217,6 +217,28 @@ const unexpectedStderr = [
   { id: "INDEX_BUILD", stderr: indexBuild.stderr },
   { id: "INDEX_TEST", stderr: indexTest.stderr },
 ].filter(({ stderr, expected }) => stderr.trim() && !expected);
+const analyzedOutputs = [{
+  output: "Production question index could not be loaded. Error: Production question index returned HTTP undefined.",
+  sourceLocation: "public/app.js:948",
+  triggeringTest: "tests/browser-data-load.test.js:59",
+  trigger: "The test fetch stub deliberately returns { ok: false } without a status value.",
+  classification: "EXPECTED_NEGATIVE_PATH_FAIL_CLOSED_BEHAVIOR",
+  runtimeImpact: "NONE; the isolated VM test verifies app startup while the browser index is unavailable.",
+  exitCode: browserNegativePath.exitCode,
+  explained: expectedBrowserWarning,
+}];
+if (prismaValidate.stderr.trim()) {
+  analyzedOutputs.push({
+    output: prismaValidate.stderr.trim(),
+    sourceLocation: "Prisma CLI update notifier",
+    triggeringTest: "npx prisma validate",
+    trigger: "The installed Prisma CLI reports that a newer major version is available.",
+    classification: "EXPECTED_NON_RUNTIME_TOOLING_NOTICE",
+    runtimeImpact: "NONE; no dependency update was requested or performed and schema validation exited 0.",
+    exitCode: prismaValidate.exitCode,
+    explained: expectedPrismaUpdateNotice,
+  });
+}
 const testAnalysis = writeJson("tests/db-b1-r2-test-output-analysis.json", {
   stage,
   generatedAt,
@@ -229,25 +251,7 @@ const testAnalysis = writeJson("tests/db-b1-r2-test-output-analysis.json", {
     stderr: item.stderr,
     status: item.status,
   })),
-  analyzedOutputs: [{
-    output: "Production question index could not be loaded. Error: Production question index returned HTTP undefined.",
-    sourceLocation: "public/app.js:948",
-    triggeringTest: "tests/browser-data-load.test.js:59",
-    trigger: "The test fetch stub deliberately returns { ok: false } without a status value.",
-    classification: "EXPECTED_NEGATIVE_PATH_FAIL_CLOSED_BEHAVIOR",
-    runtimeImpact: "NONE; the isolated VM test verifies app startup while the browser index is unavailable.",
-    exitCode: browserNegativePath.exitCode,
-    explained: expectedBrowserWarning,
-  }, {
-    output: prismaValidate.stderr.trim(),
-    sourceLocation: "Prisma CLI update notifier",
-    triggeringTest: "npx prisma validate",
-    trigger: "The installed Prisma CLI reports that a newer major version is available.",
-    classification: "EXPECTED_NON_RUNTIME_TOOLING_NOTICE",
-    runtimeImpact: "NONE; no dependency update was requested or performed and schema validation exited 0.",
-    exitCode: prismaValidate.exitCode,
-    explained: expectedPrismaUpdateNotice,
-  }],
+  analyzedOutputs,
   nonEmptyStderrCount: [prismaValidate.stderr, browserNegativePath.stderr, fullSuite.stderr].filter((value) => value.trim()).length,
   unexplainedOutputCount: unexpectedStderr.length,
   unexplainedOutputs: unexpectedStderr,
