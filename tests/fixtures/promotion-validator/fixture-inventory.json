@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "classification": "NON_AUTHORITATIVE_SYNTHETIC_TEST_SPECIFICATION",
+  "authorityDiscovery": "EXCLUDED",
+  "containsRealProductionData": false,
+  "deploymentInput": false,
+  "materialization": "TEMPORARY_GIT_REPOSITORY_ONLY",
+  "positiveCases": ["candidate", "current-production", "bootstrap-pre-review", "bootstrap-post-review", "update-pre-review", "update-post-review", "evidence-supersession", "stdout-output", "create-new-report"],
+  "adversarialCases": ["contract-drift", "duplicate-json-key", "bom", "invalid-utf8", "trailing-content", "unknown-generator", "checkout-mismatch", "role-lifecycle", "duplicate-stable-id", "unsupported-9709", "scope-hash", "projection-hash", "manifest-hash", "path-traversal", "symlink", "stale-evidence", "supersession-cycle", "approval-binding", "report-overwrite", "report-boundary"]
+}

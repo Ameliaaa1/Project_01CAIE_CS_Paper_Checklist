@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:paperlens:promotion-manifest:4",
+  "title": "PaperLens Promotion Manifest v4",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "authorityRole", "lifecycleState", "artifact", "scope", "schema", "provenance", "validation", "promotion"],
+  "properties": {
+    "schemaVersion": {"const": 4},
+    "authorityRole": {"enum": ["candidate", "current-production", "promotion-target"]},
+    "lifecycleState": {"enum": ["CANDIDATE_VALIDATED", "READY_FOR_PROMOTION_REVIEW", "PRODUCTION_CURRENT", "TARGET_VALIDATED", "READY_FOR_HUMAN_REVIEW", "APPROVED_FOR_EXECUTION"]},
+    "artifact": {
+      "type": "object", "additionalProperties": false,
+      "required": ["artifactId", "artifactVersion", "artifactPath", "sizeBytes", "sha256", "recordCount", "stableIdSetSha256"],
+      "properties": {
+        "artifactId": {"const": "paperlens-question-corpus"},
+        "artifactVersion": {"type": "string", "minLength": 1},
+        "artifactPath": {"$ref": "#/$defs/repositoryPath"},
+        "sizeBytes": {"type": "integer", "minimum": 1, "maximum": 9007199254740991},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "recordCount": {"type": "integer", "minimum": 1, "maximum": 9007199254740991},
+        "stableIdSetSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "scope": {
+      "type": "object", "additionalProperties": false,
+      "required": ["supportedSyllabi", "scopeSha256"],
+      "properties": {
+        "supportedSyllabi": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["0478", "9618"]}},
+        "scopeSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "schema": {
+      "type": "object", "additionalProperties": false,
+      "required": ["artifactSchemaId", "artifactSchemaVersion", "artifactSchemaPath", "artifactSchemaSha256"],
+      "properties": {
+        "artifactSchemaId": {"const": "paperlens-question-corpus-records"},
+        "artifactSchemaVersion": {"const": 1},
+        "artifactSchemaPath": {"const": "contracts/promotion/schemas/question-corpus-v1.schema.json"},
+        "artifactSchemaSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sourceCommit", "generatedAt", "generator"],
+      "properties": {
+        "sourceCommit": {"$ref": "#/$defs/fullCommit"},
+        "generatedAt": {"$ref": "#/$defs/utcTimestamp"},
+        "generator": {
+          "type": "object", "additionalProperties": false,
+          "required": ["id", "version", "registryPath", "registrySha256"],
+          "properties": {
+            "id": {"type": "string", "minLength": 1},
+            "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+            "registryPath": {"const": "contracts/promotion/generator-registry-v1.json"},
+            "registrySha256": {"$ref": "#/$defs/sha256"}
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["result", "validatedAt", "evidencePath", "evidenceProjectionProfile", "evidenceProjectionSha256"],
+      "properties": {
+        "result": {"enum": ["PASS", "READY_FOR_HUMAN_REVIEW", "PROMOTION_TARGET_VALIDATION_PASS"]},
+        "validatedAt": {"$ref": "#/$defs/utcTimestamp"},
+        "evidencePath": {"$ref": "#/$defs/repositoryPath"},
+        "evidenceProjectionProfile": {"const": "paperlens-evidence-binding-v1"},
+        "evidenceProjectionSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "promotion": {
+      "type": "object", "additionalProperties": false,
+      "required": ["mode", "baselineProductionSha256", "differenceRequestPath", "differenceRequestSha256", "approvalEvidencePath", "approvalEvidenceSha256", "reviewDecision", "reviewer", "reviewedAt", "promotionId"],
+      "properties": {
+        "mode": {"type": ["string", "null"], "enum": [null, "bootstrap", "update"]},
+        "baselineProductionSha256": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+        "differenceRequestPath": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/repositoryPath"}]},
+        "differenceRequestSha256": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+        "approvalEvidencePath": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/repositoryPath"}]},
+        "approvalEvidenceSha256": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+        "reviewDecision": {"enum": ["NOT_APPLICABLE", "PENDING", "APPROVE"]},
+        "reviewer": {"type": ["string", "null"], "minLength": 1},
+        "reviewedAt": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/utcTimestamp"}]},
+        "promotionId": {"type": ["string", "null"], "minLength": 1}
+      }
+    }
+  },
+  "allOf": [
+    {"if": {"properties": {"authorityRole": {"const": "candidate"}}, "required": ["authorityRole"]}, "then": {"properties": {"lifecycleState": {"enum": ["CANDIDATE_VALIDATED", "READY_FOR_PROMOTION_REVIEW"]}, "artifact": {"type":"object","properties": {"artifactPath": {"type":"string","pattern": "^promotion/candidate/artifacts/"}}}, "validation": {"type":"object","properties": {"result": {"const": "PASS"}, "evidencePath": {"type":"string","pattern": "^promotion/candidate/evidence/"}}}, "promotion": {"$ref": "#/$defs/nonPromotionMetadata"}}}},
+    {"if": {"properties": {"authorityRole": {"const": "current-production"}}, "required": ["authorityRole"]}, "then": {"properties": {"lifecycleState": {"const": "PRODUCTION_CURRENT"}, "artifact": {"type":"object","properties": {"artifactPath": {"type":"string","pattern": "^promotion/production/artifacts/"}}}, "validation": {"type":"object","properties": {"result": {"const": "PASS"}, "evidencePath": {"type":"string","pattern": "^promotion/production/evidence/"}}}, "promotion": {"$ref": "#/$defs/nonPromotionMetadata"}}}},
+    {"if": {"properties": {"authorityRole": {"const": "promotion-target"}}, "required": ["authorityRole"]}, "then": {"properties": {"lifecycleState": {"enum": ["TARGET_VALIDATED", "READY_FOR_HUMAN_REVIEW", "APPROVED_FOR_EXECUTION"]}, "artifact": {"type":"object","properties": {"artifactPath": {"type":"string","pattern": "^promotion/target/artifacts/"}}}, "validation": {"type":"object","properties": {"evidencePath": {"type":"string","pattern": "^promotion/target/evidence/"}}}, "promotion": {"type":"object","properties": {"mode": {"enum": ["bootstrap", "update"]}, "promotionId": {"type": "string", "minLength": 1}}}}}},
+    {"if": {"properties": {"lifecycleState": {"enum": ["TARGET_VALIDATED", "READY_FOR_HUMAN_REVIEW"]}}, "required": ["lifecycleState"]}, "then": {"properties": {"validation": {"type":"object","properties": {"result": {"const": "READY_FOR_HUMAN_REVIEW"}}}, "promotion": {"type":"object","properties": {"approvalEvidencePath": {"type": "null"}, "approvalEvidenceSha256": {"type": "null"}, "reviewDecision": {"const": "PENDING"}, "reviewer": {"type": "null"}, "reviewedAt": {"type": "null"}}}}}},
+    {"if": {"properties": {"lifecycleState": {"const": "APPROVED_FOR_EXECUTION"}}, "required": ["lifecycleState"]}, "then": {"properties": {"validation": {"type":"object","properties": {"result": {"const": "PROMOTION_TARGET_VALIDATION_PASS"}}}, "promotion": {"type":"object","properties": {"approvalEvidencePath": {"type": "string", "pattern": "^promotion/target/evidence/"}, "approvalEvidenceSha256": {"$ref": "#/$defs/sha256"}, "reviewDecision": {"const": "APPROVE"}, "reviewer": {"type": "string", "minLength": 1}, "reviewedAt": {"$ref": "#/$defs/utcTimestamp"}}}}}},
+    {"if": {"properties": {"promotion": {"type":"object","properties": {"mode": {"const": "bootstrap"}}, "required": ["mode"]}}}, "then": {"properties": {"promotion": {"type":"object","properties": {"baselineProductionSha256": {"type": "null"}, "differenceRequestPath": {"type": "null"}, "differenceRequestSha256": {"type": "null"}}}}}},
+    {"if": {"properties": {"promotion": {"type":"object","properties": {"mode": {"const": "update"}}, "required": ["mode"]}}}, "then": {"properties": {"promotion": {"type":"object","properties": {"baselineProductionSha256": {"$ref": "#/$defs/sha256"}, "differenceRequestPath": {"type": "string", "pattern": "^promotion/target/evidence/"}, "differenceRequestSha256": {"$ref": "#/$defs/sha256"}}}}}}
+  ],
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "fullCommit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "utcTimestamp": {"type": "string", "format": "date-time", "pattern": "Z$"},
+    "repositoryPath": {"type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\).+$"},
+    "nonPromotionMetadata": {"type": "object", "properties": {"mode": {"type": "null"}, "baselineProductionSha256": {"type": "null"}, "differenceRequestPath": {"type": "null"}, "differenceRequestSha256": {"type": "null"}, "approvalEvidencePath": {"type": "null"}, "approvalEvidenceSha256": {"type": "null"}, "reviewDecision": {"const": "NOT_APPLICABLE"}, "reviewer": {"type": "null"}, "reviewedAt": {"type": "null"}, "promotionId": {"type": "null"}}}
+  }
+}

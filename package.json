@@ -12,7 +12,7 @@
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
-    "test": "npm run test:server-entrypoint && npm run test:browser-data-load && npm run test:question-index-build && npm run test:vercel-routing && npm run test:static-access && npm run test:deployment-smoke && npm run test:auth-session && npm run test:auth-database && npm run test:question-search && npm run test:payment-provider-disabled && npm run test:runtime-environment-resolution && npm run test:rate-csrf && npm run test:production-config && npm run test:documentation-validation",
+    "test": "npm run test:server-entrypoint && npm run test:browser-data-load && npm run test:question-index-build && npm run test:vercel-routing && npm run test:static-access && npm run test:deployment-smoke && npm run test:auth-session && npm run test:auth-database && npm run test:question-search && npm run test:payment-provider-disabled && npm run test:runtime-environment-resolution && npm run test:rate-csrf && npm run test:production-config && npm run test:documentation-validation && npm run test:promotion-validator",
     "test:database-rehearsal": "npm run test:billing-schema-extension && npm run test:db-a5-s1-purchase-entitlement",
     "test:server-entrypoint": "node tests/server-entrypoint.test.js",
     "test:browser-data-load": "node tests/browser-data-load.test.js",
@@ -33,6 +33,8 @@
     "test:rate-csrf": "node tests/rate-csrf.test.js",
     "test:production-config": "node tests/production-config.test.js",
     "test:documentation-validation": "node tests/documentation-validation.test.js",
+    "test:promotion-validator": "node tests/promotion-validator.test.js",
+    "verify:pr06c-r3": "node scripts/verify-pr06c-r3-contract.js",
     "validate:docs": "node scripts/validate-documentation.js --mode full",
     "validate:docs:changed": "node scripts/validate-documentation.js --mode changed"
   },
@@ -42,6 +44,8 @@
   "dependencies": {
     "@napi-rs/canvas": "^1.0.1",
     "@prisma/client": "^6.19.3",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "pdf-lib": "^1.17.1",
     "pdf-parse": "^2.4.5"
   },

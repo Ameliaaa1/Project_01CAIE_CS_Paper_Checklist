@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "registryId": "paperlens-promotion-schema-registry",
+  "canonicalization": "RFC8785",
+  "entries": [
+    {"schemaId":"paperlens-promotion-manifest","version":3,"kind":"manifest","path":"contracts/promotion/schemas/promotion-manifest-v3.schema.json","canonicalSha256":"eef493ec86ff27b2741697185257b28c871bb46b43ecf4a2d3b8fe3e3a92f698","status":"SUPERSEDED","supersededByVersion":4,"supportedArtifactSchema":false},
+    {"schemaId":"paperlens-promotion-manifest","version":4,"kind":"manifest","path":"contracts/promotion/schemas/promotion-manifest-v4.schema.json","canonicalSha256":"23f223b41ea9edf3e14869de6d273d4432bd54dd70d40cec12775743f509f471","status":"CURRENT","supersededByVersion":null,"supportedArtifactSchema":false},
+    {"schemaId":"paperlens-question-corpus-records","version":1,"kind":"artifact","path":"contracts/promotion/schemas/question-corpus-v1.schema.json","canonicalSha256":"8eb88e79f22918a80d86bad28e322e316d03684bb69539478d908ba3aa7fe872","status":"CURRENT","supersededByVersion":null,"supportedArtifactSchema":true},
+    {"schemaId":"paperlens-promotion-validation-evidence","version":1,"kind":"validation-evidence","path":"contracts/promotion/schemas/promotion-validation-evidence-v1.schema.json","canonicalSha256":"d21653b3cd121b23ed64071ebf1aec364b91a75a6cab442521d789ab64c0f4de","status":"SUPERSEDED","supersededByVersion":2,"supportedArtifactSchema":false},
+    {"schemaId":"paperlens-promotion-validation-evidence","version":2,"kind":"validation-evidence","path":"contracts/promotion/schemas/promotion-validation-evidence-v2.schema.json","canonicalSha256":"ad88b34d4f51bc42e4cf863785ad3547d98a1cf4cc81f8e65f22f96cca1ef8b4","status":"CURRENT","supersededByVersion":null,"supportedArtifactSchema":false},
+    {"schemaId":"paperlens-bootstrap-approval","version":1,"kind":"bootstrap-approval","path":"contracts/promotion/schemas/bootstrap-approval-v1.schema.json","canonicalSha256":"861841a248a85453e273f470a572d1556c1f65c1e7ac7060cd484e3873f29b22","status":"CURRENT","supersededByVersion":null,"supportedArtifactSchema":false},
+    {"schemaId":"paperlens-update-difference-request","version":1,"kind":"difference-request","path":"contracts/promotion/schemas/update-difference-request-v1.schema.json","canonicalSha256":"47270c5069768e5acb803d91578761e8079f3c67b870568a62b01da34f3074fb","status":"CURRENT","supersededByVersion":null,"supportedArtifactSchema":false},
+    {"schemaId":"paperlens-update-approval","version":1,"kind":"update-approval","path":"contracts/promotion/schemas/update-approval-v1.schema.json","canonicalSha256":"6ba3056cf4561ec9c2ea2d8c6bffff86acd754bed6e9d833eae27dc60fa5c729","status":"CURRENT","supersededByVersion":null,"supportedArtifactSchema":false}
+  ]
+}
