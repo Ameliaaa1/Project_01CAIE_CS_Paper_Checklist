@@ -1,6 +1,6 @@
 # PR-06C Promotion Contract
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
 Owner: Repository maintainers
 
@@ -161,3 +161,5 @@ Current promotion validation: `NOT_IMPLEMENTED`
 Current promotion authorization: `NOT_AUTHORIZED`
 
 Current promotion execution: `NOT_STARTED`
+
+Promotion Gate Validator implementation: `AUTHORIZED_AFTER_PR_MERGE`

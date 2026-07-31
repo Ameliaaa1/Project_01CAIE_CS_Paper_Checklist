@@ -1,6 +1,6 @@
 # PR-06C Source-of-Truth Risk Assessment
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
 Owner: Repository maintainers
 

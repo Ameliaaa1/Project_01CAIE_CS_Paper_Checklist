@@ -1,6 +1,6 @@
 # PR-06C Source-of-Truth Contract Human Review
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
 Owner: Repository maintainers
 
@@ -18,47 +18,51 @@ Related documents:
 
 ## Decision
 
-Human review decision: `PENDING`
+Human review decision: `APPROVE`
 
 Design blocker count: `0`
 
-Implementation authorization: `NOT_AUTHORIZED`
+Reviewer: `Amelia Cai`
+
+Reviewed at: `2026-07-31T08:41:16Z`
+
+Implementation authorization: `AUTHORIZED_AFTER_PR_MERGE`
 
 ## Review Checklist
 
-- [ ] Candidate, Current Production, and Promotion Target are three independent
+- [x] Candidate, Current Production, and Promotion Target are three independent
   roles.
-- [ ] Current Candidate, Current Production, and Promotion Target authority are
+- [x] Current Candidate, Current Production, and Promotion Target authority are
   correctly recorded as absent.
-- [ ] Proposed Candidate path is exactly
+- [x] Proposed Candidate path is exactly
   `promotion/candidate/manifest.json`.
-- [ ] Proposed Current Production path is exactly
+- [x] Proposed Current Production path is exactly
   `promotion/production/manifest.json`.
-- [ ] Proposed Promotion Target path is exactly
+- [x] Proposed Promotion Target path is exactly
   `promotion/target/manifest.json`.
-- [ ] Candidate identity is compared with Promotion Target, never required to
+- [x] Candidate identity is compared with Promotion Target, never required to
   equal Current Production.
-- [ ] Bootstrap requires Current Production to be absent.
-- [ ] Update requires a valid Current Production baseline and permits approved
+- [x] Bootstrap requires Current Production to be absent.
+- [x] Update requires a valid Current Production baseline and permits approved
   content upgrades.
-- [ ] Generated index, delivery data, PDFs, runtime data, and historical
+- [x] Generated index, delivery data, PDFs, runtime data, and historical
   evidence remain non-authoritative.
-- [ ] Every manifest field has exactly one classification.
-- [ ] Stable-ID, scope, and schema hashes have reproducible exact-byte rules.
-- [ ] 0478 and 9618 are the only allowed syllabus identities.
-- [ ] Missing required manifests, role ambiguity, unknown fields, and any 9709
+- [x] Every manifest field has exactly one classification.
+- [x] Stable-ID, scope, and schema hashes have reproducible exact-byte rules.
+- [x] 0478 and 9618 are the only allowed syllabus identities.
+- [x] Missing required manifests, role ambiguity, unknown fields, and any 9709
   scope fail closed.
-- [ ] Validation, authorization, and execution remain distinct.
-- [ ] Production, Candidate, Promotion Target, PDF, parser, frontend, and
+- [x] Validation, authorization, and execution remain distinct.
+- [x] Production, Candidate, Promotion Target, PDF, parser, frontend, and
   runtime changes are all zero.
-- [ ] No promotion validator or promotion execution was started.
+- [x] No promotion validator or promotion execution was started.
 
 ## Approval Format
 
 ```text
 PASS_PR06C_SOURCE_OF_TRUTH_CONTRACT_HUMAN_REVIEW
 Reviewer: Amelia Cai
-Review UTC timestamp: YYYY-MM-DDTHH:mm:ssZ
+Review UTC timestamp: 2026-07-31T08:41:16Z
 Decision: APPROVE
 Approved Candidate manifest: promotion/candidate/manifest.json
 Approved Current Production manifest: promotion/production/manifest.json
@@ -68,5 +72,7 @@ Approved manifest proposal version: 2
 Approved implementation phase: PR-06C Promotion Gate Validator
 ```
 
-Until that decision is recorded, the proposal has no current artifact
-authority and promotion-gate implementation remains blocked.
+This decision approves the repaired contract and authorizes the named
+Promotion Gate Validator implementation phase only after this PR is merged. It
+does not create artifact authority, authorize a Production write, execute
+promotion, or mark this Draft PR ready for review.

@@ -1,6 +1,6 @@
 # PR-06C Source-of-Truth Schema Proposal
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
 Owner: Repository maintainers
 
@@ -16,7 +16,7 @@ Related documents:
 
 ## Status
 
-Schema state: `PROPOSED_PENDING_HUMAN_APPROVAL`
+Schema state: `APPROVED_PENDING_MERGE`
 
 Schema owner: Promotion contract maintainers
 

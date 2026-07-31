@@ -1,6 +1,6 @@
 # PR-06C Authority Classification
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
 Owner: Repository maintainers
 
@@ -153,3 +153,7 @@ They do not become artifact authority until a later controlled phase creates
 valid manifests backed by real artifacts and evidence. This repair creates no
 manifest and activates no Candidate, Current Production, or Promotion Target
 authority.
+
+Human approval was recorded from Amelia Cai at `2026-07-31T08:41:16Z`. Merge
+remains pending, so the exact paths are approved design but are not yet merged
+design authority or artifact authority.
