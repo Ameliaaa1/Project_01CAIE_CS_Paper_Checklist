@@ -154,6 +154,18 @@
       paper: "both",
       era: "revised",
       text: "embedded system opcode operand accumulator adc dac monitoring control system actuator utility software buffer assembler firmware interrupt service routine internet world wide web ssl tls pharming social engineering proxy server botnet ddos biometric authentication malware virus worm trojan spyware adware ransomware brute force data interception bubble sort machine learning training data pattern prediction input output assignment linear search count controlled pre condition post condition loop local global variables arithmetic comparison boolean operators string handling substring upper lower constants maintainability comments sum count truth table logic expression circuit scenario"
+    },
+    {
+      name: "AS & A Level 9618 Paper 1 syllabus signals",
+      paper: "paper1",
+      era: "9618-as",
+      text: "information representation binary hexadecimal two's complement overflow ascii unicode bitmap vector graphics sound sampling sample rate sample resolution compression lossy lossless rle communication networks packet switching routing dns http https tcp ip mac address protocol hardware processor fundamentals cpu alu control unit registers buses fetch decode execute interrupt assembly language opcode operand addressing input output storage sensor actuator ram rom cache embedded system operating system scheduling memory management file management device driver utility software translator compiler interpreter assembler lexical syntax semantic data security encryption authentication firewall backup validation verification checksum parity privacy ethics ownership copyright computer misuse data protection database relational table entity attribute primary key foreign key referential integrity normalisation sql select from where order by join count sum avg"
+    },
+    {
+      name: "AS & A Level 9618 Paper 2 syllabus signals",
+      paper: "paper2",
+      era: "9618-as",
+      text: "algorithm design problem solving computational thinking decomposition abstraction structure chart flowchart pseudocode trace table dry run linear search binary search bubble sort insertion sort validation verification test data normal abnormal boundary syntax error logic error runtime error data type integer real char string boolean date record user defined type enumerated pointer array one dimensional two dimensional file handling open read write append close serial file stack queue linked list binary tree push pop enqueue dequeue pointer programming sequence selection iteration if case for while repeat procedure function parameter by value by reference local global variable modular design string handling substring length input output software development life cycle analysis design development testing maintenance ide debugger breakpoint watch window"
     }
   ];
 
@@ -572,6 +584,418 @@
     ]
   };
 
+  const asLevel9618Checklist = {
+    paper1: [
+      {
+        chapter: "1",
+        title: "Information representation",
+        sections: [
+          {
+            code: "9618-1.1",
+            title: "Data representation",
+            items: [
+              "Number bases: convert positive and negative integers between denary, binary and hexadecimal, showing place-value or grouping working.",
+              "Binary arithmetic: add binary values, recognise overflow, and use two's complement for signed integer representation.",
+              "Character sets: explain how characters are represented using ASCII and Unicode, including the trade-off between range of characters and storage.",
+              "Images: calculate bitmap file size from pixels and colour depth, and explain how resolution and colour depth affect quality and storage.",
+              "Sound: calculate sound file size using sample rate, sample resolution, duration and channels; link higher sampling choices to quality and storage.",
+              "Compression: distinguish lossy and lossless compression, including when each is suitable and what data may be lost."
+            ]
+          },
+          {
+            code: "9618-1.2",
+            title: "Multimedia, sound and graphics",
+            items: [
+              "Bitmap graphics: use pixel grids, metadata, resolution and colour depth accurately in explanations and calculations.",
+              "Vector graphics: describe objects, attributes and coordinates, and compare scalability with bitmap images.",
+              "Sampling: describe analogue-to-digital conversion for sound and the effect of sample rate and resolution.",
+              "Media suitability: choose bitmap, vector or sampled sound settings for a scenario using quality, storage and transmission constraints."
+            ]
+          },
+          {
+            code: "9618-1.3",
+            title: "Compression",
+            items: [
+              "Lossless compression: original data can be reconstructed exactly, making it suitable for text, program files and critical data.",
+              "Run-length encoding: store repeated consecutive values as a value plus count, and calculate the effect on file size.",
+              "Lossy compression: removes or approximates data permanently, making it suitable for many image, audio and video uses.",
+              "Compression evaluation: compare compression ratio, quality loss, storage saving and transmission speed for a given use case."
+            ]
+          }
+        ]
+      },
+      {
+        chapter: "2",
+        title: "Communication",
+        sections: [
+          {
+            code: "9618-2.1",
+            title: "Networks",
+            items: [
+              "Network purpose: explain resource sharing, communication and centralised management in LANs, WANs and client-server systems.",
+              "Network hardware: describe routers, switches, wireless access points, NICs and transmission media in context.",
+              "Addressing: use IP addresses, MAC addresses, ports and URLs correctly when explaining communication between devices.",
+              "Packets: describe packet structure, packet switching, routing and reassembly, including sequence numbers and error handling.",
+              "Protocols: match protocols such as HTTP, HTTPS, FTP, SMTP, POP3, IMAP, TCP/IP and Ethernet to their roles.",
+              "Cloud and internet services: explain benefits and risks such as accessibility, scalability, dependence on connectivity and security."
+            ]
+          },
+          {
+            code: "9618-2.2",
+            title: "Internet principles",
+            items: [
+              "DNS: explain how a domain name is resolved to an IP address before a web resource is requested.",
+              "Web transfer: describe the roles of browser, web server, URL, HTTP/HTTPS request and response.",
+              "Client-server model: distinguish client requests from server processing, storage and response.",
+              "Security during transmission: explain encryption, certificates and authentication when data is sent over public networks."
+            ]
+          }
+        ]
+      },
+      {
+        chapter: "3",
+        title: "Hardware",
+        sections: [
+          {
+            code: "9618-3.1",
+            title: "Processor fundamentals",
+            items: [
+              "CPU components: describe the ALU, control unit, registers, buses and clock in the fetch-decode-execute cycle.",
+              "Registers: use the roles of PC, MAR, MDR, CIR, accumulator and status register accurately in FDE explanations.",
+              "Interrupts: explain interrupt handling, interrupt service routines and the effect on normal program execution.",
+              "Performance factors: compare clock speed, number of cores, cache size and word length using scenario evidence.",
+              "Instruction set concepts: explain opcode, operand, addressing and how machine-code instructions are executed."
+            ]
+          },
+          {
+            code: "9618-3.2",
+            title: "Assembly language",
+            items: [
+              "Low-level code: distinguish machine code from assembly language and explain why assemblers are needed.",
+              "Assembly instructions: trace simple instructions such as load, store, add, compare and branch using register values.",
+              "Addressing: describe immediate, direct, indirect and indexed addressing where required by the question.",
+              "Translation: explain how labels, mnemonics and operands are converted into executable machine code."
+            ]
+          },
+          {
+            code: "9618-3.3",
+            title: "Input, output and storage",
+            items: [
+              "Input/output choice: select suitable devices for a scenario and justify with accuracy, speed, cost, durability and user needs.",
+              "Sensors and control: explain how sensors, ADCs, processors, DACs and actuators are used in monitoring and control systems.",
+              "Primary memory: compare RAM, ROM and cache by volatility, purpose, speed and capacity.",
+              "Secondary storage: compare magnetic, optical and solid-state storage using capacity, access speed, portability, reliability and cost.",
+              "Embedded systems: describe dedicated hardware and software designed for a specific task, including benefits and limitations."
+            ]
+          }
+        ]
+      },
+      {
+        chapter: "4",
+        title: "Processor fundamentals",
+        sections: [
+          {
+            code: "9618-4.1",
+            title: "Central processing unit architecture",
+            items: [
+              "Von Neumann architecture: explain shared memory for data and instructions and the movement of data across buses.",
+              "System buses: distinguish address, data and control buses and state the direction or purpose of each transfer.",
+              "FDE detail: track the program counter, memory address register, memory data register and current instruction register through a cycle.",
+              "Pipelining awareness: explain how overlapping fetch, decode and execute stages can improve throughput when the question introduces it."
+            ]
+          },
+          {
+            code: "9618-4.2",
+            title: "Performance and instruction execution",
+            items: [
+              "Clock and cores: explain why faster clock speed or more cores may improve performance but do not guarantee every program runs faster.",
+              "Cache: describe how frequently used data and instructions are held close to the CPU to reduce memory access time.",
+              "Word length: link word length to the amount of data processed in one operation and the addressable memory where relevant.",
+              "Bottlenecks: use context to identify limits such as memory speed, storage access, network latency or software design."
+            ]
+          }
+        ]
+      },
+      {
+        chapter: "5",
+        title: "System software",
+        sections: [
+          {
+            code: "9618-5.1",
+            title: "Operating systems",
+            items: [
+              "OS role: manage hardware, software, files, users and security while providing a user interface.",
+              "Process management: explain scheduling, multitasking, interrupts and how the OS allocates processor time.",
+              "Memory management: describe loading programs, managing RAM, virtual memory and preventing processes interfering with each other.",
+              "File management: explain directories, permissions, naming, storage allocation and file operations.",
+              "Device management: explain drivers, buffering, spooling and how peripherals communicate with the system."
+            ]
+          },
+          {
+            code: "9618-5.2",
+            title: "Utility software",
+            items: [
+              "Utilities: match software such as backup, compression, encryption, antivirus, defragmentation and disk formatting to their purposes.",
+              "Security utilities: explain malware scanning, quarantine, firewall settings and update routines.",
+              "Maintenance: describe how utility software improves reliability, storage efficiency and recoverability."
+            ]
+          },
+          {
+            code: "9618-5.3",
+            title: "Language translators",
+            items: [
+              "Translator types: distinguish assembler, compiler and interpreter by input language, output and execution approach.",
+              "Compilation stages: explain lexical analysis, syntax analysis, semantic checks, code generation and optimisation at an AS-level depth.",
+              "Errors: identify syntax, semantic and logic errors and state when they are detected.",
+              "Linking and loading: explain how object code, libraries and executable programs are brought together where required."
+            ]
+          }
+        ]
+      },
+      {
+        chapter: "6",
+        title: "Security, privacy and data integrity",
+        sections: [
+          {
+            code: "9618-6.1",
+            title: "Data security",
+            items: [
+              "Threats: identify malware, phishing, social engineering, unauthorised access, interception and denial-of-service attacks.",
+              "Protection: match threats to encryption, firewalls, access rights, strong authentication, backups and user training.",
+              "Authentication: compare passwords, biometrics, tokens and two-factor authentication using security and usability.",
+              "Encryption: explain symmetric and asymmetric encryption, public/private keys and why secure key exchange matters.",
+              "Backup and recovery: design backup strategies using frequency, media, off-site storage and restoration testing."
+            ]
+          },
+          {
+            code: "9618-6.2",
+            title: "Data integrity and privacy",
+            items: [
+              "Validation: use range, type, length, format, presence and check digit checks to reduce invalid input.",
+              "Verification: use double entry, proofreading or parity-style methods to check data has been transferred or entered accurately.",
+              "Error detection: explain parity, checksum and automatic repeat request for transmitted data.",
+              "Privacy: discuss access control, encryption, data minimisation and legal or ethical responsibilities for personal data."
+            ]
+          }
+        ]
+      },
+      {
+        chapter: "7",
+        title: "Ethics and ownership",
+        sections: [
+          {
+            code: "9618-7.1",
+            title: "Ethics and computing",
+            items: [
+              "Ethical analysis: balance benefits and drawbacks for users, organisations and society rather than writing one-sided answers.",
+              "Privacy: discuss surveillance, data collection, consent, profiling and the consequences of data misuse.",
+              "Environmental impact: explain energy use, e-waste, manufacturing impact and ways to reduce harm.",
+              "Digital divide: discuss unequal access to devices, connectivity, skills and services.",
+              "Professional responsibility: consider accuracy, safety, bias, accessibility and accountability in computer systems."
+            ]
+          },
+          {
+            code: "9618-7.2",
+            title: "Ownership and legislation",
+            items: [
+              "Copyright: explain ownership of software, media and data, including licensing and consequences of unauthorised copying.",
+              "Computer misuse: identify unauthorised access, modification and malware-related offences in scenarios.",
+              "Data protection: describe lawful, fair, accurate, secure and limited use of personal data at a principle level.",
+              "Intellectual property: distinguish copyright, patents, trademarks and licensing where a question gives context."
+            ]
+          }
+        ]
+      },
+      {
+        chapter: "8",
+        title: "Databases",
+        sections: [
+          {
+            code: "9618-8.1",
+            title: "Database concepts",
+            items: [
+              "Database structure: explain entities, attributes, records, fields, tables and relationships using precise terms.",
+              "Keys: distinguish primary keys, foreign keys and candidate keys, and justify key choice using uniqueness and relationships.",
+              "Normalisation awareness: reduce repeated data and update anomalies by separating related data into linked tables.",
+              "Referential integrity: explain how foreign keys keep linked records consistent.",
+              "DBMS: describe data definition, data manipulation, security, backup, concurrency control and data independence roles."
+            ]
+          },
+          {
+            code: "9618-8.2",
+            title: "SQL and data modelling",
+            items: [
+              "SELECT queries: use SELECT, FROM, WHERE and ORDER BY correctly, including comparison operators and logical conditions.",
+              "Aggregate queries: use COUNT, SUM, AVG, MIN and MAX when a question asks for totals, counts or summaries.",
+              "Joins: use primary and foreign key relationships to retrieve data from more than one table where required.",
+              "Data definition: recognise creating tables, defining fields, data types, keys and constraints at a basic level.",
+              "Query accuracy: return only the requested fields and records; avoid selecting all fields unless the question asks for them."
+            ]
+          }
+        ]
+      }
+    ],
+    paper2: [
+      {
+        chapter: "9",
+        title: "Algorithm design and problem-solving",
+        sections: [
+          {
+            code: "9618-9.1",
+            title: "Computational thinking",
+            items: [
+              "Decomposition: break a problem into input, processing, output, storage and subroutine parts before writing an algorithm.",
+              "Abstraction: remove irrelevant detail and keep the data, rules and outputs that affect the solution.",
+              "Algorithm design: use sequence, selection, iteration and modular subroutines to produce a finite, clear solution.",
+              "Structure charts and flowcharts: interpret and produce diagrams that show control flow or modular structure.",
+              "Dry runs: trace algorithms with representative data to predict outputs and find logic errors."
+            ]
+          },
+          {
+            code: "9618-9.2",
+            title: "Standard algorithms",
+            items: [
+              "Searching: apply linear search and binary search, including the need for ordered data in binary search.",
+              "Sorting: trace bubble sort and insertion sort, and explain swaps, passes and termination.",
+              "Counting and totals: initialise accumulators and counters before loops and update them in the correct branch.",
+              "Maximum and minimum: initialise carefully and update when a more extreme value is found.",
+              "Efficiency: compare algorithms using the number of comparisons, passes or loops when the question asks for suitability."
+            ]
+          },
+          {
+            code: "9618-9.3",
+            title: "Testing and validation",
+            items: [
+              "Test plans: select normal, abnormal and boundary data with expected outcomes.",
+              "Validation: write checks for type, range, length, format, presence and check digits in pseudocode.",
+              "Verification: use double entry or visual checking when data transfer accuracy matters.",
+              "Error types: distinguish syntax, logic and runtime errors and link each to detection or correction methods.",
+              "Trace tables: update variables in execution order and include loop counters, flags and output values."
+            ]
+          }
+        ]
+      },
+      {
+        chapter: "10",
+        title: "Data types and structures",
+        sections: [
+          {
+            code: "9618-10.1",
+            title: "Data types and records",
+            items: [
+              "Primitive types: choose integer, real, char, string, Boolean or date types to match the data and operations.",
+              "User-defined types: define enumerated types, pointer types and composite types when they make data clearer.",
+              "Records: group fields of different types under one identifier and access fields using record notation.",
+              "Constants and variables: use constants for fixed values and meaningful identifiers for data that changes.",
+              "Type conversion: convert between compatible types only when the algorithm needs it."
+            ]
+          },
+          {
+            code: "9618-10.2",
+            title: "Arrays and files",
+            items: [
+              "1D arrays: store lists of related values and process them with loops and indexes.",
+              "2D arrays: store table-style data and use nested loops for rows and columns.",
+              "File handling: open, read, write, append and close files using the pseudocode style required by the question.",
+              "Serial files: process records in order, detect end-of-file conditions and preserve data when updating files.",
+              "CSV-style thinking: separate fields and records clearly when reading or writing structured text."
+            ]
+          },
+          {
+            code: "9618-10.3",
+            title: "Abstract data types",
+            items: [
+              "Stacks: use LIFO behaviour with push, pop, peek, empty and full operations.",
+              "Queues: use FIFO behaviour with enqueue, dequeue, front, rear, empty and full operations.",
+              "Linked lists: use nodes and pointers to insert, delete and traverse items without relying on contiguous storage.",
+              "Binary trees: describe root, node, leaf, left/right child and traversal where the question introduces tree structures.",
+              "ADT implementation: explain how arrays and pointers can be used to implement stacks, queues and linked lists."
+            ]
+          }
+        ]
+      },
+      {
+        chapter: "11",
+        title: "Programming",
+        sections: [
+          {
+            code: "9618-11.1",
+            title: "Programming basics",
+            items: [
+              "Assignments: store evaluated expressions in variables and update values in the correct sequence.",
+              "Selection: write IF, ELSE and CASE logic with complete conditions and appropriate branches.",
+              "Iteration: choose FOR, WHILE or REPEAT loops according to count-controlled, pre-condition or post-condition needs.",
+              "Nested logic: indent and structure nested loops or selections so scope is clear.",
+              "Operators: use arithmetic, relational and Boolean operators accurately, including MOD and DIV when needed."
+            ]
+          },
+          {
+            code: "9618-11.2",
+            title: "Subroutines",
+            items: [
+              "Procedures: write reusable blocks that perform actions without returning a value.",
+              "Functions: return exactly the value required by the calling code.",
+              "Parameters: pass data by value or by reference where the question distinguishes the two.",
+              "Local and global scope: state where identifiers can be accessed and avoid accidental dependence on global data.",
+              "Modular design: split a solution into named subroutines that match the scenario's tasks."
+            ]
+          },
+          {
+            code: "9618-11.3",
+            title: "Pseudocode practice",
+            items: [
+              "9618 answer format: Paper 2 expects pseudocode, program code or flowcharts; the syllabus does not require a specific high-level programming language.",
+              "Input/output: use INPUT and OUTPUT clearly and keep prompts, validation messages and final results distinct.",
+              "String handling: use length, substring, character access, concatenation and case conversion as required by the problem.",
+              "Robust algorithms: include initialisation, loop termination, validation, error messages and final output.",
+              "Readable answers: use meaningful identifiers, consistent indentation and comments only where they clarify non-obvious logic."
+            ]
+          }
+        ]
+      },
+      {
+        chapter: "12",
+        title: "Software development",
+        sections: [
+          {
+            code: "9618-12.1",
+            title: "Program development life cycle",
+            items: [
+              "Analysis: identify the problem, inputs, outputs, processing, storage and constraints.",
+              "Design: produce algorithms, data structures, user interface plans and test strategies before coding.",
+              "Development: implement the design using structured programming and meaningful identifiers.",
+              "Testing: compare actual outputs with expected outputs and record corrections.",
+              "Maintenance: explain corrective, adaptive and perfective maintenance using realistic examples."
+            ]
+          },
+          {
+            code: "9618-12.2",
+            title: "Programming paradigms and IDEs",
+            items: [
+              "Programming paradigms: distinguish low-level, procedural, object-oriented and declarative styles at a basic AS level.",
+              "IDE tools: explain editor, translator, debugger, breakpoints, watch windows and step-through execution.",
+              "Debugging: use trace, breakpoints and variable inspection to find where actual behaviour first differs from expected behaviour.",
+              "Code quality: improve maintainability with modularity, naming, layout, comments and avoidance of duplicated logic."
+            ]
+          }
+        ]
+      }
+    ]
+  };
+
+  const syllabusChecklists = {
+    "caie-igcse-0478": {
+      label: "IGCSE 0478",
+      title: "Cambridge IGCSE Computer Science",
+      papers: syllabusChecklist
+    },
+    "caie-as-a-level-9618": {
+      label: "AS & A Level 9618",
+      title: "Cambridge International AS & A Level Computer Science",
+      papers: asLevel9618Checklist
+    }
+  };
+
   const chapterOneSections = [
     {
       number: "0",
@@ -806,6 +1230,22 @@
     { year: 2019, season: "May/June", code: "s", folder: "2019-may-june", components: ["11", "12", "13", "21", "22", "23"], legacy: true },
     { year: 2019, season: "Oct/Nov", code: "w", folder: "2019-oct-nov", components: ["11", "12", "13", "21", "22", "23"], legacy: true }
   ];
+
+  const paperSessionCatalogs = {
+    "caie-igcse-0478": paperSessions.map((session) => ({ subjectCode: "0478", ...session })),
+    "caie-as-a-level-9618": [
+      { subjectCode: "9618", year: 2025, season: "May/June", code: "s", components: ["11", "12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43"], open: true },
+      { subjectCode: "9618", year: 2025, season: "Oct/Nov", code: "w", components: ["11", "12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43"], open: true },
+      { subjectCode: "9618", year: 2024, season: "May/June", code: "s", components: ["11", "12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43"] },
+      { subjectCode: "9618", year: 2024, season: "Oct/Nov", code: "w", components: ["11", "12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43"] },
+      { subjectCode: "9618", year: 2023, season: "May/June", code: "s", components: ["11", "12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43"] },
+      { subjectCode: "9618", year: 2023, season: "Oct/Nov", code: "w", components: ["11", "12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43"] },
+      { subjectCode: "9618", year: 2022, season: "May/June", code: "s", components: ["11", "12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43"], legacy: true },
+      { subjectCode: "9618", year: 2022, season: "Oct/Nov", code: "w", components: ["11", "12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43"], legacy: true },
+      { subjectCode: "9618", year: 2021, season: "May/June", code: "s", components: ["11", "12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43"], legacy: true },
+      { subjectCode: "9618", year: 2021, season: "Oct/Nov", code: "w", components: ["11", "12", "13", "21", "22", "23", "31", "32", "41", "42"], legacy: true }
+    ]
+  };
 
   const pastPaperQuestionBank = [
     {
@@ -1163,9 +1603,12 @@
   return {
     topicBank,
     sourceLibrary,
+    syllabusChecklists,
     syllabusChecklist,
+    asLevel9618Checklist,
     chapterOneSections,
     paperSessions,
+    paperSessionCatalogs,
     pastPaperQuestionBank
   };
 });

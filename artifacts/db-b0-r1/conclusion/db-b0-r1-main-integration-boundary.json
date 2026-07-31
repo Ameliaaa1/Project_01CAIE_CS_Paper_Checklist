@@ -1,0 +1,31 @@
+{
+  "stage": "DB-B0-R1_CLEAN_GIT_INTEGRATION_SOURCE_AND_EVIDENCE_CLOSURE",
+  "branch": "codex/db-b0-r1-source-of-truth",
+  "integrationCommit": "648746c166afec523bae559a976e12b6dc2c7359",
+  "verifiedMainBase": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "sourceIntegrationCommitted": true,
+  "mergedToMain": false,
+  "pushed": false,
+  "allowedNextActions": [
+    "HUMAN_REVIEW",
+    "AUTHORIZED_ISOLATED_DATABASE_REHEARSAL"
+  ],
+  "forbiddenNextActions": [
+    "PRODUCTION_DATABASE_CONNECTION",
+    "PRODUCTION_MIGRATION",
+    "PRODUCTION_WRITE",
+    "PRODUCTION_DEPLOY",
+    "PAYMENT_PROVIDER_RUNTIME_ENABLEMENT"
+  ],
+  "dbB1PlanningAllowed": false,
+  "status": "FROZEN_PENDING_HUMAN_REVIEW_AND_DATABASE_REHEARSAL",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

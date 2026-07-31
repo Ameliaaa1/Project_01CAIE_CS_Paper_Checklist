@@ -1,0 +1,92 @@
+{
+  "stage": "DB-B1-R2_AUTOMATED_VERIFICATION_ENHANCEMENT_AND_COMBINED_HUMAN_REVIEW_PREPARATION",
+  "generatedAt": "2026-07-31T08:36:23.395Z",
+  "verificationItems": [
+    {
+      "verificationItem": "Git identity",
+      "expectedResult": "Current evidence commit",
+      "actualResult": "0b16ea780ccef35a9fc44c86ca268c1cca315129",
+      "evidenceSource": "baseline/db-b1-r2-baseline-verification.json",
+      "finalStatus": "PASS"
+    },
+    {
+      "verificationItem": "Schema identity",
+      "expectedResult": true,
+      "actualResult": true,
+      "evidenceSource": "artifacts/db-b1-r1/gate/db-b1-r1-external-gate.json",
+      "finalStatus": "PASS"
+    },
+    {
+      "verificationItem": "Migration identity",
+      "expectedResult": true,
+      "actualResult": true,
+      "evidenceSource": "artifacts/db-b1-r1/gate/db-b1-r1-external-gate.json",
+      "finalStatus": "PASS"
+    },
+    {
+      "verificationItem": "Build reproducibility",
+      "expectedResult": true,
+      "actualResult": true,
+      "evidenceSource": "artifacts/db-b1-r1/build/db-b1-r1-build-index-reproducibility-report.json",
+      "finalStatus": "PASS"
+    },
+    {
+      "verificationItem": "Database verification",
+      "expectedResult": "REUSED_BY_EXACT_CONTENT_IDENTITY",
+      "actualResult": "REUSED_BY_EXACT_CONTENT_IDENTITY",
+      "evidenceSource": "artifacts/db-b1-r1/tests/db-b1-r1-database-test-equivalence-report.json",
+      "finalStatus": "PASS"
+    },
+    {
+      "verificationItem": "Local test output",
+      "expectedResult": "PASS",
+      "actualResult": "PASS",
+      "evidenceSource": "tests/db-b1-r2-test-output-analysis.json",
+      "finalStatus": "PASS"
+    },
+    {
+      "verificationItem": "Index count semantics",
+      "expectedResult": "PASS",
+      "actualResult": "PASS",
+      "evidenceSource": "index/db-b1-r2-index-count-semantics-report.json",
+      "finalStatus": "PASS"
+    },
+    {
+      "verificationItem": "Production safety",
+      "expectedResult": "PASS",
+      "actualResult": "PASS",
+      "evidenceSource": "safety/db-b1-r2-production-safety-verification.json",
+      "finalStatus": "PASS"
+    }
+  ],
+  "verificationItemCount": 8,
+  "passCount": 8,
+  "failCount": 0,
+  "technicalVerificationStatus": "PASS",
+  "automaticallyVerifiedFacts": [
+    "Candidate and evidence identities",
+    "Schema and migration identities",
+    "Build determinism",
+    "Exact-content database test equivalence",
+    "Expected negative-path stderr classification",
+    "Canonical index count semantics",
+    "Production safety boundary"
+  ],
+  "explanationRequired": [
+    "The browser-data-load stderr is expected fail-closed test output.",
+    "The 432, 1690, and 4968 index counts measure different dimensions."
+  ],
+  "humanAuthorizationRequired": [
+    "APPROVE_DB_B0_R1_CLOSURE",
+    "APPROVE_DB_B1_MAINLINE_INTEGRATION"
+  ],
+  "unresolvedTechnicalBlockerCount": 0,
+  "humanDecisionBlockerCount": 2,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "PASS_READY_FOR_HUMAN_REVIEW"
+}

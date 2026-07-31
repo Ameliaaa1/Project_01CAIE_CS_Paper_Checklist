@@ -1,0 +1,151 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum UserStatus {
+  ACTIVE
+  SUSPENDED
+  DELETED
+}
+
+enum PurchaseStatus {
+  PENDING
+  PAID
+  FAILED
+  REFUNDED
+  CANCELED
+}
+
+enum BillingEventProcessingStatus {
+  RECEIVED
+  PROCESSED
+  IGNORED
+  FAILED
+}
+
+model User {
+  id               String           @id @default(cuid())
+  email            String           @unique
+  firstName        String
+  lastName         String
+  role             UserRole         @default(USER)
+  status           UserStatus       @default(ACTIVE)
+  emailVerifiedAt  DateTime?
+  lastLoginAt      DateTime?
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+  deletedAt        DateTime?
+  credential       UserCredential?
+  sessions         Session[]
+  purchases        Purchase[]
+  questionSearches QuestionSearch[]
+
+  @@index([status])
+  @@index([createdAt])
+}
+
+model UserCredential {
+  id                 String   @id @default(cuid())
+  userId             String   @unique
+  passwordHash       String
+  passwordSalt       String
+  passwordAlgorithm  String   @default("pbkdf2-sha256")
+  passwordIterations Int      @default(120000)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Session {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  revokedAt DateTime?
+  ipAddress String?
+  userAgent String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Purchase {
+  id                      String                 @id @default(cuid())
+  userId                  String
+  provider                String                 @default("STRIPE")
+  status                  PurchaseStatus         @default(PENDING)
+  stripeCustomerId        String?
+  stripeCheckoutSessionId String?                @unique
+  stripePaymentIntentId   String?                @unique
+  amount                  Int?
+  currency                String?
+  checkoutUrl             String?
+  providerEventId         String?
+  purchasedAt             DateTime?
+  refundedAt              DateTime?
+  createdAt               DateTime               @default(now())
+  updatedAt               DateTime               @updatedAt
+  user                    User                   @relation(fields: [userId], references: [id], onDelete: Restrict)
+  billingEvents           BillingProviderEvent[]
+
+  @@unique([provider, providerEventId])
+  @@index([userId, createdAt])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model BillingProviderEvent {
+  id                  String                       @id @default(cuid())
+  purchaseId          String
+  provider            String
+  providerEventId     String
+  eventType           String
+  processingStatus    BillingEventProcessingStatus @default(RECEIVED)
+  checkoutSessionId   String?
+  paymentIntentId     String?
+  chargeId            String?
+  refundId            String?
+  occurredAt          DateTime?
+  receivedAt          DateTime                     @default(now())
+  processedAt         DateTime?
+  processingErrorCode String?
+  payloadSha256       String?
+  purchase            Purchase                     @relation(fields: [purchaseId], references: [id], onDelete: Restrict)
+
+  @@unique([provider, providerEventId])
+  @@index([purchaseId, receivedAt])
+  @@index([eventType])
+  @@index([chargeId])
+  @@index([refundId])
+  @@index([processingStatus])
+}
+
+model QuestionSearch {
+  id          String   @id @default(cuid())
+  userId      String?
+  query       String
+  filters     Json
+  resultCount Int      @default(0)
+  source      String   @default("question-finder")
+  questionIds Json?
+  searchKey   String?
+  createdAt   DateTime @default(now())
+  user        User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@unique([userId, searchKey])
+  @@index([userId, createdAt])
+  @@index([createdAt])
+}

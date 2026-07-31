@@ -1,0 +1,115 @@
+{
+  "stage": "DB-B1-R1_CANDIDATE_CORRECTION_COMBINED_HUMAN_REVIEW_MAIN_MERGE_AND_FINAL_CLOSURE",
+  "generatedAt": "2026-07-30T16:20:59.140Z",
+  "candidateCommit": "674eb5044f3eeb5ee7dcd45403c3bb97f29a1fde",
+  "priorDatabaseTestCommit": "9440d9127703a02af90c9329c52d7a5e77ec1e1c",
+  "comparedFiles": [
+    {
+      "path": "prisma/schema.prisma",
+      "priorSha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+      "candidateSha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+      "identical": true
+    },
+    {
+      "path": "prisma/migrations/20260728133000_production_baseline/migration.sql",
+      "priorSha256": "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+      "candidateSha256": "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+      "identical": true
+    },
+    {
+      "path": "prisma/migrations/20260729152000_billing_event_ledger_extension/migration.sql",
+      "priorSha256": "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd",
+      "candidateSha256": "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd",
+      "identical": true
+    },
+    {
+      "path": "src/server/db.js",
+      "priorSha256": "4d90f4fa05b4fc5e713c9edc7758bc21f4e0004ccce12d20747bc62fc32bd45e",
+      "candidateSha256": "4d90f4fa05b4fc5e713c9edc7758bc21f4e0004ccce12d20747bc62fc32bd45e",
+      "identical": true
+    },
+    {
+      "path": "src/server/users.js",
+      "priorSha256": "9e92e30f0edb8b8aae5d651bdecb0d9698ad2b36e83ead3f024e1c2cac472c88",
+      "candidateSha256": "9e92e30f0edb8b8aae5d651bdecb0d9698ad2b36e83ead3f024e1c2cac472c88",
+      "identical": true
+    },
+    {
+      "path": "src/server/sessions.js",
+      "priorSha256": "85cd9a0584b7c81f593a6ef5114c3dd7ee9f71cdc534fa8104bc30e5868f9645",
+      "candidateSha256": "85cd9a0584b7c81f593a6ef5114c3dd7ee9f71cdc534fa8104bc30e5868f9645",
+      "identical": true
+    },
+    {
+      "path": "src/server/purchases.js",
+      "priorSha256": "160f487d487682090451aa717f9e5d797368a84654a5847ea09fcc1ca383662c",
+      "candidateSha256": "160f487d487682090451aa717f9e5d797368a84654a5847ea09fcc1ca383662c",
+      "identical": true
+    },
+    {
+      "path": "src/server/billingEvents.js",
+      "priorSha256": "cd777fa7348e889cca215e742d5cce162b47a23543fd13c6b20c4f158deb2428",
+      "candidateSha256": "cd777fa7348e889cca215e742d5cce162b47a23543fd13c6b20c4f158deb2428",
+      "identical": true
+    },
+    {
+      "path": "tests/billing-schema-extension.test.js",
+      "priorSha256": "b81ec7548741ca5dbf23806b40fedf56b62a90cbaa5a633d89463e730cc168f0",
+      "candidateSha256": "b81ec7548741ca5dbf23806b40fedf56b62a90cbaa5a633d89463e730cc168f0",
+      "identical": true
+    },
+    {
+      "path": "tests/db-a5-s1-purchase-entitlement-regression.test.js",
+      "priorSha256": "11fb32d2daa2d3c28fb4575f108f8483c5d17748b1dea6fb563cce59e9af6eb2",
+      "candidateSha256": "11fb32d2daa2d3c28fb4575f108f8483c5d17748b1dea6fb563cce59e9af6eb2",
+      "identical": true
+    },
+    {
+      "path": "tests/auth-database.test.js",
+      "priorSha256": "13d348bb95fa7ea0c53d30dd3bb4661d674c8f2e903f048fe66788bb19743cf7",
+      "candidateSha256": "13d348bb95fa7ea0c53d30dd3bb4661d674c8f2e903f048fe66788bb19743cf7",
+      "identical": true
+    },
+    {
+      "path": "tests/question-search.test.js",
+      "priorSha256": "2ebc3905e26365df2b2cda16b3977ca265d08c3f968544e76488de9c4a9bd50b",
+      "candidateSha256": "2ebc3905e26365df2b2cda16b3977ca265d08c3f968544e76488de9c4a9bd50b",
+      "identical": true
+    }
+  ],
+  "comparedFileCount": 12,
+  "mismatchedFiles": [],
+  "mismatchCount": 0,
+  "priorDatabaseExecutionEvidence": {
+    "path": "artifacts/db-b0-r1-final/database-tests/db-b0-r1-database-test-execution-report.json",
+    "sha256": "06d14089c9b2c0753d7c910c4ddc6a85a8bfd3515e958e4b5aaf32f369db2c01",
+    "status": "PASS",
+    "passCount": 4,
+    "failureCount": 0
+  },
+  "coveredFields": [
+    "schema",
+    "migration SQL",
+    "Prisma runtime modules",
+    "database test sources"
+  ],
+  "excludedFields": [
+    "Git commit identity",
+    "README",
+    "canonical static index build",
+    "DB-B1-R1 evidence"
+  ],
+  "priorDatabaseTestReusable": true,
+  "databaseTestRerunRequired": false,
+  "databaseConnectionAttempted": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false,
+  "status": "REUSED_BY_EXACT_CONTENT_IDENTITY"
+}

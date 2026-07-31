@@ -1,0 +1,31 @@
+{
+  "stage": "DB-B0-R1_CLEAN_GIT_INTEGRATION_SOURCE_AND_EVIDENCE_CLOSURE",
+  "debugZip": {
+    "path": "package/db-b0-r1-debug-json.zip",
+    "sizeBytes": 14322,
+    "sha256": "62738dc0269a20728a5865b3bbf5b259013b5cae88c35600cdccfae1e567c677",
+    "entryCount": 14,
+    "crcExitCode": 0,
+    "crcValid": true
+  },
+  "completeZip": {
+    "path": "package/db-b0-r1-complete-evidence.zip",
+    "sizeBytes": 15102,
+    "sha256": "bd089d7550dd374e3f73ff546f3f8bc85335b714ae23a32f803d81792e349abe",
+    "entryCount": 15,
+    "crcExitCode": 0,
+    "crcValid": true
+  },
+  "forbiddenArtifactCount": 0,
+  "zipCrcFailureCount": 0,
+  "status": "PASS",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

@@ -1,0 +1,35 @@
+{
+  "stage": "DB-B0-R1_CLEAN_GIT_INTEGRATION_SOURCE_AND_EVIDENCE_CLOSURE",
+  "reviewStatus": "PENDING_HUMAN_REVIEW",
+  "reviewBindings": {
+    "executionCommit": "648746c166afec523bae559a976e12b6dc2c7359",
+    "verifiedMainBase": "11ce82001efb633c1697356c1a510fc0c5034245",
+    "schemaSha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+    "baselineMigrationSha256": "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+    "billingExtensionMigrationSha256": "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd",
+    "remoteRefreshSha256": "1dda237dce6abc48f8a73322084b9d23b8dc0ca375e1e4c48a65d1c10fe5af18",
+    "gitTrackingAuditSha256": "22b9624ace6fd3cf60ceb7b607a720d6b4a724f860ae269ec944d1f271f512e0",
+    "approvedArtifactTrackingSha256": "c71db2722b6b757c8a4d335687b94328ec4846f30008181b4c9575d909f11062",
+    "migrationIntegritySha256": "d77bf7cf5d9d68677e5127c6fcd4b00d8418be31ee90aaa887fca9bde7254dd7",
+    "runtimeBoundarySha256": "eb3932fe3228e6b193d01701e88fbef836a92b7f85b8ece52187723b10fea858",
+    "testExecutionSha256": "65c50c42e29296ea07778b21a92de3b52ca18ba741eaf0203aa9de26d2781c62"
+  },
+  "reviewQuestions": [
+    "Does the integration commit represent the approved Schema, migrations, runtime, tests, and provider-disabled boundary?",
+    "Is the temporary local fallback correctly deferred to DB-B1?",
+    "Should a new isolated PostgreSQL target be authorized for the two blocked rehearsal tests?"
+  ],
+  "automaticBlockers": [
+    "DB-B0-R1-BLOCKER-001",
+    "DB-B0-R1-BLOCKER-002"
+  ],
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

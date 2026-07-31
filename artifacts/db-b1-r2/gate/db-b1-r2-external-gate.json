@@ -1,0 +1,42 @@
+{
+  "stage": "DB-B1-R2_AUTOMATED_VERIFICATION_ENHANCEMENT_AND_COMBINED_HUMAN_REVIEW_PREPARATION",
+  "evaluatedAt": "2026-07-31T08:36:39.031Z",
+  "evidenceCommit": "0b16ea780ccef35a9fc44c86ca268c1cca315129",
+  "technicalCandidateCommit": "674eb5044f3eeb5ee7dcd45403c3bb97f29a1fde",
+  "checks": {
+    "evidenceBaseline": "PASS",
+    "automatedVerification": "PASS",
+    "testOutputAnalysis": "PASS",
+    "indexCountSemantics": "PASS",
+    "productionSafety": "PASS",
+    "manifestVerification": "PASS",
+    "zipVerification": "PASS",
+    "dbB0R1HumanDecision": "PENDING_HUMAN_REVIEW",
+    "dbB1MainlineDecision": "PENDING_HUMAN_REVIEW"
+  },
+  "evidenceBinding": {
+    "manifestSha256": "fb5bdb4ee66ac04f8e0d27a31f7374ba87e2dccebfa85ad19d0729ac7ee2b8c3",
+    "manifestVerificationSha256": "8a84522577cb196fbf4b2a8d4916b11822d74702904a337c5a58a06fb0dd3f22",
+    "debugZipSha256": "6dc1c246e0c4269d6263b957a480677fa61c27c4b5c52d2174419e2fda127a5d",
+    "completeZipSha256": "2d3cf3b32885c4e6bef0d0694ac7ada4dd5522043934c7efdfcd83f4a37eeafb",
+    "zipVerificationSha256": "f7a26666801b9a9e79805f3e297860fdff202e85eea1ecb4b5b2dce3851a1c92",
+    "deliveryReportSha256": "b15fdcfd96192a7ea24e596063bb96986f90fc9fff08e71979fb273c5fb804a4",
+    "combinedHumanReviewPackageSha256": "595ad7092c033bbf0c387dc4ab3f840af0f4165eb10b59c7094d803042202023",
+    "decisionTemplateSha256": "b3348ee0738bb1e98853f30fccbad9821579432f1d0cdd1b81a817ce625bef6e"
+  },
+  "technicalVerificationStatus": "PASS",
+  "humanReviewPackageReady": true,
+  "combinedHumanReviewRequired": true,
+  "unresolvedTechnicalBlockerCount": 0,
+  "humanDecisionBlockerCount": 2,
+  "mainMergeAuthorized": false,
+  "actualMainUpdated": false,
+  "productionAccess": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "READY_FOR_COMBINED_HUMAN_REVIEW"
+}

@@ -1,0 +1,104 @@
+{
+  "stage": "DB-B1-R1_CANDIDATE_CORRECTION_COMBINED_HUMAN_REVIEW_MAIN_MERGE_AND_FINAL_CLOSURE",
+  "generatedAt": "2026-07-30T16:20:59.140Z",
+  "candidateCommit": "674eb5044f3eeb5ee7dcd45403c3bb97f29a1fde",
+  "artifactCount": 12,
+  "artifacts": {
+    "baseline/db-b1-r1-baseline-report.json": {
+      "sizeBytes": 1150,
+      "sha256": "650f9d37396e422c3c957a8f4fe1ba0624ee1ea93637743f15125b6b17eddb24",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "build/db-b1-r1-build-index-reproducibility-report.json": {
+      "sizeBytes": 1812,
+      "sha256": "2b257b5379618f2c4a04a585d8c491029c432fb57450464ee598e48782ca46e0",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "documentation/db-b1-r1-documentation-cleanup-report.json": {
+      "sizeBytes": 845,
+      "sha256": "3f1cebb83ae140351f97f10d04357df9682edf6d778e2cda21b0aeef227353e8",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "gate/db-b1-r1-blocker-register.json": {
+      "sizeBytes": 1060,
+      "sha256": "6e4731becb190067b68e9c648f9212d01f3dd1965db584213cfd05cc6f1ca1d4",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "human-review/db-b1-r1-combined-human-decision.json": {
+      "sizeBytes": 1720,
+      "sha256": "4d27cfb0b5e214f41399f0eceb240815499d848af7e0432d10fb487b00fda149",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "human-review/db-b1-r1-combined-human-review-package.json": {
+      "sizeBytes": 1872,
+      "sha256": "8ee850740ad1368d9a07b5d0ee1db9277cda361e590f755b3df4a89ac4d8a09f",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "human-review/db-b1-r1-human-decision-verification.json": {
+      "sizeBytes": 1026,
+      "sha256": "65e68d42234f699131f921d17f785af78dea17de6d1dbfcd5ff26d51a3e15eca",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "merge/db-b1-main-merge-verification.json": {
+      "sizeBytes": 1283,
+      "sha256": "e7134bc6827ee7b07e0fdf0e4bba1d1e4dcf7ba6af3d73bdafa4f6eec08c20a6",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "merge/db-b1-post-merge-verification.json": {
+      "sizeBytes": 716,
+      "sha256": "7b098586ec954f8d11ef3f04b4651306d36df1b546c606e698e1a2929dc7b2ca",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "package/db-b1-r1-execution-report.md": {
+      "sizeBytes": 463,
+      "sha256": "d96583677aa0a31b2b7d576e0527ae9faca9cfc644b14c9895268a3df2286816",
+      "mimeType": "text/markdown",
+      "parseStatus": "NOT_APPLICABLE",
+      "jsonValid": null
+    },
+    "tests/db-b1-r1-database-test-equivalence-report.json": {
+      "sizeBytes": 4650,
+      "sha256": "143f0fd7ffe865dc902e277071fecab96a1c5665b036547fac41938d9425bddd",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    },
+    "tests/db-b1-r1-final-validation-report.json": {
+      "sizeBytes": 1984,
+      "sha256": "6aa13a463dbcecfb7724dbad86b75eb6a755a56597ebc43d8902b48b42bc64e0",
+      "mimeType": "application/json",
+      "parseStatus": "PASS",
+      "jsonValid": true
+    }
+  },
+  "approvedEvidenceOnly": true,
+  "finalPostMergeManifest": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false,
+  "status": "PRE_HUMAN_REVIEW_FROZEN"
+}

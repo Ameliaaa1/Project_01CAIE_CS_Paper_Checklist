@@ -1,0 +1,41 @@
+{
+  "stage": "DB-B1-R1_CANDIDATE_CORRECTION_COMBINED_HUMAN_REVIEW_MAIN_MERGE_AND_FINAL_CLOSURE",
+  "generatedAt": "2026-07-30T16:20:59.140Z",
+  "reviewStatus": "PENDING_HUMAN_REVIEW",
+  "reviewBindings": {
+    "candidateCommit": "674eb5044f3eeb5ee7dcd45403c3bb97f29a1fde",
+    "originMain": "11ce82001efb633c1697356c1a510fc0c5034245",
+    "schemaSha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+    "baselineMigrationSha256": "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+    "billingMigrationSha256": "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd",
+    "baselineReportSha256": "650f9d37396e422c3c957a8f4fe1ba0624ee1ea93637743f15125b6b17eddb24",
+    "buildReportSha256": "2b257b5379618f2c4a04a585d8c491029c432fb57450464ee598e48782ca46e0",
+    "databaseEquivalenceReportSha256": "143f0fd7ffe865dc902e277071fecab96a1c5665b036547fac41938d9425bddd",
+    "documentationReportSha256": "3f1cebb83ae140351f97f10d04357df9682edf6d778e2cda21b0aeef227353e8",
+    "finalValidationReportSha256": "6aa13a463dbcecfb7724dbad86b75eb6a755a56597ebc43d8902b48b42bc64e0"
+  },
+  "requiredDecisions": [
+    {
+      "stage": "DB-B0-R1",
+      "expectedDecision": "APPROVE_DB_B0_R1_CLOSURE",
+      "currentDecision": "PENDING_HUMAN_REVIEW"
+    },
+    {
+      "stage": "DB-B1-R1",
+      "expectedDecision": "APPROVE_DB_B1_MAINLINE_INTEGRATION",
+      "currentDecision": "PENDING_HUMAN_REVIEW"
+    }
+  ],
+  "technicalChecksPassed": true,
+  "codexDidNotAuthorApproval": true,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false,
+  "status": "PENDING_COMBINED_HUMAN_REVIEW"
+}

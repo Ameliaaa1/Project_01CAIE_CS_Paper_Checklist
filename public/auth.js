@@ -93,9 +93,9 @@ async function createAccount(event) {
   }
 
   saveSession(result.data.user);
-  setMessage("Account created. Opening lifetime access options.");
+  setMessage("Account created. Opening PaperLens.");
   window.setTimeout(() => {
-    window.location.href = "index.html?buy=1#igcse-0478";
+    window.location.href = "index.html#igcse-0478";
   }, 700);
 }
 
@@ -115,8 +115,7 @@ async function logIn(event) {
   saveSession(result.data.user);
   setMessage("Logged in. Taking you back to PaperLens.");
   window.setTimeout(() => {
-    const returnTarget = new URLSearchParams(window.location.search).get("return");
-    window.location.href = returnTarget === "buy" ? "index.html?buy=1#igcse-0478" : "index.html#igcse-0478";
+    window.location.href = "index.html#igcse-0478";
   }, 700);
 }
 

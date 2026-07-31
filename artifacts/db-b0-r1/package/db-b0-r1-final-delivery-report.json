@@ -1,0 +1,38 @@
+{
+  "stage": "DB-B0-R1_CLEAN_GIT_INTEGRATION_SOURCE_AND_EVIDENCE_CLOSURE",
+  "completedAt": "2026-07-30T08:02:52.564Z",
+  "implementationCommit": "648746c166afec523bae559a976e12b6dc2c7359",
+  "verifiedMainBase": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "manifest": {
+    "path": "package/db-b0-r1-pre-review-evidence-manifest.json",
+    "sha256": "c6605d68eaa5f2161b4c5e5906abc02a6f5b90b389215b9861f8c46ae28d6970"
+  },
+  "manifestVerification": {
+    "path": "package/db-b0-r1-pre-review-evidence-manifest-verification.json",
+    "sha256": "1a3b1607e5ba91cd2c6e39ec151cff91f009afc87ffe488566c029096521c1cc"
+  },
+  "debugZip": {
+    "path": "package/db-b0-r1-debug-json.zip",
+    "sha256": "62738dc0269a20728a5865b3bbf5b259013b5cae88c35600cdccfae1e567c677",
+    "sizeBytes": 14322
+  },
+  "completeZip": {
+    "path": "package/db-b0-r1-complete-evidence.zip",
+    "sha256": "bd089d7550dd374e3f73ff546f3f8bc85335b714ae23a32f803d81792e349abe",
+    "sizeBytes": 15102
+  },
+  "zipVerification": {
+    "path": "package/db-b0-r1-zip-verification.json",
+    "sha256": "55e53ac9b91aaba912be3feb4c82f62da7f3498b6a365b5db63874147c0194d5"
+  },
+  "status": "BLOCKED_PENDING_AUTHORIZED_EPHEMERAL_POSTGRESQL_AND_HUMAN_REVIEW",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

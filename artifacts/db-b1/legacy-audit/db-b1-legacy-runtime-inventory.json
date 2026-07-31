@@ -1,0 +1,55 @@
+{
+  "stage": "DB-B1_MAINLINE_DATABASE_INTEGRATION_AND_LOCAL_VALIDATION",
+  "generatedAt": "2026-07-30T10:16:26.128Z",
+  "integrationCandidateCommit": "cdc75e55e07b491dc49af29adef9876aef4246c2",
+  "entries": [
+    {
+      "path": "src/server/localStore.js",
+      "purpose": "Local/test fallback for users, sessions, purchases, and question-search accounting when DATABASE_URL is absent.",
+      "dynamicData": true,
+      "activeInLocalDevelopmentAndTests": true,
+      "activeInConfiguredPostgresqlRuntime": false,
+      "classification": "APPROVED_TEMPORARY_COMPATIBILITY",
+      "exitStage": "DB-B4_PRODUCTION_RUNTIME_CUTOVER_AND_LEGACY_DYNAMIC_STORE_RETIREMENT"
+    },
+    {
+      "path": "data/users.json",
+      "purpose": "Legacy/local user and question-search JSON store.",
+      "dynamicData": true,
+      "gitTracked": false,
+      "classification": "REMOVE_AFTER_CUTOVER",
+      "exitStage": "DB-B4_PRODUCTION_RUNTIME_CUTOVER_AND_LEGACY_DYNAMIC_STORE_RETIREMENT"
+    },
+    {
+      "path": "server.js legacy Redis/KV user-store helpers",
+      "purpose": "Historical user JSON persistence and optional rate-limit transport.",
+      "dynamicData": true,
+      "userStoreHelpersReachableFromCurrentDatabaseModules": false,
+      "rateLimitTransportStillReachable": true,
+      "classification": "APPROVED_TEMPORARY_COMPATIBILITY",
+      "exitStage": "DB-B2_LEGACY_DYNAMIC_DATA_DECISION"
+    },
+    {
+      "path": "public/checkout.html and public/checkout.js",
+      "purpose": "Superseded Stripe checkout UI.",
+      "dynamicData": false,
+      "gitState": "DELETED_IN_CANDIDATE",
+      "classification": "HISTORICAL_ONLY",
+      "exitStage": "COMPLETED_DB-A5-P0"
+    }
+  ],
+  "entryCount": 4,
+  "unclassifiedLegacyRuntimeCount": 0,
+  "legacyDynamicRuntimeClassified": true,
+  "legacyRuntimeDeletedDuringDbB1": false,
+  "status": "PASS",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

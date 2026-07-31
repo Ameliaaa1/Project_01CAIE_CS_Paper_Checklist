@@ -1,0 +1,49 @@
+{
+  "stage": "DB-B1-R2_AUTOMATED_VERIFICATION_ENHANCEMENT_AND_COMBINED_HUMAN_REVIEW_PREPARATION",
+  "generatedAt": "2026-07-31T08:36:23.395Z",
+  "authoritativeSource": "generated/production-question-index.json",
+  "browserMirror": "public/assets/question-index.json",
+  "counts": {
+    "papers": {
+      "actual": 432,
+      "meaning": "Total canonical source documents represented: unique question papers plus their unique mark schemes.",
+      "derivation": "216 question papers + 216 mark schemes",
+      "consistent": true
+    },
+    "questions": {
+      "actual": 1690,
+      "meaning": "Canonical top-level searchable question entries.",
+      "entryArrayCount": 1690,
+      "consistent": true
+    },
+    "markSchemeEntries": {
+      "actual": 4968,
+      "meaning": "Canonical mark-scheme records used to aggregate answer evidence; this is not a paper or question count."
+    },
+    "uniquePaperCodes": {
+      "actual": 216,
+      "meaning": "Unique examination paper/component identities represented by question entries."
+    }
+  },
+  "browserMirrorSemanticEqual": true,
+  "canonicalSha256": "a95f5c5f5ff6b0bd5d54eadca275873c58947dca1705d75aeaf307d2eb130632",
+  "browserMirrorSha256": "cf6193c7872d81c3b061fd6f30eb5f27070c7ecbd202eb4926f79026103e91ab",
+  "requiredDataMissing": false,
+  "historicalLegacyIndex": {
+    "active": false,
+    "filePresent": false,
+    "source": "Deprecated PDF-derived builder",
+    "paperCount": 95,
+    "questionCount": 833,
+    "entryCount": 833,
+    "explanation": "The legacy 95/833 counts covered a smaller PDF-derived corpus and are not comparable to the canonical 432/1690/4968 dimensions."
+  },
+  "countSemanticsUnambiguous": true,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "PASS"
+}
