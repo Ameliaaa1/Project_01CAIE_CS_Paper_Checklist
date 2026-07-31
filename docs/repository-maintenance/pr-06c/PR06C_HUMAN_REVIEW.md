@@ -26,21 +26,31 @@ Implementation authorization: `NOT_AUTHORIZED`
 
 ## Review Checklist
 
-- [ ] Current Candidate and Production authority are correctly recorded as
-  absent.
+- [ ] Candidate, Current Production, and Promotion Target are three independent
+  roles.
+- [ ] Current Candidate, Current Production, and Promotion Target authority are
+  correctly recorded as absent.
 - [ ] Proposed Candidate path is exactly
   `promotion/candidate/manifest.json`.
-- [ ] Proposed Production path is exactly
+- [ ] Proposed Current Production path is exactly
   `promotion/production/manifest.json`.
+- [ ] Proposed Promotion Target path is exactly
+  `promotion/target/manifest.json`.
+- [ ] Candidate identity is compared with Promotion Target, never required to
+  equal Current Production.
+- [ ] Bootstrap requires Current Production to be absent.
+- [ ] Update requires a valid Current Production baseline and permits approved
+  content upgrades.
 - [ ] Generated index, delivery data, PDFs, runtime data, and historical
   evidence remain non-authoritative.
-- [ ] Manifest identity fields are sufficient and reproducible.
-- [ ] Equality and allowed-difference rules are correct.
+- [ ] Every manifest field has exactly one classification.
+- [ ] Stable-ID, scope, and schema hashes have reproducible exact-byte rules.
 - [ ] 0478 and 9618 are the only allowed syllabus identities.
-- [ ] Missing manifests and any 9709 scope fail closed.
+- [ ] Missing required manifests, role ambiguity, unknown fields, and any 9709
+  scope fail closed.
 - [ ] Validation, authorization, and execution remain distinct.
-- [ ] Production, Candidate, PDF, parser, frontend, runtime, and historical
-  evidence changes are all zero.
+- [ ] Production, Candidate, Promotion Target, PDF, parser, frontend, and
+  runtime changes are all zero.
 - [ ] No promotion validator or promotion execution was started.
 
 ## Approval Format
@@ -48,9 +58,13 @@ Implementation authorization: `NOT_AUTHORIZED`
 ```text
 PASS_PR06C_SOURCE_OF_TRUTH_CONTRACT_HUMAN_REVIEW
 Reviewer: Amelia Cai
+Review UTC timestamp: YYYY-MM-DDTHH:mm:ssZ
 Decision: APPROVE
 Approved Candidate manifest: promotion/candidate/manifest.json
-Approved Production manifest: promotion/production/manifest.json
+Approved Current Production manifest: promotion/production/manifest.json
+Approved Promotion Target manifest: promotion/target/manifest.json
+Approved promotion modes: bootstrap, update
+Approved manifest proposal version: 2
 Approved implementation phase: PR-06C Promotion Gate Validator
 ```
 

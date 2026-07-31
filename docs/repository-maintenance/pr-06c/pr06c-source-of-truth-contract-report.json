@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "task": "PR-06C-SOURCE-OF-TRUTH-CONTRACT",
+  "task": "PR06C-R1-PROMOTION-TARGET-MODEL-CONTRACT-REPAIR",
   "status": "READY_FOR_HUMAN_REVIEW",
-  "result": "READY_PR06C_SOURCE_OF_TRUTH_CONTRACT_FOR_HUMAN_REVIEW",
+  "result": "READY_PR06C_R1_PROMOTION_TARGET_MODEL_CONTRACT_FOR_HUMAN_REVIEW",
   "baseSha": "12f10e88842ba736888db5f00ed6ae5334874d4d",
   "validatedImplementationSha": "PENDING",
   "finalPrHeadSha": null,
   "initialAuditGeneratedAt": "2026-07-31T01:46:17Z",
-  "generatedAt": "2026-07-31T06:47:34Z",
+  "generatedAt": "2026-07-31T07:43:56Z",
   "markdownReport": "docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_AUDIT.md",
   "inventory": {
     "trackedFiles": 329,
@@ -16,6 +16,7 @@
     "trackedPublicFiles": 207,
     "candidateManifests": 0,
     "productionManifests": 0,
+    "promotionTargetManifests": 0,
     "questionIndexPapers": 95,
     "questionIndexEntries": 833,
     "observedSyllabi": ["0478"]
@@ -23,9 +24,13 @@
   "authorityModel": {
     "currentCandidateAuthority": null,
     "currentProductionAuthority": null,
+    "currentPromotionTargetAuthority": null,
     "proposedCandidateManifest": "promotion/candidate/manifest.json",
-    "proposedProductionManifest": "promotion/production/manifest.json",
+    "proposedCurrentProductionManifest": "promotion/production/manifest.json",
+    "proposedPromotionTargetManifest": "promotion/target/manifest.json",
     "proposalStatus": "PROPOSED_PENDING_HUMAN_APPROVAL",
+    "candidateEqualsPromotionTargetIdentity": true,
+    "candidateEqualsCurrentProductionIdentity": false,
     "generatedQuestionIndexClass": "GENERATED_DERIVATIVE",
     "paperlensDataClass": "FRONTEND_SERVER_DELIVERY_ARTIFACT",
     "pdfClass": "SOURCE_INPUT",
@@ -33,14 +38,30 @@
     "historicalEvidenceClass": "NOT_ARTIFACT_AUTHORITY"
   },
   "contract": {
-    "manifestSchemaVersion": 1,
+    "manifestSchemaVersion": 2,
     "allowedSyllabi": ["0478", "9618"],
     "forbiddenSyllabi": ["9709"],
     "manifestFirst": true,
     "failClosed": true,
+    "promotionModes": ["bootstrap", "update"],
+    "bootstrapRequiresCurrentProductionAbsent": true,
+    "updateRequiresCurrentProductionPresent": true,
+    "fieldClassificationComplete": true,
+    "fieldCategories": [
+      "IDENTITY_EQUAL",
+      "ALLOWED_DIFFERENCE",
+      "DERIVED_FIELD",
+      "EXECUTION_METADATA",
+      "FORBIDDEN_CHANGE"
+    ],
+    "canonicalHashes": [
+      "stableIdSetSha256",
+      "scopeSha256",
+      "artifactSchemaSha256"
+    ],
     "validationSeparatedFromAuthorization": true,
     "authorizationSeparatedFromExecution": true,
-    "passRules": 9
+    "passRules": 12
   },
   "tests": {
     "command": "npm run test:documentation-validation",
@@ -61,7 +82,11 @@
     "gitDiffCheck": "PASS",
     "readOnlyDefault": "PASS",
     "repositoryInventory": "PASS",
-    "sourceOfTruthGuessing": "NOT_PERFORMED"
+    "sourceOfTruthGuessing": "NOT_PERFORMED",
+    "bootstrapModel": "PASS",
+    "updateModel": "PASS",
+    "fieldClassification": "PASS",
+    "hashCanonicalization": "PASS"
   },
   "summary": {
     "blockingFindings": 0,
@@ -72,7 +97,7 @@
     "filesDeleted": 0,
     "filesRenamed": 0,
     "filesMoved": 0,
-    "lineAdditions": 692,
+    "lineAdditions": 973,
     "lineDeletions": 0,
     "productionChanges": 0,
     "candidateChanges": 0,
@@ -80,15 +105,17 @@
     "parserChanges": 0,
     "frontendChanges": 0,
     "runtimeBehaviorChanges": 0,
-    "historicalEvidenceChanges": 0
+    "promotionTargetChanges": 0,
+    "contractEvidenceChanges": 7,
+    "validationRegistryChanges": 1
   },
   "evidenceFiles": [
-    {"path":"docs/repository-maintenance/pr-06c/PR06C_AUTHORITY_CLASSIFICATION.md","evidenceClass":"historical","sizeBytes":3301,"sha256":"f0146d01e62b7434c37cd90e1f96863e6c801279b9bbb775041a23f796fe8adb"},
-    {"path":"docs/repository-maintenance/pr-06c/PR06C_HUMAN_REVIEW.md","evidenceClass":"historical","sizeBytes":1900,"sha256":"91edd70a816d88fb6899ff00db146afb069d558d30fa7286c6a5c0fa0b169d3e"},
-    {"path":"docs/repository-maintenance/pr-06c/PR06C_PROMOTION_CONTRACT.md","evidenceClass":"historical","sizeBytes":3599,"sha256":"90d2f8976eb0076cbdce81f176c13a391525e54ec73e5a9845cf47f79d8990b6"},
-    {"path":"docs/repository-maintenance/pr-06c/PR06C_RISK_ASSESSMENT.md","evidenceClass":"historical","sizeBytes":1997,"sha256":"e4aea6ea4e556495b45e3e1883d6f1d58781adff9bbe0f97c15e013893f335f1"},
-    {"path":"docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_AUDIT.md","evidenceClass":"historical","sizeBytes":4120,"sha256":"51a2827148565e7c2e09e7d515b073e3dad92d5f1b577908fd04b9c695b322ae"},
-    {"path":"docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_SCHEMA_PROPOSAL.md","evidenceClass":"historical","sizeBytes":3166,"sha256":"7cc9929fc3cd75d27094ea9b053d6e0ac08c029ea7420cdc04dd48daee2e4f26"}
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_AUTHORITY_CLASSIFICATION.md","evidenceClass":"historical","sizeBytes":6003,"sha256":"88970ecf9aedbc364d005a674632bc72671254109d6f93aab54dc0985fc5d66c"},
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_HUMAN_REVIEW.md","evidenceClass":"historical","sizeBytes":2628,"sha256":"d5214ce228e728f59c5738c937558bf9f9504facef63e1fdba8f998f4c14dff2"},
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_PROMOTION_CONTRACT.md","evidenceClass":"historical","sizeBytes":6055,"sha256":"1ff77456f1b60db02508f9574e8b3e89075dae9b1ead35c716a4f08aa2a791c2"},
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_RISK_ASSESSMENT.md","evidenceClass":"historical","sizeBytes":3042,"sha256":"990c0912f0c97f2852cfed0355ce5f843ca604bf1a5a164756d1d9aaaeabcbaa"},
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_AUDIT.md","evidenceClass":"historical","sizeBytes":4962,"sha256":"d18fa5a1e29d2077d5859cd29ba4a3d429176d762b39a431b320a78fc7c5547c"},
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_SCHEMA_PROPOSAL.md","evidenceClass":"historical","sizeBytes":8625,"sha256":"17e30d7b4e01e8130fbaed5cf78176eba6ead364a49490f6e5ea9ac2aaefd02a"}
   ],
   "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE",
   "humanReview": {
@@ -97,7 +124,10 @@
     "reviewer": null,
     "reviewedAt": null,
     "approvedCandidateManifest": null,
-    "approvedProductionManifest": null,
+    "approvedCurrentProductionManifest": null,
+    "approvedPromotionTargetManifest": null,
+    "approvedPromotionModes": null,
+    "approvedManifestSchemaVersion": null,
     "approvedImplementationPhase": null
   }
 }

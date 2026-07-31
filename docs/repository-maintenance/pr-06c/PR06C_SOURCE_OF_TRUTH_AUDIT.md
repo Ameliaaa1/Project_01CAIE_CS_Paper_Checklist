@@ -1,10 +1,10 @@
 # PR-06C Source-of-Truth Audit
 
-Task: `PR-06C-SOURCE-OF-TRUTH-CONTRACT`
+Task: `PR06C-R1-PROMOTION-TARGET-MODEL-CONTRACT-REPAIR`
 
 Status: `READY_FOR_HUMAN_REVIEW`
 
-Result: `READY_PR06C_SOURCE_OF_TRUTH_CONTRACT_FOR_HUMAN_REVIEW`
+Result: `READY_PR06C_R1_PROMOTION_TARGET_MODEL_CONTRACT_FOR_HUMAN_REVIEW`
 
 Owner: Repository maintainers
 
@@ -29,7 +29,7 @@ Final PR head SHA: `PENDING`
 
 Initial audit generated at: `2026-07-31T01:46:17Z`
 
-Generated at: `2026-07-31T06:47:34Z`
+Generated at: `2026-07-31T07:43:56Z`
 
 Tests cases: `90`
 
@@ -49,7 +49,7 @@ Files renamed: `0`
 
 Files moved: `0`
 
-Line additions: `692`
+Line additions: `973`
 
 Line deletions: `0`
 
@@ -57,17 +57,21 @@ Human review decision: `PENDING`
 
 ## Outcome
 
-The audit resolves the design ambiguity without inventing a current
-Candidate/Production pair. `origin/main` has no Candidate authority manifest
-and no Production authority manifest. The contract therefore freezes two
-future, exact manifest locations while keeping both inactive until human
-approval:
+The R1 audit repairs the incomplete two-role model without inventing current
+authority. `origin/main` has no Candidate, Current Production, or Promotion
+Target authority manifest. The repaired contract freezes three independent
+future roles and exact paths while keeping all inactive until human approval:
 
 - Candidate: `promotion/candidate/manifest.json`
-- Production: `promotion/production/manifest.json`
+- Current Production: `promotion/production/manifest.json`
+- Promotion Target: `promotion/target/manifest.json`
 
-Both locations are `PROPOSED_PENDING_HUMAN_APPROVAL`. Neither file is created
-in this phase.
+All locations are `PROPOSED_PENDING_HUMAN_APPROVAL`. No manifest is created in
+this phase.
+
+Candidate and Promotion Target must have the same content identity. Current
+Production is only a baseline: it must be absent for Bootstrap, must exist for
+Update, and is not required to equal the future target.
 
 ## Repository Baseline
 
@@ -82,6 +86,7 @@ in this phase.
 | Deployment configuration files | 3 |
 | Candidate manifests | 0 |
 | Production manifests | 0 |
+| Promotion Target manifests | 0 |
 
 The 196 tracked PDFs all have `0478` filenames. The current generated question
 index contains 95 papers and 833 entries, all with syllabus identity
@@ -109,14 +114,22 @@ that the index is Candidate authority.
    expressly forbids that inference.
 4. Dirty or untracked files in another worktree are not evidence for
    `origin/main` authority and were excluded.
-5. A future manifest must identify an artifact by content, stable identifiers,
+5. Candidate cannot be compared directly to Current Production as
+   required-equal content because that would reject valid upgrades.
+6. Bootstrap and Update require opposite Current Production presence rules.
+7. Candidate must instead match a separate Promotion Target identity.
+8. A future manifest must identify an artifact by content, stable identifiers,
    schema, supported scope, and source commit.
+9. Stable-ID, scope, and schema hashes require frozen ordering, duplicate,
+   encoding, empty-value, and exact-byte rules.
 
 ## Safety Boundary
 
 Production changes: 0
 
 Candidate changes: 0
+
+Promotion Target changes: 0
 
 PDF changes: 0
 
@@ -126,12 +139,15 @@ Frontend changes: 0
 
 Runtime behavior changes: 0
 
-Historical evidence changes: 0
+Contract evidence changes: 7
+
+Validation registry changes: 1
 
 Promotion execution: 0
 
 ## Next Gate
 
-Human review must approve the exact authority paths, schema proposal, equality
-rules, allowed-difference matrix, and approval boundary. Only then may a
-separate phase implement a read-only promotion validator.
+Human review must approve the three-role authority model, Bootstrap/Update
+rules, schema proposal version 2, exhaustive field matrix, canonical hash
+rules, and approval boundary. Only then may a separate phase implement a
+read-only promotion validator.
