@@ -1,0 +1,32 @@
+{
+  "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
+  "status": "PASS",
+  "decisionArtifact": {
+    "path": "human-review/db-b2-deployment-trigger-mitigation-human-decision.json",
+    "sizeBytes": 1365,
+    "sha256": "a889713734e0a61c7f304602d9522c3a46086fa118d157b393d67172ad2657f2",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "checks": {
+    "decisionMatches": true,
+    "reviewerMatches": true,
+    "canonicalProviderDefined": true,
+    "githubPagesDisableAuthorized": true,
+    "mainProductionSeparationAuthorized": true,
+    "previewPreservationAuthorized": true,
+    "neonRehearsalAuthorized": true,
+    "productionDatabaseActionNotAuthorized": true,
+    "productionDeploymentNotAuthorized": true
+  },
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}

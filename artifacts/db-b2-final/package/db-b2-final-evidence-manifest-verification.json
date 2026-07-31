@@ -1,0 +1,29 @@
+{
+  "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
+  "status": "PASS",
+  "manifest": {
+    "path": "package/db-b2-final-evidence-manifest.json",
+    "sizeBytes": 5160,
+    "sha256": "c83af600d07828663fe623ce701a531f411122c2f932f5560669163df0759b26",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "artifactCount": 14,
+  "checkedArtifactCount": 14,
+  "mismatches": [],
+  "mismatchCount": 0,
+  "forbiddenArtifactCount": 0,
+  "unexpectedArtifactCount": 0,
+  "unregisteredArtifactCount": 0,
+  "dsStoreArtifactCount": 0,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}

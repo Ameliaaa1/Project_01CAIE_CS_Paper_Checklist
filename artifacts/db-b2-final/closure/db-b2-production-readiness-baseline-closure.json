@@ -1,0 +1,64 @@
+{
+  "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
+  "status": "PASS",
+  "dbB2ReadinessBaseline": "PASS",
+  "finalHumanGate": "PASS",
+  "blockerCount": 0,
+  "blockers": [],
+  "dbB3EntryAllowed": true,
+  "dbB3AuthorizedScope": "PLANNING_AND_PRODUCTION_PREFLIGHT_PREPARATION_ONLY",
+  "deploymentConfigurationVerification": {
+    "path": "deployment/db-b2-deployment-configuration-verification.json",
+    "sizeBytes": 2798,
+    "sha256": "a3a2cf6e70554f53a0ad84d4def9a98d857645bcb6b2fb37e60247a376629cab",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "legacyMigrationInputInventory": {
+    "path": "database/db-b2-legacy-migration-input-inventory.json",
+    "sizeBytes": 1492,
+    "sha256": "3ffcd923cf45df71108978dd3a443cdacfc3fa3ed9627e6eeff68bba62c645ce",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "finalNeonRehearsalReport": {
+    "path": "database/db-b2-final-neon-rehearsal-report.json",
+    "sizeBytes": 4141,
+    "sha256": "61aa358308d177ae7844d5c659c13aae7b2cf7607306fa31876df46fe762847a",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "finalHumanDecision": {
+    "path": "human-review/db-b2-final-combined-human-decision.json",
+    "sizeBytes": 2171,
+    "sha256": "02e93e9557664cb95c0972e01cee8300e6a848457a69db67715b48e2a08f6e42",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "finalHumanDecisionVerification": {
+    "path": "human-review/db-b2-final-combined-human-decision-verification.json",
+    "sizeBytes": 1323,
+    "sha256": "a01f356948b4edacb0dd057c249d0ef08263e1364183a9ab41341038d6ad592b",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "closureCommit": "8991fc175770294a32d410fccad6cec03c3cd2ba",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}

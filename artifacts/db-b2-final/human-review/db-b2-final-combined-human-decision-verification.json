@@ -1,0 +1,36 @@
+{
+  "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
+  "status": "PASS",
+  "verifiedAt": "2026-07-31T11:14:35.101Z",
+  "decisionArtifact": {
+    "path": "human-review/db-b2-final-combined-human-decision.json",
+    "sizeBytes": 2171,
+    "sha256": "02e93e9557664cb95c0972e01cee8300e6a848457a69db67715b48e2a08f6e42",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "checks": {
+    "dbB1ClosureDecisionPresent": true,
+    "dbB2ReadinessDecisionPresent": true,
+    "reviewerMatches": true,
+    "deploymentBoundaryAcceptanceComplete": true,
+    "legacyInputDecisionAcceptanceComplete": true,
+    "neonRehearsalAcceptanceComplete": true,
+    "productionDatabaseConnectionNotAuthorized": true,
+    "productionMigrationNotAuthorized": true,
+    "productionWriteNotAuthorized": true,
+    "vercelProductionDeploymentNotAuthorized": true,
+    "paymentProviderRuntimeNotAuthorized": true
+  },
+  "mismatchCount": 0,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}

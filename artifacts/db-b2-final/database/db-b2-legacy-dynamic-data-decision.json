@@ -1,0 +1,109 @@
+{
+  "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
+  "status": "PASS_READY_FOR_FINAL_COMBINED_HUMAN_REVIEW",
+  "decisionModel": "POSTGRESQL_IS_SOLE_PRODUCTION_BUSINESS_DYNAMIC_DATA_SOURCE_OF_TRUTH",
+  "legacyDynamicDataDecisionComplete": true,
+  "sourceInventory": {
+    "path": "database/db-b2-legacy-migration-input-inventory.json",
+    "sizeBytes": 1492,
+    "sha256": "3ffcd923cf45df71108978dd3a443cdacfc3fa3ed9627e6eeff68bba62c645ce",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "dataSources": [
+    {
+      "item": "User and UserCredential",
+      "classification": "MIGRATE_IF_AUTHORIZED_EXPORT_EXISTS_OTHERWISE_START_EMPTY",
+      "currentSource": "No authorized active export",
+      "targetSource": "PostgreSQL User + UserCredential",
+      "migrationRequirement": "No migration input for DB-B2",
+      "retirementCondition": "Production runtime bound to PostgreSQL",
+      "validationMethod": "identity uniqueness and credential relation checks"
+    },
+    {
+      "item": "Session",
+      "classification": "RETIRE",
+      "currentSource": "Process-memory fallback",
+      "targetSource": "PostgreSQL Session",
+      "migrationRequirement": "Do not migrate volatile sessions; require reauthentication",
+      "retirementCondition": "Production PostgreSQL runtime enabled",
+      "validationMethod": "session lifecycle tests"
+    },
+    {
+      "item": "Purchase",
+      "classification": "MIGRATE_IF_VERIFIED_EXPORT_EXISTS_OTHERWISE_START_EMPTY",
+      "currentSource": "No authorized purchase export",
+      "targetSource": "PostgreSQL Purchase",
+      "migrationRequirement": "Never manufacture PAID Purchase from legacy boolean",
+      "retirementCondition": "Purchase is sole entitlement authority",
+      "validationMethod": "duplicate preflight and entitlement regression"
+    },
+    {
+      "item": "QuestionSearch and trial accounting",
+      "classification": "MIGRATE_IF_AUTHORIZED_EXPORT_EXISTS_OTHERWISE_START_EMPTY",
+      "currentSource": "No authorized search export",
+      "targetSource": "PostgreSQL QuestionSearch",
+      "migrationRequirement": "Normalize and deduplicate userId+searchKey only for authorized input",
+      "retirementCondition": "PostgreSQL transaction is sole quota authority",
+      "validationMethod": "count and concurrent quota verification"
+    },
+    {
+      "item": "BillingProviderEvent",
+      "classification": "TEMPORARY_COMPATIBILITY",
+      "currentSource": "No provider runtime or export",
+      "targetSource": "PostgreSQL BillingProviderEvent",
+      "migrationRequirement": "No legacy import",
+      "retirementCondition": "Separate provider-neutral runtime approval",
+      "validationMethod": "ledger idempotency tests"
+    },
+    {
+      "item": "Legacy checkout-session JSON",
+      "classification": "ARCHIVE",
+      "currentSource": "Active file absent; example is documentation only",
+      "targetSource": "PostgreSQL Purchase",
+      "migrationRequirement": "No migration input",
+      "retirementCondition": "No active JSON runtime reference",
+      "validationMethod": "source audit"
+    },
+    {
+      "item": "Legacy Upstash users key",
+      "classification": "RETIRE",
+      "currentSource": "No authorized export; dead legacy helper",
+      "targetSource": "PostgreSQL",
+      "migrationRequirement": "No migration input",
+      "retirementCondition": "Dead business-data helper removed in later authorized cleanup",
+      "validationMethod": "call-graph verification"
+    },
+    {
+      "item": "Rate-limit counters",
+      "classification": "TEMPORARY_COMPATIBILITY",
+      "currentSource": "Memory or optional KV",
+      "targetSource": "Non-authoritative cache",
+      "migrationRequirement": "None",
+      "retirementCondition": "Separate operational cache decision",
+      "validationMethod": "rate-limit tests"
+    }
+  ],
+  "staticAssetsRemainFileBacked": [
+    "Question JSON",
+    "PDF",
+    "Images",
+    "Crops",
+    "Search Index"
+  ],
+  "staticAssetsMigrationToPostgreSQL": false,
+  "concurrentBusinessDataAuthoritiesAllowed": false,
+  "unresolvedLegacyExportAvailability": false,
+  "noLegacyMigrationInputDecision": true,
+  "finalHumanAcceptance": "APPROVED_BY_COMBINED_HUMAN_DECISION",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}

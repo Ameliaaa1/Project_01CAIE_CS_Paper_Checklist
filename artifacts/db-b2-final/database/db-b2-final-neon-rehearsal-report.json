@@ -1,0 +1,119 @@
+{
+  "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
+  "executedAt": "2026-07-31T11:14:35.138Z",
+  "status": "PASS",
+  "provider": "NEON",
+  "projectId": "lucky-river-45336837",
+  "productionIdentity": {
+    "branchId": "br-silent-fog-avglbx9u",
+    "endpointId": "ep-small-dew-avh8e0sc"
+  },
+  "primaryRun": {
+    "branchId": "br-wispy-mud-avz3bzue",
+    "branchName": "db-b0-r1-test-20260731-db-b2-final",
+    "endpointId": "ep-dark-river-avafkaev",
+    "parentBranchId": "br-silent-fog-avglbx9u",
+    "initSource": "parent-schema",
+    "schemaOnly": true,
+    "expiresAt": "2026-08-01T12:00:00Z",
+    "branchDestroyed": true,
+    "branchAbsentAfterCleanup": true
+  },
+  "replayRun": {
+    "branchId": "br-soft-haze-avmcohqp",
+    "branchName": "db-b0-r1-test-20260731-db-b2-replay",
+    "endpointId": "ep-winter-violet-avq5p1i6",
+    "parentBranchId": "br-silent-fog-avglbx9u",
+    "initSource": "parent-schema",
+    "schemaOnly": true,
+    "expiresAt": "2026-08-01T12:00:00Z",
+    "branchDestroyed": true,
+    "branchAbsentAfterCleanup": true
+  },
+  "targetGuard": {
+    "projectIdentityMatched": true,
+    "productionBranchRejected": true,
+    "productionEndpointRejected": true,
+    "parentBranchIdentityMatched": true,
+    "databaseScope": "EPHEMERAL_ONLY",
+    "primaryStatus": "PASS",
+    "replayStatus": "PASS"
+  },
+  "migrationSequence": [
+    {
+      "migration": "20260728133000_production_baseline",
+      "sha256": "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+      "applied": true
+    },
+    {
+      "migration": "20260729152000_billing_event_ledger_extension",
+      "sha256": "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd",
+      "applied": true
+    }
+  ],
+  "schema": {
+    "path": "prisma/schema.prisma",
+    "sha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+    "migrateDeploy": "PASS",
+    "migrateStatus": "PASS",
+    "migrateDiffExitCode": 0,
+    "schemaConsistent": true
+  },
+  "transientEndpointReadiness": {
+    "primaryInitialMigrateDeploy": "PASS",
+    "primaryMigrateStatusFailedAttempts": 2,
+    "primaryMigrateStatusSuccessfulAttempt": 3,
+    "replayInitialMigrateDeploy": "TRANSIENT_FAILURE_RECORDED",
+    "replayMigrateDeploySuccessfulAttempt": 1,
+    "replayMigrateStatusInitialFailureRecorded": true,
+    "replayMigrateStatusSuccessfulAttempt": 2,
+    "boundedRetryExhausted": false
+  },
+  "runtimeTests": {
+    "billingSchema": "PASS",
+    "crud": "PASS",
+    "idempotency": "PASS",
+    "refundAudit": "PASS",
+    "eventOrderingSchemaSupport": "PASS",
+    "syntheticCleanup": "PASS",
+    "purchaseEntitlementAndTrialAccounting": "PASS",
+    "targetGuard": "PASS",
+    "fullNpmTest": "PASS",
+    "documentationValidationPassed": 90,
+    "documentationValidationFailed": 0
+  },
+  "recordResults": {
+    "billingEventConcurrentRequestCount": 12,
+    "billingEventStoredCount": 1,
+    "billingEventEffectiveCreateCount": 1,
+    "billingEventIdempotentRecoveryCount": 11,
+    "syntheticUsersRemaining": 0,
+    "syntheticPurchasesRemaining": 0,
+    "syntheticBillingEventsRemaining": 0,
+    "trialSearchCount": 2,
+    "paidSearchCount": 10
+  },
+  "migrationReplayPassed": true,
+  "migrationSuccessful": true,
+  "schemaConsistent": true,
+  "runtimeValidationPassed": true,
+  "dataHandlingProcedureValidated": true,
+  "syntheticDataCleanupPassed": true,
+  "rollbackConsiderationsReviewed": true,
+  "rollbackPlan": "Destroy isolated branch on failure; no Production state exists to roll back.",
+  "tlsRequired": true,
+  "credentialMaterialRecorded": false,
+  "unexpectedNeonBranchCountAfterCleanup": 0,
+  "productionBranchPresentAfterCleanup": true,
+  "productionBranchTargetedByAnyRehearsalCommand": false,
+  "productionDatabaseTouched": false,
+  "productionBranchMigrationExecuted": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}

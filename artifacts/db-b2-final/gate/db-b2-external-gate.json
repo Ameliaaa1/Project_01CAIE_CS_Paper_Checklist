@@ -1,0 +1,123 @@
+{
+  "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
+  "evaluatedAt": "2026-07-31T11:14:35.217Z",
+  "status": "PASS_DB_B2_PRODUCTION_READINESS_BASELINE",
+  "technicalGate": "PASS",
+  "finalHumanGate": "PASS",
+  "blockerCount": 0,
+  "blockers": [],
+  "closureCommit": "8991fc175770294a32d410fccad6cec03c3cd2ba",
+  "observedDeploymentCommit": "8991fc175770294a32d410fccad6cec03c3cd2ba",
+  "checks": {
+    "deploymentPreliminaryHumanDecision": "PASS",
+    "canonicalDeploymentProviderDefined": "PASS",
+    "automaticDeploymentBoundaryControlled": "PASS",
+    "futureMainPushUnauthorizedProductionRisk": "PASS_RESOLVED",
+    "githubPagesLegacyTriggerDisabled": "PASS",
+    "vercelMainTriggerCanceled": "PASS",
+    "legacyDynamicDataDecisionComplete": "PASS",
+    "legacyMigrationInputAvailabilityResolved": "PASS_NO_AUTHORIZED_EXPORT",
+    "finalNeonRehearsal": "PASS",
+    "migrationReplay": "PASS",
+    "isolatedBranchesDestroyed": "PASS",
+    "productionUntouched": "PASS",
+    "manifestVerification": "PASS",
+    "zipVerification": "PASS",
+    "finalCombinedHumanReview": "PASS"
+  },
+  "evidenceBindings": {
+    "deploymentConfigurationVerification": {
+      "path": "deployment/db-b2-deployment-configuration-verification.json",
+      "sizeBytes": 2798,
+      "sha256": "a3a2cf6e70554f53a0ad84d4def9a98d857645bcb6b2fb37e60247a376629cab",
+      "fileReadable": true,
+      "jsonValid": true,
+      "parseStatus": "PASS",
+      "mimeType": "application/json"
+    },
+    "legacyMigrationInputInventory": {
+      "path": "database/db-b2-legacy-migration-input-inventory.json",
+      "sizeBytes": 1492,
+      "sha256": "3ffcd923cf45df71108978dd3a443cdacfc3fa3ed9627e6eeff68bba62c645ce",
+      "fileReadable": true,
+      "jsonValid": true,
+      "parseStatus": "PASS",
+      "mimeType": "application/json"
+    },
+    "finalNeonRehearsalReport": {
+      "path": "database/db-b2-final-neon-rehearsal-report.json",
+      "sizeBytes": 4141,
+      "sha256": "61aa358308d177ae7844d5c659c13aae7b2cf7607306fa31876df46fe762847a",
+      "fileReadable": true,
+      "jsonValid": true,
+      "parseStatus": "PASS",
+      "mimeType": "application/json"
+    },
+    "manifest": {
+      "path": "package/db-b2-final-evidence-manifest.json",
+      "sizeBytes": 5160,
+      "sha256": "c83af600d07828663fe623ce701a531f411122c2f932f5560669163df0759b26",
+      "fileReadable": true,
+      "jsonValid": true,
+      "parseStatus": "PASS",
+      "mimeType": "application/json"
+    },
+    "manifestVerification": {
+      "path": "package/db-b2-final-evidence-manifest-verification.json",
+      "sizeBytes": 939,
+      "sha256": "18622a129d2806e8f4d41b487805369cbb5c164d650a384549cf14e89fe5448b",
+      "fileReadable": true,
+      "jsonValid": true,
+      "parseStatus": "PASS",
+      "mimeType": "application/json"
+    },
+    "debugZip": {
+      "path": "package/db-b2-debug-json.zip",
+      "sizeBytes": 17881,
+      "sha256": "acc4f58476596500d6f01a52ab53d88abd4e1b48933fee5bb32433a350039215",
+      "fileReadable": true,
+      "jsonValid": null,
+      "parseStatus": "NOT_APPLICABLE",
+      "mimeType": "application/octet-stream"
+    },
+    "completeZip": {
+      "path": "package/db-b2-complete-evidence.zip",
+      "sizeBytes": 18556,
+      "sha256": "6c5e43f8b9ba6cf2a306a5127946fff70e31a2d92055a7e793b4675e112591ad",
+      "fileReadable": true,
+      "jsonValid": null,
+      "parseStatus": "NOT_APPLICABLE",
+      "mimeType": "application/octet-stream"
+    },
+    "zipVerification": {
+      "path": "package/db-b2-zip-verification.json",
+      "sizeBytes": 3398,
+      "sha256": "f16e0a252c8b635d84fc867bdf77fc018505ea51733ad584e9baf039932761bb",
+      "fileReadable": true,
+      "jsonValid": true,
+      "parseStatus": "PASS",
+      "mimeType": "application/json"
+    },
+    "finalDeliveryReport": {
+      "path": "package/db-b2-final-delivery-report.json",
+      "sizeBytes": 5412,
+      "sha256": "4a5c140b25efa4ddfb63414f272c507486752fa468b506cfa96bf61eebe57b7f",
+      "fileReadable": true,
+      "jsonValid": true,
+      "parseStatus": "PASS",
+      "mimeType": "application/json"
+    }
+  },
+  "dbB1FinalClosure": "PASS",
+  "dbB2ReadinessBaseline": "PASS",
+  "dbB3EntryAllowed": true,
+  "dbB3AuthorizedScope": "PLANNING_AND_PRODUCTION_PREFLIGHT_PREPARATION_ONLY",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}
