@@ -6,7 +6,7 @@
   "sourceInventory": {
     "path": "database/db-b2-legacy-migration-input-inventory.json",
     "sizeBytes": 1492,
-    "sha256": "fb6bc22c0a61b8a65aa1810379a8feb707b7c1f6a9493c04c9b6db92ef2d5c38",
+    "sha256": "3ffcd923cf45df71108978dd3a443cdacfc3fa3ed9627e6eeff68bba62c645ce",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",

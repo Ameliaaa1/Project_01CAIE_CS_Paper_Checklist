@@ -4,7 +4,7 @@
   "manifest": {
     "path": "package/db-b2-final-evidence-manifest.json",
     "sizeBytes": 5160,
-    "sha256": "068b8201be3566a6d8384f71e85efe73743fa946c5160babaf5ba2cd7a7c7acf",
+    "sha256": "c83af600d07828663fe623ce701a531f411122c2f932f5560669163df0759b26",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",

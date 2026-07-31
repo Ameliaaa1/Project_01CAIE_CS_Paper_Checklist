@@ -13,7 +13,7 @@
 - Migration replay: PASS
 - Full npm test: PASS
 - GitHub Pages main/root deployment: DISABLED
-- Observed Vercel commit: 94fbd7b6650303c3944f63faa69ba4e38ffaa693
+- Observed Vercel commit: 8991fc175770294a32d410fccad6cec03c3cd2ba
 - Vercel main commit: CANCELED_BY_IGNORED_BUILD_STEP
 - Production database connected: false
 - Production migration: false

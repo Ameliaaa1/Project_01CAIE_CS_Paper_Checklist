@@ -1,14 +1,14 @@
 {
   "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
-  "generatedAt": "2026-07-31T11:11:43.118Z",
+  "generatedAt": "2026-07-31T11:14:35.209Z",
   "officialStatus": "PASS_DB_B2_PRODUCTION_READINESS_BASELINE",
   "dbB1FinalClosure": "PASS",
   "dbB2ReadinessBaseline": "PASS",
   "finalHumanGate": "PASS",
   "blockerCount": 0,
   "blockers": [],
-  "closureCommit": null,
-  "observedDeploymentCommit": "94fbd7b6650303c3944f63faa69ba4e38ffaa693",
+  "closureCommit": "8991fc175770294a32d410fccad6cec03c3cd2ba",
+  "observedDeploymentCommit": "8991fc175770294a32d410fccad6cec03c3cd2ba",
   "technicalResults": {
     "deploymentConfigurationVerification": "PASS",
     "legacyMigrationInputInventory": "PASS_NO_AUTHORIZED_LEGACY_EXPORT_AVAILABLE",
@@ -24,7 +24,7 @@
     "deploymentConfigurationVerification": {
       "path": "deployment/db-b2-deployment-configuration-verification.json",
       "sizeBytes": 2798,
-      "sha256": "910159123d4184f48ecef5298ec85ba5629e44fb94ee5de69e67392920042050",
+      "sha256": "a3a2cf6e70554f53a0ad84d4def9a98d857645bcb6b2fb37e60247a376629cab",
       "fileReadable": true,
       "jsonValid": true,
       "parseStatus": "PASS",
@@ -33,7 +33,7 @@
     "legacyMigrationInputInventory": {
       "path": "database/db-b2-legacy-migration-input-inventory.json",
       "sizeBytes": 1492,
-      "sha256": "fb6bc22c0a61b8a65aa1810379a8feb707b7c1f6a9493c04c9b6db92ef2d5c38",
+      "sha256": "3ffcd923cf45df71108978dd3a443cdacfc3fa3ed9627e6eeff68bba62c645ce",
       "fileReadable": true,
       "jsonValid": true,
       "parseStatus": "PASS",
@@ -42,7 +42,7 @@
     "finalNeonRehearsalReport": {
       "path": "database/db-b2-final-neon-rehearsal-report.json",
       "sizeBytes": 4141,
-      "sha256": "1803a6918fce3224e6d0af06dd16156e373219f92a30162fd8a78300c768027b",
+      "sha256": "61aa358308d177ae7844d5c659c13aae7b2cf7607306fa31876df46fe762847a",
       "fileReadable": true,
       "jsonValid": true,
       "parseStatus": "PASS",
@@ -51,7 +51,7 @@
     "finalEvidenceManifest": {
       "path": "package/db-b2-final-evidence-manifest.json",
       "sizeBytes": 5160,
-      "sha256": "068b8201be3566a6d8384f71e85efe73743fa946c5160babaf5ba2cd7a7c7acf",
+      "sha256": "c83af600d07828663fe623ce701a531f411122c2f932f5560669163df0759b26",
       "fileReadable": true,
       "jsonValid": true,
       "parseStatus": "PASS",
@@ -60,7 +60,7 @@
     "finalEvidenceManifestVerification": {
       "path": "package/db-b2-final-evidence-manifest-verification.json",
       "sizeBytes": 939,
-      "sha256": "8a9b8c244f98ac2b4ede4d9350430e6574ca2ea673e4526ff089ce6e1f8aa6e2",
+      "sha256": "18622a129d2806e8f4d41b487805369cbb5c164d650a384549cf14e89fe5448b",
       "fileReadable": true,
       "jsonValid": true,
       "parseStatus": "PASS",
@@ -69,7 +69,7 @@
     "zipVerification": {
       "path": "package/db-b2-zip-verification.json",
       "sizeBytes": 3398,
-      "sha256": "98e2e14b8a58b0861c5242600ffada002320afbee1cb3fbc79f28046770ef7b9",
+      "sha256": "f16e0a252c8b635d84fc867bdf77fc018505ea51733ad584e9baf039932761bb",
       "fileReadable": true,
       "jsonValid": true,
       "parseStatus": "PASS",
@@ -77,8 +77,8 @@
     },
     "debugJsonZip": {
       "path": "package/db-b2-debug-json.zip",
-      "sizeBytes": 17469,
-      "sha256": "591bd4b1d112a65dc9fe22b73c9df80da0492bd1060bd05c5065db36f7838eda",
+      "sizeBytes": 17881,
+      "sha256": "acc4f58476596500d6f01a52ab53d88abd4e1b48933fee5bb32433a350039215",
       "fileReadable": true,
       "jsonValid": null,
       "parseStatus": "NOT_APPLICABLE",
@@ -86,8 +86,8 @@
     },
     "completeEvidenceZip": {
       "path": "package/db-b2-complete-evidence.zip",
-      "sizeBytes": 18141,
-      "sha256": "5b58f68faaad1eaa1a6a92118173260b3e7626512509fe7b7e8377045ba8fc56",
+      "sizeBytes": 18556,
+      "sha256": "6c5e43f8b9ba6cf2a306a5127946fff70e31a2d92055a7e793b4675e112591ad",
       "fileReadable": true,
       "jsonValid": null,
       "parseStatus": "NOT_APPLICABLE",
@@ -106,7 +106,7 @@
   "finalHumanDecisionVerification": {
     "path": "human-review/db-b2-final-combined-human-decision-verification.json",
     "sizeBytes": 1323,
-    "sha256": "a9c903ed794ac0886d7f35bacb7254114325f97a52dc1f3f50d5573851ab6696",
+    "sha256": "a01f356948b4edacb0dd057c249d0ef08263e1364183a9ab41341038d6ad592b",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",
@@ -114,8 +114,8 @@
   },
   "dbB1FinalClosureArtifact": {
     "path": "closure/db-b1-final-closure.json",
-    "sizeBytes": 1651,
-    "sha256": "c900379bb267193dc2cc0238ed74536d9cfa9d12c110463cf4ac20228694fc7b",
+    "sizeBytes": 1689,
+    "sha256": "20f04a48cbf9547db59f45b3883fe49bb4040b00ad5ab53e4e5f788c60c42830",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",
@@ -123,8 +123,8 @@
   },
   "dbB2ReadinessBaselineArtifact": {
     "path": "closure/db-b2-production-readiness-baseline-closure.json",
-    "sizeBytes": 2295,
-    "sha256": "653a2e7ed592d778ad06da474a41372bb29cecd9ded8c877c153db216a3953c6",
+    "sizeBytes": 2333,
+    "sha256": "d68daf7d370ed9dd2dbc416b73424c562c75d990634ea2df01b0beff916c1319",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",

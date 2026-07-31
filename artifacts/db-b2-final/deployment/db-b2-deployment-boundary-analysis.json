@@ -1,6 +1,6 @@
 {
   "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
-  "analyzedAt": "2026-07-31T11:11:43.013Z",
+  "analyzedAt": "2026-07-31T11:14:35.106Z",
   "status": "PASS_DEPLOYMENT_BOUNDARY_CONTROLLED_PENDING_FINAL_HUMAN_REVIEW",
   "canonicalDeploymentProvider": "VERCEL",
   "canonicalDeploymentProviderDefined": true,
@@ -20,10 +20,10 @@
       "configurationEvidenceType": "READ_ONLY_VERCEL_DASHBOARD_OBSERVATION_PLUS_COMMIT_STATUS",
       "mitigationMechanism": "REPOSITORY_BOUND_IGNORE_COMMAND",
       "explicitProductionAuthorizationMechanism": "AUTHORIZED_REDEPLOY_WITH_IGNORED_BUILD_STEP_BYPASS",
-      "latestMainCommit": "94fbd7b6650303c3944f63faa69ba4e38ffaa693",
+      "latestMainCommit": "8991fc175770294a32d410fccad6cec03c3cd2ba",
       "latestMainStatus": "success",
       "latestMainDescription": "Canceled by Ignored Build Step",
-      "latestMainTargetUrl": "https://vercel.com/amelias-projects-523457ed/project-01-caie-cs-paper-checklist-gw52/4ryDywXfuSzpyrFJYxM4RPmhmhcL",
+      "latestMainTargetUrl": "https://vercel.com/amelias-projects-523457ed/project-01-caie-cs-paper-checklist-gw52/veCeDuM18Cmy7Zpe1eVbgFwKKuS9",
       "mainDeploymentCanceled": true
     },
     "githubPages": {
@@ -44,8 +44,8 @@
     }
   },
   "mitigationCommit": "94fbd7b6650303c3944f63faa69ba4e38ffaa693",
-  "closureCommit": null,
-  "observedDeploymentCommit": "94fbd7b6650303c3944f63faa69ba4e38ffaa693",
+  "closureCommit": "8991fc175770294a32d410fccad6cec03c3cd2ba",
+  "observedDeploymentCommit": "8991fc175770294a32d410fccad6cec03c3cd2ba",
   "automaticDeploymentBoundaryControlled": true,
   "futureMainPushRiskEvaluated": true,
   "futureMainPushWillCreateUnauthorizedProductionDeployment": false,

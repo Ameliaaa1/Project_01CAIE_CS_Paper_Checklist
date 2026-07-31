@@ -10,7 +10,7 @@
   "deploymentConfigurationVerification": {
     "path": "deployment/db-b2-deployment-configuration-verification.json",
     "sizeBytes": 2798,
-    "sha256": "910159123d4184f48ecef5298ec85ba5629e44fb94ee5de69e67392920042050",
+    "sha256": "a3a2cf6e70554f53a0ad84d4def9a98d857645bcb6b2fb37e60247a376629cab",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",
@@ -19,7 +19,7 @@
   "legacyMigrationInputInventory": {
     "path": "database/db-b2-legacy-migration-input-inventory.json",
     "sizeBytes": 1492,
-    "sha256": "fb6bc22c0a61b8a65aa1810379a8feb707b7c1f6a9493c04c9b6db92ef2d5c38",
+    "sha256": "3ffcd923cf45df71108978dd3a443cdacfc3fa3ed9627e6eeff68bba62c645ce",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",
@@ -28,7 +28,7 @@
   "finalNeonRehearsalReport": {
     "path": "database/db-b2-final-neon-rehearsal-report.json",
     "sizeBytes": 4141,
-    "sha256": "1803a6918fce3224e6d0af06dd16156e373219f92a30162fd8a78300c768027b",
+    "sha256": "61aa358308d177ae7844d5c659c13aae7b2cf7607306fa31876df46fe762847a",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",
@@ -46,13 +46,13 @@
   "finalHumanDecisionVerification": {
     "path": "human-review/db-b2-final-combined-human-decision-verification.json",
     "sizeBytes": 1323,
-    "sha256": "a9c903ed794ac0886d7f35bacb7254114325f97a52dc1f3f50d5573851ab6696",
+    "sha256": "a01f356948b4edacb0dd057c249d0ef08263e1364183a9ab41341038d6ad592b",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",
     "mimeType": "application/json"
   },
-  "closureCommit": null,
+  "closureCommit": "8991fc175770294a32d410fccad6cec03c3cd2ba",
   "productionDatabaseConnected": false,
   "productionDatabaseUsed": false,
   "productionMigration": false,

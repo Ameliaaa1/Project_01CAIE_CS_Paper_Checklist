@@ -4,7 +4,7 @@
   "decisionArtifact": {
     "path": "human-review/db-b2-deployment-trigger-mitigation-human-decision.json",
     "sizeBytes": 1365,
-    "sha256": "7a8db2a1892f3ed5fbe34f05cdf7b7025a36a23f63f08f02d7f2fdd5c59d8111",
+    "sha256": "a889713734e0a61c7f304602d9522c3a46086fa118d157b393d67172ad2657f2",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",

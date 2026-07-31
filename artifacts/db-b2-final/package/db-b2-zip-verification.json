@@ -3,8 +3,8 @@
   "status": "PASS",
   "debugZip": {
     "path": "package/db-b2-debug-json.zip",
-    "sizeBytes": 17469,
-    "sha256": "591bd4b1d112a65dc9fe22b73c9df80da0492bd1060bd05c5065db36f7838eda",
+    "sizeBytes": 17881,
+    "sha256": "acc4f58476596500d6f01a52ab53d88abd4e1b48933fee5bb32433a350039215",
     "fileReadable": true,
     "jsonValid": null,
     "parseStatus": "NOT_APPLICABLE",
@@ -31,8 +31,8 @@
   },
   "completeZip": {
     "path": "package/db-b2-complete-evidence.zip",
-    "sizeBytes": 18141,
-    "sha256": "5b58f68faaad1eaa1a6a92118173260b3e7626512509fe7b7e8377045ba8fc56",
+    "sizeBytes": 18556,
+    "sha256": "6c5e43f8b9ba6cf2a306a5127946fff70e31a2d92055a7e793b4675e112591ad",
     "fileReadable": true,
     "jsonValid": null,
     "parseStatus": "NOT_APPLICABLE",

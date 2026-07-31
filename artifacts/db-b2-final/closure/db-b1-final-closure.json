@@ -16,7 +16,7 @@
   "finalHumanDecisionVerification": {
     "path": "human-review/db-b2-final-combined-human-decision-verification.json",
     "sizeBytes": 1323,
-    "sha256": "a9c903ed794ac0886d7f35bacb7254114325f97a52dc1f3f50d5573851ab6696",
+    "sha256": "a01f356948b4edacb0dd057c249d0ef08263e1364183a9ab41341038d6ad592b",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",
@@ -25,13 +25,13 @@
   "deploymentConfigurationVerification": {
     "path": "deployment/db-b2-deployment-configuration-verification.json",
     "sizeBytes": 2798,
-    "sha256": "910159123d4184f48ecef5298ec85ba5629e44fb94ee5de69e67392920042050",
+    "sha256": "a3a2cf6e70554f53a0ad84d4def9a98d857645bcb6b2fb37e60247a376629cab",
     "fileReadable": true,
     "jsonValid": true,
     "parseStatus": "PASS",
     "mimeType": "application/json"
   },
-  "closureCommit": null,
+  "closureCommit": "8991fc175770294a32d410fccad6cec03c3cd2ba",
   "productionDatabaseConnected": false,
   "productionDatabaseUsed": false,
   "productionMigration": false,
