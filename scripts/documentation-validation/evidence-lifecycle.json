@@ -195,6 +195,18 @@
       "evidenceClass": "historical",
       "sizeBytes": 4300,
       "sha256": "d36927bc5a6c3f04bbb309af4aeb3f3b7c44b216bcfbad034144722003ac6155"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_APPROVAL_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2043,
+      "sha256": "c8254c2c392f620a01a5ef01bea81dcb9f6c0b036f5c4b51391c4bab995a2c26"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-approval-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 3272,
+      "sha256": "b823978ea6aaddfcfedafc4d7774b4d04376ae1a361c38112584030fdb777f98"
     }
   ]
 }

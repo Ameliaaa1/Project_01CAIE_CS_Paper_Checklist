@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "task": "PR06C-R2-R1-VALIDATOR-CONTRACT-BOUNDARY-APPROVAL",
+  "status": "APPROVED",
+  "result": "PASS_PR06C_R2_R1_VALIDATOR_CONTRACT_BOUNDARY_HUMAN_REVIEW",
+  "generatedAt": "2026-07-31T10:40:01Z",
+  "branch": "codex/pr-06c-promotion-gate-validator",
+  "pullRequest": 11,
+  "prBaseSha": "94fbd7b6650303c3944f63faa69ba4e38ffaa693",
+  "approvalPhaseBaseSha": "99ca40ba18a66faf9371e729e9a08cfeaaf0bc47",
+  "decision": {
+    "reviewer": "Amelia Cai",
+    "reviewedAt": "2026-07-31T10:40:01Z",
+    "value": "APPROVE",
+    "blockerCount": 0
+  },
+  "approvedBoundary": {
+    "contract": {
+      "path": "contracts/promotion/promotion-validator-contract-v3.json",
+      "version": 3,
+      "boundaryClosureRevision": 1,
+      "sizeBytes": 16031,
+      "sha256": "17a4aa4249a5ac38cb5543116027055bd279810e1629ca185844bf59ceef0e0e"
+    },
+    "schemaRegistry": {
+      "path": "contracts/promotion/schema-registry-v1.json",
+      "sizeBytes": 2121,
+      "sha256": "3e6b6202109293250b9a1a2b81b2237ce2cfad0b0808fdf2157fa7c039f8d822"
+    },
+    "generatorRegistry": {
+      "path": "contracts/promotion/generator-registry-v1.json",
+      "sizeBytes": 437,
+      "sha256": "a2933baefec15d2188f8549dbfd44ae78c0b18585380e231432b970f113c3dfd"
+    },
+    "contractHashManifest": {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-contract-hash-manifest.json",
+      "sizeBytes": 2458,
+      "sha256": "1773333819baa557e677d5979f60a048a53df487b3c7e56deecf8d2f28a3477f"
+    },
+    "implementationPhase": "PR-06C Promotion Gate Validator"
+  },
+  "tests": {
+    "command": "npm test",
+    "cases": 90,
+    "passed": 90,
+    "failed": 0
+  },
+  "validation": {
+    "fullMode": "PASS",
+    "changedMode": "PASS",
+    "links": "PASS",
+    "authority": "PASS",
+    "evidencePairs": "PASS",
+    "protectedEvidence": "PASS",
+    "baseline": "PASS",
+    "gitDiffCheck": "PASS",
+    "readOnlyDefault": "PASS",
+    "approvalBindings": "PASS"
+  },
+  "gitBoundary": {
+    "changedFiles": 3,
+    "filesDeleted": 0,
+    "filesRenamed": 0,
+    "filesMoved": 0,
+    "lineAdditions": 178,
+    "lineDeletions": 0,
+    "prTotalChangedFiles": 27,
+    "prTotalLineAdditions": 2368,
+    "prTotalLineDeletions": 0,
+    "validatorImplementationFiles": 0,
+    "fixtureFiles": 0,
+    "candidateChanges": 0,
+    "currentProductionChanges": 0,
+    "promotionTargetChanges": 0,
+    "authorityManifestChanges": 0,
+    "artifactChanges": 0,
+    "parserChanges": 0,
+    "frontendChanges": 0,
+    "runtimeBehaviorChanges": 0,
+    "pdfOrCorpusChanges": 0,
+    "promotionExecution": 0,
+    "deploymentActions": 0
+  },
+  "humanReview": {
+    "required": true,
+    "decision": "APPROVE",
+    "reviewer": "Amelia Cai",
+    "reviewedAt": "2026-07-31T10:40:01Z",
+    "blockerCount": 0
+  },
+  "authorization": {
+    "validatorImplementationResume": true,
+    "productionWrites": false,
+    "authorityManifestActivation": false,
+    "promotionExecution": false,
+    "deployment": false
+  },
+  "evidenceFiles": [
+    {"path":"docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_APPROVAL_REPORT.md","evidenceClass":"historical","sizeBytes":2043,"sha256":"c8254c2c392f620a01a5ef01bea81dcb9f6c0b036f5c4b51391c4bab995a2c26"}
+  ],
+  "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE"
+}
