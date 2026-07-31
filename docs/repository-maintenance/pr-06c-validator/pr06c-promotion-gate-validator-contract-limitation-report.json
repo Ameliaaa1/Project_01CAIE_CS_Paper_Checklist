@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "task": "PR06C_PROMOTION_GATE_VALIDATOR_IMPLEMENTATION",
+  "status": "BLOCKED",
+  "result": "BLOCKED_PR06C_PROMOTION_GATE_VALIDATOR_CONTRACT_LIMITATION",
+  "baseSha": "bcb0c5a4ec112dcacf82ae9338d6f81f3f952584",
+  "baseSource": "merged PR #10 on origin/main",
+  "validatedImplementationSha": "NOT_STARTED",
+  "finalPrHeadSha": null,
+  "branch": "codex/pr-06c-promotion-gate-validator",
+  "generatedAt": "2026-07-31T09:08:33Z",
+  "markdownReport": "docs/repository-maintenance/pr-06c-validator/PR06C_PROMOTION_GATE_VALIDATOR_CONTRACT_LIMITATION_REPORT.md",
+  "implementation": {
+    "validatorFiles": 0,
+    "fixtureFiles": 0,
+    "productionChanges": 0,
+    "candidateChanges": 0,
+    "promotionTargetChanges": 0,
+    "authorityManifestChanges": 0,
+    "artifactChanges": 0,
+    "parserChanges": 0,
+    "frontendChanges": 0,
+    "runtimeBehaviorChanges": 0,
+    "pdfOrCorpusChanges": 0,
+    "promotionExecution": 0,
+    "deploymentActions": 0
+  },
+  "tests": {
+    "command": "npm test",
+    "cases": 90,
+    "passed": 90,
+    "failed": 0
+  },
+  "summary": {
+    "blockingFindings": 7,
+    "baselinedFindings": 15
+  },
+  "blockingFindings": [
+    {
+      "code": "PR06C-LIMIT-001",
+      "severity": "P0",
+      "title": "Artifact schema cannot be resolved",
+      "missingContract": ["artifact schema path or versioned schema registry"]
+    },
+    {
+      "code": "PR06C-LIMIT-002",
+      "severity": "P0",
+      "title": "Allowed artifact schemas are undefined",
+      "missingContract": ["allowed schema IDs", "allowed schema versions", "allowed schema hashes"]
+    },
+    {
+      "code": "PR06C-LIMIT-003",
+      "severity": "P0",
+      "title": "Record collection extraction is undefined",
+      "missingContract": ["fixed record path or required schema annotation"]
+    },
+    {
+      "code": "PR06C-LIMIT-004",
+      "severity": "P0",
+      "title": "Stable-ID extraction is undefined",
+      "missingContract": ["fixed stable-ID path or required schema annotation"]
+    },
+    {
+      "code": "PR06C-LIMIT-005",
+      "severity": "P0",
+      "title": "Update approval semantics are not representable",
+      "missingContract": ["validation phase model", "difference request", "approval binding"]
+    },
+    {
+      "code": "PR06C-LIMIT-006",
+      "severity": "P0",
+      "title": "Validation evidence semantics are incomplete",
+      "missingContract": ["evidence schema", "artifact binding", "source commit binding", "freshness rule"]
+    },
+    {
+      "code": "PR06C-LIMIT-007",
+      "severity": "P1",
+      "title": "Role-owned artifact paths are undefined",
+      "missingContract": ["role path prefixes", "cross-role reference rules"]
+    }
+  ],
+  "implementableSubset": [
+    "manifest structure",
+    "role and manifest path",
+    "promotion mode presence",
+    "candidate-target direct equality",
+    "artifact byte size and sha256",
+    "supported syllabus allowlist",
+    "canonical serialization after missing extraction and resolution",
+    "metadata phase checks",
+    "path traversal checks"
+  ],
+  "decision": {
+    "validatorImplementation": "NOT_STARTED",
+    "partialValidator": "PROHIBITED",
+    "nextPhase": "PR06C contract repair",
+    "contractReview": "PENDING"
+  },
+  "gitBoundary": {
+    "changedFiles": 3,
+    "filesDeleted": 0,
+    "filesRenamed": 0,
+    "filesMoved": 0,
+    "lineAdditions": 383,
+    "lineDeletions": 0
+  },
+  "validation": {
+    "documentationFull": "PASS",
+    "documentationChanged": "PASS",
+    "projectTests": "PASS",
+    "evidenceHashes": "PASS",
+    "gitDiffCheck": "PASS"
+  },
+  "humanReview": {
+    "required": true,
+    "decision": "PENDING",
+    "reviewer": null,
+    "reviewedAt": null
+  },
+  "evidenceFiles": [
+    {
+      "path": "docs/repository-maintenance/pr-06c-validator/PR06C_PROMOTION_GATE_VALIDATOR_CONTRACT_LIMITATION_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 7292,
+      "sha256": "3fea4af4b402d324689c3166374bc2626a7b52c1a69f268a58ce8f14cfcfc0aa"
+    }
+  ],
+  "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE"
+}

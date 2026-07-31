@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "task": "PR06C-R2-R1-GIT-BOUNDARY",
+  "status": "CAPTURED_FOR_HUMAN_REVIEW",
+  "outcome": "PASS_PR06C_R2_R1_GIT_BOUNDARY_CAPTURE",
+  "capturedAt": "2026-07-31T10:21:29Z",
+  "branch": "codex/pr-06c-promotion-gate-validator",
+  "pullRequest": 11,
+  "prTotalBoundary": {
+    "baseRef": "main",
+    "baseSha": "94fbd7b6650303c3944f63faa69ba4e38ffaa693",
+    "captureHeadSha": "0afa1b71bfeede630b48ff6abfcd35a45afde27b",
+    "changedFiles": 25,
+    "lineAdditions": 2190,
+    "lineDeletions": 0
+  },
+  "r2r1PhaseDeltaBoundary": {
+    "baseSha": "0afa1b71bfeede630b48ff6abfcd35a45afde27b",
+    "changedFiles": 16,
+    "lineAdditions": 804,
+    "lineDeletions": 53
+  },
+  "headBinding": {
+    "repositoryEvidenceSemantics": "captureHeadSha is the immutable phase-input HEAD at evidence generation time",
+    "finalPrHeadSemantics": "EXTERNAL_GITHUB_PR_HEAD_AFTER_PUSH",
+    "reason": "Embedding a commit SHA in that commit's own tree is self-referential and prohibited",
+    "verification": "gh pr view 11 --json baseRefOid,headRefOid"
+  },
+  "boundariesSeparated": true,
+  "selfReferencingManifest": false
+}

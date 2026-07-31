@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "task": "PR06C-R2-R1-VALIDATOR-CONTRACT-BOUNDARY-CLOSURE",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "result": "READY_PR06C_R2_R1_VALIDATOR_CONTRACT_FOR_HUMAN_REVIEW",
+  "generatedAt": "2026-07-31T10:21:29Z",
+  "branch": "codex/pr-06c-promotion-gate-validator",
+  "pullRequest": 11,
+  "prBaseSha": "94fbd7b6650303c3944f63faa69ba4e38ffaa693",
+  "r2r1PhaseBaseSha": "0afa1b71bfeede630b48ff6abfcd35a45afde27b",
+  "finalPrHead": "EXTERNAL_GITHUB_PR_HEAD_AFTER_PUSH",
+  "contract": {
+    "id": "paperlens-promotion-gate-contract",
+    "version": 3,
+    "boundaryClosureRevision": 1,
+    "path": "contracts/promotion/promotion-validator-contract-v3.json",
+    "byteSha256": "17a4aa4249a5ac38cb5543116027055bd279810e1629ca185844bf59ceef0e0e",
+    "schemaRegistrySha256": "3e6b6202109293250b9a1a2b81b2237ce2cfad0b0808fdf2157fa7c039f8d822",
+    "generatorRegistrySha256": "a2933baefec15d2188f8549dbfd44ae78c0b18585380e231432b970f113c3dfd"
+  },
+  "closure": {
+    "roleLifecycleMatrix": "CLOSED",
+    "evidencePhaseMapping": "CLOSED",
+    "promotionMetadataStates": "CLOSED",
+    "bootstrapReviewLifecycle": "CLOSED",
+    "updateReviewLifecycle": "CLOSED",
+    "sourceCommitTrust": "CLOSED",
+    "generatorTrust": "CLOSED",
+    "strictJsonParsing": "CLOSED",
+    "validatorOutputBoundary": "CLOSED"
+  },
+  "tests": {
+    "command": "npm test",
+    "cases": 90,
+    "passed": 90,
+    "failed": 0
+  },
+  "semanticTests": {
+    "cases": 17,
+    "passed": 17,
+    "failed": 0
+  },
+  "validation": {
+    "fullMode": "PASS",
+    "changedMode": "PASS",
+    "links": "PASS",
+    "authority": "PASS",
+    "evidencePairs": "PASS",
+    "protectedEvidence": "PASS",
+    "baseline": "PASS",
+    "gitDiffCheck": "PASS",
+    "readOnlyDefault": "PASS",
+    "schemaContract": "PASS",
+    "registryHashes": "PASS",
+    "boundaryClosure": "PASS"
+  },
+  "gitBoundary": {
+    "changedFiles": 16,
+    "filesDeleted": 0,
+    "filesRenamed": 0,
+    "filesMoved": 0,
+    "lineAdditions": 804,
+    "lineDeletions": 53,
+    "prTotalChangedFiles": 25,
+    "prTotalLineAdditions": 2190,
+    "prTotalLineDeletions": 0,
+    "validatorImplementationFiles": 0,
+    "fixtureFiles": 0,
+    "candidateChanges": 0,
+    "currentProductionChanges": 0,
+    "promotionTargetChanges": 0,
+    "authorityManifestChanges": 0,
+    "artifactChanges": 0,
+    "parserChanges": 0,
+    "frontendChanges": 0,
+    "runtimeBehaviorChanges": 0,
+    "pdfOrCorpusChanges": 0,
+    "promotionExecution": 0,
+    "deploymentActions": 0
+  },
+  "safety": {
+    "validatorImplementationFiles": 0,
+    "fixtureFiles": 0,
+    "candidateManifestChanges": 0,
+    "productionManifestChanges": 0,
+    "promotionTargetChanges": 0,
+    "productionChanges": 0,
+    "promotionExecution": 0,
+    "deploymentActions": 0
+  },
+  "humanReview": {
+    "required": true,
+    "decision": "PENDING",
+    "reviewer": null,
+    "reviewedAt": null,
+    "blockerCount": null
+  },
+  "evidenceFiles": [
+    {"path":"docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_BOUNDARY_CLOSURE_REPORT.md","evidenceClass":"historical","sizeBytes":2473,"sha256":"a3990a0d1a1c7ab6ee582a3ebae987b98250643807a773a08026d51fc795f87e"},
+    {"path":"docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_HUMAN_REVIEW.md","evidenceClass":"historical","sizeBytes":2582,"sha256":"cf530118241d0a041758e9d94ee1b3f7e4797190764d44a88eb1d0a5b03f9817"},
+    {"path":"docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_VALIDATOR_CONTRACT_BOUNDARY.md","evidenceClass":"historical","sizeBytes":2680,"sha256":"3424a38b5c0a48d9749ae5a1c354a1f841a76fa067bc54ddd9c35d8e6d41013b"},
+    {"path":"docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-contract-hash-manifest.json","evidenceClass":"historical","sizeBytes":2458,"sha256":"1773333819baa557e677d5979f60a048a53df487b3c7e56deecf8d2f28a3477f"},
+    {"path":"docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-git-boundary-report.json","evidenceClass":"historical","sizeBytes":1128,"sha256":"7a5c5a553dbe1b6a6113e36746f8a90e34277e36b251b9429cedffab64b04160"},
+    {"path":"docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-schema-validation-report.json","evidenceClass":"historical","sizeBytes":1295,"sha256":"d790b742aa5e5e3e524c1fd7e167fe3ac548897bef29aa01c7182108bd1169db"}
+  ],
+  "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE"
+}

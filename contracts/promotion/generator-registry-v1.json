@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "registryId": "paperlens-promotion-generator-registry",
+  "status": "CONTRACT_CONTROLLED_PENDING_ACTIVATION",
+  "activationRule": "EXACT_REGISTRY_HASH_MUST_BE_BOUND_BY_CONTRACT_HUMAN_APPROVAL",
+  "generators": [
+    {
+      "generatorId": "paperlens-promotion-manifest-generator",
+      "version": "1.0.0",
+      "status": "APPROVED_FOR_CONTRACT_USE",
+      "allowedOutputs": ["promotion-manifest"]
+    }
+  ]
+}

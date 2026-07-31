@@ -105,6 +105,108 @@
       "evidenceClass": "historical",
       "sizeBytes": 5452,
       "sha256": "1eb64bff244ac73096df8c2294a5aa2a6e2227ca9c2b363f9adab5a2b027c662"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-validator/PR06C_PROMOTION_GATE_VALIDATOR_CONTRACT_LIMITATION_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 7292,
+      "sha256": "3fea4af4b402d324689c3166374bc2626a7b52c1a69f268a58ce8f14cfcfc0aa"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-validator/pr06c-promotion-gate-validator-contract-limitation-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 4055,
+      "sha256": "ce775093fb01ce0ce21a9ca649d8b3bdb37dd1668867a78705cfa828ef619645"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/PR06C_R2_CONTRACT_COMPLETION_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 3460,
+      "sha256": "3b2165b716ca96e32cf54f3be24b0b2af656a8eb756475798c0c7e4e5e0ff52d"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/PR06C_R2_HUMAN_REVIEW.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2109,
+      "sha256": "167b88eec5c46c34432b558e64e53463517d8a44b5cfd9ea49e9290a4992d0f2"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/PR06C_R2_LIMITATION_CLOSURE_MATRIX.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2112,
+      "sha256": "74db7d92295df707cc4902b849f98c29895359100035b06fb3afd913b288b572"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/PR06C_R2_VALIDATOR_CONTRACT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 5704,
+      "sha256": "56f81fad703d97c9da62ec98acf3a9dc31d8a7b1eb565f7e2ae96cde8701241e"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/pr06c-r2-schema-validation-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 2092,
+      "sha256": "cbe5f89018131eda7b9e22ccdba17ef886fe683da1b0fc6b26e7f58aa87885cc"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/pr06c-r2-validator-contract-completion-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 3270,
+      "sha256": "919b7d9c24fdc76d8186ac0f2fbf7b33eb35ef7fda7be944ca2a68cdbaae41e3"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_BOUNDARY_CLOSURE_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2473,
+      "sha256": "a3990a0d1a1c7ab6ee582a3ebae987b98250643807a773a08026d51fc795f87e"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_HUMAN_REVIEW.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2582,
+      "sha256": "cf530118241d0a041758e9d94ee1b3f7e4797190764d44a88eb1d0a5b03f9817"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_VALIDATOR_CONTRACT_BOUNDARY.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2680,
+      "sha256": "3424a38b5c0a48d9749ae5a1c354a1f841a76fa067bc54ddd9c35d8e6d41013b"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-contract-hash-manifest.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 2458,
+      "sha256": "1773333819baa557e677d5979f60a048a53df487b3c7e56deecf8d2f28a3477f"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-git-boundary-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1128,
+      "sha256": "7a5c5a553dbe1b6a6113e36746f8a90e34277e36b251b9429cedffab64b04160"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-schema-validation-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1295,
+      "sha256": "d790b742aa5e5e3e524c1fd7e167fe3ac548897bef29aa01c7182108bd1169db"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-validator-contract-boundary-closure-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 4300,
+      "sha256": "d36927bc5a6c3f04bbb309af4aeb3f3b7c44b216bcfbad034144722003ac6155"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_APPROVAL_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2043,
+      "sha256": "c8254c2c392f620a01a5ef01bea81dcb9f6c0b036f5c4b51391c4bab995a2c26"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-approval-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 3272,
+      "sha256": "b823978ea6aaddfcfedafc4d7774b4d04376ae1a361c38112584030fdb777f98"
     }
   ]
 }

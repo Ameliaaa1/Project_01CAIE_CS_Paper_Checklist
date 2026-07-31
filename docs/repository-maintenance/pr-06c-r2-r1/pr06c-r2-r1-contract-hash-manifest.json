@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "task": "PR06C-R2-R1-CONTRACT-HASH-MANIFEST",
+  "status": "VALIDATED",
+  "generatedAt": "2026-07-31T10:21:29Z",
+  "canonicalization": "RFC8785",
+  "contractFiles": [
+    {"path":"contracts/promotion/promotion-validator-contract-v3.json","kind":"contract","sizeBytes":16031,"byteSha256":"17a4aa4249a5ac38cb5543116027055bd279810e1629ca185844bf59ceef0e0e"},
+    {"path":"contracts/promotion/schema-registry-v1.json","kind":"schema-registry","sizeBytes":2121,"byteSha256":"3e6b6202109293250b9a1a2b81b2237ce2cfad0b0808fdf2157fa7c039f8d822"},
+    {"path":"contracts/promotion/generator-registry-v1.json","kind":"generator-registry","sizeBytes":437,"byteSha256":"a2933baefec15d2188f8549dbfd44ae78c0b18585380e231432b970f113c3dfd"},
+    {"path":"contracts/promotion/schemas/bootstrap-approval-v1.schema.json","kind":"schema","sizeBytes":968,"byteSha256":"d825631f1b4be17d54dcfea27054d558d13256e7544d9ee47b82c17081724d39","canonicalSha256":"861841a248a85453e273f470a572d1556c1f65c1e7ac7060cd484e3873f29b22"},
+    {"path":"contracts/promotion/schemas/promotion-manifest-v3.schema.json","kind":"schema","sizeBytes":9567,"byteSha256":"f3ee6f7acc7383686d1abd840ff061afc95421a21380f06e3b914bcd8152dcf7","canonicalSha256":"eef493ec86ff27b2741697185257b28c871bb46b43ecf4a2d3b8fe3e3a92f698"},
+    {"path":"contracts/promotion/schemas/promotion-validation-evidence-v1.schema.json","kind":"schema","sizeBytes":6441,"byteSha256":"1dffbe04b6523e162853647c32e02d915e3a32beeb41537837b61d1031475f08","canonicalSha256":"d21653b3cd121b23ed64071ebf1aec364b91a75a6cab442521d789ab64c0f4de"},
+    {"path":"contracts/promotion/schemas/question-corpus-v1.schema.json","kind":"schema","sizeBytes":649,"byteSha256":"1b95bd201268a2125178c47367cbbd550f19695a1ce725c8401da43eaa7eedb1","canonicalSha256":"8eb88e79f22918a80d86bad28e322e316d03684bb69539478d908ba3aa7fe872"},
+    {"path":"contracts/promotion/schemas/update-approval-v1.schema.json","kind":"schema","sizeBytes":1511,"byteSha256":"1135816eceef610db4beeacfb7c6f7d4adc227a9494b01469372fa5d38c958c4","canonicalSha256":"6ba3056cf4561ec9c2ea2d8c6bffff86acd754bed6e9d833eae27dc60fa5c729"},
+    {"path":"contracts/promotion/schemas/update-difference-request-v1.schema.json","kind":"schema","sizeBytes":2052,"byteSha256":"38dfbc140378b609296e83924354a7aa0e37c9ead1c62fb50190649962c85ef8","canonicalSha256":"47270c5069768e5acb803d91578761e8079f3c67b870568a62b01da34f3074fb"}
+  ],
+  "fileCount": 9,
+  "mismatches": 0
+}
