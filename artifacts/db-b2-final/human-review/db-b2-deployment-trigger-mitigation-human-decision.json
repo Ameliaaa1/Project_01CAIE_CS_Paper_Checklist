@@ -1,0 +1,30 @@
+{
+  "stage": "DB-B2",
+  "decision": "AUTHORIZE_DB_B2_DEPLOYMENT_TRIGGER_MITIGATION",
+  "reviewer": "Amelia Cai",
+  "reviewedAt": "2026-07-31T11:11:32.640Z",
+  "timestampSource": "DECISION_RECORDING_TIME_USER_DID_NOT_SUPPLY_EXPLICIT_TIMESTAMP",
+  "canonicalDeploymentProvider": "VERCEL",
+  "githubPagesDisposition": "DISABLE_LEGACY_MAIN_BRANCH_DEPLOYMENT",
+  "vercelPreviewPolicy": "ALLOW_FEATURE_BRANCH_OR_PR_PREVIEW",
+  "vercelProductionPolicy": "REQUIRE_EXPLICIT_PRODUCTION_AUTHORIZATION",
+  "authorizedActions": [
+    "DEFINE_VERCEL_AS_SOLE_CANONICAL_APPLICATION_DEPLOYMENT_CHANNEL",
+    "DISABLE_GITHUB_PAGES_MAIN_ROOT_PRODUCTION_STATIC_PUBLISHING",
+    "PRESERVE_FEATURE_BRANCH_OR_PR_VERCEL_PREVIEW",
+    "SEPARATE_MAIN_INTEGRATION_FROM_VERCEL_PRODUCTION_DEPLOYMENT",
+    "VERIFY_VERCEL_PRODUCTION_BRANCH_GIT_INTEGRATION_AND_PREVIEW_CONFIGURATION",
+    "VERIFY_FUTURE_MAIN_PUSH_DOES_NOT_CREATE_UNAUTHORIZED_PRODUCTION_DEPLOYMENT",
+    "EXECUTE_FINAL_NEON_REHEARSAL_IN_DB_B2"
+  ],
+  "finalCombinedHumanReviewRequired": true,
+  "databaseProductionActionsAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}

@@ -1,0 +1,44 @@
+{
+  "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
+  "generatedAt": "2026-07-31T11:11:43.026Z",
+  "status": "PASS_NO_AUTHORIZED_LEGACY_EXPORT_AVAILABLE",
+  "authorizedLegacyExportProvided": false,
+  "legacyUsersJson": {
+    "path": "data/users.json",
+    "exists": false,
+    "recordCount": 0
+  },
+  "legacyCheckoutSessionsJson": {
+    "path": "data/checkout-sessions.json",
+    "exists": false,
+    "recordCount": 0
+  },
+  "legacyUpstashExport": {
+    "provided": false,
+    "recordCount": 0
+  },
+  "authorizedExportInventory": [],
+  "authorizedExportFileCount": 0,
+  "authorizedLegacyRecordCount": 0,
+  "noLegacyMigrationInputDecision": {
+    "decided": true,
+    "decision": "NO_AUTHORIZED_LEGACY_EXPORT_AVAILABLE_DO_NOT_SYNTHESIZE_OR_MIGRATE",
+    "basis": [
+      "No authorized Legacy Export was supplied for DB-B2.",
+      "Active data/users.json is absent.",
+      "Active data/checkout-sessions.json is absent.",
+      "Example and historical evidence files are not migration inputs."
+    ]
+  },
+  "unresolvedLegacyExportAvailability": false,
+  "dbB3BlockedByLegacyExportAvailability": false,
+  "productionImportPerformed": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}

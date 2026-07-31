@@ -1,0 +1,58 @@
+{
+  "stage": "DB-B2",
+  "decisions": [
+    "APPROVE_DB_B1_FINAL_CLOSURE",
+    "APPROVE_DB_B2_PRODUCTION_READINESS_BASELINE"
+  ],
+  "reviewer": "Amelia Cai",
+  "reviewedAt": "2026-07-31T11:11:32Z",
+  "timestampSource": "RECORDED_AT_FIRST_CLOSURE_EXECUTION",
+  "acceptedBoundaries": {
+    "canonicalDeploymentProvider": "VERCEL",
+    "githubPagesLegacyMainRootPublishingDisabled": true,
+    "vercelFeatureBranchAndPullRequestPreviewAllowed": true,
+    "mainPushAutomaticProductionDeploymentAllowed": false,
+    "vercelProductionDeploymentRequiresSeparateExplicitHumanAuthorization": true,
+    "authorizedLegacyExportExists": false,
+    "synthesizeBusinessDataFromExamplesHistoricalEvidenceOrLegacyBoolean": false,
+    "emptyBusinessDataBaselineForUserPurchaseQuestionSearch": true,
+    "legacySessionMigrationAllowed": false,
+    "reauthenticationRequiredAfterRuntimeCutover": true,
+    "finalNeonRehearsalAccepted": true,
+    "independentMigrationReplayAccepted": true,
+    "transientColdStartFailuresAcceptedAsRecorded": true,
+    "ephemeralNeonBranchesDestroyed": true
+  },
+  "authorizedScope": {
+    "dbB1FinalClosure": true,
+    "dbB2ProductionReadinessBaselineClosure": true,
+    "dbB3PlanningAndProductionPreflightPreparation": true
+  },
+  "explicitlyNotAuthorized": {
+    "productionDatabaseConnected": true,
+    "productionMigrationAuthorized": true,
+    "productionMigration": true,
+    "productionWrite": true,
+    "vercelProductionDeployment": true,
+    "paymentProviderRuntimeEnabled": true
+  },
+  "effectiveSafetyValues": {
+    "productionDatabaseConnected": false,
+    "productionDatabaseUsed": false,
+    "productionMigration": false,
+    "productionMigrationAuthorized": false,
+    "productionWrite": false,
+    "paymentProviderRuntimeEnabled": false,
+    "vercelProductionDeployment": false,
+    "productionDeploy": false
+  },
+  "humanDecisionWrittenByCodex": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}

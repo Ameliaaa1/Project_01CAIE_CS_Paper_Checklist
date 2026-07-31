@@ -1,0 +1,37 @@
+{
+  "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
+  "status": "PASS",
+  "schemaSha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+  "migrationCount": 2,
+  "migrationFiles": [
+    {
+      "path": "prisma/migrations/20260728133000_production_baseline/migration.sql",
+      "sizeBytes": 4822,
+      "sha256": "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+      "fileReadable": true,
+      "jsonValid": null,
+      "parseStatus": "NOT_APPLICABLE",
+      "mimeType": "application/octet-stream"
+    },
+    {
+      "path": "prisma/migrations/20260729152000_billing_event_ledger_extension/migration.sql",
+      "sizeBytes": 1746,
+      "sha256": "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd",
+      "fileReadable": true,
+      "jsonValid": null,
+      "parseStatus": "NOT_APPLICABLE",
+      "mimeType": "application/octet-stream"
+    }
+  ],
+  "destructiveStatementCount": 0,
+  "baselineReplayPassed": true,
+  "productionTargetRejectedByGuard": true,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}

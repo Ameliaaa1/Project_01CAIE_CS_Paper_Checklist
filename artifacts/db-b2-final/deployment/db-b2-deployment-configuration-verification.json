@@ -1,0 +1,76 @@
+{
+  "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
+  "verificationTime": "2026-07-31T11:11:43.021Z",
+  "status": "PASS",
+  "canonicalDeploymentProvider": "VERCEL",
+  "githubPagesDisposition": "DISABLED_LEGACY_MAIN_BRANCH_DEPLOYMENT",
+  "githubPagesBeforeStatus": "built",
+  "githubPagesBeforeSource": {
+    "branch": "main",
+    "path": "/"
+  },
+  "githubPagesAfterApiHttpStatus": 404,
+  "githubPagesMainBranchTriggerActive": false,
+  "githubPagesDisabled": true,
+  "vercelProjectId": "project-01-caie-cs-paper-checklist-gw52",
+  "vercelProductionBranch": "main",
+  "vercelGitIntegration": "ACTIVE",
+  "vercelPreviewConfiguration": "ALL_UNASSIGNED_GIT_BRANCHES",
+  "vercelPreviewPolicy": "ALLOW_FEATURE_BRANCH_OR_PR_PREVIEW",
+  "vercelProductionPolicy": "REQUIRE_EXPLICIT_PRODUCTION_AUTHORIZATION",
+  "ignoreCommand": "if [ \"$VERCEL_GIT_COMMIT_REF\" = \"main\" ]; then exit 0; else exit 1; fi",
+  "ignoreCommandSemantics": {
+    "exit0": "CANCEL_DEPLOYMENT",
+    "exit1": "CONTINUE_BUILD"
+  },
+  "localCommandVerification": {
+    "mainBranchExitCode": 0,
+    "featureBranchExitCode": 1,
+    "status": "PASS"
+  },
+  "observedMainCommit": "94fbd7b6650303c3944f63faa69ba4e38ffaa693",
+  "observedVercelStatus": {
+    "state": "success",
+    "description": "Canceled by Ignored Build Step",
+    "createdAt": "2026-07-31T10:26:06Z",
+    "updatedAt": "2026-07-31T10:26:06Z",
+    "targetUrl": "https://vercel.com/amelias-projects-523457ed/project-01-caie-cs-paper-checklist-gw52/4ryDywXfuSzpyrFJYxM4RPmhmhcL"
+  },
+  "documentationValidation": {
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist/actions/runs/30623531887/job/91133367175"
+  },
+  "mainPushDeploymentCanceledByIgnoredBuildStep": true,
+  "futureUnauthorizedDeploymentRiskResolved": true,
+  "automaticDeploymentBoundaryControlled": true,
+  "configurationMutationPerformed": true,
+  "productionDeploymentPerformed": false,
+  "sourceEvidence": {
+    "path": "vercel.json",
+    "sha256": "324d5f276140b09ab1d3ee6e620a064902e19c67e276250a81526bfb45afa8ea",
+    "sizeBytes": 487,
+    "relevantLines": [
+      {
+        "line": 4,
+        "text": "\"ignoreCommand\": \"if [ \\\"$VERCEL_GIT_COMMIT_REF\\\" = \\\"main\\\" ]; then exit 0; else exit 1; fi\","
+      },
+      {
+        "line": 5,
+        "text": "\"functions\": {"
+      },
+      {
+        "line": 11,
+        "text": "\"rewrites\": ["
+      }
+    ]
+  },
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}

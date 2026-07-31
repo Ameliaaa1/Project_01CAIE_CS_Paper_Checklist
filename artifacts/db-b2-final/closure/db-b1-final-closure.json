@@ -1,0 +1,43 @@
+{
+  "stage": "DB-B2_PRODUCTION_DEPLOYMENT_BOUNDARY_CONTROL_LEGACY_DYNAMIC_DATA_DECISION_AND_FINAL_NEON_REHEARSAL",
+  "status": "PASS",
+  "dbB1FinalClosure": "PASS",
+  "originalBlocker": "PRODUCTION_DEPLOY_BOUNDARY_HUMAN_DECISION_REQUIRED",
+  "effectiveResolution": "RESOLVED_BY_DB_B2_DEPLOYMENT_MITIGATION_AND_FINAL_COMBINED_HUMAN_APPROVAL",
+  "finalHumanDecision": {
+    "path": "human-review/db-b2-final-combined-human-decision.json",
+    "sizeBytes": 2171,
+    "sha256": "02e93e9557664cb95c0972e01cee8300e6a848457a69db67715b48e2a08f6e42",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "finalHumanDecisionVerification": {
+    "path": "human-review/db-b2-final-combined-human-decision-verification.json",
+    "sizeBytes": 1323,
+    "sha256": "a9c903ed794ac0886d7f35bacb7254114325f97a52dc1f3f50d5573851ab6696",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "deploymentConfigurationVerification": {
+    "path": "deployment/db-b2-deployment-configuration-verification.json",
+    "sizeBytes": 2798,
+    "sha256": "910159123d4184f48ecef5298ec85ba5629e44fb94ee5de69e67392920042050",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "closureCommit": null,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "paymentProviderRuntimeEnabled": false,
+  "vercelProductionDeployment": false,
+  "productionDeploy": false
+}
