@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:paperlens:promotion-validation-evidence:1",
+  "title": "PaperLens Promotion Validation Evidence v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "evidenceId", "validator", "phase", "result", "manifest", "artifact", "schema", "scope", "sourceCommit", "generatedAt", "supersedes", "findings"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "evidenceId": {"type": "string", "minLength": 1},
+    "validator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version", "contractVersion"],
+      "properties": {
+        "id": {"const": "paperlens-promotion-gate-validator"},
+        "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "contractVersion": {"const": 3}
+      }
+    },
+    "phase": {"enum": ["candidate", "current-production", "target-pre-review", "target-post-review"]},
+    "result": {"enum": ["PASS", "BLOCK"]},
+    "manifest": {"$ref": "#/$defs/boundFile"},
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifactId", "artifactVersion", "path", "sizeBytes", "sha256", "recordCount", "stableIdSetSha256"],
+      "properties": {
+        "artifactId": {"const": "paperlens-question-corpus"},
+        "artifactVersion": {"type": "string", "minLength": 1},
+        "path": {"type": "string", "minLength": 1},
+        "sizeBytes": {"type": "integer", "minimum": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "recordCount": {"type": "integer", "minimum": 1},
+        "stableIdSetSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version", "path", "sha256"],
+      "properties": {
+        "id": {"const": "paperlens-question-corpus-records"},
+        "version": {"const": 1},
+        "path": {"const": "contracts/promotion/schemas/question-corpus-v1.schema.json"},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supportedSyllabi", "sha256"],
+      "properties": {
+        "supportedSyllabi": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["0478", "9618"]}},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "sourceCommit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "generatedAt": {"type": "string", "format": "date-time"},
+    "supersedes": {
+      "anyOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["evidencePath", "evidenceSha256"],
+          "properties": {
+            "evidencePath": {"type": "string", "minLength": 1},
+            "evidenceSha256": {"$ref": "#/$defs/sha256"}
+          }
+        }
+      ]
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "severity", "message", "path"],
+        "properties": {
+          "code": {"type": "string", "minLength": 1},
+          "severity": {"enum": ["INFO", "BLOCK"]},
+          "message": {"type": "string", "minLength": 1},
+          "path": {"type": "string"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "boundFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "path", "sha256"],
+      "properties": {
+        "role": {"enum": ["candidate", "current-production", "promotion-target"]},
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    }
+  }
+}

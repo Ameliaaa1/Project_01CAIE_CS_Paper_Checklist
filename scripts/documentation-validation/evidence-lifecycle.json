@@ -117,6 +117,42 @@
       "evidenceClass": "historical",
       "sizeBytes": 4055,
       "sha256": "ce775093fb01ce0ce21a9ca649d8b3bdb37dd1668867a78705cfa828ef619645"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/PR06C_R2_CONTRACT_COMPLETION_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 3460,
+      "sha256": "3b2165b716ca96e32cf54f3be24b0b2af656a8eb756475798c0c7e4e5e0ff52d"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/PR06C_R2_HUMAN_REVIEW.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2109,
+      "sha256": "167b88eec5c46c34432b558e64e53463517d8a44b5cfd9ea49e9290a4992d0f2"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/PR06C_R2_LIMITATION_CLOSURE_MATRIX.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2112,
+      "sha256": "74db7d92295df707cc4902b849f98c29895359100035b06fb3afd913b288b572"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/PR06C_R2_VALIDATOR_CONTRACT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 5704,
+      "sha256": "56f81fad703d97c9da62ec98acf3a9dc31d8a7b1eb565f7e2ae96cde8701241e"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/pr06c-r2-schema-validation-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 2092,
+      "sha256": "cbe5f89018131eda7b9e22ccdba17ef886fe683da1b0fc6b26e7f58aa87885cc"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2/pr06c-r2-validator-contract-completion-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 3270,
+      "sha256": "919b7d9c24fdc76d8186ac0f2fbf7b33eb35ef7fda7be944ca2a68cdbaae41e3"
     }
   ]
 }

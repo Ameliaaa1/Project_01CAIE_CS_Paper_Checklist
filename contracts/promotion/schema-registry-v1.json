@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "registryId": "paperlens-promotion-schema-registry",
+  "canonicalization": "RFC8785",
+  "entries": [
+    {
+      "schemaId": "paperlens-promotion-manifest",
+      "version": 3,
+      "kind": "manifest",
+      "path": "contracts/promotion/schemas/promotion-manifest-v3.schema.json",
+      "canonicalSha256": "9c0048f742025762160d118378664915a51d99eaa69d7c4ffdf102a44b3b9eaf",
+      "supportedArtifactSchema": false
+    },
+    {
+      "schemaId": "paperlens-question-corpus-records",
+      "version": 1,
+      "kind": "artifact",
+      "path": "contracts/promotion/schemas/question-corpus-v1.schema.json",
+      "canonicalSha256": "8eb88e79f22918a80d86bad28e322e316d03684bb69539478d908ba3aa7fe872",
+      "supportedArtifactSchema": true
+    },
+    {
+      "schemaId": "paperlens-promotion-validation-evidence",
+      "version": 1,
+      "kind": "validation-evidence",
+      "path": "contracts/promotion/schemas/promotion-validation-evidence-v1.schema.json",
+      "canonicalSha256": "a045ff8adf3c04036903935756749ab5612a3a94a411474c468f7e1fe251eb7c",
+      "supportedArtifactSchema": false
+    },
+    {
+      "schemaId": "paperlens-update-difference-request",
+      "version": 1,
+      "kind": "difference-request",
+      "path": "contracts/promotion/schemas/update-difference-request-v1.schema.json",
+      "canonicalSha256": "5ee3161cc374d443181643c470c9c63d78fe600d6ae40d60e8e6d166e042a411",
+      "supportedArtifactSchema": false
+    },
+    {
+      "schemaId": "paperlens-update-approval",
+      "version": 1,
+      "kind": "update-approval",
+      "path": "contracts/promotion/schemas/update-approval-v1.schema.json",
+      "canonicalSha256": "5f7e8fe2af32fea47fa1f946ce1c6a151ec71aa6cfb4a0febae65bb1af0cc30b",
+      "supportedArtifactSchema": false
+    }
+  ]
+}

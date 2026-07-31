@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:paperlens:promotion-manifest:3",
+  "title": "PaperLens Promotion Manifest v3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "authorityRole", "lifecycleState", "artifact", "scope", "schema", "provenance", "validation", "promotion"],
+  "properties": {
+    "schemaVersion": {"const": 3},
+    "authorityRole": {"enum": ["candidate", "current-production", "promotion-target"]},
+    "lifecycleState": {"enum": ["CANDIDATE_VALIDATED", "READY_FOR_PROMOTION_REVIEW", "PRODUCTION_CURRENT", "TARGET_VALIDATED", "READY_FOR_HUMAN_REVIEW", "APPROVED_FOR_EXECUTION"]},
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifactId", "artifactVersion", "artifactPath", "sizeBytes", "sha256", "recordCount", "stableIdSetSha256"],
+      "properties": {
+        "artifactId": {"const": "paperlens-question-corpus"},
+        "artifactVersion": {"type": "string", "minLength": 1},
+        "artifactPath": {"$ref": "#/$defs/repositoryPath"},
+        "sizeBytes": {"type": "integer", "minimum": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "recordCount": {"type": "integer", "minimum": 1},
+        "stableIdSetSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supportedSyllabi", "scopeSha256"],
+      "properties": {
+        "supportedSyllabi": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"enum": ["0478", "9618"]}
+        },
+        "scopeSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifactSchemaId", "artifactSchemaVersion", "artifactSchemaPath", "artifactSchemaSha256"],
+      "properties": {
+        "artifactSchemaId": {"const": "paperlens-question-corpus-records"},
+        "artifactSchemaVersion": {"const": 1},
+        "artifactSchemaPath": {"const": "contracts/promotion/schemas/question-corpus-v1.schema.json"},
+        "artifactSchemaSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceCommit", "generatedAt", "generator"],
+      "properties": {
+        "sourceCommit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "generatedAt": {"type": "string", "format": "date-time"},
+        "generator": {"type": "string", "minLength": 1}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result", "validatedAt", "evidencePath", "evidenceSha256"],
+      "properties": {
+        "result": {"const": "PASS"},
+        "validatedAt": {"type": "string", "format": "date-time"},
+        "evidencePath": {"$ref": "#/$defs/repositoryPath"},
+        "evidenceSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "promotion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "baselineProductionSha256", "differenceRequestPath", "differenceRequestSha256", "approvalEvidencePath", "approvalEvidenceSha256", "reviewDecision", "reviewer", "reviewedAt", "promotionId"],
+      "properties": {
+        "mode": {"type": ["string", "null"], "enum": [null, "bootstrap", "update"]},
+        "baselineProductionSha256": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+        "differenceRequestPath": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/repositoryPath"}]},
+        "differenceRequestSha256": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+        "approvalEvidencePath": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/repositoryPath"}]},
+        "approvalEvidenceSha256": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]},
+        "reviewDecision": {"enum": ["PENDING", "APPROVE", "REJECT"]},
+        "reviewer": {"type": ["string", "null"]},
+        "reviewedAt": {"type": ["string", "null"], "format": "date-time"},
+        "promotionId": {"type": ["string", "null"]}
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "repositoryPath": {"type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\).+$"}
+  }
+}

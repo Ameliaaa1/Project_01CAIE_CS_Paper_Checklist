@@ -1,0 +1,180 @@
+{
+  "contractVersion": 3,
+  "contractId": "paperlens-promotion-gate-contract",
+  "status": "PROPOSED_PENDING_HUMAN_APPROVAL",
+  "manifestSchema": {
+    "id": "paperlens-promotion-manifest",
+    "version": 3,
+    "path": "contracts/promotion/schemas/promotion-manifest-v3.schema.json",
+    "canonicalSha256": "9c0048f742025762160d118378664915a51d99eaa69d7c4ffdf102a44b3b9eaf"
+  },
+  "schemaRegistry": {
+    "id": "paperlens-promotion-schema-registry",
+    "version": 1,
+    "path": "contracts/promotion/schema-registry-v1.json",
+    "byteSha256": "39df4dc3678ee5c5c966ad452b0ee5deb738c49d5ac798af209f93c15dadc155"
+  },
+  "allowedArtifactSchemas": [
+    {
+      "id": "paperlens-question-corpus-records",
+      "version": 1,
+      "path": "contracts/promotion/schemas/question-corpus-v1.schema.json",
+      "canonicalSha256": "8eb88e79f22918a80d86bad28e322e316d03684bb69539478d908ba3aa7fe872"
+    }
+  ],
+  "artifactExtraction": {
+    "rootType": "object",
+    "recordCollectionPointer": "/records",
+    "recordCollectionType": "array",
+    "minimumRecords": 1,
+    "recordCountRule": "JSON_ARRAY_LENGTH",
+    "missingCollection": "BLOCK",
+    "multipleCollections": "BLOCK",
+    "invalidRecord": "BLOCK",
+    "stableIdPointerRelativeToRecord": "/stableId",
+    "stableIdType": "string",
+    "stableIdMinimumUtf8Bytes": 1,
+    "stableIdNormalization": "NONE",
+    "stableIdWhitespaceTrimming": false,
+    "stableIdCaseFolding": false,
+    "stableIdUnicodeNormalization": false,
+    "duplicateStableId": "BLOCK",
+    "stableIdSort": "UNSIGNED_UTF8_BYTE_LEXICOGRAPHIC",
+    "stableIdHashInput": "COMPACT_JSON_ARRAY_PLUS_LF",
+    "emptyStableIdSet": "BLOCK",
+    "syllabusPointerRelativeToRecord": "/syllabus",
+    "allowedSyllabi": ["0478", "9618"],
+    "manifestScopeRule": "SORTED_UNIQUE_OBSERVED_RECORD_SYLLABI_EXACT_EQUALITY",
+    "emptyScope": "BLOCK",
+    "scopeHashInput": "COMPACT_JSON_OBJECT_SUPPORTED_SYLLABI_PLUS_LF"
+  },
+  "authorityRoles": {
+    "candidate": {
+      "manifestPath": "promotion/candidate/manifest.json",
+      "artifactPrefix": "promotion/candidate/artifacts/",
+      "evidencePrefix": "promotion/candidate/evidence/"
+    },
+    "current-production": {
+      "manifestPath": "promotion/production/manifest.json",
+      "artifactPrefix": "promotion/production/artifacts/",
+      "evidencePrefix": "promotion/production/evidence/"
+    },
+    "promotion-target": {
+      "manifestPath": "promotion/target/manifest.json",
+      "artifactPrefix": "promotion/target/artifacts/",
+      "evidencePrefix": "promotion/target/evidence/"
+    }
+  },
+  "pathRules": {
+    "separator": "/",
+    "repositoryRelativeOnly": true,
+    "absolutePaths": "BLOCK",
+    "emptySegments": "BLOCK",
+    "dotSegments": "BLOCK",
+    "parentTraversal": "BLOCK",
+    "backslash": "BLOCK",
+    "nulByte": "BLOCK",
+    "symlinksInAnyResolvedComponent": "BLOCK",
+    "resolvedPathOutsideRepository": "BLOCK",
+    "crossRoleArtifactReferences": "BLOCK",
+    "crossRoleEvidenceReferences": "BLOCK",
+    "forbiddenPrefixes": [".git/", "data/", "docs/", "generated/", "public/", "node_modules/"],
+    "exactManifestPathsOnly": true
+  },
+  "promotionModes": {
+    "bootstrap": {
+      "currentProductionManifest": "MUST_BE_ABSENT",
+      "differenceRequest": "MUST_BE_NULL",
+      "baselineProductionSha256": "MUST_BE_NULL",
+      "candidateTargetIdentity": "EXACT_EQUALITY"
+    },
+    "update": {
+      "currentProductionManifest": "MUST_EXIST_AND_VALIDATE",
+      "baselineProductionSha256": "EXACT_CURRENT_ARTIFACT_SHA256",
+      "differenceRequest": "ALWAYS_REQUIRED",
+      "candidateTargetIdentity": "EXACT_EQUALITY",
+      "targetCurrentContentIdentity": "MUST_DIFFER"
+    }
+  },
+  "updateApproval": {
+    "differenceRequestSchema": {
+      "id": "paperlens-update-difference-request",
+      "version": 1,
+      "path": "contracts/promotion/schemas/update-difference-request-v1.schema.json",
+      "canonicalSha256": "5ee3161cc374d443181643c470c9c63d78fe600d6ae40d60e8e6d166e042a411"
+    },
+    "approvalSchema": {
+      "id": "paperlens-update-approval",
+      "version": 1,
+      "path": "contracts/promotion/schemas/update-approval-v1.schema.json",
+      "canonicalSha256": "5f7e8fe2af32fea47fa1f946ce1c6a151ec71aa6cfb4a0febae65bb1af0cc30b"
+    },
+    "preReview": {
+      "targetReviewDecision": "PENDING",
+      "differenceRequestPath": "REQUIRED_TARGET_EVIDENCE_PREFIX",
+      "differenceRequestSha256": "REQUIRED_EXACT_BYTES",
+      "approvalEvidencePath": "MUST_BE_NULL",
+      "approvalEvidenceSha256": "MUST_BE_NULL",
+      "validatorOutcome": "READY_FOR_HUMAN_REVIEW"
+    },
+    "postReview": {
+      "targetReviewDecision": "APPROVE",
+      "reviewer": "REQUIRED_NON_EMPTY",
+      "reviewedAt": "REQUIRED_UTC_ISO8601",
+      "approvalEvidencePath": "REQUIRED_TARGET_EVIDENCE_PREFIX",
+      "approvalEvidenceSha256": "REQUIRED_EXACT_BYTES",
+      "approvalBindings": ["requestPath", "requestSha256", "requestId", "currentProductionArtifactSha256", "candidateArtifactSha256", "targetArtifactSha256", "sourceCommit", "approvedDifferences"],
+      "rejectDecision": "BLOCK",
+      "validatorOutcome": "PROMOTION_TARGET_VALIDATION_PASS"
+    },
+    "differenceRules": {
+      "schemaChange": "REQUEST_AND_APPROVAL_BOOLEAN_MUST_EXACTLY_MATCH_DETECTED_CHANGE",
+      "scopeChange": "REQUEST_AND_APPROVAL_BOOLEAN_MUST_EXACTLY_MATCH_DETECTED_CHANGE",
+      "scopeAddedRemoved": "EXACT_SET_DIFFERENCE",
+      "unrequestedDifference": "BLOCK",
+      "approvedDifferenceNotPresent": "BLOCK"
+    }
+  },
+  "validationEvidence": {
+    "schema": {
+      "id": "paperlens-promotion-validation-evidence",
+      "version": 1,
+      "path": "contracts/promotion/schemas/promotion-validation-evidence-v1.schema.json",
+      "canonicalSha256": "a045ff8adf3c04036903935756749ab5612a3a94a411474c468f7e1fe251eb7c"
+    },
+    "allowedValidatorVersions": ["1.0.0"],
+    "requiredBindings": ["manifest.role", "manifest.path", "manifest.sha256", "artifact.artifactId", "artifact.artifactVersion", "artifact.path", "artifact.sizeBytes", "artifact.sha256", "artifact.recordCount", "artifact.stableIdSetSha256", "schema.id", "schema.version", "schema.path", "schema.sha256", "scope.supportedSyllabi", "scope.sha256", "sourceCommit", "validator.id", "validator.version", "validator.contractVersion"],
+    "manifestValidatedAtMustEqualEvidenceGeneratedAt": true,
+    "wallClockExpiration": "NONE",
+    "staleWhenAnyBindingDiffers": true,
+    "staleWhenValidatorVersionNotAllowlisted": true,
+    "currentEvidence": "EXACT_FILE_REFERENCED_BY_MANIFEST_PATH_AND_SHA256",
+    "supersession": {
+      "optional": true,
+      "olderEvidenceMustExist": true,
+      "olderEvidenceSha256MustMatch": true,
+      "sameRoleAndPhase": true,
+      "sameArtifactId": true,
+      "newGeneratedAtStrictlyLater": true,
+      "cycles": "BLOCK",
+      "selfReference": "BLOCK"
+    },
+    "passEvidenceFindings": "MUST_CONTAIN_NO_BLOCK_SEVERITY",
+    "blockEvidenceResult": "BLOCK"
+  },
+  "identityRules": {
+    "candidateTargetExactFields": ["artifact.artifactId", "artifact.artifactVersion", "artifact.sizeBytes", "artifact.sha256", "artifact.recordCount", "artifact.stableIdSetSha256", "scope.supportedSyllabi", "scope.scopeSha256", "schema.artifactSchemaId", "schema.artifactSchemaVersion", "schema.artifactSchemaPath", "schema.artifactSchemaSha256", "provenance.sourceCommit"],
+    "artifactByteHash": "SHA256_EXACT_BYTES_LOWERCASE_HEX",
+    "schemaHash": "SHA256_RFC8785_CANONICAL_BYTES_LOWERCASE_HEX",
+    "unknownManifestField": "BLOCK",
+    "unknownSchemaRegistryEntry": "BLOCK"
+  },
+  "validatorBoundary": {
+    "defaultOperation": "READ_ONLY",
+    "evidenceOutput": "STDOUT_OR_CALLER_SELECTED_PATH_OUTSIDE_AUTHORITY_PREFIXES",
+    "authorityWrites": "PROHIBITED",
+    "productionWrites": "PROHIBITED",
+    "promotionExecution": "PROHIBITED",
+    "deploymentActions": "PROHIBITED"
+  }
+}
