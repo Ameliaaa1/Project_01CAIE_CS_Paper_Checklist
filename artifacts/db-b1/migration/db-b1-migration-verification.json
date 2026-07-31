@@ -1,0 +1,50 @@
+{
+  "stage": "DB-B1_MAINLINE_DATABASE_INTEGRATION_AND_LOCAL_VALIDATION",
+  "generatedAt": "2026-07-30T10:16:26.128Z",
+  "integrationCandidateCommit": "cdc75e55e07b491dc49af29adef9876aef4246c2",
+  "migrationsInOrder": [
+    {
+      "path": "prisma/migrations/20260728133000_production_baseline/migration.sql",
+      "exists": true,
+      "isFile": true,
+      "sizeBytes": 4822,
+      "sha256": "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+      "expectedSha256": "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+      "identityMatches": true
+    },
+    {
+      "path": "prisma/migrations/20260729152000_billing_event_ledger_extension/migration.sql",
+      "exists": true,
+      "isFile": true,
+      "sizeBytes": 1746,
+      "sha256": "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd",
+      "expectedSha256": "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd",
+      "identityMatches": true
+    }
+  ],
+  "approvedMigrationCount": 2,
+  "migrationOrderCorrect": true,
+  "frozenMigrationModified": false,
+  "migrationRegenerated": false,
+  "migrationSqlEditedDuringDbB1": false,
+  "prismaMigrateStatusExecutedOnDbB1Candidate": false,
+  "prismaMigrateStatusReason": "NO_NEW_AUTHORIZED_EPHEMERAL_POSTGRESQL_TARGET; PRODUCTION IS FORBIDDEN",
+  "dbB0EphemeralMigrationEvidence": {
+    "path": "artifacts/db-b0-r1-final/database-tests/db-b0-r1-ephemeral-migration-report.json",
+    "sha256": "3f0d942ef81d3791311c23d07892108d9ef29e4dce49be7674caf90ba437b369",
+    "status": "PASS",
+    "reuseStatus": "REUSED_BY_SCHEMA_AND_MIGRATION_CONTENT_IDENTITY"
+  },
+  "approvedMigrationsIntegratedIntoCandidate": true,
+  "approvedMigrationsIntegratedIntoActualMain": false,
+  "status": "PASS_CANDIDATE_IDENTITY",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

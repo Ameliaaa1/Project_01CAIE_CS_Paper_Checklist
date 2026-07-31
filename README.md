@@ -34,49 +34,21 @@ Then open http://localhost:3000.
 
 The front end still keeps a browser-side fallback for the checklist/search logic, so the original local-first behavior is preserved when possible.
 
-## User Database
+## Runtime Database Boundary
 
-Locally, the server stores runtime user and checkout data in `data/users.json` and `data/checkout-sessions.json`.
-Those files are intentionally ignored because they can contain emails, password hashes, salts, and purchase records.
+The approved dynamic-data schema uses PostgreSQL through Prisma for users,
+credentials, sessions, purchases, question-search accounting, and the reserved
+billing event ledger. Local development and tests retain an explicitly scoped
+JSON fallback when `DATABASE_URL` is absent. Static question, PDF, image, and
+search-index assets remain file-backed and are not stored in PostgreSQL.
 
-On startup, `server.js` creates both runtime database files automatically when they are missing:
+The payment-provider schema is reserved, but payment-provider runtime is
+deferred and disabled by default. No Stripe, Alipay, or WeChat Pay credentials
+or activation steps are part of the current runtime configuration.
 
-- `data/users.json` with `{ "users": [] }`
-- `data/checkout-sessions.json` with `{ "sessions": [] }`
-
-Safe schema examples are committed as:
-
-- `data/users.example.json`
-- `data/checkout-sessions.example.json`
-
-For testing or deployment, set `DATA_DIR=/path/to/private/data` to keep production user data outside the repository checkout.
-
-On Vercel, configure a persistent Redis/KV store and add these environment variables:
-
-- `KV_REST_API_URL`
-- `KV_REST_API_TOKEN`
-
-The app also accepts the equivalent Upstash names:
-
-- `UPSTASH_REDIS_REST_URL`
-- `UPSTASH_REDIS_REST_TOKEN`
-
-Optional Redis/KV key names:
-
-- `PAPERLENS_USERS_KEY` - overrides the Redis key used for user records
-- `PAPERLENS_CHECKOUT_KEY` - overrides the Redis key used for checkout session records
-
-Production also requires:
-
-- `SESSION_SECRET` - at least 32 characters; used to sign server-side session cookies
-- `STRIPE_SECRET_KEY` - Stripe secret API key used to create Checkout Sessions
-- `STRIPE_PRICE_ID` - Stripe Price ID for PaperLens lifetime access
-- `STRIPE_WEBHOOK_SECRET` - Stripe webhook endpoint signing secret
-- `OPENAI_API_KEY` - OpenAI API key used by Question Finder answer grading
-- `OPENAI_GRADING_MODEL` - optional model override for answer grading; defaults to `gpt-4.1-mini`
-- `PUBLIC_BASE_URL` or `APP_BASE_URL` - public origin used for Stripe success and cancel URLs
-
-Without those production variables, Vercel can serve pages and static past papers, but account registration, login state, purchases, and Question Finder trial usage will not be stored persistently.
+Production database creation, migration, runtime enablement, writes, and
+deployment require their own later approval stages. This repository state does
+not authorize any of those operations.
 
 ## Vercel Deployment
 
@@ -90,7 +62,8 @@ For GitHub-based Preview deployments, push a branch to GitHub and let the Vercel
 - Confirm `.env`, `.env.*`, `.vercel/`, `node_modules/`, `.tmp_papers/`, `data/users.json`, and `data/checkout-sessions.json` are untracked and ignored.
 - Run `npm test`.
 - Run `npm run build:question-index`.
-- Commit the generated `generated/question-index.json` update when paper content has changed.
+- Confirm the canonical `generated/production-question-index.json` and browser
+  asset mirror pass the deterministic index check.
 - Push a feature branch, not the production branch, when you want a Vercel Preview.
 - Open a GitHub pull request and wait for the Vercel deployment check.
 
@@ -101,8 +74,8 @@ For GitHub-based Preview deployments, push a branch to GitHub and let the Vercel
 - Use the Node.js runtime with `api/index.js` as configured in `vercel.json`.
 - Keep the build command as `npm run build` or leave Vercel's detected npm build command enabled.
 - Set required environment variables in Vercel for Preview and Production as appropriate.
-- Add Redis/KV environment variables for persistent user, checkout, and trial state.
-- Add Stripe environment variables before testing paid checkout.
+- Keep payment-provider runtime disabled unless a later stage explicitly
+  authorizes and verifies a provider integration.
 - Keep production domains attached only to Production deployments.
 
 Add `paperlens.eu.cc` as the production domain in Vercel, then point the domain's DNS to Vercel from Cloudflare.

@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Manrope:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=practice-modes-6" />
+    <link rel="stylesheet" href="/styles.css?v=practice-modes-22" />
   </head>
   <body>
     <header class="topbar">
@@ -26,7 +26,6 @@
         <span class="account-status" id="accountStatus">Guest preview</span>
         <a class="topbar-link auth-guest-action" href="signup.html">Sign up</a>
         <a class="topbar-link auth-guest-action" href="login.html">Log in</a>
-        <button class="topbar-button" id="topbarBuyButton" type="button">Buy access</button>
         <button class="topbar-button" id="logoutButton" type="button" hidden>Log out</button>
       </div>
     </header>
@@ -102,8 +101,9 @@
           <p class="eyebrow">CAIE Computer Science revision analyzer</p>
           <h1>Computer Science Web Checklist</h1>
           <p class="hero-text">
-            PaperLens uses a maintained analysis of CAIE IGCSE Computer Science 0478 past papers and mark schemes from
-            2019 to 2025. Pick a paper focus, generate topic priorities, then export a revision checklist.
+            PaperLens helps high-school students turn past-paper practice into a clear study plan. Search real exam
+            questions, spot the skills that keep coming up, and practise answers with mark-scheme feedback before the
+            next test.
           </p>
         </div>
         <figure class="hero-media">
@@ -115,17 +115,16 @@
         <div class="question-finder-topline">
           <div class="section-head question-finder-head">
             <p class="eyebrow">Question finder</p>
-            <h2>Build a focused past-paper set.</h2>
-            <p>Choose one or more syllabuses, search a knowledge point, then preview matching past-paper questions.</p>
+            <h2>Find the right exam question.</h2>
+            <p>Type a topic, pick a past-paper question, then practise your answer with instant feedback.</p>
           </div>
           <div class="question-access-bar" id="questionFinderAccessBar">
             <span class="question-access-indicator" aria-hidden="true"></span>
             <div>
               <strong id="questionFinderAccessTitle">Sign in to start</strong>
-              <span id="questionFinderAccessDetail">Two successful searches are included before purchase.</span>
+              <span id="questionFinderAccessDetail">Two successful searches are included. Additional access is not currently available.</span>
             </div>
             <a class="question-access-action" id="questionFinderLoginLink" href="login.html">Log in</a>
-            <button class="question-access-action primary" id="questionFinderBuyButton" type="button">Buy access</button>
           </div>
         </div>
 
@@ -138,6 +137,13 @@
                 <span>
                   <strong>Cambridge IGCSE Computer Science</strong>
                   <small>0478 · Paper 1 and Paper 2</small>
+                </span>
+              </label>
+              <label class="syllabus-choice">
+                <input class="question-syllabus-input" type="checkbox" value="caie-as-a-level-9618" checked />
+                <span>
+                  <strong>Cambridge International AS & A Level Computer Science</strong>
+                  <small>9618 · Paper 1 and Paper 2</small>
                 </span>
               </label>
             </fieldset>
@@ -164,7 +170,7 @@
           <div class="question-builder-panel" aria-live="polite">
             <div class="question-builder-summary">
               <div>
-                <span id="questionFinderStatus">Choose a syllabus and enter a knowledge point.</span>
+                <span id="questionFinderStatus">Search a topic to find exam questions.</span>
               </div>
             </div>
             <div class="question-results" id="questionFinderResults"></div>
@@ -222,6 +228,56 @@
 
         </div>
       </section>
+
+      <section class="igcse-hub" id="as-a-level-9618">
+        <div class="section-head">
+          <p class="eyebrow">AS & A Level 9618</p>
+          <h2>AS paper framework.</h2>
+          <p>
+            Paper 1 and Paper 2 follow the same checklist pattern as 0478, with AS-level theory fundamentals and
+            problem-solving content separated into focused boards.
+          </p>
+        </div>
+
+        <div class="syllabus-shell">
+          <section class="empty-board past-paper-board full-past-paper-board archive-after-finder" id="9618-past-paper-archive">
+            <span class="board-label">Past paper archive</span>
+            <div class="past-paper-catalog combined-past-paper-catalog" id="pastPaperArchive9618"></div>
+          </section>
+
+          <article class="paper-group" id="9618-paper-1">
+            <div class="paper-heading">
+              <span class="zone-icon">P1</span>
+              <div>
+                <p class="eyebrow">Paper 1</p>
+                <h3>Theory Fundamentals</h3>
+              </div>
+            </div>
+            <div class="paper-sections">
+              <section class="empty-board checklist-board" id="9618-paper-1-checklist">
+                <span class="board-label">Checklist</span>
+                <div class="syllabus-checklist" id="paper9618Paper1Checklist"></div>
+              </section>
+            </div>
+          </article>
+
+          <article class="paper-group" id="9618-paper-2">
+            <div class="paper-heading">
+              <span class="zone-icon">P2</span>
+              <div>
+                <p class="eyebrow">Paper 2</p>
+                <h3>Fundamental Problem-solving and Programming Skills</h3>
+              </div>
+            </div>
+            <div class="paper-sections">
+              <section class="empty-board checklist-board" id="9618-paper-2-checklist">
+                <span class="board-label">Checklist</span>
+                <div class="syllabus-checklist" id="paper9618Paper2Checklist"></div>
+              </section>
+            </div>
+          </article>
+        </div>
+      </section>
       </main>
     </div>
 
@@ -229,32 +285,6 @@
       <span>PaperLens for CAIE Computer Science revision</span>
       <span>Local-first study tool. Not affiliated with Cambridge or CAIE.</span>
     </footer>
-
-    <div class="purchase-modal" id="purchaseModal" hidden>
-      <div class="purchase-dialog" role="dialog" aria-modal="true" aria-labelledby="purchaseTitle">
-        <button class="purchase-close" id="purchaseCloseButton" type="button" aria-label="Close">×</button>
-        <h2 id="purchaseTitle">PaperLens Plus</h2>
-        <div class="purchase-price">
-          <span>¥</span>
-          <strong>20</strong>
-          <em>lifetime access</em>
-        </div>
-        <p class="purchase-copy">Unlock the full CAIE Computer Science experience.</p>
-        <button class="purchase-plan-button" id="createCheckoutButton" type="button">Create payment link</button>
-        <div class="purchase-benefits">
-          <div><span class="benefit-icon">01</span><span>Full checklist for every chapter</span></div>
-          <div><span class="benefit-icon">02</span><span>Past paper archive access</span></div>
-          <div><span class="benefit-icon">03</span><span>Classified topic question sets</span></div>
-          <div><span class="benefit-icon">04</span><span>Mark-scheme style answer notes</span></div>
-          <div><span class="benefit-icon">05</span><span>Lifetime content updates</span></div>
-        </div>
-        <div class="payment-link-box" id="paymentLinkBox" hidden>
-          <span>Payment link</span>
-          <a id="paymentLink" href="#">Open checkout</a>
-        </div>
-        <p class="purchase-message" id="purchaseMessage" aria-live="polite"></p>
-      </div>
-    </div>
 
     <div class="question-image-modal" id="questionImageModal" hidden>
       <div class="question-image-dialog" role="dialog" aria-modal="true" aria-label="Original paper preview">
@@ -305,7 +335,7 @@
       </div>
     </div>
 
-    <script src="/assets/paperlens-data.js?v=practice-modes-6"></script>
-    <script src="/app.js?v=practice-modes-6"></script>
+    <script src="/assets/paperlens-data.js?v=practice-modes-22"></script>
+    <script src="/app.js?v=practice-modes-22"></script>
   </body>
 </html>

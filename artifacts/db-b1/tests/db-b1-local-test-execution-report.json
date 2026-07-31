@@ -1,0 +1,92 @@
+{
+  "stage": "DB-B1_MAINLINE_DATABASE_INTEGRATION_AND_LOCAL_VALIDATION",
+  "generatedAt": "2026-07-30T10:16:26.128Z",
+  "integrationCandidateCommit": "cdc75e55e07b491dc49af29adef9876aef4246c2",
+  "environment": {
+    "nodeVersion": "v24.18.0",
+    "databaseUrlConfiguredForApplicationTests": false,
+    "billingProviderEnabled": false,
+    "billingEnvironment": "DISABLED"
+  },
+  "executions": [
+    {
+      "id": "PRISMA_VALIDATE",
+      "command": "DATABASE_URL=<INVALID_LOCAL_PLACEHOLDER> prisma validate",
+      "exitCode": 0,
+      "status": "PASS_NO_CONNECTION_ATTEMPTED"
+    },
+    {
+      "id": "EPHEMERAL_TARGET_GUARD",
+      "command": "npm run test:ephemeral-database-target",
+      "exitCode": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "FIRST_FULL_SUITE_ATTEMPT",
+      "command": "npm test",
+      "exitCode": 1,
+      "status": "FAIL_ENVIRONMENT_CONTAMINATION",
+      "error": {
+        "name": "AssertionError",
+        "message": "signup should succeed: 500 !== 201",
+        "failedTest": "tests/auth-session.test.js"
+      },
+      "rootCause": "The invalid DATABASE_URL placeholder used for prisma validate remained exported and caused the application runtime to choose Prisma.",
+      "codeChangedToResolve": false
+    },
+    {
+      "id": "FULL_LOCAL_APPLICATION_SUITE_RERUN",
+      "command": "unset DATABASE_URL DIRECT_URL; npm test",
+      "exitCode": 0,
+      "status": "PASS",
+      "documentationTestsPassed": 79,
+      "documentationTestsFailed": 0
+    },
+    {
+      "id": "OFFLINE_BUILD",
+      "command": "DATABASE_URL=<INVALID_LOCAL_PLACEHOLDER> npm run build",
+      "exitCode": 0,
+      "status": "PASS_WITH_GENERATED_STATIC_INDEX_DRIFT",
+      "generatedStaticIndexDriftDetected": true,
+      "affectedArtifact": "generated/question-index.json",
+      "buildQuestionIndexSource": "LEGACY_PDF_PARSER",
+      "servedQuestionIndexSource": "generated/production-question-index.json",
+      "rootCause": "The integrated package script still invokes the legacy PDF-derived index builder; the canonical production-store builder and its source store were not integrated.",
+      "staticContentChangeRetained": false
+    },
+    {
+      "id": "DATABASE_REHEARSAL_TESTS_ON_DB_B1_COMMIT",
+      "command": "npm run test:database-rehearsal",
+      "exitCode": null,
+      "status": "BLOCKED_NO_NEW_AUTHORIZED_EPHEMERAL_POSTGRESQL",
+      "productionDatabaseConnectionAttempted": false
+    }
+  ],
+  "dbB0DatabaseExecutionEvidence": {
+    "path": "artifacts/db-b0-r1-final/database-tests/db-b0-r1-database-test-execution-report.json",
+    "sha256": "06d14089c9b2c0753d7c910c4ddc6a85a8bfd3515e958e4b5aaf32f369db2c01",
+    "sourceStatus": "PASS",
+    "reuseStatus": "REUSED_BY_SCHEMA_MIGRATION_AND_RUNTIME_CONTENT_IDENTITY",
+    "targetCommit": "cdc75e55e07b491dc49af29adef9876aef4246c2",
+    "excludedFields": [
+      "Git commit identity",
+      "DB-B1 integration evidence"
+    ]
+  },
+  "prismaValidatePassed": true,
+  "localApplicationSuitePassed": true,
+  "offlineBuildCommandPassed": true,
+  "generatedStaticIndexDriftDetected": true,
+  "databaseTestsRerunOnCandidate": false,
+  "localIntegrationTestsPassed": false,
+  "status": "BLOCKED_BUILD_STATIC_INDEX_DRIFT_AND_DB_TEST_TARGET_REQUIRED",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

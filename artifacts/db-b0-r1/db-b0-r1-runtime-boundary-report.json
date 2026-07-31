@@ -1,0 +1,78 @@
+{
+  "stage": "DB-B0-R1_CLEAN_GIT_INTEGRATION_SOURCE_AND_EVIDENCE_CLOSURE",
+  "executionCommit": "648746c166afec523bae559a976e12b6dc2c7359",
+  "classifications": [
+    {
+      "path": "server.js",
+      "classification": "APPROVED_DATABASE_RUNTIME"
+    },
+    {
+      "path": "src/server/db.js",
+      "classification": "APPROVED_DATABASE_RUNTIME"
+    },
+    {
+      "path": "src/server/users.js",
+      "classification": "APPROVED_DATABASE_RUNTIME"
+    },
+    {
+      "path": "src/server/sessions.js",
+      "classification": "APPROVED_DATABASE_RUNTIME"
+    },
+    {
+      "path": "src/server/purchases.js",
+      "classification": "APPROVED_DATABASE_RUNTIME"
+    },
+    {
+      "path": "src/server/questionSearches.js",
+      "classification": "APPROVED_DATABASE_RUNTIME"
+    },
+    {
+      "path": "src/server/billingEvents.js",
+      "classification": "APPROVED_DATABASE_RUNTIME"
+    },
+    {
+      "path": "src/server/questionFinderAccess.js",
+      "classification": "APPROVED_DATABASE_RUNTIME"
+    },
+    {
+      "path": "src/server/runtimeEnvironment.js",
+      "classification": "APPROVED_DATABASE_RUNTIME"
+    },
+    {
+      "path": "src/server/localStore.js",
+      "classification": "TEMPORARY_COMPATIBILITY_LAYER",
+      "reason": "Non-production/local-test fallback retained for deterministic tests and deferred legacy migration."
+    },
+    {
+      "path": "public/checkout.html",
+      "classification": "HISTORICAL_ONLY_REMOVED_FROM_ACTIVE_RUNTIME",
+      "gitState": "DELETED"
+    },
+    {
+      "path": "public/checkout.js",
+      "classification": "HISTORICAL_ONLY_REMOVED_FROM_ACTIVE_RUNTIME",
+      "gitState": "DELETED"
+    },
+    {
+      "path": "tests/billing-webhook.test.js",
+      "classification": "HISTORICAL_STRIPE_TEST_REMOVED",
+      "gitState": "DELETED"
+    }
+  ],
+  "authoritativeRuntimeResolved": true,
+  "authoritativeTestsResolved": true,
+  "activeStripeRuntimeMatchCount": 0,
+  "legacyLocalFallbackRetained": true,
+  "legacyLocalFallbackRequiresDbB1Review": true,
+  "paymentRuntimeDisabledByDefault": true,
+  "status": "PASS_WITH_CONTROLLED_COMPATIBILITY_LAYER",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

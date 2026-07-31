@@ -1,0 +1,64 @@
+{
+  "stage": "DB-B0-R1_CLEAN_GIT_INTEGRATION_SOURCE_AND_EVIDENCE_CLOSURE",
+  "checkedAt": "2026-07-30T08:02:37.257Z",
+  "branch": "codex/db-b0-r1-source-of-truth",
+  "executionCommit": "648746c166afec523bae559a976e12b6dc2c7359",
+  "initialPlanBaseCommit": "6ef539e6d3ebe80289810bd32116140ed4b6385f",
+  "integrationBaseCommit": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "originMainCommit": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "fetchedHead": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "liveRemote": {
+    "commitDate": "2026-07-30T06:04:58Z",
+    "htmlUrl": "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist/commit/11ce82001efb633c1697356c1a510fc0c5034245",
+    "sha": "11ce82001efb633c1697356c1a510fc0c5034245"
+  },
+  "fetchAttempts": [
+    {
+      "attempt": 1,
+      "command": "git fetch origin main",
+      "exitCode": 128,
+      "signal": null,
+      "stdout": "",
+      "stderr": "fatal: unable to access 'https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git/': SSL connection timeout\n",
+      "error": null
+    },
+    {
+      "attempt": 2,
+      "command": "git fetch origin main",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "",
+      "stderr": "From https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist\n * branch            main       -> FETCH_HEAD\n",
+      "error": null
+    }
+  ],
+  "earlierFailedAttempts": [
+    {
+      "transport": "HTTP/2",
+      "result": "FAILED",
+      "error": "HTTP/2 framing error",
+      "refsChanged": false
+    },
+    {
+      "transport": "HTTP/1.1",
+      "result": "FAILED",
+      "error": "SSL timeout",
+      "refsChanged": false
+    }
+  ],
+  "successfulRefreshAfterEarlierFailures": true,
+  "gitFetchIdentityMatch": true,
+  "ghApiIdentityMatch": true,
+  "remoteMainFreshness": "VERIFIED",
+  "verificationMethod": "GIT_FETCH_AND_GITHUB_API_COMMIT_IDENTITY_MATCH",
+  "status": "PASS",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

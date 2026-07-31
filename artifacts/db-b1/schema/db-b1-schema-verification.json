@@ -1,0 +1,53 @@
+{
+  "stage": "DB-B1_MAINLINE_DATABASE_INTEGRATION_AND_LOCAL_VALIDATION",
+  "generatedAt": "2026-07-30T10:16:26.128Z",
+  "integrationCandidateCommit": "cdc75e55e07b491dc49af29adef9876aef4246c2",
+  "schema": {
+    "path": "prisma/schema.prisma",
+    "exists": true,
+    "isFile": true,
+    "sizeBytes": 4241,
+    "sha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+    "expectedSha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+    "identityMatches": true
+  },
+  "modelNames": [
+    "User",
+    "UserCredential",
+    "Session",
+    "Purchase",
+    "BillingProviderEvent",
+    "QuestionSearch"
+  ],
+  "modelCount": 6,
+  "enumNames": [
+    "UserRole",
+    "UserStatus",
+    "PurchaseStatus",
+    "BillingEventProcessingStatus"
+  ],
+  "productionModels": [
+    "User",
+    "UserCredential",
+    "Session",
+    "Purchase",
+    "QuestionSearch"
+  ],
+  "productionModelsPresent": true,
+  "billingEventLedgerPresent": true,
+  "questionSearchUserSearchKeyUniquePresent": true,
+  "billingProviderEventProviderIdUniquePresent": true,
+  "purchaseRefundedAtPresent": true,
+  "approvedSchemaIntegratedIntoCandidate": true,
+  "approvedSchemaIntegratedIntoActualMain": false,
+  "status": "PASS_CANDIDATE_IDENTITY",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

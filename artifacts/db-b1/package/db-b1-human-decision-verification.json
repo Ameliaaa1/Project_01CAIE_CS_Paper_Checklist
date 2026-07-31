@@ -1,0 +1,19 @@
+{
+  "stage": "DB-B1_MAINLINE_DATABASE_INTEGRATION_AND_LOCAL_VALIDATION",
+  "decisionPath": "package/db-b1-human-decision.json",
+  "decisionSha256": "1860be0ddfb63d1056c0ce3d6274285299d91ddbc78fec74b50674f16b055398",
+  "expectedDecision": "APPROVE_DB_B1_MAINLINE_DATABASE_INTEGRATION",
+  "actualDecision": "PENDING_HUMAN_REVIEW",
+  "evidenceBindingMatches": true,
+  "humanDecisionVerified": false,
+  "status": "BLOCKED_PENDING_HUMAN_REVIEW",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

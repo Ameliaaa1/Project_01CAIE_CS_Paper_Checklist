@@ -227,23 +227,6 @@ input:focus-visible {
   color: #a33a2f;
 }
 
-.checkout-summary {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-  margin: 18px 0;
-}
-
-.checkout-summary span {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 10px 12px;
-  background: #f7fbf7;
-  color: var(--forest);
-  font-size: 13px;
-  font-weight: 900;
-}
-
 .auth-switch a {
   color: var(--forest);
   font-weight: 900;

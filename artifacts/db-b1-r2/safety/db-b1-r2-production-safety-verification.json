@@ -1,0 +1,36 @@
+{
+  "stage": "DB-B1-R2_AUTOMATED_VERIFICATION_ENHANCEMENT_AND_COMBINED_HUMAN_REVIEW_PREPARATION",
+  "generatedAt": "2026-07-31T08:36:23.395Z",
+  "inspectedEvidence": [
+    "artifacts/db-b1-r1/gate/db-b1-r1-external-gate.json",
+    "artifacts/db-b1-r1/tests/db-b1-r1-final-validation-report.json",
+    "artifacts/db-b1-r1/build/db-b1-r1-build-index-reproducibility-report.json"
+  ],
+  "executionEnvironment": {
+    "databaseUrlRemovedForApplicationTests": true,
+    "directUrlRemovedForApplicationTests": true,
+    "billingProviderEnabledRemoved": true,
+    "billingEnvironmentRemoved": true,
+    "prismaValidateUrl": "INVALID_NON_CONNECTING_PLACEHOLDER"
+  },
+  "databaseConnectionAttempted": false,
+  "migrationCommandExecuted": false,
+  "productionWriteCommandExecuted": false,
+  "deploymentCommandExecuted": false,
+  "paymentProviderApiCalled": false,
+  "schemaSha256": "d33fcc99efca315f44fd9078352173814ba420eda26cfe3c696ac805175ff13f",
+  "migrationSha256": [
+    "87c08a3f67b0fa03ae368d3e846965efd6127747850d393af1d2e9f1d48d700b",
+    "9271a4b21452c8940726f71f4356fd7d652f07976cf8fa09fcebc56e315cc6fd"
+  ],
+  "schemaModifiedDuringDbB1R2": false,
+  "migrationsModifiedDuringDbB1R2": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "productionBoundaryPreserved": true,
+  "status": "PASS"
+}

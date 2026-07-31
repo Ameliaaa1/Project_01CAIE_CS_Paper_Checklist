@@ -1,0 +1,32 @@
+{
+  "stage": "DB-B1-R2_AUTOMATED_VERIFICATION_ENHANCEMENT_AND_COMBINED_HUMAN_REVIEW_PREPARATION",
+  "decision": "PENDING_HUMAN_REVIEW",
+  "reviewer": null,
+  "reviewedAt": null,
+  "decisions": {
+    "dbB0R1Closure": "PENDING_HUMAN_REVIEW",
+    "dbB1MainlineIntegration": "PENDING_HUMAN_REVIEW"
+  },
+  "evidenceBinding": {
+    "evidenceCommit": "0b16ea780ccef35a9fc44c86ca268c1cca315129",
+    "technicalCandidateCommit": "674eb5044f3eeb5ee7dcd45403c3bb97f29a1fde",
+    "originMain": "12f10e88842ba736888db5f00ed6ae5334874d4d",
+    "baselineSha256": "53237eccaa21ee89b841b521a6ecce49462bcfd5207d7dee8702a59539ec18d7",
+    "humanReviewSummarySha256": "0a4cb32e3c0b1c3fe8fe5bfd2efa13745288dd77dd56412c1684b6317642771c",
+    "testOutputAnalysisSha256": "c6067741177ae53e44a1fc735b5acd7de7f8e1d5f5bbca8cadb620dc70ce97b4",
+    "indexCountSemanticsSha256": "b489a78870479760b1d8b92a699ffc1378812dd7835cd2a0ed72cf58079d638c",
+    "productionSafetySha256": "f59d8f14dfdd01ba7e549e90c3d1cc73f30f850cb15c28813505c4494858caad",
+    "r1ManifestSha256": "b2217a3128f96f6fe686e41faa26e82794acd66bc0c56e7b610a0ae7fc5750b6",
+    "r1CompleteZipSha256": "afb5e170bc033840e7ad2ffe30b307c5aad30a4b1d539beb95d0653421ac723e",
+    "r1DebugZipSha256": "5551a2275acc7af9927932aaac1e5144a3b1a5608d8a19955af1db6ff4119e3d",
+    "combinedHumanReviewPackageSha256": "595ad7092c033bbf0c387dc4ab3f840af0f4165eb10b59c7094d803042202023"
+  },
+  "mainMergeAuthorized": false,
+  "codexDidNotAuthorApproval": true,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false
+}

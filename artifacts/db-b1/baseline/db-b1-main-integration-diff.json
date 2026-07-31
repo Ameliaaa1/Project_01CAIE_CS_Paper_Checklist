@@ -1,0 +1,366 @@
+{
+  "stage": "DB-B1_MAINLINE_DATABASE_INTEGRATION_AND_LOCAL_VALIDATION",
+  "generatedAt": "2026-07-30T10:16:26.128Z",
+  "baseCommit": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "targetCommit": "cdc75e55e07b491dc49af29adef9876aef4246c2",
+  "comparison": "11ce82001efb633c1697356c1a510fc0c5034245...cdc75e55e07b491dc49af29adef9876aef4246c2",
+  "changedFileCount": 84,
+  "files": [
+    {
+      "path": ".env.example",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": ".gitignore",
+      "classification": "INTEGRATION_SUPPORT"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/cleanup/db-b0-r1-ephemeral-cleanup-verification.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/conclusion/db-b0-r1-blocker-register.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/conclusion/db-b0-r1-execution-report.md",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/database-tests/db-b0-r1-database-test-execution-report.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/database-tests/db-b0-r1-ephemeral-migration-report.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/database-tests/db-b0-r1-test-target-binding-report.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/gate/db-b0-r1-external-gate.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/human-review/db-b0-r1-final-human-review-package.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/human-review/db-b0-r1-human-decision-verification.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/human-review/db-b0-r1-human-decision.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/isolation/db-b0-r1-database-isolation-verification.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/isolation/db-b0-r1-ephemeral-database-creation.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/package/db-b0-r1-complete-evidence.zip",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/package/db-b0-r1-debug-json.zip",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/package/db-b0-r1-final-delivery-report.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/package/db-b0-r1-final-evidence-manifest-verification.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/package/db-b0-r1-final-evidence-manifest.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/package/db-b0-r1-zip-verification.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1-final/security/db-b0-r1-secret-and-package-hygiene-audit.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/conclusion/db-b0-r1-blocker-register.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/conclusion/db-b0-r1-execution-report.md",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/conclusion/db-b0-r1-main-integration-boundary.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/conclusion/db-b0-r1-source-of-truth-decision.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/db-b0-r1-approved-artifact-tracking.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/db-b0-r1-git-tracking-audit.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/db-b0-r1-migration-integrity-report.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/db-b0-r1-remote-main-refresh.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/db-b0-r1-runtime-boundary-report.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/db-b0-r1-test-execution-report.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/gate/db-b0-r1-external-gate.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/human-review/db-b0-r1-human-decision-verification.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/human-review/db-b0-r1-human-decision.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/human-review/db-b0-r1-human-review-package.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/package/db-b0-r1-complete-evidence.zip",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/package/db-b0-r1-debug-json.zip",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/package/db-b0-r1-execution-report.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/package/db-b0-r1-final-delivery-report.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/package/db-b0-r1-pre-review-evidence-manifest-verification.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/package/db-b0-r1-pre-review-evidence-manifest.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "artifacts/db-b0-r1/package/db-b0-r1-zip-verification.json",
+      "classification": "DB_B0_EVIDENCE"
+    },
+    {
+      "path": "generated/production-question-index.json",
+      "classification": "STATIC_CONTENT_BOUNDARY_REVIEW_REQUIRED"
+    },
+    {
+      "path": "package-lock.json",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "package.json",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "prisma/migrations/20260728133000_production_baseline/migration.sql",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "prisma/migrations/20260729152000_billing_event_ledger_extension/migration.sql",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "prisma/migrations/migration_lock.toml",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "prisma/schema.prisma",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "public/app.js",
+      "classification": "DB_A5_P0_APPROVED_STRIPE_CLEANUP"
+    },
+    {
+      "path": "public/assets/paperlens-data.js",
+      "classification": "STATIC_CONTENT_BOUNDARY_REVIEW_REQUIRED"
+    },
+    {
+      "path": "public/assets/question-index.json",
+      "classification": "STATIC_CONTENT_BOUNDARY_REVIEW_REQUIRED"
+    },
+    {
+      "path": "public/auth.css",
+      "classification": "DB_A5_P0_APPROVED_STRIPE_CLEANUP"
+    },
+    {
+      "path": "public/auth.js",
+      "classification": "DB_A5_P0_APPROVED_STRIPE_CLEANUP"
+    },
+    {
+      "path": "public/checkout.html",
+      "classification": "DB_A5_P0_APPROVED_STRIPE_CLEANUP"
+    },
+    {
+      "path": "public/checkout.js",
+      "classification": "DB_A5_P0_APPROVED_STRIPE_CLEANUP"
+    },
+    {
+      "path": "public/index.html",
+      "classification": "DB_A5_P0_APPROVED_STRIPE_CLEANUP"
+    },
+    {
+      "path": "public/styles.css",
+      "classification": "DB_A5_P0_APPROVED_STRIPE_CLEANUP"
+    },
+    {
+      "path": "scripts/generate-db-b0-r1-final-evidence.js",
+      "classification": "INTEGRATION_SUPPORT"
+    },
+    {
+      "path": "server.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "src/server/auth.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "src/server/billingEvents.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "src/server/db.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "src/server/localStore.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "src/server/purchases.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "src/server/questionFinderAccess.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "src/server/questionSearches.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "src/server/runtimeEnvironment.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "src/server/sessions.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "src/server/users.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "tests/auth-database.test.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "tests/billing-schema-extension.test.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "tests/billing-webhook.test.js",
+      "classification": "DB_A5_P0_APPROVED_STRIPE_CLEANUP"
+    },
+    {
+      "path": "tests/db-a5-s1-purchase-entitlement-regression.test.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "tests/deployment-smoke.test.js",
+      "classification": "INTEGRATION_SUPPORT"
+    },
+    {
+      "path": "tests/ephemeral-database-target.test.js",
+      "classification": "DB_B0_EPHEMERAL_TARGET_BINDING"
+    },
+    {
+      "path": "tests/helpers/ephemeral-database-target.js",
+      "classification": "DB_B0_EPHEMERAL_TARGET_BINDING"
+    },
+    {
+      "path": "tests/paid-to-refunded-access-state.test.js",
+      "classification": "INTEGRATION_SUPPORT"
+    },
+    {
+      "path": "tests/payment-provider-disabled.test.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "tests/production-config.test.js",
+      "classification": "INTEGRATION_SUPPORT"
+    },
+    {
+      "path": "tests/question-search.test.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "tests/runtime-environment-resolution.test.js",
+      "classification": "DB_B0_APPROVED_DATABASE_ARTIFACT"
+    },
+    {
+      "path": "tests/vercel-routing.test.js",
+      "classification": "INTEGRATION_SUPPORT"
+    },
+    {
+      "path": "vercel.json",
+      "classification": "INTEGRATION_SUPPORT"
+    }
+  ],
+  "staticBoundaryChanges": [
+    "generated/production-question-index.json",
+    "public/assets/paperlens-data.js",
+    "public/assets/question-index.json"
+  ],
+  "staticBoundaryChangeCount": 3,
+  "unclassifiedChanges": [],
+  "unclassifiedChangeCount": 0,
+  "approvedDatabaseArtifactCount": 24,
+  "actualMainUpdated": false,
+  "status": "BLOCKED_DIFF_SCOPE_REVIEW_REQUIRED",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

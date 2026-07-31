@@ -11,14 +11,13 @@ assert.equal(fs.existsSync(path.join(rootDir, "assets", "paperlens-data.js")), f
 for (const pathname of [
   "app.js",
   "styles.css",
-  "checkout.js",
   "auth.js",
   "auth.css",
   "assets/paperlens-data.js",
+  "assets/question-index.json",
   "assets/study-workspace.png",
   "textbook_syllabus/pastpaper/2025-March/0478_m25_qp_12.pdf",
-  "index.html",
-  "checkout.html"
+  "index.html"
 ]) {
   assert.equal(fs.existsSync(path.join(rootDir, "public", pathname)), true, `public/${pathname} should exist for Vercel static serving`);
 }

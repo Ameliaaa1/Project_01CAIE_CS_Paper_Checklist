@@ -1,0 +1,35 @@
+{
+  "stage": "DB-B0-R1_CLEAN_GIT_INTEGRATION_SOURCE_AND_EVIDENCE_CLOSURE",
+  "evaluatedAt": "2026-07-30T08:02:52.569Z",
+  "executionCommit": "648746c166afec523bae559a976e12b6dc2c7359",
+  "verifiedMainBase": "11ce82001efb633c1697356c1a510fc0c5034245",
+  "checks": {
+    "remoteMainFreshness": "PASS",
+    "gitTrackingAudit": "PASS",
+    "approvedArtifactTracking": "PASS",
+    "migrationIntegrity": "PASS",
+    "runtimeBoundary": "PASS_WITH_CONTROLLED_COMPATIBILITY_LAYER",
+    "nonDatabaseTests": "PASS",
+    "databaseRehearsalTests": "BLOCKED_AUTHORIZED_EPHEMERAL_POSTGRESQL_REQUIRED",
+    "humanDecision": "PENDING_HUMAN_REVIEW",
+    "manifestVerification": "PASS",
+    "zipVerification": "PASS"
+  },
+  "status": "BLOCKED_PENDING_AUTHORIZED_EPHEMERAL_POSTGRESQL_AND_HUMAN_REVIEW",
+  "blockerCount": 2,
+  "blockers": [
+    "AUTHORIZED_EPHEMERAL_POSTGRESQL_REQUIRED",
+    "DB_B0_R1_HUMAN_DECISION_REQUIRED"
+  ],
+  "sourceOfTruthResolved": false,
+  "dbB1PlanningAllowed": false,
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

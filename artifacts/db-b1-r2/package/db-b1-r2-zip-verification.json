@@ -1,0 +1,60 @@
+{
+  "stage": "DB-B1-R2_AUTOMATED_VERIFICATION_ENHANCEMENT_AND_COMBINED_HUMAN_REVIEW_PREPARATION",
+  "verifiedAt": "2026-07-31T08:36:39.031Z",
+  "debugZip": {
+    "path": "package/db-b1-r2-debug-json.zip",
+    "sizeBytes": 9706,
+    "sha256": "6dc1c246e0c4269d6263b957a480677fa61c27c4b5c52d2174419e2fda127a5d",
+    "entryCount": 10,
+    "entries": [
+      "baseline/db-b1-r2-baseline-verification.json",
+      "human-review/db-b1-r2-combined-human-decision.json",
+      "human-review/db-b1-r2-combined-human-review-package.json",
+      "human-review/db-b1-r2-human-review-summary.json",
+      "index/db-b1-r2-index-count-semantics-report.json",
+      "package/db-b1-r2-evidence-manifest-verification.json",
+      "package/db-b1-r2-evidence-manifest.json",
+      "safety/db-b1-r2-production-safety-verification.json",
+      "tests/db-b1-r2-test-output-analysis.json",
+      "verification/db-b1-r2-automated-verification-report.json"
+    ],
+    "crcValid": true,
+    "forbiddenArtifacts": [],
+    "forbiddenArtifactCount": 0
+  },
+  "completeZip": {
+    "path": "package/db-b1-r2-complete-evidence.zip",
+    "sizeBytes": 10115,
+    "sha256": "2d3cf3b32885c4e6bef0d0694ac7ada4dd5522043934c7efdfcd83f4a37eeafb",
+    "entryCount": 11,
+    "entries": [
+      "baseline/db-b1-r2-baseline-verification.json",
+      "human-review/db-b1-r2-combined-human-decision.json",
+      "human-review/db-b1-r2-combined-human-review-package.json",
+      "human-review/db-b1-r2-human-review-summary.json",
+      "index/db-b1-r2-index-count-semantics-report.json",
+      "package/db-b1-r2-evidence-manifest-verification.json",
+      "package/db-b1-r2-evidence-manifest.json",
+      "package/db-b1-r2-execution-report.md",
+      "safety/db-b1-r2-production-safety-verification.json",
+      "tests/db-b1-r2-test-output-analysis.json",
+      "verification/db-b1-r2-automated-verification-report.json"
+    ],
+    "crcValid": true,
+    "forbiddenArtifacts": [],
+    "forbiddenArtifactCount": 0
+  },
+  "expectedDebugEntryCount": 10,
+  "expectedCompleteEntryCount": 11,
+  "debugEntryCountMatches": true,
+  "completeEntryCountMatches": true,
+  "forbiddenArtifactCount": 0,
+  "zipCrcFailureCount": 0,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "PASS"
+}

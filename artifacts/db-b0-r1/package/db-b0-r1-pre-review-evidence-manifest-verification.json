@@ -1,0 +1,22 @@
+{
+  "stage": "DB-B0-R1_CLEAN_GIT_INTEGRATION_SOURCE_AND_EVIDENCE_CLOSURE",
+  "manifestPath": "package/db-b0-r1-pre-review-evidence-manifest.json",
+  "manifestSha256": "c6605d68eaa5f2161b4c5e5906abc02a6f5b90b389215b9861f8c46ae28d6970",
+  "checkedArtifactCount": 13,
+  "mismatches": [],
+  "mismatchCount": 0,
+  "forbiddenArtifactCount": 0,
+  "unexpectedArtifactCount": 0,
+  "unregisteredArtifactCount": 0,
+  "dsStoreArtifactCount": 0,
+  "status": "PASS",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

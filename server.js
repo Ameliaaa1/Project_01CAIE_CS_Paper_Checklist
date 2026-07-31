@@ -2,47 +2,47 @@ const fs = require("node:fs");
 const http = require("node:http");
 const crypto = require("node:crypto");
 const path = require("node:path");
-const { PDFDocument } = require("pdf-lib");
+const { PDFDocument, StandardFonts, rgb } = require("pdf-lib");
 const sharedData = require("./public/assets/paperlens-data");
-
-let PDFParse = null;
-try {
-  ({ PDFParse } = require("pdf-parse"));
-} catch {
-  PDFParse = null;
-}
-
-let canvasTools = null;
-try {
-  canvasTools = require("@napi-rs/canvas");
-} catch {
-  canvasTools = null;
-}
+const userStore = require("./src/server/users");
+const sessionStore = require("./src/server/sessions");
+const purchaseStore = require("./src/server/purchases");
+const questionSearchStore = require("./src/server/questionSearches");
+const {
+  getQuestionFinderAccessState
+} = require("./src/server/questionFinderAccess");
+const {
+  resolveRuntimeEnvironment,
+  requiresProductionConfiguration
+} = require("./src/server/runtimeEnvironment");
 
 const rootDir = __dirname;
 const publicDir = path.join(rootDir, "public");
 const dataDir = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(rootDir, "data");
 const usersDbPath = path.join(dataDir, "users.json");
-const checkoutDbPath = path.join(dataDir, "checkout-sessions.json");
 const redisRestUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || "";
 const redisRestToken = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || "";
 const useRemoteStore = Boolean(redisRestUrl && redisRestToken);
 const usersStoreKey = process.env.PAPERLENS_USERS_KEY || "paperlens:users";
-const checkoutStoreKey = process.env.PAPERLENS_CHECKOUT_KEY || "paperlens:checkout-sessions";
-const lifetimeAccessPriceCny = 20;
+const syllabusPaperConfigs = {
+  "caie-igcse-0478": {
+    subjectCode: "0478",
+    folder: "caie-igcse-0478",
+    seasonFolderStyle: "hyphen"
+  },
+  "caie-as-a-level-9618": {
+    subjectCode: "9618",
+    folder: "caie-as-a-level-9618",
+    seasonFolderStyle: "space"
+  }
+};
 const questionFinderTrialLimit = 2;
 const sessionCookieName = "paperlens_session";
 const sessionMaxAgeSeconds = 60 * 60 * 24 * 7;
-const isProduction = process.env.NODE_ENV === "production";
-const sessionSecret = process.env.SESSION_SECRET || (isProduction ? "" : crypto.randomBytes(32).toString("hex"));
-const stripeSecretKey = process.env.STRIPE_SECRET_KEY || "";
-const stripePriceId = process.env.STRIPE_PRICE_ID || "";
-const stripeWebhookSecret = process.env.STRIPE_WEBHOOK_SECRET || "";
-const stripeWebhookToleranceSeconds = 300;
-const useMockStripeCheckout = process.env.STRIPE_CHECKOUT_MOCK === "1" && !isProduction;
+const runtimeEnvironment = resolveRuntimeEnvironment(process.env);
+const isProduction = requiresProductionConfiguration(runtimeEnvironment);
 const openaiApiKey = process.env.OPENAI_API_KEY || "";
 const openaiGradingModel = process.env.OPENAI_GRADING_MODEL || "gpt-4.1-mini";
-const publicBaseUrl = (process.env.PUBLIC_BASE_URL || process.env.APP_BASE_URL || "").replace(/\/+$/, "");
 const port = Number(process.env.PORT || 3000);
 const host = process.env.HOST || "127.0.0.1";
 
@@ -62,11 +62,10 @@ const publicStaticFiles = new Set([
   "index.html",
   "login.html",
   "signup.html",
-  "checkout.html",
   "assets/paperlens-data.js",
+  "assets/question-index.json",
   "app.js",
   "auth.js",
-  "checkout.js",
   "styles.css",
   "auth.css",
   "assets/study-workspace.png"
@@ -75,8 +74,6 @@ const publicStaticFiles = new Set([
 assertProductionConfiguration();
 
 const data = loadAppData();
-const parsedPdfGeometryCache = new Map();
-const questionPreviewCache = new Map();
 const rateLimitBuckets = new Map();
 
 async function handleRequest(req, res) {
@@ -125,12 +122,10 @@ async function handleRequest(req, res) {
       if (!question) throwHttpError("Question not found.", 404);
       const type = url.searchParams.get("type") === "ms" ? "ms" : "qp";
       await assertQuestionPreviewAccess(question.id, await requireAuthenticatedUser(req));
-      const preview = await buildQuestionPreview(question, type);
-      res.writeHead(200, {
-        "Content-Type": "image/png",
-        "Cache-Control": "private, max-age=300"
-      });
-      res.end(preview);
+      const sourceUrl = originalSourceUrl(question, type);
+      if (!sourceUrl) throwHttpError("Original source reference is unavailable.", 404);
+      res.writeHead(302, { Location: sourceUrl, "Cache-Control": "private, max-age=300" });
+      res.end();
       return;
     }
 
@@ -156,7 +151,7 @@ async function handleRequest(req, res) {
     if (url.pathname === "/api/auth/signup" && req.method === "POST") {
       const body = await readJsonBody(req);
       const result = await createUser(body);
-      setSessionCookie(res, result.user.id, req);
+      await setSessionCookie(res, result.user.id, req);
       sendJson(res, result, 201);
       return;
     }
@@ -164,7 +159,7 @@ async function handleRequest(req, res) {
     if (url.pathname === "/api/auth/login" && req.method === "POST") {
       const body = await readJsonBody(req);
       const result = await loginUser(body);
-      setSessionCookie(res, result.user.id, req);
+      await setSessionCookie(res, result.user.id, req);
       sendJson(res, result);
       return;
     }
@@ -179,31 +174,9 @@ async function handleRequest(req, res) {
     if (url.pathname === "/api/auth/logout" && req.method === "POST") {
       await requireAuthenticatedUser(req);
       assertTrustedOrigin(req);
+      await revokeCurrentSession(req);
       clearSessionCookie(res, req);
       sendJson(res, { ok: true });
-      return;
-    }
-
-    if (url.pathname === "/api/billing/create-checkout" && req.method === "POST") {
-      const user = await requireAuthenticatedUser(req);
-      assertTrustedOrigin(req);
-      sendJson(res, await createCheckoutSession(user, req));
-      return;
-    }
-
-    if (url.pathname === "/api/billing/status" && req.method === "GET") {
-      sendJson(res, await checkoutSessionStatus(url.searchParams.get("session") || "", await requireAuthenticatedUser(req)));
-      return;
-    }
-
-    if (url.pathname === "/api/billing/complete" && req.method === "POST") {
-      throwHttpError("Checkout completion must be confirmed by the payment provider.", 410);
-    }
-
-    if (url.pathname === "/api/billing/stripe-webhook" && req.method === "POST") {
-      const rawBody = await readRawBody(req);
-      const event = verifyStripeWebhookEvent(rawBody, req.headers["stripe-signature"] || "");
-      sendJson(res, await handleStripeWebhookEvent(event));
       return;
     }
 
@@ -257,70 +230,41 @@ if (require.main === module) {
 module.exports = handleRequest;
 
 function loadAppData() {
+  const productionEntries = loadProductionWebEntries();
   const appData = {
     topicBank: sharedData.topicBank,
     sourceLibrary: sharedData.sourceLibrary,
+    syllabusChecklists: sharedData.syllabusChecklists,
     syllabusChecklist: sharedData.syllabusChecklist,
     chapterOneSections: sharedData.chapterOneSections,
     paperSessions: sharedData.paperSessions,
-    pastPaperQuestionBank: [...sharedData.pastPaperQuestionBank]
+    pastPaperQuestionBank: productionEntries
   };
-  const generatedEntries = loadGeneratedQuestionEntries();
-  const manualKeys = new Set(appData.pastPaperQuestionBank.map(questionBankKey));
-  appData.pastPaperQuestionBank = [
-    ...appData.pastPaperQuestionBank,
-    ...generatedEntries.filter((entry) => !manualKeys.has(questionBankKey(entry)))
-  ];
   return appData;
 }
 
-function loadGeneratedQuestionEntries() {
-  const indexPath = path.join(rootDir, "generated", "question-index.json");
-  if (!fs.existsSync(indexPath)) return [];
-
-  try {
-    const index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
-    return Array.isArray(index.entries)
-      ? index.entries
-          .map((entry) => ({
-            ...entry,
-            question: cleanExtractedQuestionText(entry.question)
-          }))
-          .filter((entry) => entry.question && !hasCorruptPdfText(entry.question))
-      : [];
-  } catch {
-    return [];
+function loadProductionWebEntries() {
+  const indexPath = path.join(rootDir, "generated", "production-question-index.json");
+  if (!fs.existsSync(indexPath)) throw new Error("Production website index is missing. Run npm run build:question-index.");
+  const index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
+  if (index.dataSource !== "PRODUCTION_CANONICAL" || !Array.isArray(index.entries)) {
+    throw new Error("Website question index is not sourced from production canonical data.");
   }
+  return index.entries;
 }
 
-function cleanExtractedQuestionText(value) {
+function canonicalDisplayText(value) {
   return String(value || "")
     .replace(/[\u0000-\u001f]+/g, " ")
-    .replace(/Ĭ[^A-Za-z0-9()[\].,;:!?'" \/-]{2,}[^A-Za-z0-9()[\].,;:!?'" \/-]*/g, " ")
-    .replace(/© UCLES \d{4} 0478\/\d{2}\/[A-Z]\/[A-Z]\/\d{2}/g, " ")
-    .replace(/\[Turn over\s+\d+[^A-Za-z]*(?=(?:\([a-z]\)|\d+\s|$))/gi, " ")
-    .replace(/\bDO NOT WRITE IN THIS MARGIN\b/gi, " ")
-    .replace(/\bBLANK PAGE\b[\s\S]*?Cambridge Assessment[^.]*\./gi, " ")
-    .replace(/Permission to reproduce[\s\S]*?department of the University of Cambridge\./gi, " ")
-    .replace(/\.{8,}/g, " ")
     .replace(/\s+/g, " ")
     .trim();
-}
-
-function hasCorruptPdfText(value) {
-  const text = String(value || "");
-  const suspicious = text.match(/[ĬĀĂĄĈĊČĎĐĒĔĖĘĚĜĞĠĢĤĦĨĪĬÎÏÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîï]/g) || [];
-  return suspicious.length > 8;
-}
-
-function questionBankKey(entry) {
-  return `${String(entry.paper || "").trim()}|${String(entry.ref || "").trim().toUpperCase()}`;
 }
 
 function assertProductionConfiguration() {
   if (!isProduction) return;
 
   const missing = [];
+  if (!process.env.DATABASE_URL) missing.push("DATABASE_URL");
   if (!process.env.SESSION_SECRET) missing.push("SESSION_SECRET");
 
   if (process.env.SESSION_SECRET && process.env.SESSION_SECRET.length < 32) {
@@ -514,22 +458,29 @@ async function questionFinderAccess(user = null) {
     return {
       loggedIn: false,
       purchased: false,
+      hasPaidEntitlement: false,
       trialLimit: questionFinderTrialLimit,
       used: 0,
+      trialUsed: 0,
       remaining: 0,
+      trialRemaining: 0,
       canSearch: false
     };
   }
 
-  const searches = questionFinderSearches(user);
-  const used = Math.min(questionFinderTrialLimit, searches.length);
+  const state = await getQuestionFinderAccessState(user.id, {
+    trialLimit: questionFinderTrialLimit
+  });
   return {
     loggedIn: true,
-    purchased: Boolean(user.purchased),
+    purchased: state.hasPaidEntitlement,
+    hasPaidEntitlement: state.hasPaidEntitlement,
     trialLimit: questionFinderTrialLimit,
-    used,
-    remaining: user.purchased ? null : Math.max(0, questionFinderTrialLimit - used),
-    canSearch: Boolean(user.purchased) || used < questionFinderTrialLimit
+    used: state.trialUsed,
+    trialUsed: state.trialUsed,
+    remaining: state.hasPaidEntitlement ? null : state.trialRemaining,
+    trialRemaining: state.trialRemaining,
+    canSearch: state.canSearch
   };
 }
 
@@ -550,63 +501,64 @@ async function searchQuestionFinder(body = {}, user = null) {
     };
   }
 
-  const db = await readUsersDb();
-  const dbUser = db.users.find((candidate) => candidate.id === user.id);
+  const dbUser = await userStore.findUserById(user.id);
   if (!dbUser) throwHttpError("Log in to use your two free Question Finder searches.", 401);
 
   const key = questionFinderSearchKey(query, syllabusIds);
-  const searches = questionFinderSearches(dbUser);
-  const existing = searches.find((search) => search.key === key);
-
   if (!matches.length) {
     return {
       matches: [],
       trialConsumed: false,
       searchId: null,
-      access: questionFinderAccessForUser(dbUser)
+      access: await questionFinderAccessForUser(dbUser)
     };
   }
 
-  if (!dbUser.purchased && !existing && searches.length >= questionFinderTrialLimit) {
-    throwHttpError("Your two free Question Finder searches are complete. Buy access for unlimited searches.", 402);
-  }
-
-  let search = existing;
-  if (!dbUser.purchased && !search) {
-    search = {
-      id: crypto.randomUUID(),
-      key,
-      query: normaliseSearchText(query),
-      syllabusIds,
-      questionIds: matches.map((match) => match.id),
-      createdAt: new Date().toISOString()
-    };
-    searches.push(search);
-    dbUser.questionFinderSearches = searches;
-    await writeUsersDb(db);
-  }
+  const recorded = await questionSearchStore.recordQuestionSearchWithQuota({
+    userId: dbUser.id,
+    key,
+    query: normaliseSearchText(query),
+    syllabusIds,
+    questionIds: matches.map((match) => match.id),
+    resultCount: matches.length,
+    trialLimit: questionFinderTrialLimit
+  });
 
   return {
     matches,
-    trialConsumed: Boolean(!dbUser.purchased && !existing),
-    searchId: search?.id || null,
-    access: questionFinderAccessForUser(dbUser)
+    trialConsumed: recorded.trialConsumed,
+    searchId: recorded.search?.id || null,
+    access: await questionFinderAccessForUser(dbUser)
   };
 }
 
 async function assertQuestionPdfAccess(body = {}, user) {
-  if (user.purchased) return;
+  const access = await getQuestionFinderAccessState(user.id, {
+    trialLimit: questionFinderTrialLimit
+  });
+  if (access.hasPaidEntitlement) return;
 
   const requestedIds = Array.isArray(body.questionIds) ? body.questionIds.map(String) : [];
-  const allowedIds = new Set(questionFinderSearches(user).flatMap((search) => search.questionIds || []));
+  const allowedIds = new Set(
+    (await questionFinderSearches(user))
+      .filter((search) => search.source === questionSearchStore.TRIAL_SEARCH_SOURCE)
+      .flatMap((search) => search.questionIds || [])
+  );
   if (!requestedIds.length || requestedIds.some((id) => !allowedIds.has(id))) {
     throwHttpError("These questions are not part of one of your free searches.", 403);
   }
 }
 
 async function assertQuestionPreviewAccess(questionId, user) {
-  if (user.purchased) return;
-  const allowedIds = new Set(questionFinderSearches(user).flatMap((search) => search.questionIds || []));
+  const access = await getQuestionFinderAccessState(user.id, {
+    trialLimit: questionFinderTrialLimit
+  });
+  if (access.hasPaidEntitlement) return;
+  const allowedIds = new Set(
+    (await questionFinderSearches(user))
+      .filter((search) => search.source === questionSearchStore.TRIAL_SEARCH_SOURCE)
+      .flatMap((search) => search.questionIds || [])
+  );
   if (!allowedIds.has(questionId)) throwHttpError("This question is not part of one of your free searches.", 403);
 }
 
@@ -642,7 +594,7 @@ function normalisePracticePart(part) {
   if (!part || typeof part !== "object") return null;
   return {
     label: String(part.label || "").slice(0, 40),
-    prompt: cleanExtractedQuestionText(part.prompt || "").slice(0, 1200),
+    prompt: canonicalDisplayText(part.prompt || "").slice(0, 1200),
     markScheme: String(part.markScheme || "").slice(0, 2000)
   };
 }
@@ -792,24 +744,30 @@ function clampNumber(value, min, max, fallback) {
   return Math.min(max, Math.max(min, number));
 }
 
-function questionFinderSearches(user) {
-  return Array.isArray(user.questionFinderSearches) ? user.questionFinderSearches : [];
+async function questionFinderSearches(user) {
+  if (!user?.id) return [];
+  return questionSearchStore.listQuestionSearches(user.id);
 }
 
-function questionFinderAccessForUser(user) {
-  const used = Math.min(questionFinderTrialLimit, questionFinderSearches(user).length);
+async function questionFinderAccessForUser(user) {
+  const state = await getQuestionFinderAccessState(user.id, {
+    trialLimit: questionFinderTrialLimit
+  });
   return {
     loggedIn: true,
-    purchased: Boolean(user.purchased),
+    purchased: state.hasPaidEntitlement,
+    hasPaidEntitlement: state.hasPaidEntitlement,
     trialLimit: questionFinderTrialLimit,
-    used,
-    remaining: user.purchased ? null : Math.max(0, questionFinderTrialLimit - used),
-    canSearch: Boolean(user.purchased) || used < questionFinderTrialLimit
+    used: state.trialUsed,
+    trialUsed: state.trialUsed,
+    remaining: state.hasPaidEntitlement ? null : state.trialRemaining,
+    trialRemaining: state.trialRemaining,
+    canSearch: state.canSearch
   };
 }
 
 function normaliseSyllabusIds(value) {
-  const supported = new Set(["caie-igcse-0478"]);
+  const supported = new Set(Object.keys(syllabusPaperConfigs));
   const values = Array.isArray(value) ? value : value ? [value] : [];
   return [...new Set(values.map(String).filter((id) => supported.has(id)))];
 }
@@ -818,13 +776,13 @@ function questionFinderSearchKey(query, syllabusIds) {
   return crypto.createHash("sha256").update(`${normaliseSearchText(query)}|${[...syllabusIds].sort().join(",")}`).digest("hex");
 }
 
-function findQuestionMatches(query, syllabusIds = ["caie-igcse-0478"]) {
+function findQuestionMatches(query, syllabusIds = Object.keys(syllabusPaperConfigs)) {
   const normalisedQuery = normaliseSearchText(query);
   const queryTokens = searchTokens(query);
   if (!normalisedQuery || !queryTokens.length) return [];
 
   const allowedSyllabuses = new Set(normaliseSyllabusIds(syllabusIds));
-  return questionSearchIndex()
+  return groupQuestionMatches(questionSearchIndex()
     .filter((entry) => allowedSyllabuses.has(entry.syllabusId))
     .map((entry) => {
       const exactPhrase = entry.searchText.includes(normalisedQuery);
@@ -840,12 +798,12 @@ function findQuestionMatches(query, syllabusIds = ["caie-igcse-0478"]) {
       return { ...entry, score: Math.round(score), isExact: exactPhrase || titleBoost > 0 };
     })
     .filter((entry) => entry.score >= 20)
-    .sort((a, b) => b.score - a.score || b.paper.localeCompare(a.paper));
+    .sort((a, b) => b.score - a.score || b.paper.localeCompare(a.paper)));
 }
 
 function questionSearchIndex() {
   return data.pastPaperQuestionBank.map((hit, index) => {
-    const questionText = cleanExtractedQuestionText(hit.question);
+    const questionText = canonicalDisplayText(hit.question);
     const section = syllabusSectionByCode(hit.section);
     const chapter = syllabusChapterForSection(hit.section);
     const sectionTitle = section ? `${section.code} ${section.title}` : hit.section;
@@ -857,7 +815,7 @@ function questionSearchIndex() {
     return {
       ...hit,
       question: questionText,
-      syllabusId: hit.syllabusId || "caie-igcse-0478",
+      syllabusId: hit.syllabusId || paperParts(hit.paper)?.syllabusId || "caie-igcse-0478",
       id: questionId(hit, index),
       index,
       source,
@@ -872,6 +830,55 @@ function questionSearchIndex() {
   });
 }
 
+function groupQuestionMatches(matches) {
+  const groups = new Map();
+
+  for (const match of matches) {
+    const key = questionGroupKey(match);
+    const group = groups.get(key) || [];
+    group.push(match);
+    groups.set(key, group);
+  }
+
+  return [...groups.values()]
+    .map((group) => mergeQuestionGroup(group))
+    .sort((a, b) => b.score - a.score || b.paper.localeCompare(a.paper));
+}
+
+function questionGroupKey(question) {
+  const questionNumber = String(question.ref || "").match(/Q\s*(\d+)/i)?.[1];
+  return questionNumber ? `${question.paper}:Q${questionNumber}` : `${question.paper}:${question.ref || question.id}`;
+}
+
+function mergeQuestionGroup(group) {
+  const sorted = [...group].sort((a, b) => b.score - a.score || a.index - b.index);
+  const primary = sorted[0];
+  const sectionTitles = uniqueValues(sorted.map((item) => item.sectionTitle));
+  const chapterTitles = uniqueValues(sorted.map((item) => item.chapterTitle));
+  const knowledgeLabels = uniqueValues(sorted.map((item) => item.knowledge));
+  const questionTexts = uniqueValues(sorted.map((item) => item.question));
+  const answerTexts = uniqueValues(sorted.map((item) => String(item.answer || "").replace(/^MS:\s*/i, "").trim()).filter(Boolean));
+
+  return {
+    ...primary,
+    groupedIds: sorted.map((item) => item.id),
+    groupSize: sorted.length,
+    knowledge: knowledgeLabels.length > 1 ? `${knowledgeLabels.slice(0, 2).join(" + ")}${knowledgeLabels.length > 2 ? ` + ${knowledgeLabels.length - 2} more` : ""}` : primary.knowledge,
+    question: questionTexts.join(" "),
+    answer: answerTexts.length ? `MS: ${answerTexts.join("; ")}` : primary.answer,
+    sectionTitle: sectionTitles.length > 1 ? `${sectionTitles.slice(0, 2).join(" + ")}${sectionTitles.length > 2 ? ` + ${sectionTitles.length - 2} more` : ""}` : primary.sectionTitle,
+    chapterTitle: chapterTitles.length > 1 ? `${chapterTitles.slice(0, 2).join(" + ")}${chapterTitles.length > 2 ? ` + ${chapterTitles.length - 2} more` : ""}` : primary.chapterTitle,
+    score: Math.max(...sorted.map((item) => item.score || 0)),
+    isExact: sorted.some((item) => item.isExact),
+    searchText: sorted.map((item) => item.searchText).join(" "),
+    tokens: uniqueValues(sorted.flatMap((item) => item.tokens || []))
+  };
+}
+
+function uniqueValues(values) {
+  return [...new Set(values.map((value) => String(value || "").trim()).filter(Boolean))];
+}
+
 async function buildQuestionPdf(body = {}) {
   const requestedIds = Array.isArray(body.questionIds) ? body.questionIds.map(String) : [];
   const includeMarkScheme = body.includeMarkScheme !== false;
@@ -880,317 +887,119 @@ async function buildQuestionPdf(body = {}) {
   if (!questions.length) throwHttpError("Select at least one indexed question.", 400);
 
   const title = `${String(body.query || "Custom").trim() || "Custom"} practice set`;
-  const pdf = await buildOriginalSourcePdf(questions, includeMarkScheme);
+  const pdf = await PDFDocument.create();
+  const regularFont = await pdf.embedFont(StandardFonts.Helvetica);
+  const boldFont = await pdf.embedFont(StandardFonts.HelveticaBold);
+  const writer = createCanonicalPdfWriter(pdf, regularFont, boldFont);
+
+  writer.heading(title, 18);
+  writer.paragraph("Generated from the production canonical question index.", 9, rgb(0.35, 0.35, 0.35));
+  for (const [index, question] of questions.entries()) {
+    writer.heading(`${index + 1}. ${question.source}`, 13);
+    writer.paragraph(question.question, 11);
+  }
+
+  if (includeMarkScheme) {
+    writer.pageBreak();
+    writer.heading("Mark Scheme", 18);
+    for (const [index, question] of questions.entries()) {
+      writer.heading(`${index + 1}. ${question.source}`, 13);
+      writer.paragraph(String(question.answer || "Mark scheme unavailable.").replace(/^MS:\s*/i, ""), 10);
+    }
+  }
+
   return {
     filename: `paperlens-${slugPart(title) || "custom-practice"}-questions.pdf`,
     content: await pdf.save()
   };
 }
 
-async function buildOriginalSourcePdf(questions, includeMarkScheme) {
-  const outputPdf = await PDFDocument.create();
+function createCanonicalPdfWriter(pdf, regularFont, boldFont) {
+  const size = [595.28, 841.89];
+  const margin = 48;
+  const bottom = 48;
+  let page;
+  let y;
 
-  const appended = new Set();
-  for (const question of questions) {
-    await appendQuestionSource(outputPdf, question, "qp", appended);
+  function pageBreak() {
+    page = pdf.addPage(size);
+    y = size[1] - margin;
   }
 
-  if (includeMarkScheme) {
-    for (const question of questions) {
-      await appendQuestionSource(outputPdf, question, "ms", appended);
-    }
+  function ensureSpace(height) {
+    if (!page || y - height < bottom) pageBreak();
   }
 
-  return outputPdf;
-}
-
-async function appendQuestionSource(outputPdf, question, type, appended) {
-  const sourcePath = localPaperPathForQuestion(question, type);
-  if (!sourcePath || !fs.existsSync(sourcePath)) {
-    throwHttpError(`Original ${type.toUpperCase()} PDF is missing for ${question.source}.`, 404);
-  }
-
-  const sourceBytes = fs.readFileSync(sourcePath);
-  const sourcePdf = await PDFDocument.load(sourceBytes, { ignoreEncryption: true });
-  const pageCount = sourcePdf.getPageCount();
-  const segments = await sourceSegmentsForQuestion(question, type, sourcePath, pageCount);
-  const key = `${type}:${sourcePath}:${JSON.stringify(segments)}`;
-  if (appended.has(key)) return;
-  appended.add(key);
-
-  const copiedPages = await outputPdf.copyPages(sourcePdf, segments.map((segment) => segment.page - 1));
-  copiedPages.forEach((page, index) => {
-    applyPageCrop(page, segments[index].crop);
-    outputPdf.addPage(page);
-  });
-}
-
-async function sourceSegmentsForQuestion(question, type, sourcePath, pageCount) {
-  const explicitPages = type === "ms" ? question.msPages : question.qpPages;
-  const explicitCrop = sourceCropForQuestion(question, type);
-  const pages = normalisePageList(explicitPages, pageCount);
-  if (pages.length && explicitCrop) return pages.map((page) => ({ page, crop: explicitCrop }));
-
-  const geometry = await parsedPdfGeometry(sourcePath);
-  const selectors = questionSelectorsFromRef(question.ref);
-  const segments = selectors.flatMap((selector) => segmentsForSelector(geometry, selector, type));
-  const unique = new Map();
-  segments.forEach((segment) => unique.set(`${segment.page}:${JSON.stringify(segment.crop)}`, segment));
-  if (unique.size) return [...unique.values()];
-
-  throwHttpError(`Could not locate the exact ${type.toUpperCase()} region for ${question.source}.`, 422);
-}
-
-async function parsedPdfGeometry(sourcePath) {
-  if (!PDFParse) {
-    throwHttpError("Exact original-paper extraction is unavailable in this deployment.", 503);
-  }
-
-  if (parsedPdfGeometryCache.has(sourcePath)) return parsedPdfGeometryCache.get(sourcePath);
-  const parser = new PDFParse({ data: fs.readFileSync(sourcePath) });
-  try {
-    const document = await parser.load();
-    const pages = [];
-    for (let pageNumber = 1; pageNumber <= document.numPages; pageNumber += 1) {
-      const page = await document.getPage(pageNumber);
-      const viewport = page.getViewport({ scale: 1 });
-      const content = await page.getTextContent();
-      const items = content.items
-        .filter((item) => "str" in item && item.str.trim())
-        .map((item) => ({
-          text: item.str.trim(),
-          x: Number(item.transform[4]),
-          y: Number(item.transform[5]),
-          width: Number(item.width || 0),
-          height: Math.max(8, Math.abs(Number(item.height || item.transform[3] || 10)))
-        }));
-      pages.push({ page: pageNumber, width: viewport.width, height: viewport.height, items });
-      page.cleanup();
-    }
-    parsedPdfGeometryCache.set(sourcePath, pages);
-    return pages;
-  } finally {
-    await parser.destroy();
-  }
-}
-
-function questionSelectorsFromRef(ref) {
-  const value = String(ref || "").trim();
-  if (!value || !/Q\d+/i.test(value)) return [];
-
-  if (value.includes(",")) {
-    return [...value.matchAll(/Q(\d+)(?:\(([a-z])\))?/gi)].map((match) => ({
-      question: Number(match[1]),
-      endQuestion: Number(match[1]),
-      startPart: match[2]?.toLowerCase() || null,
-      endPart: match[2]?.toLowerCase() || null
-    }));
-  }
-
-  const partRange = value.match(/Q(\d+)\(([a-z])\)\s*-\s*(\d+)\(([a-z])\)/i);
-  if (partRange) {
-    return [{
-      question: Number(partRange[1]),
-      endQuestion: Number(partRange[3]),
-      startPart: partRange[2].toLowerCase(),
-      endPart: partRange[4].toLowerCase()
-    }];
-  }
-
-  const questionRange = value.match(/Q(\d+)\s*-\s*(\d+)/i);
-  if (questionRange) {
-    return [{ question: Number(questionRange[1]), endQuestion: Number(questionRange[2]), startPart: null, endPart: null }];
-  }
-
-  const single = value.match(/Q(\d+)(?:\(([a-z])\))?/i);
-  return single
-    ? [{
-        question: Number(single[1]),
-        endQuestion: Number(single[1]),
-        startPart: single[2]?.toLowerCase() || null,
-        endPart: single[2]?.toLowerCase() || null
-      }]
-    : [];
-}
-
-function segmentsForSelector(geometry, selector, type) {
-  const start = selectorStartMarker(geometry, selector, type);
-  if (!start) return [];
-  const end = selectorEndMarker(geometry, selector, type);
-  const lastPage = end ? end.page : geometry[geometry.length - 1]?.page;
-  const segments = [];
-
-  for (let pageNumber = start.page; pageNumber <= lastPage; pageNumber += 1) {
-    const page = geometry.find((candidate) => candidate.page === pageNumber);
-    if (!page) continue;
-    const xMargin = type === "ms" ? Math.max(42, page.width * 0.055) : Math.max(32, page.width * 0.05);
-    const top = pageNumber === start.page ? Math.min(page.height - 24, start.y + start.height + 22) : page.height - 28;
-    const endGap = type === "ms" ? 2 : 12;
-    const bottom = end && pageNumber === end.page ? Math.max(28, end.y + end.height + endGap) : 28;
-    if (top - bottom < 24) continue;
-    segments.push({
-      page: pageNumber,
-      crop: {
-        x: xMargin,
-        y: bottom,
-        width: page.width - xMargin * 2,
-        height: top - bottom
+  function linesFor(text, font, fontSize, maxWidth) {
+    const words = pdfSafeText(text).split(/\s+/).filter(Boolean);
+    const lines = [];
+    let line = "";
+    for (const word of words) {
+      const candidate = line ? `${line} ${word}` : word;
+      if (font.widthOfTextAtSize(candidate, fontSize) <= maxWidth) {
+        line = candidate;
+        continue;
       }
-    });
-  }
-  return segments;
-}
-
-function selectorStartMarker(geometry, selector, type) {
-  if (selector.startPart && selector.startPart !== "a") {
-    const marker = findPartMarker(geometry, selector.question, selector.startPart, type);
-    if (marker) return marker;
-  }
-  return findQuestionMarker(geometry, selector.question, type);
-}
-
-function selectorEndMarker(geometry, selector, type) {
-  if (selector.endPart) {
-    const nextPart = String.fromCharCode(selector.endPart.charCodeAt(0) + 1);
-    const partMarker = findPartMarker(geometry, selector.endQuestion, nextPart, type);
-    if (partMarker) return type === "ms" ? markSchemeSectionBoundary(geometry, partMarker) : partMarker;
-  }
-  const nextQuestion = findQuestionMarker(geometry, selector.endQuestion + 1, type);
-  return type === "ms" && nextQuestion ? markSchemeSectionBoundary(geometry, nextQuestion) : nextQuestion;
-}
-
-function markSchemeSectionBoundary(geometry, marker) {
-  const page = geometry.find((candidate) => candidate.page === marker.page);
-  if (!page) return marker;
-  const header = page.items
-    .filter((item) => item.text === "Question" && item.x < page.width * 0.2 && item.y > marker.y && item.y - marker.y < 70)
-    .sort((a, b) => a.y - b.y)[0];
-  return header ? { page: marker.page, ...header } : marker;
-}
-
-function findQuestionMarker(geometry, questionNumber, type) {
-  for (const page of geometry) {
-    const candidates = page.items.filter((item) => {
-      if (item.x >= page.width * 0.3 || item.y <= 42) return false;
-      return type === "ms"
-        ? new RegExp(`^${questionNumber}(?:\\([a-z]\\)|$)`, "i").test(item.text)
-        : item.text === String(questionNumber);
-    });
-    if (candidates.length) {
-      const item = candidates.sort((a, b) => b.y - a.y)[0];
-      return { page: page.page, ...item };
+      if (line) lines.push(line);
+      line = word;
     }
+    if (line) lines.push(line);
+    return lines.length ? lines : [""];
   }
-  return null;
-}
 
-function findPartMarker(geometry, questionNumber, part, type) {
-  const questionStart = findQuestionMarker(geometry, questionNumber, type);
-  const questionEnd = findQuestionMarker(geometry, questionNumber + 1, type);
-  if (!questionStart) return null;
-
-  for (const page of geometry) {
-    if (page.page < questionStart.page || (questionEnd && page.page > questionEnd.page)) continue;
-    const candidates = page.items.filter((item) => {
-      if (item.x >= page.width * 0.35 || item.y <= 36) return false;
-      if (type === "ms") return new RegExp(`^${questionNumber}\\(${part}\\)`, "i").test(item.text);
-      return item.text.toLowerCase() === `(${part})`;
-    });
-    for (const item of candidates.sort((a, b) => b.y - a.y)) {
-      const position = { page: page.page, ...item };
-      if (compareDocumentPosition(position, questionStart) >= 0 && (!questionEnd || compareDocumentPosition(position, questionEnd) < 0)) {
-        return position;
-      }
+  function write(text, font, fontSize, color, gap) {
+    const lineHeight = fontSize * 1.38;
+    for (const line of linesFor(text, font, fontSize, size[0] - margin * 2)) {
+      ensureSpace(lineHeight);
+      page.drawText(line, { x: margin, y, size: fontSize, font, color });
+      y -= lineHeight;
     }
-  }
-  return null;
-}
-
-function compareDocumentPosition(a, b) {
-  if (a.page !== b.page) return a.page - b.page;
-  return b.y - a.y;
-}
-
-async function buildQuestionPreview(question, type = "qp") {
-  if (!canvasTools) {
-    throwHttpError("Question image previews are unavailable in this deployment.", 503);
+    y -= gap;
   }
 
-  const cacheKey = `${type}:${question.id}`;
-  if (questionPreviewCache.has(cacheKey)) return questionPreviewCache.get(cacheKey);
-  const sourcePath = localPaperPathForQuestion(question, type);
-  if (!sourcePath || !fs.existsSync(sourcePath)) throwHttpError(`Original ${type.toUpperCase()} PDF is missing for ${question.source}.`, 404);
-
-  const geometry = await parsedPdfGeometry(sourcePath);
-  const segments = await sourceSegmentsForQuestion(question, type, sourcePath, geometry.length);
-  const pageNumbers = [...new Set(segments.map((segment) => segment.page))];
-  const parser = new PDFParse({ data: fs.readFileSync(sourcePath) });
-  try {
-    const screenshots = await parser.getScreenshot({ partial: pageNumbers, desiredWidth: 1200, imageBuffer: true, imageDataUrl: false });
-    const crops = [];
-    for (const segment of segments) {
-      const screenshot = screenshots.pages.find((page) => page.pageNumber === segment.page);
-      const page = geometry.find((candidate) => candidate.page === segment.page);
-      if (!screenshot || !page) continue;
-      const scale = screenshot.width / page.width;
-      const sx = Math.max(0, Math.round(segment.crop.x * scale));
-      const sy = Math.max(0, Math.round((page.height - segment.crop.y - segment.crop.height) * scale));
-      const sw = Math.min(screenshot.width - sx, Math.round(segment.crop.width * scale));
-      const sh = Math.min(screenshot.height - sy, Math.round(segment.crop.height * scale));
-      const image = await canvasTools.loadImage(Buffer.from(screenshot.data));
-      crops.push({ image, sx, sy, sw, sh });
-    }
-    if (!crops.length) throwHttpError(`Could not render the original question for ${question.source}.`, 422);
-
-    const gap = 18;
-    const width = Math.max(...crops.map((crop) => crop.sw));
-    const height = crops.reduce((total, crop) => total + crop.sh, 0) + gap * (crops.length - 1);
-    const canvas = canvasTools.createCanvas(width, height);
-    const context = canvas.getContext("2d");
-    context.fillStyle = "#ffffff";
-    context.fillRect(0, 0, width, height);
-    let y = 0;
-    crops.forEach((crop) => {
-      context.drawImage(crop.image, crop.sx, crop.sy, crop.sw, crop.sh, 0, y, crop.sw, crop.sh);
-      y += crop.sh + gap;
-    });
-    const output = canvas.toBuffer("image/png");
-    questionPreviewCache.set(cacheKey, output);
-    return output;
-  } finally {
-    await parser.destroy();
-  }
-}
-
-function sourceCropForQuestion(question, type) {
-  const crop = type === "ms" ? question.msCrop : question.qpCrop;
-  if (!crop || typeof crop !== "object") return null;
-  const { x, y, width, height } = crop;
-  if (![x, y, width, height].every((value) => Number.isFinite(Number(value)))) return null;
   return {
-    x: Number(x),
-    y: Number(y),
-    width: Number(width),
-    height: Number(height)
+    pageBreak,
+    heading(text, fontSize = 13) {
+      ensureSpace(fontSize * 2.2);
+      write(text, boldFont, fontSize, rgb(0.08, 0.08, 0.08), fontSize * 0.65);
+    },
+    paragraph(text, fontSize = 10, color = rgb(0.12, 0.12, 0.12)) {
+      write(canonicalDisplayText(text), regularFont, fontSize, color, fontSize);
+    }
   };
 }
 
-function normalisePageList(value, pageCount) {
-  const rawPages = Array.isArray(value) ? value : value ? [value] : [];
-  return [...new Set(rawPages.map((page) => Number(page)).filter((page) => Number.isInteger(page) && page >= 1 && page <= pageCount))];
+function pdfSafeText(value) {
+  return canonicalDisplayText(value)
+    .replace(/[–—]/g, "-")
+    .replace(/[‘’]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/×/g, "x")
+    .replace(/÷/g, "/")
+    .replace(/≤/g, "<=")
+    .replace(/≥/g, ">=")
+    .replace(/≠/g, "!=")
+    .replace(/→/g, "->")
+    .replace(/←/g, "<-")
+    .replace(/[^\x20-\x7E]/g, "?");
 }
 
-function applyPageCrop(page, crop) {
-  if (typeof page.setCropBox === "function") page.setCropBox(crop.x, crop.y, crop.width, crop.height);
-  if (typeof page.setMediaBox === "function") page.setMediaBox(crop.x, crop.y, crop.width, crop.height);
+function originalSourceUrl(question, type) {
+  const key = type === "ms" ? "markScheme" : "questionPaper";
+  const reference = question?.sourceReferences?.[key];
+  const url = String(reference?.url || "").trim();
+  if (!url || !/^\/textbook_syllabus\/pastpaper\/.+\.pdf$/i.test(url)) return "";
+  const page = Number(reference.pageStart || reference.pages?.[0]);
+  return Number.isInteger(page) && page > 0 ? `${url}#page=${page}` : url;
 }
 
 function questionId(hit, index) {
+  if (hit.canonicalQuestionId) return String(hit.canonicalQuestionId);
   return `${hit.paper}-${hit.ref || index}-${hit.section}`.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
 function syllabusSectionByCode(code) {
-  for (const chapters of Object.values(data.syllabusChecklist)) {
+  for (const chapters of allSyllabusChapters()) {
     for (const chapter of chapters) {
       const section = chapter.sections.find((candidate) => candidate.code === code);
       if (section) return section;
@@ -1200,7 +1009,7 @@ function syllabusSectionByCode(code) {
 }
 
 function syllabusChapterForSection(code) {
-  for (const chapters of Object.values(data.syllabusChecklist)) {
+  for (const chapters of allSyllabusChapters()) {
     for (const chapter of chapters) {
       if (chapter.sections.some((section) => section.code === code)) return chapter;
     }
@@ -1208,40 +1017,25 @@ function syllabusChapterForSection(code) {
   return null;
 }
 
-function paperChipIdFromPaper(paper, type) {
-  const match = String(paper).match(/^0478\/(\d{2})\/(F\/M|M\/J|O\/N)\/(\d{2})$/);
-  if (!match) return "";
-  const [, component, season, year] = match;
-  const seasonCode = { "F/M": "m", "M/J": "s", "O/N": "w" }[season];
-  return `paper-chip-0478-${seasonCode}${year}-${type}-${component}`;
+function allSyllabusChapters() {
+  return Object.values(data.syllabusChecklists || {})
+    .flatMap((syllabus) => Object.values(syllabus.papers || {}));
 }
 
-function localPaperPathForQuestion(question, type) {
-  const parts = paperParts(question.paper);
+function paperChipIdFromPaper(paper, type) {
+  const parts = paperParts(paper);
   if (!parts) return "";
-  const session = data.paperSessions.find(
-    (candidate) => candidate.code === parts.seasonCode && String(candidate.year).slice(-2) === parts.year && candidate.components.includes(parts.component)
-  );
-  if (!session) return "";
-  return path.join(publicDir, "textbook_syllabus", "pastpaper", localPastPaperFolder(session), localPaperFilename(session, type, parts.component));
+  return `paper-chip-${parts.subjectCode}-${parts.seasonCode}${parts.year}-${type}-${parts.component}`;
 }
 
 function paperParts(paper) {
-  const match = String(paper).match(/^0478\/(\d{2})\/(F\/M|M\/J|O\/N)\/(\d{2})$/);
+  const match = String(paper).match(/^(\d{4})\/(\d{2})\/(F\/M|M\/J|O\/N)\/(\d{2})$/);
   if (!match) return null;
-  const [, component, season, year] = match;
+  const [, subjectCode, component, season, year] = match;
+  const syllabusId = Object.entries(syllabusPaperConfigs).find(([, config]) => config.subjectCode === subjectCode)?.[0] || "";
+  if (!syllabusId) return null;
   const seasonCode = { "F/M": "m", "M/J": "s", "O/N": "w" }[season];
-  return { component, seasonCode, year };
-}
-
-function localPastPaperFolder(session) {
-  const seasonFolder = session.season.replace("/", "-");
-  const folder = `${session.year}-${seasonFolder}`;
-  return session.year === 2020 && session.season === "May/June" ? `${folder} ` : folder;
-}
-
-function localPaperFilename(session, type, component) {
-  return `0478_${session.code}${String(session.year).slice(-2)}_${type}_${component}.pdf`;
+  return { subjectCode, component, season, seasonCode, year, fullYear: 2000 + Number(year), syllabusId };
 }
 
 function extractSearchTerms(text) {
@@ -1312,9 +1106,6 @@ function ensureUserDatabase() {
   if (!fs.existsSync(usersDbPath)) {
     fs.writeFileSync(usersDbPath, JSON.stringify({ users: [] }, null, 2));
   }
-  if (!fs.existsSync(checkoutDbPath)) {
-    fs.writeFileSync(checkoutDbPath, JSON.stringify({ sessions: [] }, null, 2));
-  }
 }
 
 async function readUsersDb() {
@@ -1342,37 +1133,8 @@ async function writeUsersDb(db) {
   fs.writeFileSync(usersDbPath, JSON.stringify(safeDb, null, 2));
 }
 
-async function readCheckoutDb() {
-  assertPersistentStoreConfigured();
-  if (useRemoteStore) return readRemoteJson(checkoutStoreKey, { sessions: [] }, normaliseCheckoutDb);
-
-  ensureUserDatabase();
-  try {
-    const db = JSON.parse(fs.readFileSync(checkoutDbPath, "utf8"));
-    return normaliseCheckoutDb(db);
-  } catch {
-    return { sessions: [] };
-  }
-}
-
-async function writeCheckoutDb(db) {
-  assertPersistentStoreConfigured();
-  const safeDb = normaliseCheckoutDb(db);
-  if (useRemoteStore) {
-    await writeRemoteJson(checkoutStoreKey, safeDb);
-    return;
-  }
-
-  ensureUserDatabase();
-  fs.writeFileSync(checkoutDbPath, JSON.stringify(safeDb, null, 2));
-}
-
 function normaliseUsersDb(db) {
   return { users: Array.isArray(db?.users) ? db.users : [] };
-}
-
-function normaliseCheckoutDb(db) {
-  return { sessions: Array.isArray(db?.sessions) ? db.sessions : [] };
 }
 
 function assertPersistentStoreConfigured() {
@@ -1425,19 +1187,11 @@ function isStrongPassword(password) {
 }
 
 async function findUserByEmail(email) {
-  const db = await readUsersDb();
-  return db.users.find((user) => user.email === email) || null;
+  return userStore.findUserByEmail(email);
 }
 
 function publicUser(user) {
-  return {
-    id: user.id,
-    email: user.email,
-    firstName: user.firstName,
-    lastName: user.lastName,
-    username: `${user.firstName} ${user.lastName}`.trim(),
-    purchased: Boolean(user.purchased)
-  };
+  return userStore.publicUser(user);
 }
 
 function hashPassword(password, salt = crypto.randomBytes(16).toString("hex")) {
@@ -1520,34 +1274,6 @@ function requestOrigin(req) {
   return `${protocol}://${hostHeader}`;
 }
 
-function createSessionToken(userId) {
-  const payload = {
-    userId,
-    exp: Math.floor(Date.now() / 1000) + sessionMaxAgeSeconds
-  };
-  const encodedPayload = Buffer.from(JSON.stringify(payload)).toString("base64url");
-  const signature = crypto.createHmac("sha256", sessionSecret).update(encodedPayload).digest("base64url");
-  return `${encodedPayload}.${signature}`;
-}
-
-function verifySessionToken(token) {
-  const [encodedPayload, signature] = String(token || "").split(".");
-  if (!encodedPayload || !signature) return null;
-
-  const expected = crypto.createHmac("sha256", sessionSecret).update(encodedPayload).digest("base64url");
-  const signatureBuffer = Buffer.from(signature);
-  const expectedBuffer = Buffer.from(expected);
-  if (signatureBuffer.length !== expectedBuffer.length || !crypto.timingSafeEqual(signatureBuffer, expectedBuffer)) return null;
-
-  try {
-    const payload = JSON.parse(Buffer.from(encodedPayload, "base64url").toString("utf8"));
-    if (!payload.userId || Number(payload.exp) <= Math.floor(Date.now() / 1000)) return null;
-    return payload;
-  } catch {
-    return null;
-  }
-}
-
 function cookieHeaderValue(name, value, req, options = {}) {
   const parts = [
     `${name}=${value}`,
@@ -1556,19 +1282,24 @@ function cookieHeaderValue(name, value, req, options = {}) {
     "SameSite=Lax"
   ];
   if (options.maxAge !== undefined) parts.push(`Max-Age=${options.maxAge}`);
-  if (isSecureRequest(req)) parts.push("Secure");
+  if (isProduction || isSecureRequest(req)) parts.push("Secure");
   return parts.join("; ");
 }
 
-function setSessionCookie(res, userId, req) {
+async function setSessionCookie(res, userId, req) {
+  const token = await sessionStore.createSession(userId, req, sessionMaxAgeSeconds);
   res.setHeader(
     "Set-Cookie",
-    cookieHeaderValue(sessionCookieName, createSessionToken(userId), req, { maxAge: sessionMaxAgeSeconds })
+    cookieHeaderValue(sessionCookieName, token, req, { maxAge: sessionMaxAgeSeconds })
   );
 }
 
 function clearSessionCookie(res, req) {
   res.setHeader("Set-Cookie", cookieHeaderValue(sessionCookieName, "", req, { maxAge: 0 }));
+}
+
+async function revokeCurrentSession(req) {
+  await sessionStore.revokeSessionToken(parseCookies(req)[sessionCookieName]);
 }
 
 function isSecureRequest(req) {
@@ -1592,11 +1323,7 @@ function parseCookies(req) {
 
 async function optionalAuthenticatedUser(req) {
   const token = parseCookies(req)[sessionCookieName];
-  const session = verifySessionToken(token);
-  if (!session) return null;
-
-  const db = await readUsersDb();
-  return db.users.find((user) => user.id === session.userId) || null;
+  return sessionStore.authenticatedUserFromToken(token);
 }
 
 async function requireAuthenticatedUser(req) {
@@ -1606,243 +1333,11 @@ async function requireAuthenticatedUser(req) {
 }
 
 async function createUser(body) {
-  const email = normaliseEmail(body.email);
-  const firstName = String(body.firstName || "").trim();
-  const lastName = String(body.lastName || "").trim();
-  const password = String(body.password || "");
-
-  if (!isValidEmail(email)) throwHttpError("Enter a valid email address.", 400);
-  if (!firstName || !lastName) throwHttpError("Enter both first name and last name.", 400);
-  if (!isStrongPassword(password)) throwHttpError("Password must be at least 8 characters and include letters and numbers.", 400);
-
-  const db = await readUsersDb();
-  if (db.users.some((user) => user.email === email)) {
-    throwHttpError("This email is already registered.", 409);
-  }
-
-  const passwordData = hashPassword(password);
-  const user = {
-    id: crypto.randomUUID(),
-    email,
-    firstName,
-    lastName,
-    passwordHash: passwordData.hash,
-    passwordSalt: passwordData.salt,
-    purchased: false,
-    questionFinderSearches: [],
-    createdAt: new Date().toISOString()
-  };
-
-  db.users.push(user);
-  await writeUsersDb(db);
-  return { ok: true, user: publicUser(user) };
+  return userStore.createUser(body);
 }
 
 async function loginUser(body) {
-  const email = normaliseEmail(body.email);
-  const password = String(body.password || "");
-  const user = await findUserByEmail(email);
-
-  if (!user) throwHttpError("No account exists for this email.", 404);
-  const passwordData = hashPassword(password, user.passwordSalt);
-  if (passwordData.hash !== user.passwordHash) {
-    throwHttpError("Incorrect password.", 401);
-  }
-
-  return { ok: true, user: publicUser(user) };
-}
-
-async function createCheckoutSession(user, req) {
-  if (user.purchased) {
-    return { ok: true, alreadyPurchased: true, user: publicUser(user) };
-  }
-
-  const sessionId = crypto.randomUUID();
-  const checkout = await createStripeCheckoutSession(sessionId, user, req);
-  const checkoutDb = await readCheckoutDb();
-  checkoutDb.sessions.push({
-    id: sessionId,
-    userId: user.id,
-    email: user.email,
-    amount: lifetimeAccessPriceCny,
-    currency: "CNY",
-    status: "pending",
-    checkoutUrl: checkout.url,
-    provider: "stripe",
-    providerSessionId: checkout.providerSessionId,
-    createdAt: new Date().toISOString()
-  });
-  await writeCheckoutDb(checkoutDb);
-
-  return {
-    ok: true,
-    checkoutUrl: checkout.url,
-    sessionId,
-    amount: lifetimeAccessPriceCny,
-    currency: "CNY",
-    providerSessionId: checkout.providerSessionId,
-    status: "pending"
-  };
-}
-
-async function createStripeCheckoutSession(sessionId, user, req) {
-  if (useMockStripeCheckout) {
-    return {
-      url: `${checkoutBaseUrl(req)}/checkout.html?session=${encodeURIComponent(sessionId)}`,
-      providerSessionId: `cs_test_${sessionId.replace(/-/g, "")}`
-    };
-  }
-
-  assertStripeCheckoutConfigured();
-
-  const baseUrl = checkoutBaseUrl(req);
-  const form = new URLSearchParams();
-  form.set("mode", "payment");
-  form.set("client_reference_id", sessionId);
-  form.set("success_url", `${baseUrl}/checkout.html?session=${encodeURIComponent(sessionId)}&stripe_session_id={CHECKOUT_SESSION_ID}`);
-  form.set("cancel_url", `${baseUrl}/index.html?buy=1#igcse-0478`);
-  form.set("customer_email", user.email);
-  form.set("line_items[0][price]", stripePriceId);
-  form.set("line_items[0][quantity]", "1");
-  form.set("metadata[paperlensCheckoutSessionId]", sessionId);
-  form.set("payment_intent_data[metadata][paperlensCheckoutSessionId]", sessionId);
-
-  const response = await fetch("https://api.stripe.com/v1/checkout/sessions", {
-    method: "POST",
-    headers: {
-      "Authorization": `Bearer ${stripeSecretKey}`,
-      "Content-Type": "application/x-www-form-urlencoded"
-    },
-    body: form.toString()
-  });
-  const payload = await response.json().catch(() => ({}));
-  if (!response.ok || !payload.url || !payload.id) {
-    throwHttpError(payload.error?.message || "Stripe Checkout session creation failed.", 502);
-  }
-
-  return {
-    url: payload.url,
-    providerSessionId: payload.id
-  };
-}
-
-function checkoutBaseUrl(req) {
-  return publicBaseUrl || requestOrigin(req);
-}
-
-function assertStripeCheckoutConfigured() {
-  if (process.env.STRIPE_CHECKOUT_MOCK === "1" && isProduction) {
-    throwHttpError("Stripe Checkout mock mode must be disabled in production.", 503);
-  }
-  if (!stripeSecretKey || !stripePriceId) {
-    throwHttpError("Stripe Checkout is not configured. Set STRIPE_SECRET_KEY and STRIPE_PRICE_ID.", 503);
-  }
-}
-
-async function checkoutSessionStatus(sessionId, authenticatedUser) {
-  const checkoutDb = await readCheckoutDb();
-  const session = checkoutDb.sessions.find((candidate) => candidate.id === String(sessionId || "").trim());
-  if (!session) throwHttpError("Checkout session not found.", 404);
-  if (session.userId !== authenticatedUser.id) throwHttpError("Checkout session does not belong to this account.", 403);
-  const usersDb = await readUsersDb();
-  const user = usersDb.users.find((candidate) => candidate.id === authenticatedUser.id);
-  if (!user) throwHttpError("Session user not found.", 404);
-  return {
-    ok: true,
-    status: session.status,
-    paid: session.status === "paid",
-    amount: session.amount,
-    currency: session.currency,
-    user: publicUser(user)
-  };
-}
-
-async function markCheckoutSessionPaid(sessionId, providerEvent) {
-  const checkoutDb = await readCheckoutDb();
-  const session = checkoutDb.sessions.find((candidate) => candidate.id === String(sessionId || "").trim());
-
-  if (!session) throwHttpError("Checkout session not found.", 404);
-  if (session.status === "paid") {
-    return { ok: true, alreadyPaid: true };
-  }
-
-  session.status = "paid";
-  session.paidAt = new Date().toISOString();
-  session.provider = providerEvent.provider;
-  session.providerEventId = providerEvent.eventId;
-  session.providerSessionId = providerEvent.providerSessionId || null;
-  await writeCheckoutDb(checkoutDb);
-
-  const usersDb = await readUsersDb();
-  const user = usersDb.users.find((candidate) => candidate.id === session.userId);
-  if (!user) throwHttpError("User for checkout session not found.", 404);
-  user.purchased = true;
-  user.purchasedAt = session.paidAt;
-  user.checkoutSessionId = session.id;
-  user.providerEventId = providerEvent.eventId;
-  await writeUsersDb(usersDb);
-
-  return { ok: true, user: publicUser(user) };
-}
-
-async function handleStripeWebhookEvent(event) {
-  if (!["checkout.session.completed", "checkout.session.async_payment_succeeded", "payment_intent.succeeded"].includes(event.type)) {
-    return { ok: true, ignored: true };
-  }
-
-  const object = event.data?.object || {};
-  if (event.type.startsWith("checkout.session") && object.payment_status && object.payment_status !== "paid") {
-    return { ok: true, ignored: true };
-  }
-
-  const sessionId = object.metadata?.paperlensCheckoutSessionId || object.metadata?.checkoutSessionId || object.client_reference_id || "";
-  if (!sessionId) throwHttpError("Stripe event is missing PaperLens checkout session metadata.", 400);
-
-  return markCheckoutSessionPaid(sessionId, {
-    provider: "stripe",
-    eventId: event.id,
-    providerSessionId: object.id || null
-  });
-}
-
-function verifyStripeWebhookEvent(rawBody, signatureHeader) {
-  if (!stripeWebhookSecret) throwHttpError("Stripe webhook secret is not configured.", 503);
-  const signatures = parseStripeSignatureHeader(signatureHeader);
-  const timestamp = Number(signatures.t?.[0]);
-  const expectedSignatures = signatures.v1 || [];
-  if (!Number.isFinite(timestamp) || !expectedSignatures.length) throwHttpError("Invalid Stripe webhook signature.", 400);
-  if (Math.abs(Math.floor(Date.now() / 1000) - timestamp) > stripeWebhookToleranceSeconds) {
-    throwHttpError("Stripe webhook signature timestamp is outside tolerance.", 400);
-  }
-
-  const signedPayload = `${timestamp}.${rawBody}`;
-  const expected = crypto.createHmac("sha256", stripeWebhookSecret).update(signedPayload).digest("hex");
-  const verified = expectedSignatures.some((signature) => timingSafeStringEqual(signature, expected));
-  if (!verified) throwHttpError("Invalid Stripe webhook signature.", 400);
-
-  try {
-    return JSON.parse(rawBody);
-  } catch {
-    throwHttpError("Invalid Stripe webhook payload.", 400);
-  }
-}
-
-function parseStripeSignatureHeader(header) {
-  return String(header || "")
-    .split(",")
-    .map((part) => part.split("="))
-    .reduce((result, [key, value]) => {
-      if (!key || !value) return result;
-      result[key] = result[key] || [];
-      result[key].push(value);
-      return result;
-    }, {});
-}
-
-function timingSafeStringEqual(a, b) {
-  const aBuffer = Buffer.from(String(a));
-  const bBuffer = Buffer.from(String(b));
-  return aBuffer.length === bBuffer.length && crypto.timingSafeEqual(aBuffer, bBuffer);
+  return userStore.loginUser(body);
 }
 
 function throwHttpError(message, status) {
@@ -1872,22 +1367,6 @@ function readJsonBody(req) {
         reject(new Error("Invalid JSON body"));
       }
     });
-  });
-}
-
-function readRawBody(req) {
-  return new Promise((resolve, reject) => {
-    let body = "";
-    req.setEncoding("utf8");
-    req.on("data", (chunk) => {
-      body += chunk;
-      if (body.length > 1_000_000) {
-        reject(new Error("Request body is too large"));
-        req.destroy();
-      }
-    });
-    req.on("end", () => resolve(body));
-    req.on("error", reject);
   });
 }
 

@@ -1,0 +1,26 @@
+{
+  "stage": "DB-B1-R3_HUMAN_DECISION_VERIFICATION_MAIN_MERGE_AND_POST_MERGE_VERIFICATION",
+  "generatedAt": "2026-07-31T09:33:22.904Z",
+  "decisionPath": "artifacts/db-b1-r3/human-review/db-b1-r3-combined-human-decision.json",
+  "decisionSha256": "3ee52cd626b5abc5507890522b334fd8b239742c9b33c77437571a1dae146d2e",
+  "verificationPath": "artifacts/db-b1-r3/human-review/db-b1-r3-human-decision-verification.json",
+  "verificationSha256": "9f9b93216774876a8b32ca9a5d1a2b6d000d50970d81852fb287b85cb9ff29b5",
+  "reviewer": "Amelia Cai",
+  "reviewedAt": "2026-07-31T17:27:51+08:00",
+  "authorizationScope": "MAIN_INTEGRATION_ONLY",
+  "approvedDecisions": {
+    "dbB0R1Closure": "APPROVE_DB_B0_R1_CLOSURE",
+    "dbB1MainlineIntegration": "APPROVE_DB_B1_MAINLINE_INTEGRATION"
+  },
+  "humanDecisionVerified": true,
+  "mainIntegrationAuthorized": true,
+  "productionAuthorizationGranted": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "status": "PASS"
+}

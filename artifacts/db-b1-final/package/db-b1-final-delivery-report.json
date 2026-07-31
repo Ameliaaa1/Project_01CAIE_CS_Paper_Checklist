@@ -1,0 +1,82 @@
+{
+  "stage": "DB-B1-R3_HUMAN_DECISION_VERIFICATION_MAIN_MERGE_AND_POST_MERGE_VERIFICATION",
+  "deliveredAt": "2026-07-31T09:33:51.693Z",
+  "mergeCommit": "38c3f420a112cacf393c56e1b9518ce02602d596",
+  "sourceCommit": "c39e29f79e0b2bba8ed9946a7db0873aeb34ce5f",
+  "status": "PASS_MAINLINE_DATABASE_INTEGRATION",
+  "humanDecisionVerified": true,
+  "actualMainUpdated": true,
+  "mainMerge": "PASS",
+  "postMergeVerification": "PASS",
+  "manifest": {
+    "path": "package/db-b1-final-evidence-manifest.json",
+    "sizeBytes": 2445,
+    "sha256": "0317d822cbc170b48640d485ee7245c3965700f4ba0c5f3b3c7209926318607f",
+    "mimeType": "application/json",
+    "parseStatus": "PASS",
+    "jsonValid": true
+  },
+  "manifestVerification": {
+    "path": "package/db-b1-final-evidence-manifest-verification.json",
+    "sizeBytes": 716,
+    "sha256": "cb92f45105e6a037989526c064f9ef3873e1dc8370273b76d4704d510184a70b",
+    "mimeType": "application/json",
+    "parseStatus": "PASS",
+    "jsonValid": true
+  },
+  "debugZip": {
+    "path": "package/db-b1-final-debug-json.zip",
+    "sizeBytes": 6411,
+    "sha256": "b3ea03cc052fc310e32b250f5a976e1a3eb51df97dd575cfe10392294f6d0f7f",
+    "entryCount": 8,
+    "entries": [
+      "human-review/db-b1-final-human-decision-verification.json",
+      "merge/db-b1-main-merge-verification.json",
+      "merge/db-b1-post-merge-verification.json",
+      "package/db-b1-final-evidence-manifest-verification.json",
+      "package/db-b1-final-evidence-manifest.json",
+      "safety/db-b1-final-production-safety-verification.json",
+      "schema/db-b1-final-schema-and-migration-verification.json",
+      "tests/db-b1-final-test-execution-report.json"
+    ],
+    "crcValid": true,
+    "forbiddenArtifacts": [],
+    "forbiddenArtifactCount": 0
+  },
+  "completeZip": {
+    "path": "package/db-b1-final-complete-evidence.zip",
+    "sizeBytes": 6780,
+    "sha256": "4dd98f1beee9a8e90c0f25be24aff3695db3e287b04efebfff5b56d16fdb853f",
+    "entryCount": 9,
+    "entries": [
+      "human-review/db-b1-final-human-decision-verification.json",
+      "merge/db-b1-main-merge-verification.json",
+      "merge/db-b1-post-merge-verification.json",
+      "package/db-b1-final-evidence-manifest-verification.json",
+      "package/db-b1-final-evidence-manifest.json",
+      "package/db-b1-final-execution-report.md",
+      "safety/db-b1-final-production-safety-verification.json",
+      "schema/db-b1-final-schema-and-migration-verification.json",
+      "tests/db-b1-final-test-execution-report.json"
+    ],
+    "crcValid": true,
+    "forbiddenArtifacts": [],
+    "forbiddenArtifactCount": 0
+  },
+  "zipVerification": {
+    "path": "package/db-b1-final-zip-verification.json",
+    "sizeBytes": 2206,
+    "sha256": "421c9bbb213e7148d1d35f769f0ddbb30e774dc5d17d6d54206610fdd31a4523",
+    "mimeType": "application/json",
+    "parseStatus": "PASS",
+    "jsonValid": true
+  },
+  "blockerCount": 0,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false
+}

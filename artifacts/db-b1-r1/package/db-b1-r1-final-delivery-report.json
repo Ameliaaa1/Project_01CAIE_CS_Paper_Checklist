@@ -1,0 +1,91 @@
+{
+  "stage": "DB-B1-R1_CANDIDATE_CORRECTION_COMBINED_HUMAN_REVIEW_MAIN_MERGE_AND_FINAL_CLOSURE",
+  "deliveredAt": "2026-07-30T16:21:23.287Z",
+  "candidateCommit": "674eb5044f3eeb5ee7dcd45403c3bb97f29a1fde",
+  "actualMainUpdated": false,
+  "technicalCandidateStatus": "PASS_TECHNICAL_CANDIDATE",
+  "officialStatus": "BLOCKED_PENDING_COMBINED_HUMAN_REVIEW",
+  "manifest": {
+    "path": "package/db-b1-r1-evidence-manifest.json",
+    "sizeBytes": 3829,
+    "sha256": "b2217a3128f96f6fe686e41faa26e82794acd66bc0c56e7b610a0ae7fc5750b6",
+    "mimeType": "application/json",
+    "parseStatus": "PASS",
+    "jsonValid": true
+  },
+  "manifestVerification": {
+    "path": "package/db-b1-r1-evidence-manifest-verification.json",
+    "sizeBytes": 780,
+    "sha256": "7d24ca6592dc723e645780fb7c62d126304c5f14343cd3ca355206f401128413",
+    "mimeType": "application/json",
+    "parseStatus": "PASS",
+    "jsonValid": true
+  },
+  "debugZip": {
+    "path": "package/db-b1-r1-debug-json.zip",
+    "sizeBytes": 11625,
+    "sha256": "5551a2275acc7af9927932aaac1e5144a3b1a5608d8a19955af1db6ff4119e3d",
+    "entryCount": 13,
+    "entries": [
+      "baseline/db-b1-r1-baseline-report.json",
+      "build/db-b1-r1-build-index-reproducibility-report.json",
+      "documentation/db-b1-r1-documentation-cleanup-report.json",
+      "gate/db-b1-r1-blocker-register.json",
+      "human-review/db-b1-r1-combined-human-decision.json",
+      "human-review/db-b1-r1-combined-human-review-package.json",
+      "human-review/db-b1-r1-human-decision-verification.json",
+      "merge/db-b1-main-merge-verification.json",
+      "merge/db-b1-post-merge-verification.json",
+      "package/db-b1-r1-evidence-manifest-verification.json",
+      "package/db-b1-r1-evidence-manifest.json",
+      "tests/db-b1-r1-database-test-equivalence-report.json",
+      "tests/db-b1-r1-final-validation-report.json"
+    ],
+    "crcValid": true,
+    "forbiddenArtifacts": [],
+    "forbiddenArtifactCount": 0
+  },
+  "completeZip": {
+    "path": "package/db-b1-r1-complete-evidence.zip",
+    "sizeBytes": 12095,
+    "sha256": "afb5e170bc033840e7ad2ffe30b307c5aad30a4b1d539beb95d0653421ac723e",
+    "entryCount": 14,
+    "entries": [
+      "baseline/db-b1-r1-baseline-report.json",
+      "build/db-b1-r1-build-index-reproducibility-report.json",
+      "documentation/db-b1-r1-documentation-cleanup-report.json",
+      "gate/db-b1-r1-blocker-register.json",
+      "human-review/db-b1-r1-combined-human-decision.json",
+      "human-review/db-b1-r1-combined-human-review-package.json",
+      "human-review/db-b1-r1-human-decision-verification.json",
+      "merge/db-b1-main-merge-verification.json",
+      "merge/db-b1-post-merge-verification.json",
+      "package/db-b1-r1-evidence-manifest-verification.json",
+      "package/db-b1-r1-evidence-manifest.json",
+      "package/db-b1-r1-execution-report.md",
+      "tests/db-b1-r1-database-test-equivalence-report.json",
+      "tests/db-b1-r1-final-validation-report.json"
+    ],
+    "crcValid": true,
+    "forbiddenArtifacts": [],
+    "forbiddenArtifactCount": 0
+  },
+  "zipVerification": {
+    "path": "package/db-b1-r1-zip-verification.json",
+    "sizeBytes": 2809,
+    "sha256": "85f0b23a6b52de241d50bc0923942fc8f3e4a78b9cf28c3a3e0b580d6cde0e16",
+    "mimeType": "application/json",
+    "parseStatus": "PASS",
+    "jsonValid": true
+  },
+  "blockerCount": 2,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}

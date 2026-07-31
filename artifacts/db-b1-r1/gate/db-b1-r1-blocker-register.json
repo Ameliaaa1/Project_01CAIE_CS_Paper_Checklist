@@ -1,0 +1,33 @@
+{
+  "stage": "DB-B1-R1_CANDIDATE_CORRECTION_COMBINED_HUMAN_REVIEW_MAIN_MERGE_AND_FINAL_CLOSURE",
+  "generatedAt": "2026-07-30T16:20:59.140Z",
+  "resolvedBlockers": [
+    "REMOTE_MAIN_FRESHNESS_UNVERIFIED",
+    "BUILD_GENERATED_STATIC_INDEX_DRIFT_REVIEW_REQUIRED",
+    "DB_B1_CANDIDATE_DATABASE_TEST_TARGET_REQUIRED",
+    "DB_A5_P0_DOCUMENTATION_CLEANUP_NOT_INTEGRATED"
+  ],
+  "blockers": [
+    {
+      "blockerId": "DB-B1-R1-BLOCKER-001",
+      "blocker": "DB_B0_R1_HUMAN_DECISION_REQUIRED",
+      "status": "OPEN"
+    },
+    {
+      "blockerId": "DB-B1-R1-BLOCKER-002",
+      "blocker": "DB_B1_MAINLINE_INTEGRATION_HUMAN_DECISION_REQUIRED",
+      "status": "OPEN"
+    }
+  ],
+  "blockerCount": 2,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigration": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false,
+  "status": "BLOCKED_PENDING_COMBINED_HUMAN_REVIEW"
+}

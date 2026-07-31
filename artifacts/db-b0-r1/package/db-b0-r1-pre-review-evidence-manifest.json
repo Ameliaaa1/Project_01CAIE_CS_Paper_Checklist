@@ -1,0 +1,96 @@
+{
+  "stage": "DB-B0-R1_CLEAN_GIT_INTEGRATION_SOURCE_AND_EVIDENCE_CLOSURE",
+  "generatedAt": "2026-07-30T08:02:52.531Z",
+  "executionCommit": "648746c166afec523bae559a976e12b6dc2c7359",
+  "artifactCount": 13,
+  "artifacts": {
+    "conclusion/db-b0-r1-blocker-register.json": {
+      "sizeBytes": 1132,
+      "sha256": "ed99af3aff4e8bdea96cae4c77cd9f1bb880d28e61c756f8b9a841994e34e9cd",
+      "mimeType": "application/json",
+      "jsonValid": true
+    },
+    "conclusion/db-b0-r1-execution-report.md": {
+      "sizeBytes": 996,
+      "sha256": "85514d8ab18cbabb9dd094a727be43cdcfe29969eb170e7118d417ca3c1976bc",
+      "mimeType": "text/markdown",
+      "jsonValid": null
+    },
+    "conclusion/db-b0-r1-main-integration-boundary.json": {
+      "sizeBytes": 1034,
+      "sha256": "12f82696c57772f6f8d1df3025649142cc4fcc4d3c6a5543c85dab09c0ecf4c8",
+      "mimeType": "application/json",
+      "jsonValid": true
+    },
+    "conclusion/db-b0-r1-source-of-truth-decision.json": {
+      "sizeBytes": 1185,
+      "sha256": "bf7d7ee1f1b28a5d2ff45f4915d575f909e7777866596ebc1c85d7f52840690f",
+      "mimeType": "application/json",
+      "jsonValid": true
+    },
+    "db-b0-r1-approved-artifact-tracking.json": {
+      "sizeBytes": 9179,
+      "sha256": "c71db2722b6b757c8a4d335687b94328ec4846f30008181b4c9575d909f11062",
+      "mimeType": "application/json",
+      "jsonValid": true
+    },
+    "db-b0-r1-git-tracking-audit.json": {
+      "sizeBytes": 1085,
+      "sha256": "22b9624ace6fd3cf60ceb7b607a720d6b4a724f860ae269ec944d1f271f512e0",
+      "mimeType": "application/json",
+      "jsonValid": true
+    },
+    "db-b0-r1-migration-integrity-report.json": {
+      "sizeBytes": 2288,
+      "sha256": "d77bf7cf5d9d68677e5127c6fcd4b00d8418be31ee90aaa887fca9bde7254dd7",
+      "mimeType": "application/json",
+      "jsonValid": true
+    },
+    "db-b0-r1-remote-main-refresh.json": {
+      "sizeBytes": 2215,
+      "sha256": "1dda237dce6abc48f8a73322084b9d23b8dc0ca375e1e4c48a65d1c10fe5af18",
+      "mimeType": "application/json",
+      "jsonValid": true
+    },
+    "db-b0-r1-runtime-boundary-report.json": {
+      "sizeBytes": 2416,
+      "sha256": "eb3932fe3228e6b193d01701e88fbef836a92b7f85b8ece52187723b10fea858",
+      "mimeType": "application/json",
+      "jsonValid": true
+    },
+    "db-b0-r1-test-execution-report.json": {
+      "sizeBytes": 7966,
+      "sha256": "65c50c42e29296ea07778b21a92de3b52ca18ba741eaf0203aa9de26d2781c62",
+      "mimeType": "application/json",
+      "jsonValid": true
+    },
+    "human-review/db-b0-r1-human-decision-verification.json": {
+      "sizeBytes": 597,
+      "sha256": "193f4ef724f72646bdc2506a4985755319b557c1eb2645916d75c481f97882bb",
+      "mimeType": "application/json",
+      "jsonValid": true
+    },
+    "human-review/db-b0-r1-human-decision.json": {
+      "sizeBytes": 1553,
+      "sha256": "6a1ae94431744ccf13f057c7f3b92243cb784f7e5365f1c2741e7f5a0c23dbf0",
+      "mimeType": "application/json",
+      "jsonValid": true
+    },
+    "human-review/db-b0-r1-human-review-package.json": {
+      "sizeBytes": 1881,
+      "sha256": "28811b5bf9788a1ba90ae3e2ddaeaf361b7ea74c3b17c0ff1cc2d41eabf5a9a4",
+      "mimeType": "application/json",
+      "jsonValid": true
+    }
+  },
+  "status": "PRE_REVIEW_FROZEN",
+  "dbB1ExecutionAuthorized": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionWrite": false,
+  "productionDeploy": false,
+  "paymentProviderRuntimeEnabled": false,
+  "alipayConfigured": false,
+  "wechatPayConfigured": false
+}
