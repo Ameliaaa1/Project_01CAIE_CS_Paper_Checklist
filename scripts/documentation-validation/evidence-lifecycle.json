@@ -105,6 +105,18 @@
       "evidenceClass": "historical",
       "sizeBytes": 5452,
       "sha256": "1eb64bff244ac73096df8c2294a5aa2a6e2227ca9c2b363f9adab5a2b027c662"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-validator/PR06C_PROMOTION_GATE_VALIDATOR_CONTRACT_LIMITATION_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 7292,
+      "sha256": "3fea4af4b402d324689c3166374bc2626a7b52c1a69f268a58ce8f14cfcfc0aa"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-validator/pr06c-promotion-gate-validator-contract-limitation-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 4055,
+      "sha256": "ce775093fb01ce0ce21a9ca649d8b3bdb37dd1668867a78705cfa828ef619645"
     }
   ]
 }
