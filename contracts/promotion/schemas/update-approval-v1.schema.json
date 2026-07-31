@@ -9,14 +9,14 @@
     "schemaVersion": {"const": 1},
     "decision": {"enum": ["APPROVE", "REJECT"]},
     "reviewer": {"type": "string", "minLength": 1},
-    "reviewedAt": {"type": "string", "format": "date-time"},
-    "requestPath": {"type": "string", "minLength": 1},
+    "reviewedAt": {"type": "string", "format": "date-time", "pattern": "Z$"},
+    "requestPath": {"type": "string", "pattern": "^promotion/target/evidence/"},
     "requestSha256": {"$ref": "#/$defs/sha256"},
     "requestId": {"type": "string", "minLength": 1},
     "currentProductionArtifactSha256": {"$ref": "#/$defs/sha256"},
     "candidateArtifactSha256": {"$ref": "#/$defs/sha256"},
     "targetArtifactSha256": {"$ref": "#/$defs/sha256"},
-    "sourceCommit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sourceCommit": {"$ref": "#/$defs/fullCommit"},
     "approvedDifferences": {
       "type": "object",
       "additionalProperties": false,
@@ -28,6 +28,7 @@
     }
   },
   "$defs": {
-    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "fullCommit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
   }
 }

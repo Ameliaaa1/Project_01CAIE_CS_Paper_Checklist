@@ -31,11 +31,12 @@
         "removed": {"$ref": "#/$defs/syllabusSet"}
       }
     },
-    "sourceCommit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
-    "createdAt": {"type": "string", "format": "date-time"}
+    "sourceCommit": {"$ref": "#/$defs/fullCommit"},
+    "createdAt": {"type": "string", "format": "date-time", "pattern": "Z$"}
   },
   "$defs": {
     "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "fullCommit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
     "syllabusSet": {"type": "array", "uniqueItems": true, "items": {"enum": ["0478", "9618"]}},
     "schemaIdentity": {
       "type": "object",
@@ -43,7 +44,7 @@
       "required": ["id", "version", "sha256"],
       "properties": {
         "id": {"type": "string", "minLength": 1},
-        "version": {"type": "integer", "minimum": 1},
+        "version": {"type": "integer", "minimum": 1, "maximum": 9007199254740991},
         "sha256": {"$ref": "#/$defs/sha256"}
       }
     }

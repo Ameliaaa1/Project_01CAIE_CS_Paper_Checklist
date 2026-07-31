@@ -153,6 +153,48 @@
       "evidenceClass": "historical",
       "sizeBytes": 3270,
       "sha256": "919b7d9c24fdc76d8186ac0f2fbf7b33eb35ef7fda7be944ca2a68cdbaae41e3"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_BOUNDARY_CLOSURE_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2473,
+      "sha256": "a3990a0d1a1c7ab6ee582a3ebae987b98250643807a773a08026d51fc795f87e"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_HUMAN_REVIEW.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2582,
+      "sha256": "cf530118241d0a041758e9d94ee1b3f7e4797190764d44a88eb1d0a5b03f9817"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/PR06C_R2_R1_VALIDATOR_CONTRACT_BOUNDARY.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2680,
+      "sha256": "3424a38b5c0a48d9749ae5a1c354a1f841a76fa067bc54ddd9c35d8e6d41013b"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-contract-hash-manifest.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 2458,
+      "sha256": "1773333819baa557e677d5979f60a048a53df487b3c7e56deecf8d2f28a3477f"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-git-boundary-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1128,
+      "sha256": "7a5c5a553dbe1b6a6113e36746f8a90e34277e36b251b9429cedffab64b04160"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-schema-validation-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1295,
+      "sha256": "d790b742aa5e5e3e524c1fd7e167fe3ac548897bef29aa01c7182108bd1169db"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r2-r1/pr06c-r2-r1-validator-contract-boundary-closure-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 4300,
+      "sha256": "d36927bc5a6c3f04bbb309af4aeb3f3b7c44b216bcfbad034144722003ac6155"
     }
   ]
 }

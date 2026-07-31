@@ -1,18 +1,26 @@
 {
   "contractVersion": 3,
+  "boundaryClosureRevision": 1,
   "contractId": "paperlens-promotion-gate-contract",
   "status": "PROPOSED_PENDING_HUMAN_APPROVAL",
   "manifestSchema": {
     "id": "paperlens-promotion-manifest",
     "version": 3,
     "path": "contracts/promotion/schemas/promotion-manifest-v3.schema.json",
-    "canonicalSha256": "9c0048f742025762160d118378664915a51d99eaa69d7c4ffdf102a44b3b9eaf"
+    "canonicalSha256": "eef493ec86ff27b2741697185257b28c871bb46b43ecf4a2d3b8fe3e3a92f698"
   },
   "schemaRegistry": {
     "id": "paperlens-promotion-schema-registry",
     "version": 1,
     "path": "contracts/promotion/schema-registry-v1.json",
-    "byteSha256": "39df4dc3678ee5c5c966ad452b0ee5deb738c49d5ac798af209f93c15dadc155"
+    "byteSha256": "3e6b6202109293250b9a1a2b81b2237ce2cfad0b0808fdf2157fa7c039f8d822"
+  },
+  "generatorRegistry": {
+    "id": "paperlens-promotion-generator-registry",
+    "version": 1,
+    "path": "contracts/promotion/generator-registry-v1.json",
+    "byteSha256": "a2933baefec15d2188f8549dbfd44ae78c0b18585380e231432b970f113c3dfd",
+    "activation": "EXACT_HASH_BOUND_BY_CONTRACT_HUMAN_APPROVAL"
   },
   "allowedArtifactSchemas": [
     {
@@ -22,6 +30,25 @@
       "canonicalSha256": "8eb88e79f22918a80d86bad28e322e316d03684bb69539478d908ba3aa7fe872"
     }
   ],
+  "strictJsonParsing": {
+    "appliesTo": ["contract", "schema-registry", "generator-registry", "schema", "manifest", "artifact", "validation-evidence", "difference-request", "approval"],
+    "inputEncoding": "UTF-8",
+    "invalidUtf8": "BLOCK",
+    "byteOrderMark": "BLOCK",
+    "unsupportedEncodingMarker": "BLOCK",
+    "duplicateObjectKey": "BLOCK_BEFORE_OBJECT_MATERIALIZATION",
+    "comments": "BLOCK",
+    "trailingComma": "BLOCK",
+    "topLevelValues": 1,
+    "trailingNonWhitespace": "BLOCK",
+    "unpairedUnicodeSurrogate": "BLOCK",
+    "nonFiniteNumberAfterParse": "BLOCK",
+    "integerPrecisionLoss": "BLOCK",
+    "maximumExactInteger": 9007199254740991,
+    "objectMemberOrder": "SEMANTICALLY_IRRELEVANT",
+    "hashCanonicalization": "RFC8785_WHERE_SCHEMA_HASH_IS_REQUIRED",
+    "parserOutcome": "SAME_BYTES_MUST_PRODUCE_SAME_VALUE_OR_BLOCK"
+  },
   "artifactExtraction": {
     "rootType": "object",
     "recordCollectionPointer": "/records",
@@ -65,6 +92,71 @@
       "evidencePrefix": "promotion/target/evidence/"
     }
   },
+  "roleLifecycleMatrix": [
+    {"role": "candidate", "lifecycleState": "CANDIDATE_VALIDATED"},
+    {"role": "candidate", "lifecycleState": "READY_FOR_PROMOTION_REVIEW"},
+    {"role": "current-production", "lifecycleState": "PRODUCTION_CURRENT"},
+    {"role": "promotion-target", "lifecycleState": "TARGET_VALIDATED"},
+    {"role": "promotion-target", "lifecycleState": "READY_FOR_HUMAN_REVIEW"},
+    {"role": "promotion-target", "lifecycleState": "APPROVED_FOR_EXECUTION"}
+  ],
+  "unlistedRoleLifecycleCombination": "BLOCK",
+  "evidencePhaseMapping": [
+    {"phase": "candidate", "requiredManifestRole": "candidate", "allowedLifecycleStates": ["CANDIDATE_VALIDATED", "READY_FOR_PROMOTION_REVIEW"], "successOutcome": "PASS"},
+    {"phase": "current-production", "requiredManifestRole": "current-production", "allowedLifecycleStates": ["PRODUCTION_CURRENT"], "successOutcome": "PASS"},
+    {"phase": "target-pre-review", "requiredManifestRole": "promotion-target", "allowedLifecycleStates": ["TARGET_VALIDATED", "READY_FOR_HUMAN_REVIEW"], "successOutcome": "READY_FOR_HUMAN_REVIEW"},
+    {"phase": "target-post-review", "requiredManifestRole": "promotion-target", "allowedLifecycleStates": ["APPROVED_FOR_EXECUTION"], "successOutcome": "PROMOTION_TARGET_VALIDATION_PASS"}
+  ],
+  "unlistedEvidencePhaseCombination": "BLOCK",
+  "promotionMetadataStateMatrix": {
+    "candidate": {
+      "appliesToLifecycleStates": ["CANDIDATE_VALIDATED", "READY_FOR_PROMOTION_REVIEW"],
+      "mode": "MUST_BE_NULL",
+      "productionBaseline": "MUST_BE_NULL",
+      "differenceRequest": "MUST_BE_NULL",
+      "approvalEvidence": "MUST_BE_NULL",
+      "reviewDecision": "NOT_APPLICABLE",
+      "reviewerAndTimestamp": "MUST_BE_NULL",
+      "promotionId": "MUST_BE_NULL",
+      "executionAuthority": "NONE"
+    },
+    "current-production": {
+      "appliesToLifecycleStates": ["PRODUCTION_CURRENT"],
+      "mode": "MUST_BE_NULL",
+      "productionBaseline": "MUST_BE_NULL",
+      "differenceRequest": "MUST_BE_NULL",
+      "approvalEvidence": "MUST_BE_NULL",
+      "reviewDecision": "NOT_APPLICABLE",
+      "reviewerAndTimestamp": "MUST_BE_NULL",
+      "promotionId": "MUST_BE_NULL",
+      "pendingApprovalState": "BLOCK"
+    },
+    "target-pre-review": {
+      "appliesToLifecycleStates": ["TARGET_VALIDATED", "READY_FOR_HUMAN_REVIEW"],
+      "mode": "BOOTSTRAP_OR_UPDATE_REQUIRED",
+      "approvalEvidence": "MUST_BE_NULL",
+      "reviewDecision": "PENDING",
+      "reviewerAndTimestamp": "MUST_BE_NULL",
+      "promotionId": "REQUIRED_NON_EMPTY",
+      "successOutcome": "READY_FOR_HUMAN_REVIEW"
+    },
+    "target-post-review": {
+      "appliesToLifecycleStates": ["APPROVED_FOR_EXECUTION"],
+      "mode": "BOOTSTRAP_OR_UPDATE_REQUIRED",
+      "approvalEvidence": "REQUIRED_EXACT_BYTES",
+      "reviewDecision": "APPROVE",
+      "reviewer": "REQUIRED_NON_EMPTY",
+      "reviewedAt": "REQUIRED_UTC_ISO8601_Z",
+      "promotionId": "REQUIRED_NON_EMPTY",
+      "successOutcome": "PROMOTION_TARGET_VALIDATION_PASS"
+    }
+  },
+  "lifecycleTransitions": [
+    {"from": "CANDIDATE_VALIDATED", "to": "READY_FOR_PROMOTION_REVIEW", "requiredEvidencePhase": "candidate"},
+    {"from": "TARGET_VALIDATED", "to": "READY_FOR_HUMAN_REVIEW", "requiredEvidencePhase": "target-pre-review"},
+    {"from": "READY_FOR_HUMAN_REVIEW", "to": "APPROVED_FOR_EXECUTION", "requiredEvidencePhase": "target-post-review"}
+  ],
+  "unlistedLifecycleTransition": "BLOCK",
   "pathRules": {
     "separator": "/",
     "repositoryRelativeOnly": true,
@@ -83,17 +175,47 @@
   },
   "promotionModes": {
     "bootstrap": {
+      "humanApprovalBeforeExecution": "REQUIRED",
       "currentProductionManifest": "MUST_BE_ABSENT",
       "differenceRequest": "MUST_BE_NULL",
       "baselineProductionSha256": "MUST_BE_NULL",
-      "candidateTargetIdentity": "EXACT_EQUALITY"
+      "candidateTargetIdentity": "EXACT_EQUALITY",
+      "preReviewOutcome": "READY_FOR_HUMAN_REVIEW",
+      "postReviewOutcome": "PROMOTION_TARGET_VALIDATION_PASS",
+      "executionAuthorityAfterValidation": "NONE"
     },
     "update": {
+      "humanApprovalBeforeExecution": "REQUIRED",
       "currentProductionManifest": "MUST_EXIST_AND_VALIDATE",
       "baselineProductionSha256": "EXACT_CURRENT_ARTIFACT_SHA256",
       "differenceRequest": "ALWAYS_REQUIRED",
       "candidateTargetIdentity": "EXACT_EQUALITY",
-      "targetCurrentContentIdentity": "MUST_DIFFER"
+      "targetCurrentContentIdentity": "MUST_DIFFER",
+      "preReviewOutcome": "READY_FOR_HUMAN_REVIEW",
+      "postReviewOutcome": "PROMOTION_TARGET_VALIDATION_PASS",
+      "executionAuthorityAfterValidation": "NONE"
+    }
+  },
+  "bootstrapApproval": {
+    "schema": {
+      "id": "paperlens-bootstrap-approval",
+      "version": 1,
+      "path": "contracts/promotion/schemas/bootstrap-approval-v1.schema.json",
+      "canonicalSha256": "861841a248a85453e273f470a572d1556c1f65c1e7ac7060cd484e3873f29b22"
+    },
+    "preReview": {
+      "targetReviewDecision": "PENDING",
+      "approvalEvidencePath": "MUST_BE_NULL",
+      "approvalEvidenceSha256": "MUST_BE_NULL",
+      "validatorOutcome": "READY_FOR_HUMAN_REVIEW"
+    },
+    "postReview": {
+      "targetReviewDecision": "APPROVE",
+      "approvalEvidencePath": "REQUIRED_TARGET_EVIDENCE_PREFIX",
+      "approvalEvidenceSha256": "REQUIRED_EXACT_BYTES",
+      "approvalBindings": ["promotionId", "candidateArtifactSha256", "targetArtifactSha256", "sourceCommit"],
+      "rejectDecision": "BLOCK_WITHOUT_MANIFEST_STATE_TRANSITION",
+      "validatorOutcome": "PROMOTION_TARGET_VALIDATION_PASS"
     }
   },
   "updateApproval": {
@@ -101,13 +223,13 @@
       "id": "paperlens-update-difference-request",
       "version": 1,
       "path": "contracts/promotion/schemas/update-difference-request-v1.schema.json",
-      "canonicalSha256": "5ee3161cc374d443181643c470c9c63d78fe600d6ae40d60e8e6d166e042a411"
+      "canonicalSha256": "47270c5069768e5acb803d91578761e8079f3c67b870568a62b01da34f3074fb"
     },
     "approvalSchema": {
       "id": "paperlens-update-approval",
       "version": 1,
       "path": "contracts/promotion/schemas/update-approval-v1.schema.json",
-      "canonicalSha256": "5f7e8fe2af32fea47fa1f946ce1c6a151ec71aa6cfb4a0febae65bb1af0cc30b"
+      "canonicalSha256": "6ba3056cf4561ec9c2ea2d8c6bffff86acd754bed6e9d833eae27dc60fa5c729"
     },
     "preReview": {
       "targetReviewDecision": "PENDING",
@@ -120,11 +242,11 @@
     "postReview": {
       "targetReviewDecision": "APPROVE",
       "reviewer": "REQUIRED_NON_EMPTY",
-      "reviewedAt": "REQUIRED_UTC_ISO8601",
+      "reviewedAt": "REQUIRED_UTC_ISO8601_Z",
       "approvalEvidencePath": "REQUIRED_TARGET_EVIDENCE_PREFIX",
       "approvalEvidenceSha256": "REQUIRED_EXACT_BYTES",
       "approvalBindings": ["requestPath", "requestSha256", "requestId", "currentProductionArtifactSha256", "candidateArtifactSha256", "targetArtifactSha256", "sourceCommit", "approvedDifferences"],
-      "rejectDecision": "BLOCK",
+      "rejectDecision": "BLOCK_WITHOUT_MANIFEST_STATE_TRANSITION",
       "validatorOutcome": "PROMOTION_TARGET_VALIDATION_PASS"
     },
     "differenceRules": {
@@ -135,15 +257,33 @@
       "approvedDifferenceNotPresent": "BLOCK"
     }
   },
+  "provenanceValidation": {
+    "approvedRepository": "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git",
+    "approvedHistoryRef": "refs/remotes/origin/main",
+    "sourceCommitFormat": "LOWERCASE_FULL_40_HEX",
+    "sourceCommitObjectType": "commit",
+    "sourceCommitMustExist": true,
+    "sourceCommitReachabilityCommand": "git merge-base --is-ancestor <sourceCommit> refs/remotes/origin/main",
+    "sourceCommitReachabilityExitCode": 0,
+    "missingHistoryOrShallowUncertainty": "BLOCK",
+    "evidenceSourceCommit": "EXACT_MANIFEST_PROVENANCE_SOURCE_COMMIT",
+    "validatorExecutionCheckout": "EXACT_SOURCE_COMMIT",
+    "generatorLookupKey": ["generator.id", "generator.version"],
+    "generatorRegistryHash": "EXACT_MANIFEST_GENERATOR_REGISTRY_SHA256",
+    "generatorEntryStatus": "APPROVED_FOR_CONTRACT_USE",
+    "generatorAllowedOutput": "MUST_INCLUDE_PROMOTION_MANIFEST",
+    "unknownGenerator": "BLOCK"
+  },
   "validationEvidence": {
     "schema": {
       "id": "paperlens-promotion-validation-evidence",
       "version": 1,
       "path": "contracts/promotion/schemas/promotion-validation-evidence-v1.schema.json",
-      "canonicalSha256": "a045ff8adf3c04036903935756749ab5612a3a94a411474c468f7e1fe251eb7c"
+      "canonicalSha256": "d21653b3cd121b23ed64071ebf1aec364b91a75a6cab442521d789ab64c0f4de"
     },
     "allowedValidatorVersions": ["1.0.0"],
-    "requiredBindings": ["manifest.role", "manifest.path", "manifest.sha256", "artifact.artifactId", "artifact.artifactVersion", "artifact.path", "artifact.sizeBytes", "artifact.sha256", "artifact.recordCount", "artifact.stableIdSetSha256", "schema.id", "schema.version", "schema.path", "schema.sha256", "scope.supportedSyllabi", "scope.sha256", "sourceCommit", "validator.id", "validator.version", "validator.contractVersion"],
+    "requiredBindings": ["manifest.role", "manifest.lifecycleState", "manifest.path", "manifest.sha256", "artifact.artifactId", "artifact.artifactVersion", "artifact.path", "artifact.sizeBytes", "artifact.sha256", "artifact.recordCount", "artifact.stableIdSetSha256", "schema.id", "schema.version", "schema.path", "schema.sha256", "scope.supportedSyllabi", "scope.sha256", "sourceCommit", "validator.id", "validator.version", "validator.contractVersion"],
+    "crossDocumentBindings": ["evidence.phase->manifest.authorityRole", "evidence.manifest.lifecycleState->manifest.lifecycleState", "evidence.sourceCommit->manifest.provenance.sourceCommit", "evidence.artifact->manifest.artifact", "evidence.schema->manifest.schema", "evidence.scope->manifest.scope"],
     "manifestValidatedAtMustEqualEvidenceGeneratedAt": true,
     "wallClockExpiration": "NONE",
     "staleWhenAnyBindingDiffers": true,
@@ -159,19 +299,36 @@
       "cycles": "BLOCK",
       "selfReference": "BLOCK"
     },
-    "passEvidenceFindings": "MUST_CONTAIN_NO_BLOCK_SEVERITY",
+    "successOutcomes": ["PASS", "READY_FOR_HUMAN_REVIEW", "PROMOTION_TARGET_VALIDATION_PASS"],
+    "successEvidenceFindings": "MUST_CONTAIN_NO_BLOCK_SEVERITY",
     "blockEvidenceResult": "BLOCK"
   },
   "identityRules": {
-    "candidateTargetExactFields": ["artifact.artifactId", "artifact.artifactVersion", "artifact.sizeBytes", "artifact.sha256", "artifact.recordCount", "artifact.stableIdSetSha256", "scope.supportedSyllabi", "scope.scopeSha256", "schema.artifactSchemaId", "schema.artifactSchemaVersion", "schema.artifactSchemaPath", "schema.artifactSchemaSha256", "provenance.sourceCommit"],
+    "candidateTargetExactFields": ["artifact.artifactId", "artifact.artifactVersion", "artifact.sizeBytes", "artifact.sha256", "artifact.recordCount", "artifact.stableIdSetSha256", "scope.supportedSyllabi", "scope.scopeSha256", "schema.artifactSchemaId", "schema.artifactSchemaVersion", "schema.artifactSchemaPath", "schema.artifactSchemaSha256", "provenance.sourceCommit", "provenance.generator"],
     "artifactByteHash": "SHA256_EXACT_BYTES_LOWERCASE_HEX",
     "schemaHash": "SHA256_RFC8785_CANONICAL_BYTES_LOWERCASE_HEX",
     "unknownManifestField": "BLOCK",
     "unknownSchemaRegistryEntry": "BLOCK"
   },
+  "validatorOutput": {
+    "default": "STDOUT",
+    "fileOutputAllowedPrefix": "reports/promotion-validator/",
+    "fileOutputExtension": ".json",
+    "repositoryRelativeOnly": true,
+    "createParents": false,
+    "existingOutput": "BLOCK_BY_DEFAULT",
+    "overwriteOptIn": "PROHIBITED",
+    "atomicCreate": "CREATE_NEW_EXCLUSIVE",
+    "symlinkInAnyComponent": "BLOCK",
+    "resolvedPathOutsideAllowedPrefix": "BLOCK",
+    "blockedPrefixes": [".git/", ".github/", "contracts/", "promotion/", "data/", "docs/", "generated/", "prisma/", "public/", "scripts/", "src/", "tests/", "node_modules/"],
+    "blockedExactFiles": ["package.json", "package-lock.json", "vercel.json", ".env", ".env.local", ".gitignore"],
+    "authorityWrites": "PROHIBITED",
+    "productionWrites": "PROHIBITED"
+  },
   "validatorBoundary": {
     "defaultOperation": "READ_ONLY",
-    "evidenceOutput": "STDOUT_OR_CALLER_SELECTED_PATH_OUTSIDE_AUTHORITY_PREFIXES",
+    "evidenceOutput": "STDOUT_OR_NEW_FILE_UNDER_REPORTS_PROMOTION_VALIDATOR",
     "authorityWrites": "PROHIBITED",
     "productionWrites": "PROHIBITED",
     "promotionExecution": "PROHIBITED",

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "task": "PR06C-R2-R1-SCHEMA-VALIDATION",
+  "status": "VALIDATED",
+  "outcome": "PASS_PR06C_R2_R1_SCHEMA_VALIDATION",
+  "validatedAt": "2026-07-31T10:21:29Z",
+  "contractPath": "contracts/promotion/promotion-validator-contract-v3.json",
+  "checks": {
+    "jsonParse": "PASS",
+    "draft202012StrictCompile": "PASS",
+    "registryCanonicalHashes": "PASS",
+    "registryByteHash": "PASS",
+    "generatorRegistryByteHash": "PASS",
+    "roleLifecycleMatrix": "PASS",
+    "evidencePhaseMapping": "PASS",
+    "promotionMetadataStateMatrix": "PASS",
+    "bootstrapPreAndPostReview": "PASS",
+    "updatePreAndPostReview": "PASS",
+    "sourceCommitRules": "PASS",
+    "generatorTrustRules": "PASS",
+    "strictJsonRequirements": "PASS",
+    "validatorOutputBoundary": "PASS",
+    "negativeCrossFieldCases": "PASS"
+  },
+  "counts": {
+    "schemasCompiled": 6,
+    "registryEntries": 6,
+    "roleLifecycleCombinations": 6,
+    "evidencePhaseMappings": 4,
+    "semanticCases": 17,
+    "semanticFailures": 0
+  },
+  "safety": {
+    "validatorImplementationFiles": 0,
+    "fixtureFiles": 0,
+    "candidateManifestChanges": 0,
+    "productionManifestChanges": 0,
+    "promotionTargetChanges": 0,
+    "productionChanges": 0,
+    "promotionExecution": 0,
+    "deploymentActions": 0
+  }
+}
