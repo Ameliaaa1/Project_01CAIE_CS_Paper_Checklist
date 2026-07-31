@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "task": "PR-06C-SOURCE-OF-TRUTH-CONTRACT",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "result": "READY_PR06C_SOURCE_OF_TRUTH_CONTRACT_FOR_HUMAN_REVIEW",
+  "baseSha": "12f10e88842ba736888db5f00ed6ae5334874d4d",
+  "validatedImplementationSha": "PENDING",
+  "finalPrHeadSha": null,
+  "initialAuditGeneratedAt": "2026-07-31T01:46:17Z",
+  "generatedAt": "2026-07-31T06:47:34Z",
+  "markdownReport": "docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_AUDIT.md",
+  "inventory": {
+    "trackedFiles": 329,
+    "trackedPdfs": 196,
+    "trackedGeneratedFiles": 1,
+    "trackedPublicFiles": 207,
+    "candidateManifests": 0,
+    "productionManifests": 0,
+    "questionIndexPapers": 95,
+    "questionIndexEntries": 833,
+    "observedSyllabi": ["0478"]
+  },
+  "authorityModel": {
+    "currentCandidateAuthority": null,
+    "currentProductionAuthority": null,
+    "proposedCandidateManifest": "promotion/candidate/manifest.json",
+    "proposedProductionManifest": "promotion/production/manifest.json",
+    "proposalStatus": "PROPOSED_PENDING_HUMAN_APPROVAL",
+    "generatedQuestionIndexClass": "GENERATED_DERIVATIVE",
+    "paperlensDataClass": "FRONTEND_SERVER_DELIVERY_ARTIFACT",
+    "pdfClass": "SOURCE_INPUT",
+    "runtimeDataClass": "PRIVATE_RUNTIME_DATA",
+    "historicalEvidenceClass": "NOT_ARTIFACT_AUTHORITY"
+  },
+  "contract": {
+    "manifestSchemaVersion": 1,
+    "allowedSyllabi": ["0478", "9618"],
+    "forbiddenSyllabi": ["9709"],
+    "manifestFirst": true,
+    "failClosed": true,
+    "validationSeparatedFromAuthorization": true,
+    "authorizationSeparatedFromExecution": true,
+    "passRules": 9
+  },
+  "tests": {
+    "command": "npm run test:documentation-validation",
+    "cases": 90,
+    "passed": 90,
+    "failed": 0,
+    "projectTestCommand": "npm test",
+    "projectTestResult": "PASS"
+  },
+  "validation": {
+    "fullMode": "PASS",
+    "changedMode": "PASS",
+    "links": "PASS",
+    "authority": "PASS",
+    "evidencePairs": "PASS",
+    "protectedEvidence": "PASS",
+    "baseline": "PASS",
+    "gitDiffCheck": "PASS",
+    "readOnlyDefault": "PASS",
+    "repositoryInventory": "PASS",
+    "sourceOfTruthGuessing": "NOT_PERFORMED"
+  },
+  "summary": {
+    "blockingFindings": 0,
+    "baselinedFindings": 15
+  },
+  "gitBoundary": {
+    "changedFiles": 8,
+    "filesDeleted": 0,
+    "filesRenamed": 0,
+    "filesMoved": 0,
+    "lineAdditions": 692,
+    "lineDeletions": 0,
+    "productionChanges": 0,
+    "candidateChanges": 0,
+    "pdfChanges": 0,
+    "parserChanges": 0,
+    "frontendChanges": 0,
+    "runtimeBehaviorChanges": 0,
+    "historicalEvidenceChanges": 0
+  },
+  "evidenceFiles": [
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_AUTHORITY_CLASSIFICATION.md","evidenceClass":"historical","sizeBytes":3301,"sha256":"f0146d01e62b7434c37cd90e1f96863e6c801279b9bbb775041a23f796fe8adb"},
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_HUMAN_REVIEW.md","evidenceClass":"historical","sizeBytes":1900,"sha256":"91edd70a816d88fb6899ff00db146afb069d558d30fa7286c6a5c0fa0b169d3e"},
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_PROMOTION_CONTRACT.md","evidenceClass":"historical","sizeBytes":3599,"sha256":"90d2f8976eb0076cbdce81f176c13a391525e54ec73e5a9845cf47f79d8990b6"},
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_RISK_ASSESSMENT.md","evidenceClass":"historical","sizeBytes":1997,"sha256":"e4aea6ea4e556495b45e3e1883d6f1d58781adff9bbe0f97c15e013893f335f1"},
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_AUDIT.md","evidenceClass":"historical","sizeBytes":4120,"sha256":"51a2827148565e7c2e09e7d515b073e3dad92d5f1b577908fd04b9c695b322ae"},
+    {"path":"docs/repository-maintenance/pr-06c/PR06C_SOURCE_OF_TRUTH_SCHEMA_PROPOSAL.md","evidenceClass":"historical","sizeBytes":3166,"sha256":"7cc9929fc3cd75d27094ea9b053d6e0ac08c029ea7420cdc04dd48daee2e4f26"}
+  ],
+  "selfHash": "SELF_HASH_EXCLUDED_TO_AVOID_CIRCULAR_REFERENCE",
+  "humanReview": {
+    "required": true,
+    "decision": "PENDING",
+    "reviewer": null,
+    "reviewedAt": null,
+    "approvedCandidateManifest": null,
+    "approvedProductionManifest": null,
+    "approvedImplementationPhase": null
+  }
+}

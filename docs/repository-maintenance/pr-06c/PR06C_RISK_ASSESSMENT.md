@@ -1,0 +1,48 @@
+# PR-06C Source-of-Truth Risk Assessment
+
+Status: `READY_FOR_HUMAN_REVIEW`
+
+Owner: Repository maintainers
+
+Created at: `2026-07-31T01:46:17Z`
+
+Authoritative scope: NONE
+
+Related documents:
+
+- [Source-of-truth audit](PR06C_SOURCE_OF_TRUTH_AUDIT.md)
+- [Schema proposal](PR06C_SOURCE_OF_TRUTH_SCHEMA_PROPOSAL.md)
+- [Promotion contract](PR06C_PROMOTION_CONTRACT.md)
+
+## Risks
+
+| Risk | Severity | Control |
+| --- | --- | --- |
+| Existing derivative mistaken for Candidate | P0 | Exact manifest path; no inference |
+| Delivery asset mistaken for Production authority | P0 | Production manifest required |
+| PASS interpreted as write authorization | P0 | Three distinct states and human gate |
+| 9709 reintroduced | P0 | Supported-scope allowlist 0478/9618 |
+| Hash calculated over wrong bytes | P1 | Size and SHA-256 for artifact and evidence |
+| Stable identifiers drift while counts match | P1 | Stable-ID set hash |
+| Unknown schema silently accepted | P1 | Version fail-closed |
+| Dirty worktree data influences decision | P1 | Audit only isolated `origin/main` worktree |
+| Historical plan treated as current | P1 | Archive excluded as architectural authority |
+| Validation mutates Candidate or Production | P0 | Before/after byte verification and read-only command |
+| Runtime secrets enter evidence | P0 | No credentials; manifests contain no secret values |
+
+## Residual Risk
+
+The contract cannot prove a real promotion because no authority manifests
+exist. That is intentional. Human approval resolves the model, not the data.
+The later validator must include adversarial fixtures for every BLOCK rule and
+must demonstrate repository byte stability.
+
+## Stop Conditions
+
+Stop immediately if a later phase:
+
+- selects authority by filename similarity;
+- reads unreviewed artifacts from another worktree;
+- changes Candidate, Production, PDFs, parser, frontend, or runtime;
+- introduces deployment credentials or a Production command;
+- reports PASS while either authority manifest is missing.
