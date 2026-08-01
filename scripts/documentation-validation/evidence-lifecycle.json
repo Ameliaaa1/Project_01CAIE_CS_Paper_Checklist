@@ -260,7 +260,7 @@
       "path": "docs/repository-maintenance/pr-06c-r3/pr06c-r3-test-execution-report.json",
       "evidenceClass": "historical",
       "sizeBytes": 1256,
-      "sha256": "bffbfdb80a3b5c6ed3b04f2a54271561b81158ec4682b24687aceb0b81f4bd35"
+      "sha256": "ad0e5735ecde69e779e3f37a34e43bfbf44c4a9c0b2f2fdae166f393df0d3eb6"
     },
     {
       "path": "docs/repository-maintenance/pr-06c-r3/pr06c-r3-validator-implementation-report.json",
