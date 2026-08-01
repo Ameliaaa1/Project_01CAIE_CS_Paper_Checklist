@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "status": "VALIDATED",
   "result": "PASS_PR06C_R3_OUTPUT_PATH_AUDIT",
-  "validatedAt": "2026-08-01T04:47:37Z",
-  "validatedImplementationSha": "358e966bc015a530e6a62b7d2b87496842efc7cd",
+  "validatedAt": "2026-08-01T06:02:59Z",
+  "validatedImplementationSha": "98c1c4595152b594bfd5e68ffd215e18cfcffe4c",
   "defaultOutput": "STDOUT",
   "allowedFilePrefix": "reports/promotion-validator/",
   "allowedExtension": ".json",
@@ -16,6 +16,6 @@
   "testedCases": ["stdout", "create-new", "overwrite", "escape"],
   "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
   "tests": {"cases":4,"passed":4,"failed":0},
-  "gitBoundary": {"changedFiles":16,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1192,"lineDeletions":1},
+  "gitBoundary": {"changedFiles":18,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1245,"lineDeletions":1},
   "humanReview": {"decision":"PENDING","reviewer":null,"reviewedAt":null}
 }

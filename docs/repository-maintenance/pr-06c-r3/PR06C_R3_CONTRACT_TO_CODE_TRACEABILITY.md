@@ -4,7 +4,7 @@ Status: `READY_FOR_HUMAN_REVIEW`
 
 Owner: Promotion contract maintainers
 
-Created at: `2026-08-01T04:47:37Z`
+Created at: `2026-08-01T06:02:59Z`
 
 Authoritative scope: NONE
 
@@ -19,9 +19,10 @@ Related documents:
 | Strict UTF-8 JSON, duplicate keys, BOM, trailing data, exact integers | `scripts/promotion-validator/strict-json.js` | eight strict-json cases |
 | RFC 8785 canonical projection, one exclusion | `scripts/promotion-validator/hash.js` | constructibility and projection mutation cases |
 | Repository-relative, role-owned, no-symlink paths | `scripts/promotion-validator/safe-path.js` | traversal, root symlink, broken symlink, report-boundary cases |
-| Schema registry and strict compilation | `loadBoundary`, `schemaValidator` | eight-schema constructibility gate |
+| Schema registry and strict compilation | `loadBoundary`, `schemaValidator` | nine-schema constructibility gate |
 | Artifact, stable IDs, scope, `0478`/`9618`, block `9709` | `inspectArtifact` | positive artifact, duplicate ID, unsupported syllabus |
 | Repository origin, complete history, approved ref reachability | `validateProvenance` | correct/wrong/missing origin, shallow repo, missing ref, checkout mismatch |
+| Frozen GitHub remote truth capture and byte-hash binding | `loadBoundary`, `validateProvenance` | fake `origin/main`, missing capture, capture SHA drift |
 | Six role/lifecycle pairs, transition endpoints, and four evidence phases | `validateRole`, `validateLifecycleTransition`, `validateEvidence` | Candidate and Target source/final states, Production, invalid transition |
 | Target pre/post intent dispatches full Bootstrap or Update gate | `validateRepository`, `validateBootstrap`, `validateUpdate` | both modes pre-review and post-review |
 | Full-SHA existence, reachability, checkout equality, generator registry | `validateProvenance` | valid provenance, unknown generator, checkout mismatch |

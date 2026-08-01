@@ -8,7 +8,7 @@ Result: `PASS_PR06C_CONTRACT_V4_AND_VALIDATOR_IMPLEMENTATION_READY_FOR_HUMAN_REV
 
 Owner: Promotion contract maintainers
 
-Created at: `2026-08-01T04:47:37Z`
+Created at: `2026-08-01T06:02:59Z`
 
 Authoritative scope: NONE
 
@@ -26,15 +26,15 @@ Related documents:
 
 Base SHA: `f65ab65525a9011b91823ff61520257a8460852f`
 
-Validated implementation SHA: `358e966bc015a530e6a62b7d2b87496842efc7cd`
+Validated implementation SHA: `98c1c4595152b594bfd5e68ffd215e18cfcffe4c`
 
 Final PR head SHA: `PENDING_EXTERNAL_GITHUB_FACT_AFTER_PUSH`
 
-Generated at: `2026-08-01T04:47:37Z`
+Generated at: `2026-08-01T06:02:59Z`
 
-Tests cases: `144`
+Tests cases: `147`
 
-Tests passed: `144`
+Tests passed: `147`
 
 Tests failed: `0`
 
@@ -51,7 +51,7 @@ exact manifest bytes. The manifest binds the RFC 8785 canonical evidence
 projection identified by `paperlens-evidence-binding-v1`; the only excluded
 pointer is `/manifest/sha256`. Additional or missing exclusions block.
 
-The constructibility verifier compiled all eight registry schemas and proved
+The constructibility verifier compiled all nine registry schemas and proved
 the dependency graph has zero cycles. It constructed schema-valid synthetic
 Artifact, Manifest, and Evidence values and reproduced both bindings.
 
@@ -61,7 +61,8 @@ The validator provides strict UTF-8 JSON parsing, approved-boundary loading,
 schema and generator registry resolution, safe path resolution, artifact and
 stable-ID inspection, scope validation, remote identity and provenance
 reachability, lifecycle-transition validation, safe Production-absence
-inspection, Bootstrap and Update gates, evidence and approval binding, stdout
+inspection, frozen remote-history evidence binding, Bootstrap and Update
+gates, evidence and approval binding, stdout
 reporting, and create-new JSON output below `reports/promotion-validator/`.
 
 All successful outcomes explicitly keep `promotionAuthorized` and
