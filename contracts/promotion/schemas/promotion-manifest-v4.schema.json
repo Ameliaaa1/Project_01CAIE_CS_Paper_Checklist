@@ -42,7 +42,7 @@
     },
     "provenance": {
       "type": "object", "additionalProperties": false,
-      "required": ["sourceCommit", "generatedAt", "generator"],
+      "required": ["sourceCommit", "generatedAt", "generator", "remoteHistory"],
       "properties": {
         "sourceCommit": {"$ref": "#/$defs/fullCommit"},
         "generatedAt": {"$ref": "#/$defs/utcTimestamp"},
@@ -54,6 +54,14 @@
             "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
             "registryPath": {"const": "contracts/promotion/generator-registry-v1.json"},
             "registrySha256": {"$ref": "#/$defs/sha256"}
+          }
+        },
+        "remoteHistory": {
+          "type": "object", "additionalProperties": false,
+          "required": ["evidencePath", "evidenceSha256"],
+          "properties": {
+            "evidencePath": {"$ref": "#/$defs/repositoryPath"},
+            "evidenceSha256": {"$ref": "#/$defs/sha256"}
           }
         }
       }

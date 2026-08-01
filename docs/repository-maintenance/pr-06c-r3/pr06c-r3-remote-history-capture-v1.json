@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "evidenceType": "REMOTE_HISTORY_CAPTURE_V1",
+  "evidencePurpose": "HISTORICAL_REVIEW",
   "repositoryIdentity": "Ameliaaa1/Project_01CAIE_CS_Paper_Checklist",
   "remoteURL": "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git",
   "remoteBranch": "refs/heads/main",

@@ -4,10 +4,11 @@
   "title": "PaperLens Remote History Capture V1",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "evidenceType", "repositoryIdentity", "remoteURL", "remoteBranch", "remoteCommitSHA", "captureTimestamp", "captureMethod", "localTrackingRef", "localTrackingRefSHA", "verificationResult"],
+  "required": ["schemaVersion", "evidenceType", "evidencePurpose", "repositoryIdentity", "remoteURL", "remoteBranch", "remoteCommitSHA", "captureTimestamp", "captureMethod", "localTrackingRef", "localTrackingRefSHA", "verificationResult"],
   "properties": {
     "schemaVersion": {"const": 1},
     "evidenceType": {"const": "REMOTE_HISTORY_CAPTURE_V1"},
+    "evidencePurpose": {"enum": ["HISTORICAL_REVIEW", "RUNTIME_PROMOTION"]},
     "repositoryIdentity": {"type": "string", "minLength": 1},
     "remoteURL": {"type": "string", "format": "uri"},
     "remoteBranch": {"type": "string", "pattern": "^refs/heads/[A-Za-z0-9._/-]+$"},

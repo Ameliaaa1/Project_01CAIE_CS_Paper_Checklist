@@ -34,6 +34,7 @@
     "test:production-config": "node tests/production-config.test.js",
     "test:documentation-validation": "node tests/documentation-validation.test.js",
     "test:promotion-validator": "node tests/promotion-validator.test.js",
+    "capture:remote-history": "node scripts/capture-remote-history.js",
     "verify:pr06c-r3": "node scripts/verify-pr06c-r3-contract.js",
     "validate:docs": "node scripts/validate-documentation.js --mode full",
     "validate:docs:changed": "node scripts/validate-documentation.js --mode changed"
