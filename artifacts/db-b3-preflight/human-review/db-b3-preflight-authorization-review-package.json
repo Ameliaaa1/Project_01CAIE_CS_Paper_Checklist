@@ -1,0 +1,65 @@
+{
+  "stage": "DB-B3_PRODUCTION_DATABASE_ESTABLISHMENT_AND_MIGRATION",
+  "generatedAt": "2026-07-31T12:12:55.016Z",
+  "status": "PENDING_PRELIMINARY_HUMAN_AUTHORIZATION",
+  "requestedDecision": "AUTHORIZE_DB_B3_READONLY_PRODUCTION_PREFLIGHT_INSPECTION_AND_BACKUP_PREPARATION",
+  "migrationDecisionRequestedNow": false,
+  "reasonMigrationDecisionNotYetEligible": "Production SQL state and backup readiness are not verified under the current no-connection/no-mutation authorization.",
+  "productionTargetMetadata": {
+    "path": "preflight/db-b3-production-target-metadata.json",
+    "sizeBytes": 2152,
+    "sha256": "560484fd4d2aca5c5e0138fd74629b6a9bc86f87bc37d60cb25db726c1d2f91b",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "schemaMigrationIdentity": {
+    "path": "preflight/db-b3-schema-migration-identity.json",
+    "sizeBytes": 1672,
+    "sha256": "4b3f25f18e5ead6f67a26ea9c6845443e74823a612fc249aaa85756485728a3f",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "productionStateAssessment": {
+    "path": "preflight/db-b3-production-state-assessment.json",
+    "sizeBytes": 1397,
+    "sha256": "92af098716b0d3b0889319a38f0096bf7a69ea5a71d3f0cbc64c1848bd2bb759",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "backupRecoveryReadiness": {
+    "path": "preflight/db-b3-backup-recovery-readiness.json",
+    "sizeBytes": 1410,
+    "sha256": "e8809ad2871e4efa7dcc21089465d30a3edd26f835d1c6e98ef131335a124e27",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "productionPreflightSummary": {
+    "path": "preflight/db-b3-production-preflight-summary.json",
+    "sizeBytes": 2063,
+    "sha256": "9d169030b84ba9ac04130cfd5442631db011ce24f32f53353a425aca1b7ea515",
+    "fileReadable": true,
+    "jsonValid": true,
+    "parseStatus": "PASS",
+    "mimeType": "application/json"
+  },
+  "approvedReadOnlyScope": "PENDING_HUMAN_DECISION",
+  "humanDecisionWrittenByCodex": false,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionMigration": false,
+  "productionWrite": false,
+  "productionRuntimeCutover": false,
+  "legacyDynamicStoreRetired": false,
+  "liveBusinessTrafficEnabled": false,
+  "vercelProductionDeployment": false,
+  "paymentProviderRuntimeEnabled": false
+}

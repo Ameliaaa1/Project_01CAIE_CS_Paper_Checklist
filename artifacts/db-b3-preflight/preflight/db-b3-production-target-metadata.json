@@ -1,0 +1,69 @@
+{
+  "stage": "DB-B3_PRODUCTION_DATABASE_ESTABLISHMENT_AND_MIGRATION",
+  "generatedAt": "2026-07-31T12:12:55.016Z",
+  "status": "PASS_METADATA_IDENTITY_VERIFIED",
+  "source": "NEON_MANAGEMENT_API_ONLY_NO_DATABASE_CONNECTION",
+  "project": {
+    "id": "lucky-river-45336837",
+    "name": "caie-paper-checklist",
+    "regionId": "aws-us-east-1",
+    "postgresVersion": 17,
+    "historyRetentionSeconds": 21600,
+    "writtenDataBytes": 0
+  },
+  "branch": {
+    "id": "br-silent-fog-avglbx9u",
+    "name": "production",
+    "primary": true,
+    "default": true,
+    "protected": false,
+    "currentState": "ready",
+    "logicalSize": 30875648,
+    "writtenDataBytes": 0,
+    "createdAt": "2026-07-29T04:37:27Z",
+    "updatedAt": "2026-07-30T09:10:36Z"
+  },
+  "endpoint": {
+    "id": "ep-small-dew-avh8e0sc",
+    "branchId": "br-silent-fog-avglbx9u",
+    "type": "read_write",
+    "regionId": "aws-us-east-1",
+    "currentState": "idle",
+    "pooledHostAvailable": true,
+    "poolerEnabled": false,
+    "passwordlessAccess": true,
+    "publicConnectionsBlocked": false,
+    "suspendedAt": "2026-07-29T05:12:15Z"
+  },
+  "database": {
+    "name": "neondb",
+    "ownerName": "neondb_owner",
+    "branchId": "br-silent-fog-avglbx9u",
+    "createdAt": "2026-07-29T04:37:27Z"
+  },
+  "role": {
+    "name": "neondb_owner",
+    "branchId": "br-silent-fog-avglbx9u",
+    "protected": false,
+    "authenticationMethod": "password",
+    "scopeClassification": "DATABASE_OWNER_MIGRATION_ROLE_REQUIRES_HUMAN_ACCEPTANCE"
+  },
+  "branchCount": 1,
+  "unexpectedBranchCount": 0,
+  "snapshotCount": 0,
+  "tlsRequirement": "REQUIRE",
+  "credentialMaterialRead": false,
+  "credentialMaterialRecorded": false,
+  "connectionStringRequested": false,
+  "productionTargetIdentityFrozenForMetadataReview": true,
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionMigration": false,
+  "productionWrite": false,
+  "productionRuntimeCutover": false,
+  "legacyDynamicStoreRetired": false,
+  "liveBusinessTrafficEnabled": false,
+  "vercelProductionDeployment": false,
+  "paymentProviderRuntimeEnabled": false
+}

@@ -1,0 +1,55 @@
+{
+  "stage": "DB-B3_PRODUCTION_DATABASE_ESTABLISHMENT_AND_MIGRATION",
+  "generatedAt": "2026-07-31T12:12:55.016Z",
+  "status": "BLOCKED_PRODUCTION_READONLY_INSPECTION_AND_BACKUP_AUTHORIZATION_REQUIRED",
+  "productionPreflight": "BLOCKED",
+  "completedChecks": {
+    "baseline": "PASS",
+    "metadataTargetIdentity": "PASS",
+    "schemaIdentity": "PASS",
+    "migrationIdentity": "PASS",
+    "localValidation": "PASS",
+    "legacyInputBoundary": "PASS",
+    "deploymentRuntimeBoundary": "PASS"
+  },
+  "blockedChecks": {
+    "productionSqlState": "UNVERIFIED",
+    "productionBackup": "NOT_CREATED",
+    "productionMigrationHumanDecisionEligibility": "NOT_READY"
+  },
+  "blockerCount": 3,
+  "blockers": [
+    "PRELIMINARY_READONLY_PRODUCTION_SQL_INSPECTION_AUTHORIZATION_REQUIRED",
+    "PRODUCTION_BACKUP_CREATION_AUTHORIZATION_REQUIRED",
+    "DB_B3_MIGRATION_HUMAN_REVIEW_NOT_ELIGIBLE_UNTIL_PREFLIGHT_COMPLETES"
+  ],
+  "proposedPreliminaryAuthorization": {
+    "decision": "AUTHORIZE_DB_B3_READONLY_PRODUCTION_PREFLIGHT_INSPECTION_AND_BACKUP_PREPARATION",
+    "allowed": [
+      "retrieve a Production connection string without recording it",
+      "connect read-only to the frozen target",
+      "inspect migration history, schemas, tables, indexes, constraints, and business row counts",
+      "create a named Neon snapshot from the frozen Production branch",
+      "verify snapshot metadata"
+    ],
+    "prohibited": [
+      "execute migrations",
+      "modify schema",
+      "insert update or delete business rows",
+      "runtime cutover",
+      "Production deployment",
+      "Payment Runtime"
+    ]
+  },
+  "subsequentMandatoryDecision": "APPROVE_DB_B3_PRODUCTION_DATABASE_MIGRATION",
+  "productionDatabaseConnected": false,
+  "productionDatabaseUsed": false,
+  "productionMigrationAuthorized": false,
+  "productionMigration": false,
+  "productionWrite": false,
+  "productionRuntimeCutover": false,
+  "legacyDynamicStoreRetired": false,
+  "liveBusinessTrafficEnabled": false,
+  "vercelProductionDeployment": false,
+  "paymentProviderRuntimeEnabled": false
+}
