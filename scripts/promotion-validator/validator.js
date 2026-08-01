@@ -135,16 +135,37 @@ function validateProvenance(root, boundary, manifest) {
   if (!/^[0-9a-f]{40}$/.test(source)) block("SOURCE_COMMIT_FORMAT", "sourceCommit must be lowercase full SHA");
   const git = (args) => {
     try { return execFileSync("git", args, { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim(); }
-    catch (error) { block("SOURCE_COMMIT_UNREACHABLE", `Git provenance check failed: git ${args.join(" ")}`); }
+    catch (error) { return null; }
   };
+  const approvedRepository = boundary.contract.provenanceValidation.approvedRepository;
+  let remote;
+  remote = git(["remote", "get-url", "origin"]);
+  if (!remote) block("REPOSITORY_ORIGIN_MISSING", "Repository origin remote is missing");
+  if (remote !== approvedRepository) block("REPOSITORY_ORIGIN_MISMATCH", "Repository origin remote is not approved");
+  if (git(["rev-parse", "--is-shallow-repository"]) === "true") block("REPOSITORY_SHALLOW", "Shallow repositories are not valid provenance boundaries");
   if (git(["cat-file", "-t", source]) !== "commit") block("SOURCE_COMMIT_NOT_COMMIT", "sourceCommit is not a commit");
   const head = git(["rev-parse", "HEAD"]);
   if (head !== source) block("SOURCE_COMMIT_CHECKOUT_MISMATCH", "Validator checkout must equal sourceCommit");
-  git(["merge-base", "--is-ancestor", source, boundary.contract.provenanceValidation.approvedHistoryRef]);
+  if (!git(["show-ref", "--verify", "refs/remotes/origin/main"])) block("APPROVED_HISTORY_REF_MISSING", "Approved history ref is missing");
+  try { execFileSync("git", ["merge-base", "--is-ancestor", source, boundary.contract.provenanceValidation.approvedHistoryRef], { cwd: root, stdio: "ignore" }); }
+  catch (error) { block("SOURCE_COMMIT_NOT_REACHABLE", "sourceCommit is not reachable from approved history"); }
   const generator = boundary.generators.generators.find((entry) => entry.generatorId === manifest.provenance.generator.id && entry.version === manifest.provenance.generator.version);
   if (!generator) block("GENERATOR_UNKNOWN", "Generator identity is not registered");
   if (generator.status !== "APPROVED_FOR_CONTRACT_USE" || !generator.allowedOutputs.includes("promotion-manifest")) block("GENERATOR_NOT_APPROVED", "Generator is not approved for promotion manifests");
   if (manifest.provenance.generator.registryPath !== boundary.contract.generatorRegistry.path || manifest.provenance.generator.registrySha256 !== boundary.contract.generatorRegistry.byteSha256) block("GENERATOR_REGISTRY_BINDING_MISMATCH", "Generator registry binding mismatch");
+}
+
+function validateLifecycleTransition(boundary, phase, lifecycleState) {
+  const transitions = boundary.contract.lifecycleTransitions;
+  if (!Array.isArray(transitions)) block("LIFECYCLE_TRANSITIONS_MISSING", "Contract lifecycleTransitions must be an array");
+  const matches = transitions.filter((entry) => entry.requiredEvidencePhase === phase);
+  if (matches.length !== 1) block("LIFECYCLE_TRANSITION_INVALID", `Expected exactly one lifecycle transition for ${phase}`);
+  const transition = matches[0];
+  const expectedTo = { candidate: "READY_FOR_PROMOTION_REVIEW", "target-pre-review": "READY_FOR_HUMAN_REVIEW", "target-post-review": "APPROVED_FOR_EXECUTION" }[phase];
+  if (!expectedTo || transition.to !== expectedTo) block("LIFECYCLE_TRANSITION_INVALID", `Invalid lifecycle transition for ${phase}`);
+  const expectedFrom = { candidate: "CANDIDATE_VALIDATED", "target-pre-review": "TARGET_VALIDATED", "target-post-review": "READY_FOR_HUMAN_REVIEW" }[phase];
+  if (transition.from !== expectedFrom) block("LIFECYCLE_TRANSITION_INVALID", `Invalid lifecycle transition source for ${phase}`);
+  if (lifecycleState !== (phase === "candidate" ? "CANDIDATE_VALIDATED" : phase === "target-pre-review" ? "READY_FOR_HUMAN_REVIEW" : "APPROVED_FOR_EXECUTION")) block("LIFECYCLE_TRANSITION_STATE_MISMATCH", `Lifecycle state does not satisfy ${phase} transition`);
 }
 
 function bindEqual(actual, expected, code, name) {
@@ -194,6 +215,7 @@ function validateRole(root, boundary, role, phase) {
   const manifestFile = readJson(root, roleSpec.manifestPath);
   const manifest = manifestFile.value;
   validateSchema(boundary, "paperlens-promotion-manifest", 4, manifest, roleSpec.manifestPath);
+  if (phase && phase !== "current-production") validateLifecycleTransition(boundary, phase, manifest.lifecycleState);
   const allowed = boundary.contract.roleLifecycleMatrix.some((entry) => entry.role === role && entry.lifecycleState === manifest.lifecycleState);
   if (!allowed || manifest.authorityRole !== role) block("ROLE_LIFECYCLE_MISMATCH", "Manifest role/lifecycle combination is not allowed", roleSpec.manifestPath);
   if (phase) {
@@ -268,7 +290,12 @@ function validateRepository(options) {
     let validation;
     if (intent === "candidate") validation = { outcome: "PASS", roles: [validateRole(root, boundary, "candidate", "candidate")] };
     else if (intent === "current-production") validation = { outcome: "PASS", roles: [validateRole(root, boundary, "current-production", "current-production")] };
-    else if (intent === "target-pre-review") validation = { outcome: "READY_FOR_HUMAN_REVIEW", roles: [validateRole(root, boundary, "promotion-target", "target-pre-review")] };
+    else if (intent === "target-pre-review") {
+      const target = readJson(root, boundary.contract.authorityRoles["promotion-target"].manifestPath).value;
+      if (target.promotion && target.promotion.mode === "bootstrap") validation = validateBootstrap(root, boundary, false);
+      else if (target.promotion && target.promotion.mode === "update") validation = validateUpdate(root, boundary, false);
+      else block("TARGET_PROMOTION_MODE_INVALID", "Pre-review Target must declare bootstrap or update mode");
+    }
     else if (intent === "target-post-review") {
       const target = readJson(root, boundary.contract.authorityRoles["promotion-target"].manifestPath).value;
       if (target.promotion && target.promotion.mode === "bootstrap") validation = validateBootstrap(root, boundary, true);
@@ -298,4 +325,4 @@ function writeReport(root, relative, report) {
   catch (error) { block(error.code === "EEXIST" ? "REPORT_EXISTS" : "REPORT_WRITE_FAILED", error.message, relative); }
 }
 
-module.exports = { CONTRACT_PATH, CONTRACT_SHA256, HASH_MANIFEST_PATH, HASH_MANIFEST_SHA256, VALIDATOR_ID, VALIDATOR_VERSION, ValidatorBlock, loadBoundary, validateRepository, writeReport };
+module.exports = { CONTRACT_PATH, CONTRACT_SHA256, HASH_MANIFEST_PATH, HASH_MANIFEST_SHA256, VALIDATOR_ID, VALIDATOR_VERSION, ValidatorBlock, loadBoundary, validateLifecycleTransition, validateRepository, writeReport };

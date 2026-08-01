@@ -19,16 +19,29 @@ function assertRepositoryPath(root, relative, options = {}) {
   if (segments.some((segment) => segment === "." || segment === "..")) throw pathError("PATH_DOT_SEGMENT", "Dot segments are prohibited");
   if (options.prefix && !relative.startsWith(options.prefix)) throw pathError("PATH_ROLE_BOUNDARY", `Path must be under ${options.prefix}`);
   const absoluteRoot = path.resolve(root);
+  let rootStat;
+  try { rootStat = fs.lstatSync(absoluteRoot); }
+  catch (error) {
+    if (error.code === "ENOENT") throw pathError("PATH_ROOT_MISSING", "Repository root does not exist");
+    throw error;
+  }
+  if (rootStat.isSymbolicLink()) throw pathError("PATH_ROOT_SYMLINK", "Repository root symlink is prohibited");
+  if (!rootStat.isDirectory()) throw pathError("PATH_ROOT_NOT_DIRECTORY", "Repository root must be a directory");
   const absolute = path.resolve(root, ...segments);
   if (!(absolute === absoluteRoot || absolute.startsWith(`${absoluteRoot}${path.sep}`))) throw pathError("PATH_ESCAPE", "Path escapes repository");
   let current = absoluteRoot;
   for (let index = 0; index < segments.length; index += 1) {
     current = path.join(current, segments[index]);
-    if (!fs.existsSync(current)) {
-      if (options.mustExist !== false) throw pathError("PATH_MISSING", `Path does not exist: ${relative}`);
-      break;
+    let stat;
+    try { stat = fs.lstatSync(current); }
+    catch (error) {
+      if (error.code === "ENOENT") {
+        if (options.mustExist !== false) throw pathError("PATH_MISSING", `Path does not exist: ${relative}`);
+        break;
+      }
+      throw error;
     }
-    if (fs.lstatSync(current).isSymbolicLink()) throw pathError("PATH_SYMLINK", `Symlink component is prohibited: ${relative}`);
+    if (stat.isSymbolicLink()) throw pathError("PATH_SYMLINK", `Symlink component is prohibited: ${relative}`);
   }
   return absolute;
 }
