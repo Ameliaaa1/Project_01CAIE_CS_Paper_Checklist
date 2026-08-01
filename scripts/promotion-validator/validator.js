@@ -12,9 +12,9 @@ const { assertRepositoryPath } = require("./safe-path");
 const VALIDATOR_ID = "paperlens-promotion-gate-validator";
 const VALIDATOR_VERSION = "1.0.0";
 const CONTRACT_PATH = "contracts/promotion/promotion-validator-contract-v4.json";
-const CONTRACT_SHA256 = "f884e5dafe3715204363f0e706172f0adbbce8d22139e6b3113145c7419941e6";
+const CONTRACT_SHA256 = "abc0f127701c02a3aa055543ad550236f9ebad82dcb21abb948ecd958dae6016";
 const HASH_MANIFEST_PATH = "docs/repository-maintenance/pr-06c-r3/pr06c-r3-contract-hash-manifest.json";
-const HASH_MANIFEST_SHA256 = "51635c921e68d5de9cb5a4bd992ae9076ad4d3c35308b91188250d06e4390a07";
+const HASH_MANIFEST_SHA256 = "eb3fe9729b21bea8ccb762f04504b051365d632f0fd02bce8794910923eae394";
 
 class ValidatorBlock extends Error {
   constructor(code, message, objectPath = null) {
@@ -78,7 +78,15 @@ function loadBoundary(root) {
     catch (error) { block("SCHEMA_STRICT_COMPILE_FAILED", error.message, entry.path); }
   }
   const generators = readJson(root, contract.generatorRegistry.path).value;
-  return { contract, registry, schemas, generators };
+  const boundary = { contract, registry, schemas, generators };
+  const remoteBinding = contract.provenanceValidation.remoteHistoryEvidence;
+  const remoteFile = readJson(root, remoteBinding.path);
+  if (sha256(remoteFile.bytes) !== remoteBinding.byteSha256) block("REMOTE_HISTORY_EVIDENCE_HASH_MISMATCH", "Remote history evidence byte hash mismatch", remoteBinding.path);
+  validateSchema(boundary, remoteBinding.schemaId, remoteBinding.schemaVersion, remoteFile.value, remoteBinding.path);
+  const remoteHistory = remoteFile.value;
+  const approvedIdentity = contract.provenanceValidation.approvedRepository.replace(/^https:\/\/github\.com\//, "").replace(/\.git$/, "");
+  if (remoteHistory.repositoryIdentity !== approvedIdentity || remoteHistory.remoteURL !== contract.provenanceValidation.approvedRepository || remoteHistory.remoteBranch !== contract.provenanceValidation.approvedRemoteBranch || remoteHistory.localTrackingRef !== contract.provenanceValidation.approvedHistoryRef || remoteHistory.localTrackingRefSHA !== remoteHistory.remoteCommitSHA) block("REMOTE_HISTORY_EVIDENCE_BINDING_MISMATCH", "Remote history evidence does not bind the approved repository, branch, tracking ref, and SHA", remoteBinding.path);
+  return { ...boundary, remoteHistory };
 }
 
 function schemaValidator(boundary, id, version, currentOnly = true) {
@@ -145,12 +153,15 @@ function validateProvenance(root, boundary, manifest) {
   const shallow = git(["rev-parse", "--is-shallow-repository"]);
   if (shallow === null) block("REPOSITORY_SHALLOW_STATE_UNKNOWN", "Repository shallow state cannot be established");
   if (shallow === "true") block("REPOSITORY_SHALLOW", "Shallow repositories are not valid provenance boundaries");
+  const frozenRemoteCommit = boundary.remoteHistory.remoteCommitSHA;
+  if (git(["cat-file", "-t", frozenRemoteCommit]) !== "commit") block("REMOTE_HISTORY_COMMIT_MISSING", "Frozen remote commit is not available as a local commit");
   if (git(["cat-file", "-t", source]) !== "commit") block("SOURCE_COMMIT_NOT_COMMIT", "sourceCommit is not a commit");
   const head = git(["rev-parse", "HEAD"]);
   if (head !== source) block("SOURCE_COMMIT_CHECKOUT_MISMATCH", "Validator checkout must equal sourceCommit");
   const approvedHistoryRef = boundary.contract.provenanceValidation.approvedHistoryRef;
   if (!git(["show-ref", "--verify", approvedHistoryRef])) block("APPROVED_HISTORY_REF_MISSING", "Approved history ref is missing");
-  try { execFileSync("git", ["merge-base", "--is-ancestor", source, approvedHistoryRef], { cwd: root, stdio: "ignore" }); }
+  if (git(["rev-parse", approvedHistoryRef]) !== frozenRemoteCommit) block("REMOTE_HISTORY_REF_MISMATCH", "Local approved history ref does not equal frozen remote history evidence");
+  try { execFileSync("git", ["merge-base", "--is-ancestor", source, frozenRemoteCommit], { cwd: root, stdio: "ignore" }); }
   catch (error) { block("SOURCE_COMMIT_NOT_REACHABLE", "sourceCommit is not reachable from approved history"); }
   const generator = boundary.generators.generators.find((entry) => entry.generatorId === manifest.provenance.generator.id && entry.version === manifest.provenance.generator.version);
   if (!generator) block("GENERATOR_UNKNOWN", "Generator identity is not registered");

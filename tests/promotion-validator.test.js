@@ -22,18 +22,20 @@ function copyFile(root, relative) { write(root, relative, fs.readFileSync(path.j
 
 function createRoot() {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "promotion-validator-"));
-  git(root, ["init", "-q"]); git(root, ["config", "user.name", "Promotion Fixture"]); git(root, ["config", "user.email", "fixture@example.invalid"]);
+  fs.rmdirSync(root);
+  execFileSync("git", ["clone", "-q", "--shared", "--no-checkout", sourceRoot, root], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
+  git(root, ["config", "user.name", "Promotion Fixture"]); git(root, ["config", "user.email", "fixture@example.invalid"]);
+  git(root, ["update-ref", "HEAD", "f65ab65525a9011b91823ff61520257a8460852f"]);
+  const sourceCommit = git(root, ["rev-parse", "HEAD"]);
   for (const relative of [
     "contracts/promotion/promotion-validator-contract-v4.json", "contracts/promotion/schema-registry-v2.json", "contracts/promotion/generator-registry-v1.json",
     "contracts/promotion/schemas/bootstrap-approval-v1.schema.json", "contracts/promotion/schemas/promotion-manifest-v3.schema.json", "contracts/promotion/schemas/promotion-manifest-v4.schema.json",
     "contracts/promotion/schemas/promotion-validation-evidence-v1.schema.json", "contracts/promotion/schemas/promotion-validation-evidence-v2.schema.json", "contracts/promotion/schemas/question-corpus-v1.schema.json",
-    "contracts/promotion/schemas/update-approval-v1.schema.json", "contracts/promotion/schemas/update-difference-request-v1.schema.json",
-    "docs/repository-maintenance/pr-06c-r3/pr06c-r3-contract-hash-manifest.json",
+    "contracts/promotion/schemas/remote-history-capture-v1.schema.json", "contracts/promotion/schemas/update-approval-v1.schema.json", "contracts/promotion/schemas/update-difference-request-v1.schema.json",
+    "docs/repository-maintenance/pr-06c-r3/pr06c-r3-contract-hash-manifest.json", "docs/repository-maintenance/pr-06c-r3/pr06c-r3-remote-history-capture-v1.json",
   ]) copyFile(root, relative);
-  git(root, ["add", "."]); git(root, ["commit", "-qm", "synthetic source boundary"]);
-  const sourceCommit = git(root, ["rev-parse", "HEAD"]);
-  git(root, ["remote", "add", "origin", "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git"]);
-  git(root, ["update-ref", "refs/remotes/origin/main", sourceCommit]);
+  git(root, ["remote", "set-url", "origin", "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git"]);
+  git(root, ["update-ref", "refs/remotes/origin/main", "f65ab65525a9011b91823ff61520257a8460852f"]);
   return { root, sourceCommit };
 }
 
@@ -151,6 +153,9 @@ register("wrong origin blocks", "provenance", () => withFixture(() => { const f=
 register("missing origin blocks", "provenance", () => withFixture(() => { const f=createRoot(); git(f.root,["remote","remove","origin"]); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertBlock(result(f,"candidate"),"REPOSITORY_ORIGIN_MISSING")));
 register("shallow repository blocks", "provenance", () => withFixture(() => { const f=createRoot(); fs.writeFileSync(path.join(f.root,".git/shallow"),`${f.sourceCommit}\n`); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertBlock(result(f,"candidate"),"REPOSITORY_SHALLOW")));
 register("missing approved history blocks", "provenance", () => withFixture(() => { const f=createRoot(); git(f.root,["update-ref","-d","refs/remotes/origin/main"]); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertBlock(result(f,"candidate"),"APPROVED_HISTORY_REF_MISSING")));
+register("fake local origin main blocks", "provenance", () => withFixture(() => { const f=createRoot(); git(f.root,["update-ref","refs/remotes/origin/main",`${f.sourceCommit}^`]); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertBlock(result(f,"candidate"),"REMOTE_HISTORY_REF_MISMATCH")));
+register("missing remote history evidence blocks", "provenance", () => withFixture(() => { const f=createRoot(); fs.unlinkSync(path.join(f.root,"docs/repository-maintenance/pr-06c-r3/pr06c-r3-remote-history-capture-v1.json")); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertBlock(result(f,"candidate"),"PATH_MISSING")));
+register("remote history evidence SHA drift blocks", "provenance", () => withFixture(() => { const f=createRoot(); fs.appendFileSync(path.join(f.root,"docs/repository-maintenance/pr-06c-r3/pr06c-r3-remote-history-capture-v1.json")," "); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertBlock(result(f,"candidate"),"REMOTE_HISTORY_EVIDENCE_HASH_MISMATCH")));
 register("duplicate stable ID blocks", "artifact", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",[{stableId:"dup",syllabus:"0478"},{stableId:"dup",syllabus:"0478"}]); return f; }, (f) => assertBlock(result(f,"candidate"),"STABLE_ID_DUPLICATE")));
 register("unsupported 9709 blocks", "artifact", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",[{stableId:"synthetic",syllabus:"9709"}]); return f; }, (f) => assertBlock(result(f,"candidate"),"SCHEMA_VALIDATION_FAILED")));
 register("projection mismatch blocks", "evidence", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",candidateRecords,{mutateEvidenceAfterManifest:e=>{e.evidenceId="changed";}}); return f; }, (f) => assertBlock(result(f,"candidate"),"EVIDENCE_PROJECTION_HASH_MISMATCH")));

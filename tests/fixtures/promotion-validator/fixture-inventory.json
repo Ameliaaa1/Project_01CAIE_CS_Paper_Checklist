@@ -6,5 +6,5 @@
   "deploymentInput": false,
   "materialization": "TEMPORARY_GIT_REPOSITORY_ONLY",
   "positiveCases": ["candidate", "current-production", "bootstrap-pre-review", "bootstrap-post-review", "update-pre-review", "update-post-review", "evidence-supersession", "stdout-output", "create-new-report"],
-  "adversarialCases": ["contract-drift", "duplicate-json-key", "bom", "invalid-utf8", "trailing-content", "unknown-generator", "checkout-mismatch", "role-lifecycle", "duplicate-stable-id", "unsupported-9709", "scope-hash", "projection-hash", "manifest-hash", "path-traversal", "symlink", "stale-evidence", "supersession-cycle", "approval-binding", "report-overwrite", "report-boundary"]
+  "adversarialCases": ["contract-drift", "duplicate-json-key", "bom", "invalid-utf8", "trailing-content", "unknown-generator", "checkout-mismatch", "wrong-origin", "missing-origin", "shallow-repository", "missing-approved-history", "fake-origin-main", "missing-remote-history-evidence", "remote-history-evidence-sha-drift", "role-lifecycle", "duplicate-stable-id", "unsupported-9709", "scope-hash", "projection-hash", "manifest-hash", "path-traversal", "symlink", "stale-evidence", "supersession-cycle", "approval-binding", "report-overwrite", "report-boundary"]
 }

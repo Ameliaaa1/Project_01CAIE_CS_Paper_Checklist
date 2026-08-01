@@ -4,8 +4,8 @@
   "projectionProfile": "paperlens-evidence-binding-v1",
   "supersedesContractVersion": 3,
   "files": [
-    {"path":"contracts/promotion/promotion-validator-contract-v4.json","evidenceClass":"historical","kind":"contract","sizeBytes":10497,"sha256":"f884e5dafe3715204363f0e706172f0adbbce8d22139e6b3113145c7419941e6"},
-    {"path":"contracts/promotion/schema-registry-v2.json","evidenceClass":"historical","kind":"schema-registry","sizeBytes":2738,"sha256":"aa8cd9070e6d90a6a2aec186e958466e45d093b8141bf61cf802843a52a25818"},
+    {"path":"contracts/promotion/promotion-validator-contract-v4.json","evidenceClass":"historical","kind":"contract","sizeBytes":10794,"sha256":"abc0f127701c02a3aa055543ad550236f9ebad82dcb21abb948ecd958dae6016"},
+    {"path":"contracts/promotion/schema-registry-v2.json","evidenceClass":"historical","kind":"schema-registry","sizeBytes":3074,"sha256":"606406ac783a8f050ed2e1dabfc65ed07576d23dc8157aa0635a24c60db96518"},
     {"path":"contracts/promotion/generator-registry-v1.json","evidenceClass":"historical","kind":"generator-registry","sizeBytes":437,"sha256":"a2933baefec15d2188f8549dbfd44ae78c0b18585380e231432b970f113c3dfd"},
     {"path":"contracts/promotion/schemas/bootstrap-approval-v1.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":968,"sha256":"d825631f1b4be17d54dcfea27054d558d13256e7544d9ee47b82c17081724d39","canonicalSha256":"861841a248a85453e273f470a572d1556c1f65c1e7ac7060cd484e3873f29b22"},
     {"path":"contracts/promotion/schemas/promotion-manifest-v3.schema.json","evidenceClass":"historical","kind":"superseded-schema","sizeBytes":9567,"sha256":"f3ee6f7acc7383686d1abd840ff061afc95421a21380f06e3b914bcd8152dcf7","canonicalSha256":"eef493ec86ff27b2741697185257b28c871bb46b43ecf4a2d3b8fe3e3a92f698"},
@@ -13,7 +13,9 @@
     {"path":"contracts/promotion/schemas/promotion-validation-evidence-v1.schema.json","evidenceClass":"historical","kind":"superseded-schema","sizeBytes":6441,"sha256":"1dffbe04b6523e162853647c32e02d915e3a32beeb41537837b61d1031475f08","canonicalSha256":"d21653b3cd121b23ed64071ebf1aec364b91a75a6cab442521d789ab64c0f4de"},
     {"path":"contracts/promotion/schemas/promotion-validation-evidence-v2.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":5724,"sha256":"368725d2e34929868b3f820802a996275768d4b431f0e8d8811bc8965a2b51a0","canonicalSha256":"ad88b34d4f51bc42e4cf863785ad3547d98a1cf4cc81f8e65f22f96cca1ef8b4"},
     {"path":"contracts/promotion/schemas/question-corpus-v1.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":649,"sha256":"1b95bd201268a2125178c47367cbbd550f19695a1ce725c8401da43eaa7eedb1","canonicalSha256":"8eb88e79f22918a80d86bad28e322e316d03684bb69539478d908ba3aa7fe872"},
+    {"path":"contracts/promotion/schemas/remote-history-capture-v1.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":1182,"sha256":"10d46acc0b3dbe93e6e5eead7dfbb102ce068bda9f0c51710f55786cfe9ac3d2","canonicalSha256":"2abf8abcd6f11c356b15665a7a0e9c9a41e080d267352601d0cb0ac883201d29"},
     {"path":"contracts/promotion/schemas/update-approval-v1.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":1511,"sha256":"1135816eceef610db4beeacfb7c6f7d4adc227a9494b01469372fa5d38c958c4","canonicalSha256":"6ba3056cf4561ec9c2ea2d8c6bffff86acd754bed6e9d833eae27dc60fa5c729"},
-    {"path":"contracts/promotion/schemas/update-difference-request-v1.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":2052,"sha256":"38dfbc140378b609296e83924354a7aa0e37c9ead1c62fb50190649962c85ef8","canonicalSha256":"47270c5069768e5acb803d91578761e8079f3c67b870568a62b01da34f3074fb"}
+    {"path":"contracts/promotion/schemas/update-difference-request-v1.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":2052,"sha256":"38dfbc140378b609296e83924354a7aa0e37c9ead1c62fb50190649962c85ef8","canonicalSha256":"47270c5069768e5acb803d91578761e8079f3c67b870568a62b01da34f3074fb"},
+    {"path":"docs/repository-maintenance/pr-06c-r3/pr06c-r3-remote-history-capture-v1.json","evidenceClass":"historical","kind":"remote-history-evidence","sizeBytes":586,"sha256":"02a8454a5fabb2db31bc439fe990464ff7e424cde277f95bbc0c81e91c429407"}
   ]
 }
