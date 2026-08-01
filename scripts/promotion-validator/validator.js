@@ -168,7 +168,21 @@ function validateLifecycleTransition(boundary, phase, lifecycleState) {
   if (!expectedTo || transition.to !== expectedTo) block("LIFECYCLE_TRANSITION_INVALID", `Invalid lifecycle transition for ${phase}`);
   const expectedFrom = { candidate: "CANDIDATE_VALIDATED", "target-pre-review": "TARGET_VALIDATED", "target-post-review": "READY_FOR_HUMAN_REVIEW" }[phase];
   if (transition.from !== expectedFrom) block("LIFECYCLE_TRANSITION_INVALID", `Invalid lifecycle transition source for ${phase}`);
-  if (lifecycleState !== (phase === "candidate" ? "CANDIDATE_VALIDATED" : phase === "target-pre-review" ? "READY_FOR_HUMAN_REVIEW" : "APPROVED_FOR_EXECUTION")) block("LIFECYCLE_TRANSITION_STATE_MISMATCH", `Lifecycle state does not satisfy ${phase} transition`);
+  if (lifecycleState !== transition.from && lifecycleState !== transition.to) block("LIFECYCLE_TRANSITION_STATE_MISMATCH", `Lifecycle state is outside the ${phase} transition boundary`);
+}
+
+function assertProductionAbsent(root, boundary) {
+  const productionPath = boundary.contract.authorityRoles["current-production"].manifestPath;
+  let absolute;
+  try { absolute = assertRepositoryPath(root, productionPath, { mustExist: false }); }
+  catch (error) { block(error.code || "PATH_INVALID", error.message, productionPath); }
+  try {
+    fs.lstatSync(absolute);
+    block("BOOTSTRAP_PRODUCTION_PRESENT", "Bootstrap requires Current Production manifest to be absent", productionPath);
+  } catch (error) {
+    if (error instanceof ValidatorBlock) throw error;
+    if (error.code !== "ENOENT") block("PRODUCTION_ABSENCE_CHECK_FAILED", error.message, productionPath);
+  }
 }
 
 function bindEqual(actual, expected, code, name) {
@@ -245,8 +259,7 @@ function approvalFile(root, boundary, target, kind) {
 }
 
 function validateBootstrap(root, boundary, postReview) {
-  const productionPath = boundary.contract.authorityRoles["current-production"].manifestPath;
-  if (fs.existsSync(path.join(root, productionPath))) block("BOOTSTRAP_PRODUCTION_PRESENT", "Bootstrap requires Current Production manifest to be absent");
+  assertProductionAbsent(root, boundary);
   const candidate = validateRole(root, boundary, "candidate", "candidate");
   const target = validateRole(root, boundary, "promotion-target", postReview ? "target-post-review" : "target-pre-review");
   if (canonicalize(identity(candidate.manifest)) !== canonicalize(identity(target.manifest))) block("CANDIDATE_TARGET_IDENTITY_MISMATCH", "Candidate and Target identities differ");
