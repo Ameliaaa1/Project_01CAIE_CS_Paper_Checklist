@@ -142,12 +142,15 @@ function validateProvenance(root, boundary, manifest) {
   remote = git(["remote", "get-url", "origin"]);
   if (!remote) block("REPOSITORY_ORIGIN_MISSING", "Repository origin remote is missing");
   if (remote !== approvedRepository) block("REPOSITORY_ORIGIN_MISMATCH", "Repository origin remote is not approved");
-  if (git(["rev-parse", "--is-shallow-repository"]) === "true") block("REPOSITORY_SHALLOW", "Shallow repositories are not valid provenance boundaries");
+  const shallow = git(["rev-parse", "--is-shallow-repository"]);
+  if (shallow === null) block("REPOSITORY_SHALLOW_STATE_UNKNOWN", "Repository shallow state cannot be established");
+  if (shallow === "true") block("REPOSITORY_SHALLOW", "Shallow repositories are not valid provenance boundaries");
   if (git(["cat-file", "-t", source]) !== "commit") block("SOURCE_COMMIT_NOT_COMMIT", "sourceCommit is not a commit");
   const head = git(["rev-parse", "HEAD"]);
   if (head !== source) block("SOURCE_COMMIT_CHECKOUT_MISMATCH", "Validator checkout must equal sourceCommit");
-  if (!git(["show-ref", "--verify", "refs/remotes/origin/main"])) block("APPROVED_HISTORY_REF_MISSING", "Approved history ref is missing");
-  try { execFileSync("git", ["merge-base", "--is-ancestor", source, boundary.contract.provenanceValidation.approvedHistoryRef], { cwd: root, stdio: "ignore" }); }
+  const approvedHistoryRef = boundary.contract.provenanceValidation.approvedHistoryRef;
+  if (!git(["show-ref", "--verify", approvedHistoryRef])) block("APPROVED_HISTORY_REF_MISSING", "Approved history ref is missing");
+  try { execFileSync("git", ["merge-base", "--is-ancestor", source, approvedHistoryRef], { cwd: root, stdio: "ignore" }); }
   catch (error) { block("SOURCE_COMMIT_NOT_REACHABLE", "sourceCommit is not reachable from approved history"); }
   const generator = boundary.generators.generators.find((entry) => entry.generatorId === manifest.provenance.generator.id && entry.version === manifest.provenance.generator.version);
   if (!generator) block("GENERATOR_UNKNOWN", "Generator identity is not registered");
