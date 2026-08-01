@@ -1,14 +1,14 @@
 # PR-06C-R3 Contract V4 and Validator Implementation Report
 
-Task: `PR06C-R3-CONTRACT-V4-AND-VALIDATOR-IMPLEMENTATION`
+Task: `PR06C-R3-R2-PROMOTION-SESSION-REMOTE-HISTORY-BOUNDARY-REPAIR`
 
 Status: `READY_FOR_HUMAN_REVIEW`
 
-Result: `PASS_PR06C_CONTRACT_V4_AND_VALIDATOR_IMPLEMENTATION_READY_FOR_HUMAN_REVIEW`
+Result: `READY_PR06C_R3_R2_PROMOTION_SESSION_REMOTE_HISTORY_BOUNDARY_HUMAN_REVIEW`
 
 Owner: Promotion contract maintainers
 
-Created at: `2026-08-01T06:38:34Z`
+Created at: `2026-08-01T07:33:34Z`
 
 Authoritative scope: NONE
 
@@ -26,15 +26,15 @@ Related documents:
 
 Base SHA: `f65ab65525a9011b91823ff61520257a8460852f`
 
-Validated implementation SHA: `0215738f8d025d314af7809b8dab1832bf912c01`
+Validated implementation SHA: `aa7efe68aa0d66b23e02dab6d1d63bf5f1959f0e`
 
 Final PR head SHA: `PENDING_EXTERNAL_GITHUB_FACT_AFTER_PUSH`
 
-Generated at: `2026-08-01T06:38:34Z`
+Generated at: `2026-08-01T07:33:34Z`
 
-Tests cases: `155`
+Tests cases: `165`
 
-Tests passed: `155`
+Tests passed: `165`
 
 Tests failed: `0`
 
@@ -59,10 +59,10 @@ Artifact, Manifest, and Evidence values and reproduced both bindings.
 
 The validator provides strict UTF-8 JSON parsing, approved-boundary loading,
 schema and generator registry resolution, safe path resolution, artifact and
-stable-ID inspection, scope validation, remote identity and provenance
-reachability, lifecycle-transition validation, safe Production-absence
-inspection, dynamic manifest-bound runtime remote-history evidence, Bootstrap
-and Update gates, evidence and approval binding, stdout
+stable-ID inspection, scope validation, remote identity and historical
+Manifest provenance reachability, lifecycle-transition validation, safe
+Production-absence inspection, Target-bound Promotion session remote-history
+evidence, Bootstrap and Update gates, evidence and approval binding, stdout
 reporting, and create-new JSON output below `reports/promotion-validator/`.
 
 All successful outcomes explicitly keep `promotionAuthorized` and
@@ -80,6 +80,9 @@ included. Test fixtures are synthetic specifications materialized only in
 temporary Git repositories.
 
 The checked-in `REMOTE_HISTORY_CAPTURE_V1` is immutable historical review
-evidence only. Runtime captures are generated independently, carry
-`RUNTIME_PROMOTION`, and are byte-hash-bound by each manifest; advancing main
-does not modify the Contract, validator constants, or contract hash manifest.
+evidence only. Persistent manifests bind `MANIFEST_PROVENANCE` evidence and do
+not require future `origin/main` equality. Runtime captures are generated per
+Promotion session, carry `RUNTIME_PROMOTION` plus the exact `promotionId`, and
+are bound only through Promotion Target metadata. A session validates current
+remote history and reachability of every participating role without rewriting
+historical Production or Candidate manifests.

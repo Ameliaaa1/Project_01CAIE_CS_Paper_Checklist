@@ -4,7 +4,7 @@ Status: `READY_FOR_HUMAN_REVIEW`
 
 Owner: Promotion contract maintainers
 
-Created at: `2026-08-01T06:38:34Z`
+Created at: `2026-08-01T07:33:34Z`
 
 Authoritative scope: NONE
 
@@ -22,11 +22,11 @@ Related documents:
 - [ ] All six role/lifecycle pairs, transition endpoints, and four evidence phases are enforced.
 - [ ] Candidate, Current Production, Target pre/post, Bootstrap, and Update paths are covered.
 - [ ] `0478` and `9618` pass while `9709` blocks.
-- [ ] Provenance checks verify exact `origin`, non-shallow history, approved ref, object type, reachability, and checkout equality.
-- [ ] Historical `REMOTE_HISTORY_CAPTURE_V1` is immutable review evidence and is rejected as runtime input.
-- [ ] Runtime capture is generated independently and byte-hash-bound through Manifest provenance.
-- [ ] Advancing main accepts a new runtime capture without modifying Contract, validator constants, or contract hash manifest.
-- [ ] Old capture reuse, fake `origin/main`, missing evidence, repository/branch/SHA drift, and capture failure all block.
+- [ ] Persistent manifests bind `MANIFEST_PROVENANCE`; future `origin/main` equality and checkout equality are not required.
+- [ ] Promotion Target binds one `RUNTIME_PROMOTION` capture to its exact `promotionId`.
+- [ ] Promotion session validation checks current tracking-ref equality and every participating role's source reachability.
+- [ ] Production created at A remains byte-identical and validates when Update runs at B.
+- [ ] Historical-as-runtime, runtime-as-history, old capture reuse, fake `origin/main`, session-ID drift, and unrelated role history all block.
 - [ ] Bootstrap Production absence blocks present manifests, directory symlinks, and broken manifest symlinks.
 - [ ] Fixtures remain non-authoritative and contain no real Production data.
 - [ ] Reports cannot overwrite or escape the approved prefix.
@@ -58,7 +58,7 @@ Blocker count: `PENDING`
 
 Suggested approval token:
 
-`PASS_PR06C_R3_R1_DYNAMIC_REMOTE_HISTORY_EVIDENCE_HUMAN_REVIEW`
+`PASS_PR06C_R3_R2_PROMOTION_SESSION_REMOTE_HISTORY_BOUNDARY_HUMAN_REVIEW`
 
 Approval does not authorize real manifests, promotion execution, Production
 writes, generator production flow, or deployment.
