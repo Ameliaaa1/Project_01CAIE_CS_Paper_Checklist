@@ -59,7 +59,7 @@ const roleSpec = {
   "promotion-target": { manifest: "promotion/target/manifest.json", artifact: "promotion/target/artifacts/corpus.json", evidence: "promotion/target/evidence/validation.json", lifecycle: "READY_FOR_HUMAN_REVIEW", phase: "target-pre-review", result: "READY_FOR_HUMAN_REVIEW" },
 };
 
-function nonPromotion() { return { mode: null, baselineProductionSha256: null, differenceRequestPath: null, differenceRequestSha256: null, approvalEvidencePath: null, approvalEvidenceSha256: null, reviewDecision: "NOT_APPLICABLE", reviewer: null, reviewedAt: null, promotionId: null }; }
+function nonPromotion() { return { mode: null, baselineProductionSha256: null, differenceRequestPath: null, differenceRequestSha256: null, approvalEvidencePath: null, approvalEvidenceSha256: null, runtimeRemoteHistoryEvidencePath: null, runtimeRemoteHistoryEvidenceSha256: null, reviewDecision: "NOT_APPLICABLE", reviewer: null, reviewedAt: null, promotionId: null }; }
 
 function materializeRole(fixture, role, records, options = {}) {
   const spec = { ...roleSpec[role], ...(options.spec || {}) };
@@ -71,38 +71,50 @@ function materializeRole(fixture, role, records, options = {}) {
   const schema = { artifactSchemaId: "paperlens-question-corpus-records", artifactSchemaVersion: 1, artifactSchemaPath: "contracts/promotion/schemas/question-corpus-v1.schema.json", artifactSchemaSha256: "8eb88e79f22918a80d86bad28e322e316d03684bb69539478d908ba3aa7fe872" };
   const scope = { supportedSyllabi: hashes.scope, scopeSha256: hashes.scopeHash };
   const promotion = options.promotion || nonPromotion();
-  const remoteHistoryPath = options.remoteHistoryPath || `${path.posix.dirname(spec.evidence)}/remote-history.json`;
-  const remoteCommit = options.remoteCommit || fixture.sourceCommit;
-  const remoteHistory = { schemaVersion: 1, evidenceType: "REMOTE_HISTORY_CAPTURE_V1", evidencePurpose: "RUNTIME_PROMOTION", repositoryIdentity: "Ameliaaa1/Project_01CAIE_CS_Paper_Checklist", remoteURL: "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git", remoteBranch: "refs/heads/main", remoteCommitSHA: remoteCommit, captureTimestamp: timestamp, captureMethod: "git ls-remote origin refs/heads/main", localTrackingRef: "refs/remotes/origin/main", localTrackingRefSHA: remoteCommit, verificationResult: "PASS" };
-  if (options.mutateRemoteHistory) options.mutateRemoteHistory(remoteHistory);
-  const remoteHistoryBytes = jsonBytes(remoteHistory);
-  write(fixture.root, remoteHistoryPath, remoteHistoryBytes);
+  const sourceCommit = options.sourceCommit || fixture.sourceCommit;
+  const manifestHistoryPath = options.manifestHistoryPath || `${path.posix.dirname(spec.evidence)}/manifest-history.json`;
+  const manifestHistoryCommit = options.manifestHistoryCommit || sourceCommit;
+  const manifestHistory = { schemaVersion: 1, evidenceType: "REMOTE_HISTORY_CAPTURE_V1", evidencePurpose: "MANIFEST_PROVENANCE", promotionSessionId: null, repositoryIdentity: "Ameliaaa1/Project_01CAIE_CS_Paper_Checklist", remoteURL: "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git", remoteBranch: "refs/heads/main", remoteCommitSHA: manifestHistoryCommit, captureTimestamp: timestamp, captureMethod: "git ls-remote origin refs/heads/main", localTrackingRef: "refs/remotes/origin/main", localTrackingRefSHA: manifestHistoryCommit, verificationResult: "PASS" };
+  if (options.mutateManifestHistoryEvidence) options.mutateManifestHistoryEvidence(manifestHistory);
+  const manifestHistoryBytes = jsonBytes(manifestHistory);
+  write(fixture.root, manifestHistoryPath, manifestHistoryBytes);
+  let runtimeRemoteHistoryPath = null, runtimeRemoteHistory = null, runtimeRemoteHistoryBytes = null;
+  if (role === "promotion-target") {
+    runtimeRemoteHistoryPath = options.runtimeRemoteHistoryPath || "promotion/target/evidence/runtime-remote-history.json";
+    const runtimeCommit = options.runtimeRemoteCommit || fixture.sourceCommit;
+    runtimeRemoteHistory = { schemaVersion: 1, evidenceType: "REMOTE_HISTORY_CAPTURE_V1", evidencePurpose: "RUNTIME_PROMOTION", promotionSessionId: promotion.promotionId, repositoryIdentity: "Ameliaaa1/Project_01CAIE_CS_Paper_Checklist", remoteURL: "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git", remoteBranch: "refs/heads/main", remoteCommitSHA: runtimeCommit, captureTimestamp: timestamp, captureMethod: "git ls-remote origin refs/heads/main", localTrackingRef: "refs/remotes/origin/main", localTrackingRefSHA: runtimeCommit, verificationResult: "PASS" };
+    if (options.mutateRuntimeRemoteHistoryEvidence) options.mutateRuntimeRemoteHistoryEvidence(runtimeRemoteHistory);
+    runtimeRemoteHistoryBytes = jsonBytes(runtimeRemoteHistory);
+    write(fixture.root, runtimeRemoteHistoryPath, runtimeRemoteHistoryBytes);
+    promotion.runtimeRemoteHistoryEvidencePath = runtimeRemoteHistoryPath;
+    promotion.runtimeRemoteHistoryEvidenceSha256 = sha256(runtimeRemoteHistoryBytes);
+  }
   const evidence = {
     schemaVersion: 2, evidenceId: options.evidenceId || `${role}-synthetic-evidence`, validator: { id: "paperlens-promotion-gate-validator", version: "1.0.0", contractVersion: 4 }, phase: spec.phase, result: spec.result,
     manifest: { role, lifecycleState: spec.lifecycle, path: spec.manifest, sha256: "0".repeat(64) },
     artifact: { artifactId: artifact.artifactId, artifactVersion: artifact.artifactVersion, path: artifact.artifactPath, sizeBytes: artifact.sizeBytes, sha256: artifact.sha256, recordCount: artifact.recordCount, stableIdSetSha256: artifact.stableIdSetSha256 },
-    schema: { id: schema.artifactSchemaId, version: schema.artifactSchemaVersion, path: schema.artifactSchemaPath, sha256: schema.artifactSchemaSha256 }, scope: { supportedSyllabi: scope.supportedSyllabi, sha256: scope.scopeSha256 }, sourceCommit: fixture.sourceCommit, generatedAt: timestamp, supersedes: options.supersedes || null, findings: [],
+    schema: { id: schema.artifactSchemaId, version: schema.artifactSchemaVersion, path: schema.artifactSchemaPath, sha256: schema.artifactSchemaSha256 }, scope: { supportedSyllabi: scope.supportedSyllabi, sha256: scope.scopeSha256 }, sourceCommit, generatedAt: timestamp, supersedes: options.supersedes || null, findings: [],
   };
   if (options.mutateEvidenceBeforeProjection) options.mutateEvidenceBeforeProjection(evidence);
   const projectionSha = sha256(evidenceProjection(evidence));
-  const manifest = { schemaVersion: 4, authorityRole: role, lifecycleState: spec.lifecycle, artifact, scope, schema, provenance: { sourceCommit: fixture.sourceCommit, generatedAt: timestamp, generator, remoteHistory: { evidencePath: remoteHistoryPath, evidenceSha256: sha256(remoteHistoryBytes) } }, validation: { result: spec.result, validatedAt: timestamp, evidencePath: spec.evidence, evidenceProjectionProfile: "paperlens-evidence-binding-v1", evidenceProjectionSha256: projectionSha }, promotion };
+  const manifest = { schemaVersion: 4, authorityRole: role, lifecycleState: spec.lifecycle, artifact, scope, schema, provenance: { sourceCommit, generatedAt: timestamp, generator, manifestHistoryEvidence: { evidencePath: manifestHistoryPath, evidenceSha256: sha256(manifestHistoryBytes) } }, validation: { result: spec.result, validatedAt: timestamp, evidencePath: spec.evidence, evidenceProjectionProfile: "paperlens-evidence-binding-v1", evidenceProjectionSha256: projectionSha }, promotion };
   if (options.mutateManifest) options.mutateManifest(manifest);
   const manifestBytes = jsonBytes(manifest);
   evidence.manifest.sha256 = sha256(manifestBytes);
   if (options.mutateEvidenceAfterManifest) options.mutateEvidenceAfterManifest(evidence);
   write(fixture.root, spec.manifest, manifestBytes); write(fixture.root, spec.evidence, jsonBytes(evidence));
-  return { spec, hashes, artifact, schema, scope, manifest, evidence, manifestBytes, evidenceBytes: jsonBytes(evidence), remoteHistoryPath, remoteHistory, remoteHistoryBytes };
+  return { spec, hashes, artifact, schema, scope, manifest, evidence, manifestBytes, evidenceBytes: jsonBytes(evidence), manifestHistoryPath, manifestHistory, manifestHistoryBytes, runtimeRemoteHistoryPath, runtimeRemoteHistory, runtimeRemoteHistoryBytes };
 }
 
 const candidateRecords = [{ stableId: "synthetic-0478-a", syllabus: "0478" }, { stableId: "synthetic-9618-b", syllabus: "9618" }];
 const productionRecords = [{ stableId: "synthetic-old-a", syllabus: "0478" }];
 
 function targetPromotion(mode, post, extras = {}) {
-  return { mode, baselineProductionSha256: extras.baseline || null, differenceRequestPath: extras.requestPath || null, differenceRequestSha256: extras.requestSha || null, approvalEvidencePath: extras.approvalPath || null, approvalEvidenceSha256: extras.approvalSha || null, reviewDecision: post ? "APPROVE" : "PENDING", reviewer: post ? "Synthetic Reviewer" : null, reviewedAt: post ? "2026-07-31T12:00:00Z" : null, promotionId: `${mode}-synthetic-001` };
+  return { mode, baselineProductionSha256: extras.baseline || null, differenceRequestPath: extras.requestPath || null, differenceRequestSha256: extras.requestSha || null, approvalEvidencePath: extras.approvalPath || null, approvalEvidenceSha256: extras.approvalSha || null, runtimeRemoteHistoryEvidencePath: null, runtimeRemoteHistoryEvidenceSha256: null, reviewDecision: post ? "APPROVE" : "PENDING", reviewer: post ? "Synthetic Reviewer" : null, reviewedAt: post ? "2026-07-31T12:00:00Z" : null, promotionId: `${mode}-synthetic-001` };
 }
 
-function bootstrapFixture(post = false) {
-  const fixture = createRoot();
+function bootstrapFixture(post = false, options = {}) {
+  const fixture = createRoot(options);
   const candidate = materializeRole(fixture, "candidate", candidateRecords);
   let approvalPath = null, approvalSha = null;
   if (post) {
@@ -111,13 +123,15 @@ function bootstrapFixture(post = false) {
     const bytes = jsonBytes(approval); write(fixture.root, approvalPath, bytes); approvalSha = sha256(bytes);
   }
   const spec = post ? { lifecycle: "APPROVED_FOR_EXECUTION", phase: "target-post-review", result: "PROMOTION_TARGET_VALIDATION_PASS" } : undefined;
-  const target = materializeRole(fixture, "promotion-target", candidateRecords, { spec, promotion: targetPromotion("bootstrap", post, { approvalPath, approvalSha }) });
+  const target = materializeRole(fixture, "promotion-target", candidateRecords, { spec, promotion: targetPromotion("bootstrap", post, { approvalPath, approvalSha }), runtimeRemoteCommit: options.runtimeAtBase ? fixture.baseCommit : options.runtimeRemoteCommit, mutateRuntimeRemoteHistoryEvidence: options.mutateRuntimeRemoteHistoryEvidence });
   return { ...fixture, candidate, target };
 }
 
-function updateFixture(post = false) {
-  const fixture = createRoot();
-  const production = materializeRole(fixture, "current-production", productionRecords);
+function updateFixture(post = false, options = {}) {
+  const fixture = createRoot(options);
+  const unrelatedProductionCommit = options.productionUnrelated ? git(fixture.root,["commit-tree",git(fixture.root,["rev-parse",`${fixture.baseCommit}^{tree}`]),"-m","synthetic unrelated Production history"]) : null;
+  const productionSourceCommit = unrelatedProductionCommit || (options.productionAtBase ? fixture.baseCommit : (options.productionSourceCommit || fixture.sourceCommit));
+  const production = materializeRole(fixture, "current-production", productionRecords, { sourceCommit: productionSourceCommit, manifestHistoryCommit: options.productionManifestHistoryCommit || productionSourceCommit });
   const candidate = materializeRole(fixture, "candidate", candidateRecords);
   const requestPath = "promotion/target/evidence/update-request.json";
   const request = { schemaVersion: 1, requestId: "update-request-synthetic-001", currentProductionArtifactSha256: production.artifact.sha256, candidateArtifactSha256: candidate.artifact.sha256, targetArtifactSha256: candidate.artifact.sha256, schemaChange: { from: { id: production.schema.artifactSchemaId, version: 1, sha256: production.schema.artifactSchemaSha256 }, to: { id: candidate.schema.artifactSchemaId, version: 1, sha256: candidate.schema.artifactSchemaSha256 } }, scopeChange: { from: production.scope.supportedSyllabi, to: candidate.scope.supportedSyllabi, added: ["9618"], removed: [] }, sourceCommit: fixture.sourceCommit, createdAt: "2026-07-31T11:59:00Z" };
@@ -129,7 +143,7 @@ function updateFixture(post = false) {
     const bytes = jsonBytes(approval); write(fixture.root, approvalPath, bytes); approvalSha = sha256(bytes);
   }
   const spec = post ? { lifecycle: "APPROVED_FOR_EXECUTION", phase: "target-post-review", result: "PROMOTION_TARGET_VALIDATION_PASS" } : undefined;
-  const target = materializeRole(fixture, "promotion-target", candidateRecords, { spec, promotion: targetPromotion("update", post, { baseline: production.artifact.sha256, requestPath, requestSha: sha256(requestBytes), approvalPath, approvalSha }) });
+  const target = materializeRole(fixture, "promotion-target", candidateRecords, { spec, promotion: targetPromotion("update", post, { baseline: production.artifact.sha256, requestPath, requestSha: sha256(requestBytes), approvalPath, approvalSha }), runtimeRemoteCommit: options.runtimeAtBase ? fixture.baseCommit : options.runtimeRemoteCommit, mutateRuntimeRemoteHistoryEvidence: options.mutateRuntimeRemoteHistoryEvidence });
   return { ...fixture, production, candidate, target, requestPath, approvalPath };
 }
 
@@ -146,8 +160,9 @@ for (const [name, bytes, code] of [
 ]) register(`strict JSON blocks ${name}`, "strict-json", () => assert.throws(() => parseStrictJson(bytes), (error) => error.code === code));
 
 register("projection excludes exactly manifest sha", "constructibility", () => { const evidence = { manifest: { role: "candidate", sha256: "a".repeat(64) }, value: 1 }; const one = sha256(evidenceProjection(evidence)); evidence.manifest.sha256 = "b".repeat(64); assert.strictEqual(sha256(evidenceProjection(evidence)), one); evidence.value = 2; assert.notStrictEqual(sha256(evidenceProjection(evidence)), one); });
-register("runtime remote capture uses ls-remote truth", "provenance", () => { const contract=JSON.parse(fs.readFileSync(path.join(sourceRoot,"contracts/promotion/promotion-validator-contract-v4.json"))); const sha="a".repeat(40); const outputs=new Map([["remote get-url origin",contract.provenanceValidation.approvedRepository],[`ls-remote origin ${contract.provenanceValidation.approvedRemoteBranch}`,`${sha}\t${contract.provenanceValidation.approvedRemoteBranch}`],[`rev-parse ${contract.provenanceValidation.approvedHistoryRef}`,sha]]); const evidence=captureRemoteHistory(sourceRoot,contract,{execGit:args=>outputs.get(args.join(" ")),now:()=>new Date("2026-08-01T06:30:00Z")}); assert.strictEqual(evidence.evidencePurpose,"RUNTIME_PROMOTION"); assert.strictEqual(evidence.remoteCommitSHA,sha); assert.strictEqual(evidence.captureMethod,"git ls-remote origin refs/heads/main"); });
-register("runtime remote capture failure has no local fallback", "provenance", () => { const contract=JSON.parse(fs.readFileSync(path.join(sourceRoot,"contracts/promotion/promotion-validator-contract-v4.json"))); assert.throws(()=>captureRemoteHistory(sourceRoot,contract,{execGit:args=>{if(args[0]==="remote") return contract.provenanceValidation.approvedRepository; throw new Error("network unavailable");}}),(error)=>error.code==="REMOTE_CAPTURE_FAILED"); });
+register("runtime remote capture uses ls-remote truth", "provenance", () => { const contract=JSON.parse(fs.readFileSync(path.join(sourceRoot,"contracts/promotion/promotion-validator-contract-v4.json"))); const sha="a".repeat(40); const outputs=new Map([["remote get-url origin",contract.provenanceValidation.approvedRepository],[`ls-remote origin ${contract.provenanceValidation.approvedRemoteBranch}`,`${sha}\t${contract.provenanceValidation.approvedRemoteBranch}`],[`rev-parse ${contract.provenanceValidation.approvedHistoryRef}`,sha]]); const evidence=captureRemoteHistory(sourceRoot,contract,{promotionId:"session-001",execGit:args=>outputs.get(args.join(" ")),now:()=>new Date("2026-08-01T06:30:00Z")}); assert.strictEqual(evidence.evidencePurpose,"RUNTIME_PROMOTION"); assert.strictEqual(evidence.promotionSessionId,"session-001"); assert.strictEqual(evidence.remoteCommitSHA,sha); assert.strictEqual(evidence.captureMethod,"git ls-remote origin refs/heads/main"); });
+register("runtime remote capture requires Promotion session ID", "provenance", () => { const contract=JSON.parse(fs.readFileSync(path.join(sourceRoot,"contracts/promotion/promotion-validator-contract-v4.json"))); assert.throws(()=>captureRemoteHistory(sourceRoot,contract),(error)=>error.code==="REMOTE_CAPTURE_SESSION_ID_REQUIRED"); });
+register("runtime remote capture failure has no local fallback", "provenance", () => { const contract=JSON.parse(fs.readFileSync(path.join(sourceRoot,"contracts/promotion/promotion-validator-contract-v4.json"))); assert.throws(()=>captureRemoteHistory(sourceRoot,contract,{promotionId:"session-001",execGit:args=>{if(args[0]==="remote") return contract.provenanceValidation.approvedRepository; throw new Error("network unavailable");}}),(error)=>error.code==="REMOTE_CAPTURE_FAILED"); });
 register("valid Candidate", "positive", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertPass(result(f,"candidate"),"PASS")));
 register("valid Candidate post-transition state", "positive", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",candidateRecords,{spec:{lifecycle:"READY_FOR_PROMOTION_REVIEW"}}); return f; }, (f) => assertPass(result(f,"candidate"),"PASS")));
 register("valid Current Production", "positive", () => withFixture(() => { const f=createRoot(); materializeRole(f,"current-production",productionRecords); return f; }, (f) => assertPass(result(f,"current-production"),"PASS")));
@@ -163,19 +178,28 @@ register("invalid lifecycle transition blocks", "lifecycle", () => withFixture((
 
 register("contract drift blocks", "boundary", () => withFixture(() => createRoot(), (f) => { fs.appendFileSync(path.join(f.root,"contracts/promotion/promotion-validator-contract-v4.json")," "); assertBlock(result(f,"candidate"),"CONTRACT_HASH_DRIFT"); }));
 register("unknown generator blocks", "provenance", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",candidateRecords,{mutateManifest:m=>{m.provenance.generator.id="unknown";}}); return f; }, (f) => assertBlock(result(f,"candidate"),"GENERATOR_UNKNOWN")));
-register("checkout mismatch blocks", "provenance", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",candidateRecords); git(f.root,["commit","--allow-empty","-qm","different checkout"]); return f; }, (f) => assertBlock(result(f,"candidate"),"SOURCE_COMMIT_CHECKOUT_MISMATCH")));
+register("historical Candidate survives checkout advancement", "provenance", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",candidateRecords); git(f.root,["commit","--allow-empty","-qm","different checkout"]); return f; }, (f) => assertPass(result(f,"candidate"),"PASS")));
 register("wrong origin blocks", "provenance", () => withFixture(() => { const f=createRoot(); git(f.root,["remote","set-url","origin","https://example.invalid/wrong.git"]); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertBlock(result(f,"candidate"),"REPOSITORY_ORIGIN_MISMATCH")));
 register("missing origin blocks", "provenance", () => withFixture(() => { const f=createRoot(); git(f.root,["remote","remove","origin"]); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertBlock(result(f,"candidate"),"REPOSITORY_ORIGIN_MISSING")));
 register("shallow repository blocks", "provenance", () => withFixture(() => { const f=createRoot(); fs.writeFileSync(path.join(f.root,".git/shallow"),`${f.sourceCommit}\n`); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertBlock(result(f,"candidate"),"REPOSITORY_SHALLOW")));
-register("missing approved history blocks", "provenance", () => withFixture(() => { const f=createRoot(); git(f.root,["update-ref","-d","refs/remotes/origin/main"]); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertBlock(result(f,"candidate"),"APPROVED_HISTORY_REF_MISSING")));
-register("fake local origin main blocks", "provenance", () => withFixture(() => { const f=createRoot(); git(f.root,["update-ref","refs/remotes/origin/main",`${f.sourceCommit}^`]); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertBlock(result(f,"candidate"),"REMOTE_HISTORY_REF_MISMATCH")));
-register("missing remote history evidence blocks", "provenance", () => withFixture(() => { const f=createRoot(); const r=materializeRole(f,"candidate",candidateRecords); fs.unlinkSync(path.join(f.root,r.remoteHistoryPath)); return f; }, (f) => assertBlock(result(f,"candidate"),"PATH_MISSING")));
-register("remote history evidence SHA drift blocks", "provenance", () => withFixture(() => { const f=createRoot(); const r=materializeRole(f,"candidate",candidateRecords); fs.appendFileSync(path.join(f.root,r.remoteHistoryPath)," "); return f; }, (f) => assertBlock(result(f,"candidate"),"REMOTE_HISTORY_EVIDENCE_HASH_MISMATCH")));
-register("historical review capture cannot be runtime evidence", "provenance", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",candidateRecords,{mutateRemoteHistory:e=>{e.evidencePurpose="HISTORICAL_REVIEW";}}); return f; }, (f) => assertBlock(result(f,"candidate"),"REMOTE_HISTORY_EVIDENCE_PURPOSE_MISMATCH")));
-register("runtime remote evidence repository drift blocks", "provenance", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",candidateRecords,{mutateRemoteHistory:e=>{e.repositoryIdentity="attacker/repository";}}); return f; }, (f) => assertBlock(result(f,"candidate"),"REMOTE_HISTORY_EVIDENCE_BINDING_MISMATCH")));
-register("runtime remote evidence branch drift blocks", "provenance", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",candidateRecords,{mutateRemoteHistory:e=>{e.remoteBranch="refs/heads/other";}}); return f; }, (f) => assertBlock(result(f,"candidate"),"REMOTE_HISTORY_EVIDENCE_BINDING_MISMATCH")));
-register("main advancement with new runtime capture passes", "provenance", () => withFixture(() => { const f=createRoot({advanceMain:true}); materializeRole(f,"candidate",candidateRecords); return f; }, (f) => assertPass(result(f,"candidate"),"PASS")));
-register("old runtime capture cannot validate advanced main", "provenance", () => withFixture(() => { const f=createRoot({advanceMain:true}); materializeRole(f,"candidate",candidateRecords,{remoteCommit:f.baseCommit}); return f; }, (f) => assertBlock(result(f,"candidate"),"REMOTE_HISTORY_REF_MISMATCH")));
+register("missing approved history blocks Promotion session", "provenance", () => withFixture(() => { const f=bootstrapFixture(false); git(f.root,["update-ref","-d","refs/remotes/origin/main"]); return f; }, (f) => assertBlock(result(f,"bootstrap-pre-review"),"APPROVED_HISTORY_REF_MISSING")));
+register("fake local origin main blocks Promotion session", "provenance", () => withFixture(() => { const f=bootstrapFixture(false); git(f.root,["update-ref","refs/remotes/origin/main",`${f.sourceCommit}^`]); return f; }, (f) => assertBlock(result(f,"bootstrap-pre-review"),"REMOTE_HISTORY_REF_MISMATCH")));
+register("missing manifest history evidence blocks", "provenance", () => withFixture(() => { const f=createRoot(); const r=materializeRole(f,"candidate",candidateRecords); fs.unlinkSync(path.join(f.root,r.manifestHistoryPath)); return f; }, (f) => assertBlock(result(f,"candidate"),"PATH_MISSING")));
+register("manifest history evidence SHA drift blocks", "provenance", () => withFixture(() => { const f=createRoot(); const r=materializeRole(f,"candidate",candidateRecords); fs.appendFileSync(path.join(f.root,r.manifestHistoryPath)," "); return f; }, (f) => assertBlock(result(f,"candidate"),"MANIFEST_HISTORY_EVIDENCE_HASH_MISMATCH")));
+register("Manifest source must be reachable from historical capture", "provenance", () => withFixture(() => { const f=createRoot({advanceMain:true}); materializeRole(f,"candidate",candidateRecords,{manifestHistoryCommit:f.baseCommit}); return f; }, (f) => assertBlock(result(f,"candidate"),"MANIFEST_SOURCE_NOT_HISTORICALLY_REACHABLE")));
+register("runtime evidence cannot bind Manifest provenance", "provenance", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",candidateRecords,{mutateManifestHistoryEvidence:e=>{e.evidencePurpose="RUNTIME_PROMOTION";e.promotionSessionId="session-001";}}); return f; }, (f) => assertBlock(result(f,"candidate"),"MANIFEST_HISTORY_EVIDENCE_PURPOSE_MISMATCH")));
+register("historical review capture cannot bind Manifest provenance", "provenance", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",candidateRecords,{mutateManifestHistoryEvidence:e=>{e.evidencePurpose="HISTORICAL_REVIEW";}}); return f; }, (f) => assertBlock(result(f,"candidate"),"MANIFEST_HISTORY_EVIDENCE_PURPOSE_MISMATCH")));
+register("missing Promotion session history evidence blocks", "provenance", () => withFixture(() => { const f=bootstrapFixture(false); fs.unlinkSync(path.join(f.root,f.target.runtimeRemoteHistoryPath)); return f; }, (f) => assertBlock(result(f,"bootstrap-pre-review"),"PATH_MISSING")));
+register("Promotion session history SHA drift blocks", "provenance", () => withFixture(() => { const f=bootstrapFixture(false); fs.appendFileSync(path.join(f.root,f.target.runtimeRemoteHistoryPath)," "); return f; }, (f) => assertBlock(result(f,"bootstrap-pre-review"),"REMOTE_HISTORY_EVIDENCE_HASH_MISMATCH")));
+register("historical evidence cannot bind Promotion session", "provenance", () => withFixture(() => bootstrapFixture(false,{mutateRuntimeRemoteHistoryEvidence:e=>{e.evidencePurpose="HISTORICAL_REVIEW";e.promotionSessionId=null;}}), (f) => assertBlock(result(f,"bootstrap-pre-review"),"REMOTE_HISTORY_EVIDENCE_PURPOSE_MISMATCH")));
+register("Promotion session ID drift blocks", "provenance", () => withFixture(() => bootstrapFixture(false,{mutateRuntimeRemoteHistoryEvidence:e=>{e.promotionSessionId="different-session";}}), (f) => assertBlock(result(f,"bootstrap-pre-review"),"PROMOTION_SESSION_ID_MISMATCH")));
+register("runtime remote evidence repository drift blocks", "provenance", () => withFixture(() => bootstrapFixture(false,{mutateRuntimeRemoteHistoryEvidence:e=>{e.repositoryIdentity="attacker/repository";}}), (f) => assertBlock(result(f,"bootstrap-pre-review"),"REMOTE_HISTORY_EVIDENCE_BINDING_MISMATCH")));
+register("runtime remote evidence branch drift blocks", "provenance", () => withFixture(() => bootstrapFixture(false,{mutateRuntimeRemoteHistoryEvidence:e=>{e.remoteBranch="refs/heads/other";}}), (f) => assertBlock(result(f,"bootstrap-pre-review"),"REMOTE_HISTORY_EVIDENCE_BINDING_MISMATCH")));
+register("Current Production at A survives main advancement to B", "provenance", () => withFixture(() => { const f=createRoot({advanceMain:true}); materializeRole(f,"current-production",productionRecords,{sourceCommit:f.baseCommit,manifestHistoryCommit:f.baseCommit}); return f; }, (f) => assertPass(result(f,"current-production"),"PASS")));
+register("Update session at B validates Production at A", "provenance", () => withFixture(() => updateFixture(false,{advanceMain:true,productionAtBase:true}), (f) => assertPass(result(f,"update-pre-review"),"READY_FOR_HUMAN_REVIEW")));
+register("Promotion session requires every role source reachable", "provenance", () => withFixture(() => updateFixture(false,{productionUnrelated:true}), (f) => assertBlock(result(f,"update-pre-review"),"PROMOTION_SOURCE_NOT_REACHABLE")));
+register("Production Manifest bytes remain unchanged from A to B", "provenance", () => { const atA=createRoot(), atB=createRoot({advanceMain:true}); try { const productionA=materializeRole(atA,"current-production",productionRecords,{sourceCommit:atA.baseCommit,manifestHistoryCommit:atA.baseCommit}); const productionB=materializeRole(atB,"current-production",productionRecords,{sourceCommit:atB.baseCommit,manifestHistoryCommit:atB.baseCommit}); assert(productionA.manifestBytes.equals(productionB.manifestBytes)); assertPass(result(atB,"current-production"),"PASS"); } finally { cleanup(atA); cleanup(atB); } });
+register("old runtime capture cannot validate advanced main", "provenance", () => withFixture(() => bootstrapFixture(false,{advanceMain:true,runtimeAtBase:true}), (f) => assertBlock(result(f,"bootstrap-pre-review"),"REMOTE_HISTORY_REF_MISMATCH")));
 register("main advancement leaves contract boundary stable", "provenance", () => { const a=createRoot(), b=createRoot({advanceMain:true}); try { assert.strictEqual(sha256(fs.readFileSync(path.join(a.root,"contracts/promotion/promotion-validator-contract-v4.json"))),sha256(fs.readFileSync(path.join(b.root,"contracts/promotion/promotion-validator-contract-v4.json")))); assert.strictEqual(sha256(fs.readFileSync(path.join(a.root,"docs/repository-maintenance/pr-06c-r3/pr06c-r3-contract-hash-manifest.json"))),sha256(fs.readFileSync(path.join(b.root,"docs/repository-maintenance/pr-06c-r3/pr06c-r3-contract-hash-manifest.json")))); } finally { cleanup(a); cleanup(b); } });
 register("duplicate stable ID blocks", "artifact", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",[{stableId:"dup",syllabus:"0478"},{stableId:"dup",syllabus:"0478"}]); return f; }, (f) => assertBlock(result(f,"candidate"),"STABLE_ID_DUPLICATE")));
 register("unsupported 9709 blocks", "artifact", () => withFixture(() => { const f=createRoot(); materializeRole(f,"candidate",[{stableId:"synthetic",syllabus:"9709"}]); return f; }, (f) => assertBlock(result(f,"candidate"),"SCHEMA_VALIDATION_FAILED")));

@@ -13,6 +13,7 @@ function defaultExecGit(root, args) {
 }
 
 function captureRemoteHistory(root, contract, options = {}) {
+  if (typeof options.promotionId !== "string" || options.promotionId.length === 0) throw captureError("REMOTE_CAPTURE_SESSION_ID_REQUIRED", "--promotion-id is required for runtime promotion history capture");
   const execGit = options.execGit || ((args) => defaultExecGit(root, args));
   const provenance = contract.provenanceValidation;
   let remoteURL;
@@ -30,7 +31,7 @@ function captureRemoteHistory(root, contract, options = {}) {
   catch (error) { throw captureError("REMOTE_CAPTURE_LOCAL_REF_MISSING", "Approved local tracking ref is missing"); }
   if (localTrackingRefSHA !== remoteCommitSHA) throw captureError("REMOTE_CAPTURE_LOCAL_REF_MISMATCH", "Local tracking ref does not equal the captured remote branch");
   const repositoryIdentity = provenance.approvedRepository.replace(/^https:\/\/github\.com\//, "").replace(/\.git$/, "");
-  return { schemaVersion: 1, evidenceType: "REMOTE_HISTORY_CAPTURE_V1", evidencePurpose: "RUNTIME_PROMOTION", repositoryIdentity, remoteURL, remoteBranch: provenance.approvedRemoteBranch, remoteCommitSHA, captureTimestamp: (options.now || (() => new Date()))().toISOString(), captureMethod: provenance.captureMethod, localTrackingRef: provenance.approvedHistoryRef, localTrackingRefSHA, verificationResult: "PASS" };
+  return { schemaVersion: 1, evidenceType: "REMOTE_HISTORY_CAPTURE_V1", evidencePurpose: "RUNTIME_PROMOTION", promotionSessionId: options.promotionId, repositoryIdentity, remoteURL, remoteBranch: provenance.approvedRemoteBranch, remoteCommitSHA, captureTimestamp: (options.now || (() => new Date()))().toISOString(), captureMethod: provenance.captureMethod, localTrackingRef: provenance.approvedHistoryRef, localTrackingRefSHA, verificationResult: "PASS" };
 }
 
 module.exports = { captureRemoteHistory, captureError };
