@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "status": "VALIDATED",
   "result": "PASS_PR06C_R3_CONTRACT_CONSTRUCTIBILITY",
-  "validatedAt": "2026-07-31T12:33:23Z",
-  "validatedImplementationSha": "5795ee32e0757f811b83c12a96bc8dd4d2551b7a",
+  "validatedAt": "2026-08-01T04:47:37Z",
+  "validatedImplementationSha": "358e966bc015a530e6a62b7d2b87496842efc7cd",
   "contractVersion": 4,
   "projectionProfile": "paperlens-evidence-binding-v1",
   "excludedJsonPointers": ["/manifest/sha256"],
@@ -16,6 +16,6 @@
   "realAuthorityCreated": false,
   "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
   "tests": {"cases":1,"passed":1,"failed":0},
-  "gitBoundary": {"changedFiles":16,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1119,"lineDeletions":1},
+  "gitBoundary": {"changedFiles":16,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1192,"lineDeletions":1},
   "humanReview": {"decision":"PENDING","reviewer":null,"reviewedAt":null}
 }

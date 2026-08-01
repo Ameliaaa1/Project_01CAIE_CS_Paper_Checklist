@@ -8,7 +8,7 @@ Result: `PASS_PR06C_CONTRACT_V4_AND_VALIDATOR_IMPLEMENTATION_READY_FOR_HUMAN_REV
 
 Owner: Promotion contract maintainers
 
-Created at: `2026-07-31T12:33:23Z`
+Created at: `2026-08-01T04:47:37Z`
 
 Authoritative scope: NONE
 
@@ -24,17 +24,17 @@ Related documents:
 - [Git boundary report](pr06c-r3-git-boundary-report.json)
 - [Contract hash manifest](pr06c-r3-contract-hash-manifest.json)
 
-Base SHA: `4d28035fd779a66ad6dce36d6f0b34ce3db04747`
+Base SHA: `f65ab65525a9011b91823ff61520257a8460852f`
 
-Validated implementation SHA: `5795ee32e0757f811b83c12a96bc8dd4d2551b7a`
+Validated implementation SHA: `358e966bc015a530e6a62b7d2b87496842efc7cd`
 
 Final PR head SHA: `PENDING_EXTERNAL_GITHUB_FACT_AFTER_PUSH`
 
-Generated at: `2026-07-31T12:33:23Z`
+Generated at: `2026-08-01T04:47:37Z`
 
-Tests cases: `139`
+Tests cases: `144`
 
-Tests passed: `139`
+Tests passed: `144`
 
 Tests failed: `0`
 
@@ -59,8 +59,9 @@ Artifact, Manifest, and Evidence values and reproduced both bindings.
 
 The validator provides strict UTF-8 JSON parsing, approved-boundary loading,
 schema and generator registry resolution, safe path resolution, artifact and
-stable-ID inspection, scope validation, provenance reachability, evidence and
-supersession validation, Bootstrap and Update gates, approval binding, stdout
+stable-ID inspection, scope validation, remote identity and provenance
+reachability, lifecycle-transition validation, safe Production-absence
+inspection, Bootstrap and Update gates, evidence and approval binding, stdout
 reporting, and create-new JSON output below `reports/promotion-validator/`.
 
 All successful outcomes explicitly keep `promotionAuthorized` and

@@ -4,7 +4,7 @@ Status: `READY_FOR_HUMAN_REVIEW`
 
 Owner: Promotion contract maintainers
 
-Created at: `2026-07-31T12:33:23Z`
+Created at: `2026-08-01T04:47:37Z`
 
 Authoritative scope: NONE
 
@@ -19,10 +19,11 @@ Related documents:
 - [ ] Projection profile excludes exactly `/manifest/sha256`.
 - [ ] Artifact → projection → manifest → evidence construction has no cycle.
 - [ ] All eight schemas compile in strict mode and registry hashes match.
-- [ ] All six role/lifecycle pairs and four evidence phases are enforced.
+- [ ] All six role/lifecycle pairs, transition endpoints, and four evidence phases are enforced.
 - [ ] Candidate, Current Production, Target pre/post, Bootstrap, and Update paths are covered.
 - [ ] `0478` and `9618` pass while `9709` blocks.
-- [ ] Provenance checks execute real Git object and reachability commands.
+- [ ] Provenance checks verify exact `origin`, non-shallow history, approved ref, object type, reachability, and checkout equality.
+- [ ] Bootstrap Production absence blocks present manifests, directory symlinks, and broken manifest symlinks.
 - [ ] Fixtures remain non-authoritative and contain no real Production data.
 - [ ] Reports cannot overwrite or escape the approved prefix.
 - [ ] Authority, Production, promotion execution, and deployment mutations are zero.

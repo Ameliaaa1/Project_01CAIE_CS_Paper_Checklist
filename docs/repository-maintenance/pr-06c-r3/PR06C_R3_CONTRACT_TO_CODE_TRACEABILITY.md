@@ -4,7 +4,7 @@ Status: `READY_FOR_HUMAN_REVIEW`
 
 Owner: Promotion contract maintainers
 
-Created at: `2026-07-31T12:33:23Z`
+Created at: `2026-08-01T04:47:37Z`
 
 Authoritative scope: NONE
 
@@ -22,12 +22,12 @@ Related documents:
 | Schema registry and strict compilation | `loadBoundary`, `schemaValidator` | eight-schema constructibility gate |
 | Artifact, stable IDs, scope, `0478`/`9618`, block `9709` | `inspectArtifact` | positive artifact, duplicate ID, unsupported syllabus |
 | Repository origin, complete history, approved ref reachability | `validateProvenance` | correct/wrong/missing origin, shallow repo, missing ref, checkout mismatch |
-| Six role/lifecycle pairs, declared transitions, and four evidence phases | `validateRole`, `validateLifecycleTransition`, `validateEvidence` | Candidate, Production, Target pre/post, invalid transition |
+| Six role/lifecycle pairs, transition endpoints, and four evidence phases | `validateRole`, `validateLifecycleTransition`, `validateEvidence` | Candidate and Target source/final states, Production, invalid transition |
 | Target pre/post intent dispatches full Bootstrap or Update gate | `validateRepository`, `validateBootstrap`, `validateUpdate` | both modes pre-review and post-review |
 | Full-SHA existence, reachability, checkout equality, generator registry | `validateProvenance` | valid provenance, unknown generator, checkout mismatch |
 | Exact manifest hash and evidence projection binding | `validateEvidence` | constructibility, manifest mismatch, projection mismatch |
 | Freshness and supersession | `validateEvidence`, `validateSupersession` | stale binding, valid chain, cycle |
-| Bootstrap pre/post review | `validateBootstrap` | valid pre/post and Production-present block |
+| Bootstrap pre/post review and safe Production absence | `assertProductionAbsent`, `validateBootstrap` | absent/empty directory pass; present manifest, directory symlink, broken manifest symlink block |
 | Update request and approval bindings | `validateUpdate` | valid pre/post and bound approval mismatch |
 | Stdout and create-new report only | CLI and `writeReport` | stdout, create-new, overwrite, escape |
 | Read-only default and no execution authority | `validateRepository` result contract | PASS/BLOCK zero-byte mutation proof |
