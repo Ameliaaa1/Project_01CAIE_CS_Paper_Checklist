@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "status": "VALIDATED",
   "result": "PASS_PR06C_R3_READ_ONLY_MUTATION_AUDIT",
-  "validatedAt": "2026-08-01T06:02:59Z",
-  "validatedImplementationSha": "98c1c4595152b594bfd5e68ffd215e18cfcffe4c",
-  "representativeExecutions": ["candidate-PASS", "artifact-size-BLOCK", "bootstrap-absence-PASS", "production-symlink-BLOCK", "fake-origin-main-BLOCK"],
+  "validatedAt": "2026-08-01T06:38:34Z",
+  "validatedImplementationSha": "0215738f8d025d314af7809b8dab1832bf912c01",
+  "representativeExecutions": ["candidate-PASS", "artifact-size-BLOCK", "bootstrap-absence-PASS", "production-symlink-BLOCK", "dynamic-main-advancement-PASS", "old-capture-reuse-BLOCK"],
   "trackedAndUntrackedBytesBeforeAfter": "EXACT_EQUALITY",
   "authorityMutations": 0,
   "productionMutations": 0,
@@ -14,6 +14,6 @@
   "reportWrites": {"tested":true,"classification":"NON_AUTHORITY_CREATE_NEW_ONLY"},
   "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
   "tests": {"cases":2,"passed":2,"failed":0},
-  "gitBoundary": {"changedFiles":18,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1245,"lineDeletions":1},
+  "gitBoundary": {"changedFiles":20,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1342,"lineDeletions":1},
   "humanReview": {"decision":"PENDING","reviewer":null,"reviewedAt":null}
 }

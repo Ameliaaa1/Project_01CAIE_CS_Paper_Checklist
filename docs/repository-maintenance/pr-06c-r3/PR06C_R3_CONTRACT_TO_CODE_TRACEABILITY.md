@@ -4,7 +4,7 @@ Status: `READY_FOR_HUMAN_REVIEW`
 
 Owner: Promotion contract maintainers
 
-Created at: `2026-08-01T06:02:59Z`
+Created at: `2026-08-01T06:38:34Z`
 
 Authoritative scope: NONE
 
@@ -22,7 +22,9 @@ Related documents:
 | Schema registry and strict compilation | `loadBoundary`, `schemaValidator` | nine-schema constructibility gate |
 | Artifact, stable IDs, scope, `0478`/`9618`, block `9709` | `inspectArtifact` | positive artifact, duplicate ID, unsupported syllabus |
 | Repository origin, complete history, approved ref reachability | `validateProvenance` | correct/wrong/missing origin, shallow repo, missing ref, checkout mismatch |
-| Frozen GitHub remote truth capture and byte-hash binding | `loadBoundary`, `validateProvenance` | fake `origin/main`, missing capture, capture SHA drift |
+| Historical review/runtime evidence lifecycle separation | capture schema purpose and `loadRuntimeRemoteHistory` | historical capture runtime reuse blocks |
+| Dynamic runtime capture and manifest byte-hash binding | `captureRemoteHistory`, Manifest provenance, `validateProvenance` | main advancement passes; old capture, missing capture, SHA drift block |
+| Contract stability across main advancement | Contract rules and schema/hash manifest | A→B leaves Contract, validator, and contract hash manifest unchanged |
 | Six role/lifecycle pairs, transition endpoints, and four evidence phases | `validateRole`, `validateLifecycleTransition`, `validateEvidence` | Candidate and Target source/final states, Production, invalid transition |
 | Target pre/post intent dispatches full Bootstrap or Update gate | `validateRepository`, `validateBootstrap`, `validateUpdate` | both modes pre-review and post-review |
 | Full-SHA existence, reachability, checkout equality, generator registry | `validateProvenance` | valid provenance, unknown generator, checkout mismatch |

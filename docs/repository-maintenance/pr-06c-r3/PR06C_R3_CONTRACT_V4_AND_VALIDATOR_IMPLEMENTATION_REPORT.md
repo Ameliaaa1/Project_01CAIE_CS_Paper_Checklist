@@ -8,7 +8,7 @@ Result: `PASS_PR06C_CONTRACT_V4_AND_VALIDATOR_IMPLEMENTATION_READY_FOR_HUMAN_REV
 
 Owner: Promotion contract maintainers
 
-Created at: `2026-08-01T06:02:59Z`
+Created at: `2026-08-01T06:38:34Z`
 
 Authoritative scope: NONE
 
@@ -26,15 +26,15 @@ Related documents:
 
 Base SHA: `f65ab65525a9011b91823ff61520257a8460852f`
 
-Validated implementation SHA: `98c1c4595152b594bfd5e68ffd215e18cfcffe4c`
+Validated implementation SHA: `0215738f8d025d314af7809b8dab1832bf912c01`
 
 Final PR head SHA: `PENDING_EXTERNAL_GITHUB_FACT_AFTER_PUSH`
 
-Generated at: `2026-08-01T06:02:59Z`
+Generated at: `2026-08-01T06:38:34Z`
 
-Tests cases: `147`
+Tests cases: `155`
 
-Tests passed: `147`
+Tests passed: `155`
 
 Tests failed: `0`
 
@@ -61,8 +61,8 @@ The validator provides strict UTF-8 JSON parsing, approved-boundary loading,
 schema and generator registry resolution, safe path resolution, artifact and
 stable-ID inspection, scope validation, remote identity and provenance
 reachability, lifecycle-transition validation, safe Production-absence
-inspection, frozen remote-history evidence binding, Bootstrap and Update
-gates, evidence and approval binding, stdout
+inspection, dynamic manifest-bound runtime remote-history evidence, Bootstrap
+and Update gates, evidence and approval binding, stdout
 reporting, and create-new JSON output below `reports/promotion-validator/`.
 
 All successful outcomes explicitly keep `promotionAuthorized` and
@@ -78,3 +78,8 @@ blocked or absent.
 No real Candidate, Current Production, or Promotion Target manifest is
 included. Test fixtures are synthetic specifications materialized only in
 temporary Git repositories.
+
+The checked-in `REMOTE_HISTORY_CAPTURE_V1` is immutable historical review
+evidence only. Runtime captures are generated independently, carry
+`RUNTIME_PROMOTION`, and are byte-hash-bound by each manifest; advancing main
+does not modify the Contract, validator constants, or contract hash manifest.

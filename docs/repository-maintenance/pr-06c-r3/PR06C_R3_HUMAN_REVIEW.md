@@ -4,7 +4,7 @@ Status: `READY_FOR_HUMAN_REVIEW`
 
 Owner: Promotion contract maintainers
 
-Created at: `2026-08-01T06:02:59Z`
+Created at: `2026-08-01T06:38:34Z`
 
 Authoritative scope: NONE
 
@@ -23,8 +23,10 @@ Related documents:
 - [ ] Candidate, Current Production, Target pre/post, Bootstrap, and Update paths are covered.
 - [ ] `0478` and `9618` pass while `9709` blocks.
 - [ ] Provenance checks verify exact `origin`, non-shallow history, approved ref, object type, reachability, and checkout equality.
-- [ ] `REMOTE_HISTORY_CAPTURE_V1` binds the approved repository, `refs/heads/main`, and `f65ab65525a9011b91823ff61520257a8460852f`.
-- [ ] Fake `origin/main`, missing capture evidence, repository mismatch, and capture SHA drift all block.
+- [ ] Historical `REMOTE_HISTORY_CAPTURE_V1` is immutable review evidence and is rejected as runtime input.
+- [ ] Runtime capture is generated independently and byte-hash-bound through Manifest provenance.
+- [ ] Advancing main accepts a new runtime capture without modifying Contract, validator constants, or contract hash manifest.
+- [ ] Old capture reuse, fake `origin/main`, missing evidence, repository/branch/SHA drift, and capture failure all block.
 - [ ] Bootstrap Production absence blocks present manifests, directory symlinks, and broken manifest symlinks.
 - [ ] Fixtures remain non-authoritative and contain no real Production data.
 - [ ] Reports cannot overwrite or escape the approved prefix.
@@ -56,7 +58,7 @@ Blocker count: `PENDING`
 
 Suggested approval token:
 
-`PASS_PR06C_R3_R1_REMOTE_HISTORY_BINDING_HUMAN_REVIEW`
+`PASS_PR06C_R3_R1_DYNAMIC_REMOTE_HISTORY_EVIDENCE_HUMAN_REVIEW`
 
 Approval does not authorize real manifests, promotion execution, Production
 writes, generator production flow, or deployment.
