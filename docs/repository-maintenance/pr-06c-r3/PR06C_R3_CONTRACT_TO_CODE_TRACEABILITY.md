@@ -18,10 +18,12 @@ Related documents:
 | Exact contract and registry hashes | `scripts/promotion-validator/validator.js` `loadBoundary` | contract drift and schema binding cases |
 | Strict UTF-8 JSON, duplicate keys, BOM, trailing data, exact integers | `scripts/promotion-validator/strict-json.js` | eight strict-json cases |
 | RFC 8785 canonical projection, one exclusion | `scripts/promotion-validator/hash.js` | constructibility and projection mutation cases |
-| Repository-relative, role-owned, no-symlink paths | `scripts/promotion-validator/safe-path.js` | traversal, symlink, report-boundary cases |
+| Repository-relative, role-owned, no-symlink paths | `scripts/promotion-validator/safe-path.js` | traversal, root symlink, broken symlink, report-boundary cases |
 | Schema registry and strict compilation | `loadBoundary`, `schemaValidator` | eight-schema constructibility gate |
 | Artifact, stable IDs, scope, `0478`/`9618`, block `9709` | `inspectArtifact` | positive artifact, duplicate ID, unsupported syllabus |
-| Six role/lifecycle pairs and four evidence phases | `validateRole`, `validateEvidence` | Candidate, Production, Target pre/post, mismatch |
+| Repository origin, complete history, approved ref reachability | `validateProvenance` | correct/wrong/missing origin, shallow repo, missing ref, checkout mismatch |
+| Six role/lifecycle pairs, declared transitions, and four evidence phases | `validateRole`, `validateLifecycleTransition`, `validateEvidence` | Candidate, Production, Target pre/post, invalid transition |
+| Target pre/post intent dispatches full Bootstrap or Update gate | `validateRepository`, `validateBootstrap`, `validateUpdate` | both modes pre-review and post-review |
 | Full-SHA existence, reachability, checkout equality, generator registry | `validateProvenance` | valid provenance, unknown generator, checkout mismatch |
 | Exact manifest hash and evidence projection binding | `validateEvidence` | constructibility, manifest mismatch, projection mismatch |
 | Freshness and supersession | `validateEvidence`, `validateSupersession` | stale binding, valid chain, cycle |
