@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "status": "VALIDATED_IMPLEMENTATION_BOUNDARY",
+  "result": "PASS_PR06C_R3_GIT_BOUNDARY",
+  "generatedAt": "2026-07-31T12:33:23Z",
+  "branch": "codex/pr-06c-validator-implementation",
+  "baseSha": "4d28035fd779a66ad6dce36d6f0b34ce3db04747",
+  "validatedImplementationSha": "5795ee32e0757f811b83c12a96bc8dd4d2551b7a",
+  "finalPrHead": "PENDING_EXTERNAL_GITHUB_FACT_AFTER_PUSH",
+  "implementationBoundary": {"changedFiles":16,"additions":1119,"deletions":1,"deletedFiles":0,"renamedFiles":0},
+  "scope": {"contractV4Files":4,"validatorSourceAndCliFiles":7,"testAndFixtureFiles":3,"packageFiles":2},
+  "excludedChanges": {"realManifests":0,"production":0,"parserFrontendCorpusPdf":0,"promotionExecution":0,"deployment":0},
+  "finalHeadRule": "Recorded externally after push to avoid commit self-reference",
+  "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
+  "tests": {"cases":1,"passed":1,"failed":0},
+  "gitBoundary": {"changedFiles":16,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1119,"lineDeletions":1},
+  "humanReview": {"decision":"PENDING","reviewer":null,"reviewedAt":null}
+}

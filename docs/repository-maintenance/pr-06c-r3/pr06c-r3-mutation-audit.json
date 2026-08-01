@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "status": "VALIDATED",
+  "result": "PASS_PR06C_R3_READ_ONLY_MUTATION_AUDIT",
+  "validatedAt": "2026-07-31T12:33:23Z",
+  "validatedImplementationSha": "5795ee32e0757f811b83c12a96bc8dd4d2551b7a",
+  "representativeExecutions": ["candidate-PASS", "artifact-size-BLOCK"],
+  "trackedAndUntrackedBytesBeforeAfter": "EXACT_EQUALITY",
+  "authorityMutations": 0,
+  "productionMutations": 0,
+  "promotionExecutions": 0,
+  "deploymentActions": 0,
+  "approvedContractV3Mutations": 0,
+  "reportWrites": {"tested":true,"classification":"NON_AUTHORITY_CREATE_NEW_ONLY"},
+  "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
+  "tests": {"cases":2,"passed":2,"failed":0},
+  "gitBoundary": {"changedFiles":16,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1119,"lineDeletions":1},
+  "humanReview": {"decision":"PENDING","reviewer":null,"reviewedAt":null}
+}

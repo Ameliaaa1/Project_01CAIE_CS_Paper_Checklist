@@ -207,6 +207,66 @@
       "evidenceClass": "historical",
       "sizeBytes": 3272,
       "sha256": "b823978ea6aaddfcfedafc4d7774b4d04376ae1a361c38112584030fdb777f98"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r3/PR06C_R3_CONTRACT_TO_CODE_TRACEABILITY.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2332,
+      "sha256": "1d1e6d14a183a83aae44f3a064dd0f172a90d31dc05aed633dacb7468dba9d5b"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r3/PR06C_R3_CONTRACT_V4_AND_VALIDATOR_IMPLEMENTATION_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2769,
+      "sha256": "715ec03c052097dce0a5ebfe16f26eef6d3889aa995c1c28738b28b1b048ae65"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r3/PR06C_R3_HUMAN_REVIEW.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 1610,
+      "sha256": "6b732ca1a9dfc1c78d0b311e0bd75228fffe5fec2b11f264ff91a3d684083d1d"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r3/pr06c-r3-constructibility-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1157,
+      "sha256": "e700b666bbefb4d7af5c70b6df907c8ab6eeeb1ab3128a51ccf4d4cfa3795705"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r3/pr06c-r3-contract-hash-manifest.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 3240,
+      "sha256": "51635c921e68d5de9cb5a4bd992ae9076ad4d3c35308b91188250d06e4390a07"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r3/pr06c-r3-git-boundary-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1284,
+      "sha256": "9300899879b2c4c93fa7c8507265ce1695787322fe4956e3ca9e687659c6d079"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r3/pr06c-r3-mutation-audit.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1036,
+      "sha256": "fcdabaafe383e81a71d0c80ea0c0b6aaed782b6c344c5ff6943e854f9ce529c3"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r3/pr06c-r3-output-path-audit.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 948,
+      "sha256": "3ed5f361b01df093be8e4097436532cea042db9e30e152cfb1c12dd097f05396"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r3/pr06c-r3-test-execution-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1256,
+      "sha256": "365a35b8d79f2752fac9371955570308225245f86747014ef40ff2ce5440b901"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06c-r3/pr06c-r3-validator-implementation-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1518,
+      "sha256": "6f6b473e7a354ab2bdfa71802de04fba36652d34b7ec354615874ca38ab87e2d"
     }
   ]
 }
