@@ -6,7 +6,7 @@
   "branch": "codex/pr-06c-validator-implementation",
   "baseSha": "f65ab65525a9011b91823ff61520257a8460852f",
   "validatedImplementationSha": "aa7efe68aa0d66b23e02dab6d1d63bf5f1959f0e",
-  "finalPrHead": "PENDING_EXTERNAL_GITHUB_FACT_AFTER_PUSH",
+  "finalPrHead": "dd9af4685d45e1f817ef4ede6c30b0f99ba4d41b",
   "prBoundary": {"baseRef":"origin/main","changedFiles":30,"additions":1788,"deletions":1,"deletedFiles":0,"renamedFiles":0},
   "implementationBoundary": {"baseSha":"c4faa883f1943513942ee9125cd518d11444e998","changedFiles":11,"additions":156,"deletions":85,"deletedFiles":0,"renamedFiles":0},
   "scope": {"contractAndSchemaFiles":4,"validatorSourceAndCliFiles":4,"testAndVerifierFiles":2,"historicalEvidenceFiles":2},
@@ -15,5 +15,5 @@
   "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
   "tests": {"cases":1,"passed":1,"failed":0},
   "gitBoundary": {"changedFiles":30,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1788,"lineDeletions":1},
-  "humanReview": {"decision":"PENDING","reviewer":null,"reviewedAt":null}
+  "humanReview": {"decision":"APPROVE","reviewer":"Amelia Cai","reviewedAt":"2026-08-11T10:42:22Z","blockerCount":0,"approvedCommit":"dd9af4685d45e1f817ef4ede6c30b0f99ba4d41b"}
 }

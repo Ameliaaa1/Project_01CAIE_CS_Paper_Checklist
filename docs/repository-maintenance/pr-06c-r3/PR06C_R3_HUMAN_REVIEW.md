@@ -1,6 +1,6 @@
 # PR-06C-R3 Human Review Worksheet
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
 Owner: Promotion contract maintainers
 
@@ -48,13 +48,15 @@ Disposition:
 
 ## Decision
 
-Reviewer: `PENDING`
+Reviewer: `Amelia Cai`
 
-Review UTC timestamp: `PENDING`
+Review UTC timestamp: `2026-08-11T10:42:22Z`
 
-Decision: `PENDING`
+Decision: `APPROVE`
 
-Blocker count: `PENDING`
+Blocker count: `0`
+
+Approved commit: `dd9af4685d45e1f817ef4ede6c30b0f99ba4d41b`
 
 Suggested approval token:
 

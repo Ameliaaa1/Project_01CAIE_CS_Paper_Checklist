@@ -1,6 +1,6 @@
 # PR-06C-R3 Contract-to-Code Traceability
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
 Owner: Promotion contract maintainers
 
