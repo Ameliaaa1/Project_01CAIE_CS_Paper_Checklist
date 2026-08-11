@@ -32,8 +32,10 @@ function fixture(records = null) {
   fs.rmdirSync(root);
   execFileSync("git", ["clone", "-q", "--shared", sourceRoot, root], { stdio: ["ignore", "pipe", "pipe"] });
   git(root, ["config", "user.name", "PR06D Fixture"]); git(root, ["config", "user.email", "pr06d@example.invalid"]);
+  fs.rmSync(path.join(root, "promotion/candidate"), { recursive: true, force: true });
+  fs.rmSync(path.join(root, "promotion/target"), { recursive: true, force: true });
   write(root, "generated/production-question-index.json", jsonBytes(syntheticSource(records)));
-  git(root, ["add", "generated/production-question-index.json"]); git(root, ["commit", "-qm", "synthetic validated source"]);
+  git(root, ["add", "-A"]); git(root, ["commit", "-qm", "synthetic validated source"]);
   const sourceCommit = git(root, ["rev-parse", "HEAD"]);
   git(root, ["remote", "set-url", "origin", "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git"]);
   git(root, ["update-ref", "refs/remotes/origin/main", sourceCommit]);
