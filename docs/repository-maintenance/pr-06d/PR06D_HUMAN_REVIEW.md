@@ -27,18 +27,18 @@ Related documents:
 
 ## Required checks
 
-- [ ] Source bytes and source commit are the intended validated input.
-- [ ] Candidate Manifest and artifact match the package hash inventory.
-- [ ] Candidate and Target artifact identity is exact.
-- [ ] Manifest history evidence uses `MANIFEST_PROVENANCE`.
-- [ ] Target runtime evidence uses `RUNTIME_PROMOTION` and binds the exact Promotion ID.
-- [ ] Candidate validation is `PASS`.
-- [ ] Bootstrap pre-review validation is `READY_FOR_HUMAN_REVIEW`.
-- [ ] Deterministic replay has zero drift.
-- [ ] Approval simulation grants no authority and creates no approval evidence.
-- [ ] Current Production manifest remains absent.
-- [ ] No Production write, Promotion execution, database migration, or deployment occurred.
-- [ ] Session freshness warning is understood: a later `main` requires Target runtime recapture and renewed review.
+- [x] Source bytes and source commit are the intended validated input.
+- [x] Candidate Manifest and artifact match the package hash inventory.
+- [x] Candidate and Target artifact identity is exact.
+- [x] Manifest history evidence uses `MANIFEST_PROVENANCE`.
+- [x] Target runtime evidence uses `RUNTIME_PROMOTION` and binds the exact Promotion ID.
+- [x] Candidate validation is `PASS`.
+- [x] Bootstrap pre-review validation is `READY_FOR_HUMAN_REVIEW`.
+- [x] Deterministic replay has zero drift.
+- [x] Approval simulation grants no authority and creates no approval evidence.
+- [x] Current Production manifest remains absent.
+- [x] No Production write, Promotion execution, database migration, or deployment occurred.
+- [x] Session freshness warning is understood: a later `main` requires Target runtime recapture and renewed review.
 
 ## Decision
 
