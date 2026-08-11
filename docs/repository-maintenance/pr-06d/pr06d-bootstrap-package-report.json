@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "task": "PR06D_BOOTSTRAP_PACKAGE_GENERATION_AND_DRY_RUN_PROMOTION_PREPARATION",
+  "status": "APPROVED",
+  "result": "PASS_PR06D_FIRST_REAL_BOOTSTRAP_PACKAGE_HUMAN_REVIEW",
+  "generatedAt": "2026-08-11T11:35:35Z",
+  "baseMainSha": "c1da2430cecd1135d7c8388cc20b0829661eb81c",
+  "frozenImplementationAndPackageCommit": "f7b090c41099a5f3eb428c8d66c350bb62cb69cf",
+  "workflow": {"id":"paperlens-pr06d-bootstrap-package-generator","version":"1.0.0"},
+  "source": {"path":"generated/production-question-index.json","commit":"c1da2430cecd1135d7c8388cc20b0829661eb81c","sizeBytes":4627657,"sha256":"a95f5c5f5ff6b0bd5d54eadca275873c58947dca1705d75aeaf307d2eb130632","dataSourceLabel":"PRODUCTION_CANONICAL","authorityInterpretation":"VALIDATED_INPUT_ONLY_NOT_PR06D_CURRENT_PRODUCTION"},
+  "package": {"promotionId":"pr06d-bootstrap-c1da2430cecd-56d59d2b79e9","artifactSha256":"56d59d2b79e93bd851226742676c28327e7aa0ecd45abc545bae0026b665f87e","candidateManifestSha256":"c57a7ab167d2236a9b195d46795a85cfdea2cbba3144d741d9378282de52d489","targetManifestSha256":"143ddeb596a62da6788e1a6f9de696a79a8415b31752e7292a218b7a61dd0725","recordCount":1690,"supportedSyllabi":["0478","9618"],"coreFiles":9,"deterministicReplayDrift":0},
+  "packageValidation": {"candidate":"PASS","bootstrapPreReview":"READY_FOR_HUMAN_REVIEW","promotionAuthorized":false,"promotionExecuted":false,"constructibility":{"schemasCompiled":9,"cycles":0}},
+  "tests": {"cases":177,"passed":177,"failed":0,"documentation":{"passed":90,"failed":0},"promotionValidator":{"passed":75,"failed":0},"bootstrapPackage":{"passed":12,"failed":0}},
+  "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
+  "safety": {"realCandidateCreated":true,"realTargetCreated":true,"currentProductionManifestCreated":false,"productionWrite":false,"promotionExecuted":false,"deploymentExecuted":false,"databaseMigration":false},
+  "sessionFreshness": "TARGET_RUNTIME_EVIDENCE_MUST_BE_RECAPTURED_AND_REVIEWED_IF_MAIN_ADVANCES",
+  "gitBoundary": {"changedFiles":24,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1048,"lineDeletions":1},
+  "humanReview": {"required":true,"decision":"APPROVE","reviewer":"Amelia Cai","reviewedAt":"2026-08-11T11:58:05Z","blockerCount":0,"approvedPackageIdentity":"pr06d-bootstrap-c1da2430cecd-56d59d2b79e9"}
+}

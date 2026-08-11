@@ -40,6 +40,7 @@ the authority named here.
 | PR-02B archive execution outcome | [PR-02B Execution Report](repository-maintenance/pr-02b/PR02B_EXECUTION_REPORT.md) | Execution authority |
 | PR-02B post-merge archive verification | [PR-02B Post-Merge Verification Report](repository-maintenance/pr-02b/PR02B_POST_MERGE_VERIFICATION_REPORT.md) | Merged-state verification authority |
 | PR-03 index reconstruction validation | [PR-03 Documentation Index Report](repository-maintenance/pr-03/PR03_DOCUMENTATION_INDEX_REPORT.md) | Index-reconstruction evidence authority |
+| PR-06D Bootstrap package generation and dry-run review outcome | [PR-06D Bootstrap Package Implementation Report](repository-maintenance/pr-06d/PR06D_BOOTSTRAP_PACKAGE_IMPLEMENTATION_REPORT.md) | Candidate and Promotion Target review-package evidence authority; no Current Production authority |
 
 ## Authority Rules
 

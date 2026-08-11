@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "evidenceId": "pr06d-bootstrap-c1da2430cecd-56d59d2b79e9-target-validation",
+  "validator": {
+    "id": "paperlens-promotion-gate-validator",
+    "version": "1.0.0",
+    "contractVersion": 4
+  },
+  "phase": "target-pre-review",
+  "result": "READY_FOR_HUMAN_REVIEW",
+  "manifest": {
+    "role": "promotion-target",
+    "lifecycleState": "READY_FOR_HUMAN_REVIEW",
+    "path": "promotion/target/manifest.json",
+    "sha256": "143ddeb596a62da6788e1a6f9de696a79a8415b31752e7292a218b7a61dd0725"
+  },
+  "artifact": {
+    "artifactId": "paperlens-question-corpus",
+    "artifactVersion": "pr06d-c1da2430cecd-a95f5c5f5ff6",
+    "path": "promotion/target/artifacts/question-corpus-v1.json",
+    "sizeBytes": 4277086,
+    "sha256": "56d59d2b79e93bd851226742676c28327e7aa0ecd45abc545bae0026b665f87e",
+    "recordCount": 1690,
+    "stableIdSetSha256": "5fc953a117094e2e711576bff9332935db3a07a5cf03e66ddd924d6c23c53784"
+  },
+  "schema": {
+    "id": "paperlens-question-corpus-records",
+    "version": 1,
+    "path": "contracts/promotion/schemas/question-corpus-v1.schema.json",
+    "sha256": "8eb88e79f22918a80d86bad28e322e316d03684bb69539478d908ba3aa7fe872"
+  },
+  "scope": {
+    "supportedSyllabi": [
+      "0478",
+      "9618"
+    ],
+    "sha256": "7896a5c8d67181b2468c662fe1be08bc492bb21abc67c615350e88e7097ac1bc"
+  },
+  "sourceCommit": "c1da2430cecd1135d7c8388cc20b0829661eb81c",
+  "generatedAt": "2026-08-11T11:35:35Z",
+  "supersedes": null,
+  "findings": [
+    {
+      "code": "PR06D_PACKAGE_GENERATED",
+      "severity": "INFO",
+      "message": "Package generated deterministically from the bound validated source",
+      "path": "promotion/target/artifacts/question-corpus-v1.json"
+    }
+  ]
+}

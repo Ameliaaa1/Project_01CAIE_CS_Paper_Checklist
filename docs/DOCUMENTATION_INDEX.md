@@ -62,6 +62,7 @@ records:
 - [PR-03 reconstruction evidence](repository-maintenance/pr-03/)
 - [PR-04 policy-freeze evidence](repository-maintenance/pr-04/)
 - [PR-05 validation-automation evidence](repository-maintenance/pr-05/)
+- [PR-06D Bootstrap package and dry-run review evidence](repository-maintenance/pr-06d/)
 
 Maintenance evidence describes completed governance work. It does not replace
 the README for current product behavior.
