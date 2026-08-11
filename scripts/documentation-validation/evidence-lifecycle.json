@@ -277,8 +277,8 @@
     {
       "path": "docs/repository-maintenance/pr-06d/PR06D_BOOTSTRAP_PACKAGE_IMPLEMENTATION_REPORT.md",
       "evidenceClass": "historical",
-      "sizeBytes": 3606,
-      "sha256": "3dc76d190169146296137ace94a75291076b8d86713c9bf55d9a460d291e79bf"
+      "sizeBytes": 3608,
+      "sha256": "b62e467024498fb9928a762126c71fd36b94ea384548105cb0e9b87707e8b72a"
     },
     {
       "path": "docs/repository-maintenance/pr-06d/PR06D_CONTRACT_TO_PACKAGE_TRACEABILITY.md",
@@ -289,26 +289,26 @@
     {
       "path": "docs/repository-maintenance/pr-06d/PR06D_HUMAN_REVIEW.md",
       "evidenceClass": "historical",
-      "sizeBytes": 2249,
-      "sha256": "3d91ab90a11f5837159b9bc015eb700fc4c76a676b4531d1676f4af4b8457396"
+      "sizeBytes": 2279,
+      "sha256": "35fea0e94330df3ff613e214ff2af6c5003b2a514decb302a700f81f5e5f8652"
     },
     {
       "path": "docs/repository-maintenance/pr-06d/pr06d-bootstrap-package-report.json",
       "evidenceClass": "historical",
-      "sizeBytes": 2425,
-      "sha256": "2bfea2e91ecc43cfa7c2c4d2d83f83e145ec1a8950eb9b8e225bd16bd1cfde72"
+      "sizeBytes": 2468,
+      "sha256": "6f28a82355a6ec9de78d191c2dfe77babf3fdde16c0a8db0288c867109e983c0"
     },
     {
       "path": "docs/repository-maintenance/pr-06d/pr06d-safety-audit.json",
       "evidenceClass": "historical",
-      "sizeBytes": 1251,
-      "sha256": "cdcdff84a08d6dc7de7e7a89817d8f32181b516dee643f819df89cab09efa61b"
+      "sizeBytes": 1365,
+      "sha256": "576f5b64c2fd33484b26feb5ffd474c29b57df0d350146f1afb6c8f81b5e8989"
     },
     {
       "path": "docs/repository-maintenance/pr-06d/pr06d-test-execution-report.json",
       "evidenceClass": "historical",
-      "sizeBytes": 1332,
-      "sha256": "c7e252dfeb7f7c41938b6fc9b7c1cd77e93007a61c3f4b841b757e7706641655"
+      "sizeBytes": 1445,
+      "sha256": "f58608b6b58f2fd35c3ff75d5f3620b71f3482fc04dee4f94530cf56d55bf660"
     }
   ]
 }

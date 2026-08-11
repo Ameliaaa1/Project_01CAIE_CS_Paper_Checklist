@@ -1,6 +1,6 @@
 # PR-06D Bootstrap Package Generation and Dry-Run Report
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
 Owner: Promotion package maintainers
 
@@ -20,7 +20,7 @@ Related documents:
 - [Dry-run report](../../../promotion/target/evidence/pr06d-dry-run-report.json)
 - [Package hash inventory](../../../promotion/target/evidence/pr06d-package-hash-report.json)
 
-Result: `READY_PR06D_FIRST_REAL_BOOTSTRAP_PACKAGE_FOR_HUMAN_REVIEW`
+Result: `PASS_PR06D_FIRST_REAL_BOOTSTRAP_PACKAGE_HUMAN_REVIEW`
 
 Frozen implementation and package commit: `f7b090c41099a5f3eb428c8d66c350bb62cb69cf`
 
@@ -76,5 +76,5 @@ by runtime evidence.
 - Database migration: `false`
 - Parser/frontend/question source mutation: `false`
 
-This package is ready for human review only. It is not `PRODUCTION_ACTIVE` and
-does not authorize PR-06E execution.
+This package passed human review for its frozen Package Identity. It is not
+`PRODUCTION_ACTIVE` and does not authorize PR-06E execution.

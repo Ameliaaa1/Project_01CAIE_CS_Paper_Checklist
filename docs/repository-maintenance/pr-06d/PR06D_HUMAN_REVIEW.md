@@ -1,6 +1,6 @@
 # PR-06D First Real Bootstrap Package Human Review
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
 Owner: Promotion package maintainers
 
@@ -42,15 +42,15 @@ Related documents:
 
 ## Decision
 
-Reviewer: `PENDING`
+Reviewer: `Amelia Cai`
 
-Review UTC timestamp: `PENDING`
+Review UTC timestamp: `2026-08-11T11:58:05Z`
 
-Decision: `PENDING`
+Decision: `APPROVE`
 
-Blocker count: `PENDING`
+Blocker count: `0`
 
-Approved Package Identity: `PENDING`
+Approved Package Identity: `pr06d-bootstrap-c1da2430cecd-56d59d2b79e9`
 
 Suggested approval token:
 
