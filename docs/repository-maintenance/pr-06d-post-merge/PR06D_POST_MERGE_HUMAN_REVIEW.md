@@ -1,6 +1,6 @@
 # PR-06D Post-Merge Read-Only Verification Human Review
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
 Owner: Promotion package maintainers
 
@@ -18,30 +18,30 @@ Related documents:
 
 ## Review checks
 
-- [ ] Merge commit and both parents are correct.
-- [ ] Package, approval, and final PR commits are ancestors of merged main.
-- [ ] Approved Package Identity and all recorded hashes remain traceable.
-- [ ] Package inventory has zero mismatches and deterministic replay has zero drift.
-- [ ] Candidate historical provenance still validates.
-- [ ] Stale Target runtime evidence blocks with `REMOTE_HISTORY_REF_MISMATCH`.
-- [ ] Runtime evidence was not reused, refreshed, or replaced.
-- [ ] Contract v4 remains constructible with nine schemas and zero cycles.
-- [ ] Project, documentation, validator, and Bootstrap tests pass.
-- [ ] Candidate, Target, and Production authority paths were not mutated.
-- [ ] Production manifest remains absent.
-- [ ] No Production write, Promotion execution, migration, or deployment occurred.
+- [x] Merge commit and both parents are correct.
+- [x] Package, approval, and final PR commits are ancestors of merged main.
+- [x] Approved Package Identity and all recorded hashes remain traceable.
+- [x] Package inventory has zero mismatches and deterministic replay has zero drift.
+- [x] Candidate historical provenance still validates.
+- [x] Stale Target runtime evidence blocks with `REMOTE_HISTORY_REF_MISMATCH`.
+- [x] Runtime evidence was not reused, refreshed, or replaced.
+- [x] Contract v4 remains constructible with nine schemas and zero cycles.
+- [x] Project, documentation, validator, and Bootstrap tests pass.
+- [x] Candidate, Target, and Production authority paths were not mutated.
+- [x] Production manifest remains absent.
+- [x] No Production write, Promotion execution, migration, or deployment occurred.
 
 ## Decision
 
-Reviewer: `PENDING`
+Reviewer: `Amelia Cai`
 
-Review UTC timestamp: `PENDING`
+Review UTC timestamp: `2026-08-11T12:48:56Z`
 
-Decision: `PENDING`
+Decision: `APPROVE`
 
-Blocker count: `PENDING`
+Blocker count: `0`
 
-Verification commit: `PENDING`
+Verification commit: `713ce6bd606aea99e0e52415c8d51e645808bc41`
 
 Suggested approval token:
 

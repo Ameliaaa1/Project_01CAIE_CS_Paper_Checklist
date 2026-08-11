@@ -1,8 +1,8 @@
 # PR-06D Post-Merge Read-Only Verification Report
 
-Status: `READY_FOR_HUMAN_REVIEW`
+Status: `APPROVED`
 
-Result: `PASS_PR06D_POST_MERGE_READ_ONLY_VERIFICATION`
+Result: `PASS_PR06D_POST_MERGE_READ_ONLY_VERIFICATION_HUMAN_REVIEW`
 
 Owner: Promotion package maintainers
 
@@ -75,5 +75,5 @@ candidateMutation=0
 targetMutation=0
 ```
 
-This result verifies the merged package only. It does not authorize PR-06E,
-create Current Production authority, or permit use of the stale runtime capture.
+Human review approved this merged-state verification at the frozen commit. It
+does not authorize PR-06E, Production authority, or stale runtime capture use.

@@ -13,5 +13,5 @@
   "tests": {"cases":177,"passed":177,"failed":0},
   "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
   "gitBoundary": {"changedFiles":9,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":244,"lineDeletions":0},
-  "humanReview": {"required":true,"decision":"PENDING","reviewer":null,"reviewedAt":null,"blockerCount":null,"verificationCommit":null}
+  "humanReview": {"required":true,"decision":"APPROVE","reviewer":"Amelia Cai","reviewedAt":"2026-08-11T12:48:56Z","blockerCount":0,"verificationCommit":"713ce6bd606aea99e0e52415c8d51e645808bc41"}
 }
