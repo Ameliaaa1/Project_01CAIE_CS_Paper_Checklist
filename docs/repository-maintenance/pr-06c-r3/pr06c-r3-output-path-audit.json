@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "VALIDATED",
+  "result": "PASS_PR06C_R3_OUTPUT_PATH_AUDIT",
+  "validatedAt": "2026-08-01T07:33:34Z",
+  "validatedImplementationSha": "aa7efe68aa0d66b23e02dab6d1d63bf5f1959f0e",
+  "defaultOutput": "STDOUT",
+  "allowedFilePrefix": "reports/promotion-validator/",
+  "allowedExtension": ".json",
+  "createParents": false,
+  "exclusiveCreate": true,
+  "overwrite": "PROHIBITED",
+  "symlinks": "BLOCK_INCLUDING_ROOT_BROKEN_AND_PRODUCTION_COMPONENTS",
+  "outsidePrefix": "BLOCK",
+  "authorityAndProductionPaths": "BLOCK",
+  "testedCases": ["stdout", "create-new", "overwrite", "escape"],
+  "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
+  "tests": {"cases":4,"passed":4,"failed":0},
+  "gitBoundary": {"changedFiles":11,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":156,"lineDeletions":85},
+  "humanReview": {"decision":"APPROVE","reviewer":"Amelia Cai","reviewedAt":"2026-08-11T10:42:22Z","blockerCount":0,"approvedCommit":"dd9af4685d45e1f817ef4ede6c30b0f99ba4d41b"}
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": 4,
+  "projectionProfile": "paperlens-evidence-binding-v1",
+  "supersedesContractVersion": 3,
+  "files": [
+    {"path":"contracts/promotion/promotion-validator-contract-v4.json","evidenceClass":"historical","kind":"contract","sizeBytes":11620,"sha256":"08628bb2cd40c5c140e7bcb1007ed10ba1c933509fdc9f09c03d180f8a34a501"},
+    {"path":"contracts/promotion/schema-registry-v2.json","evidenceClass":"historical","kind":"schema-registry","sizeBytes":3074,"sha256":"cd61945d797610a4d71cfbdd21fa34e779e8cbd5a6dbadc975c369409481e6f7"},
+    {"path":"contracts/promotion/generator-registry-v1.json","evidenceClass":"historical","kind":"generator-registry","sizeBytes":437,"sha256":"a2933baefec15d2188f8549dbfd44ae78c0b18585380e231432b970f113c3dfd"},
+    {"path":"contracts/promotion/schemas/bootstrap-approval-v1.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":968,"sha256":"d825631f1b4be17d54dcfea27054d558d13256e7544d9ee47b82c17081724d39","canonicalSha256":"861841a248a85453e273f470a572d1556c1f65c1e7ac7060cd484e3873f29b22"},
+    {"path":"contracts/promotion/schemas/promotion-manifest-v3.schema.json","evidenceClass":"historical","kind":"superseded-schema","sizeBytes":9567,"sha256":"f3ee6f7acc7383686d1abd840ff061afc95421a21380f06e3b914bcd8152dcf7","canonicalSha256":"eef493ec86ff27b2741697185257b28c871bb46b43ecf4a2d3b8fe3e3a92f698"},
+    {"path":"contracts/promotion/schemas/promotion-manifest-v4.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":10002,"sha256":"9a2e6494bf5bd588ae684075a1c9d31f6ebacf6dc42531a1ad35e6f440b0e30a","canonicalSha256":"b8fec42fcdac32e7b8c42d02211da928b462c2489fd2ddb4f9f7af8ce2744765"},
+    {"path":"contracts/promotion/schemas/promotion-validation-evidence-v1.schema.json","evidenceClass":"historical","kind":"superseded-schema","sizeBytes":6441,"sha256":"1dffbe04b6523e162853647c32e02d915e3a32beeb41537837b61d1031475f08","canonicalSha256":"d21653b3cd121b23ed64071ebf1aec364b91a75a6cab442521d789ab64c0f4de"},
+    {"path":"contracts/promotion/schemas/promotion-validation-evidence-v2.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":5724,"sha256":"368725d2e34929868b3f820802a996275768d4b431f0e8d8811bc8965a2b51a0","canonicalSha256":"ad88b34d4f51bc42e4cf863785ad3547d98a1cf4cc81f8e65f22f96cca1ef8b4"},
+    {"path":"contracts/promotion/schemas/question-corpus-v1.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":649,"sha256":"1b95bd201268a2125178c47367cbbd550f19695a1ce725c8401da43eaa7eedb1","canonicalSha256":"8eb88e79f22918a80d86bad28e322e316d03684bb69539478d908ba3aa7fe872"},
+    {"path":"contracts/promotion/schemas/remote-history-capture-v1.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":1676,"sha256":"f8b3d53fc45186ebc0f6adb0521ac67b98d428c6172e40b58882cb64a16c68ba","canonicalSha256":"1ed1946a09b61086817d756bf72f873df47c64694161ab386ad784de405f1395"},
+    {"path":"contracts/promotion/schemas/update-approval-v1.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":1511,"sha256":"1135816eceef610db4beeacfb7c6f7d4adc227a9494b01469372fa5d38c958c4","canonicalSha256":"6ba3056cf4561ec9c2ea2d8c6bffff86acd754bed6e9d833eae27dc60fa5c729"},
+    {"path":"contracts/promotion/schemas/update-difference-request-v1.schema.json","evidenceClass":"historical","kind":"schema","sizeBytes":2052,"sha256":"38dfbc140378b609296e83924354a7aa0e37c9ead1c62fb50190649962c85ef8","canonicalSha256":"47270c5069768e5acb803d91578761e8079f3c67b870568a62b01da34f3074fb"}
+  ]
+}

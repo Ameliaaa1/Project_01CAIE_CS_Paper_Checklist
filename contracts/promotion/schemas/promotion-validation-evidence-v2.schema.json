@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:paperlens:promotion-validation-evidence:2",
+  "title": "PaperLens Promotion Validation Evidence v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "evidenceId", "validator", "phase", "result", "manifest", "artifact", "schema", "scope", "sourceCommit", "generatedAt", "supersedes", "findings"],
+  "properties": {
+    "schemaVersion": {"const": 2},
+    "evidenceId": {"type": "string", "minLength": 1},
+    "validator": {"type": "object", "additionalProperties": false, "required": ["id", "version", "contractVersion"], "properties": {"id": {"const": "paperlens-promotion-gate-validator"}, "version": {"const": "1.0.0"}, "contractVersion": {"const": 4}}},
+    "phase": {"enum": ["candidate", "current-production", "target-pre-review", "target-post-review"]},
+    "result": {"enum": ["PASS", "READY_FOR_HUMAN_REVIEW", "PROMOTION_TARGET_VALIDATION_PASS", "BLOCK"]},
+    "manifest": {"$ref": "#/$defs/boundManifest"},
+    "artifact": {"type": "object", "additionalProperties": false, "required": ["artifactId", "artifactVersion", "path", "sizeBytes", "sha256", "recordCount", "stableIdSetSha256"], "properties": {"artifactId": {"const": "paperlens-question-corpus"}, "artifactVersion": {"type": "string", "minLength": 1}, "path": {"$ref": "#/$defs/repositoryPath"}, "sizeBytes": {"type": "integer", "minimum": 1, "maximum": 9007199254740991}, "sha256": {"$ref": "#/$defs/sha256"}, "recordCount": {"type": "integer", "minimum": 1, "maximum": 9007199254740991}, "stableIdSetSha256": {"$ref": "#/$defs/sha256"}}},
+    "schema": {"type": "object", "additionalProperties": false, "required": ["id", "version", "path", "sha256"], "properties": {"id": {"const": "paperlens-question-corpus-records"}, "version": {"const": 1}, "path": {"const": "contracts/promotion/schemas/question-corpus-v1.schema.json"}, "sha256": {"$ref": "#/$defs/sha256"}}},
+    "scope": {"type": "object", "additionalProperties": false, "required": ["supportedSyllabi", "sha256"], "properties": {"supportedSyllabi": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["0478", "9618"]}}, "sha256": {"$ref": "#/$defs/sha256"}}},
+    "sourceCommit": {"$ref": "#/$defs/fullCommit"},
+    "generatedAt": {"$ref": "#/$defs/utcTimestamp"},
+    "supersedes": {"anyOf": [{"type": "null"}, {"type": "object", "additionalProperties": false, "required": ["evidencePath", "evidenceSha256"], "properties": {"evidencePath": {"$ref": "#/$defs/repositoryPath"}, "evidenceSha256": {"$ref": "#/$defs/sha256"}}}]},
+    "findings": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["code", "severity", "message", "path"], "properties": {"code": {"type": "string", "minLength": 1}, "severity": {"enum": ["INFO", "BLOCK"]}, "message": {"type": "string", "minLength": 1}, "path": {"type": "string"}}}}
+  },
+  "allOf": [
+    {"if": {"properties": {"phase": {"const": "candidate"}}, "required": ["phase"]}, "then": {"properties": {"manifest": {"type":"object","properties": {"role": {"const": "candidate"}, "lifecycleState": {"enum": ["CANDIDATE_VALIDATED", "READY_FOR_PROMOTION_REVIEW"]}, "path": {"const": "promotion/candidate/manifest.json"}}}, "artifact": {"type":"object","properties": {"path": {"type":"string","pattern": "^promotion/candidate/artifacts/"}}}, "result": {"enum": ["PASS", "BLOCK"]}}}},
+    {"if": {"properties": {"phase": {"const": "current-production"}}, "required": ["phase"]}, "then": {"properties": {"manifest": {"type":"object","properties": {"role": {"const": "current-production"}, "lifecycleState": {"const": "PRODUCTION_CURRENT"}, "path": {"const": "promotion/production/manifest.json"}}}, "artifact": {"type":"object","properties": {"path": {"type":"string","pattern": "^promotion/production/artifacts/"}}}, "result": {"enum": ["PASS", "BLOCK"]}}}},
+    {"if": {"properties": {"phase": {"const": "target-pre-review"}}, "required": ["phase"]}, "then": {"properties": {"manifest": {"type":"object","properties": {"role": {"const": "promotion-target"}, "lifecycleState": {"enum": ["TARGET_VALIDATED", "READY_FOR_HUMAN_REVIEW"]}, "path": {"const": "promotion/target/manifest.json"}}}, "artifact": {"type":"object","properties": {"path": {"type":"string","pattern": "^promotion/target/artifacts/"}}}, "result": {"enum": ["READY_FOR_HUMAN_REVIEW", "BLOCK"]}}}},
+    {"if": {"properties": {"phase": {"const": "target-post-review"}}, "required": ["phase"]}, "then": {"properties": {"manifest": {"type":"object","properties": {"role": {"const": "promotion-target"}, "lifecycleState": {"const": "APPROVED_FOR_EXECUTION"}, "path": {"const": "promotion/target/manifest.json"}}}, "artifact": {"type":"object","properties": {"path": {"type":"string","pattern": "^promotion/target/artifacts/"}}}, "result": {"enum": ["PROMOTION_TARGET_VALIDATION_PASS", "BLOCK"]}}}}
+  ],
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "fullCommit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "utcTimestamp": {"type": "string", "format": "date-time", "pattern": "Z$"},
+    "repositoryPath": {"type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\).+$"},
+    "boundManifest": {"type": "object", "additionalProperties": false, "required": ["role", "lifecycleState", "path", "sha256"], "properties": {"role": {"enum": ["candidate", "current-production", "promotion-target"]}, "lifecycleState": {"enum": ["CANDIDATE_VALIDATED", "READY_FOR_PROMOTION_REVIEW", "PRODUCTION_CURRENT", "TARGET_VALIDATED", "READY_FOR_HUMAN_REVIEW", "APPROVED_FOR_EXECUTION"]}, "path": {"$ref": "#/$defs/repositoryPath"}, "sha256": {"$ref": "#/$defs/sha256"}}}
+  }
+}
