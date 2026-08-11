@@ -345,6 +345,60 @@
       "evidenceClass": "historical",
       "sizeBytes": 1516,
       "sha256": "7d00ed3b1bfb4ad961ac76a64424e1a2bcbea54059ecf24967def64b6daef32b"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/PR06E_FIRST_PRODUCTION_BOOTSTRAP_PREFLIGHT_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 3075,
+      "sha256": "981f1723f4597e7bf21f3f7003b37f829744b45e69230cd8cfd7a5ea82d465e2"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/PR06E_PRE_EXECUTION_HUMAN_REVIEW.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2661,
+      "sha256": "050115de1d652f9115f015f3c7b7e346e5f8127e5d0066f23d83eaf1010f53c6"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/PR06E_PRODUCTION_EXECUTION_PLAN.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2022,
+      "sha256": "e085dac63a2139a2bfe59ed344d0a282190e64ee8823b35ca57e1f3d1298dc0f"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-expected-output-hashes.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1749,
+      "sha256": "f30452d09c5c656d83000835487bd85b79c3433a7ab13255ddc0a9e310cb4e6a"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-preflight-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1644,
+      "sha256": "9b7fce9ba14790ec76d6474c418119ff44a06eac4da91336f5a84ba4ca92de6f"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-runtime-capture-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1318,
+      "sha256": "0f8fd9adde106863c3efc2ac48d27d4b43eb765678266549401a1b33c5482997"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-safety-boundary-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1134,
+      "sha256": "f9fe526c5ce29a5df2a30535a84a890dc5aa6084d0ae7e356a91002109e54941"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-target-validation-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1596,
+      "sha256": "66afc20459351967b4b98b476326f543feb12a11ec49edcc1b844b1175d15d0d"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-test-execution-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1338,
+      "sha256": "5589bb5ad4276134e3d7595365d64298f990a9adb5dd54832bd15d11b18d34f3"
     }
   ]
 }

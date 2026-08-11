@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "status": "VALIDATED",
+  "result": "PASS_PR06E_PREFLIGHT_TEST_EXECUTION",
+  "executedAt": "2026-08-11T13:19:40Z",
+  "suites": {"documentationValidation":{"passed":90,"failed":0},"promotionValidator":{"passed":75,"failed":0},"pr06dBootstrapPackage":{"passed":12,"failed":0},"pr06eProductionBootstrap":{"passed":8,"failed":0}},
+  "pr06eCoverage": ["fresh-session Target preflight","Candidate immutability","artifact identity preservation","approved Target SHA mismatch blocking","runtime session mismatch blocking","missing approval execution blocking","post-review Target validation","Production artifact exact-byte creation","current-production validation","second Bootstrap blocking"],
+  "fixtureProductionOnly": true,
+  "realProductionMutation": false,
+  "tests": {"cases":185,"passed":185,"failed":0},
+  "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
+  "gitBoundary": {"changedFiles":22,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":791,"lineDeletions":7},
+  "humanReview": {"required":true,"decision":"PENDING","reviewer":null,"reviewedAt":null,"blockerCount":null,"approvedTargetManifestSha256":null,"approvedPromotionId":null}
+}

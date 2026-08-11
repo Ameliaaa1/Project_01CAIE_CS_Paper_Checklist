@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "result": "READY_PR06E_FIRST_PRODUCTION_BOOTSTRAP_FOR_HUMAN_REVIEW",
+  "generatedAt": "2026-08-11T13:19:40Z",
+  "baseMainSha": "4d2363e7df3a4231252e0864c4ceb29e4196baa8",
+  "workflowImplementationCommit": "a2ab3798bd42f982e89f415dc587494b4d59038b",
+  "freshSessionPackageCommit": "5ed6136f998916489a177649d706ce7fa51c2f01",
+  "promotionId": "pr06e-bootstrap-4d2363e7df3a-56d59d2b79e9",
+  "targetManifestSha256": "e13e2d288fcf779bedb14ddca7aaad6e127bffd915600051d5376e8bcd6e214a",
+  "targetArtifactSha256": "56d59d2b79e93bd851226742676c28327e7aa0ecd45abc545bae0026b665f87e",
+  "runtimeEvidenceSha256": "f1f6d6a37e8099b2330f911f2d048826d78a16d7992c7fb71447e19b860042a1",
+  "targetPreflightEvidenceSha256": "386dc1474ed7e2766f4ce550c233878224b3e60f9b4879276d6dbc146d0f532e",
+  "packagePreflightReportSha256": "0fd7218129723bf87d97de5550976996539b6858bd39eb48abdbe6c0a960f6d5",
+  "outcome": {"candidate":"PASS","target":"READY_FOR_HUMAN_REVIEW","productionPresent":false,"promotionAuthorized":false,"promotionExecuted":false},
+  "tests": {"cases":185,"passed":185,"failed":0},
+  "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
+  "gitBoundary": {"changedFiles":22,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":791,"lineDeletions":7},
+  "humanReview": {"required":true,"decision":"PENDING","reviewer":null,"reviewedAt":null,"blockerCount":null,"approvedTargetManifestSha256":null,"approvedPromotionId":null}
+}

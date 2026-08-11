@@ -64,6 +64,7 @@ records:
 - [PR-05 validation-automation evidence](repository-maintenance/pr-05/)
 - [PR-06D Bootstrap package and dry-run review evidence](repository-maintenance/pr-06d/)
 - [PR-06D post-merge read-only verification evidence](repository-maintenance/pr-06d-post-merge/)
+- [PR-06E first Production Bootstrap pre-execution review evidence](repository-maintenance/pr-06e/)
 
 Maintenance evidence describes completed governance work. It does not replace
 the README for current product behavior.

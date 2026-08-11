@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "status": "VALIDATED",
+  "result": "PASS_PR06E_FRESH_RUNTIME_PROMOTION_CAPTURE",
+  "capturedAt": "2026-08-11T13:19:40Z",
+  "repositoryIdentity": "Ameliaaa1/Project_01CAIE_CS_Paper_Checklist",
+  "remoteURL": "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git",
+  "remoteBranch": "refs/heads/main",
+  "remoteCommitSHA": "4d2363e7df3a4231252e0864c4ceb29e4196baa8",
+  "localTrackingRefSHA": "4d2363e7df3a4231252e0864c4ceb29e4196baa8",
+  "promotionId": "pr06e-bootstrap-4d2363e7df3a-56d59d2b79e9",
+  "runtimeEvidencePath": "promotion/target/evidence/pr06e-runtime-remote-history.json",
+  "runtimeEvidenceSha256": "f1f6d6a37e8099b2330f911f2d048826d78a16d7992c7fb71447e19b860042a1",
+  "oldPr06dRuntimeEvidenceReused": false,
+  "tests": {"cases":185,"passed":185,"failed":0},
+  "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
+  "gitBoundary": {"changedFiles":22,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":791,"lineDeletions":7},
+  "humanReview": {"required":true,"decision":"PENDING","reviewer":null,"reviewedAt":null,"blockerCount":null,"approvedTargetManifestSha256":null,"approvedPromotionId":null}
+}

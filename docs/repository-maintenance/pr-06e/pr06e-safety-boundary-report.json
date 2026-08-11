@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "status": "VALIDATED",
+  "result": "PASS_PR06E_PREFLIGHT_SAFETY_BOUNDARY",
+  "validatedAt": "2026-08-11T13:19:40Z",
+  "productionManifestCreated": false,
+  "productionDirectoryPresent": false,
+  "productionWrite": false,
+  "promotionExecuted": false,
+  "approvalEvidenceCreated": false,
+  "databaseMigration": false,
+  "deploymentExecuted": false,
+  "candidateMutation": 0,
+  "targetArtifactMutation": 0,
+  "targetSessionRebinding": "AUTHORIZED_PREFLIGHT_ONLY",
+  "executionGate": "EXPLICIT_HUMAN_APPROVAL_PLUS_COMMITTED_POST_REVIEW_TARGET_REQUIRED",
+  "tests": {"cases":185,"passed":185,"failed":0},
+  "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
+  "gitBoundary": {"changedFiles":22,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":791,"lineDeletions":7},
+  "humanReview": {"required":true,"decision":"PENDING","reviewer":null,"reviewedAt":null,"blockerCount":null,"approvedTargetManifestSha256":null,"approvedPromotionId":null}
+}

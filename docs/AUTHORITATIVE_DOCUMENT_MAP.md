@@ -42,6 +42,7 @@ the authority named here.
 | PR-03 index reconstruction validation | [PR-03 Documentation Index Report](repository-maintenance/pr-03/PR03_DOCUMENTATION_INDEX_REPORT.md) | Index-reconstruction evidence authority |
 | PR-06D Bootstrap package generation and dry-run review outcome | [PR-06D Bootstrap Package Implementation Report](repository-maintenance/pr-06d/PR06D_BOOTSTRAP_PACKAGE_IMPLEMENTATION_REPORT.md) | Candidate and Promotion Target review-package evidence authority; no Current Production authority |
 | PR-06D merged-state package integrity and safety outcome | [PR-06D Post-Merge Read-Only Verification Report](repository-maintenance/pr-06d-post-merge/PR06D_POST_MERGE_READ_ONLY_VERIFICATION_REPORT.md) | Post-merge verification evidence authority; no Promotion execution authority |
+| PR-06E fresh-session Bootstrap preflight and execution review boundary | [PR-06E First Production Bootstrap Preflight Report](repository-maintenance/pr-06e/PR06E_FIRST_PRODUCTION_BOOTSTRAP_PREFLIGHT_REPORT.md) | Pre-execution review authority; Production execution remains prohibited until explicit approval |
 
 ## Authority Rules
 
