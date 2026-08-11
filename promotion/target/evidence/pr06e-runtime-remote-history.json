@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "REMOTE_HISTORY_CAPTURE_V1",
+  "evidencePurpose": "RUNTIME_PROMOTION",
+  "promotionSessionId": "pr06e-bootstrap-4d2363e7df3a-56d59d2b79e9",
+  "repositoryIdentity": "Ameliaaa1/Project_01CAIE_CS_Paper_Checklist",
+  "remoteURL": "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git",
+  "remoteBranch": "refs/heads/main",
+  "remoteCommitSHA": "4d2363e7df3a4231252e0864c4ceb29e4196baa8",
+  "captureTimestamp": "2026-08-11T13:19:40.000Z",
+  "captureMethod": "git ls-remote origin refs/heads/main",
+  "localTrackingRef": "refs/remotes/origin/main",
+  "localTrackingRefSHA": "4d2363e7df3a4231252e0864c4ceb29e4196baa8",
+  "verificationResult": "PASS"
+}

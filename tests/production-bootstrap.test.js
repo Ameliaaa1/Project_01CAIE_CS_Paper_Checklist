@@ -14,6 +14,7 @@ const capturedAt = "2026-08-11T13:00:00Z";
 const reviewedAt = "2026-08-11T13:01:00Z";
 const executedAt = "2026-08-11T13:02:00Z";
 const promotionId = "pr06e-synthetic-bootstrap-001";
+const pr06eBaseMain = "4d2363e7df3a4231252e0864c4ceb29e4196baa8";
 const tests = [];
 let passed = 0;
 
@@ -24,6 +25,8 @@ function fixture() {
   fs.rmdirSync(root);
   execFileSync("git", ["clone", "-q", "--shared", sourceRoot, root], { stdio: ["ignore", "pipe", "pipe"] });
   git(root, ["config", "user.name", "PR06E Fixture"]); git(root, ["config", "user.email", "pr06e@example.invalid"]);
+  git(root, ["checkout", pr06eBaseMain, "--", "promotion/target"]);
+  if (git(root, ["status", "--porcelain"])) { git(root, ["add", "-A"]); git(root, ["commit", "-qm", "restore approved PR06D Target baseline"]); }
   const main = git(root, ["rev-parse", "HEAD"]);
   git(root, ["remote", "set-url", "origin", "https://github.com/Ameliaaa1/Project_01CAIE_CS_Paper_Checklist.git"]);
   git(root, ["update-ref", "refs/remotes/origin/main", main]);
