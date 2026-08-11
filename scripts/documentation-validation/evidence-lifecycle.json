@@ -296,19 +296,19 @@
       "path": "docs/repository-maintenance/pr-06d/pr06d-bootstrap-package-report.json",
       "evidenceClass": "historical",
       "sizeBytes": 2425,
-      "sha256": "7e231be2f3507622d347e4b7571d11975fce26fdff1c20f395a4b252d262d5b2"
+      "sha256": "2bfea2e91ecc43cfa7c2c4d2d83f83e145ec1a8950eb9b8e225bd16bd1cfde72"
     },
     {
       "path": "docs/repository-maintenance/pr-06d/pr06d-safety-audit.json",
       "evidenceClass": "historical",
       "sizeBytes": 1251,
-      "sha256": "130a21d78a9a46f88e684dc8fb17fdf7be69947ef40e888e722b7c2560b6bc2c"
+      "sha256": "cdcdff84a08d6dc7de7e7a89817d8f32181b516dee643f819df89cab09efa61b"
     },
     {
       "path": "docs/repository-maintenance/pr-06d/pr06d-test-execution-report.json",
       "evidenceClass": "historical",
       "sizeBytes": 1332,
-      "sha256": "cc86d9d726b2d00904ac4aedcbe53ba13bc700d214e9dc1e9cae04bd9a847b3e"
+      "sha256": "c7e252dfeb7f7c41938b6fc9b7c1cd77e93007a61c3f4b841b757e7706641655"
     }
   ]
 }

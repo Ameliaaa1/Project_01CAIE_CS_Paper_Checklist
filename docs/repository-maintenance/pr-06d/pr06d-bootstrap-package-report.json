@@ -14,6 +14,6 @@
   "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
   "safety": {"realCandidateCreated":true,"realTargetCreated":true,"currentProductionManifestCreated":false,"productionWrite":false,"promotionExecuted":false,"deploymentExecuted":false,"databaseMigration":false},
   "sessionFreshness": "TARGET_RUNTIME_EVIDENCE_MUST_BE_RECAPTURED_AND_REVIEWED_IF_MAIN_ADVANCES",
-  "gitBoundary": {"changedFiles":22,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1046,"lineDeletions":1},
+  "gitBoundary": {"changedFiles":24,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1048,"lineDeletions":1},
   "humanReview": {"required":true,"decision":"PENDING","reviewer":null,"reviewedAt":null,"blockerCount":null,"approvedPackageIdentity":null}
 }

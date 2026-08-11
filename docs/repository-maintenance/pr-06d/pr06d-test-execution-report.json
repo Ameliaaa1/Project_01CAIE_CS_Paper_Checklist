@@ -15,6 +15,6 @@
   "realPackageValidation": {"candidate":"PASS","bootstrapPreReview":"READY_FOR_HUMAN_REVIEW","deterministicFilesCompared":9,"deterministicDrift":0},
   "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
   "tests": {"cases":177,"passed":177,"failed":0},
-  "gitBoundary": {"changedFiles":22,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1046,"lineDeletions":1},
+  "gitBoundary": {"changedFiles":24,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1048,"lineDeletions":1},
   "humanReview": {"decision":"PENDING","reviewer":null,"reviewedAt":null}
 }

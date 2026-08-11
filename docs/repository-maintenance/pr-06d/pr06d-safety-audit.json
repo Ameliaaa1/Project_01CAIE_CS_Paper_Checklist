@@ -19,6 +19,6 @@
   "sessionFreshnessRule": "RECAPTURE_AND_REVIEW_TARGET_RUNTIME_EVIDENCE_AFTER_ANY_MAIN_ADVANCEMENT",
   "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
   "tests": {"cases":12,"passed":12,"failed":0},
-  "gitBoundary": {"changedFiles":22,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1046,"lineDeletions":1},
+  "gitBoundary": {"changedFiles":24,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1048,"lineDeletions":1},
   "humanReview": {"decision":"PENDING","reviewer":null,"reviewedAt":null}
 }
