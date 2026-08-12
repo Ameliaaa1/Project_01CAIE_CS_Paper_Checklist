@@ -1,7 +1,7 @@
 {
   "schemaVersion": 4,
   "authorityRole": "promotion-target",
-  "lifecycleState": "READY_FOR_HUMAN_REVIEW",
+  "lifecycleState": "APPROVED_FOR_EXECUTION",
   "artifact": {
     "artifactId": "paperlens-question-corpus",
     "artifactVersion": "pr06d-c1da2430cecd-a95f5c5f5ff6",
@@ -39,24 +39,24 @@
     }
   },
   "validation": {
-    "result": "READY_FOR_HUMAN_REVIEW",
-    "validatedAt": "2026-08-11T13:19:40Z",
-    "evidencePath": "promotion/target/evidence/pr06e-target-preflight-validation.json",
+    "result": "PROMOTION_TARGET_VALIDATION_PASS",
+    "validatedAt": "2026-08-12T01:22:38Z",
+    "evidencePath": "promotion/target/evidence/pr06e-target-post-review-validation.json",
     "evidenceProjectionProfile": "paperlens-evidence-binding-v1",
-    "evidenceProjectionSha256": "c34f052676f9c70859e30c86dafe0f5244b957c49e1a71fe40ff596c4465b1bc"
+    "evidenceProjectionSha256": "808ec6248dc501aa8e1b01f96d7040e3d7fa87567ec33bcecf4e4f9d3909704e"
   },
   "promotion": {
     "mode": "bootstrap",
     "baselineProductionSha256": null,
     "differenceRequestPath": null,
     "differenceRequestSha256": null,
-    "approvalEvidencePath": null,
-    "approvalEvidenceSha256": null,
+    "approvalEvidencePath": "promotion/target/evidence/pr06e-bootstrap-approval.json",
+    "approvalEvidenceSha256": "3db06a0bcb570db274ded043276e7858fd78ae6b782bfab87152053bd44284cb",
     "runtimeRemoteHistoryEvidencePath": "promotion/target/evidence/pr06e-runtime-remote-history.json",
     "runtimeRemoteHistoryEvidenceSha256": "f1f6d6a37e8099b2330f911f2d048826d78a16d7992c7fb71447e19b860042a1",
-    "reviewDecision": "PENDING",
-    "reviewer": null,
-    "reviewedAt": null,
+    "reviewDecision": "APPROVE",
+    "reviewer": "Amelia Cai",
+    "reviewedAt": "2026-08-12T01:22:38Z",
     "promotionId": "pr06e-bootstrap-4d2363e7df3a-56d59d2b79e9"
   }
 }
