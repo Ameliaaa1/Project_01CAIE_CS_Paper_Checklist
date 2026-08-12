@@ -1,11 +1,11 @@
 {
   "schemaVersion": 4,
-  "authorityRole": "promotion-target",
-  "lifecycleState": "APPROVED_FOR_EXECUTION",
+  "authorityRole": "current-production",
+  "lifecycleState": "PRODUCTION_CURRENT",
   "artifact": {
     "artifactId": "paperlens-question-corpus",
     "artifactVersion": "pr06d-c1da2430cecd-a95f5c5f5ff6",
-    "artifactPath": "promotion/target/artifacts/question-corpus-v1.json",
+    "artifactPath": "promotion/production/artifacts/question-corpus-v1.json",
     "sizeBytes": 4277086,
     "sha256": "56d59d2b79e93bd851226742676c28327e7aa0ecd45abc545bae0026b665f87e",
     "recordCount": 1690,
@@ -34,29 +34,29 @@
       "registrySha256": "a2933baefec15d2188f8549dbfd44ae78c0b18585380e231432b970f113c3dfd"
     },
     "manifestHistoryEvidence": {
-      "evidencePath": "promotion/target/evidence/manifest-history.json",
+      "evidencePath": "promotion/production/evidence/manifest-history.json",
       "evidenceSha256": "3b005b78e1682dd22f00e1bc85d6b18ee744a23c7318654e2c2f9886527fee08"
     }
   },
   "validation": {
-    "result": "PROMOTION_TARGET_VALIDATION_PASS",
-    "validatedAt": "2026-08-12T01:22:38Z",
-    "evidencePath": "promotion/target/evidence/pr06e-target-post-review-validation.json",
+    "result": "PASS",
+    "validatedAt": "2026-08-12T01:24:23Z",
+    "evidencePath": "promotion/production/evidence/validation.json",
     "evidenceProjectionProfile": "paperlens-evidence-binding-v1",
-    "evidenceProjectionSha256": "808ec6248dc501aa8e1b01f96d7040e3d7fa87567ec33bcecf4e4f9d3909704e"
+    "evidenceProjectionSha256": "2e1004895a0729c05d6f0fe6116b0eb243bf6267667d5609e07270f8f944e2d6"
   },
   "promotion": {
-    "mode": "bootstrap",
+    "mode": null,
     "baselineProductionSha256": null,
     "differenceRequestPath": null,
     "differenceRequestSha256": null,
-    "approvalEvidencePath": "promotion/target/evidence/pr06e-bootstrap-approval.json",
-    "approvalEvidenceSha256": "3db06a0bcb570db274ded043276e7858fd78ae6b782bfab87152053bd44284cb",
-    "runtimeRemoteHistoryEvidencePath": "promotion/target/evidence/pr06e-runtime-remote-history.json",
-    "runtimeRemoteHistoryEvidenceSha256": "f1f6d6a37e8099b2330f911f2d048826d78a16d7992c7fb71447e19b860042a1",
-    "reviewDecision": "APPROVE",
-    "reviewer": "Amelia Cai",
-    "reviewedAt": "2026-08-12T01:22:38Z",
-    "promotionId": "pr06e-bootstrap-4d2363e7df3a-56d59d2b79e9"
+    "approvalEvidencePath": null,
+    "approvalEvidenceSha256": null,
+    "runtimeRemoteHistoryEvidencePath": null,
+    "runtimeRemoteHistoryEvidenceSha256": null,
+    "reviewDecision": "NOT_APPLICABLE",
+    "reviewer": null,
+    "reviewedAt": null,
+    "promotionId": null
   }
 }

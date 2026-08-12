@@ -345,6 +345,84 @@
       "evidenceClass": "historical",
       "sizeBytes": 1516,
       "sha256": "7d00ed3b1bfb4ad961ac76a64424e1a2bcbea54059ecf24967def64b6daef32b"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/PR06E_FIRST_PRODUCTION_BOOTSTRAP_PREFLIGHT_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 3075,
+      "sha256": "981f1723f4597e7bf21f3f7003b37f829744b45e69230cd8cfd7a5ea82d465e2"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/PR06E_PRE_EXECUTION_HUMAN_REVIEW.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2782,
+      "sha256": "439bd8c0f065ba511767d37a39d11d5ce605c74a54e77712617d73b4560c932f"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/PR06E_PRODUCTION_EXECUTION_PLAN.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2526,
+      "sha256": "2504f2a5bf4d51955b945173d44dde5f947a51b7d9f5780a650ed900551d3ab3"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-expected-output-hashes.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1948,
+      "sha256": "074e020897d035fd1eee86de4204fa3ec2600583f7818f2c0af0ff2cf01a6040"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-preflight-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1756,
+      "sha256": "10acdf2c44bbc5145fe1a4776c446e856927ed1773c2fc62ab59b8572fc9db87"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-runtime-capture-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1444,
+      "sha256": "99b28c29fe68acebc960b63d359d599538789b0cbe1f78c7699ca957319fcfb5"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-safety-boundary-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1248,
+      "sha256": "81d6320deee9153e1461b710d7f9b365ecf4f6b83d150662672204f410e2e984"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-target-validation-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1960,
+      "sha256": "4580ee3cba7c328d9ff6e74a3a496eeaa30c0aca3f0fc32c3ea3059581756984"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-test-execution-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1463,
+      "sha256": "bd180aa023d4595e0f9d16246bacb732f3b99be6c3642b698776426ec744b3de"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/PR06E_FIRST_PRODUCTION_BOOTSTRAP_EXECUTION_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 1924,
+      "sha256": "c0c289d1f876b78d8cc2e46005272750a9634fca55fd4f46de3850f67ac45db3"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-production-execution-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1877,
+      "sha256": "fb06149ed0a7d3ffd5572124c1e8fe387aab0dd4c83720077adcc7ed7df7c30b"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-post-promotion-verification-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 2026,
+      "sha256": "f7eeef44545c7fa19f2911158837c4888c2c82d4adfa558cf335a5c8be1e6d14"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-traceability-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 2012,
+      "sha256": "fba7275dd88a867bf0359847ec64ed259e75b7f0931c96b313efee9547a11104"
     }
   ]
 }

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "task": "PR06E_FIRST_PRODUCTION_BOOTSTRAP_PREFLIGHT",
+  "result": "READY_PR06E_FIRST_PRODUCTION_BOOTSTRAP_FOR_HUMAN_REVIEW",
+  "generatedAt": "2026-08-11T13:19:40Z",
+  "promotionId": "pr06e-bootstrap-4d2363e7df3a-56d59d2b79e9",
+  "candidateManifestSha256": "c57a7ab167d2236a9b195d46795a85cfdea2cbba3144d741d9378282de52d489",
+  "inputTargetManifestSha256": "143ddeb596a62da6788e1a6f9de696a79a8415b31752e7292a218b7a61dd0725",
+  "targetManifestSha256": "e13e2d288fcf779bedb14ddca7aaad6e127bffd915600051d5376e8bcd6e214a",
+  "targetArtifactSha256": "56d59d2b79e93bd851226742676c28327e7aa0ecd45abc545bae0026b665f87e",
+  "runtimeEvidence": {
+    "path": "promotion/target/evidence/pr06e-runtime-remote-history.json",
+    "sha256": "f1f6d6a37e8099b2330f911f2d048826d78a16d7992c7fb71447e19b860042a1",
+    "remoteCommitSHA": "4d2363e7df3a4231252e0864c4ceb29e4196baa8",
+    "promotionSessionId": "pr06e-bootstrap-4d2363e7df3a-56d59d2b79e9"
+  },
+  "targetValidationEvidence": {
+    "path": "promotion/target/evidence/pr06e-target-preflight-validation.json",
+    "sha256": "386dc1474ed7e2766f4ce550c233878224b3e60f9b4879276d6dbc146d0f532e"
+  },
+  "expectedProduction": {
+    "artifactSha256": "56d59d2b79e93bd851226742676c28327e7aa0ecd45abc545bae0026b665f87e",
+    "manifestRole": "current-production",
+    "lifecycleState": "PRODUCTION_CURRENT"
+  },
+  "validation": {
+    "schemaVersion": 1,
+    "validator": {
+      "id": "paperlens-promotion-gate-validator",
+      "version": "1.0.0",
+      "contractVersion": 4
+    },
+    "intent": "bootstrap-pre-review",
+    "result": "READY_FOR_HUMAN_REVIEW",
+    "exitCode": 0,
+    "promotionAuthorized": false,
+    "promotionExecuted": false,
+    "findings": [],
+    "validatedRoles": [
+      "candidate",
+      "promotion-target"
+    ]
+  },
+  "safety": {
+    "productionManifestCreated": false,
+    "productionWrite": false,
+    "promotionExecuted": false,
+    "approvalEvidenceCreated": false
+  }
+}

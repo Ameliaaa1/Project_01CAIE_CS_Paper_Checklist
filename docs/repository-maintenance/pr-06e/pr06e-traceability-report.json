@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "status": "VALIDATED",
+  "result": "PASS_PR06E_CANDIDATE_TARGET_PRODUCTION_TRACEABILITY",
+  "verifiedAt": "2026-08-12T01:24:23Z",
+  "sourceCommit": "c1da2430cecd1135d7c8388cc20b0829661eb81c",
+  "candidateManifestSha256": "c57a7ab167d2236a9b195d46795a85cfdea2cbba3144d741d9378282de52d489",
+  "approvedPreReviewTargetManifestSha256": "e13e2d288fcf779bedb14ddca7aaad6e127bffd915600051d5376e8bcd6e214a",
+  "approvedPostReviewTargetManifestSha256": "a86b0b2ff5e612fd96b05e462bcba0a396ab1e581fef34b81c9c2125012f288a",
+  "productionManifestSha256": "93f6e09fc4c0542e91d50738cb568a6a0c389edf4c87c2d861be17e3a08a4bf2",
+  "sharedIdentity": {"artifactSha256":"56d59d2b79e93bd851226742676c28327e7aa0ecd45abc545bae0026b665f87e","artifactVersion":"pr06d-c1da2430cecd-a95f5c5f5ff6","recordCount":1690,"stableIdSetSha256":"5fc953a117094e2e711576bff9332935db3a07a5cf03e66ddd924d6c23c53784","scopeSha256":"7896a5c8d67181b2468c662fe1be08bc492bb21abc67c615350e88e7097ac1bc","schemaSha256":"8eb88e79f22918a80d86bad28e322e316d03684bb69539478d908ba3aa7fe872","historicalProvenanceSha256":"3b005b78e1682dd22f00e1bc85d6b18ee744a23c7318654e2c2f9886527fee08"},
+  "identityDrift": {"candidate":false,"targetArtifact":false,"productionArtifact":false,"schema":false,"scope":false,"sourceCommit":false,"historicalProvenance":false},
+  "tests": {"cases":185,"passed":185,"failed":0},
+  "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
+  "gitBoundary": {"changedFiles":34,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1143,"lineDeletions":14},
+  "humanReview": {"required":true,"decision":"APPROVE","reviewer":"Amelia Cai","reviewedAt":"2026-08-12T01:22:38Z","blockerCount":0,"approvedTargetManifestSha256":"e13e2d288fcf779bedb14ddca7aaad6e127bffd915600051d5376e8bcd6e214a","approvedPromotionId":"pr06e-bootstrap-4d2363e7df3a-56d59d2b79e9"}
+}
