@@ -12,6 +12,6 @@
   "environment": {"isolatedClone":true,"cleanBeforeVerification":true,"shallowRepository":false,"headEqualsOriginMain":true},
   "tests": {"cases":185,"passed":185,"failed":0},
   "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
-  "gitBoundary": {"changedFiles":9,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":244,"lineDeletions":0},
-  "humanReview": {"required":true,"decision":"PENDING","reviewer":null,"reviewedAt":null,"blockerCount":null,"verifiedProductionManifestSha256":null,"verifiedProductionArtifactSha256":null,"verificationCommit":null}
+  "gitBoundary": {"changedFiles":9,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":247,"lineDeletions":0},
+  "humanReview": {"required":true,"decision":"APPROVE","reviewer":"Amelia Cai","reviewedAt":"2026-08-12T02:54:51Z","blockerCount":0,"verifiedProductionManifestSha256":"93f6e09fc4c0542e91d50738cb568a6a0c389edf4c87c2d861be17e3a08a4bf2","verifiedProductionArtifactSha256":"56d59d2b79e93bd851226742676c28327e7aa0ecd45abc545bae0026b665f87e","verificationCommit":"c0470d993b05f4e40467452190fc701d5ce5a2bc"}
 }
