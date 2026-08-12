@@ -32,6 +32,7 @@ function fixture(records = null) {
   fs.rmdirSync(root);
   execFileSync("git", ["clone", "-q", "--shared", sourceRoot, root], { stdio: ["ignore", "pipe", "pipe"] });
   git(root, ["config", "user.name", "PR06D Fixture"]); git(root, ["config", "user.email", "pr06d@example.invalid"]);
+  fs.rmSync(path.join(root, "promotion/production"), { recursive: true, force: true });
   fs.rmSync(path.join(root, "promotion/candidate"), { recursive: true, force: true });
   fs.rmSync(path.join(root, "promotion/target"), { recursive: true, force: true });
   write(root, "generated/production-question-index.json", jsonBytes(syntheticSource(records)));
