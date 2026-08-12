@@ -423,6 +423,42 @@
       "evidenceClass": "historical",
       "sizeBytes": 2012,
       "sha256": "fba7275dd88a867bf0359847ec64ed259e75b7f0931c96b313efee9547a11104"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e-post-merge/PR06E_POST_MERGE_CURRENT_PRODUCTION_CLOSURE_VERIFICATION_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 3289,
+      "sha256": "11730fb5d13943fce0343160ac2d37ef3c05eb261a335985aa8605d6c676391a"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e-post-merge/PR06E_POST_MERGE_CURRENT_PRODUCTION_HUMAN_REVIEW.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 2230,
+      "sha256": "5ed962de3e602b3d2976c1685182a1aec26f1dff721e2a823528099706818b65"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e-post-merge/pr06e-post-merge-current-production-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 2135,
+      "sha256": "a54c10067960b4ced37eea9738e3b8247b51cbc6223e1cb1142f4127b5d47dbd"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e-post-merge/pr06e-post-merge-git-history-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 2061,
+      "sha256": "223166c390651de40f0f337d8eb27c125fb9cdb4c70a7b070e81e3890e35d87f"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e-post-merge/pr06e-post-merge-safety-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1784,
+      "sha256": "162941307fe43fec0bdb0f152daa9b1bc4b0de2a716df28340aedf3d64d2696b"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e-post-merge/pr06e-post-merge-traceability-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 2058,
+      "sha256": "0d78fd75fca7e1ebaae92ed82887fcb930e71c59cae5d41783e1d8d55a88ac3c"
     }
   ]
 }

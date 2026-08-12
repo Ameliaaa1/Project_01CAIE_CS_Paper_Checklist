@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "VALIDATED",
+  "result": "PASS_PR06E_POST_MERGE_CURRENT_PRODUCTION",
+  "verifiedAt": "2026-08-12T02:02:38Z",
+  "productionManifest": {"path":"promotion/production/manifest.json","sizeBytes":2348,"sha256":"93f6e09fc4c0542e91d50738cb568a6a0c389edf4c87c2d861be17e3a08a4bf2","authorityRole":"current-production","lifecycleState":"PRODUCTION_CURRENT"},
+  "productionArtifact": {"path":"promotion/production/artifacts/question-corpus-v1.json","sizeBytes":4277086,"sha256":"56d59d2b79e93bd851226742676c28327e7aa0ecd45abc545bae0026b665f87e","artifactVersion":"pr06d-c1da2430cecd-a95f5c5f5ff6","recordCount":1690,"stableIdSetSha256":"5fc953a117094e2e711576bff9332935db3a07a5cf03e66ddd924d6c23c53784"},
+  "validationEvidence": {"path":"promotion/production/evidence/validation.json","sizeBytes":1795,"sha256":"8e4ea0e2807532be14ff37e6caa605c15e826ac8e30050c96262703c6fe01921"},
+  "historyEvidence": {"path":"promotion/production/evidence/manifest-history.json","sizeBytes":664,"sha256":"3b005b78e1682dd22f00e1bc85d6b18ee744a23c7318654e2c2f9886527fee08"},
+  "executionEvidence": {"path":"promotion/production/evidence/pr06e-bootstrap-execution.json","sizeBytes":917,"sha256":"d0473efbc723bad456c3ff92e03095737f1507d3d53d229a39b506c084b0af7d"},
+  "currentProductionValidation": {"result":"PASS","exitCode":0,"findingCount":0},
+  "tests": {"cases":185,"passed":185,"failed":0},
+  "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
+  "gitBoundary": {"changedFiles":9,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":247,"lineDeletions":0},
+  "humanReview": {"required":true,"decision":"APPROVE","reviewer":"Amelia Cai","reviewedAt":"2026-08-12T02:54:51Z","blockerCount":0,"verifiedProductionManifestSha256":"93f6e09fc4c0542e91d50738cb568a6a0c389edf4c87c2d861be17e3a08a4bf2","verifiedProductionArtifactSha256":"56d59d2b79e93bd851226742676c28327e7aa0ecd45abc545bae0026b665f87e","verificationCommit":"c0470d993b05f4e40467452190fc701d5ce5a2bc"}
+}
