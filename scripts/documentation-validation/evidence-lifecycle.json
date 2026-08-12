@@ -355,50 +355,74 @@
     {
       "path": "docs/repository-maintenance/pr-06e/PR06E_PRE_EXECUTION_HUMAN_REVIEW.md",
       "evidenceClass": "historical",
-      "sizeBytes": 2661,
-      "sha256": "050115de1d652f9115f015f3c7b7e346e5f8127e5d0066f23d83eaf1010f53c6"
+      "sizeBytes": 2782,
+      "sha256": "439bd8c0f065ba511767d37a39d11d5ce605c74a54e77712617d73b4560c932f"
     },
     {
       "path": "docs/repository-maintenance/pr-06e/PR06E_PRODUCTION_EXECUTION_PLAN.md",
       "evidenceClass": "historical",
-      "sizeBytes": 2022,
-      "sha256": "e085dac63a2139a2bfe59ed344d0a282190e64ee8823b35ca57e1f3d1298dc0f"
+      "sizeBytes": 2526,
+      "sha256": "2504f2a5bf4d51955b945173d44dde5f947a51b7d9f5780a650ed900551d3ab3"
     },
     {
       "path": "docs/repository-maintenance/pr-06e/pr06e-expected-output-hashes.json",
       "evidenceClass": "historical",
-      "sizeBytes": 1749,
-      "sha256": "f30452d09c5c656d83000835487bd85b79c3433a7ab13255ddc0a9e310cb4e6a"
+      "sizeBytes": 1948,
+      "sha256": "62173370889b3f1e41f57406c40db08199fc26e9e09071b902cb49c2af4a1106"
     },
     {
       "path": "docs/repository-maintenance/pr-06e/pr06e-preflight-report.json",
       "evidenceClass": "historical",
-      "sizeBytes": 1644,
-      "sha256": "9b7fce9ba14790ec76d6474c418119ff44a06eac4da91336f5a84ba4ca92de6f"
+      "sizeBytes": 1756,
+      "sha256": "f426ec09d84f905c9e94620de7f25b2321dfae69c699a48ded01ba760fa64008"
     },
     {
       "path": "docs/repository-maintenance/pr-06e/pr06e-runtime-capture-report.json",
       "evidenceClass": "historical",
-      "sizeBytes": 1318,
-      "sha256": "0f8fd9adde106863c3efc2ac48d27d4b43eb765678266549401a1b33c5482997"
+      "sizeBytes": 1444,
+      "sha256": "c12dd4a61cada4289c912e8075c496f6fd79e6d048ba3a88647ea06b7930fd1d"
     },
     {
       "path": "docs/repository-maintenance/pr-06e/pr06e-safety-boundary-report.json",
       "evidenceClass": "historical",
-      "sizeBytes": 1134,
-      "sha256": "f9fe526c5ce29a5df2a30535a84a890dc5aa6084d0ae7e356a91002109e54941"
+      "sizeBytes": 1248,
+      "sha256": "c90253076d0506452ddf57e1e0e196a694aa0795cae29259930732ef5111e3e1"
     },
     {
       "path": "docs/repository-maintenance/pr-06e/pr06e-target-validation-report.json",
       "evidenceClass": "historical",
-      "sizeBytes": 1596,
-      "sha256": "66afc20459351967b4b98b476326f543feb12a11ec49edcc1b844b1175d15d0d"
+      "sizeBytes": 1960,
+      "sha256": "11e6f73bc1ca965362b657c6ad6463ddfc927956724a280d972f68957e68a1a2"
     },
     {
       "path": "docs/repository-maintenance/pr-06e/pr06e-test-execution-report.json",
       "evidenceClass": "historical",
-      "sizeBytes": 1338,
-      "sha256": "5589bb5ad4276134e3d7595365d64298f990a9adb5dd54832bd15d11b18d34f3"
+      "sizeBytes": 1463,
+      "sha256": "671fbd78e22fee23805652cf7f5f4f0028d20824ceba79bba5bf567693cce227"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/PR06E_FIRST_PRODUCTION_BOOTSTRAP_EXECUTION_REPORT.md",
+      "evidenceClass": "historical",
+      "sizeBytes": 1924,
+      "sha256": "c0c289d1f876b78d8cc2e46005272750a9634fca55fd4f46de3850f67ac45db3"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-production-execution-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 1877,
+      "sha256": "45684f122ea5872636565f6440ed449ce73784ae3d07e50db57c715bd69cfff1"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-post-promotion-verification-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 2026,
+      "sha256": "49b3dfc88ae6e27894eadfe7c4d6206f46f78dc0d49729507748931ad2e783f6"
+    },
+    {
+      "path": "docs/repository-maintenance/pr-06e/pr06e-traceability-report.json",
+      "evidenceClass": "historical",
+      "sizeBytes": 2012,
+      "sha256": "447bbcfaf5846d41284b24a89f2c9bc6364a5da5c9e99acda697b1d8e2c32775"
     }
   ]
 }

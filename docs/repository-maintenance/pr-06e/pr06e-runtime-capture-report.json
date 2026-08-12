@@ -14,6 +14,6 @@
   "oldPr06dRuntimeEvidenceReused": false,
   "tests": {"cases":185,"passed":185,"failed":0},
   "validation": {"fullMode":"PASS","changedMode":"PASS","links":"PASS","authority":"PASS","evidencePairs":"PASS","protectedEvidence":"PASS","baseline":"PASS","gitDiffCheck":"PASS","readOnlyDefault":"PASS"},
-  "gitBoundary": {"changedFiles":22,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":791,"lineDeletions":7},
-  "humanReview": {"required":true,"decision":"PENDING","reviewer":null,"reviewedAt":null,"blockerCount":null,"approvedTargetManifestSha256":null,"approvedPromotionId":null}
+  "gitBoundary": {"changedFiles":33,"filesDeleted":0,"filesRenamed":0,"filesMoved":0,"lineAdditions":1142,"lineDeletions":14},
+  "humanReview": {"required":true,"decision":"APPROVE","reviewer":"Amelia Cai","reviewedAt":"2026-08-12T01:22:38Z","blockerCount":0,"approvedTargetManifestSha256":"e13e2d288fcf779bedb14ddca7aaad6e127bffd915600051d5376e8bcd6e214a","approvedPromotionId":"pr06e-bootstrap-4d2363e7df3a-56d59d2b79e9"}
 }
