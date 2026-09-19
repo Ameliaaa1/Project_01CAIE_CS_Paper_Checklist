@@ -14,6 +14,8 @@ Related documents:
 - [Authoritative Document Map](AUTHORITATIVE_DOCUMENT_MAP.md)
 - [Documentation Standard](DOCUMENTATION_STANDARD.md)
 - [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md)
+- [Contribution guide](../CONTRIBUTING.md)
+- [Contributor Onboarding](ONBOARDING.md)
 
 This page is the primary navigation entry for tracked project documentation.
 It classifies documents by their present role; it does not change the status
@@ -28,6 +30,8 @@ or content of any referenced file.
 | [Documentation Standard](DOCUMENTATION_STANDARD.md) | Current naming, metadata, link, and evidence-format standard | Current authority; effective upon merge of GitHub PR #7 |
 | [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Current lifecycle, status, authority-transition, and mutability policy | Current authority; effective upon merge of GitHub PR #7 |
 | [Documentation Validation](DOCUMENTATION_VALIDATION.md) | Repeatable documentation validation commands, rules, and baseline governance | Approved operational authority; effective when GitHub PR #8 merges |
+| [Contribution guide](../CONTRIBUTING.md) | Branch, commit, pull request, review, and production-access boundaries | Proposed collaboration authority; effective when the collaboration-baseline PR merges |
+| [Contributor Onboarding](ONBOARDING.md) | Safe first-day setup and local contribution path | Proposed collaboration authority; effective when the collaboration-baseline PR merges |
 
 ## Architecture Documentation
 

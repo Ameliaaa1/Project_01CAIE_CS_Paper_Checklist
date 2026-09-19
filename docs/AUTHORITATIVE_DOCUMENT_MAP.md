@@ -30,6 +30,8 @@ the authority named here.
 | Documentation naming, metadata, linking, and evidence format | [Documentation Standard](DOCUMENTATION_STANDARD.md) | Current policy authority; effective upon merge of GitHub PR #7 |
 | Document lifecycle, status transitions, authority changes, and mutability | [Document Lifecycle Policy](DOCUMENT_LIFECYCLE_POLICY.md) | Current lifecycle authority; effective upon merge of GitHub PR #7 |
 | Documentation validation commands, rule IDs, and baseline governance | [Documentation Validation](DOCUMENTATION_VALIDATION.md) | Approved operational authority; effective when GitHub PR #8 merges |
+| Contribution workflow, review evidence, and production-access boundaries | [CONTRIBUTING](../CONTRIBUTING.md) | Proposed collaboration authority; effective when the collaboration-baseline PR merges |
+| First-day setup and safe local contribution path | [Contributor Onboarding](ONBOARDING.md) | Proposed onboarding authority; effective when the collaboration-baseline PR merges |
 | Pushability rescue and public remote backup boundary | [Remote Backup Summary](repository-maintenance/public/REMOTE_BACKUP_SUMMARY.md) | PR-00 summary authority |
 | Repository inventory snapshot and original classifications | [File Inventory Summary](repository-maintenance/public/FILE_INVENTORY_SUMMARY.md) | PR-01 public inventory authority |
 | Applied file decisions and protected/deferred counts | [File Decision Summary](repository-maintenance/public/FILE_DECISION_SUMMARY.md) | PR-01A decision authority |
