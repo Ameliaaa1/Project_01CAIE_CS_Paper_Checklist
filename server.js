@@ -272,7 +272,9 @@ function assertProductionConfiguration() {
   }
 
   if (missing.length) {
-    throw new Error(`Production configuration is incomplete: ${missing.join(", ")}`);
+    const error = new Error(`Production configuration is incomplete: ${missing.join(", ")}`);
+    error.code = "PAPERLENS_PRODUCTION_CONFIGURATION_INCOMPLETE";
+    throw error;
   }
 }
 

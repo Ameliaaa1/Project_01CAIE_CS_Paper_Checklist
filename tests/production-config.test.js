@@ -23,6 +23,32 @@ const missingDatabase = spawnSync(process.execPath, ["-e", "require('./server')"
 assert.notEqual(missingDatabase.status, 0, "production startup should fail when DATABASE_URL is missing");
 assert.match(`${missingDatabase.stderr}${missingDatabase.stdout}`, /DATABASE_URL/);
 
+const unavailableApi = spawnSync(process.execPath, ["-e", `
+  const assert = require("node:assert/strict");
+  const handleRequest = require("./api/index");
+  for (const [method, url] of [["GET", "/api/health"], ["POST", "/api/auth/login"]]) {
+    let sent = false;
+    handleRequest({ method, url }, {
+      writeHead(status, headers) {
+        assert.equal(status, 503);
+        assert.equal(headers["Cache-Control"], "no-store");
+      },
+      end(body) {
+        assert.deepEqual(JSON.parse(body), { error: "PaperLens online services are temporarily unavailable." });
+        sent = true;
+      }
+    });
+    assert.equal(sent, true);
+  }
+`], {
+  cwd: process.cwd(),
+  env: { ...productionEnv, VERCEL_ENV: "production", VERCEL_TARGET_ENV: "production" },
+  encoding: "utf8"
+});
+
+assert.equal(unavailableApi.status, 0, `${unavailableApi.stderr}${unavailableApi.stdout}`);
+assert.match(unavailableApi.stderr, /DATABASE_URL/);
+
 const missingSession = spawnSync(process.execPath, ["-e", "require('./server')"], {
   cwd: process.cwd(),
   env: {
