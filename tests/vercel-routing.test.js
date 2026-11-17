@@ -22,6 +22,9 @@ for (const pathname of [
   assert.equal(fs.existsSync(path.join(rootDir, "public", pathname)), true, `public/${pathname} should exist for Vercel static serving`);
 }
 
+assert.equal(config.framework, null, "the Node framework preset must not route the homepage through the API");
+assert.equal(config.outputDirectory, "public", "only public assets should be served statically");
+assert.equal(config.buildCommand, "npm run build", "the reviewed index check and Prisma generation still run");
 assert.deepEqual(config.rewrites, [{ source: "/api/(.*)", destination: "/api/index.js" }], "only /api/* should rewrite to the serverless entrypoint");
 assert.equal(config.routes, undefined, "do not use broad routes that could capture static assets");
 assert.equal(config.builds, undefined, "do not use legacy builds that could promote root browser files to functions");
